@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bodega de Fruta</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',sans-serif;background:#0d1f0d;color:#e8f5e8;min-height:100vh}
+
+/* ── Header ── */
+header{
+  background:linear-gradient(135deg,#0a1a0a 0%,#1a3a0a 100%);
+  border-bottom:1px solid #2a4a2a;
+  padding:18px 28px;
+  display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;
+}
+.logo{display:flex;align-items:center;gap:12px}
+.logo h1{font-size:1.3rem;font-weight:800;color:#fff;letter-spacing:-.02em}
+.logo h1 em{color:#8bc34a;font-style:normal}
+.upd{font-size:.75rem;color:#5a8a5a;text-align:right}
+.upd strong{display:block;color:#a5d6a7;font-size:.88rem}
+
+/* ── KPIs ── */
+.kpis{display:flex;gap:12px;padding:20px 28px 8px;flex-wrap:wrap}
+.kpi{
+  flex:1;min-width:130px;
+  background:#111f11;border:1px solid #2a3a2a;border-radius:12px;
+  padding:14px 18px;
+}
+.kpi .val{font-size:1.7rem;font-weight:800;line-height:1;color:#fff}
+.kpi .lbl{font-size:.7rem;color:#5a8a5a;margin-top:4px;text-transform:uppercase;letter-spacing:.06em}
+.kpi.urg .val{color:#ff7043}
+.kpi.ok  .val{color:#8bc34a}
+.kpi.inf .val{color:#42a5f5}
+
+/* ── Filters ── */
+.bar{
+  padding:12px 28px 16px;
+  display:flex;gap:10px;flex-wrap:wrap;align-items:center;
+}
+.bar select{
+  padding:7px 12px;border:1px solid #2a4a2a;border-radius:8px;
+  background:#111f11;color:#c8e6c9;font-size:.82rem;cursor:pointer;
+  font-family:inherit;
+}
+.bar select:focus{outline:none;border-color:#8bc34a}
+.breset{
+  padding:7px 16px;background:#2d5a2d;color:#c8e6c9;
+  border:1px solid #3a7a3a;border-radius:8px;font-size:.82rem;
+  cursor:pointer;font-weight:600;font-family:inherit;
+}
+.breset:hover{background:#3a7a3a}
+.legend{display:flex;gap:16px;flex-wrap:wrap;align-items:center;margin-left:auto}
+.leg-item{display:flex;align-items:center;gap:6px;font-size:.72rem;color:#7aaa7a}
+.leg-dot{width:14px;height:14px;border-radius:50%;flex-shrink:0}
+
+/* ── Bodega grid ── */
+.bodega{padding:0 28px 32px;display:flex;flex-direction:column;gap:20px}
+
+/* Fecha block */
+.fecha-block{
+  border:1px solid #2a4a2a;border-radius:16px;
+  overflow:hidden;background:#0f1e0f;
+}
+.fecha-hdr{
+  display:flex;align-items:center;gap:14px;
+  padding:12px 20px;
+  background:#111f11;border-bottom:1px solid #2a4a2a;
+}
+.fecha-hdr .dias{
+  background:#ff7043;color:#fff;
+  border-radius:20px;padding:3px 10px;
+  font-size:.7rem;font-weight:700;letter-spacing:.04em;
+}
+.fecha-hdr .dias.reciente{background:#2d5a2d;color:#8bc34a}
+.fecha-hdr .dias.medio{background:#7a4a00;color:#ffb74d}
+.fecha-hdr h2{font-size:1rem;font-weight:700;color:#c8e6c9}
+.fecha-hdr .kg-total{margin-left:auto;font-size:.82rem;color:#5a8a5a}
+.fecha-hdr .kg-total strong{color:#a5d6a7}
+
+/* Calidad rows inside fecha block */
+.calidad-row{
+  display:flex;align-items:center;gap:0;
+  border-bottom:1px solid #1a2e1a;
+  padding:12px 20px;
+  flex-wrap:wrap;gap:12px;
+}
+.calidad-row:last-child{border-bottom:none}
+.cal-info{min-width:180px;flex-shrink:0}
+.cal-nombre{font-size:.85rem;font-weight:700;color:#e8f5e8}
+.cal-codigo{font-size:.7rem;color:#5a8a5a;margin-top:2px}
+.cal-kg{font-size:.75rem;color:#7aaa7a;margin-top:4px}
+.cal-kg strong{color:#a5d6a7;font-size:.9rem}
+
+/* Pineapple icons area */
+.pinas-area{flex:1;display:flex;flex-wrap:wrap;gap:6px;align-items:center;min-height:48px}
+
+/* Individual calibre group */
+.calibre-grp{display:flex;flex-direction:column;align-items:center;gap:4px}
+.calibre-lbl{font-size:.65rem;color:#5a8a5a;text-align:center;white-space:nowrap}
+.pinas-row{display:flex;flex-wrap:wrap;gap:3px;justify-content:center;max-width:320px}
+
+/* SVG pineapple icon — inline, colored */
+.pina-icon{width:28px;height:34px;flex-shrink:0;cursor:default;transition:transform .15s}
+.pina-icon:hover{transform:scale(1.25)}
+
+/* Urgency bar */
+.urg-bar-wrap{min-width:120px;flex-shrink:0}
+.urg-label{font-size:.65rem;color:#5a8a5a;margin-bottom:4px}
+.urg-bar{height:6px;border-radius:3px;background:#1a3a1a;overflow:hidden}
+.urg-fill{height:100%;border-radius:3px;transition:width .4s}
+
+/* Empty */
+.empty{text-align:center;padding:60px 20px;color:#3a5a3a;font-size:1rem}
+.empty .big{font-size:3rem;margin-bottom:12px}
+
+@media(max-width:600px){
+  .kpis,.bar,.bodega{padding-left:14px;padding-right:14px}
+  .pina-icon{width:22px;height:27px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <svg width="36" height="36" viewBox="0 0 36 36"><ellipse cx="18" cy="22" rx="10" ry="12" fill="#f9a825"/><ellipse cx="18" cy="22" rx="8" ry="10" fill="#fbc02d" opacity=".5"/><path d="M14 13 Q18 2 22 13" stroke="#4caf50" stroke-width="2.5" fill="none" stroke-linecap="round"/><path d="M18 12 Q12 4 10 12" stroke="#388e3c" stroke-width="2" fill="none" stroke-linecap="round"/><path d="M18 12 Q24 4 26 12" stroke="#388e3c" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+    <h1>Bodega de Fruta — <em>Inventario en tiempo real</em></h1>
+  </div>
+  <div class="upd"><strong id="ts">—</strong>Última actualización</div>
+</header>
+
+<div class="kpis">
+  <div class="kpi urg"><div class="val" id="kUrg">—</div><div class="lbl">🔴 Urgente vender</div></div>
+  <div class="kpi"    ><div class="val" id="kE">—</div><div class="lbl">Estibas en bodega</div></div>
+  <div class="kpi ok" ><div class="val" id="kK">—</div><div class="lbl">Kg disponibles</div></div>
+  <div class="kpi inf"><div class="val" id="kF">—</div><div class="lbl">Fechas de proceso</div></div>
+</div>
+
+<div class="bar">
+  <select id="fCal"><option value="">Todas las calidades</option></select>
+  <select id="fCalibr"><option value="">Todos los calibres</option></select>
+  <button class="breset" onclick="reset()">↺ Limpiar filtros</button>
+  <div class="legend">
+    <div class="leg-item"><div class="leg-dot" style="background:#2e7d32"></div>Verde (0)</div>
+    <div class="leg-item"><div class="leg-dot" style="background:#8d6e0e"></div>Semipintona (1)</div>
+    <div class="leg-item"><div class="leg-dot" style="background:#e65100"></div>Pintona (1.5–2.5)</div>
+    <div class="leg-item"><div class="leg-dot" style="background:#f9a825"></div>Madura (3–4)</div>
+  </div>
+</div>
+
+<div class="bodega" id="bodega">
+  <div class="empty"><div class="big">🍍</div>Cargando inventario...</div>
+</div>
+
+<script>
+// ── Configuración calidades ────────────────────────────────────────────────
+const CAL_CFG = {
+  'PE1':    {nombre:'Piña Special 1ra',  color:'#f9a825'},
+  'PE2':    {nombre:'Piña Special 2da',  color:'#2196f3'},
+  'PE3':    {nombre:'Piña Special 3ra',  color:'#e53935'},
+  'PEBAB':  {nombre:'Piña Special Baby', color:'#ab47bc'},
+  'PEGUA':  {nombre:'Piña Special Guapita',color:'#26a69a'},
+  'PIND':   {nombre:'Piña Industria',    color:'#78909c'},
+  'AD1':    {nombre:'Piña AD1',          color:'#f9a825'},
+  'AD2':    {nombre:'Piña AD2',          color:'#2196f3'},
+  'AD3':    {nombre:'Piña AD3',          color:'#e53935'},
+  'PJUG':   {nombre:'Piña Jugos',        color:'#00bcd4'},
+};
+
+// ── Color de piña según calibre (madurez) ─────────────────────────────────
+function colorPina(calibreStr) {
+  const c = parseFloat(calibreStr);
+  if (isNaN(c))    return '#f9a825'; // fallback madura
+  if (c <= 0)      return '#2e7d32'; // verde intenso
+  if (c <= 0.9)    return '#558b2f'; // verde claro
+  if (c <= 1.4)    return '#8d6e0e'; // semipintona
+  if (c <= 2.5)    return '#e65100'; // pintona naranja
+  return '#f9a825';                  // madura amarilla
+}
+
+// ── SVG piña ──────────────────────────────────────────────────────────────
+function pinaSVG(color, kg) {
+  const title = Math.round(kg) + ' kg';
+  return `<svg class="pina-icon" viewBox="0 0 28 34" xmlns="http://www.w3.org/2000/svg" title="${title}">
+    <ellipse cx="14" cy="22" rx="9" ry="11" fill="${color}"/>
+    <ellipse cx="14" cy="20" rx="7" ry="8" fill="${color}" opacity=".35"/>
+    <line x1="10" y1="16" x2="10" y2="28" stroke="${color}" stroke-width=".8" opacity=".4"/>
+    <line x1="14" y1="14" x2="14" y2="30" stroke="${color}" stroke-width=".8" opacity=".4"/>
+    <line x1="18" y1="16" x2="18" y2="28" stroke="${color}" stroke-width=".8" opacity=".4"/>
+    <line x1="6"  y1="20" x2="22" y2="20" stroke="${color}" stroke-width=".8" opacity=".4"/>
+    <line x1="6"  y1="24" x2="22" y2="24" stroke="${color}" stroke-width=".8" opacity=".4"/>
+    <path d="M11 12 Q14 2 17 12" stroke="#4caf50" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+    <path d="M14 11 Q9 3 7 11"   stroke="#388e3c" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+    <path d="M14 11 Q19 3 21 11" stroke="#388e3c" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+  </svg>`;
+}
+
+// ── Cuántas piñas mostrar (escala logarítmica, máx 40 por grupo) ──────────
+function numPinas(kg) {
+  if (kg <= 0) return 0;
+  return Math.min(40, Math.max(1, Math.round(Math.log10(kg + 1) * 10)));
+}
+
+// ── Urgencia según días almacenados ──────────────────────────────────────
+function diasDesde(fechaStr) {
+  const hoy  = new Date(); hoy.setHours(0,0,0,0);
+  const then = new Date(fechaStr + 'T00:00:00');
+  return Math.round((hoy - then) / 86400000);
+}
+function urgColor(dias) {
+  if (dias >= 7) return '#ff1744';
+  if (dias >= 4) return '#ff7043';
+  if (dias >= 2) return '#ffb74d';
+  return '#8bc34a';
+}
+function urgClass(dias) {
+  if (dias >= 7) return '';
+  if (dias >= 4) return 'medio';
+  return 'reciente';
+}
+
+// ── Data ──────────────────────────────────────────────────────────────────
+let ALL = [];
+
+async function load() {
+  try {
+    const r = await fetch('inventario.csv?' + Date.now());
+    if (!r.ok) throw 0;
+    ALL = parseCSV(await r.text());
+    document.getElementById('ts').textContent = new Date().toLocaleString('es-CO',
+      {day:'2-digit',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit'});
+  } catch {
+    ALL = demo();
+    document.getElementById('ts').textContent = 'Datos de demostración';
+  }
+  buildFilters();
+  render();
+}
+
+function parseCSV(t) {
+  const lines = t.trim().split('\n');
+  const hdr = lines[0].split(',').map(s=>s.trim().replace(/"/g,''));
+  return lines.slice(1).map(l=>{
+    const v = l.split(',').map(s=>s.trim().replace(/"/g,''));
+    const o={}; hdr.forEach((h,i)=>o[h]=v[i]||'');
+    return o;
+  }).filter(r=>r.ID && parseFloat(r.KgDisponibles)>0);
+}
+
+function buildFilters() {
+  const cals    = [...new Set(ALL.map(r=>r.Calidad))].sort();
+  const calibrs = [...new Set(ALL.map(r=>r.Calibre))].sort((a,b)=>parseFloat(a)-parseFloat(b));
+  fillSel('fCal',   cals,    c=>(CAL_CFG[c]?.nombre||c)+' ('+c+')');
+  fillSel('fCalibr',calibrs, c=>c);
+  document.getElementById('fCal').onchange    = render;
+  document.getElementById('fCalibr').onchange = render;
+}
+function fillSel(id,items,lblFn){
+  const s=document.getElementById(id);
+  items.forEach(v=>{const o=document.createElement('option');o.value=v;o.textContent=lblFn(v);s.appendChild(o);});
+}
+function reset(){
+  ['fCal','fCalibr'].forEach(id=>document.getElementById(id).value='');
+  render();
+}
+function filtered(){
+  const c=document.getElementById('fCal').value;
+  const b=document.getElementById('fCalibr').value;
+  return ALL.filter(r=>(!c||r.Calidad===c)&&(!b||r.Calibre===b));
+}
+
+// ── Render ────────────────────────────────────────────────────────────────
+function render() {
+  const data = filtered();
+
+  // KPIs
+  const kg     = data.reduce((s,r)=>s+(parseFloat(r.KgDisponibles)||0),0);
+  const maxDias = data.length ? Math.max(...data.map(r=>diasDesde(r.Fecha))) : 0;
+  const urgente = data.filter(r=>diasDesde(r.Fecha)>=5).length;
+  document.getElementById('kUrg').textContent = urgente;
+  document.getElementById('kE').textContent   = data.length.toLocaleString('es-CO');
+  document.getElementById('kK').textContent   = Math.round(kg).toLocaleString('es-CO')+' kg';
+  document.getElementById('kF').textContent   = [...new Set(data.map(r=>r.Fecha))].length;
+
+  const bodega = document.getElementById('bodega');
+  if (!data.length) {
+    bodega.innerHTML='<div class="empty"><div class="big">🍍</div>Sin estibas disponibles.</div>';
+    return;
+  }
+
+  // Group by fecha (oldest first) → calidad → calibre
+  const fechas = [...new Set(data.map(r=>r.Fecha))].sort();
+  const maxDiasGlobal = maxDias || 1;
+
+  let html = '';
+  fechas.forEach(fecha => {
+    const dias  = diasDesde(fecha);
+    const urgPct = Math.min(100, Math.round((dias / Math.max(maxDiasGlobal, 1)) * 100));
+    const urgC   = urgColor(dias);
+    const urgCls = urgClass(dias);
+    const bloque = data.filter(r=>r.Fecha===fecha);
+    const kgBloque = bloque.reduce((s,r)=>s+(parseFloat(r.KgDisponibles)||0),0);
+
+    html += `<div class="fecha-block">
+      <div class="fecha-hdr">
+        <div class="dias ${urgCls}">${dias === 0 ? 'HOY' : dias + (dias===1?' día':' días')}</div>
+        <h2>📅 ${fmtF(fecha)}</h2>
+        <div class="kg-total">Total: <strong>${Math.round(kgBloque).toLocaleString('es-CO')} kg</strong></div>
+      </div>`;
+
+    // Group by calidad
+    const calidades = [...new Set(bloque.map(r=>r.Calidad))].sort();
+    calidades.forEach(cal => {
+      const filas = bloque.filter(r=>r.Calidad===cal);
+      const kgCal = filas.reduce((s,r)=>s+(parseFloat(r.KgDisponibles)||0),0);
+      const cfg   = CAL_CFG[cal] || {nombre:cal,color:'#8bc34a'};
+
+      // Group by calibre
+      const calibres = [...new Set(filas.map(r=>r.Calibre))].sort((a,b)=>parseFloat(a)-parseFloat(b));
+
+      html += `<div class="calidad-row">
+        <div class="cal-info">
+          <div class="cal-nombre" style="color:${cfg.color}">${cfg.nombre}</div>
+          <div class="cal-codigo">${cal}</div>
+          <div class="cal-kg">Total: <strong>${Math.round(kgCal).toLocaleString('es-CO')} kg</strong></div>
+        </div>
+        <div class="pinas-area">`;
+
+      calibres.forEach(calibre => {
+        const kgCalibr = filas.filter(r=>r.Calibre===calibre).reduce((s,r)=>s+(parseFloat(r.KgDisponibles)||0),0);
+        const pinColor = colorPina(calibre);
+        const n        = numPinas(kgCalibr);
+
+        html += `<div class="calibre-grp">
+          <div class="pinas-row">`;
+        for (let i = 0; i < n; i++) html += pinaSVG(pinColor, kgCalibr / n);
+        html += `</div>
+          <div class="calibre-lbl" style="color:${pinColor}">
+            Calibre ${calibre}<br>
+            <strong style="color:#c8e6c9">${Math.round(kgCalibr).toLocaleString('es-CO')} kg</strong>
+          </div>
+        </div>`;
+      });
+
+      // Urgency bar
+      html += `</div>
+        <div class="urg-bar-wrap">
+          <div class="urg-label">⏱ Urgencia de venta</div>
+          <div class="urg-bar"><div class="urg-fill" style="width:${urgPct}%;background:${urgC}"></div></div>
+          <div style="font-size:.65rem;color:${urgC};margin-top:3px;font-weight:600">${dias===0?'Recién ingresado':dias+' días en bodega'}</div>
+        </div>
+      </div>`;
+    });
+
+    html += '</div>';
+  });
+
+  bodega.innerHTML = html;
+}
+
+function fmtF(f){
+  if(!f)return'';
+  const[y,m,d]=f.split('-');
+  const M=['','Ene','Feb','Mar','Abr','May','Jun','Jul','Ago','Sep','Oct','Nov','Dic'];
+  return `${parseInt(d)} ${M[parseInt(m)]} ${y}`;
+}
+
+function demo(){
+  return[
+    {ID:'1',Fecha:'2026-07-08',Calidad:'PE1',Nombre:'piña special 1ra',Calibre:'0',KgDisponibles:'705'},
+    {ID:'2',Fecha:'2026-07-08',Calidad:'PIND',Nombre:'piña indstria',Calibre:'3.0 - 4.0',KgDisponibles:'25'},
+    {ID:'3',Fecha:'2026-07-10',Calidad:'PE1',Nombre:'piña special 1ra',Calibre:'0.0 - 1.0',KgDisponibles:'3975'},
+    {ID:'4',Fecha:'2026-07-10',Calidad:'PE1',Nombre:'piña special 1ra',Calibre:'1.5',KgDisponibles:'144'},
+    {ID:'5',Fecha:'2026-07-10',Calidad:'PE2',Nombre:'piña special 2da',Calibre:'1.5 - 2.5',KgDisponibles:'516'},
+    {ID:'6',Fecha:'2026-07-10',Calidad:'PE2',Nombre:'piña special 2da',Calibre:'3.0 - 4.0',KgDisponibles:'6208'},
+    {ID:'7',Fecha:'2026-07-10',Calidad:'PE3',Nombre:'piña special 3ra',Calibre:'1.5 - 2.5',KgDisponibles:'273'},
+    {ID:'8',Fecha:'2026-07-10',Calidad:'PIND',Nombre:'piña indstria',Calibre:'1.5 - 2.5',KgDisponibles:'10515'},
+    {ID:'9',Fecha:'2026-07-14',Calidad:'PE1',Nombre:'piña special 1ra',Calibre:'0',KgDisponibles:'502'},
+    {ID:'10',Fecha:'2026-07-14',Calidad:'PE1',Nombre:'piña special 1ra',Calibre:'1',KgDisponibles:'958'},
+    {ID:'11',Fecha:'2026-07-14',Calidad:'PE1',Nombre:'piña special 1ra',Calibre:'2',KgDisponibles:'2956'},
+    {ID:'12',Fecha:'2026-07-14',Calidad:'PE1',Nombre:'piña special 1ra',Calibre:'0.0 - 1.0',KgDisponibles:'2998'},
+    {ID:'13',Fecha:'2026-07-14',Calidad:'PE2',Nombre:'piña special 2da',Calibre:'1.5',KgDisponibles:'2404'},
+    {ID:'14',Fecha:'2026-07-14',Calidad:'PE2',Nombre:'piña special 2da',Calibre:'3.0 - 4.0',KgDisponibles:'3234'},
+    {ID:'15',Fecha:'2026-07-14',Calidad:'PE3',Nombre:'piña special 3ra',Calibre:'2',KgDisponibles:'1931'},
+    {ID:'16',Fecha:'2026-07-14',Calidad:'PE1',Nombre:'piña special 1ra',Calibre:'1.5',KgDisponibles:'4011'},
+  ];
+}
+
+setInterval(load,300000);
+load();
+</script>
+</body>
+</html>
