@@ -147,9 +147,22 @@ table.ctable tr:hover td{background:#f9f9f9}
 <div class="bar">
   <select id="fMad">
     <option value="">Toda la madurez</option>
-    <option value="verde">Verde (0.0 - 1.0)</option>
+    <option value="verde">Verde (0 - 1.0)</option>
     <option value="pintona">Pintona (1.5 - 2.5)</option>
     <option value="madura">Madura (3.0 - 4.0)</option>
+  </select>
+  <select id="fCalibr"><option value="">Todos los calibres</option>
+    <option value="0">0 - Verde</option>
+    <option value="0.5">0.5 - Verde</option>
+    <option value="1">1 - Verde</option>
+    <option value="0,0 - 1,0">0.0-1.0 - Verde</option>
+    <option value="1.5">1.5 - Pintona</option>
+    <option value="2">2 - Pintona</option>
+    <option value="2.5">2.5 - Pintona</option>
+    <option value="1,5 - 2,5">1.5-2.5 - Pintona</option>
+    <option value="3">3 - Madura</option>
+    <option value="4">4 - Madura</option>
+    <option value="3,0 - 4,0">3.0-4.0 - Madura</option>
   </select>
   <select id="fTam"><option value="">Todos los tamanos</option></select>
   <select id="fFec"><option value="">Todas las fechas</option></select>
@@ -172,11 +185,35 @@ table.ctable tr:hover td{background:#f9f9f9}
 const TAM_NAMES = {'PE1':'Grande','PE2':'Mediana','PE3':'Pequena','PE4':'Muy pequena','PEGUA':'Guapita','PEBAB':'Baby','PIND':'Industria','AD1':'AD Grande','AD2':'AD Mediana','AD3':'AD Pequena','PJUG':'Jugos'};
 
 function getMadurez(c) {
-  const v = parseFloat(String(c).replace(',','.'));
+  const s = String(c).trim().replace(',','.');
+  // Handle range strings like "0,0 - 1,0" or "1.5 - 2.5"
+  if(s.includes('-') && !s.startsWith('-')) {
+    // Take average of range
+    const parts = s.split('-').map(p=>parseFloat(p.trim()));
+    const avg = (parts[0] + parts[parts.length-1]) / 2;
+    if(avg <= 1.0) return 'verde';
+    if(avg <= 2.5) return 'pintona';
+    return 'madura';
+  }
+  const v = parseFloat(s);
   if(isNaN(v)) return 'madura';
-  if(v <= 1.0) return 'verde';
-  if(v <= 2.5) return 'pintona';
+  if(v === 0)   return 'verde';
+  if(v <= 1.0)  return 'verde';
+  if(v <= 2.5)  return 'pintona';
   return 'madura';
+}
+
+function getCalibreLabel(c) {
+  const s = String(c).trim();
+  if(s === '0' || s === '0,0 - 1,0' || s === '0.0 - 1.0') return 'Verde (0 - 1.0)';
+  if(s === '0.5') return 'Verde (0.5)';
+  if(s === '1' || s === '1.0') return 'Verde (1.0)';
+  if(s === '1.5' || s === '1,5 - 2,5' || s === '1.5 - 2.5') return 'Pintona (1.5 - 2.5)';
+  if(s === '2' || s === '2.0') return 'Pintona (2.0)';
+  if(s === '2.5') return 'Pintona (2.5)';
+  if(s === '3' || s === '3.0' || s === '3,0 - 4,0' || s === '3.0 - 4.0') return 'Madura (3.0 - 4.0)';
+  if(s === '4' || s === '4.0') return 'Madura (4.0)';
+  return s;
 }
 
 function urgColor(h){return h>=72?'#c62828':h>=48?'#e65100':h>=24?'#f57f17':'#2e7d32'}
@@ -208,13 +245,16 @@ function buildFilters(){
   const fechas=[...new Set(ALL.map(r=>r.Fecha))].sort();
   fillSel('fTam',tams,c=>(TAM_NAMES[c]||c)+' ('+c+')');
   fillSel('fFec',fechas,f=>fmtF(f)+' — '+horasLabel(horasDesde(f)));
-  ['fMad','fTam','fFec'].forEach(id=>document.getElementById(id).onchange=render);
+  ['fMad','fCalibr','fTam','fFec'].forEach(id=>document.getElementById(id).onchange=render);
 }
 function fillSel(id,items,fn){const s=document.getElementById(id);items.forEach(v=>{const o=document.createElement('option');o.value=v;o.textContent=fn(v);s.appendChild(o);});}
-function reset(){['fMad','fTam','fFec'].forEach(id=>document.getElementById(id).value='');render();}
+function reset(){['fMad','fCalibr','fTam','fFec'].forEach(id=>document.getElementById(id).value='');render();}
 function filtered(){
-  const m=document.getElementById('fMad').value,t=document.getElementById('fTam').value,f=document.getElementById('fFec').value;
-  return ALL.filter(r=>(!m||getMadurez(r.Calibre)===m)&&(!t||r.Calidad===t)&&(!f||r.Fecha===f));
+  const m=document.getElementById('fMad').value;
+  const cal=document.getElementById('fCalibr').value;
+  const t=document.getElementById('fTam').value;
+  const f=document.getElementById('fFec').value;
+  return ALL.filter(r=>(!m||getMadurez(r.Calibre)===m)&&(!cal||r.Calibre===cal)&&(!t||r.Calidad===t)&&(!f||r.Fecha===f));
 }
 function setView(v){currentView=v;['tarjetas','tabla','bodega'].forEach(x=>{document.getElementById('v-'+x).style.display=x===v?'':'none';document.getElementById('btn-'+x).classList.toggle('active',x===v);});render();}
 
@@ -261,9 +301,16 @@ function renderTarjetas(data){
       tams.forEach(tam=>{
         const ft=filas.filter(r=>r.Calidad===tam);
         const kgT=ft.reduce((s,r)=>s+(parseFloat(r.KgDisponibles)||0),0);
+        // Group by calibre within this tamano
+        const calibres=[...new Set(ft.map(r=>r.Calibre))].sort((a,b)=>parseFloat(a)-parseFloat(b));
+        const calibreInfo = calibres.map(cal=>{
+          const kgC=ft.filter(r=>r.Calibre===cal).reduce((s,r)=>s+(parseFloat(r.KgDisponibles)||0),0);
+          return getCalibreLabel(cal)+': '+Math.round(kgC).toLocaleString('es-CO')+' kg';
+        }).join(' | ');
         html+=`<div class="tam-card ${mad}">
           <div class="tam-name">${TAM_NAMES[tam]||tam} (${tam})</div>
           <div class="tam-kg">${Math.round(kgT).toLocaleString('es-CO')} kg</div>
+          <div class="tam-sub" style="font-size:.62rem;color:#555;margin-top:4px">${calibreInfo}</div>
           <div class="tam-sub">${ft.length} estiba${ft.length>1?'s':''}</div>
         </div>`;
       });
