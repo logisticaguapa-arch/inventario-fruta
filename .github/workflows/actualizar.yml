@@ -24,7 +24,8 @@ jobs:
           import requests, openpyxl, io
 
           url = "https://agricolaguapa-my.sharepoint.com/:x:/g/personal/coordinador_logistico_guapa_com_co/IQDQfo1oimGITIutSnziZXTmAZuo0_tcGIcZvShC86nTMFg?download=1"
-          r = requests.get(url, allow_redirects=True)
+          r = requests.get(url, allow_redirects=True, timeout=30)
+          print(f"Status: {r.status_code}, Tamaño: {len(r.content)} bytes")
           wb = openpyxl.load_workbook(io.BytesIO(r.content), data_only=True)
           ws = wb["Inventario"]
 
