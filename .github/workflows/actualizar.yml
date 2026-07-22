@@ -49,7 +49,9 @@ jobs:
         run: |
           git config user.email "action@github.com"
           git config user.name "GitHub Action"
+          git stash
           git pull --rebase
+          git stash pop
           git add inventario.csv
           git diff --staged --quiet || git commit -m "Inventario actualizado $(date +'%Y-%m-%d %H:%M')"
-          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/logisticaguapa-arch/inventario-fruta.git
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/logisticaguapa-arch/inventario-fruta.gitoken:${{ secrets.GITHUB_TOKEN }}@github.com/logisticaguapa-arch/inventario-fruta.git
