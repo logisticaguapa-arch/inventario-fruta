@@ -145,6 +145,7 @@ table.ctable tr:hover td{background:#f8fafc}
 <div class="kpis">
   <div class="kpi urg"><div class="v" id="kUrg">—</div><div class="l">Criticas +48h</div></div>
   <div class="kpi def"><div class="v" id="kE">—</div><div class="l">Estibas en bodega</div></div>
+  <div class="kpi" style="border-left:5px solid #8b5cf6"><div class="v" id="kBin" style="color:#7c3aed">—</div><div class="l">Bines en bodega</div></div>
   <div class="kpi ok" ><div class="v" id="kK">—</div><div class="l">Kg disponibles</div></div>
   <div class="kpi inf"><div class="v" id="kF">—</div><div class="l">Dias de cosecha</div></div>
 </div>
@@ -196,6 +197,11 @@ table.ctable tr:hover td{background:#f8fafc}
 <script>
 const TAM_NAMES={'PE1':'PE1','PE2':'PE2','PE3':'PE3','PE4':'PE4','PEGUA':'Guapita','PEBAB':'Baby','PIND':'Industria','AD1':'AD1','AD2':'AD2','AD3':'AD3','PJUG':'Jugos'};
 
+function isBin(bin){
+  if(!bin)return false;
+  const s=String(bin).trim();
+  return s.length<=3&&s!==''&&!isNaN(parseFloat(s));
+}
 function getMadurez(c){
   const s=String(c).trim().replace(',','.');
   if(s.includes('-')&&!s.startsWith('-')){
@@ -261,8 +267,11 @@ function setView(v){currentView=v;['tarjetas','tabla','bodega'].forEach(x=>{docu
 function render(){
   const data=filtered();
   const kg=data.reduce((s,r)=>s+(parseFloat(r.KgDisponibles)||0),0);
+  const nBines=data.filter(r=>isBin(r.Bin)).length;
+  const nEstibas=data.filter(r=>!isBin(r.Bin)).length;
   document.getElementById('kUrg').textContent=data.filter(r=>horasDesde(r.Fecha)>=48).length;
-  document.getElementById('kE').textContent=data.length.toLocaleString('es-CO');
+  document.getElementById('kE').textContent=nEstibas.toLocaleString('es-CO');
+  document.getElementById('kBin').textContent=nBines.toLocaleString('es-CO');
   document.getElementById('kK').textContent=Math.round(kg).toLocaleString('es-CO')+' kg';
   document.getElementById('kF').textContent=[...new Set(data.map(r=>r.Fecha))].length;
   if(currentView==='tarjetas')renderTarjetas(data);
