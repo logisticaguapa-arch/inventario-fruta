@@ -28,7 +28,6 @@ jobs:
           wb = openpyxl.load_workbook(io.BytesIO(r.content), data_only=True)
           ws = wb["Inventario"]
 
-          # Columnas: A=ID, B=Fecha, C=Calidad, D=Nombre, E=Calibre, F=KgDisponibles
           csv = "ID,Fecha,Calidad,Nombre,Calibre,KgDisponibles\n"
           for row in ws.iter_rows(min_row=2, values_only=True):
               if not row[0]: continue
@@ -49,9 +48,6 @@ jobs:
         run: |
           git config user.email "action@github.com"
           git config user.name "GitHub Action"
-          git stash
-          git pull --rebase
-          git stash pop
           git add inventario.csv
           git diff --staged --quiet || git commit -m "Inventario actualizado $(date +'%Y-%m-%d %H:%M')"
-          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/logisticaguapa-arch/inventario-fruta.gitoken:${{ secrets.GITHUB_TOKEN }}@github.com/logisticaguapa-arch/inventario-fruta.git
+          git push origin main
