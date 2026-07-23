@@ -307,7 +307,7 @@ function renderTarjetas(data){
   const fechas=[...new Set(data.map(r=>r.Fecha))].sort();
   let html='';
   fechas.forEach(fecha=>{
-    const h=horasDesde(fecha),bloque=data.filter(r=>r.Fecha===fecha);
+    const h=horasDesde(fecha),bloque=estibas.filter(r=>r.Fecha===fecha);
     const kgB=bloque.reduce((s,r)=>s+(parseFloat(r.KgDisponibles)||0),0);
     html+=`<div class="dia-block"><div class="dia-hdr">
       <span class="${urgClass(h)}">${horasLabel(h)} en bodega</span>
@@ -380,11 +380,42 @@ function renderTabla(data){
 function renderBodega(data){
   const el=document.getElementById('v-bodega');
   if(!data.length){el.innerHTML='<div class="empty">Sin estibas disponibles.</div>';return;}
-  const fechas=[...new Set(data.map(r=>r.Fecha))].sort();
-  const maxH=Math.max(...fechas.map(f=>horasDesde(f)));
+
+  const bines=data.filter(r=>isBin(r));
+  const estibas=data.filter(r=>!isBin(r));
+
   let html='';
+
+  // ── Sección BINES ────────────────────────────────────────────────────────
+  if(bines.length>0){
+    html+=`<div style="grid-column:1/-1;background:#f5f3ff;border:2px solid #8b5cf6;border-radius:12px;overflow:hidden;margin-bottom:4px">
+      <div style="background:#7c3aed;padding:10px 16px;display:flex;align-items:center;gap:10px">
+        <span style="font-size:.9rem;font-weight:700;color:#fff">🗳️ BINES EN BODEGA</span>
+        <span style="background:#fff;color:#7c3aed;padding:2px 10px;border-radius:20px;font-size:.72rem;font-weight:800">${{bines.length}} bines</span>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;padding:12px 16px">`;
+
+    bines.forEach(r=>{
+      const h=horasDesde(r.Fecha);
+      const mad=getMadurez(r.Calibre);
+      const dot=mad==='verde'?'#16a34a':mad==='pintona'?'#ca8a04':'#ea580c';
+      const madLbl=mad==='verde'?'Verde':mad==='pintona'?'Pintona':'Madura';
+      html+=`<div style="background:#fff;border:1px solid #ddd6fe;border-left:4px solid ${{dot}};border-radius:8px;padding:8px 12px;min-width:130px">
+        <div style="font-size:.78rem;font-weight:800;color:#5b21b6">Bin ${{r.Bin}}</div>
+        <div style="font-size:.72rem;color:#475569;margin-top:2px">${{r.Calidad}} · ${{r.Nombre}}</div>
+        <div style="font-size:.72rem;font-weight:700;margin-top:3px;color:${{dot}}">${{madLbl}} · Calibre ${{r.Calibre}}</div>
+        <div style="font-size:.7rem;color:#64748b;margin-top:2px">${{Math.round(parseFloat(r.KgDisponibles)||0).toLocaleString('es-CO')}} kg</div>
+        <div style="font-size:.68rem;font-weight:700;margin-top:3px;color:${{urgColor(h)}}">${{horasLabel(h)}} en reposo</div>
+      </div>`;
+    });
+
+    html+=`</div></div>`;
+  }
+
+  const fechas=[...new Set(estibas.map(r=>r.Fecha))].sort();
+  const maxH=fechas.length?Math.max(...fechas.map(f=>horasDesde(f))):0;
   fechas.forEach(fecha=>{
-    const h=horasDesde(fecha),bloque=data.filter(r=>r.Fecha===fecha);
+    const h=horasDesde(fecha),bloque=estibas.filter(r=>r.Fecha===fecha);
     const kgT=bloque.reduce((s,r)=>s+(parseFloat(r.KgDisponibles)||0),0);
     const pct=Math.min(100,Math.round((h/Math.max(maxH,1))*100));
     html+=`<div class="bod-card"><div class="bod-top">
