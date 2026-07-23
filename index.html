@@ -111,7 +111,7 @@ table.ctable tr:hover td{background:#f8fafc}
 .mad-group-hdr td{font-weight:700;padding:6px 14px;font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;color:#fff}
 
 /* ── BODEGA ── */
-.v-bodega{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+.v-bodega{display:flex;flex-direction:column;gap:12px}.bod-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
 .bod-card{background:#fff;border:1px solid #e2e8f0;border-radius:10px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,0.06)}
 .bod-top{padding:10px 14px;display:flex;align-items:center;gap:8px;border-bottom:1px solid #2a3f55;background:#1e293b}
 .bod-fecha{font-size:.82rem;font-weight:700;color:#e2e8f0}
@@ -388,7 +388,7 @@ function renderBodega(data){
 
   // ── Sección BINES ────────────────────────────────────────────────────────
   if(bines.length>0){
-    html+=`<div style="grid-column:1/-1;background:#f5f3ff;border:2px solid #8b5cf6;border-radius:12px;overflow:hidden;margin-bottom:4px">
+    html+=`<div style="background:#f5f3ff;border:2px solid #8b5cf6;border-radius:12px;overflow:hidden;margin-bottom:4px">
       <div style="background:#7c3aed;padding:10px 16px;display:flex;align-items:center;gap:10px">
         <span style="font-size:.9rem;font-weight:700;color:#fff">🗳️ BINES EN BODEGA</span>
         <span style="background:#fff;color:#7c3aed;padding:2px 10px;border-radius:20px;font-size:.72rem;font-weight:800">${{bines.length}} bines</span>
@@ -414,6 +414,7 @@ function renderBodega(data){
 
   const fechas=[...new Set(estibas.map(r=>r.Fecha))].sort();
   const maxH=fechas.length?Math.max(...fechas.map(f=>horasDesde(f))):0;
+  html+='<div class="bod-grid">';
   fechas.forEach(fecha=>{
     const h=horasDesde(fecha),bloque=estibas.filter(r=>r.Fecha===fecha);
     const kgT=bloque.reduce((s,r)=>s+(parseFloat(r.KgDisponibles)||0),0);
@@ -448,6 +449,7 @@ function renderBodega(data){
     });
     html+=`</div></div>`;
   });
+  html+='</div>';
   el.innerHTML=html;
 }
 
