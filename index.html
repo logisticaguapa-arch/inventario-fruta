@@ -359,7 +359,6 @@ function renderTarjetas(data){
         }).join(' | ');
         html+='<div class="tam-card '+C.card+'">';
         html+='<div class="tam-name" style="font-size:1.15rem;font-weight:800;color:#0f172a;margin-bottom:3px">'+(TAM_NAMES[tam]||tam)+'</div>';
-        html+='<div class="tam-calibre-big">'+calibres.map(function(c){return String(c).replace(',','.');}).join(' &middot; ')+'</div>';
         html+='<div style="font-size:1.35rem;font-weight:800;color:#1e293b;margin-top:4px">'+Math.round(kgT).toLocaleString('es-CO')+' kg</div>';
         html+='<div style="font-size:.92rem;font-weight:800;color:#1e293b;margin-top:5px">'+ft.length+' estiba'+(ft.length>1?'s':'')+'</div>';
         html+='</div>';
