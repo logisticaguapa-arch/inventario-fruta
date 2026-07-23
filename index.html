@@ -28,22 +28,22 @@ header h1 span{color:#64748b;font-size:.8rem;font-weight:400;margin-left:8px}
 .kpi.def .v{color:#1e293b}
 
 /* ── Views ── */
-.views{display:flex;gap:8px;padding:0 24px 12px;flex-wrap:wrap}
-.vbtn{padding:7px 16px;border:1px solid #e2e8f0;border-radius:7px;background:#fff;color:#64748b;font-size:.8rem;cursor:pointer;font-weight:600;font-family:inherit;transition:all .15s}
+.views{display:flex;gap:10px;padding:0 24px 14px;flex-wrap:wrap}
+.vbtn{padding:10px 20px;border:1px solid #e2e8f0;border-radius:8px;background:#fff;color:#64748b;font-size:1rem;cursor:pointer;font-weight:700;font-family:inherit;transition:all .15s}
 .vbtn.active{background:#22c55e;color:#0f1923;border-color:#22c55e}
 .vbtn:hover:not(.active){background:#f1f5f9;color:#1e293b}
 
 /* ── Filters ── */
-.bar{padding:0 24px 12px;display:flex;gap:8px;flex-wrap:wrap;align-items:center}
-.bar select{padding:6px 10px;border:1px solid #e2e8f0;border-radius:6px;background:#fff;color:#1e293b;font-size:.78rem;cursor:pointer;font-family:inherit}
+.bar{padding:0 24px 14px;display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.bar select{padding:9px 14px;border:1px solid #e2e8f0;border-radius:7px;background:#fff;color:#1e293b;font-size:.95rem;font-weight:600;cursor:pointer;font-family:inherit}
 .bar select:focus{outline:none;border-color:#22c55e}
-.breset{padding:6px 14px;background:#fff;color:#64748b;border:1px solid #e2e8f0;border-radius:6px;font-size:.78rem;cursor:pointer;font-family:inherit}
+.breset{padding:9px 18px;background:#fff;color:#64748b;border:1px solid #e2e8f0;border-radius:7px;font-size:.95rem;font-weight:600;cursor:pointer;font-family:inherit}
 .breset:hover{color:#1e293b;border-color:#94a3b8}
 
 /* ── Legend ── */
-.legend{display:flex;gap:14px;flex-wrap:wrap;padding:0 24px 14px;align-items:center}
-.leg{display:flex;align-items:center;gap:6px;font-size:.73rem;color:#64748b}
-.leg-dot{width:14px;height:14px;border-radius:50%;flex-shrink:0;border:2px solid rgba(255,255,255,0.1)}
+.legend{display:flex;gap:18px;flex-wrap:wrap;padding:0 24px 16px;align-items:center}
+.leg{display:flex;align-items:center;gap:8px;font-size:.92rem;font-weight:600;color:#334155}
+.leg-dot{width:18px;height:18px;border-radius:50%;flex-shrink:0;border:2px solid rgba(255,255,255,0.1)}
 
 .content{padding:0 24px 32px}
 
@@ -51,25 +51,25 @@ header h1 span{color:#64748b;font-size:.8rem;font-weight:400;margin-left:8px}
 /* VERDE */
 .c-verde-bg   {background:#f0fdf4;background-image:none}
 .c-verde-hdr  {background:#166534;color:#fff}
-.c-verde-txt  {color:#fff;font-weight:700}
+.c-verde-txt  {color:#15803d;font-weight:800}
 .c-verde-badge{background:#22c55e;color:#052e16;padding:2px 10px;border-radius:20px;font-size:.68rem;font-weight:700}
 .c-verde-card {background:#fff;border:1px solid #86efac;border-left:4px solid #16a34a}
 .c-verde-cell {background:#16a34a;color:#fff;font-weight:700}
 .pina-verde{}
 
-/* PINTONA - AMARILLO */
+/* PINTONA - AMARILLO VIBRANTE */
 .c-pintona-bg   {background:#fefce8;background-image:none}
-.c-pintona-hdr  {background:#854d0e;color:#fff}
-.c-pintona-txt  {color:#fff;font-weight:700}
-.c-pintona-badge{background:#fbbf24;color:#1c1a00;padding:2px 10px;border-radius:20px;font-size:.68rem;font-weight:700}
-.c-pintona-card {background:#fff;border:1px solid #fde047;border-left:4px solid #ca8a04}
-.c-pintona-cell {background:#ca8a04;color:#fff;font-weight:700}
+.c-pintona-hdr  {background:#eab308;color:#422006}
+.c-pintona-txt  {color:#a16207;font-weight:800}
+.c-pintona-badge{background:#eab308;color:#422006;padding:2px 10px;border-radius:20px;font-size:.68rem;font-weight:700}
+.c-pintona-card {background:#fff;border:1px solid #fde68a;border-left:4px solid #eab308}
+.c-pintona-cell {background:#eab308;color:#422006;font-weight:700}
 .pina-pintona{}
 
-/* MADURA - NARANJA */
+/* MADURA - NARANJA OSCURO */
 .c-madura-bg   {background:#fff7ed;background-image:none}
-.c-madura-hdr  {background:#c2410c;color:#fff}
-.c-madura-txt  {color:#fff;font-weight:700}
+.c-madura-hdr  {background:#ea580c;color:#fff}
+.c-madura-txt  {color:#c2410c;font-weight:800}
 .c-madura-badge{background:#f97316;color:#fff;padding:2px 10px;border-radius:20px;font-size:.68rem;font-weight:700}
 .c-madura-card {background:#fff;border:1px solid #fdba74;border-left:4px solid #ea580c}
 .c-madura-cell {background:#ea580c;color:#fff;font-weight:700}
@@ -146,7 +146,7 @@ table.ctable tr:hover td{background:#f8fafc}
 <div class="kpis">
   <div class="kpi urg"><div class="v" id="kUrg">—</div><div class="l">Criticas +48h</div></div>
   <div class="kpi def"><div class="v" id="kE">—</div><div class="l">Estibas en bodega</div></div>
-  <div class="kpi" style="border-left:5px solid #8b5cf6"><div class="v" id="kBin" style="color:#7c3aed">—</div><div class="l">Bines en bodega</div></div>
+  <div class="kpi def"><div class="v" id="kBin">—</div><div class="l">Bines en bodega</div></div>
   <div class="kpi ok" ><div class="v" id="kK">—</div><div class="l">Kg disponibles</div></div>
   <div class="kpi inf"><div class="v" id="kF">—</div><div class="l">Dias de cosecha</div></div>
 </div>
@@ -155,14 +155,15 @@ table.ctable tr:hover td{background:#f8fafc}
   <button class="vbtn active" onclick="setView('tarjetas')" id="btn-tarjetas">Tarjetas por dia</button>
   <button class="vbtn" onclick="setView('tabla')"    id="btn-tabla">Tabla coloreada</button>
   <button class="vbtn" onclick="setView('bodega')"   id="btn-bodega">Bodega + Urgencia</button>
+  <button class="vbtn" onclick="setView('bines')"    id="btn-bines">Bines</button>
 </div>
 
 <div class="bar">
   <select id="fMad">
     <option value="">Toda la madurez</option>
     <option value="verde">🟢 Verde (0 - 1.0)</option>
-    <option value="pintona">🟠 Pintona (1.5 - 2.5)</option>
-    <option value="madura">🟡 Madura (3.0 - 4.0)</option>
+    <option value="pintona">🟡 Pintona (1.5 - 2.5)</option>
+    <option value="madura">🟠 Madura (3.0 - 4.0)</option>
   </select>
   <select id="fCalibr">
     <option value="">Todos los calibres</option>
@@ -185,14 +186,15 @@ table.ctable tr:hover td{background:#f8fafc}
 
 <div class="legend">
   <div class="leg"><div class="leg-dot" style="background:#22c55e"></div><span>Verde — calibre 0 a 1.0</span></div>
-  <div class="leg"><div class="leg-dot" style="background:#fbbf24"></div><span>Pintona — calibre 1.5 a 2.5</span></div>
-  <div class="leg"><div class="leg-dot" style="background:#fb923c"></div><span>Madura — calibre 3.0 a 4.0 (vender primero)</span></div>
+  <div class="leg"><div class="leg-dot" style="background:#eab308"></div><span>Pintona — calibre 1.5 a 2.5</span></div>
+  <div class="leg"><div class="leg-dot" style="background:#ea580c"></div><span>Madura — calibre 3.0 a 4.0 (vender primero)</span></div>
 </div>
 
 <div class="content">
   <div id="v-tarjetas" class="v-tarjetas"></div>
   <div id="v-tabla"    class="v-tabla"    style="display:none"></div>
   <div id="v-bodega"   class="v-bodega"   style="display:none"></div>
+  <div id="v-bines"    class="v-bines"    style="display:none"></div>
 </div>
 
 <script>
@@ -224,9 +226,13 @@ function getCalibreLabel(c){
 }
 
 function getMadClasses(mad){
-  const map={verde:{bg:'c-verde-bg',hdr:'c-verde-hdr',txt:'c-verde-txt',badge:'c-verde-badge',card:'c-verde-card',cell:'c-verde-cell',pina:'pina-verde',dot:'#16a34a',label:'VERDE',calib:'0 - 1.0'},pintona:{bg:'c-pintona-bg',hdr:'c-pintona-hdr',txt:'c-pintona-txt',badge:'c-pintona-badge',card:'c-pintona-card',cell:'c-pintona-cell',pina:'pina-pintona',dot:'#a16207',label:'PINTONA',calib:'1.5 - 2.5'},madura:{bg:'c-madura-bg',hdr:'c-madura-hdr',txt:'c-madura-txt',badge:'c-madura-badge',card:'c-madura-card',cell:'c-madura-cell',pina:'pina-madura',dot:'#c2410c',label:'MADURA',calib:'3.0 - 4.0'}};
+  const map={verde:{bg:'c-verde-bg',hdr:'c-verde-hdr',txt:'c-verde-txt',badge:'c-verde-badge',card:'c-verde-card',cell:'c-verde-cell',pina:'pina-verde',dot:'#16a34a',label:'VERDE',calib:'0 - 1.0'},pintona:{bg:'c-pintona-bg',hdr:'c-pintona-hdr',txt:'c-pintona-txt',badge:'c-pintona-badge',card:'c-pintona-card',cell:'c-pintona-cell',pina:'pina-pintona',dot:'#eab308',label:'PINTONA',calib:'1.5 - 2.5'},madura:{bg:'c-madura-bg',hdr:'c-madura-hdr',txt:'c-madura-txt',badge:'c-madura-badge',card:'c-madura-card',cell:'c-madura-cell',pina:'pina-madura',dot:'#ea580c',label:'MADURA',calib:'3.0 - 4.0'}};
   return map[mad]||map.madura;
 }
+// Color único de fondo por madurez, usado en zonas donde no aplica una clase CSS (headers dinámicos, tarjetas de bines, etc.)
+function madBg(mad){return mad==='verde'?'#166534':mad==='pintona'?'#eab308':'#ea580c';}
+// Color de texto legible sobre madBg() — la pintona es un fondo claro y necesita texto oscuro
+function madFg(mad){return mad==='pintona'?'#422006':'#fff';}
 
 function urgColor(h){return h>=72?'#ef4444':h>=48?'#f97316':h>=24?'#eab308':'#22c55e'}
 function urgClass(h){return h>=72?'horas-critico':h>=48?'horas-alto':h>=24?'horas-medio':'horas-ok'}
@@ -306,7 +312,7 @@ function filtered(){
   const m=document.getElementById('fMad').value,cal=document.getElementById('fCalibr').value,t=document.getElementById('fTam').value,f=document.getElementById('fFec').value;
   return ALL.filter(r=>(!m||getMadurez(r.Calibre)===m)&&(!cal||r.Calibre===cal)&&(!t||r.Calidad===t)&&(!f||r.Fecha===f));
 }
-function setView(v){currentView=v;['tarjetas','tabla','bodega'].forEach(x=>{document.getElementById('v-'+x).style.display=x===v?'':'none';document.getElementById('btn-'+x).classList.toggle('active',x===v);});render();}
+function setView(v){currentView=v;['tarjetas','tabla','bodega','bines'].forEach(x=>{document.getElementById('v-'+x).style.display=x===v?'':'none';document.getElementById('btn-'+x).classList.toggle('active',x===v);});render();}
 
 function render(){
   const data=filtered();
@@ -321,6 +327,7 @@ function render(){
   if(currentView==='tarjetas')renderTarjetas(data);
   if(currentView==='tabla')renderTabla(data);
   if(currentView==='bodega')renderBodega(data);
+  if(currentView==='bines')renderBines(data);
 }
 
 function renderTarjetas(data){
@@ -348,19 +355,17 @@ function renderTarjetas(data){
       html+='<span style="margin-left:auto;background:rgba(0,0,0,0.35);color:#fff;padding:3px 12px;border-radius:20px;font-size:.85rem;font-weight:800">'+Math.round(kgM).toLocaleString('es-CO')+' kg</span>';
       html+='</div>';
       html+='<div class="tam-grid '+C.bg+'">';
-      const tams=[...new Set(filas.map(function(r){return r.Calidad;}))].sort();
-      tams.forEach(function(tam){
+      const tamsSet=[...new Set(filas.map(function(r){return r.Calidad;}))];
+      const tamsOrdenados=tamsSet.map(function(tam){
         const ft=filas.filter(function(r){return r.Calidad===tam;});
         const kgT=ft.reduce(function(s,r){return s+(parseFloat(r.KgDisponibles)||0);},0);
-        const calibres=[...new Set(ft.map(function(r){return r.Calibre;}))].sort(function(a,b){return parseFloat(a)-parseFloat(b);});
-        const calStr=calibres.map(function(c){
-          const kgC=ft.filter(function(r){return r.Calibre===c;}).reduce(function(s,r){return s+(parseFloat(r.KgDisponibles)||0);},0);
-          return getCalibreLabel(c)+': '+Math.round(kgC).toLocaleString('es-CO')+' kg';
-        }).join(' | ');
+        return {tam:tam,ft:ft,kgT:kgT};
+      }).sort(function(a,b){return b.kgT-a.kgT;});
+      tamsOrdenados.forEach(function(to){
         html+='<div class="tam-card '+C.card+'">';
-        html+='<div class="tam-name" style="font-size:1.15rem;font-weight:800;color:#0f172a;margin-bottom:3px">'+(TAM_NAMES[tam]||tam)+'</div>';
-        html+='<div style="font-size:1.35rem;font-weight:800;color:#1e293b;margin-top:4px">'+Math.round(kgT).toLocaleString('es-CO')+' kg</div>';
-        html+='<div style="font-size:.92rem;font-weight:800;color:#1e293b;margin-top:5px">'+ft.length+' estiba'+(ft.length>1?'s':'')+'</div>';
+        html+='<div class="tam-name" style="font-size:1.15rem;font-weight:800;color:#0f172a;margin-bottom:3px">'+(TAM_NAMES[to.tam]||to.tam)+'</div>';
+        html+='<div style="font-size:1.35rem;font-weight:800;color:#1e293b;margin-top:4px">'+Math.round(to.kgT).toLocaleString('es-CO')+' kg</div>';
+        html+='<div style="font-size:.92rem;font-weight:800;color:#1e293b;margin-top:5px">'+to.ft.length+' estiba'+(to.ft.length>1?'s':'')+'</div>';
         html+='</div>';
       });
       html+='</div></div>';
@@ -390,7 +395,7 @@ function renderTabla(data){
   html+='<th>Total kg</th></tr></thead><tbody>';
   ['madura','pintona','verde'].forEach(function(mad){
     const C=getMadClasses(mad);
-    const bgH=mad==='verde'?'#166534':mad==='pintona'?'#854d0e':'#9a3412';
+    const bgH=madBg(mad), fgH=madFg(mad);
     // -- Precalcular totales por tam y ordenar de mayor a menor --
     const filas=tams.map(function(tam){
       let total=0,hasData=false;
@@ -404,7 +409,7 @@ function renderTabla(data){
       return {tam:tam,total:total,hasData:hasData,kgPorFecha:kgPorFecha};
     }).filter(function(x){return x.hasData;}).sort(function(a,b){return b.total-a.total;});
     if(!filas.length) return;
-    html+='<tr class="mad-group-hdr"><td class="left" colspan="'+(fechas.length+2)+'" style="background:'+bgH+';color:#fff">'+C.label+' &mdash; calibre '+C.calib+'</td></tr>';
+    html+='<tr class="mad-group-hdr"><td class="left" colspan="'+(fechas.length+2)+'" style="background:'+bgH+';color:'+fgH+'">'+C.label+' &mdash; calibre '+C.calib+'</td></tr>';
     filas.forEach(function(fi){
       let row='<tr><td class="left" style="padding-left:20px;color:#1e293b;font-weight:700">'+(TAM_NAMES[fi.tam]||fi.tam)+'</td>';
       fechas.forEach(function(f){
@@ -429,34 +434,9 @@ function renderTabla(data){
 
 function renderBodega(data){
   const el=document.getElementById('v-bodega');
-  if(!data.length){el.innerHTML='<div class="empty">Sin estibas disponibles.</div>';return;}
-
-  const bines   = data.filter(r=>isBin(r));
   const estibas = data.filter(r=>!isBin(r));
+  if(!estibas.length){el.innerHTML='<div class="empty">Sin estibas disponibles.</div>';return;}
   let html = '';
-
-  // ── BINES ─────────────────────────────────────────────────────────────────
-  if(bines.length>0){
-    html += '<div style="background:#f5f3ff;border:2px solid #8b5cf6;border-radius:12px;overflow:hidden;margin-bottom:12px">';
-    html += '<div style="background:#7c3aed;padding:10px 16px;display:flex;align-items:center;gap:10px">';
-    html += '<span style="font-size:.9rem;font-weight:700;color:#fff">BINES EN BODEGA</span>';
-    html += '<span style="background:#fff;color:#7c3aed;padding:2px 10px;border-radius:20px;font-size:.72rem;font-weight:800">'+bines.length+' bines</span>';
-    html += '</div><div style="display:flex;flex-wrap:wrap;gap:8px;padding:12px 16px">';
-    bines.forEach(function(r){
-      const h   = horasDesde(r.Fecha);
-      const mad = getMadurez(r.Calibre);
-      const dot = mad==='verde'?'#16a34a':mad==='pintona'?'#ca8a04':'#ea580c';
-      const lbl = mad==='verde'?'Verde':mad==='pintona'?'Pintona':'Madura';
-      html += '<div style="background:#fff;border:1px solid #ddd6fe;border-left:4px solid '+dot+';border-radius:8px;padding:8px 12px;min-width:130px">';
-      html += '<div style="font-size:.78rem;font-weight:800;color:#5b21b6">Bin '+r.Bin+'</div>';
-      html += '<div style="font-size:.72rem;color:#475569;margin-top:2px">'+r.Calidad+' &middot; '+r.Nombre+'</div>';
-      html += '<div style="font-size:.72rem;font-weight:700;margin-top:3px;color:'+dot+'">'+lbl+' &middot; Calibre '+r.Calibre+'</div>';
-      html += '<div style="font-size:.7rem;color:#64748b;margin-top:2px">'+Math.round(parseFloat(r.KgDisponibles)||0).toLocaleString('es-CO')+' kg</div>';
-      html += '<div style="font-size:.68rem;font-weight:700;margin-top:3px;color:'+urgColor(h)+'">'+horasLabel(h)+' en reposo</div>';
-      html += '</div>';
-    });
-    html += '</div></div>';
-  }
 
   // ── ESTIBAS ───────────────────────────────────────────────────────────────
   const fechas = [...new Set(estibas.map(function(r){return r.Fecha;}))].sort();
@@ -486,20 +466,52 @@ function renderBodega(data){
         const ft  = fm.filter(function(r){return r.Calidad===tam;});
         const kg  = ft.reduce(function(s,r){return s+(parseFloat(r.KgDisponibles)||0);},0);
         const cals= [...new Set(ft.map(function(r){return r.Calibre;}))].sort(function(a,b){return parseFloat(a)-parseFloat(b);});
-        const bgC = mad==='verde'?'#166534':mad==='pintona'?'#854d0e':'#9a3412';
+        const bgC = madBg(mad), fgC = madFg(mad);
         html += '<div class="bod-item" style="background:'+bgC+';border-radius:6px;padding:6px 8px;display:flex;align-items:center;gap:8px">';
-        html += '<div class="bod-dot" style="background:#fff;width:9px;height:9px;border-radius:50%;flex-shrink:0"></div>';
-        html += '<div style="flex:1;font-size:.74rem;font-weight:600;color:#fff">';
+        html += '<div class="bod-dot" style="background:'+fgC+';width:9px;height:9px;border-radius:50%;flex-shrink:0"></div>';
+        html += '<div style="flex:1;font-size:.74rem;font-weight:600;color:'+fgC+'">';
         html += '<div>'+C.label+' &middot; '+(TAM_NAMES[tam]||tam)+'</div>';
         html += '<div style="font-size:.68rem;font-weight:800;opacity:.9">'+cals.map(function(c){return String(c).replace(',','.');}).join(' &middot; ')+'</div>';
         html += '</div>';
-        html += '<div style="font-size:.82rem;font-weight:800;color:#fff">'+Math.round(kg).toLocaleString('es-CO')+' kg</div>';
+        html += '<div style="font-size:.82rem;font-weight:800;color:'+fgC+'">'+Math.round(kg).toLocaleString('es-CO')+' kg</div>';
         html += '</div>';
       });
     });
     html += '</div></div>';
   });
   html += '</div>';
+  el.innerHTML = html;
+}
+
+function madTextColor(mad){return mad==='verde'?'#15803d':mad==='pintona'?'#a16207':'#c2410c';}
+
+function renderBines(data){
+  const el=document.getElementById('v-bines');
+  const bines = data.filter(r=>isBin(r)).slice().sort(function(a,b){return (parseFloat(b.KgDisponibles)||0)-(parseFloat(a.KgDisponibles)||0);});
+  if(!bines.length){el.innerHTML='<div class="empty">Sin bines disponibles.</div>';return;}
+
+  const kgTotal = bines.reduce(function(s,r){return s+(parseFloat(r.KgDisponibles)||0);},0);
+  let html = '<div style="background:#f8fafc;border:2px solid #e2e8f0;border-radius:12px;overflow:hidden">';
+  html += '<div style="background:#1e293b;padding:12px 18px;display:flex;align-items:center;gap:12px;flex-wrap:wrap">';
+  html += '<span style="font-size:1.1rem;font-weight:800;color:#fff">BINES EN BODEGA</span>';
+  html += '<span style="background:#fff;color:#1e293b;padding:3px 12px;border-radius:20px;font-size:.85rem;font-weight:800">'+bines.length+' bines</span>';
+  html += '<span style="margin-left:auto;background:rgba(255,255,255,0.2);color:#fff;padding:3px 12px;border-radius:20px;font-size:.85rem;font-weight:800">'+Math.round(kgTotal).toLocaleString('es-CO')+' kg</span>';
+  html += '</div><div style="display:flex;flex-wrap:wrap;gap:10px;padding:16px 18px">';
+  bines.forEach(function(r){
+    const h   = horasDesde(r.Fecha);
+    const mad = getMadurez(r.Calibre);
+    const accent = madBg(mad)==='#166534'?'#16a34a':madBg(mad);
+    const txt = madTextColor(mad);
+    const lbl = mad==='verde'?'Verde':mad==='pintona'?'Pintona':'Madura';
+    html += '<div style="background:#fff;border:1px solid #e2e8f0;border-left:4px solid '+accent+';border-radius:8px;padding:10px 14px;min-width:160px">';
+    html += '<div style="font-size:.95rem;font-weight:800;color:#1e293b">Bin '+r.Bin+'</div>';
+    html += '<div style="font-size:.85rem;color:#475569;margin-top:2px">'+r.Calidad+' &middot; '+r.Nombre+'</div>';
+    html += '<div style="font-size:.85rem;font-weight:700;margin-top:3px;color:'+txt+'">'+lbl+' &middot; Calibre '+r.Calibre+'</div>';
+    html += '<div style="font-size:.85rem;font-weight:700;color:#1e293b;margin-top:2px">'+Math.round(parseFloat(r.KgDisponibles)||0).toLocaleString('es-CO')+' kg</div>';
+    html += '<div style="font-size:.78rem;font-weight:700;margin-top:3px;color:'+urgColor(h)+'">'+horasLabel(h)+' en reposo</div>';
+    html += '</div>';
+  });
+  html += '</div></div>';
   el.innerHTML = html;
 }
 
