@@ -22,6 +22,7 @@ header h1 span{color:#64748b;font-size:.8rem;font-weight:400;margin-left:8px}
 .kpi{flex:1;min-width:130px;background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:14px 16px;box-shadow:0 1px 3px rgba(0,0,0,0.07)}
 .kpi .v{font-size:1.6rem;font-weight:800;line-height:1;color:#1e293b}
 .kpi .l{font-size:.68rem;color:#475569;margin-top:4px;text-transform:uppercase;letter-spacing:.05em;font-weight:600}
+.kpi .sub{font-size:.72rem;color:#94a3b8;margin-top:3px;font-weight:600}
 .kpi.urg .v{color:#dc2626}
 .kpi.ok  .v{color:#16a34a}
 .kpi.inf .v{color:#1d4ed8}
@@ -145,8 +146,8 @@ table.ctable tr:hover td{background:#f8fafc}
 
 <div class="kpis">
   <div class="kpi urg"><div class="v" id="kUrg">—</div><div class="l">Criticas +48h</div></div>
-  <div class="kpi def"><div class="v" id="kE">—</div><div class="l">Estibas en bodega</div></div>
-  <div class="kpi def"><div class="v" id="kBin">—</div><div class="l">Bines en bodega</div></div>
+  <div class="kpi def"><div class="v" id="kE">—</div><div class="l">Estibas en bodega</div><div class="sub" id="kEKg">—</div></div>
+  <div class="kpi def"><div class="v" id="kBin">—</div><div class="l">Bines en bodega</div><div class="sub" id="kBinKg">—</div></div>
   <div class="kpi ok" ><div class="v" id="kK">—</div><div class="l">Kg disponibles</div></div>
   <div class="kpi inf"><div class="v" id="kF">—</div><div class="l">Dias de cosecha</div></div>
 </div>
@@ -317,11 +318,19 @@ function setView(v){currentView=v;['tarjetas','tabla','bodega','bines'].forEach(
 function render(){
   const data=filtered();
   const kg=data.reduce((s,r)=>s+(parseFloat(r.KgDisponibles)||0),0);
-  const nBines=data.filter(r=>isBin(r)).length;
-  const nEstibas=data.filter(r=>!isBin(r)).length;
+  const rBines=data.filter(r=>isBin(r));
+  const rEstibas=data.filter(r=>!isBin(r));
+  const nBines=rBines.length;
+  const nEstibas=rEstibas.length;
+  const kgBines=rBines.reduce((s,r)=>s+(parseFloat(r.KgDisponibles)||0),0);
+  const kgEstibas=rEstibas.reduce((s,r)=>s+(parseFloat(r.KgDisponibles)||0),0);
+  const pctBines=kg>0?Math.round(kgBines/kg*100):0;
+  const pctEstibas=kg>0?Math.round(kgEstibas/kg*100):0;
   document.getElementById('kUrg').textContent=data.filter(r=>horasDesde(r.Fecha)>=48).length;
   document.getElementById('kE').textContent=nEstibas.toLocaleString('es-CO');
   document.getElementById('kBin').textContent=nBines.toLocaleString('es-CO');
+  document.getElementById('kEKg').textContent=Math.round(kgEstibas).toLocaleString('es-CO')+' kg · '+pctEstibas+'%';
+  document.getElementById('kBinKg').textContent=Math.round(kgBines).toLocaleString('es-CO')+' kg · '+pctBines+'%';
   document.getElementById('kK').textContent=Math.round(kg).toLocaleString('es-CO')+' kg';
   document.getElementById('kF').textContent=[...new Set(data.map(r=>r.Fecha))].length;
   if(currentView==='tarjetas')renderTarjetas(data);
