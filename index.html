@@ -325,40 +325,45 @@ function render(){
 function renderTarjetas(data){
   const el=document.getElementById('v-tarjetas');
   if(!data.length){el.innerHTML='<div class="empty">Sin estibas disponibles.</div>';return;}
-  const fechas=[...new Set(data.map(r=>r.Fecha))].sort();
+  const fechas=[...new Set(data.map(function(r){return r.Fecha;}))].sort();
   let html='';
-  fechas.forEach(fecha=>{
-    const h=horasDesde(fecha),bloque=estibas.filter(r=>r.Fecha===fecha);
-    const kgB=bloque.reduce((s,r)=>s+(parseFloat(r.KgDisponibles)||0),0);
-    html+=`<div class="dia-block"><div class="dia-hdr">
-      <span class="${urgClass(h)}">${horasLabel(h)} en bodega</span>
-      <h2>${fmtF(fecha)}</h2>
-      <div class="dia-kg">Total: <strong>${Math.round(kgB).toLocaleString('es-CO')} kg</strong></div>
-    </div>`;
-    ['madura','pintona','verde'].forEach(mad=>{
-      const filas=bloque.filter(r=>getMadurez(r.Calibre)===mad);
-      if(!filas.length)return;
+  fechas.forEach(function(fecha){
+    const h=horasDesde(fecha);
+    const bloque=data.filter(function(r){return r.Fecha===fecha;});
+    const kgB=bloque.reduce(function(s,r){return s+(parseFloat(r.KgDisponibles)||0);},0);
+    html+='<div class="dia-block">';
+    html+='<div class="dia-hdr"><span class="'+urgClass(h)+'">'+horasLabel(h)+' en bodega</span>';
+    html+='<h2>'+fmtF(fecha)+'</h2>';
+    html+='<div class="dia-kg">Total: <strong>'+Math.round(kgB).toLocaleString('es-CO')+' kg</strong></div></div>';
+    ['madura','pintona','verde'].forEach(function(mad){
+      const filas=bloque.filter(function(r){return getMadurez(r.Calibre)===mad;});
+      if(!filas.length) return;
       const C=getMadClasses(mad);
-      const kgM=filas.reduce((s,r)=>s+(parseFloat(r.KgDisponibles)||0),0);
-      html+=`<div class="mad-section"><div class="mad-hdr ${C.hdr} ${C.pina}">
-        <span class="${C.badge}">${C.label}</span>
-        <span style="font-size:.73rem;opacity:.8">Calibre ${C.calib}</span>
-        <span class="mad-kg ${C.txt}">${Math.round(kgM).toLocaleString('es-CO')} kg</span>
-      </div><div class="tam-grid ${C.bg}">`;
-      const tams=[...new Set(filas.map(r=>r.Calidad))].sort();
-      tams.forEach(tam=>{
-        const ft=filas.filter(r=>r.Calidad===tam);
-        const kgT=ft.reduce((s,r)=>s+(parseFloat(r.KgDisponibles)||0),0);
-        const calibres=[...new Set(ft.map(r=>r.Calibre))].sort((a,b)=>parseFloat(a)-parseFloat(b));
-        const calStr=calibres.map(c=>getCalibreLabel(c)+': '+Math.round(ft.filter(r=>r.Calibre===c).reduce((s,r)=>s+(parseFloat(r.KgDisponibles)||0),0)).toLocaleString('es-CO')+' kg').join(' · ');
-        html+=`<div class="tam-card ${C.card}">
-          <div class="tam-name">${TAM_NAMES[tam]||tam} (${tam})</div>
-          <div class="tam-kg ${C.txt}">${Math.round(kgT).toLocaleString('es-CO')} kg</div>
-          <div class="tam-cal ${C.txt}">${calStr}</div>
-          <div class="tam-sub">${ft.length} estiba${ft.length>1?'s':''}</div>
-        </div>`;
+      const kgM=filas.reduce(function(s,r){return s+(parseFloat(r.KgDisponibles)||0);},0);
+      html+='<div class="mad-section">';
+      html+='<div class="mad-hdr '+C.hdr+'">';
+      html+='<span class="'+C.badge+'">'+C.label+'</span>';
+      html+='<span style="font-size:.73rem;opacity:.8">Calibre '+C.calib+'</span>';
+      html+='<span style="margin-left:auto;background:rgba(0,0,0,0.35);color:#fff;padding:3px 12px;border-radius:20px;font-size:.85rem;font-weight:800">'+Math.round(kgM).toLocaleString('es-CO')+' kg</span>';
+      html+='</div>';
+      html+='<div class="tam-grid '+C.bg+'">';
+      const tams=[...new Set(filas.map(function(r){return r.Calidad;}))].sort();
+      tams.forEach(function(tam){
+        const ft=filas.filter(function(r){return r.Calidad===tam;});
+        const kgT=ft.reduce(function(s,r){return s+(parseFloat(r.KgDisponibles)||0);},0);
+        const calibres=[...new Set(ft.map(function(r){return r.Calibre;}))].sort(function(a,b){return parseFloat(a)-parseFloat(b);});
+        const calStr=calibres.map(function(c){
+          const kgC=ft.filter(function(r){return r.Calibre===c;}).reduce(function(s,r){return s+(parseFloat(r.KgDisponibles)||0);},0);
+          return getCalibreLabel(c)+': '+Math.round(kgC).toLocaleString('es-CO')+' kg';
+        }).join(' | ');
+        html+='<div class="tam-card '+C.card+'">';
+        html+='<div class="tam-name" style="font-size:.68rem;color:#64748b;margin-bottom:2px">'+(TAM_NAMES[tam]||tam)+'</div>';
+        html+='<div style="font-size:1.4rem;font-weight:900;color:#0f172a;line-height:1">'+calibres.map(function(c){return String(c).replace(',','.');}).join(' &middot; ')+'</div>';
+        html+='<div style="font-size:1rem;font-weight:700;color:#1e293b;margin-top:4px">'+Math.round(kgT).toLocaleString('es-CO')+' kg</div>';
+        html+='<div style="font-size:.65rem;color:#64748b;margin-top:3px">'+ft.length+' estiba'+(ft.length>1?'s':'')+'</div>';
+        html+='</div>';
       });
-      html+=`</div></div>`;
+      html+='</div></div>';
     });
     html+='</div>';
   });
@@ -368,33 +373,46 @@ function renderTarjetas(data){
 function renderTabla(data){
   const el=document.getElementById('v-tabla');
   if(!data.length){el.innerHTML='<div class="empty">Sin estibas disponibles.</div>';return;}
-  const fechas=[...new Set(data.map(r=>r.Fecha))].sort();
-  const tams=[...new Set(data.map(r=>r.Calidad))].sort();
+  const fechas=[...new Set(data.map(function(r){return r.Fecha;}))].sort();
+  const tams=[...new Set(data.map(function(r){return r.Calidad;}))].sort();
   const agg={};
-  data.forEach(r=>{const mad=getMadurez(r.Calibre);if(!agg[r.Fecha])agg[r.Fecha]={};if(!agg[r.Fecha][mad])agg[r.Fecha][mad]={};agg[r.Fecha][mad][r.Calidad]=(agg[r.Fecha][mad][r.Calidad]||0)+(parseFloat(r.KgDisponibles)||0);});
+  data.forEach(function(r){
+    const mad=getMadurez(r.Calibre);
+    if(!agg[r.Fecha]) agg[r.Fecha]={};
+    if(!agg[r.Fecha][mad]) agg[r.Fecha][mad]={};
+    agg[r.Fecha][mad][r.Calidad]=(agg[r.Fecha][mad][r.Calidad]||0)+(parseFloat(r.KgDisponibles)||0);
+  });
   let html='<table class="ctable"><thead><tr><th class="left">Madurez / Tamano</th>';
-  fechas.forEach(f=>{const h=horasDesde(f);html+=`<th>${fmtF(f)}<br><small style="color:${urgColor(h)}">${horasLabel(h)}</small></th>`;});
+  fechas.forEach(function(f){
+    const h=horasDesde(f);
+    html+='<th>'+fmtF(f)+'<br><small style="color:'+urgColor(h)+'">'+horasLabel(h)+'</small></th>';
+  });
   html+='<th>Total kg</th></tr></thead><tbody>';
-  ['madura','pintona','verde'].forEach(mad=>{
+  ['madura','pintona','verde'].forEach(function(mad){
     const C=getMadClasses(mad);
-    const bgHdr=mad==='verde'?'#166534':mad==='pintona'?'#9a3412':'#92400e';
-    html+=`<tr class="mad-group-hdr"><td class="left" colspan="${fechas.length+2}" style="background:${bgHdr};color:#fff">${C.label} — calibre ${C.calib}</td></tr>`;
-    tams.forEach(tam=>{
+    const bgH=mad==='verde'?'#166534':mad==='pintona'?'#854d0e':'#9a3412';
+    html+='<tr class="mad-group-hdr"><td class="left" colspan="'+(fechas.length+2)+'" style="background:'+bgH+';color:#fff">'+C.label+' &mdash; calibre '+C.calib+'</td></tr>';
+    tams.forEach(function(tam){
       let total=0,hasData=false;
-      let row=`<tr><td class="left" style="padding-left:20px">${TAM_NAMES[tam]||tam} (${tam})</td>`;
-      fechas.forEach(f=>{
-        const kg=agg[f]?.[mad]?.[tam]||0;total+=kg;
-        if(kg>0){hasData=true;row+=`<td class="${C.cell}">${Math.round(kg).toLocaleString('es-CO')}</td>`;}
-        else row+=`<td style="color:#2a3f55">—</td>`;
+      let row='<tr><td class="left" style="padding-left:20px;color:#1e293b;font-weight:700">'+(TAM_NAMES[tam]||tam)+'</td>';
+      fechas.forEach(function(f){
+        const kg=(agg[f]&&agg[f][mad]&&agg[f][mad][tam])||0;
+        total+=kg;
+        if(kg>0){hasData=true;row+='<td class="'+C.cell+'">'+Math.round(kg).toLocaleString('es-CO')+'</td>';}
+        else row+='<td style="color:#ccc">&mdash;</td>';
       });
-      row+=`<td class="${C.txt}">${total>0?Math.round(total).toLocaleString('es-CO'):'—'}</td></tr>`;
-      if(hasData)html+=row;
+      row+='<td class="'+C.txt+'">'+(total>0?Math.round(total).toLocaleString('es-CO'):'&mdash;')+'</td></tr>';
+      if(hasData) html+=row;
     });
   });
   let grand=0;
   html+='<tr class="tfoot-row"><td class="left">TOTAL GENERAL</td>';
-  fechas.forEach(f=>{const kg=Object.values(agg[f]||{}).reduce((s,m)=>s+Object.values(m).reduce((a,b)=>a+b,0),0);grand+=kg;html+=`<td>${Math.round(kg).toLocaleString('es-CO')}</td>`;});
-  html+=`<td>${Math.round(grand).toLocaleString('es-CO')}</td></tr></tbody></table>`;
+  fechas.forEach(function(f){
+    const kg=Object.values(agg[f]||{}).reduce(function(s,m){return s+Object.values(m).reduce(function(a,b){return a+b;},0);},0);
+    grand+=kg;
+    html+='<td>'+Math.round(kg).toLocaleString('es-CO')+'</td>';
+  });
+  html+='<td>'+Math.round(grand).toLocaleString('es-CO')+'</td></tr></tbody></table>';
   el.innerHTML=html;
 }
 
