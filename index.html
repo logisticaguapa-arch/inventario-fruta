@@ -93,11 +93,12 @@ header h1 span{color:#64748b;font-size:.8rem;font-weight:400;margin-left:8px}
 .mad-hdr .mad-kg{margin-left:auto;font-size:.88rem;font-weight:700}
 
 .tam-grid{display:flex;flex-wrap:wrap;gap:8px;padding:8px 16px 12px}
-.tam-card{border-radius:8px;padding:10px 14px;min-width:120px;flex:1}
+.tam-card{border-radius:8px;padding:10px 14px 12px;min-width:150px;flex:1}
 .tam-card .tam-name{font-size:.7rem;color:#475569;margin-bottom:4px;font-weight:600}
 .tam-card .tam-kg{font-size:1.1rem;font-weight:800;line-height:1.1;color:#0f172a}
 .tam-card .tam-cal{font-size:.62rem;margin-top:4px;color:#334155}
 .tam-card .tam-sub{font-size:.65rem;color:#64748b;margin-top:2px}
+.tam-card .tam-calibre-big{font-size:clamp(1.9rem,7vw,2.5rem);font-weight:900;line-height:1;letter-spacing:-.01em;margin:2px 0 6px;color:#0f172a}
 
 /* ── TABLA ── */
 .v-tabla{overflow-x:auto}
@@ -357,10 +358,10 @@ function renderTarjetas(data){
           return getCalibreLabel(c)+': '+Math.round(kgC).toLocaleString('es-CO')+' kg';
         }).join(' | ');
         html+='<div class="tam-card '+C.card+'">';
-        html+='<div class="tam-name" style="font-size:.68rem;color:#64748b;margin-bottom:2px">'+(TAM_NAMES[tam]||tam)+'</div>';
-        html+='<div style="font-size:1.4rem;font-weight:900;color:#0f172a;line-height:1">'+calibres.map(function(c){return String(c).replace(',','.');}).join(' &middot; ')+'</div>';
+        html+='<div class="tam-name" style="font-size:1.15rem;font-weight:800;color:#0f172a;margin-bottom:3px">'+(TAM_NAMES[tam]||tam)+'</div>';
+        html+='<div class="tam-calibre-big">'+calibres.map(function(c){return String(c).replace(',','.');}).join(' &middot; ')+'</div>';
         html+='<div style="font-size:1rem;font-weight:700;color:#1e293b;margin-top:4px">'+Math.round(kgT).toLocaleString('es-CO')+' kg</div>';
-        html+='<div style="font-size:.65rem;color:#64748b;margin-top:3px">'+ft.length+' estiba'+(ft.length>1?'s':'')+'</div>';
+        html+='<div style="font-size:.92rem;font-weight:800;color:#1e293b;margin-top:5px">'+ft.length+' estiba'+(ft.length>1?'s':'')+'</div>';
         html+='</div>';
       });
       html+='</div></div>';
