@@ -102,14 +102,14 @@ header h1 span{color:#64748b;font-size:.8rem;font-weight:400;margin-left:8px}
 
 /* ── TABLA ── */
 .v-tabla{overflow-x:auto}
-table.ctable{border-collapse:collapse;width:100%;background:#fff;border-radius:10px;overflow:hidden;font-size:.8rem;border:1px solid #e2e8f0;box-shadow:0 1px 4px rgba(0,0,0,0.06)}
-table.ctable th{background:#1e293b;color:#e2e8f0;padding:10px 14px;text-align:center;font-size:.7rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap;border-bottom:1px solid #f1f5f9}
+table.ctable{border-collapse:collapse;width:100%;background:#fff;border-radius:10px;overflow:hidden;font-size:.74rem;border:1px solid #e2e8f0;box-shadow:0 1px 4px rgba(0,0,0,0.06)}
+table.ctable th{background:#1e293b;color:#e2e8f0;padding:6px 10px;text-align:center;font-size:.64rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;white-space:nowrap;border-bottom:1px solid #f1f5f9;line-height:1.25}
 table.ctable th.left{text-align:left}
-table.ctable td{padding:8px 12px;border-bottom:1px solid #f1f5f9;text-align:right;white-space:nowrap;color:#1e293b}
+table.ctable td{padding:4px 10px;border-bottom:1px solid #f1f5f9;text-align:right;white-space:nowrap;color:#1e293b;line-height:1.2}
 table.ctable td.left{text-align:left;color:#1e293b;font-weight:600}
 table.ctable tr:hover td{background:#f8fafc}
-.tfoot-row td{background:#f1f5f9;color:#1e293b;font-weight:700;border-top:2px solid #2a3f55}
-.mad-group-hdr td{font-weight:700;padding:6px 14px;font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;color:#fff}
+.tfoot-row td{background:#f1f5f9;color:#1e293b;font-weight:700;border-top:2px solid #2a3f55;padding:5px 10px}
+.mad-group-hdr td{font-weight:700;padding:4px 10px;font-size:.66rem;letter-spacing:.04em;text-transform:uppercase;color:#fff}
 
 /* ── BODEGA ── */
 .v-bodega{display:flex;flex-direction:column;gap:12px}.bod-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
@@ -391,18 +391,29 @@ function renderTabla(data){
   ['madura','pintona','verde'].forEach(function(mad){
     const C=getMadClasses(mad);
     const bgH=mad==='verde'?'#166534':mad==='pintona'?'#854d0e':'#9a3412';
-    html+='<tr class="mad-group-hdr"><td class="left" colspan="'+(fechas.length+2)+'" style="background:'+bgH+';color:#fff">'+C.label+' &mdash; calibre '+C.calib+'</td></tr>';
-    tams.forEach(function(tam){
+    // -- Precalcular totales por tam y ordenar de mayor a menor --
+    const filas=tams.map(function(tam){
       let total=0,hasData=false;
-      let row='<tr><td class="left" style="padding-left:20px;color:#1e293b;font-weight:700">'+(TAM_NAMES[tam]||tam)+'</td>';
+      const kgPorFecha={};
       fechas.forEach(function(f){
         const kg=(agg[f]&&agg[f][mad]&&agg[f][mad][tam])||0;
+        kgPorFecha[f]=kg;
+        if(kg>0) hasData=true;
         total+=kg;
-        if(kg>0){hasData=true;row+='<td class="'+C.cell+'">'+Math.round(kg).toLocaleString('es-CO')+'</td>';}
+      });
+      return {tam:tam,total:total,hasData:hasData,kgPorFecha:kgPorFecha};
+    }).filter(function(x){return x.hasData;}).sort(function(a,b){return b.total-a.total;});
+    if(!filas.length) return;
+    html+='<tr class="mad-group-hdr"><td class="left" colspan="'+(fechas.length+2)+'" style="background:'+bgH+';color:#fff">'+C.label+' &mdash; calibre '+C.calib+'</td></tr>';
+    filas.forEach(function(fi){
+      let row='<tr><td class="left" style="padding-left:20px;color:#1e293b;font-weight:700">'+(TAM_NAMES[fi.tam]||fi.tam)+'</td>';
+      fechas.forEach(function(f){
+        const kg=fi.kgPorFecha[f];
+        if(kg>0) row+='<td class="'+C.cell+'">'+Math.round(kg).toLocaleString('es-CO')+'</td>';
         else row+='<td style="color:#ccc">&mdash;</td>';
       });
-      row+='<td class="'+C.txt+'">'+(total>0?Math.round(total).toLocaleString('es-CO'):'&mdash;')+'</td></tr>';
-      if(hasData) html+=row;
+      row+='<td class="'+C.txt+'">'+Math.round(fi.total).toLocaleString('es-CO')+'</td></tr>';
+      html+=row;
     });
   });
   let grand=0;
