@@ -299,7 +299,7 @@ function buildFilters(){
   fillSel('fFec',fechas,f=>fmtF(f)+' — '+horasLabel(horasDesde(f)));
   ['fMad','fCalibr','fTam','fFec'].forEach(id=>document.getElementById(id).onchange=render);
 }
-function fillSel(id,items,fn){const s=document.getElementById(id);items.forEach(v=>{const o=document.createElement('option');o.value=v;o.textContent=fn(v);s.appendChild(o);});}
+function fillSel(id,items,fn){const s=document.getElementById(id);while(s.options.length>1)s.remove(1);items.forEach(function(v){const o=document.createElement('option');o.value=v;o.textContent=fn(v);s.appendChild(o);});}
 function reset(){['fMad','fCalibr','fTam','fFec'].forEach(id=>document.getElementById(id).value='');render();}
 function filtered(){
   const m=document.getElementById('fMad').value,cal=document.getElementById('fCalibr').value,t=document.getElementById('fTam').value,f=document.getElementById('fFec').value;
