@@ -198,10 +198,11 @@ table.ctable tr:hover td{background:#f8fafc}
 const TAM_NAMES={'PE1':'PE1','PE2':'PE2','PE3':'PE3','PE4':'PE4','PEGUA':'Guapita','PEBAB':'Baby','PIND':'Industria','AD1':'AD1','AD2':'AD2','AD3':'AD3','PJUG':'Jugos'};
 
 function isBin(r){
-  // A record is a Bin if its ID has 2-3 digits
   if(!r)return false;
-  const id=String(r.ID||'').trim();
-  return id.length>=2&&id.length<=3&&!isNaN(parseFloat(id));
+  const b=String(r.Bin||'').trim().toLowerCase();
+  // Bin field contains a short number (2-3 digits) = bin
+  // Bin field contains "canastas" or empty = canasta/estiba
+  return b!==''&&b!=='canastas'&&b!=='canasta'&&!isNaN(parseFloat(b));
 }
 function getMadurez(c){
   const s=String(c).trim().replace(',','.');
@@ -248,14 +249,21 @@ function parseCSV(t){
   const lines=t.trim().split('\n');
   const hdr=lines[0].split(',').map(s=>s.trim().replace(/"/g,''));
   return lines.slice(1).map(l=>{
-    // Split respecting that calibre can have spaces around dash: "1,5 - 2,5"
-    // CSV has 7 columns: ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
     const v=l.split(',').map(s=>s.trim().replace(/"/g,''));
     const o={};
-    // Map fixed columns by position to avoid calibre range splitting issues
     if(v.length>=7){
       o['ID']=v[0];o['Bin']=v[1];o['Fecha']=v[2];o['Calidad']=v[3];
-      o['Nombre']=v[4];o['Calibre']=v[5];o['KgDisponibles']=v[6];
+      o['Nombre']=v[4];
+      // Calibre puede tener espacios: "1.5 - 2.5" se parte en 3 partes
+      // Reunir las partes del calibre y kg
+      if(v.length===9){
+        // "1.5 - 2.5" se partió en 3: v[5], v[6], v[7], kg en v[8]
+        o['Calibre']=v[5]+' - '+v[7];o['KgDisponibles']=v[8];
+      } else if(v.length===8){
+        o['Calibre']=v[5]+' - '+v[7];o['KgDisponibles']=v[7];
+      } else {
+        o['Calibre']=v[5];o['KgDisponibles']=v[6];
+      }
     } else {
       hdr.forEach((h,i)=>o[h]=v[i]||'');
     }
