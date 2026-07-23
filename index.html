@@ -461,19 +461,22 @@ function renderBodega(data){
       const fm = bloque.filter(function(r){return getMadurez(r.Calibre)===mad;});
       if(!fm.length) return;
       const C    = getMadClasses(mad);
-      const tams = [...new Set(fm.map(function(r){return r.Calidad;}))].sort();
-      tams.forEach(function(tam){
+      const tamsSet = [...new Set(fm.map(function(r){return r.Calidad;}))];
+      const tamsOrdenados = tamsSet.map(function(tam){
         const ft  = fm.filter(function(r){return r.Calidad===tam;});
         const kg  = ft.reduce(function(s,r){return s+(parseFloat(r.KgDisponibles)||0);},0);
         const cals= [...new Set(ft.map(function(r){return r.Calibre;}))].sort(function(a,b){return parseFloat(a)-parseFloat(b);});
-        const bgC = madBg(mad), fgC = madFg(mad);
+        return {tam:tam,kg:kg,cals:cals};
+      }).sort(function(a,b){return b.kg-a.kg;});
+      const bgC = madBg(mad), fgC = madFg(mad);
+      tamsOrdenados.forEach(function(to){
         html += '<div class="bod-item" style="background:'+bgC+';border-radius:6px;padding:6px 8px;display:flex;align-items:center;gap:8px">';
         html += '<div class="bod-dot" style="background:'+fgC+';width:9px;height:9px;border-radius:50%;flex-shrink:0"></div>';
         html += '<div style="flex:1;font-size:.74rem;font-weight:600;color:'+fgC+'">';
-        html += '<div>'+C.label+' &middot; '+(TAM_NAMES[tam]||tam)+'</div>';
-        html += '<div style="font-size:.68rem;font-weight:800;opacity:.9">'+cals.map(function(c){return String(c).replace(',','.');}).join(' &middot; ')+'</div>';
+        html += '<div>'+C.label+' &middot; '+(TAM_NAMES[to.tam]||to.tam)+'</div>';
+        html += '<div style="font-size:.68rem;font-weight:800;opacity:.9">'+to.cals.map(function(c){return String(c).replace(',','.');}).join(' &middot; ')+'</div>';
         html += '</div>';
-        html += '<div style="font-size:.82rem;font-weight:800;color:'+fgC+'">'+Math.round(kg).toLocaleString('es-CO')+' kg</div>';
+        html += '<div style="font-size:.82rem;font-weight:800;color:'+fgC+'">'+Math.round(to.kg).toLocaleString('es-CO')+' kg</div>';
         html += '</div>';
       });
     });
