@@ -620,6 +620,7 @@ function renderBines(data){
     html += '<div style="background:#fff;border:1px solid #e2e8f0;border-left:4px solid '+accent+';border-radius:8px;padding:10px 14px;min-width:160px">';
     html += '<div style="font-size:.95rem;font-weight:800;color:#1e293b">Bin '+r.Bin+'</div>';
     html += '<div style="font-size:.85rem;color:#475569;margin-top:2px">'+r.Calidad+' &middot; '+r.Nombre+'</div>';
+    html += '<div style="font-size:.78rem;color:#64748b;margin-top:2px">Proceso: '+fmtF(r.Fecha)+'</div>';
     html += '<div style="font-size:.85rem;font-weight:700;margin-top:3px;color:'+txt+'">'+lbl+' &middot; Calibre '+r.Calibre+'</div>';
     html += '<div style="font-size:.85rem;font-weight:700;color:#1e293b;margin-top:2px">'+Math.round(parseFloat(r.KgDisponibles)||0).toLocaleString('es-CO')+' kg</div>';
     html += '<div style="font-size:.78rem;font-weight:700;margin-top:3px;color:'+urgColor(h)+'">'+horasLabel(h)+' en reposo</div>';
