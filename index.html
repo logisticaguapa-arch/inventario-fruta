@@ -384,8 +384,10 @@ function renderTarjetas(data){
   el.innerHTML=html;
 }
 
-function renderTabla(data){
+function renderTabla(dataOriginal){
   const el=document.getElementById('v-tabla');
+  // Solo filas con fecha de ingreso a inventario y kilos final validos
+  const data=dataOriginal.filter(function(r){return r.Fecha && r.Fecha.trim()!=='' && (parseFloat(r.KgDisponibles)||0)>0;});
   if(!data.length){el.innerHTML='<div class="empty">Sin estibas disponibles.</div>';return;}
   const fechas=[...new Set(data.map(function(r){return r.Fecha;}))].sort();
   const tams=[...new Set(data.map(function(r){return r.Calidad;}))].sort();
