@@ -102,6 +102,7 @@ header h1 span{color:#64748b;font-size:.8rem;font-weight:400;margin-left:8px}
 .horas-ok{background:#14532d;color:#86efac;padding:3px 10px;border-radius:20px;font-size:.68rem;font-weight:700}
 .dia-kg{margin-left:auto;font-size:.8rem;color:rgba(255,255,255,0.75)}
 .dia-kg strong{color:#fff}
+.dia-pct{background:rgba(255,255,255,0.15);color:#fff;padding:3px 12px;border-radius:20px;font-size:.78rem;font-weight:800}
 
 .mad-section{border-bottom:1px solid #e2e8f0}
 .mad-section:last-child{border-bottom:none}
@@ -126,6 +127,23 @@ table.ctable td.left{text-align:left;color:#1e293b;font-weight:700}
 table.ctable tr:hover td{background:#f8fafc}
 .tfoot-row td{background:#f1f5f9;color:#1e293b;font-weight:800;border-top:2px solid #2a3f55;padding:5px 10px}
 .mad-group-hdr td{font-weight:700;padding:4px 10px;font-size:.72rem;letter-spacing:.04em;text-transform:uppercase;color:#fff}
+
+/* ── FACTURACION (tabla dinamica) ── */
+.v-facturacion{overflow-x:auto}
+.fact-summary{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:12px}
+table.ftable{border-collapse:collapse;width:100%;background:#fff;border-radius:10px;overflow:hidden;font-size:.85rem;border:1px solid #e2e8f0;box-shadow:0 1px 4px rgba(0,0,0,0.06)}
+table.ftable th{background:#1e293b;color:#e2e8f0;padding:8px 12px;text-align:right;font-size:.68rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;white-space:nowrap;border-bottom:1px solid #f1f5f9}
+table.ftable th.left{text-align:left}
+table.ftable td{padding:6px 12px;border-bottom:1px solid #f1f5f9;text-align:right;white-space:nowrap;color:#1e293b}
+table.ftable td.left{text-align:left}
+table.ftable tr:hover td{background:#f8fafc}
+.frow-factura td{background:#1e293b;color:#fff;font-weight:800;cursor:pointer;border-bottom:1px solid #334155}
+.frow-factura .ftog{display:inline-block;width:14px}
+.frow-remision td{background:#e2e8f0;color:#1e293b;font-weight:700;cursor:pointer}
+.frow-remision .ftog{display:inline-block;width:14px;margin-left:16px}
+.frow-cat td{color:#334155}
+.frow-cat td.left{padding-left:56px;font-weight:500}
+.ftotal-row td{background:#f1f5f9;color:#1e293b;font-weight:800;border-top:2px solid #2a3f55}
 
 /* ── BODEGA ── */
 .v-bodega{display:flex;flex-direction:column;gap:12px}.bod-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
@@ -172,9 +190,10 @@ table.ctable tr:hover td{background:#f8fafc}
   <button class="vbtn" onclick="setView('tabla')"    id="btn-tabla">Tabla coloreada</button>
   <button class="vbtn" onclick="setView('bodega')"   id="btn-bodega">Bodega + Urgencia</button>
   <button class="vbtn" onclick="setView('bines')"    id="btn-bines">Bines</button>
+  <button class="vbtn" onclick="setView('facturacion')" id="btn-facturacion">Facturacion</button>
 </div>
 
-<div class="bar">
+<div class="bar" id="barInv">
   <div class="msel" id="selMad">
     <button type="button" class="msel-btn" onclick="toggleMsel('selMad')"><span class="msel-label">Toda la madurez</span><span class="msel-arrow">▾</span></button>
     <div class="msel-panel" id="selMad-panel"></div>
@@ -194,7 +213,23 @@ table.ctable tr:hover td{background:#f8fafc}
   <button class="breset" onclick="reset()">↺ Limpiar</button>
 </div>
 
-<div class="legend">
+<div class="bar" id="barFact" style="display:none">
+  <div class="msel" id="selFactFec">
+    <button type="button" class="msel-btn" onclick="toggleMsel('selFactFec')"><span class="msel-label">Todas las fechas</span><span class="msel-arrow">▾</span></button>
+    <div class="msel-panel" id="selFactFec-panel"></div>
+  </div>
+  <div class="msel" id="selFactCli">
+    <button type="button" class="msel-btn" onclick="toggleMsel('selFactCli')"><span class="msel-label">Todos los clientes</span><span class="msel-arrow">▾</span></button>
+    <div class="msel-panel" id="selFactCli-panel"></div>
+  </div>
+  <div class="msel" id="selFactCal">
+    <button type="button" class="msel-btn" onclick="toggleMsel('selFactCal')"><span class="msel-label">Todos los calibres</span><span class="msel-arrow">▾</span></button>
+    <div class="msel-panel" id="selFactCal-panel"></div>
+  </div>
+  <button class="breset" onclick="resetFactura()">↺ Limpiar</button>
+</div>
+
+<div class="legend" id="legendInv">
   <div class="leg"><div class="leg-dot" style="background:#22c55e"></div><span>Verde — calibre 0 a 1.0</span></div>
   <div class="leg"><div class="leg-dot" style="background:#eab308"></div><span>Pintona — calibre 1.5 a 2.5</span></div>
   <div class="leg"><div class="leg-dot" style="background:#ea580c"></div><span>Madura — calibre 3.0 a 4.0 (vender primero)</span></div>
@@ -205,6 +240,7 @@ table.ctable tr:hover td{background:#f8fafc}
   <div id="v-tabla"    class="v-tabla"    style="display:none"></div>
   <div id="v-bodega"   class="v-bodega"   style="display:none"></div>
   <div id="v-bines"    class="v-bines"    style="display:none"></div>
+  <div id="v-facturacion" class="v-facturacion" style="display:none"></div>
 </div>
 
 <script>
@@ -271,7 +307,7 @@ function fmtF(f){
   return parseInt(d)+' '+M[parseInt(m)]+' '+y;
 }
 
-let ALL=[],currentView='tarjetas';
+let ALL=[],DESPACHO=[],currentView='tarjetas';
 
 async function load(){
   try{
@@ -280,8 +316,39 @@ async function load(){
     ALL=parseCSV(await r.text());
     document.getElementById('ts').textContent=new Date().toLocaleString('es-CO',{day:'2-digit',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit'});
   }catch{ALL=demo();document.getElementById('ts').textContent='Datos de demostracion';}
-  buildFilters();render();
+  try{
+    const r2=await fetch('despacho.csv?'+Date.now());
+    if(!r2.ok)throw 0;
+    DESPACHO=parseDespachoCSV(await r2.text());
+  }catch{DESPACHO=demoDespacho();}
+  buildFilters();buildFacturaFiltros();render();
 }
+
+function parseDespachoCSV(t){
+  const lines=t.trim().split('\n');
+  if(!lines.length||!lines[0]) return [];
+  return lines.slice(1).filter(l=>l.trim()!=='').map(function(l){
+    const v=l.split(',');
+    return {
+      FechaDespacho:(v[0]||'').trim(),
+      Factura:(v[1]||'').trim(),
+      Remision:(v[2]||'').trim(),
+      Cliente:(v[3]||'').trim(),
+      Categoria:(v[4]||'').trim(),
+      Calibre:(v[5]||'').trim(),
+      KilosFinal:parseFloat(v[6])||0,
+      ReposicionKilos:parseFloat(v[7])||0,
+      Precio:parseFloat(v[8])||0
+    };
+  }).filter(r=>r.FechaDespacho!=='');
+}
+
+function demoDespacho(){return[
+  {FechaDespacho:'2026-07-27',Factura:'',Remision:'R-18518',Cliente:'reposicion exito barranquilla',Categoria:'piña special 1ra',Calibre:'3,0 - 4,0',KilosFinal:0,ReposicionKilos:50,Precio:0},
+  {FechaDespacho:'2026-07-27',Factura:'',Remision:'R-18520',Cliente:'cartagena',Categoria:'piña special 1ra',Calibre:'3,0 - 4,0',KilosFinal:568,ReposicionKilos:432,Precio:3000},
+  {FechaDespacho:'2026-07-27',Factura:'',Remision:'R-18520',Cliente:'cartagena',Categoria:'piña special 2da',Calibre:'1,5 - 2,5',KilosFinal:988,ReposicionKilos:12,Precio:2800},
+  {FechaDespacho:'2026-07-27',Factura:'',Remision:'R-18521',Cliente:'local medellin',Categoria:'piña special 1ra',Calibre:'3,0 - 4,0',KilosFinal:3015,ReposicionKilos:0,Precio:2500},
+];}
 
 function parseCSV(t){
   const lines=t.trim().split('\n');
@@ -310,12 +377,15 @@ function parseCSV(t){
 }
 
 // ── Filtros multi-seleccion ──────────────────────────────────────────────
-const filtros={mad:[],cal:[],tam:[],fec:[]};
+const filtros={mad:[],cal:[],tam:[],fec:[],factFec:[],factCli:[],factCal:[]};
 const MSEL_DEF={
   selMad:{key:'mad',placeholder:'Toda la madurez'},
   selCal:{key:'cal',placeholder:'Todos los calibres'},
   selTam:{key:'tam',placeholder:'Todos los tamanos'},
-  selFec:{key:'fec',placeholder:'Todas las fechas'}
+  selFec:{key:'fec',placeholder:'Todas las fechas'},
+  selFactFec:{key:'factFec',placeholder:'Todas las fechas'},
+  selFactCli:{key:'factCli',placeholder:'Todos los clientes'},
+  selFactCal:{key:'factCal',placeholder:'Todos los calibres'}
 };
 const CALIBRE_OPCIONES=[
   {value:'0',label:'0 · Verde'},
@@ -399,9 +469,22 @@ function buildFilters(){
   fillMsel('selTam',tams.map(c=>({value:c,label:(TAM_NAMES[c]||c)+' ('+c+')'})));
   fillMsel('selFec',fechas.map(f=>({value:f,label:fmtF(f)+' — '+horasLabel(horasDesde(f))})));
 }
+function buildFacturaFiltros(){
+  const fechas=[...new Set(DESPACHO.map(r=>r.FechaDespacho))].sort();
+  const clientes=[...new Set(DESPACHO.map(r=>r.Cliente).filter(c=>c))].sort();
+  const calibres=[...new Set(DESPACHO.map(r=>r.Calibre).filter(c=>c))].sort(function(a,b){return parseFloat(a.replace(',','.'))-parseFloat(b.replace(',','.'));});
+  fillMsel('selFactFec',fechas.map(f=>({value:f,label:fmtF(f)})));
+  fillMsel('selFactCli',clientes.map(c=>({value:c,label:c})));
+  fillMsel('selFactCal',calibres.map(c=>({value:c,label:c.replace(',','.')})));
+}
 function reset(){
-  Object.keys(filtros).forEach(k=>filtros[k]=[]);
-  Object.keys(MSEL_DEF).forEach(id=>{fillMselKeep(id);});
+  ['mad','cal','tam','fec'].forEach(k=>filtros[k]=[]);
+  ['selMad','selCal','selTam','selFec'].forEach(id=>{fillMselKeep(id);});
+  render();
+}
+function resetFactura(){
+  ['factFec','factCli','factCal'].forEach(k=>filtros[k]=[]);
+  ['selFactFec','selFactCli','selFactCal'].forEach(id=>{fillMselKeep(id);});
   render();
 }
 function fillMselKeep(id){
@@ -413,7 +496,19 @@ function filtered(){
   const m=filtros.mad,cal=filtros.cal,t=filtros.tam,f=filtros.fec;
   return ALL.filter(r=>(!m.length||m.includes(getMadurez(r.Calibre)))&&(!cal.length||cal.includes(r.Calibre))&&(!t.length||t.includes(r.Calidad))&&(!f.length||f.includes(r.Fecha)));
 }
-function setView(v){currentView=v;['tarjetas','tabla','bodega','bines'].forEach(x=>{document.getElementById('v-'+x).style.display=x===v?'':'none';document.getElementById('btn-'+x).classList.toggle('active',x===v);});render();}
+function filteredFacturacion(){
+  const f=filtros.factFec,c=filtros.factCli,cal=filtros.factCal;
+  return DESPACHO.filter(r=>(!f.length||f.includes(r.FechaDespacho))&&(!c.length||c.includes(r.Cliente))&&(!cal.length||cal.includes(r.Calibre)));
+}
+function setView(v){
+  currentView=v;
+  ['tarjetas','tabla','bodega','bines','facturacion'].forEach(x=>{document.getElementById('v-'+x).style.display=x===v?'':'none';document.getElementById('btn-'+x).classList.toggle('active',x===v);});
+  const esFact = v==='facturacion';
+  document.getElementById('barInv').style.display = esFact?'none':'';
+  document.getElementById('barFact').style.display = esFact?'':'none';
+  document.getElementById('legendInv').style.display = esFact?'none':'';
+  render();
+}
 
 function render(){
   const data=filtered();
@@ -437,20 +532,24 @@ function render(){
   if(currentView==='tabla')renderTabla(data);
   if(currentView==='bodega')renderBodega(data);
   if(currentView==='bines')renderBines(data);
+  if(currentView==='facturacion')renderFacturacion(filteredFacturacion());
 }
 
 function renderTarjetas(data){
   const el=document.getElementById('v-tarjetas');
   if(!data.length){el.innerHTML='<div class="empty">Sin estibas disponibles.</div>';return;}
   const fechas=[...new Set(data.map(function(r){return r.Fecha;}))].sort();
+  const kgGlobal=data.reduce(function(s,r){return s+(parseFloat(r.KgDisponibles)||0);},0);
   let html='';
   fechas.forEach(function(fecha){
     const h=horasDesde(fecha);
     const bloque=data.filter(function(r){return r.Fecha===fecha;});
     const kgB=bloque.reduce(function(s,r){return s+(parseFloat(r.KgDisponibles)||0);},0);
+    const pct=kgGlobal>0?Math.round(kgB/kgGlobal*100):0;
     html+='<div class="dia-block">';
     html+='<div class="dia-hdr"><span class="'+urgClass(h)+'">'+horasLabel(h)+' en bodega</span>';
     html+='<h2>'+fmtF(fecha)+'</h2>';
+    html+='<span class="dia-pct">'+pct+'% del inventario</span>';
     html+='<div class="dia-kg">Total: <strong>'+Math.round(kgB).toLocaleString('es-CO')+' kg</strong></div></div>';
     ['madura','pintona','verde'].forEach(function(mad){
       const filas=bloque.filter(function(r){return getMadurez(r.Calibre)===mad;});
@@ -628,6 +727,77 @@ function renderBines(data){
   });
   html += '</div></div>';
   el.innerHTML = html;
+}
+
+function renderFacturacion(data){
+  const el=document.getElementById('v-facturacion');
+  if(!data.length){el.innerHTML='<div class="empty">Sin despachos en el periodo seleccionado.</div>';return;}
+
+  // -- Agrupar: Factura > Remision > Categoria --
+  const facturas={};
+  const grand={kilos:0,reposicion:0,precioSum:0,precioN:0};
+  data.forEach(function(r){
+    grand.kilos+=r.KilosFinal; grand.reposicion+=r.ReposicionKilos; grand.precioSum+=r.Precio; grand.precioN++;
+
+    const fk=r.Factura||'(en blanco)';
+    if(!facturas[fk]) facturas[fk]={remisiones:{},orden:[],kilos:0,reposicion:0,precioSum:0,precioN:0};
+    const F=facturas[fk];
+    F.kilos+=r.KilosFinal; F.reposicion+=r.ReposicionKilos; F.precioSum+=r.Precio; F.precioN++;
+
+    const rk=r.Remision||'(en blanco)';
+    if(!F.remisiones[rk]){ F.remisiones[rk]={cliente:r.Cliente||'(en blanco)',categorias:{},orden:[],kilos:0,reposicion:0,precioSum:0,precioN:0}; F.orden.push(rk); }
+    const R=F.remisiones[rk];
+    R.kilos+=r.KilosFinal; R.reposicion+=r.ReposicionKilos; R.precioSum+=r.Precio; R.precioN++;
+
+    const ck=r.Categoria||'(en blanco)';
+    if(!R.categorias[ck]){ R.categorias[ck]={kilos:0,reposicion:0,precioSum:0,precioN:0}; R.orden.push(ck); }
+    const C=R.categorias[ck];
+    C.kilos+=r.KilosFinal; C.reposicion+=r.ReposicionKilos; C.precioSum+=r.Precio; C.precioN++;
+  });
+
+  const nRemisiones=new Set(data.map(function(r){return (r.Factura||'')+'|'+(r.Remision||'');})).size;
+  let html='<div style="background:#1e293b;border-radius:12px 12px 0 0;padding:12px 18px;display:flex;align-items:center;gap:12px;flex-wrap:wrap">';
+  html+='<span style="font-size:1.1rem;font-weight:800;color:#fff">FACTURACION</span>';
+  html+='<span style="background:#fff;color:#1e293b;padding:3px 12px;border-radius:20px;font-size:.85rem;font-weight:800">'+nRemisiones+' remisiones</span>';
+  html+='<span style="margin-left:auto;background:rgba(255,255,255,0.2);color:#fff;padding:3px 12px;border-radius:20px;font-size:.85rem;font-weight:800">'+Math.round(grand.kilos).toLocaleString('es-CO')+' kg final</span>';
+  html+='<span style="background:rgba(255,255,255,0.2);color:#fff;padding:3px 12px;border-radius:20px;font-size:.85rem;font-weight:800">'+Math.round(grand.reposicion).toLocaleString('es-CO')+' kg reposicion</span>';
+  html+='</div>';
+
+  html+='<table class="ftable"><thead><tr><th class="left">Factura / Remision / Categoria</th><th class="left">Cliente</th><th>Suma Kilos final</th><th>Suma Reposicion kg</th><th>Promedio Precio</th></tr></thead><tbody>';
+
+  let gid=0;
+  Object.keys(facturas).sort().forEach(function(fk){
+    const F=facturas[fk];
+    const fgid='fg'+(gid++);
+    html+='<tr class="frow-factura" onclick="toggleGroup(\''+fgid+'\',this)"><td class="left" colspan="2"><span class="ftog">▾</span>'+fk+'</td>';
+    html+='<td>'+Math.round(F.kilos).toLocaleString('es-CO')+'</td><td>'+Math.round(F.reposicion).toLocaleString('es-CO')+'</td><td>'+(F.precioN?Math.round(F.precioSum/F.precioN).toLocaleString('es-CO'):0)+'</td></tr>';
+
+    F.orden.forEach(function(rk){
+      const R=F.remisiones[rk];
+      const rgid='rg'+(gid++);
+      html+='<tr class="frow-remision '+fgid+'" onclick="toggleGroup(\''+rgid+'\',this)"><td class="left"><span class="ftog">▾</span>'+rk+'</td><td class="left">'+R.cliente+'</td>';
+      html+='<td>'+Math.round(R.kilos).toLocaleString('es-CO')+'</td><td>'+Math.round(R.reposicion).toLocaleString('es-CO')+'</td><td>'+(R.precioN?Math.round(R.precioSum/R.precioN).toLocaleString('es-CO'):0)+'</td></tr>';
+
+      R.orden.forEach(function(ck){
+        const C=R.categorias[ck];
+        html+='<tr class="frow-cat '+fgid+' '+rgid+'"><td class="left" colspan="2">'+ck+'</td>';
+        html+='<td>'+Math.round(C.kilos).toLocaleString('es-CO')+'</td><td>'+Math.round(C.reposicion).toLocaleString('es-CO')+'</td><td>'+(C.precioN?Math.round(C.precioSum/C.precioN).toLocaleString('es-CO'):0)+'</td></tr>';
+      });
+    });
+  });
+
+  html+='<tr class="ftotal-row"><td class="left" colspan="2">TOTAL GENERAL</td>';
+  html+='<td>'+Math.round(grand.kilos).toLocaleString('es-CO')+'</td><td>'+Math.round(grand.reposicion).toLocaleString('es-CO')+'</td><td>'+(grand.precioN?Math.round(grand.precioSum/grand.precioN).toLocaleString('es-CO'):0)+'</td></tr>';
+  html+='</tbody></table>';
+  el.innerHTML=html;
+}
+function toggleGroup(gid, headerRow){
+  const rows=document.querySelectorAll('.'+gid);
+  if(!rows.length) return;
+  const hidden = rows[0].style.display==='none';
+  rows.forEach(function(r){r.style.display = hidden?'':'none';});
+  const icon = headerRow.querySelector('.ftog');
+  if(icon) icon.textContent = hidden?'▾':'▸';
 }
 
 function demo(){return[
