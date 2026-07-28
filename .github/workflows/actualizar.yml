@@ -58,17 +58,23 @@ jobs:
           print(f"CSV generado: {csv.count(chr(10))-1} registros")
 
           # ── Hoja Despacho -> despacho.csv (para la vista Facturacion) ──
+          def es_anulado(v):
+              s = str(v or "").strip().upper()
+              return s in ("SI", "SÍ", "X", "ANULADO", "ANULADA", "TRUE")
+
           ws_desp = wb["Despacho"]
           csv2 = "FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKilos,Precio\n"
           n2 = 0
+          fechas_vistas = []
           for row in ws_desp.iter_rows(min_row=2, values_only=True):
               id_val = row[2]  # Col C - ID
               if not id_val: continue
-              anula_rm  = str(row[25] or "").strip() if len(row) > 25 else ""
-              anula_fv  = str(row[26] or "").strip() if len(row) > 26 else ""
+              anula_rm = es_anulado(row[25]) if len(row) > 25 else False
+              anula_fv = es_anulado(row[26]) if len(row) > 26 else False
               if anula_rm or anula_fv: continue  # excluir remisiones/facturas anuladas
 
               fecha_desp = str(row[1])[:10] if row[1] else ""
+              if fecha_desp: fechas_vistas.append(fecha_desp)
               cliente    = str(row[0] or "").replace(",", " ").strip()
               calibre    = str(row[5] or "").replace(",", ".").strip()
               categoria  = str(row[6] or "").replace(",", " ").strip()
@@ -83,6 +89,8 @@ jobs:
           with open("despacho.csv", "w", encoding="utf-8") as f:
               f.write(csv2)
           print(f"despacho.csv generado: {n2} registros")
+          if fechas_vistas:
+              print(f"Rango de fechas despacho: {min(fechas_vistas)} a {max(fechas_vistas)}")
           EOF
 
       - name: Subir CSV a GitHub
