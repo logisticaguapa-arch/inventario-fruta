@@ -246,12 +246,12 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 198457,canastas,2026-07-27,AD-PJUG,AD-piña jugos,3.0 - 4.0,147
 198458,canastas,2026-07-27,ADGUA,Piña ADGUA,1.5 - 2.5,132
 198459,canastas,2026-07-27,AD-PIND,AD-piña indstria,1.5 - 2.5,342
-198460,,,,,,0
-198461,,,,,,0
-198462,,,,,,0
-198463,,,,,,0
-198464,,,,,,0
-198465,,,,,,0
+198460,canastas,,,,,0
+198461,canastas,,,,,0
+198462,canastas,,,,,0
+198463,canastas,,,,,0
+198464,canastas,,,,,0
+198465,canastas,,,,,0
 198466,,,,,,0
 198467,,,,,,0
 198468,,,,,,0
