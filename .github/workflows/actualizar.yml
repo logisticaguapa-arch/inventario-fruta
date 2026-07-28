@@ -1,8 +1,11 @@
 name: Actualizar Inventario
 
 on:
+  push:
+    paths:
+      - 'NUEVO INVENTARIO.xlsm'
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '*/10 * * * *'
   workflow_dispatch:
 
 permissions:
@@ -16,17 +19,18 @@ jobs:
         uses: actions/checkout@v6
 
       - name: Instalar dependencias
-        run: pip install openpyxl requests
+        run: pip install openpyxl
 
-      - name: Descargar y procesar Excel
+      - name: Procesar Excel (ya está en el repo, sin descarga externa)
         run: |
           python3 << 'EOF'
-          import requests, openpyxl, io
+          import openpyxl, os
 
-          url = "https://agricolaguapa-my.sharepoint.com/:x:/g/personal/coordinador_logistico_guapa_com_co/IQDQfo1oimGITIutSnziZXTmAZuo0_tcGIcZvShC86nTMFg?download=1"
-          r = requests.get(url, allow_redirects=True, timeout=30)
-          print(f"Status: {r.status_code}, Tamaño: {len(r.content)} bytes")
-          wb = openpyxl.load_workbook(io.BytesIO(r.content), data_only=True)
+          archivo = "NUEVO INVENTARIO.xlsm"
+          if not os.path.exists(archivo):
+              raise SystemExit(f"No se encontró '{archivo}' en el repo. Verifica que la macro lo esté subiendo con ese nombre exacto.")
+
+          wb = openpyxl.load_workbook(archivo, data_only=True)
 
           # Leer col B (Bin) de Proceso para cruzar con ID
           ws_proc = wb["Proceso"]
@@ -55,7 +59,7 @@ jobs:
 
           with open("inventario.csv", "w", encoding="utf-8") as f:
               f.write(csv)
-          print(f"CSV generado: {csv.count(chr(10))-1} registros")
+          print(f"inventario.csv generado: {csv.count(chr(10))-1} registros")
 
           # ── Hoja Despacho -> despacho.csv (para la vista Facturacion) ──
           def es_anulado(v):
@@ -99,6 +103,4 @@ jobs:
           git config user.name "GitHub Action"
           git add inventario.csv despacho.csv
           git diff --staged --quiet || git commit -m "Inventario actualizado $(date +'%Y-%m-%d %H:%M')"
-          git push origin main --force
-          git diff --staged --quiet || git commit -m "Inventario actualizado $(date +'%Y-%m-%d %H:%M')"
-          git push origin main --force
+          git push origin main || (git pull --rebase origin main && git push origin main)
