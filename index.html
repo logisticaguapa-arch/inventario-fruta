@@ -35,11 +35,23 @@ header h1 span{color:#64748b;font-size:.8rem;font-weight:400;margin-left:8px}
 .vbtn:hover:not(.active){background:#f1f5f9;color:#1e293b}
 
 /* ── Filters ── */
-.bar{padding:0 24px 14px;display:flex;gap:10px;flex-wrap:wrap;align-items:center}
-.bar select{padding:9px 14px;border:1px solid #e2e8f0;border-radius:7px;background:#fff;color:#1e293b;font-size:.95rem;font-weight:600;cursor:pointer;font-family:inherit}
-.bar select:focus{outline:none;border-color:#22c55e}
+.bar{padding:0 24px 14px;display:flex;gap:10px;flex-wrap:wrap;align-items:center;position:relative}
 .breset{padding:9px 18px;background:#fff;color:#64748b;border:1px solid #e2e8f0;border-radius:7px;font-size:.95rem;font-weight:600;cursor:pointer;font-family:inherit}
 .breset:hover{color:#1e293b;border-color:#94a3b8}
+
+/* ── Multi-select desplegable ── */
+.msel{position:relative}
+.msel-btn{padding:9px 14px;border:1px solid #e2e8f0;border-radius:7px;background:#fff;color:#1e293b;font-size:.95rem;font-weight:600;cursor:pointer;font-family:inherit;display:flex;align-items:center;gap:10px;min-width:170px;justify-content:space-between}
+.msel-btn:hover{border-color:#94a3b8}
+.msel.open .msel-btn{border-color:#22c55e}
+.msel-label{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:220px}
+.msel-arrow{color:#94a3b8;font-size:.75rem}
+.msel-panel{display:none;position:absolute;top:calc(100% + 6px);left:0;z-index:50;background:#fff;border:1px solid #e2e8f0;border-radius:9px;box-shadow:0 8px 24px rgba(0,0,0,0.12);padding:6px;min-width:230px;max-height:280px;overflow-y:auto}
+.msel.open .msel-panel{display:block}
+.msel-panel label{display:flex;align-items:center;gap:9px;padding:7px 9px;border-radius:6px;font-size:.88rem;font-weight:600;color:#1e293b;cursor:pointer;white-space:nowrap}
+.msel-panel label:hover{background:#f1f5f9}
+.msel-panel input[type=checkbox]{width:16px;height:16px;accent-color:#22c55e;cursor:pointer;flex-shrink:0}
+.msel-panel .msel-empty{padding:8px 9px;color:#94a3b8;font-size:.85rem}
 
 /* ── Legend ── */
 .legend{display:flex;gap:18px;flex-wrap:wrap;padding:0 24px 16px;align-items:center}
@@ -160,28 +172,22 @@ table.ctable tr:hover td{background:#f8fafc}
 </div>
 
 <div class="bar">
-  <select id="fMad">
-    <option value="">Toda la madurez</option>
-    <option value="verde">🟢 Verde (0 - 1.0)</option>
-    <option value="pintona">🟡 Pintona (1.5 - 2.5)</option>
-    <option value="madura">🟠 Madura (3.0 - 4.0)</option>
-  </select>
-  <select id="fCalibr">
-    <option value="">Todos los calibres</option>
-    <option value="0">0 · Verde</option>
-    <option value="0.5">0.5 · Verde</option>
-    <option value="1">1 · Verde</option>
-    <option value="0,0 - 1,0">0.0-1.0 · Verde</option>
-    <option value="1.5">1.5 · Pintona</option>
-    <option value="2">2 · Pintona</option>
-    <option value="2.5">2.5 · Pintona</option>
-    <option value="1,5 - 2,5">1.5-2.5 · Pintona</option>
-    <option value="3">3 · Madura</option>
-    <option value="4">4 · Madura</option>
-    <option value="3,0 - 4,0">3.0-4.0 · Madura</option>
-  </select>
-  <select id="fTam"><option value="">Todos los tamanos</option></select>
-  <select id="fFec"><option value="">Todas las fechas</option></select>
+  <div class="msel" id="selMad">
+    <button type="button" class="msel-btn" onclick="toggleMsel('selMad')"><span class="msel-label">Toda la madurez</span><span class="msel-arrow">▾</span></button>
+    <div class="msel-panel" id="selMad-panel"></div>
+  </div>
+  <div class="msel" id="selCal">
+    <button type="button" class="msel-btn" onclick="toggleMsel('selCal')"><span class="msel-label">Todos los calibres</span><span class="msel-arrow">▾</span></button>
+    <div class="msel-panel" id="selCal-panel"></div>
+  </div>
+  <div class="msel" id="selTam">
+    <button type="button" class="msel-btn" onclick="toggleMsel('selTam')"><span class="msel-label">Todos los tamanos</span><span class="msel-arrow">▾</span></button>
+    <div class="msel-panel" id="selTam-panel"></div>
+  </div>
+  <div class="msel" id="selFec">
+    <button type="button" class="msel-btn" onclick="toggleMsel('selFec')"><span class="msel-label">Todas las fechas</span><span class="msel-arrow">▾</span></button>
+    <div class="msel-panel" id="selFec-panel"></div>
+  </div>
   <button class="breset" onclick="reset()">↺ Limpiar</button>
 </div>
 
@@ -300,18 +306,87 @@ function parseCSV(t){
   }).filter(r=>r.ID&&r.ID.trim()!='');
 }
 
+// ── Filtros multi-seleccion ──────────────────────────────────────────────
+const filtros={mad:[],cal:[],tam:[],fec:[]};
+const MSEL_DEF={
+  selMad:{key:'mad',placeholder:'Toda la madurez'},
+  selCal:{key:'cal',placeholder:'Todos los calibres'},
+  selTam:{key:'tam',placeholder:'Todos los tamanos'},
+  selFec:{key:'fec',placeholder:'Todas las fechas'}
+};
+const CALIBRE_OPCIONES=[
+  {value:'0',label:'0 · Verde'},
+  {value:'0.5',label:'0.5 · Verde'},
+  {value:'1',label:'1 · Verde'},
+  {value:'0,0 - 1,0',label:'0.0-1.0 · Verde'},
+  {value:'1.5',label:'1.5 · Pintona'},
+  {value:'2',label:'2 · Pintona'},
+  {value:'2.5',label:'2.5 · Pintona'},
+  {value:'1,5 - 2,5',label:'1.5-2.5 · Pintona'},
+  {value:'3',label:'3 · Madura'},
+  {value:'4',label:'4 · Madura'},
+  {value:'3,0 - 4,0',label:'3.0-4.0 · Madura'}
+];
+const MAD_OPCIONES=[
+  {value:'verde',label:'🟢 Verde (0 - 1.0)'},
+  {value:'pintona',label:'🟡 Pintona (1.5 - 2.5)'},
+  {value:'madura',label:'🟠 Madura (3.0 - 4.0)'}
+];
+
+function toggleMsel(id){
+  const el=document.getElementById(id);
+  const wasOpen=el.classList.contains('open');
+  document.querySelectorAll('.msel.open').forEach(function(m){m.classList.remove('open');});
+  if(!wasOpen) el.classList.add('open');
+}
+document.addEventListener('click', function(e){
+  if(!e.target.closest('.msel')) document.querySelectorAll('.msel.open').forEach(function(m){m.classList.remove('open');});
+});
+
+function fillMsel(id,items){
+  const def=MSEL_DEF[id];
+  const panel=document.getElementById(id+'-panel');
+  if(!items.length){panel.innerHTML='<div class="msel-empty">Sin opciones</div>';return;}
+  panel.innerHTML=items.map(function(it){
+    const checked=filtros[def.key].includes(it.value)?'checked':'';
+    return '<label><input type="checkbox" value="'+it.value.replace(/"/g,'&quot;')+'" '+checked+' onchange="onMselChange(\''+id+'\',this)">'+it.label+'</label>';
+  }).join('');
+  updateMselBtn(id);
+}
+function onMselChange(id,cb){
+  const key=MSEL_DEF[id].key, v=cb.value;
+  if(cb.checked){ if(!filtros[key].includes(v)) filtros[key].push(v); }
+  else { filtros[key]=filtros[key].filter(function(x){return x!==v;}); }
+  updateMselBtn(id);
+  render();
+}
+function updateMselBtn(id){
+  const def=MSEL_DEF[id];
+  const n=filtros[def.key].length;
+  document.querySelector('#'+id+' .msel-label').textContent = n===0?def.placeholder:(n+' seleccionados');
+}
+
 function buildFilters(){
   const tams=[...new Set(ALL.map(r=>r.Calidad))].sort();
   const fechas=[...new Set(ALL.map(r=>r.Fecha))].sort();
-  fillSel('fTam',tams,c=>(TAM_NAMES[c]||c)+' ('+c+')');
-  fillSel('fFec',fechas,f=>fmtF(f)+' — '+horasLabel(horasDesde(f)));
-  ['fMad','fCalibr','fTam','fFec'].forEach(id=>document.getElementById(id).onchange=render);
+  fillMsel('selMad',MAD_OPCIONES);
+  fillMsel('selCal',CALIBRE_OPCIONES);
+  fillMsel('selTam',tams.map(c=>({value:c,label:(TAM_NAMES[c]||c)+' ('+c+')'})));
+  fillMsel('selFec',fechas.map(f=>({value:f,label:fmtF(f)+' — '+horasLabel(horasDesde(f))})));
 }
-function fillSel(id,items,fn){const s=document.getElementById(id);while(s.options.length>1)s.remove(1);items.forEach(function(v){const o=document.createElement('option');o.value=v;o.textContent=fn(v);s.appendChild(o);});}
-function reset(){['fMad','fCalibr','fTam','fFec'].forEach(id=>document.getElementById(id).value='');render();}
+function reset(){
+  Object.keys(filtros).forEach(k=>filtros[k]=[]);
+  Object.keys(MSEL_DEF).forEach(id=>{fillMselKeep(id);});
+  render();
+}
+function fillMselKeep(id){
+  // Vuelve a pintar el panel actual (checkboxes) sin recalcular las opciones
+  document.querySelectorAll('#'+id+'-panel input[type=checkbox]').forEach(function(cb){cb.checked=false;});
+  updateMselBtn(id);
+}
 function filtered(){
-  const m=document.getElementById('fMad').value,cal=document.getElementById('fCalibr').value,t=document.getElementById('fTam').value,f=document.getElementById('fFec').value;
-  return ALL.filter(r=>(!m||getMadurez(r.Calibre)===m)&&(!cal||r.Calibre===cal)&&(!t||r.Calidad===t)&&(!f||r.Fecha===f));
+  const m=filtros.mad,cal=filtros.cal,t=filtros.tam,f=filtros.fec;
+  return ALL.filter(r=>(!m.length||m.includes(getMadurez(r.Calibre)))&&(!cal.length||cal.includes(r.Calibre))&&(!t.length||t.includes(r.Calidad))&&(!f.length||f.includes(r.Fecha)));
 }
 function setView(v){currentView=v;['tarjetas','tabla','bodega','bines'].forEach(x=>{document.getElementById('v-'+x).style.display=x===v?'':'none';document.getElementById('btn-'+x).classList.toggle('active',x===v);});render();}
 
