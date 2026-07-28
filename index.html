@@ -52,6 +52,9 @@ header h1 span{color:#64748b;font-size:.8rem;font-weight:400;margin-left:8px}
 .msel-panel label:hover{background:#f1f5f9}
 .msel-panel input[type=checkbox]{width:16px;height:16px;accent-color:#22c55e;cursor:pointer;flex-shrink:0}
 .msel-panel .msel-empty{padding:8px 9px;color:#94a3b8;font-size:.85rem}
+.msel-actions{display:flex;gap:6px;padding:2px 2px 8px;margin-bottom:6px;border-bottom:1px solid #f1f5f9}
+.msel-actions button{flex:1;padding:6px 8px;border:1px solid #e2e8f0;border-radius:6px;background:#f8fafc;color:#475569;font-size:.78rem;font-weight:700;cursor:pointer;font-family:inherit}
+.msel-actions button:hover{background:#f1f5f9;color:#1e293b;border-color:#94a3b8}
 
 /* ── Legend ── */
 .legend{display:flex;gap:18px;flex-wrap:wrap;padding:0 24px 16px;align-items:center}
@@ -303,7 +306,7 @@ function parseCSV(t){
       hdr.forEach((h,i)=>o[h]=v[i]||'');
     }
     return o;
-  }).filter(r=>r.ID&&r.ID.trim()!='');
+  }).filter(r=>r.ID&&r.ID.trim()!=''&&r.Fecha&&r.Fecha.trim()!=''&&r.Calidad&&r.Calidad.trim()!='');
 }
 
 // ── Filtros multi-seleccion ──────────────────────────────────────────────
@@ -346,17 +349,39 @@ document.addEventListener('click', function(e){
 function fillMsel(id,items){
   const def=MSEL_DEF[id];
   const panel=document.getElementById(id+'-panel');
+  panel.dataset.values=JSON.stringify(items.map(function(it){return it.value;}));
   if(!items.length){panel.innerHTML='<div class="msel-empty">Sin opciones</div>';return;}
-  panel.innerHTML=items.map(function(it){
+  let html='<div class="msel-actions">';
+  html+='<button type="button" onclick="selectAllMsel(\''+id+'\')">Seleccionar todos</button>';
+  html+='<button type="button" onclick="clearMsel(\''+id+'\')">Ninguno</button>';
+  html+='</div>';
+  html+=items.map(function(it){
     const checked=filtros[def.key].includes(it.value)?'checked':'';
     return '<label><input type="checkbox" value="'+it.value.replace(/"/g,'&quot;')+'" '+checked+' onchange="onMselChange(\''+id+'\',this)">'+it.label+'</label>';
   }).join('');
+  panel.innerHTML=html;
   updateMselBtn(id);
 }
 function onMselChange(id,cb){
   const key=MSEL_DEF[id].key, v=cb.value;
   if(cb.checked){ if(!filtros[key].includes(v)) filtros[key].push(v); }
   else { filtros[key]=filtros[key].filter(function(x){return x!==v;}); }
+  updateMselBtn(id);
+  render();
+}
+function selectAllMsel(id){
+  const def=MSEL_DEF[id];
+  const panel=document.getElementById(id+'-panel');
+  const values=JSON.parse(panel.dataset.values||'[]');
+  filtros[def.key]=values.slice();
+  panel.querySelectorAll('input[type=checkbox]').forEach(function(cb){cb.checked=true;});
+  updateMselBtn(id);
+  render();
+}
+function clearMsel(id){
+  const def=MSEL_DEF[id];
+  filtros[def.key]=[];
+  document.getElementById(id+'-panel').querySelectorAll('input[type=checkbox]').forEach(function(cb){cb.checked=false;});
   updateMselBtn(id);
   render();
 }
