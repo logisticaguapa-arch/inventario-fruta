@@ -56,13 +56,40 @@ jobs:
           with open("inventario.csv", "w", encoding="utf-8") as f:
               f.write(csv)
           print(f"CSV generado: {csv.count(chr(10))-1} registros")
+
+          # ── Hoja Despacho -> despacho.csv (para la vista Facturacion) ──
+          ws_desp = wb["Despacho"]
+          csv2 = "FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKilos,Precio\n"
+          n2 = 0
+          for row in ws_desp.iter_rows(min_row=2, values_only=True):
+              id_val = row[2]  # Col C - ID
+              if not id_val: continue
+              anula_rm  = str(row[25] or "").strip() if len(row) > 25 else ""
+              anula_fv  = str(row[26] or "").strip() if len(row) > 26 else ""
+              if anula_rm or anula_fv: continue  # excluir remisiones/facturas anuladas
+
+              fecha_desp = str(row[1])[:10] if row[1] else ""
+              cliente    = str(row[0] or "").replace(",", " ").strip()
+              calibre    = str(row[5] or "").replace(",", ".").strip()
+              categoria  = str(row[6] or "").replace(",", " ").strip()
+              kilos      = row[13] or 0
+              reposicion = row[15] or 0
+              precio     = row[22] or 0
+              remision   = str(row[23] or "").replace(",", " ").strip()
+              factura    = str(row[24] or "").replace(",", " ").strip()
+              csv2 += f"{fecha_desp},{factura},{remision},{cliente},{categoria},{calibre},{kilos},{reposicion},{precio}\n"
+              n2 += 1
+
+          with open("despacho.csv", "w", encoding="utf-8") as f:
+              f.write(csv2)
+          print(f"despacho.csv generado: {n2} registros")
           EOF
 
       - name: Subir CSV a GitHub
         run: |
           git config user.email "action@github.com"
           git config user.name "GitHub Action"
-          git add inventario.csv
+          git add inventario.csv despacho.csv
           git diff --staged --quiet || git commit -m "Inventario actualizado $(date +'%Y-%m-%d %H:%M')"
           git push origin main --force
           git diff --staged --quiet || git commit -m "Inventario actualizado $(date +'%Y-%m-%d %H:%M')"
