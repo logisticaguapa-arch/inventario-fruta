@@ -56,6 +56,16 @@ header h1 span{color:#64748b;font-size:.8rem;font-weight:400;margin-left:8px}
 .msel-actions button{flex:1;padding:6px 8px;border:1px solid #e2e8f0;border-radius:6px;background:#f8fafc;color:#475569;font-size:.78rem;font-weight:700;cursor:pointer;font-family:inherit}
 .msel-actions button:hover{background:#f1f5f9;color:#1e293b;border-color:#94a3b8}
 
+/* ── Selector de fecha (Facturacion) ── */
+.fact-date-wrap{display:flex;flex-direction:column;gap:3px}
+.fact-date-label{font-size:.68rem;color:#64748b;font-weight:700;text-transform:uppercase;letter-spacing:.04em}
+.fact-date-input{padding:8px 12px;border:1px solid #e2e8f0;border-radius:7px;background:#fff;color:#1e293b;font-size:.95rem;font-weight:600;font-family:inherit;cursor:pointer}
+.fact-date-input:hover{border-color:#94a3b8}
+
+/* ── Botones de exportar ── */
+.bexport{padding:9px 16px;background:#1e293b;color:#fff;border:1px solid #1e293b;border-radius:7px;font-size:.9rem;font-weight:700;cursor:pointer;font-family:inherit;transition:background .15s}
+.bexport:hover{background:#334155}
+
 /* ── Legend ── */
 .legend{display:flex;gap:18px;flex-wrap:wrap;padding:0 24px 16px;align-items:center}
 .leg{display:flex;align-items:center;gap:8px;font-size:.92rem;font-weight:600;color:#334155}
@@ -137,12 +147,14 @@ table.ftable th.left{text-align:left}
 table.ftable td{padding:6px 12px;border-bottom:1px solid #f1f5f9;text-align:right;white-space:nowrap;color:#1e293b}
 table.ftable td.left{text-align:left}
 table.ftable tr:hover td{background:#f8fafc}
-.frow-factura td{background:#1e293b;color:#fff;font-weight:800;cursor:pointer;border-bottom:1px solid #334155}
+.frow-remision td{background:#1e293b;color:#fff;font-weight:800;cursor:pointer;border-bottom:1px solid #334155}
+.frow-remision .ftog{display:inline-block;width:14px}
+.frow-factura td{background:#334155;color:#fff;font-weight:700;cursor:pointer}
 .frow-factura .ftog{display:inline-block;width:14px}
-.frow-remision td{background:#e2e8f0;color:#1e293b;font-weight:700;cursor:pointer}
-.frow-remision .ftog{display:inline-block;width:14px;margin-left:16px}
+.frow-cliente td{background:#cbd5e1;color:#1e293b;font-weight:700;cursor:pointer}
+.frow-cliente .ftog{display:inline-block;width:14px}
 .frow-cat td{color:#334155}
-.frow-cat td.left{padding-left:56px;font-weight:500}
+.frow-cat td.left{font-weight:500}
 .ftotal-row td{background:#f1f5f9;color:#1e293b;font-weight:800;border-top:2px solid #2a3f55}
 
 /* ── BODEGA ── */
@@ -214,9 +226,9 @@ table.ftable tr:hover td{background:#f8fafc}
 </div>
 
 <div class="bar" id="barFact" style="display:none">
-  <div class="msel" id="selFactFec">
-    <button type="button" class="msel-btn" onclick="toggleMsel('selFactFec')"><span class="msel-label">Todas las fechas</span><span class="msel-arrow">▾</span></button>
-    <div class="msel-panel" id="selFactFec-panel"></div>
+  <div class="fact-date-wrap">
+    <label for="factFechaInput" class="fact-date-label">Fecha de despacho</label>
+    <input type="date" id="factFechaInput" class="fact-date-input" onchange="onFactFechaChange(this)">
   </div>
   <div class="msel" id="selFactCli">
     <button type="button" class="msel-btn" onclick="toggleMsel('selFactCli')"><span class="msel-label">Todos los clientes</span><span class="msel-arrow">▾</span></button>
@@ -227,6 +239,8 @@ table.ftable tr:hover td{background:#f8fafc}
     <div class="msel-panel" id="selFactCal-panel"></div>
   </div>
   <button class="breset" onclick="resetFactura()">↺ Limpiar</button>
+  <button class="bexport" onclick="exportExcelFacturacion()">⬇ Exportar a Excel</button>
+  <button class="bexport" onclick="exportPDFFacturacion()">⬇ Exportar a PDF</button>
 </div>
 
 <div class="legend" id="legendInv">
@@ -243,6 +257,9 @@ table.ftable tr:hover td{background:#f8fafc}
   <div id="v-facturacion" class="v-facturacion" style="display:none"></div>
 </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.2/jspdf.plugin.autotable.min.js"></script>
 <script>
 const TAM_NAMES={'PE1':'PE1','PE2':'PE2','PE3':'PE3','PE4':'PE4','PEGUA':'Guapita','PEBAB':'Baby','PIND':'Industria','AD1':'AD1','AD2':'AD2','AD3':'AD3','PJUG':'Jugos'};
 
@@ -338,7 +355,7 @@ function parseDespachoCSV(t){
       Calibre:(v[5]||'').trim(),
       KilosFinal:parseFloat(v[6])||0,
       ReposicionKilos:parseFloat(v[7])||0,
-      Precio:parseFloat(v[8])||0
+      Precio:(v[8]===undefined||v[8].trim()==='')?null:parseFloat(v[8])
     };
   }).filter(r=>r.FechaDespacho!=='');
 }
@@ -377,16 +394,29 @@ function parseCSV(t){
 }
 
 // ── Filtros multi-seleccion ──────────────────────────────────────────────
-const filtros={mad:[],cal:[],tam:[],fec:[],factFec:[],factCli:[],factCal:[]};
+const filtros={mad:[],cal:[],tam:[],fec:[],factFecha:'',factCli:[],factCal:[]};
 const MSEL_DEF={
   selMad:{key:'mad',placeholder:'Toda la madurez'},
   selCal:{key:'cal',placeholder:'Todos los calibres'},
   selTam:{key:'tam',placeholder:'Todos los tamanos'},
   selFec:{key:'fec',placeholder:'Todas las fechas'},
-  selFactFec:{key:'factFec',placeholder:'Todas las fechas'},
   selFactCli:{key:'factCli',placeholder:'Todos los clientes'},
   selFactCal:{key:'factCal',placeholder:'Todos los calibres'}
 };
+
+// -- Helpers de fecha para el filtro de Facturacion (formato YYYY-MM-DD, igual que el CSV) --
+function fechaISO(d){
+  const y=d.getFullYear(), m=String(d.getMonth()+1).padStart(2,'0'), day=String(d.getDate()).padStart(2,'0');
+  return y+'-'+m+'-'+day;
+}
+function ayerISO(){
+  const d=new Date(); d.setDate(d.getDate()-1);
+  return fechaISO(d);
+}
+function onFactFechaChange(input){
+  filtros.factFecha = input.value;
+  render();
+}
 const CALIBRE_OPCIONES=[
   {value:'0',label:'0 · Verde'},
   {value:'0.5',label:'0.5 · Verde'},
@@ -470,12 +500,15 @@ function buildFilters(){
   fillMsel('selFec',fechas.map(f=>({value:f,label:fmtF(f)+' — '+horasLabel(horasDesde(f))})));
 }
 function buildFacturaFiltros(){
-  const fechas=[...new Set(DESPACHO.map(r=>r.FechaDespacho))].sort();
   const clientes=[...new Set(DESPACHO.map(r=>r.Cliente).filter(c=>c))].sort();
   const calibres=[...new Set(DESPACHO.map(r=>r.Calibre).filter(c=>c))].sort(function(a,b){return parseFloat(a.replace(',','.'))-parseFloat(b.replace(',','.'));});
-  fillMsel('selFactFec',fechas.map(f=>({value:f,label:fmtF(f)})));
   fillMsel('selFactCli',clientes.map(c=>({value:c,label:c})));
   fillMsel('selFactCal',calibres.map(c=>({value:c,label:c.replace(',','.')})));
+
+  // -- Fecha: por defecto el dia anterior a hoy, solo la primera vez (no pisar la eleccion del usuario en recargas automaticas) --
+  if(!filtros.factFecha) filtros.factFecha=ayerISO();
+  const inputFecha=document.getElementById('factFechaInput');
+  if(inputFecha) inputFecha.value=filtros.factFecha;
 }
 function reset(){
   ['mad','cal','tam','fec'].forEach(k=>filtros[k]=[]);
@@ -483,8 +516,11 @@ function reset(){
   render();
 }
 function resetFactura(){
-  ['factFec','factCli','factCal'].forEach(k=>filtros[k]=[]);
-  ['selFactFec','selFactCli','selFactCal'].forEach(id=>{fillMselKeep(id);});
+  ['factCli','factCal'].forEach(k=>filtros[k]=[]);
+  ['selFactCli','selFactCal'].forEach(id=>{fillMselKeep(id);});
+  filtros.factFecha=ayerISO();
+  const inputFecha=document.getElementById('factFechaInput');
+  if(inputFecha) inputFecha.value=filtros.factFecha;
   render();
 }
 function fillMselKeep(id){
@@ -497,8 +533,8 @@ function filtered(){
   return ALL.filter(r=>(!m.length||m.includes(getMadurez(r.Calibre)))&&(!cal.length||cal.includes(r.Calibre))&&(!t.length||t.includes(r.Calidad))&&(!f.length||f.includes(r.Fecha)));
 }
 function filteredFacturacion(){
-  const f=filtros.factFec,c=filtros.factCli,cal=filtros.factCal;
-  return DESPACHO.filter(r=>(!f.length||f.includes(r.FechaDespacho))&&(!c.length||c.includes(r.Cliente))&&(!cal.length||cal.includes(r.Calibre)));
+  const fecha=filtros.factFecha,c=filtros.factCli,cal=filtros.factCal;
+  return DESPACHO.filter(r=>(!fecha||r.FechaDespacho===fecha)&&(!c.length||c.includes(r.Cliente))&&(!cal.length||cal.includes(r.Calibre)));
 }
 function setView(v){
   currentView=v;
@@ -729,65 +765,116 @@ function renderBines(data){
   el.innerHTML = html;
 }
 
-function renderFacturacion(data){
-  const el=document.getElementById('v-facturacion');
-  if(!data.length){el.innerHTML='<div class="empty">Sin despachos en el periodo seleccionado.</div>';return;}
-
-  // -- Agrupar: Factura > Remision > Categoria --
-  const facturas={};
+// -- Agrupa los despachos ya filtrados: Remision > Factura > Cliente > Categoria --
+// Un unico recorrido del arreglo (nada de recorridos repetidos), reutilizado tanto por
+// el render de la tabla como por las exportaciones a Excel/PDF.
+function agruparFacturacion(data){
+  const remisiones={};
+  const ordenRemisiones=[];
   const grand={kilos:0,reposicion:0,precioSum:0,precioN:0};
+
   data.forEach(function(r){
-    grand.kilos+=r.KilosFinal; grand.reposicion+=r.ReposicionKilos; grand.precioSum+=r.Precio; grand.precioN++;
+    const tienePrecio = r.Precio!==null && r.Precio!==undefined && !isNaN(r.Precio);
 
-    const fk=r.Factura||'(en blanco)';
-    if(!facturas[fk]) facturas[fk]={remisiones:{},orden:[],kilos:0,reposicion:0,precioSum:0,precioN:0};
-    const F=facturas[fk];
-    F.kilos+=r.KilosFinal; F.reposicion+=r.ReposicionKilos; F.precioSum+=r.Precio; F.precioN++;
+    grand.kilos+=r.KilosFinal; grand.reposicion+=r.ReposicionKilos;
+    if(tienePrecio){ grand.precioSum+=r.Precio; grand.precioN++; }
 
-    const rk=r.Remision||'(en blanco)';
-    if(!F.remisiones[rk]){ F.remisiones[rk]={cliente:r.Cliente||'(en blanco)',categorias:{},orden:[],kilos:0,reposicion:0,precioSum:0,precioN:0}; F.orden.push(rk); }
-    const R=F.remisiones[rk];
-    R.kilos+=r.KilosFinal; R.reposicion+=r.ReposicionKilos; R.precioSum+=r.Precio; R.precioN++;
+    const rk=r.Remision||'(Sin remision)';
+    if(!remisiones[rk]){ remisiones[rk]={facturas:{},ordenFacturas:[],kilos:0,reposicion:0,precioSum:0,precioN:0}; ordenRemisiones.push(rk); }
+    const R=remisiones[rk];
+    R.kilos+=r.KilosFinal; R.reposicion+=r.ReposicionKilos;
+    if(tienePrecio){ R.precioSum+=r.Precio; R.precioN++; }
 
-    const ck=r.Categoria||'(en blanco)';
-    if(!R.categorias[ck]){ R.categorias[ck]={kilos:0,reposicion:0,precioSum:0,precioN:0}; R.orden.push(ck); }
-    const C=R.categorias[ck];
-    C.kilos+=r.KilosFinal; C.reposicion+=r.ReposicionKilos; C.precioSum+=r.Precio; C.precioN++;
+    const fk=r.Factura||'(Sin factura)';
+    if(!R.facturas[fk]){ R.facturas[fk]={clientes:{},ordenClientes:[],kilos:0,reposicion:0,precioSum:0,precioN:0}; R.ordenFacturas.push(fk); }
+    const F=R.facturas[fk];
+    F.kilos+=r.KilosFinal; F.reposicion+=r.ReposicionKilos;
+    if(tienePrecio){ F.precioSum+=r.Precio; F.precioN++; }
+
+    const ck=r.Cliente||'(Sin cliente)';
+    if(!F.clientes[ck]){ F.clientes[ck]={categorias:{},ordenCategorias:[],kilos:0,reposicion:0,precioSum:0,precioN:0}; F.ordenClientes.push(ck); }
+    const C=F.clientes[ck];
+    C.kilos+=r.KilosFinal; C.reposicion+=r.ReposicionKilos;
+    if(tienePrecio){ C.precioSum+=r.Precio; C.precioN++; }
+
+    const cat=r.Categoria||'(Sin categoria)';
+    if(!C.categorias[cat]){ C.categorias[cat]={kilos:0,reposicion:0,precioSum:0,precioN:0}; C.ordenCategorias.push(cat); }
+    const Cat=C.categorias[cat];
+    Cat.kilos+=r.KilosFinal; Cat.reposicion+=r.ReposicionKilos;
+    if(tienePrecio){ Cat.precioSum+=r.Precio; Cat.precioN++; }
   });
 
-  const nRemisiones=new Set(data.map(function(r){return (r.Factura||'')+'|'+(r.Remision||'');})).size;
-  let html='<div style="background:#1e293b;border-radius:12px 12px 0 0;padding:12px 18px;display:flex;align-items:center;gap:12px;flex-wrap:wrap">';
-  html+='<span style="font-size:1.1rem;font-weight:800;color:#fff">FACTURACION</span>';
-  html+='<span style="background:#fff;color:#1e293b;padding:3px 12px;border-radius:20px;font-size:.85rem;font-weight:800">'+nRemisiones+' remisiones</span>';
-  html+='<span style="margin-left:auto;background:rgba(255,255,255,0.2);color:#fff;padding:3px 12px;border-radius:20px;font-size:.85rem;font-weight:800">'+Math.round(grand.kilos).toLocaleString('es-CO')+' kg final</span>';
-  html+='<span style="background:rgba(255,255,255,0.2);color:#fff;padding:3px 12px;border-radius:20px;font-size:.85rem;font-weight:800">'+Math.round(grand.reposicion).toLocaleString('es-CO')+' kg reposicion</span>';
-  html+='</div>';
-
-  html+='<table class="ftable"><thead><tr><th class="left">Factura / Remision / Categoria</th><th class="left">Cliente</th><th>Suma Kilos final</th><th>Suma Reposicion kg</th><th>Promedio Precio</th></tr></thead><tbody>';
-
-  let gid=0;
-  Object.keys(facturas).sort().forEach(function(fk){
-    const F=facturas[fk];
-    const fgid='fg'+(gid++);
-    html+='<tr class="frow-factura" onclick="toggleGroup(\''+fgid+'\',this)"><td class="left" colspan="2"><span class="ftog">▾</span>'+fk+'</td>';
-    html+='<td>'+Math.round(F.kilos).toLocaleString('es-CO')+'</td><td>'+Math.round(F.reposicion).toLocaleString('es-CO')+'</td><td>'+(F.precioN?Math.round(F.precioSum/F.precioN).toLocaleString('es-CO'):0)+'</td></tr>';
-
-    F.orden.forEach(function(rk){
-      const R=F.remisiones[rk];
-      const rgid='rg'+(gid++);
-      html+='<tr class="frow-remision '+fgid+'" onclick="toggleGroup(\''+rgid+'\',this)"><td class="left"><span class="ftog">▾</span>'+rk+'</td><td class="left">'+R.cliente+'</td>';
-      html+='<td>'+Math.round(R.kilos).toLocaleString('es-CO')+'</td><td>'+Math.round(R.reposicion).toLocaleString('es-CO')+'</td><td>'+(R.precioN?Math.round(R.precioSum/R.precioN).toLocaleString('es-CO'):0)+'</td></tr>';
-
-      R.orden.forEach(function(ck){
-        const C=R.categorias[ck];
-        html+='<tr class="frow-cat '+fgid+' '+rgid+'"><td class="left" colspan="2">'+ck+'</td>';
-        html+='<td>'+Math.round(C.kilos).toLocaleString('es-CO')+'</td><td>'+Math.round(C.reposicion).toLocaleString('es-CO')+'</td><td>'+(C.precioN?Math.round(C.precioSum/C.precioN).toLocaleString('es-CO'):0)+'</td></tr>';
+  ordenRemisiones.sort();
+  ordenRemisiones.forEach(function(rk){
+    const R=remisiones[rk];
+    R.ordenFacturas.sort();
+    R.ordenFacturas.forEach(function(fk){
+      const F=R.facturas[fk];
+      F.ordenClientes.sort();
+      F.ordenClientes.forEach(function(ck){
+        F.clientes[ck].ordenCategorias.sort();
       });
     });
   });
 
-  html+='<tr class="ftotal-row"><td class="left" colspan="2">TOTAL GENERAL</td>';
-  html+='<td>'+Math.round(grand.kilos).toLocaleString('es-CO')+'</td><td>'+Math.round(grand.reposicion).toLocaleString('es-CO')+'</td><td>'+(grand.precioN?Math.round(grand.precioSum/grand.precioN).toLocaleString('es-CO'):0)+'</td></tr>';
+  return {remisiones:remisiones, ordenRemisiones:ordenRemisiones, grand:grand};
+}
+
+function promedioTxt(sum,n){ return n?Math.round(sum/n).toLocaleString('es-CO'):'—'; }
+
+function renderFacturacion(data){
+  const el=document.getElementById('v-facturacion');
+  if(!data.length){el.innerHTML='<div class="empty">Sin despachos en la fecha seleccionada.</div>';return;}
+
+  const G=agruparFacturacion(data);
+  const grand=G.grand;
+
+  let html='<div style="background:#1e293b;border-radius:12px 12px 0 0;padding:12px 18px;display:flex;align-items:center;gap:12px;flex-wrap:wrap">';
+  html+='<span style="font-size:1.1rem;font-weight:800;color:#fff">FACTURACION</span>';
+  html+='<span style="background:#fff;color:#1e293b;padding:3px 12px;border-radius:20px;font-size:.85rem;font-weight:800">'+G.ordenRemisiones.length+' remisiones</span>';
+  html+='<span style="margin-left:auto;background:rgba(255,255,255,0.2);color:#fff;padding:3px 12px;border-radius:20px;font-size:.85rem;font-weight:800">'+Math.round(grand.kilos).toLocaleString('es-CO')+' kg final</span>';
+  html+='<span style="background:rgba(255,255,255,0.2);color:#fff;padding:3px 12px;border-radius:20px;font-size:.85rem;font-weight:800">'+Math.round(grand.reposicion).toLocaleString('es-CO')+' kg reposicion</span>';
+  html+='</div>';
+
+  html+='<table class="ftable"><thead><tr>';
+  html+='<th class="left">Remision</th><th class="left">Factura</th><th class="left">Cliente</th><th class="left">Categoria</th>';
+  html+='<th>Kilos Final</th><th>Reposicion Kilos</th><th>Promedio Precio</th>';
+  html+='</tr></thead><tbody>';
+
+  let gid=0;
+  G.ordenRemisiones.forEach(function(rk){
+    const R=G.remisiones[rk];
+    const rgid='fr'+(gid++);
+    html+='<tr class="frow-remision" onclick="toggleGroup(\''+rgid+'\',this)">';
+    html+='<td class="left"><span class="ftog">▾</span>'+rk+'</td><td class="left"></td><td class="left"></td><td class="left"></td>';
+    html+='<td>'+Math.round(R.kilos).toLocaleString('es-CO')+'</td><td>'+Math.round(R.reposicion).toLocaleString('es-CO')+'</td><td>'+promedioTxt(R.precioSum,R.precioN)+'</td></tr>';
+
+    R.ordenFacturas.forEach(function(fk){
+      const F=R.facturas[fk];
+      const fgid='ff'+(gid++);
+      html+='<tr class="frow-factura '+rgid+'" onclick="toggleGroup(\''+fgid+'\',this)">';
+      html+='<td class="left"></td><td class="left"><span class="ftog">▾</span>'+fk+'</td><td class="left"></td><td class="left"></td>';
+      html+='<td>'+Math.round(F.kilos).toLocaleString('es-CO')+'</td><td>'+Math.round(F.reposicion).toLocaleString('es-CO')+'</td><td>'+promedioTxt(F.precioSum,F.precioN)+'</td></tr>';
+
+      F.ordenClientes.forEach(function(ck){
+        const C=F.clientes[ck];
+        const cgid='fc'+(gid++);
+        html+='<tr class="frow-cliente '+rgid+' '+fgid+'" onclick="toggleGroup(\''+cgid+'\',this)">';
+        html+='<td class="left"></td><td class="left"></td><td class="left"><span class="ftog">▾</span>'+ck+'</td><td class="left"></td>';
+        html+='<td>'+Math.round(C.kilos).toLocaleString('es-CO')+'</td><td>'+Math.round(C.reposicion).toLocaleString('es-CO')+'</td><td>'+promedioTxt(C.precioSum,C.precioN)+'</td></tr>';
+
+        C.ordenCategorias.forEach(function(cat){
+          const Cat=C.categorias[cat];
+          html+='<tr class="frow-cat '+rgid+' '+fgid+' '+cgid+'">';
+          html+='<td class="left"></td><td class="left"></td><td class="left"></td><td class="left">'+cat+'</td>';
+          html+='<td>'+Math.round(Cat.kilos).toLocaleString('es-CO')+'</td><td>'+Math.round(Cat.reposicion).toLocaleString('es-CO')+'</td><td>'+promedioTxt(Cat.precioSum,Cat.precioN)+'</td></tr>';
+        });
+      });
+    });
+  });
+
+  html+='<tr class="ftotal-row"><td class="left">TOTAL GENERAL</td><td class="left"></td><td class="left"></td><td class="left"></td>';
+  html+='<td>'+Math.round(grand.kilos).toLocaleString('es-CO')+'</td><td>'+Math.round(grand.reposicion).toLocaleString('es-CO')+'</td><td>'+promedioTxt(grand.precioSum,grand.precioN)+'</td></tr>';
   html+='</tbody></table>';
   el.innerHTML=html;
 }
@@ -798,6 +885,49 @@ function toggleGroup(gid, headerRow){
   rows.forEach(function(r){r.style.display = hidden?'':'none';});
   const icon = headerRow.querySelector('.ftog');
   if(icon) icon.textContent = hidden?'▾':'▸';
+}
+
+// -- Exportar (Excel / PDF): reutiliza la misma agrupacion, aplanada a filas de detalle --
+function construirFilasExportFacturacion(data){
+  const G=agruparFacturacion(data);
+  const filas=[];
+  G.ordenRemisiones.forEach(function(rk){
+    const R=G.remisiones[rk];
+    R.ordenFacturas.forEach(function(fk){
+      const F=R.facturas[fk];
+      F.ordenClientes.forEach(function(ck){
+        const C=F.clientes[ck];
+        C.ordenCategorias.forEach(function(cat){
+          const Cat=C.categorias[cat];
+          filas.push([rk,fk,ck,cat,Math.round(Cat.kilos),Math.round(Cat.reposicion),Cat.precioN?Math.round(Cat.precioSum/Cat.precioN):0]);
+        });
+      });
+    });
+  });
+  filas.push(['TOTAL GENERAL','','','',Math.round(G.grand.kilos),Math.round(G.grand.reposicion),G.grand.precioN?Math.round(G.grand.precioSum/G.grand.precioN):0]);
+  return filas;
+}
+const FACT_EXPORT_HEADERS=['Remision','Factura','Cliente','Categoria','Kilos Final','Reposicion Kilos','Promedio Precio'];
+
+function exportExcelFacturacion(){
+  const data=filteredFacturacion();
+  if(!data.length){ alert('No hay datos de facturacion para la fecha seleccionada.'); return; }
+  const filas=construirFilasExportFacturacion(data);
+  const ws=XLSX.utils.aoa_to_sheet([FACT_EXPORT_HEADERS].concat(filas));
+  const wb=XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(wb,ws,'Facturacion');
+  XLSX.writeFile(wb,'Facturacion_'+(filtros.factFecha||'todas')+'.xlsx');
+}
+
+function exportPDFFacturacion(){
+  const data=filteredFacturacion();
+  if(!data.length){ alert('No hay datos de facturacion para la fecha seleccionada.'); return; }
+  const filas=construirFilasExportFacturacion(data);
+  const doc=new jspdf.jsPDF({orientation:'landscape'});
+  doc.setFontSize(14);
+  doc.text('Facturacion - '+(filtros.factFecha?fmtF(filtros.factFecha):'todas las fechas'),14,16);
+  doc.autoTable({head:[FACT_EXPORT_HEADERS],body:filas,startY:22,styles:{fontSize:8},headStyles:{fillColor:[30,41,59]}});
+  doc.save('Facturacion_'+(filtros.factFecha||'todas')+'.pdf');
 }
 
 function demo(){return[
