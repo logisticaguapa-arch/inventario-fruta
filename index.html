@@ -141,6 +141,7 @@ table.ctable tr:hover td{background:#f8fafc}
 
 /* ── FACTURACION (tabla dinamica) ── */
 .v-facturacion{overflow-x:auto}
+.v-descarte{overflow-x:auto}
 .fact-summary{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:12px}
 table.ftable{border-collapse:collapse;width:100%;background:#fff;border-radius:10px;overflow:hidden;font-size:.85rem;border:1px solid #e2e8f0;box-shadow:0 1px 4px rgba(0,0,0,0.06)}
 table.ftable th{background:#1e293b;color:#e2e8f0;padding:8px 12px;text-align:right;font-size:.68rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;white-space:nowrap;border-bottom:1px solid #f1f5f9}
@@ -212,6 +213,7 @@ table.ftable .ftotal-row td{color:#052e16!important}
   <button class="vbtn" onclick="setView('bodega')"   id="btn-bodega">Bodega + Urgencia</button>
   <button class="vbtn" onclick="setView('bines')"    id="btn-bines">Bines</button>
   <button class="vbtn" onclick="setView('facturacion')" id="btn-facturacion">Facturacion</button>
+  <button class="vbtn" onclick="setView('descarte')" id="btn-descarte">Descarte</button>
 </div>
 
 <div class="bar" id="barInv">
@@ -252,6 +254,18 @@ table.ftable .ftotal-row td{color:#052e16!important}
   <button class="bexport" onclick="exportPDFFacturacion()">⬇ Exportar a PDF</button>
 </div>
 
+<div class="bar" id="barDescarte" style="display:none">
+  <div class="msel" id="selDescFec">
+    <button type="button" class="msel-btn" onclick="toggleMsel('selDescFec')"><span class="msel-label">Todas las fechas</span><span class="msel-arrow">▾</span></button>
+    <div class="msel-panel" id="selDescFec-panel"></div>
+  </div>
+  <div class="msel" id="selDescCat">
+    <button type="button" class="msel-btn" onclick="toggleMsel('selDescCat')"><span class="msel-label">Todas las categorias</span><span class="msel-arrow">▾</span></button>
+    <div class="msel-panel" id="selDescCat-panel"></div>
+  </div>
+  <button class="breset" onclick="resetDescarte()">↺ Limpiar</button>
+</div>
+
 <div class="legend" id="legendInv">
   <div class="leg"><div class="leg-dot" style="background:#22c55e"></div><span>Verde — calibre 0 a 1.0</span></div>
   <div class="leg"><div class="leg-dot" style="background:#eab308"></div><span>Pintona — calibre 1.5 a 2.5</span></div>
@@ -264,6 +278,7 @@ table.ftable .ftotal-row td{color:#052e16!important}
   <div id="v-bodega"   class="v-bodega"   style="display:none"></div>
   <div id="v-bines"    class="v-bines"    style="display:none"></div>
   <div id="v-facturacion" class="v-facturacion" style="display:none"></div>
+  <div id="v-descarte" class="v-descarte" style="display:none"></div>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
@@ -347,7 +362,7 @@ async function load(){
     if(!r2.ok)throw 0;
     DESPACHO=parseDespachoCSV(await r2.text());
   }catch{DESPACHO=demoDespacho();}
-  buildFilters();buildFacturaFiltros();render();
+  buildFilters();buildFacturaFiltros();buildDescarteFiltros();render();
 }
 
 function parseDespachoCSV(t){
@@ -364,16 +379,17 @@ function parseDespachoCSV(t){
       Calibre:(v[5]||'').trim(),
       KilosFinal:parseFloat(v[6])||0,
       ReposicionKilos:parseFloat(v[7])||0,
-      Precio:(v[8]===undefined||v[8].trim()==='')?null:parseFloat(v[8])
+      Precio:(v[8]===undefined||v[8].trim()==='')?null:parseFloat(v[8]),
+      KilosDescarte:parseFloat(v[9])||0
     };
   }).filter(r=>r.FechaDespacho!=='');
 }
 
 function demoDespacho(){return[
-  {FechaDespacho:'2026-07-27',Factura:'',Remision:'R-18518',Cliente:'reposicion exito barranquilla',Categoria:'piña special 1ra',Calibre:'3,0 - 4,0',KilosFinal:0,ReposicionKilos:50,Precio:0},
-  {FechaDespacho:'2026-07-27',Factura:'',Remision:'R-18520',Cliente:'cartagena',Categoria:'piña special 1ra',Calibre:'3,0 - 4,0',KilosFinal:568,ReposicionKilos:432,Precio:3000},
-  {FechaDespacho:'2026-07-27',Factura:'',Remision:'R-18520',Cliente:'cartagena',Categoria:'piña special 2da',Calibre:'1,5 - 2,5',KilosFinal:988,ReposicionKilos:12,Precio:2800},
-  {FechaDespacho:'2026-07-27',Factura:'',Remision:'R-18521',Cliente:'local medellin',Categoria:'piña special 1ra',Calibre:'3,0 - 4,0',KilosFinal:3015,ReposicionKilos:0,Precio:2500},
+  {FechaDespacho:'2026-07-27',Factura:'',Remision:'R-18518',Cliente:'reposicion exito barranquilla',Categoria:'piña special 1ra',Calibre:'3,0 - 4,0',KilosFinal:0,ReposicionKilos:50,Precio:0,KilosDescarte:0},
+  {FechaDespacho:'2026-07-27',Factura:'',Remision:'R-18520',Cliente:'cartagena',Categoria:'piña special 1ra',Calibre:'3,0 - 4,0',KilosFinal:568,ReposicionKilos:432,Precio:3000,KilosDescarte:12},
+  {FechaDespacho:'2026-07-27',Factura:'',Remision:'R-18520',Cliente:'cartagena',Categoria:'piña special 2da',Calibre:'1,5 - 2,5',KilosFinal:988,ReposicionKilos:12,Precio:2800,KilosDescarte:5},
+  {FechaDespacho:'2026-07-27',Factura:'',Remision:'R-18521',Cliente:'local medellin',Categoria:'piña special 1ra',Calibre:'3,0 - 4,0',KilosFinal:3015,ReposicionKilos:0,Precio:2500,KilosDescarte:0},
 ];}
 
 function parseCSV(t){
@@ -403,14 +419,16 @@ function parseCSV(t){
 }
 
 // ── Filtros multi-seleccion ──────────────────────────────────────────────
-const filtros={mad:[],cal:[],tam:[],fec:[],factFecha:'',factCli:[],factCal:[]};
+const filtros={mad:[],cal:[],tam:[],fec:[],factFecha:'',factCli:[],factCal:[],descFec:[],descCat:[]};
 const MSEL_DEF={
   selMad:{key:'mad',placeholder:'Toda la madurez'},
   selCal:{key:'cal',placeholder:'Todos los calibres'},
   selTam:{key:'tam',placeholder:'Todos los tamanos'},
   selFec:{key:'fec',placeholder:'Todas las fechas'},
   selFactCli:{key:'factCli',placeholder:'Todos los clientes'},
-  selFactCal:{key:'factCal',placeholder:'Todos los calibres'}
+  selFactCal:{key:'factCal',placeholder:'Todos los calibres'},
+  selDescFec:{key:'descFec',placeholder:'Todas las fechas'},
+  selDescCat:{key:'descCat',placeholder:'Todas las categorias'}
 };
 
 // -- Helpers de fecha para el filtro de Facturacion (formato YYYY-MM-DD, igual que el CSV) --
@@ -532,6 +550,17 @@ function resetFactura(){
   if(inputFecha) inputFecha.value=filtros.factFecha;
   render();
 }
+function buildDescarteFiltros(){
+  const fechas=[...new Set(DESPACHO.map(r=>r.FechaDespacho).filter(f=>f))].sort().reverse();
+  const categorias=[...new Set(DESPACHO.map(r=>r.Categoria).filter(c=>c))].sort();
+  fillMsel('selDescFec',fechas.map(f=>({value:f,label:fmtF(f)})));
+  fillMsel('selDescCat',categorias.map(c=>({value:c,label:c})));
+}
+function resetDescarte(){
+  ['descFec','descCat'].forEach(k=>filtros[k]=[]);
+  ['selDescFec','selDescCat'].forEach(id=>{fillMselKeep(id);});
+  render();
+}
 function fillMselKeep(id){
   // Vuelve a pintar el panel actual (checkboxes) sin recalcular las opciones
   document.querySelectorAll('#'+id+'-panel input[type=checkbox]').forEach(function(cb){cb.checked=false;});
@@ -545,13 +574,19 @@ function filteredFacturacion(){
   const fecha=filtros.factFecha,c=filtros.factCli,cal=filtros.factCal;
   return DESPACHO.filter(r=>(!fecha||r.FechaDespacho===fecha)&&(!c.length||c.includes(r.Cliente))&&(!cal.length||cal.includes(r.Calibre)));
 }
+function filteredDescarte(){
+  const f=filtros.descFec,cat=filtros.descCat;
+  return DESPACHO.filter(r=>(!f.length||f.includes(r.FechaDespacho))&&(!cat.length||cat.includes(r.Categoria)));
+}
 function setView(v){
   currentView=v;
-  ['tarjetas','tabla','bodega','bines','facturacion'].forEach(x=>{document.getElementById('v-'+x).style.display=x===v?'':'none';document.getElementById('btn-'+x).classList.toggle('active',x===v);});
+  ['tarjetas','tabla','bodega','bines','facturacion','descarte'].forEach(x=>{document.getElementById('v-'+x).style.display=x===v?'':'none';document.getElementById('btn-'+x).classList.toggle('active',x===v);});
   const esFact = v==='facturacion';
-  document.getElementById('barInv').style.display = esFact?'none':'';
+  const esDesc = v==='descarte';
+  document.getElementById('barInv').style.display = (esFact||esDesc)?'none':'';
   document.getElementById('barFact').style.display = esFact?'':'none';
-  document.getElementById('legendInv').style.display = esFact?'none':'';
+  document.getElementById('barDescarte').style.display = esDesc?'':'none';
+  document.getElementById('legendInv').style.display = (esFact||esDesc)?'none':'';
   render();
 }
 
@@ -578,6 +613,7 @@ function render(){
   if(currentView==='bodega')renderBodega(data);
   if(currentView==='bines')renderBines(data);
   if(currentView==='facturacion')renderFacturacion(filteredFacturacion());
+  if(currentView==='descarte')renderDescarte(filteredDescarte());
 }
 
 function renderTarjetas(data){
@@ -937,6 +973,43 @@ function exportPDFFacturacion(){
   doc.text('Facturacion - '+(filtros.factFecha?fmtF(filtros.factFecha):'todas las fechas'),14,16);
   doc.autoTable({head:[FACT_EXPORT_HEADERS],body:filas,startY:22,styles:{fontSize:8},headStyles:{fillColor:[30,41,59]}});
   doc.save('Facturacion_'+(filtros.factFecha||'todas')+'.pdf');
+}
+
+// -- DESCARTE: fruta descartada por dia, tomada de la columna "Kilos de descarte" de Despacho --
+function renderDescarte(data){
+  const el=document.getElementById('v-descarte');
+  // Agrupar Fecha + Categoria + Cliente en un solo recorrido, solo lo que realmente tuvo descarte
+  const grupos={};
+  const orden=[];
+  let totalDescarte=0;
+  data.forEach(function(r){
+    const kd=r.KilosDescarte||0;
+    if(kd<=0) return; // solo nos interesa lo que si tuvo descarte
+    totalDescarte+=kd;
+    const k=r.FechaDespacho+'||'+r.Categoria+'||'+r.Cliente;
+    if(!grupos[k]){ grupos[k]={fecha:r.FechaDespacho,categoria:r.Categoria||'(Sin categoria)',cliente:r.Cliente||'(Sin cliente)',kd:0}; orden.push(k); }
+    grupos[k].kd+=kd;
+  });
+
+  if(!orden.length){el.innerHTML='<div class="empty">Sin descartes en el periodo seleccionado.</div>';return;}
+
+  const filas=orden.map(function(k){return grupos[k];})
+    .sort(function(a,b){ return b.fecha!==a.fecha ? (b.fecha<a.fecha?-1:1) : b.kd-a.kd; });
+
+  let html='<div style="background:#7f1d1d;border-radius:12px 12px 0 0;padding:12px 18px;display:flex;align-items:center;gap:12px;flex-wrap:wrap">';
+  html+='<span style="font-size:1.1rem;font-weight:800;color:#fff">DESCARTE</span>';
+  html+='<span style="background:#fff;color:#7f1d1d;padding:3px 12px;border-radius:20px;font-size:.85rem;font-weight:800">'+filas.length+' registros</span>';
+  html+='<span style="margin-left:auto;background:rgba(255,255,255,0.2);color:#fff;padding:3px 12px;border-radius:20px;font-size:.85rem;font-weight:800">'+Math.round(totalDescarte).toLocaleString('es-CO')+' kg descartados</span>';
+  html+='</div>';
+
+  html+='<table class="ftable"><thead><tr><th class="left">Fecha</th><th class="left">Categoria</th><th class="left">Cliente</th><th>Kilos Descartados</th></tr></thead><tbody>';
+  filas.forEach(function(f){
+    html+='<tr><td class="left">'+fmtF(f.fecha)+'</td><td class="left">'+f.categoria+'</td><td class="left">'+f.cliente+'</td>';
+    html+='<td>'+Math.round(f.kd).toLocaleString('es-CO')+'</td></tr>';
+  });
+  html+='<tr class="ftotal-row"><td class="left">TOTAL GENERAL</td><td class="left"></td><td class="left"></td><td>'+Math.round(totalDescarte).toLocaleString('es-CO')+'</td></tr>';
+  html+='</tbody></table>';
+  el.innerHTML=html;
 }
 
 function demo(){return[
