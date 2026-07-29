@@ -64,7 +64,7 @@ jobs:
 
           ws_desp = wb["Despacho"]
 
-          csv2 = "FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKilos,Precio\n"
+          csv2 = "FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKilos,Precio,KilosDescarte\n"
           n2 = 0
           fechas_vistas = []
           for row in ws_desp.iter_rows(min_row=2, values_only=True):
@@ -86,7 +86,8 @@ jobs:
               precio     = "" if precio_raw in (None, "") else precio_raw  # en blanco = en blanco (para que el promedio lo excluya, igual que Excel)
               remision   = str(row[23] or "").replace(",", " ").strip()
               factura    = str(row[24] or "").replace(",", " ").strip()
-              csv2 += f"{fecha_desp},{factura},{remision},{cliente},{categoria},{calibre},{kilos},{reposicion},{precio}\n"
+              descarte   = row[12] or 0   # Col M - Kilos de descarte
+              csv2 += f"{fecha_desp},{factura},{remision},{cliente},{categoria},{calibre},{kilos},{reposicion},{precio},{descarte}\n"
               n2 += 1
 
           with open("despacho.csv", "w", encoding="utf-8") as f:
