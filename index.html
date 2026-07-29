@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
 <title>Inventario Fruta — Agrícola Guapa</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
@@ -156,6 +157,14 @@ table.ftable tr:hover td{background:#f8fafc}
 .frow-cat td{color:#334155}
 .frow-cat td.left{font-weight:500}
 .ftotal-row td{background:#f1f5f9;color:#1e293b;font-weight:800;border-top:2px solid #2a3f55}
+/* Forzar color de texto en toda la tabla: evita que el navegador (Safari/iOS) pinte
+   numeros de azul al detectarlos como si fueran telefonos */
+table.ftable td, table.ftable td *{color:inherit!important;text-decoration:none!important}
+table.ftable .frow-remision td{color:#fff!important}
+table.ftable .frow-factura td{color:#fff!important}
+table.ftable .frow-cliente td{color:#1e293b!important}
+table.ftable .frow-cat td{color:#334155!important}
+table.ftable .ftotal-row td{color:#1e293b!important}
 
 /* ── BODEGA ── */
 .v-bodega{display:flex;flex-direction:column;gap:12px}.bod-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
