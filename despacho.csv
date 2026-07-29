@@ -13784,7 +13784,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-07-22,45360,R-18453,rubiela castro,piña special 1ra,PE1,92,0,1500
 2026-07-22,45360,R-18453,rubiela castro,piña special 1ra,PE1,14,0,1500
 2026-07-22,45360,R-18453,rubiela castro,piña special 2da,PE2,487,0,1300
-2026-07-22,45360,R-18453,rubiela castro,piña special 2da,PE2,0,0,1300
+2026-07-22,45360,R-18453,rubiela castro,piña special 2da,PE2,497,0,1300
 2026-07-22,45360,R-18453,rubiela castro,Piña AD2,AD2,1416,0,1300
 2026-07-22,,,descarte,piña special 2da,PE2,0,0,0
 2026-07-22,,R-18452,local sincelejo,piña special baby,PEBAB,386,0,1500
@@ -13918,7 +13918,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-07-22,45368,R-18462,claudia andrea varela,piña special 2da,PE2,392,0,1300
 2026-07-22,45368,R-18462,claudia andrea varela,Piña AD2,AD2,496,0,1300
 2026-07-22,45369,R-18473,venta empleados,piña special 1ra,PE1,153,0,2200
-2026-07-23,,R-18478,local apartado,AL-PEGUA,AL-PEGUA,0,0,1800
+2026-07-23,,R-18478,local apartado,AL-PEGUA,AL-PEGUA,108,0,1800
 2026-07-23,,R-18478,local apartado,piña special guapita,PEGUA,470,80,1800
 2026-07-23,,R-18478,local apartado,Piña AD1,AD1,516,0,2900
 2026-07-23,,R-18478,local apartado,Piña AD1,AD1,358,226,2900
@@ -14078,7 +14078,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-07-23,,R-18477,fundacion saciar,AD-piña jugos,AD-PJUG,0,0,0
 2026-07-23,,R-18477,fundacion saciar,AD-piña jugos,AD-PJUG,1220,0,0
 2026-07-24,,R-18479,local apartado,AL-PEGUA,AL-PEGUA,0,0,1800
-2026-07-24,,R-18479,local apartado,AL-PEGUA,AL-PEGUA,0,0,1800
+2026-07-24,,R-18479,local apartado,AL-PEGUA,AL-PEGUA,202,0,1800
 2026-07-24,,R-18479,local apartado,AL-PE2,AL-PE2,20,0,2700
 2026-07-24,,R-18479,local apartado,piña special 2da,PE2,493,207,2700
 2026-07-24,,R-18479,local apartado,Piña AD1,AD1,555,0,2900
@@ -14212,7 +14212,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-07-25,,R-18497,local apartado,piña special 1ra,PE1,534,366,2500
 2026-07-25,,R-18497,local apartado,Piña AD1,AD1,548,0,2500
 2026-07-25,,R-18497,local apartado,piña special 1ra,PE1,385,22,2500
-2026-07-25,,R-18497,local apartado,AL-PEGUA,AL-PEGUA,0,0,1800
+2026-07-25,,R-18497,local apartado,AL-PEGUA,AL-PEGUA,87,0,1800
 2026-07-25,,R-18498,local medellin,Piña AD1,AD1,527,0,2300
 2026-07-25,,R-18498,local medellin,piña special 1ra,PE1,432,0,2300
 2026-07-25,,R-18498,local medellin,Piña AD1,AD1,158,62,2300
@@ -14419,7 +14419,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-07-27,,R-18522,local sincelejo,piña special guapita,PEGUA,436,0,1600
 2026-07-27,,R-18522,local sincelejo,piña special guapita,PEGUA,18,0,1600
 2026-07-27,,R-18522,local sincelejo,piña special guapita,PEGUA,69,17,1600
-2026-07-27,,R-18523,local sincelejo,piña special 1ra,PE1,0,0,0
+2026-07-27,,R-18523,local sincelejo,piña special 1ra,PE1,20,0,0
 2026-07-27,,R-18523,local sincelejo,piña special 2da,PE2,53,0,0
 2026-07-27,,R-18521,local medellin,piña special 1ra,PE1,554,0,2500
 2026-07-27,,R-18521,local medellin,Piña AD1,AD1,420,0,2500
@@ -14460,26 +14460,26 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-07-27,45469,R-18533,claudia andrea varela,piña special 1ra,PE1,420,0,2000
 2026-07-27,45469,R-18533,claudia andrea varela,piña special 1ra,PE1,430,0,2000
 2026-07-27,45469,R-18533,claudia andrea varela,piña special 1ra,PE1,183,0,2000
-2026-07-27,,R-18525,local sincelejo,Piña AD2,AD2,177,0,2900
-2026-07-27,,R-18525,local sincelejo,Piña AD2,AD2,277,0,2900
-2026-07-27,,R-18525,local sincelejo,piña special 2da,PE2,31,0,2900
-2026-07-27,,R-18525,local sincelejo,piña special 2da,PE2,101,0,2900
-2026-07-27,,R-18525,local sincelejo,Piña AD3,AD3,122,0,2600
-2026-07-27,,R-18525,local sincelejo,piña special 3ra,PE3,422,0,2600
-2026-07-27,,R-18525,local sincelejo,piña special 3ra,PE3,434,0,2600
-2026-07-27,,R-18525,local sincelejo,piña special 3ra,PE3,430,0,2600
-2026-07-27,,R-18525,local sincelejo,Piña AD3,AD3,269,0,2600
-2026-07-27,,R-18525,local sincelejo,piña special 3ra,PE3,195,0,2600
-2026-07-27,,R-18525,local sincelejo,piña special guapita,PEGUA,420,0,2200
-2026-07-27,,R-18525,local sincelejo,piña special guapita,PEGUA,304,0,2200
-2026-07-27,,R-18525,local sincelejo,Piña ADGUA,ADGUA,461,0,2200
-2026-07-27,,R-18525,local sincelejo,Piña ADGUA,ADGUA,258,0,2200
-2026-07-27,,R-18525,local sincelejo,piña special guapita,PEGUA,105,52,2200
-2026-07-27,,R-18525,local sincelejo,piña special baby,PEBAB,428,0,1500
-2026-07-27,,R-18525,local sincelejo,piña special baby,PEBAB,419,0,1500
-2026-07-27,,R-18525,local sincelejo,piña special baby,PEBAB,421,0,1500
-2026-07-27,,R-18525,local sincelejo,piña special baby,PEBAB,358,374,1500
-2026-07-28,,,local sincelejo,piña special 2da,PE2,40,0,0
+2026-07-27,,R-18537,local sincelejo,Piña AD2,AD2,177,0,2900
+2026-07-27,,R-18537,local sincelejo,Piña AD2,AD2,277,0,2900
+2026-07-27,,R-18537,local sincelejo,piña special 2da,PE2,31,0,2900
+2026-07-27,,R-18537,local sincelejo,piña special 2da,PE2,101,0,2900
+2026-07-27,,R-18537,local sincelejo,Piña AD3,AD3,122,0,2600
+2026-07-27,,R-18537,local sincelejo,piña special 3ra,PE3,422,0,2600
+2026-07-27,,R-18537,local sincelejo,piña special 3ra,PE3,434,0,2600
+2026-07-27,,R-18537,local sincelejo,piña special 3ra,PE3,430,0,2600
+2026-07-27,,R-18537,local sincelejo,Piña AD3,AD3,269,0,2600
+2026-07-27,,R-18537,local sincelejo,piña special 3ra,PE3,195,0,2600
+2026-07-27,,R-18537,local sincelejo,piña special guapita,PEGUA,420,0,2200
+2026-07-27,,R-18537,local sincelejo,piña special guapita,PEGUA,304,0,2200
+2026-07-27,,R-18537,local sincelejo,Piña ADGUA,ADGUA,461,0,2200
+2026-07-27,,R-18537,local sincelejo,Piña ADGUA,ADGUA,258,0,2200
+2026-07-27,,R-18537,local sincelejo,piña special guapita,PEGUA,105,52,2200
+2026-07-27,,R-18537,local sincelejo,piña special baby,PEBAB,428,0,1500
+2026-07-27,,R-18537,local sincelejo,piña special baby,PEBAB,419,0,1500
+2026-07-27,,R-18537,local sincelejo,piña special baby,PEBAB,421,0,1500
+2026-07-27,,R-18537,local sincelejo,piña special baby,PEBAB,358,374,1500
+2026-07-28,,R-18537,local sincelejo,piña special 2da,PE2,40,0,2900
 2026-07-27,45466,R-18527,elias alfonso david burgos,piña special baby,PEBAB,404,0,600
 2026-07-27,45466,R-18527,elias alfonso david burgos,piña special baby,PEBAB,364,0,600
 2026-07-27,45466,R-18527,elias alfonso david burgos,piña special baby,PEBAB,137,95,600
@@ -14619,7 +14619,6 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-07-28,,R-18554,local sincelejo,piña special 2da,PE2,260,0,2300
 2026-07-28,,R-18554,local sincelejo,piña special 2da,PE2,9,0,2300
 2026-07-28,,R-18554,local sincelejo,piña special 2da,PE2,31,0,2300
-2026-07-28,,R-18554,local sincelejo,,PE3,0,300,2100
 2026-07-28,,R-18554,local sincelejo,piña special guapita,PEGUA,339,0,1600
 2026-07-28,,R-18554,local sincelejo,piña special guapita,PEGUA,441,0,1600
 2026-07-28,,R-18554,local sincelejo,piña special guapita,PEGUA,429,0,1600
@@ -14629,22 +14628,6 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-07-28,,R-18554,local sincelejo,piña special 2da,PE2,38,136,2300
 2026-07-28,,R-18554,local sincelejo,Piña AD1,AD1,411,0,2600
 2026-07-28,,R-18554,local sincelejo,piña special 1ra,PE1,525,64,2600
-2026-07-28,45480,R-18548,Aldinsen Gonzalez,piña indstria,PIND,422,0,500
-2026-07-28,45480,R-18548,Aldinsen Gonzalez,piña indstria,PIND,448,0,500
-2026-07-28,45480,R-18548,Aldinsen Gonzalez,piña indstria,PIND,476,0,500
-2026-07-28,45480,R-18548,Aldinsen Gonzalez,piña indstria,PIND,459,0,500
-2026-07-28,45480,R-18548,Aldinsen Gonzalez,piña indstria,PIND,485,0,500
-2026-07-28,45480,R-18548,Aldinsen Gonzalez,piña indstria,PIND,530,0,500
-2026-07-28,45480,R-18548,Aldinsen Gonzalez,piña indstria,PIND,431,0,500
-2026-07-28,45480,R-18548,Aldinsen Gonzalez,AD-piña indstria,AD-PIND,407,0,500
-2026-07-28,45480,R-18548,Aldinsen Gonzalez,AD-piña indstria,AD-PIND,0,0,500
-2026-07-28,45480,R-18548,Aldinsen Gonzalez,AD-piña indstria,AD-PIND,184,0,500
-2026-07-28,45480,R-18548,Aldinsen Gonzalez,piña indstria,PIND,472,0,500
-2026-07-28,45480,R-18548,Aldinsen Gonzalez,piña indstria,PIND,454,0,500
-2026-07-28,45480,R-18548,Aldinsen Gonzalez,AD-piña indstria,AD-PIND,0,0,500
-2026-07-28,45480,R-18548,Aldinsen Gonzalez,piña indstria,PIND,476,0,500
-2026-07-28,45480,R-18548,Aldinsen Gonzalez,piña indstria,PIND,444,0,500
-2026-07-28,45480,R-18548,Aldinsen Gonzalez,piña indstria,PIND,210,290,500
 2026-07-28,45481,R-18546,Andres Garcia,piña special 3ra,PE3,390,0,800
 2026-07-28,45481,R-18546,Andres Garcia,piña special 2da,PE2,497,0,1800
 2026-07-28,45481,R-18546,Andres Garcia,piña special 2da,PE2,489,0,1800
@@ -14661,14 +14644,14 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-07-28,45480,R-18548,Aldinsen Gonzalez,piña indstria,PIND,530,0,500
 2026-07-28,45480,R-18548,Aldinsen Gonzalez,piña indstria,PIND,431,0,500
 2026-07-28,45480,R-18548,Aldinsen Gonzalez,AD-piña indstria,AD-PIND,407,0,500
-2026-07-28,45480,R-18548,Aldinsen Gonzalez,AD-piña indstria,AD-PIND,0,0,500
+2026-07-28,45480,R-18548,Aldinsen Gonzalez,AD-piña indstria,AD-PIND,440,0,500
 2026-07-28,45480,R-18548,Aldinsen Gonzalez,AD-piña indstria,AD-PIND,184,0,500
 2026-07-28,45480,R-18548,Aldinsen Gonzalez,piña indstria,PIND,472,0,500
 2026-07-28,45480,R-18548,Aldinsen Gonzalez,piña indstria,PIND,454,0,500
-2026-07-28,45480,R-18548,Aldinsen Gonzalez,AD-piña indstria,AD-PIND,0,0,500
+2026-07-28,45480,R-18548,Aldinsen Gonzalez,AD-piña indstria,AD-PIND,339,0,500
 2026-07-28,45480,R-18548,Aldinsen Gonzalez,piña indstria,PIND,476,0,500
 2026-07-28,45480,R-18548,Aldinsen Gonzalez,piña indstria,PIND,444,0,500
-2026-07-28,45480,R-18548,Aldinsen Gonzalez,piña indstria,PIND,210,0,500
+2026-07-28,45480,R-18548,Aldinsen Gonzalez,piña indstria,PIND,210,290,500
 2026-07-28,45478,R-18550,heyder miranda,piña special guapita,PEGUA,457,0,500
 2026-07-28,45478,R-18550,heyder miranda,piña special guapita,PEGUA,447,0,500
 2026-07-28,45478,R-18550,heyder miranda,piña special guapita,PEGUA,443,0,500
@@ -14751,7 +14734,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-07-28,,,descarte,piña special baby,PEBAB,0,0,0
 2026-07-28,,,descarte,piña special baby,PEBAB,0,0,0
 2026-07-28,,,descarte,piña special baby,PEBAB,0,0,0
-2026-07-28,,,descarte,piña special baby,PEBAB,0,0,0
+2026-07-28,,,descarte,piña special baby,PEBAB,-1,0,0
 2026-07-28,,,descarte,piña special baby,PEBAB,0,0,0
 2026-07-28,,,descarte,piña special baby,PEBAB,0,0,0
 2026-07-28,,,descarte,piña special baby,PEBAB,0,0,0
