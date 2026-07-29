@@ -63,12 +63,14 @@ jobs:
               return s in ("SI", "SÍ", "X", "ANULADO", "ANULADA", "TRUE")
 
           ws_desp = wb["Despacho"]
+
           csv2 = "FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKilos,Precio\n"
           n2 = 0
           fechas_vistas = []
           for row in ws_desp.iter_rows(min_row=2, values_only=True):
-              id_val = row[2]  # Col C - ID
-              if not id_val: continue
+              id_val = row[2]        # Col C - ID (vacio en filas que son solo una reposicion adicional)
+              remision_val = row[23] if len(row) > 23 else None  # Col X - Remision
+              if not id_val and not remision_val: continue  # fila totalmente vacia (ni ID ni Remision)
               anula_rm = es_anulado(row[25]) if len(row) > 25 else False
               anula_fv = es_anulado(row[26]) if len(row) > 26 else False
               if anula_rm or anula_fv: continue  # excluir remisiones/facturas anuladas
@@ -80,7 +82,8 @@ jobs:
               categoria  = str(row[6] or "").replace(",", " ").strip()
               kilos      = row[13] or 0
               reposicion = row[15] or 0
-              precio     = row[22] or 0
+              precio_raw = row[22]
+              precio     = "" if precio_raw in (None, "") else precio_raw  # en blanco = en blanco (para que el promedio lo excluya, igual que Excel)
               remision   = str(row[23] or "").replace(",", " ").strip()
               factura    = str(row[24] or "").replace(",", " ").strip()
               csv2 += f"{fecha_desp},{factura},{remision},{cliente},{categoria},{calibre},{kilos},{reposicion},{precio}\n"
