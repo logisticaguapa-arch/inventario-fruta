@@ -174,16 +174,16 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 198602,63,2026-07-28,AD-PJUG,AD-piña jugos,3.0 - 4.0,1428
 198603,70,2026-07-28,AD-PJUG,AD-piña jugos,3.0 - 4.0,1401
 198604,120,2026-07-28,AD-PJUG,AD-piña jugos,3.0 - 4.0,707
-198606,,,,,,0
-198607,,,,,,0
-198608,,,,,,0
-198609,,,,,,0
-198610,,,,,,0
-198611,,,,,,0
-198612,,,,,,0
-198613,,,,,,0
-198614,,,,,,0
-198615,,,,,,0
+198606,canastas,2026-07-29,PE1,piña special 1ra,1.5 - 2.5,559
+198607,canastas,2026-07-29,PE2,piña special 2da,1.5 - 2.5,510
+198608,canastas,2026-07-29,PE3,piña special 3ra,1.5 - 2.5,489
+198609,canastas,2026-07-29,PEBAB,piña special baby,1.5 - 2.5,401
+198610,canastas,2026-07-29,PEGUA,piña special guapita,1.5 - 2.5,417
+198611,canastas,2026-07-29,PJUG,piña jugos,1.5 - 2.5,479
+198612,canastas,2026-07-29,PIND,piña indstria,1.5 - 2.5,463
+198613,canastas,2026-07-29,PE1,piña special 1ra,1.5 - 2.5,544
+198614,canastas,2026-07-29,PE2,piña special 2da,1.5 - 2.5,495
+198615,canastas,2026-07-29,PE3,piña special 3ra,1.5 - 2.5,485
 198616,,,,,,0
 198617,,,,,,0
 198618,,,,,,0
