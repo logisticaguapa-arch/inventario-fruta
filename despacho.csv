@@ -14678,7 +14678,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-07-25,,R-18497,local apartado,,,0,100,2700,0
 2026-07-25,,R-18497,local apartado,,,0,250,2700,0
 2026-07-25,,R-18497,local apartado,,,0,100,1800,0
-2026-07-25,,R-18497,local apartado,piña special 3ra,PE3,461,31,2100,0
+2026-07-25,,R-18497,local apartado,piña special 3ra,PE3,74,31,2100,387
 2026-07-25,,R-18497,local apartado,piña special 1ra,PE1,534,366,2500,6
 2026-07-25,,R-18497,local apartado,Piña AD1,AD1,548,0,2500,0
 2026-07-25,,R-18497,local apartado,piña special 1ra,PE1,385,22,2500,0
@@ -14686,7 +14686,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-07-25,,R-18498,local medellin,Piña AD1,AD1,527,0,2300,0
 2026-07-25,,R-18498,local medellin,piña special 1ra,PE1,432,0,2300,0
 2026-07-25,,R-18498,local medellin,Piña AD1,AD1,158,62,2300,0
-2026-07-25,,R-18498,local medellin,piña special 1ra,PE1,535,0,2300,0
+2026-07-25,,R-18498,local medellin,piña special 1ra,PE1,143,0,2300,392
 2026-07-25,,R-18498,local medellin,piña special 1ra,PE1,346,0,2300,0
 2026-07-25,,R-18498,local medellin,piña special 1ra,PE1,560,7,2300,0
 2026-07-25,,R-18498,local medellin,piña special 2da,PE2,499,0,2100,0
@@ -14727,7 +14727,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-07-25,45441,R-18504,jeronimo martins,piña special 2da,PE2,402,0,3200,0
 2026-07-25,45441,R-18504,jeronimo martins,Piña AD2,AD2,405,0,3200,0
 2026-07-25,45441,R-18504,jeronimo martins,piña special 2da,PE2,412,29,3200,0
-2026-07-25,45442,R-18505,jeronimo martins,piña special 2da,PE2,372,0,3200,0
+2026-07-25,45442,R-18505,jeronimo martins,piña special 2da,PE2,-47,0,3200,419
 2026-07-25,45442,R-18505,jeronimo martins,piña special 2da,PE2,408,0,3200,0
 2026-07-25,45442,R-18505,jeronimo martins,piña special 2da,PE2,400,0,3200,0
 2026-07-25,45442,R-18505,jeronimo martins,Piña AD2,AD2,206,374,3200,0
@@ -14735,7 +14735,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-07-25,45444,R-18506,claudia andrea varela,Piña AD3,AD3,470,0,1000,0
 2026-07-25,45444,R-18506,claudia andrea varela,Piña AD3,AD3,464,66,1000,0
 2026-07-25,45444,R-18506,claudia andrea varela,piña special 2da,PE2,493,0,1800,0
-2026-07-25,45444,R-18506,claudia andrea varela,piña special 2da,PE2,497,0,1800,0
+2026-07-25,45444,R-18506,claudia andrea varela,piña special 2da,PE2,106,0,1800,391
 2026-07-25,45444,R-18506,claudia andrea varela,piña special 2da,PE2,522,0,1800,0
 2026-07-25,45444,R-18506,claudia andrea varela,piña special 2da,PE2,154,20,1800,0
 2026-07-25,45446,R-18509,Aldinsen Gonzalez,piña special baby,PEBAB,406,0,500,0
@@ -14958,8 +14958,8 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-07-27,,R-18537,local sincelejo,piña special baby,PEBAB,421,0,1500,0
 2026-07-27,,R-18537,local sincelejo,piña special baby,PEBAB,358,374,1500,14
 2026-07-28,,R-18537,local sincelejo,piña special 2da,PE2,40,0,2900,0
-2026-07-27,45466,R-18527,elias alfonso david burgos,piña special baby,PEBAB,404,0,600,0
-2026-07-27,45466,R-18527,elias alfonso david burgos,piña special baby,PEBAB,364,0,600,0
+2026-07-27,45466,R-18527,elias alfonso david burgos,piña special baby,PEBAB,18,0,600,386
+2026-07-27,45466,R-18527,elias alfonso david burgos,piña special baby,PEBAB,-13,0,600,377
 2026-07-27,45466,R-18527,elias alfonso david burgos,piña special baby,PEBAB,137,95,600,0
 2026-07-27,45467,R-18529,Aldinsen Gonzalez,piña special guapita,PEGUA,450,0,800,5
 2026-07-27,45467,R-18529,Aldinsen Gonzalez,piña special guapita,PEGUA,465,0,800,0
@@ -15103,7 +15103,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-07-28,,R-18554,local sincelejo,piña special 2da,PE2,31,0,2300,0
 2026-07-28,,R-18554,local sincelejo,,PE3,0,300,2100,0
 2026-07-28,,R-18554,local sincelejo,piña special guapita,PEGUA,339,0,1600,0
-2026-07-28,,R-18554,local sincelejo,piña special guapita,PEGUA,441,0,1600,0
+2026-07-28,,R-18554,local sincelejo,piña special guapita,PEGUA,1,0,1600,440
 2026-07-28,,R-18554,local sincelejo,piña special guapita,PEGUA,429,0,1600,0
 2026-07-28,,R-18554,local sincelejo,piña special guapita,PEGUA,435,56,1600,0
 2026-07-28,,R-18554,local sincelejo,piña special 2da,PE2,203,0,2300,0
@@ -15156,7 +15156,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-07-28,45476,R-18552,juan pablo cogollo,piña special guapita,PEGUA,461,0,600,0
 2026-07-28,45476,R-18552,juan pablo cogollo,Piña ADGUA,ADGUA,456,0,600,0
 2026-07-28,45476,R-18552,juan pablo cogollo,piña special guapita,PEGUA,444,0,600,0
-2026-07-28,45476,R-18552,juan pablo cogollo,piña special guapita,PEGUA,451,0,600,0
+2026-07-28,45476,R-18552,juan pablo cogollo,piña special guapita,PEGUA,23,0,600,428
 2026-07-28,45476,R-18552,juan pablo cogollo,piña special guapita,PEGUA,459,0,600,0
 2026-07-28,45476,R-18552,juan pablo cogollo,piña special guapita,PEGUA,459,0,600,0
 2026-07-28,45476,R-18552,juan pablo cogollo,piña special guapita,PEGUA,358,0,600,80
@@ -15226,3 +15226,123 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-07-28,,,descarte,piña special baby,PEBAB,0,0,,408
 2026-07-28,,,descarte,piña special baby,PEBAB,0,0,,415
 2026-07-28,,,descarte,piña special guapita,PEGUA,0,0,,457
+2026-07-29,,R-18557,local apartado,piña special guapita,PEGUA,460,40,1800,0
+2026-07-29,,R-18557,local apartado,,pe2,0,315,2700,0
+2026-07-29,,R-18557,local apartado,piña special 2da,PE2,469,331,2700,5
+2026-07-29,,R-18557,local apartado,,pe1,0,417,2900,0
+2026-07-29,,R-18557,local apartado,piña special 2da,PE2,475,0,2700,0
+2026-07-29,,R-18557,local apartado,Piña AD2,AD2,507,18,2700,0
+2026-07-29,,R-18557,local apartado,piña special 1ra,PE1,523,477,2900,0
+2026-07-29,,R-18557,local apartado,piña special 2da,PE2,507,93,2600,0
+2026-07-29,,R-18560,local medellin,piña special 2da,PE2,33,0,2100,0
+2026-07-29,,R-18560,local medellin,Piña AD2,AD2,40,0,2100,0
+2026-07-29,,R-18560,local medellin,piña special 2da,PE2,88,0,2100,0
+2026-07-29,,R-18560,local medellin,Piña AD2,AD2,45,490,2100,0
+2026-07-29,,R-18560,local medellin,piña special 3ra,PE3,487,313,1900,3
+2026-07-29,,R-18560,local medellin,piña special 2da,PE2,521,0,2100,7
+2026-07-29,,R-18560,local medellin,piña special 2da,PE2,530,0,2100,0
+2026-07-29,,R-18560,local medellin,piña special 2da,PE2,475,0,2100,0
+2026-07-29,,R-18560,local medellin,piña special 2da,PE2,487,87,2100,0
+2026-07-29,,R-18560,local medellin,piña special 1ra,PE1,501,0,2300,0
+2026-07-29,,R-18560,local medellin,Piña AD1,AD1,567,0,2300,0
+2026-07-29,,R-18560,local medellin,piña special 1ra,PE1,249,0,2300,10
+2026-07-29,,R-18560,local medellin,piña special 1ra,PE1,519,0,2300,0
+2026-07-29,,R-18560,local medellin,piña special 1ra,PE1,503,0,2300,0
+2026-07-29,,R-18560,local medellin,piña special 1ra,PE1,126,0,2300,4
+2026-07-29,,R-18560,local medellin,Piña AD1,AD1,93,0,2300,0
+2026-07-29,,R-18560,local medellin,piña special 2da,PE2,548,0,2100,4
+2026-07-29,,R-18560,local medellin,piña special 2da,PE2,490,0,2100,0
+2026-07-29,,R-18560,local medellin,piña special 3ra,PE3,634,0,1900,0
+2026-07-29,,R-18560,local medellin,piña special 3ra,PE3,466,30,1900,0
+2026-07-29,,,descarte,piña special 3ra,PE3,0,0,,493
+2026-07-29,,R-18559,local sincelejo,piña special guapita,PEGUA,458,0,1600,0
+2026-07-29,,R-18559,local sincelejo,piña special guapita,PEGUA,457,285,1600,3
+2026-07-29,,R-18559,local sincelejo,piña special 2da,PE2,484,0,2300,0
+2026-07-29,,R-18559,local sincelejo,piña special 2da,PE2,492,0,2300,3
+2026-07-29,,R-18559,local sincelejo,piña special 2da,PE2,500,424,2300,0
+2026-07-29,,R-18559,local sincelejo,piña special 3ra,PE3,417,0,2100,0
+2026-07-29,,R-18559,local sincelejo,piña special 3ra,PE3,454,0,2100,2
+2026-07-29,,R-18559,local sincelejo,piña special 3ra,PE3,458,0,2100,0
+2026-07-29,,R-18559,local sincelejo,piña special 3ra,PE3,439,132,2100,0
+2026-07-29,,R-18559,local sincelejo,Piña AD1,AD1,314,0,2500,0
+2026-07-29,,R-18559,local sincelejo,piña special 1ra,PE1,543,0,2500,0
+2026-07-29,,R-18559,local sincelejo,Piña AD2,AD2,82,0,2500,0
+2026-07-29,,R-18559,local sincelejo,piña special 1ra,PE1,28,33,2500,0
+2026-07-29,45514,R-18558,Andres Garcia,piña special 3ra,PE3,262,0,800,72
+2026-07-29,45514,R-18558,Andres Garcia,piña special 2da,PE2,137,0,2000,156
+2026-07-29,45514,R-18558,Andres Garcia,piña indstria,PIND,354,0,1000,0
+2026-07-29,45514,R-18558,Andres Garcia,piña indstria,PIND,448,0,1000,0
+2026-07-29,45514,R-18558,Andres Garcia,piña indstria,PIND,463,0,1000,0
+2026-07-29,45514,R-18558,Andres Garcia,piña indstria,PIND,474,0,1000,0
+2026-07-29,45514,R-18558,Andres Garcia,AD-piña indstria,AD-PIND,502,0,1000,0
+2026-07-29,45514,R-18558,Andres Garcia,piña indstria,PIND,418,0,1000,0
+2026-07-29,45514,R-18558,Andres Garcia,piña indstria,PIND,455,0,1000,0
+2026-07-29,45514,R-18558,Andres Garcia,AD-piña indstria,AD-PIND,150,0,1000,0
+2026-07-29,45514,R-18558,Andres Garcia,piña indstria,PIND,117,0,1000,31
+2026-07-29,,R-18561,local sincelejo,piña special guapita,PEGUA,476,0,1600,0
+2026-07-29,,R-18561,local sincelejo,piña special guapita,PEGUA,455,0,1600,0
+2026-07-29,,R-18561,local sincelejo,piña special guapita,PEGUA,448,121,1600,0
+2026-07-29,,R-18561,local sincelejo,piña special 3ra,PE3,310,0,2100,0
+2026-07-29,,R-18561,local sincelejo,piña special 3ra,PE3,439,360,2100,6
+2026-07-29,,R-18561,local sincelejo,piña special 3ra,PE3,149,0,2100,0
+2026-07-29,,R-18561,local sincelejo,piña special 3ra,PE3,467,0,2100,0
+2026-07-29,,R-18561,local sincelejo,piña special 3ra,PE3,137,38,2100,0
+2026-07-29,,R-18561,local sincelejo,piña special 2da,PE2,342,0,2300,0
+2026-07-29,,R-18561,local sincelejo,Piña AD2,AD2,103,0,2300,0
+2026-07-29,,R-18561,local sincelejo,piña special 2da,PE2,23,0,2300,0
+2026-07-29,,R-18561,local sincelejo,piña special 2da,PE2,498,134,2300,0
+2026-07-29,,R-18561,local sincelejo,piña special guapita,PEGUA,455,0,1600,0
+2026-07-29,,R-18561,local sincelejo,piña special guapita,PEGUA,455,216,1600,0
+2026-07-29,,R-18561,local sincelejo,piña special guapita,PEGUA,242,0,1600,0
+2026-07-29,,R-18561,local sincelejo,piña special guapita,PEGUA,18,114,1600,0
+2026-07-29,45512,R-18562,luis narvaez,piña special guapita,PEGUA,490,0,700,0
+2026-07-29,45512,R-18562,luis narvaez,piña special guapita,PEGUA,453,0,700,0
+2026-07-29,45512,R-18562,luis narvaez,piña special guapita,PEGUA,312,0,700,0
+2026-07-29,45512,R-18562,luis narvaez,piña special guapita,PEGUA,445,0,700,0
+2026-07-29,45512,R-18562,luis narvaez,Piña ADGUA,ADGUA,219,0,700,0
+2026-07-29,45512,R-18562,luis narvaez,piña special baby,PEBAB,455,0,700,0
+2026-07-29,45512,R-18562,luis narvaez,piña special guapita,PEGUA,468,0,700,0
+2026-07-29,45512,R-18562,luis narvaez,piña special guapita,PEGUA,158,0,700,6
+2026-07-29,,R-18563,cortesia,,pebab,0,288,,0
+2026-07-29,,,descarte,piña special baby,PEBAB,0,0,,104
+2026-07-29,45511,R-18564,gildardo ovidio cataño,piña special guapita,PEGUA,449,251,1400,0
+2026-07-29,45511,R-18564,gildardo ovidio cataño,piña special 3ra,PE3,465,0,1700,0
+2026-07-29,45511,R-18564,gildardo ovidio cataño,piña special 3ra,PE3,422,0,1700,0
+2026-07-29,45511,R-18564,gildardo ovidio cataño,piña special 3ra,PE3,22,0,1700,0
+2026-07-29,45511,R-18564,gildardo ovidio cataño,piña special 3ra,PE3,410,0,1700,0
+2026-07-29,45511,R-18564,gildardo ovidio cataño,piña special 3ra,PE3,359,0,1700,0
+2026-07-29,45511,R-18564,gildardo ovidio cataño,Piña AD3,AD3,207,115,1700,0
+2026-07-29,45511,R-18564,gildardo ovidio cataño,Piña AD1,AD1,541,459,2500,4
+2026-07-29,45513,R-18568,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,522,0,3000,12
+2026-07-29,45513,R-18568,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,625,0,3000,0
+2026-07-29,45513,R-18568,Almacenes Éxito S.A. - Medellin,Piña AD1,AD1,529,0,3000,0
+2026-07-29,45513,R-18568,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,508,0,3000,0
+2026-07-29,45513,R-18568,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,525,0,3000,0
+2026-07-29,45513,R-18568,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,530,0,3000,0
+2026-07-29,45513,R-18568,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,526,0,3000,0
+2026-07-29,45513,R-18568,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,507,0,3000,0
+2026-07-29,45513,R-18568,Almacenes Éxito S.A. - Medellin,Piña AD1,AD1,127,0,3000,0
+2026-07-29,45513,R-18568,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,214,0,3000,0
+2026-07-29,45513,R-18568,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,192,195,3000,0
+2026-07-29,45513,R-18568,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,369,0,3100,0
+2026-07-29,45513,R-18568,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,533,0,3100,0
+2026-07-29,45513,R-18568,Almacenes Éxito S.A. - Medellin,Piña AD1,AD1,239,0,3100,0
+2026-07-29,,R-18567,reposicion éxito medellin,,pe1,0,120,,0
+2026-07-29,45509,R-18566,jeronimo martins,piña special 2da,PE2,400,0,3200,0
+2026-07-29,45509,R-18566,jeronimo martins,piña special 2da,PE2,399,0,3200,0
+2026-07-29,45509,R-18566,jeronimo martins,piña special 2da,PE2,402,0,3200,0
+2026-07-29,45509,R-18566,jeronimo martins,piña special 2da,PE2,401,158,3200,0
+2026-07-29,45510,R-18565,jeronimo martins,piña special 2da,PE2,249,0,3200,0
+2026-07-29,45510,R-18565,jeronimo martins,piña special 2da,PE2,399,0,3200,0
+2026-07-29,45510,R-18565,jeronimo martins,piña special 2da,PE2,403,269,3200,0
+2026-07-29,,R-18569,reposicion jeronimo,,pe2,0,146,,0
+2026-07-29,45515,R-18570,venta empleados,piña special 1ra,PE1,171,0,2200,0
+2026-07-29,,,descarte,piña special baby,PEBAB,0,0,,392
+2026-07-29,,,descarte,piña special baby,PEBAB,0,0,,386
+2026-07-29,,,descarte,piña special baby,PEBAB,0,0,,440
+2026-07-29,,,descarte,piña special baby,PEBAB,0,0,,387
+2026-07-29,,,descarte,piña special baby,PEBAB,0,0,,419
+2026-07-29,,,descarte,Piña ADBABY,ADBABY,0,0,,392
+2026-07-29,,,descarte,Piña ADBABY,ADBABY,0,0,,428
+2026-07-29,,,descarte,piña special baby,PEBAB,0,0,,391
+2026-07-29,,,descarte,piña special baby,PEBAB,0,0,,377
