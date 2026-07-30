@@ -12671,7 +12671,6 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-07-11,45132,R-18298,Afrucol S.A.S.,Piña AD1,AD1,534,0,1500,0
 2026-07-11,45132,R-18298,Afrucol S.A.S.,piña special 1ra,PE1,517,0,1500,0
 2026-07-11,45132,R-18298,Afrucol S.A.S.,piña special 1ra,PE1,520,217,1500,0
-,,R-18300,,,,0,0,,0
 2026-07-11,,R-18300,fundacion saciar,AD-piña jugos,AD-PJUG,1199,0,,0
 2026-07-11,,R-18300,fundacion saciar,AD-piña jugos,AD-PJUG,1343,0,,0
 2026-07-11,,R-18300,fundacion saciar,AD-piña jugos,AD-PJUG,1266,0,,0
@@ -12869,7 +12868,6 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-07-13,,R-18318,local medellin,piña special 3ra,PE3,123,0,2000,0
 2026-07-13,,R-18318,local medellin,piña special 3ra,PE3,8,0,2000,0
 2026-07-13,,R-18318,local medellin,,,0,505,2000,0
-,45163,R-18317,,,,0,0,700,0
 2026-07-13,45163,R-18317,Aldinsen Gonzalez,piña special 3ra,PE3,219,0,700,0
 2026-07-13,45163,R-18317,Aldinsen Gonzalez,piña special 3ra,PE3,452,0,700,0
 2026-07-13,45163,R-18317,Aldinsen Gonzalez,piña special 3ra,PE3,465,0,700,0
@@ -12939,7 +12937,6 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-07-13,,R-18325,local sincelejo,piña special guapita,PEGUA,456,0,1600,0
 2026-07-13,,R-18325,local sincelejo,piña special guapita,PEGUA,472,0,1600,0
 2026-07-13,,R-18325,local sincelejo,Piña ADGUA,ADGUA,99,0,1600,0
-2026-07-13,,R-18325,local sincelejo,,,0,0,1600,0
 2026-07-14,,R-18327,local apartado,Piña AD2,AD2,104,0,2700,0
 2026-07-14,,R-18327,local apartado,piña special 2da,PE2,30,13,2700,0
 2026-07-14,,R-18327,local apartado,piña special 1ra,PE1,570,230,2900,2
@@ -13004,7 +13001,6 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-07-14,45197,R-18339,Alimentos S.A.S,piña indstria,PIND,478,0,1000,0
 2026-07-14,45197,R-18339,Alimentos S.A.S,AD-piña indstria,AD-PIND,77,0,1000,0
 2026-07-14,45197,R-18339,Alimentos S.A.S,piña indstria,PIND,797,92,1000,0
-2026-07-14,45197,R-18339,Alimentos S.A.S,,,0,0,1000,0
 2026-07-14,45353,R-18454,DREAN FOOD CARIBE,piña special baby,PEBAB,420,0,1000,0
 2026-07-14,45353,R-18454,DREAN FOOD CARIBE,piña special baby,PEBAB,421,0,1000,0
 2026-07-14,45353,R-18454,DREAN FOOD CARIBE,piña special baby,PEBAB,390,0,1000,0
@@ -15433,7 +15429,17 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-07-30,,,juan pablo cogollo,piña special guapita,PEGUA,443,0,,0
 2026-07-30,,,juan pablo cogollo,piña special guapita,PEGUA,413,0,,0
 2026-07-30,,,juan pablo cogollo,piña special guapita,PEGUA,449,0,,0
+2026-07-30,,,juan pablo cogollo,piña special guapita,PEGUA,437,0,,0
+2026-07-30,,,juan pablo cogollo,piña special guapita,PEGUA,448,17,,8
+2026-07-30,,,juan pablo cogollo,piña special 3ra,PE3,460,0,,0
+2026-07-30,,,juan pablo cogollo,piña special 3ra,PE3,442,0,,0
+2026-07-30,,,juan pablo cogollo,piña special 3ra,PE3,478,0,,0
+2026-07-30,,,juan pablo cogollo,piña special 3ra,PE3,319,0,,0
+2026-07-30,,,juan pablo cogollo,piña special 3ra,PE3,470,0,,0
+2026-07-30,,,juan pablo cogollo,piña special 3ra,PE3,460,0,,11
 2026-07-30,,,Andres Garcia,piña indstria,PIND,409,0,,0
 2026-07-30,,,Andres Garcia,piña indstria,PIND,401,0,,0
 2026-07-30,,,Andres Garcia,piña indstria,PIND,423,0,,0
 2026-07-30,,,Andres Garcia,AD-piña indstria,AD-PIND,172,0,,0
+2026-07-30,,,Andres Garcia,piña indstria,PIND,290,0,,117
+2026-07-30,,,Andres Garcia,piña indstria,PIND,88,0,,16
