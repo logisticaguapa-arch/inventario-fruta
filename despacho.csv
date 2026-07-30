@@ -15352,8 +15352,8 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-07-30,45526,R-18571,KARINA BORJA,piña special 3ra,PE3,220,18,700,6
 2026-07-30,,R-18572,jeronimo martins,piña special 2da,PE2,404,0,,0
 2026-07-30,,R-18572,jeronimo martins,piña special 2da,PE2,400,0,,0
-2026-07-30,,R-18572,jeronimo martins,piña special 2da,PE2,457,0,,0
-2026-07-30,,R-18572,jeronimo martins,piña special 2da,PE2,396,0,,0
+2026-07-30,,R-18572,jeronimo martins,piña special 2da,PE2,457,279,,0
+2026-07-30,,,jeronimo martins,piña special 2da,PE2,117,0,,0
 2026-07-30,,R-18573,local medellin,piña special 3ra,PE3,469,0,,0
 2026-07-30,,R-18573,local medellin,piña special 3ra,PE3,470,0,,0
 2026-07-30,,R-18573,local medellin,piña special 3ra,PE3,437,0,,28
@@ -15426,3 +15426,14 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-07-30,45529,R-18579,ventas egipto,piña special 3ra,PE3,2,0,7000,0
 2026-07-30,45529,R-18579,ventas egipto,piña special 1ra,PE1,2,0,6000,0
 2026-07-30,,,descarte,piña special 1ra,PE1,0,0,,530
+2026-07-30,,,juan pablo cogollo,piña special guapita,PEGUA,455,0,,0
+2026-07-30,,,juan pablo cogollo,piña special guapita,PEGUA,460,0,,0
+2026-07-30,,,juan pablo cogollo,piña special guapita,PEGUA,453,0,,0
+2026-07-30,,,juan pablo cogollo,piña special guapita,PEGUA,425,0,,0
+2026-07-30,,,juan pablo cogollo,piña special guapita,PEGUA,443,0,,0
+2026-07-30,,,juan pablo cogollo,piña special guapita,PEGUA,413,0,,0
+2026-07-30,,,juan pablo cogollo,piña special guapita,PEGUA,449,0,,0
+2026-07-30,,,Andres Garcia,piña indstria,PIND,409,0,,0
+2026-07-30,,,Andres Garcia,piña indstria,PIND,401,0,,0
+2026-07-30,,,Andres Garcia,piña indstria,PIND,423,0,,0
+2026-07-30,,,Andres Garcia,AD-piña indstria,AD-PIND,172,0,,0
