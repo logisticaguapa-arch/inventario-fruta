@@ -15348,68 +15348,81 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-07-29,,,descarte,piña special baby,PEBAB,0,0,,391
 2026-07-29,,,descarte,piña special baby,PEBAB,0,0,,377
 2026-07-30,,,descarte,piña special 3ra,PE3,0,0,,334
-2026-07-30,,,KARINA BORJA,piña special 3ra,PE3,500,0,,0
-2026-07-30,,,KARINA BORJA,piña special 3ra,PE3,220,18,,6
-2026-07-30,,,jeronimo martins,piña special 2da,PE2,404,0,,0
-2026-07-30,,,jeronimo martins,piña special 2da,PE2,400,0,,0
-2026-07-30,,,jeronimo martins,piña special 2da,PE2,457,0,,0
-2026-07-30,,,jeronimo martins,piña special 2da,PE2,396,0,,0
-2026-07-30,,,local medellin,piña special 3ra,PE3,469,0,,0
-2026-07-30,,,local medellin,piña special 3ra,PE3,470,0,,0
-2026-07-30,,,local medellin,piña special 3ra,PE3,437,0,,28
-2026-07-30,,,local medellin,piña special 2da,PE2,484,0,,0
-2026-07-30,,,local medellin,piña special 2da,PE2,485,0,,0
-2026-07-30,,,local medellin,piña special 2da,PE2,410,0,,0
-2026-07-30,,,local medellin,piña special 1ra,PE1,540,0,,0
-2026-07-30,,,local medellin,piña special 1ra,PE1,537,0,,0
-2026-07-30,,,local medellin,piña special 1ra,PE1,539,0,,0
-2026-07-30,,,local medellin,piña special 1ra,PE1,245,0,,0
-2026-07-30,,,cartagena,piña special 1ra,PE1,538,0,,0
-2026-07-30,,,cartagena,piña special 1ra,PE1,522,0,,0
-2026-07-30,,,cartagena,Piña AD1,AD1,364,0,,0
-2026-07-30,,,cartagena,piña special 1ra,PE1,168,0,,0
-2026-07-30,,,cartagena,piña special 1ra,PE1,77,0,,0
-2026-07-30,,,cartagena,piña special 1ra,PE1,61,0,,0
-2026-07-30,,,cartagena,Piña AD1,AD1,224,0,,0
-2026-07-30,,,cartagena,piña special 1ra,PE1,571,0,,0
-2026-07-30,,,cartagena,piña special 2da,PE2,326,0,,1
-2026-07-30,,,cartagena,piña special 2da,PE2,226,0,,0
-2026-07-30,,,cartagena,Piña AD2,AD2,115,0,,0
-2026-07-30,,,cartagena,piña special 2da,PE2,501,0,,0
-2026-07-30,,,cartagena,piña special 2da,PE2,300,0,,0
-2026-07-30,,,cartagena,Piña AD2,AD2,40,0,,0
-2026-07-30,,,cartagena,piña special 2da,PE2,36,0,,0
-2026-07-30,,,cartagena,piña special 2da,PE2,11,0,,0
-2026-07-30,,,cartagena,Piña AD2,AD2,89,0,,0
-2026-07-30,,,cartagena,piña special 2da,PE2,59,0,,0
-2026-07-30,,,cartagena,piña special 2da,PE2,45,0,,0
-2026-07-30,,,cartagena,Piña AD2,AD2,60,0,,0
-2026-07-30,,,cartagena,piña special 2da,PE2,468,0,,0
-2026-07-30,,,cartagena,piña special 2da,PE2,390,0,,0
-2026-07-30,,,cartagena,piña special 2da,PE2,239,0,,0
-2026-07-30,,,cartagena,piña special 1ra,PE1,500,0,,0
-2026-07-30,,,cartagena,Piña AD1,AD1,290,0,,0
-2026-07-30,,,cartagena,Piña AD1,AD1,23,0,,0
-2026-07-30,,,local sincelejo,Piña ADGUA,ADGUA,16,0,,0
-2026-07-30,,,local sincelejo,piña special guapita,PEGUA,198,0,,0
-2026-07-30,,,local sincelejo,piña special guapita,PEGUA,148,0,,0
-2026-07-30,,,local sincelejo,piña special guapita,PEGUA,440,0,,0
-2026-07-30,,,local sincelejo,piña special guapita,PEGUA,455,0,,3
-2026-07-30,,,local sincelejo,piña special guapita,PEGUA,438,0,,0
-2026-07-30,,,local sincelejo,piña special guapita,PEGUA,410,0,,0
-2026-07-30,,,local sincelejo,piña special guapita,PEGUA,456,21,,0
-2026-07-30,,,local sincelejo,piña special 3ra,PE3,58,0,,0
-2026-07-30,,,local sincelejo,Piña AD3,AD3,5,0,,0
-2026-07-30,,,local sincelejo,piña special 3ra,PE3,454,30,,0
-2026-07-30,,,local sincelejo,piña special baby,PEBAB,389,0,,0
-2026-07-30,,,local sincelejo,piña special baby,PEBAB,371,0,,0
-2026-07-30,,,local sincelejo,piña special baby,PEBAB,386,0,,0
-2026-07-30,,,local sincelejo,piña special baby,PEBAB,390,0,,0
-2026-07-30,,,local sincelejo,piña special baby,PEBAB,410,0,,0
-2026-07-30,,,local sincelejo,piña special baby,PEBAB,110,0,,0
-2026-07-30,,,local sincelejo,piña special baby,PEBAB,418,26,,0
-2026-07-30,,,local sincelejo,piña special 3ra,PE3,471,0,,0
-2026-07-30,,,local sincelejo,piña special 3ra,PE3,427,0,,0
-2026-07-30,,,local sincelejo,Piña AD3,AD3,14,0,,0
-2026-07-30,,,ELIAS DAVID,piña special guapita,PEGUA,458,0,,0
-2026-07-30,,,ELIAS DAVID,piña special guapita,PEGUA,433,109,,0
+2026-07-30,45526,R-18571,KARINA BORJA,,PE3,0,262,700,0
+2026-07-30,45526,R-18571,KARINA BORJA,piña special 3ra,PE3,500,0,700,0
+2026-07-30,45526,R-18571,KARINA BORJA,piña special 3ra,PE3,220,18,700,6
+2026-07-30,,R-18572,jeronimo martins,piña special 2da,PE2,404,0,,0
+2026-07-30,,R-18572,jeronimo martins,piña special 2da,PE2,400,0,,0
+2026-07-30,,R-18572,jeronimo martins,piña special 2da,PE2,457,0,,0
+2026-07-30,,R-18572,jeronimo martins,piña special 2da,PE2,396,0,,0
+2026-07-30,,R-18573,local medellin,piña special 3ra,PE3,469,0,,0
+2026-07-30,,R-18573,local medellin,piña special 3ra,PE3,470,0,,0
+2026-07-30,,R-18573,local medellin,piña special 3ra,PE3,437,0,,28
+2026-07-30,,R-18573,local medellin,piña special 2da,PE2,484,0,,0
+2026-07-30,,R-18573,local medellin,piña special 2da,PE2,485,0,,0
+2026-07-30,,R-18573,local medellin,piña special 2da,PE2,410,0,,0
+2026-07-30,,R-18573,local medellin,piña special 1ra,PE1,540,0,,0
+2026-07-30,,R-18573,local medellin,piña special 1ra,PE1,537,0,,0
+2026-07-30,,R-18573,local medellin,piña special 1ra,PE1,539,0,,0
+2026-07-30,,R-18573,local medellin,piña special 1ra,PE1,245,0,,0
+2026-07-30,,R-18575,cartagena,piña special 1ra,PE1,538,0,,0
+2026-07-30,,R-18575,cartagena,piña special 1ra,PE1,522,0,,0
+2026-07-30,,R-18575,cartagena,Piña AD1,AD1,364,0,,0
+2026-07-30,,R-18575,cartagena,piña special 1ra,PE1,168,0,,0
+2026-07-30,,R-18575,cartagena,piña special 1ra,PE1,77,0,,0
+2026-07-30,,R-18575,cartagena,piña special 1ra,PE1,61,0,,0
+2026-07-30,,R-18575,cartagena,Piña AD1,AD1,224,0,,0
+2026-07-30,,R-18575,cartagena,piña special 1ra,PE1,571,0,,0
+2026-07-30,,R-18575,cartagena,piña special 2da,PE2,326,0,,1
+2026-07-30,,R-18575,cartagena,piña special 2da,PE2,226,0,,0
+2026-07-30,,R-18575,cartagena,Piña AD2,AD2,115,0,,0
+2026-07-30,,R-18575,cartagena,piña special 2da,PE2,501,0,,0
+2026-07-30,,R-18575,cartagena,piña special 2da,PE2,300,0,,0
+2026-07-30,,R-18575,cartagena,Piña AD2,AD2,40,0,,0
+2026-07-30,,R-18575,cartagena,piña special 2da,PE2,36,0,,0
+2026-07-30,,R-18575,cartagena,piña special 2da,PE2,11,0,,0
+2026-07-30,,R-18575,cartagena,Piña AD2,AD2,89,0,,0
+2026-07-30,,R-18575,cartagena,piña special 2da,PE2,59,0,,0
+2026-07-30,,R-18575,cartagena,piña special 2da,PE2,45,0,,0
+2026-07-30,,R-18575,cartagena,Piña AD2,AD2,60,0,,0
+2026-07-30,,R-18575,cartagena,piña special 2da,PE2,468,0,,0
+2026-07-30,,R-18575,cartagena,piña special 2da,PE2,390,0,,0
+2026-07-30,,R-18575,cartagena,piña special 2da,PE2,239,0,,0
+2026-07-30,,R-18575,cartagena,piña special 1ra,PE1,500,0,,0
+2026-07-30,,R-18575,cartagena,Piña AD1,AD1,290,0,,0
+2026-07-30,,R-18575,cartagena,Piña AD1,AD1,23,0,,0
+2026-07-30,,R-18576,local sincelejo,Piña ADGUA,ADGUA,16,0,,0
+2026-07-30,,R-18576,local sincelejo,piña special guapita,PEGUA,198,0,,0
+2026-07-30,,R-18576,local sincelejo,piña special guapita,PEGUA,148,0,,0
+2026-07-30,,R-18576,local sincelejo,piña special guapita,PEGUA,440,0,,0
+2026-07-30,,R-18576,local sincelejo,piña special guapita,PEGUA,455,0,,3
+2026-07-30,,R-18576,local sincelejo,piña special guapita,PEGUA,438,0,,0
+2026-07-30,,R-18576,local sincelejo,piña special guapita,PEGUA,410,0,,0
+2026-07-30,,R-18576,local sincelejo,piña special guapita,PEGUA,456,21,,0
+2026-07-30,,R-18576,local sincelejo,piña special 3ra,PE3,58,0,,0
+2026-07-30,,R-18576,local sincelejo,Piña AD3,AD3,5,0,,0
+2026-07-30,,R-18576,local sincelejo,piña special 3ra,PE3,454,30,,0
+2026-07-30,,R-18576,local sincelejo,,PEGUA,0,334,,0
+2026-07-30,,R-18576,local sincelejo,piña special baby,PEBAB,389,0,,0
+2026-07-30,,R-18576,local sincelejo,piña special baby,PEBAB,371,0,,0
+2026-07-30,,R-18576,local sincelejo,piña special baby,PEBAB,386,0,,0
+2026-07-30,,R-18576,local sincelejo,piña special baby,PEBAB,390,0,,0
+2026-07-30,,R-18576,local sincelejo,piña special baby,PEBAB,410,0,,0
+2026-07-30,,R-18576,local sincelejo,piña special baby,PEBAB,110,0,,0
+2026-07-30,,R-18576,local sincelejo,piña special baby,PEBAB,418,26,,0
+2026-07-30,,R-18576,local sincelejo,piña special 3ra,PE3,471,0,,0
+2026-07-30,,R-18576,local sincelejo,piña special 3ra,PE3,427,0,,0
+2026-07-30,,R-18576,local sincelejo,Piña AD3,AD3,14,0,,0
+2026-07-30,,R-18574,ELIAS DAVID,piña special guapita,PEGUA,458,0,,0
+2026-07-30,,R-18574,ELIAS DAVID,piña special guapita,PEGUA,433,109,,0
+2026-07-30,45527,R-18577,ventas egipto,piña special 1ra,PE1,22,0,4500,0
+2026-07-30,45527,R-18577,ventas egipto,piña special 2da,PE2,14,0,8000,0
+2026-07-30,45527,R-18577,ventas egipto,piña special 3ra,PE3,4,0,7000,0
+2026-07-30,45527,R-18577,ventas egipto,piña special 1ra,PE1,2,0,4500,0
+2026-07-30,45528,R-18578,ventas egipto,piña special 1ra,PE1,42,0,4500,0
+2026-07-30,45528,R-18578,ventas egipto,piña special 2da,PE2,8,0,8000,0
+2026-07-30,45528,R-18578,ventas egipto,piña special 1ra,PE1,1,0,6000,0
+2026-07-30,45529,R-18579,ventas egipto,piña special 1ra,PE1,36,0,4500,0
+2026-07-30,45529,R-18579,ventas egipto,piña special 2da,PE2,23,0,8000,0
+2026-07-30,45529,R-18579,ventas egipto,piña special 3ra,PE3,2,0,7000,0
+2026-07-30,45529,R-18579,ventas egipto,piña special 1ra,PE1,2,0,6000,0
