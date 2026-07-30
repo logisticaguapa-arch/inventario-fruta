@@ -15337,6 +15337,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-07-29,45510,R-18565,jeronimo martins,piña special 2da,PE2,403,269,3200,0
 2026-07-29,,R-18569,reposicion jeronimo,,pe2,0,146,,0
 2026-07-29,45515,R-18570,venta empleados,piña special 1ra,PE1,171,0,2200,0
+2026-07-30,,,descarte,piña special 1ra,PE1,0,0,,550
 2026-07-29,,,descarte,piña special baby,PEBAB,0,0,,392
 2026-07-29,,,descarte,piña special baby,PEBAB,0,0,,386
 2026-07-29,,,descarte,piña special baby,PEBAB,0,0,,440
@@ -15348,3 +15349,11 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-07-29,,,descarte,piña special baby,PEBAB,0,0,,377
 2026-07-30,,,KARINA BORJA,piña special 3ra,PE3,500,0,,0
 2026-07-30,,,KARINA BORJA,piña special 3ra,PE3,220,18,,6
+2026-07-30,,,jeronimo martins,piña special 2da,PE2,404,0,,0
+2026-07-30,,,jeronimo martins,piña special 2da,PE2,400,0,,0
+2026-07-30,,,jeronimo martins,piña special 2da,PE2,457,0,,0
+2026-07-30,,,jeronimo martins,piña special 2da,PE2,396,0,,0
+2026-07-30,,,local medellin,piña special 3ra,PE3,469,0,,0
+2026-07-30,,,local medellin,piña special 3ra,PE3,470,0,,0
+2026-07-30,,,local medellin,piña special 3ra,PE3,437,0,,28
+2026-07-30,,,local medellin,piña special 2da,PE2,484,0,,0
