@@ -25,6 +25,10 @@ header h1 span{color:#64748b;font-size:.8rem;font-weight:400;margin-left:8px}
 .kpi .l{font-size:.85rem;color:#475569;margin-top:6px;text-transform:uppercase;letter-spacing:.05em;font-weight:700}
 .kpi .sub{font-size:1rem;color:#64748b;margin-top:8px;font-weight:700}
 .kpi.urg .v{color:#dc2626}
+.kpi-doble{flex:1.7;min-width:280px}
+.urg-doble-grid{display:flex;gap:26px;margin-top:8px;flex-wrap:wrap}
+.urg-doble-item .v{font-size:2.1rem}
+.urg-doble-item .sub{margin-top:4px}
 .kpi.ok  .v{color:#16a34a}
 .kpi.inf .v{color:#1d4ed8}
 .kpi.def .v{color:#1e293b}
@@ -200,7 +204,19 @@ table.ftable .ftotal-row td{color:#052e16!important}
 </header>
 
 <div class="kpis">
-  <div class="kpi urg"><div class="v" id="kUrg">—</div><div class="l">Criticas +48h</div><div class="sub" id="kUrgDetalle">—</div></div>
+  <div class="kpi urg kpi-doble">
+    <div class="l">+ de 48 horas criticas</div>
+    <div class="urg-doble-grid">
+      <div class="urg-doble-item">
+        <div class="v" id="kUrgEstibas">—</div>
+        <div class="sub" id="kUrgEstibasKg">—</div>
+      </div>
+      <div class="urg-doble-item">
+        <div class="v" id="kUrgBines">—</div>
+        <div class="sub" id="kUrgBinesKg">—</div>
+      </div>
+    </div>
+  </div>
   <div class="kpi def"><div class="v" id="kE">—</div><div class="l">Estibas en bodega</div><div class="sub" id="kEKg">—</div></div>
   <div class="kpi def"><div class="v" id="kBin">—</div><div class="l">Bines en bodega</div><div class="sub" id="kBinKg">—</div></div>
   <div class="kpi ok" ><div class="v" id="kK">—</div><div class="l">Kg disponibles</div></div>
@@ -603,10 +619,14 @@ function render(){
   const pctBines=kg>0?Math.round(kgBines/kg*100):0;
   const pctEstibas=kg>0?Math.round(kgEstibas/kg*100):0;
   const rCriticas=data.filter(r=>horasDesde(r.Fecha)>=48);
-  const rCriticasEstibas=rCriticas.filter(r=>!isBin(r)).length;
-  const rCriticasBines=rCriticas.filter(r=>isBin(r)).length;
-  document.getElementById('kUrg').textContent=rCriticas.length;
-  document.getElementById('kUrgDetalle').textContent=rCriticasEstibas.toLocaleString('es-CO')+' estibas +48h · '+rCriticasBines.toLocaleString('es-CO')+' bines +48h';
+  const rCriticasEstibas=rCriticas.filter(r=>!isBin(r));
+  const rCriticasBines=rCriticas.filter(r=>isBin(r));
+  const kgCriticasEstibas=rCriticasEstibas.reduce((s,r)=>s+(parseFloat(r.KgDisponibles)||0),0);
+  const kgCriticasBines=rCriticasBines.reduce((s,r)=>s+(parseFloat(r.KgDisponibles)||0),0);
+  document.getElementById('kUrgEstibas').textContent=rCriticasEstibas.length.toLocaleString('es-CO');
+  document.getElementById('kUrgEstibasKg').textContent='estibas = '+Math.round(kgCriticasEstibas).toLocaleString('es-CO')+' kilos';
+  document.getElementById('kUrgBines').textContent=rCriticasBines.length.toLocaleString('es-CO');
+  document.getElementById('kUrgBinesKg').textContent='bines = '+Math.round(kgCriticasBines).toLocaleString('es-CO')+' kilos';
   document.getElementById('kE').textContent=nEstibas.toLocaleString('es-CO');
   document.getElementById('kBin').textContent=nBines.toLocaleString('es-CO');
   document.getElementById('kEKg').textContent=Math.round(kgEstibas).toLocaleString('es-CO')+' kg · '+pctEstibas+'%';
