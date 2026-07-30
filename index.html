@@ -200,7 +200,7 @@ table.ftable .ftotal-row td{color:#052e16!important}
 </header>
 
 <div class="kpis">
-  <div class="kpi urg"><div class="v" id="kUrg">—</div><div class="l">Criticas +48h</div></div>
+  <div class="kpi urg"><div class="v" id="kUrg">—</div><div class="l">Criticas +48h</div><div class="sub" id="kUrgDetalle">—</div></div>
   <div class="kpi def"><div class="v" id="kE">—</div><div class="l">Estibas en bodega</div><div class="sub" id="kEKg">—</div></div>
   <div class="kpi def"><div class="v" id="kBin">—</div><div class="l">Bines en bodega</div><div class="sub" id="kBinKg">—</div></div>
   <div class="kpi ok" ><div class="v" id="kK">—</div><div class="l">Kg disponibles</div></div>
@@ -602,7 +602,11 @@ function render(){
   const kgEstibas=rEstibas.reduce((s,r)=>s+(parseFloat(r.KgDisponibles)||0),0);
   const pctBines=kg>0?Math.round(kgBines/kg*100):0;
   const pctEstibas=kg>0?Math.round(kgEstibas/kg*100):0;
-  document.getElementById('kUrg').textContent=data.filter(r=>horasDesde(r.Fecha)>=48).length;
+  const rCriticas=data.filter(r=>horasDesde(r.Fecha)>=48);
+  const rCriticasEstibas=rCriticas.filter(r=>!isBin(r)).length;
+  const rCriticasBines=rCriticas.filter(r=>isBin(r)).length;
+  document.getElementById('kUrg').textContent=rCriticas.length;
+  document.getElementById('kUrgDetalle').textContent=rCriticasEstibas.toLocaleString('es-CO')+' estibas +48h · '+rCriticasBines.toLocaleString('es-CO')+' bines +48h';
   document.getElementById('kE').textContent=nEstibas.toLocaleString('es-CO');
   document.getElementById('kBin').textContent=nBines.toLocaleString('es-CO');
   document.getElementById('kEKg').textContent=Math.round(kgEstibas).toLocaleString('es-CO')+' kg · '+pctEstibas+'%';
@@ -1028,6 +1032,14 @@ function demo(){return[
 
 setInterval(load,300000);
 load();
+
+// -- Al volver a esta pestaña (por ejemplo tras bloquear el celular o cambiar de app),
+// el navegador puede haber pausado el temporizador de arriba para ahorrar bateria.
+// Esto fuerza una recarga inmediata de los datos apenas la pestaña vuelve a estar visible,
+// sin esperar a que se cumplan los 5 minutos ni tener que refrescar manualmente.
+document.addEventListener('visibilitychange', function(){
+  if(document.visibilityState==='visible') load();
+});
 </script>
 </body>
 </html>
