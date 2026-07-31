@@ -22,7 +22,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 198619,canastas,2026-07-29,PEGUA,piña special guapita,1.5 - 2.5,451
 198620,canastas,2026-07-29,PEBAB,piña special baby,1.5 - 2.5,419
 198621,canastas,2026-07-29,PEBAB,piña special baby,1.5 - 2.5,434
-198625,canastas,2026-07-29,PE3,piña special 3ra,0.0 - 1.0,215
 198627,canastas,2026-07-29,PEBAB,piña special baby,1.5 - 2.5,443
 198629,canastas,2026-07-29,PEBAB,piña special baby,1.5 - 2.5,431
 198630,canastas,2026-07-29,PEBAB,piña special baby,1.5 - 2.5,434
@@ -44,12 +43,10 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 198657,canastas,2026-07-29,PEBAB,piña special baby,1.5 - 2.5,406
 198659,canastas,2026-07-29,PEBAB,piña special baby,1.5 - 2.5,431
 198660,canastas,2026-07-29,PEBAB,piña special baby,1.5 - 2.5,419
-198664,canastas,2026-07-29,PE3,piña special 3ra,0.0 - 1.0,497
 198667,canastas,2026-07-29,PE3,piña special 3ra,0.0 - 1.0,467
 198668,canastas,2026-07-29,PEBAB,piña special baby,1.5 - 2.5,431
 198672,canastas,2026-07-29,PEBAB,piña special baby,1.5 - 2.5,412
 198673,canastas,2026-07-29,PEBAB,piña special baby,1.5 - 2.5,435
-198674,canastas,2026-07-29,PE3,piña special 3ra,0.0 - 1.0,482
 198681,canastas,2026-07-29,PEBAB,piña special baby,1.5 - 2.5,451
 198684,canastas,2026-07-29,PEBAB,piña special baby,1.5 - 2.5,425
 198686,canastas,2026-07-29,PEBAB,piña special baby,1.5 - 2.5,424
@@ -84,14 +81,14 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 198771,canastas,2026-07-31,PE1,piña special 1ra,0.0 - 1.0,538
 198772,canastas,2026-07-31,PE1,piña special 1ra,1,537
 198773,canastas,2026-07-31,PE1,piña special 1ra,1,530
-198774,canastas,2026-07-31,,,,0
-198775,canastas,2026-07-31,,,,0
-198776,canastas,2026-07-31,,,,0
-198777,canastas,2026-07-31,,,,0
-198778,canastas,2026-07-31,,,,0
-198779,canastas,2026-07-31,,,,0
-198780,canastas,2026-07-31,,,,0
-198781,canastas,2026-07-31,,,,0
+198774,canastas,2026-07-31,PE2,piña special 2da,1.5,416
+198775,canastas,2026-07-31,PE1,piña special 1ra,1,534
+198776,canastas,2026-07-31,PE2,piña special 2da,1.5,404
+198777,canastas,2026-07-31,PE2,piña special 2da,1.5,404
+198778,canastas,2026-07-31,PE1,piña special 1ra,1,553
+198779,canastas,2026-07-31,PE1,piña special 1ra,,493
+198780,canastas,2026-07-31,PE1,piña special 1ra,1,546
+198781,canastas,2026-07-31,PE2,piña special 2da,1.5,397
 198782,canastas,2026-07-31,,,,0
 198783,canastas,2026-07-31,,,,0
 198784,canastas,2026-07-31,,,,0
