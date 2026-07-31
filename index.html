@@ -60,6 +60,8 @@ header h1 span{color:#64748b;font-size:.8rem;font-weight:400;margin-left:8px}
 .msel-actions{display:flex;gap:6px;padding:2px 2px 8px;margin-bottom:6px;border-bottom:1px solid #f1f5f9}
 .msel-actions button{flex:1;padding:6px 8px;border:1px solid #e2e8f0;border-radius:6px;background:#f8fafc;color:#475569;font-size:.78rem;font-weight:700;cursor:pointer;font-family:inherit}
 .msel-actions button:hover{background:#f1f5f9;color:#1e293b;border-color:#94a3b8}
+.msel-search{position:sticky;top:0;z-index:1;width:100%;box-sizing:border-box;padding:8px 10px;margin-bottom:6px;border:1px solid #e2e8f0;border-radius:6px;font-size:.85rem;font-family:inherit;background:#fff;color:#1e293b}
+.msel-search:focus{outline:none;border-color:#22c55e}
 
 /* ── Selector de fecha (Facturacion) ── */
 .fact-date-wrap{display:flex;flex-direction:column;gap:3px}
@@ -328,6 +330,13 @@ function getCalibreLabel(c){
   const map={'0':'Verde (0)','0.5':'Verde (0.5)','1':'Verde (1)','0,0 - 1,0':'Verde (0-1)','1.5':'Pintona (1.5)','2':'Pintona (2)','2.5':'Pintona (2.5)','1,5 - 2,5':'Pintona (1.5-2.5)','3':'Madura (3)','4':'Madura (4)','3,0 - 4,0':'Madura (3-4)'};
   return map[s]||s;
 }
+// Etiqueta legible de un valor de calibre para agrupar por calibre individual.
+// Si viene vacio/sin dato, se muestra "(Sin calibre)" en vez de dejarlo en blanco.
+function calValLabel(c){
+  const s=String(c==null?'':c).trim();
+  if(s==='') return '(Sin calibre)';
+  return s.replace(/,/g,'.');
+}
 
 function getMadClasses(mad){
   const map={verde:{bg:'c-verde-bg',hdr:'c-verde-hdr',txt:'c-verde-txt',badge:'c-verde-badge',card:'c-verde-card',cell:'c-verde-cell',pina:'pina-verde',dot:'#16a34a',label:'VERDE',calib:'0 - 1.0'},pintona:{bg:'c-pintona-bg',hdr:'c-pintona-hdr',txt:'c-pintona-txt',badge:'c-pintona-badge',card:'c-pintona-card',cell:'c-pintona-cell',pina:'pina-pintona',dot:'#eab308',label:'PINTONA',calib:'1.5 - 2.5'},madura:{bg:'c-madura-bg',hdr:'c-madura-hdr',txt:'c-madura-txt',badge:'c-madura-badge',card:'c-madura-card',cell:'c-madura-cell',pina:'pina-madura',dot:'#ea580c',label:'MADURA',calib:'3.0 - 4.0'}};
@@ -495,16 +504,29 @@ function fillMsel(id,items){
   const panel=document.getElementById(id+'-panel');
   panel.dataset.values=JSON.stringify(items.map(function(it){return it.value;}));
   if(!items.length){panel.innerHTML='<div class="msel-empty">Sin opciones</div>';return;}
-  let html='<div class="msel-actions">';
+  let html='<input type="text" class="msel-search" placeholder="Buscar..." oninput="filterMsel(\''+id+'\',this.value)" onclick="event.stopPropagation()">';
+  html+='<div class="msel-actions">';
   html+='<button type="button" onclick="selectAllMsel(\''+id+'\')">Seleccionar todos</button>';
   html+='<button type="button" onclick="clearMsel(\''+id+'\')">Ninguno</button>';
   html+='</div>';
+  html+='<div class="msel-opciones">';
   html+=items.map(function(it){
     const checked=filtros[def.key].includes(it.value)?'checked':'';
-    return '<label><input type="checkbox" value="'+it.value.replace(/"/g,'&quot;')+'" '+checked+' onchange="onMselChange(\''+id+'\',this)">'+it.label+'</label>';
+    const txt=String(it.label).toLowerCase().replace(/"/g,'&quot;');
+    return '<label data-txt="'+txt+'"><input type="checkbox" value="'+it.value.replace(/"/g,'&quot;')+'" '+checked+' onchange="onMselChange(\''+id+'\',this)">'+it.label+'</label>';
   }).join('');
+  html+='</div>';
   panel.innerHTML=html;
   updateMselBtn(id);
+}
+// Filtra en vivo las opciones de un desplegable segun lo que se escriba en su buscador.
+// Aplica igual a todos los desplegables, ya que todos usan fillMsel/este mismo panel.
+function filterMsel(id,texto){
+  const panel=document.getElementById(id+'-panel');
+  const t=String(texto||'').trim().toLowerCase();
+  panel.querySelectorAll('label[data-txt]').forEach(function(lab){
+    lab.style.display = (!t || lab.dataset.txt.indexOf(t)!==-1) ? '' : 'none';
+  });
 }
 function onMselChange(id,cb){
   const key=MSEL_DEF[id].key, v=cb.value;
@@ -657,15 +679,19 @@ function renderTarjetas(data){
     html+='<h2>'+fmtF(fecha)+'</h2>';
     html+='<span class="dia-pct">'+pct+'% del inventario</span>';
     html+='<div class="dia-kg">Total: <strong>'+Math.round(kgB).toLocaleString('es-CO')+' kg</strong></div></div>';
-    ['madura','pintona','verde'].forEach(function(mad){
-      const filas=bloque.filter(function(r){return getMadurez(r.Calibre)===mad;});
+    const calibresPresentes=[...new Set(bloque.map(function(r){return r.Calibre;}))].sort(function(a,b){
+      return parseFloat(String(a).replace(',','.'))-parseFloat(String(b).replace(',','.'));
+    });
+    calibresPresentes.forEach(function(calVal){
+      const filas=bloque.filter(function(r){return r.Calibre===calVal;});
       if(!filas.length) return;
+      const mad=getMadurez(calVal);
       const C=getMadClasses(mad);
       const kgM=filas.reduce(function(s,r){return s+(parseFloat(r.KgDisponibles)||0);},0);
       html+='<div class="mad-section">';
       html+='<div class="mad-hdr '+C.hdr+'">';
       html+='<span class="'+C.badge+'">'+C.label+'</span>';
-      html+='<span class="'+C.badge+'" style="font-size:1.15rem">'+C.calib+'</span>';
+      html+='<span class="'+C.badge+'" style="font-size:1.15rem">Calibre '+calValLabel(calVal)+'</span>';
       html+='<span style="margin-left:auto;background:rgba(0,0,0,0.35);color:#fff;padding:3px 12px;border-radius:20px;font-size:.85rem;font-weight:800">'+Math.round(kgM).toLocaleString('es-CO')+' kg</span>';
       html+='</div>';
       html+='<div class="tam-grid '+C.bg+'">';
@@ -698,18 +724,22 @@ function renderTabla(dataOriginal){
   const tams=[...new Set(data.map(function(r){return r.Calidad;}))].sort();
   const agg={};
   data.forEach(function(r){
-    const mad=getMadurez(r.Calibre);
+    const cal=r.Calibre;
     if(!agg[r.Fecha]) agg[r.Fecha]={};
-    if(!agg[r.Fecha][mad]) agg[r.Fecha][mad]={};
-    agg[r.Fecha][mad][r.Calidad]=(agg[r.Fecha][mad][r.Calidad]||0)+(parseFloat(r.KgDisponibles)||0);
+    if(!agg[r.Fecha][cal]) agg[r.Fecha][cal]={};
+    agg[r.Fecha][cal][r.Calidad]=(agg[r.Fecha][cal][r.Calidad]||0)+(parseFloat(r.KgDisponibles)||0);
   });
-  let html='<table class="ctable"><thead><tr><th class="left">Madurez / Tamano</th>';
+  let html='<table class="ctable"><thead><tr><th class="left">Calibre / Tamano</th>';
   fechas.forEach(function(f){
     const h=horasDesde(f);
     html+='<th>'+fmtF(f)+'<br><small style="color:'+urgColor(h)+'">'+horasLabel(h)+'</small></th>';
   });
   html+='<th>Total kg</th></tr></thead><tbody>';
-  ['madura','pintona','verde'].forEach(function(mad){
+  const calibresPresentes=[...new Set(data.map(function(r){return r.Calibre;}))].sort(function(a,b){
+    return parseFloat(String(a).replace(',','.'))-parseFloat(String(b).replace(',','.'));
+  });
+  calibresPresentes.forEach(function(calVal){
+    const mad=getMadurez(calVal);
     const C=getMadClasses(mad);
     const bgH=madBg(mad), fgH=madFg(mad);
     // -- Precalcular totales por tam y ordenar de mayor a menor --
@@ -717,7 +747,7 @@ function renderTabla(dataOriginal){
       let total=0,hasData=false;
       const kgPorFecha={};
       fechas.forEach(function(f){
-        const kg=(agg[f]&&agg[f][mad]&&agg[f][mad][tam])||0;
+        const kg=(agg[f]&&agg[f][calVal]&&agg[f][calVal][tam])||0;
         kgPorFecha[f]=kg;
         if(kg>0) hasData=true;
         total+=kg;
@@ -725,7 +755,7 @@ function renderTabla(dataOriginal){
       return {tam:tam,total:total,hasData:hasData,kgPorFecha:kgPorFecha};
     }).filter(function(x){return x.hasData;}).sort(function(a,b){return b.total-a.total;});
     if(!filas.length) return;
-    html+='<tr class="mad-group-hdr"><td class="left" colspan="'+(fechas.length+2)+'" style="background:'+bgH+';color:'+fgH+'">'+C.label+' &mdash; calibre '+C.calib+'</td></tr>';
+    html+='<tr class="mad-group-hdr"><td class="left" colspan="'+(fechas.length+2)+'" style="background:'+bgH+';color:'+fgH+'">'+C.label+' &mdash; calibre '+calValLabel(calVal)+'</td></tr>';
     filas.forEach(function(fi){
       let row='<tr><td class="left" style="padding-left:20px;color:#1e293b;font-weight:700">'+(TAM_NAMES[fi.tam]||fi.tam)+'</td>';
       fechas.forEach(function(f){
@@ -773,16 +803,19 @@ function renderBodega(data){
     html += '<div class="urg-txt" style="color:'+urgColor(h)+'">'+h+'h en bodega &mdash; '+pct+'% urgencia</div></div>';
     html += '<div class="bod-items">';
 
-    ['madura','pintona','verde'].forEach(function(mad){
-      const fm = bloque.filter(function(r){return getMadurez(r.Calibre)===mad;});
+    const calibresPresentes=[...new Set(bloque.map(function(r){return r.Calibre;}))].sort(function(a,b){
+      return parseFloat(String(a).replace(',','.'))-parseFloat(String(b).replace(',','.'));
+    });
+    calibresPresentes.forEach(function(calVal){
+      const fm = bloque.filter(function(r){return r.Calibre===calVal;});
       if(!fm.length) return;
+      const mad = getMadurez(calVal);
       const C    = getMadClasses(mad);
       const tamsSet = [...new Set(fm.map(function(r){return r.Calidad;}))];
       const tamsOrdenados = tamsSet.map(function(tam){
         const ft  = fm.filter(function(r){return r.Calidad===tam;});
         const kg  = ft.reduce(function(s,r){return s+(parseFloat(r.KgDisponibles)||0);},0);
-        const cals= [...new Set(ft.map(function(r){return r.Calibre;}))].sort(function(a,b){return parseFloat(a)-parseFloat(b);});
-        return {tam:tam,kg:kg,cals:cals};
+        return {tam:tam,kg:kg};
       }).sort(function(a,b){return b.kg-a.kg;});
       const bgC = madBg(mad), fgC = madFg(mad);
       tamsOrdenados.forEach(function(to){
@@ -790,7 +823,7 @@ function renderBodega(data){
         html += '<div class="bod-dot" style="background:'+fgC+';width:9px;height:9px;border-radius:50%;flex-shrink:0"></div>';
         html += '<div style="flex:1;font-size:.74rem;font-weight:600;color:'+fgC+'">';
         html += '<div>'+C.label+' &middot; '+(TAM_NAMES[to.tam]||to.tam)+'</div>';
-        html += '<div style="font-size:.68rem;font-weight:800;opacity:.9">'+to.cals.map(function(c){return String(c).replace(',','.');}).join(' &middot; ')+'</div>';
+        html += '<div style="font-size:.68rem;font-weight:800;opacity:.9">Calibre '+calValLabel(calVal)+'</div>';
         html += '</div>';
         html += '<div style="font-size:.82rem;font-weight:800;color:'+fgC+'">'+Math.round(to.kg).toLocaleString('es-CO')+' kg</div>';
         html += '</div>';
