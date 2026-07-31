@@ -2,7 +2,7 @@ name: Actualizar Inventario
 
 on:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '*/30 * * * *'
   workflow_dispatch:
 
 permissions:
@@ -111,12 +111,14 @@ jobs:
         run: |
           sleep 60
           for i in 1 2 3 4 5; do
-            curl -s -f -X POST \
+            codigo=$(curl -s -o /tmp/respuesta.txt -w "%{http_code}" -X POST \
               -H "Authorization: Bearer ${{ secrets.DISPATCH_TOKEN }}" \
               -H "Accept: application/vnd.github+json" \
               -H "Content-Type: application/json" \
               -d '{"ref":"main"}' \
-              https://api.github.com/repos/${{ github.repository }}/actions/workflows/actualizar.yml/dispatches && exit 0
-            echo "Intento $i fallo, reintentando en 15s..."
+              https://api.github.com/repos/${{ github.repository }}/actions/workflows/actualizar.yml/dispatches)
+            echo "Intento $i -> codigo HTTP: $codigo"
+            cat /tmp/respuesta.txt
+            if [ "$codigo" = "204" ]; then exit 0; fi
             sleep 15
           done
