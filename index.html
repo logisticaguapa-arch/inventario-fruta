@@ -504,9 +504,9 @@ function fillMsel(id,items){
   const panel=document.getElementById(id+'-panel');
   panel.dataset.values=JSON.stringify(items.map(function(it){return it.value;}));
   if(!items.length){panel.innerHTML='<div class="msel-empty">Sin opciones</div>';return;}
-  let html='<input type="text" class="msel-search" placeholder="Buscar..." oninput="filterMsel(\''+id+'\',this.value)" onclick="event.stopPropagation()">';
+  let html='<input type="text" class="msel-search" placeholder="Buscar y Enter para marcar..." oninput="filterMsel(\''+id+'\',this.value)" onclick="event.stopPropagation()" onkeydown="if(event.key===\'Enter\'){event.preventDefault();aceptarBusquedaMsel(\''+id+'\');}">';
   html+='<div class="msel-actions">';
-  html+='<button type="button" onclick="selectAllMsel(\''+id+'\')">Seleccionar todos</button>';
+  html+='<button type="button" class="msel-btn-todos" onclick="selectAllMsel(\''+id+'\')">Seleccionar todos</button>';
   html+='<button type="button" onclick="clearMsel(\''+id+'\')">Ninguno</button>';
   html+='</div>';
   html+='<div class="msel-opciones">';
@@ -524,9 +524,15 @@ function fillMsel(id,items){
 function filterMsel(id,texto){
   const panel=document.getElementById(id+'-panel');
   const t=String(texto||'').trim().toLowerCase();
+  let visibles=0;
   panel.querySelectorAll('label[data-txt]').forEach(function(lab){
-    lab.style.display = (!t || lab.dataset.txt.indexOf(t)!==-1) ? '' : 'none';
+    const coincide=(!t || lab.dataset.txt.indexOf(t)!==-1);
+    lab.style.display = coincide?'':'none';
+    if(coincide) visibles++;
   });
+  // -- El boton "Seleccionar todos" pasa a marcar solo lo que coincide con la busqueda --
+  const btnTodos=panel.querySelector('.msel-btn-todos');
+  if(btnTodos) btnTodos.textContent = t ? ('Marcar '+visibles+' coincidencia'+(visibles===1?'':'s')) : 'Seleccionar todos';
 }
 function onMselChange(id,cb){
   const key=MSEL_DEF[id].key, v=cb.value;
@@ -538,11 +544,29 @@ function onMselChange(id,cb){
 function selectAllMsel(id){
   const def=MSEL_DEF[id];
   const panel=document.getElementById(id+'-panel');
-  const values=JSON.parse(panel.dataset.values||'[]');
-  filtros[def.key]=values.slice();
-  panel.querySelectorAll('input[type=checkbox]').forEach(function(cb){cb.checked=true;});
+  // -- Si hay busqueda activa, solo marca las opciones visibles (las que coinciden) --
+  // -- Si no hay busqueda, marca todas, como antes --
+  const labels=Array.from(panel.querySelectorAll('label[data-txt]'));
+  const labelsVisibles=labels.filter(function(lab){return lab.style.display!=='none';});
+  const objetivo=labelsVisibles.length?labelsVisibles:labels;
+  objetivo.forEach(function(lab){
+    const cb=lab.querySelector('input[type=checkbox]');
+    cb.checked=true;
+    if(!filtros[def.key].includes(cb.value)) filtros[def.key].push(cb.value);
+  });
   updateMselBtn(id);
   render();
+}
+// Igual que en Excel: escribes en el buscador y con Enter marca de una vez
+// las coincidencias y cierra el desplegable, sin tener que hacer clic en nada mas.
+function aceptarBusquedaMsel(id){
+  const panel=document.getElementById(id+'-panel');
+  const texto=panel.querySelector('.msel-search');
+  const t=texto?texto.value.trim():'';
+  if(!t) return; // Enter sin texto escrito no hace nada
+  selectAllMsel(id);
+  const cont=document.getElementById(id);
+  if(cont) cont.classList.remove('open');
 }
 function clearMsel(id){
   const def=MSEL_DEF[id];
