@@ -106,10 +106,10 @@ jobs:
           git diff --staged --quiet || git commit -m "Inventario actualizado $(date +'%Y-%m-%d %H:%M')"
           git push origin main --force
 
-      - name: Volver a dispararse en 5 minutos (cadena independiente del Excel)
+      - name: Volver a dispararse pronto (cadena independiente del Excel)
         if: always()
         run: |
-          sleep 240
+          sleep 60
           for i in 1 2 3 4 5; do
             curl -s -f -X POST \
               -H "Authorization: Bearer ${{ secrets.DISPATCH_TOKEN }}" \
