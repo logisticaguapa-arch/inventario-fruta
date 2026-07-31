@@ -107,7 +107,7 @@ jobs:
           git push origin main --force
 
       - name: Volver a dispararse pronto (cadena independiente del Excel)
-        if: always()
+        if: success() || failure()
         run: |
           sleep 60
           for i in 1 2 3 4 5; do
