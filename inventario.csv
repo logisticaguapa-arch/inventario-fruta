@@ -43,7 +43,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 198657,canastas,2026-07-29,PEBAB,piña special baby,1.5 - 2.5,406
 198659,canastas,2026-07-29,PEBAB,piña special baby,1.5 - 2.5,431
 198660,canastas,2026-07-29,PEBAB,piña special baby,1.5 - 2.5,419
-198667,canastas,2026-07-29,PE3,piña special 3ra,0.0 - 1.0,467
 198668,canastas,2026-07-29,PEBAB,piña special baby,1.5 - 2.5,431
 198672,canastas,2026-07-29,PEBAB,piña special baby,1.5 - 2.5,412
 198673,canastas,2026-07-29,PEBAB,piña special baby,1.5 - 2.5,435
@@ -73,7 +72,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 198763,canastas,2026-07-31,PE1,piña special 1ra,1,546
 198764,canastas,2026-07-31,PE2,piña special 2da,1.5,402
 198765,canastas,2026-07-31,PE1,piña special 1ra,1,535
-198766,canastas,2026-07-31,PE3,piña special 3ra,0.0 - 1.0,476
 198767,canastas,2026-07-31,PE1,piña special 1ra,,509
 198768,canastas,2026-07-31,PE2,piña special 2da,1.5,393
 198769,canastas,2026-07-31,PE2,piña special 2da,1.5,417
@@ -89,10 +87,9 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 198779,canastas,2026-07-31,PE1,piña special 1ra,,493
 198780,canastas,2026-07-31,PE1,piña special 1ra,1,546
 198781,canastas,2026-07-31,PE2,piña special 2da,1.5,397
-198782,canastas,2026-07-31,,,,0
-198783,canastas,2026-07-31,,,,0
-198784,canastas,2026-07-31,,,,0
-198785,canastas,2026-07-31,,,,0
+198782,canastas,2026-07-31,PE1,piña special 1ra,1,546
+198784,canastas,2026-07-31,PE1,piña special 1ra,1,534
+198785,canastas,2026-07-31,PE2,piña special 2da,1.5,420
 198786,canastas,2026-07-31,,,,0
 198787,canastas,2026-07-31,,,,0
 198788,canastas,2026-07-31,,,,0
