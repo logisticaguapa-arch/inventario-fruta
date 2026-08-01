@@ -15485,18 +15485,18 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-07-30,45537,R-18586,ventas egipto,piña special 2da,PE2,2,0,8000,0
 2026-07-30,45537,R-18586,ventas egipto,piña special 3ra,PE3,5,0,7000,0
 2026-07-30,45537,R-18586,ventas egipto,piña special 1ra,PE1,1,0,9000,0
-2026-07-31,,,KARINA BORJA,piña special 3ra,PE3,490,0,,0
-2026-07-31,,,KARINA BORJA,piña special 3ra,PE3,210,0,,0
-2026-07-31,,,KARINA BORJA,piña special 3ra,PE3,473,0,,0
-2026-07-31,,,KARINA BORJA,piña special 3ra,PE3,458,0,,0
-2026-07-31,,,KARINA BORJA,piña special 3ra,PE3,473,0,,0
-2026-07-31,,,KARINA BORJA,piña special 3ra,PE3,396,0,,0
-2026-07-31,,,KARINA BORJA,piña special 3ra,PE3,252,0,,0
-2026-07-31,,,KARINA BORJA,piña special 3ra,PE3,248,0,,0
-2026-07-31,,R-18589,Aldinsen Gonzalez,piña special guapita,PEGUA,442,0,,0
-2026-07-31,,,Aldinsen Gonzalez,piña special guapita,PEGUA,449,0,,2
-2026-07-31,,,Aldinsen Gonzalez,piña special guapita,PEGUA,443,0,,0
-2026-07-31,,,Aldinsen Gonzalez,piña special guapita,PEGUA,312,354,,107
+2026-07-31,45543,R-18590,KARINA BORJA,piña special 3ra,PE3,490,0,600,0
+2026-07-31,45543,R-18590,KARINA BORJA,piña special 3ra,PE3,210,0,600,0
+2026-07-31,45543,R-18590,KARINA BORJA,piña special 3ra,PE3,473,0,600,0
+2026-07-31,45543,R-18590,KARINA BORJA,piña special 3ra,PE3,458,0,600,0
+2026-07-31,45543,R-18590,KARINA BORJA,piña special 3ra,PE3,473,0,600,0
+2026-07-31,45543,R-18590,KARINA BORJA,piña special 3ra,PE3,396,0,600,0
+2026-07-31,45543,R-18590,KARINA BORJA,piña special 3ra,PE3,252,0,600,0
+2026-07-31,45543,R-18590,KARINA BORJA,piña special 3ra,PE3,248,0,600,0
+2026-07-31,45542,R-18589,Aldinsen Gonzalez,piña special guapita,PEGUA,442,0,700,0
+2026-07-31,45542,R-18589,Aldinsen Gonzalez,piña special guapita,PEGUA,449,0,700,2
+2026-07-31,45542,R-18589,Aldinsen Gonzalez,piña special guapita,PEGUA,443,0,700,0
+2026-07-31,45542,R-18589,Aldinsen Gonzalez,piña special guapita,PEGUA,312,354,700,107
 2026-07-31,45539,R-18587,ventas egipto,piña special 1ra,PE1,18,0,4500,0
 2026-07-31,45539,R-18587,ventas egipto,piña special 2da,PE2,11,0,8000,0
 2026-07-31,45539,R-18587,ventas egipto,piña special 3ra,PE3,4,0,7000,0
@@ -15505,22 +15505,22 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-07-31,45540,R-18558,ventas egipto,piña special 2da,PE2,2,0,8000,0
 2026-07-31,45540,R-18558,ventas egipto,piña special 3ra,PE3,5,0,7000,0
 2026-07-31,45540,R-18558,ventas egipto,piña special 1ra,PE1,1,0,9000,0
-2026-07-31,,R-18592,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,522,0,,12
-2026-07-31,,R-18592,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,562,0,,0
-2026-07-31,,R-18592,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,543,0,,0
-2026-07-31,,R-18592,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,554,0,,0
-2026-07-31,,R-18592,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,528,0,,0
-2026-07-31,,R-18592,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,544,0,,0
-2026-07-31,,R-18592,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,552,0,,0
-2026-07-31,,R-18592,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,551,0,,0
-2026-07-31,,R-18592,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,533,361,,0
+2026-07-31,45541,R-18592,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,522,0,3000,12
+2026-07-31,45541,R-18592,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,562,0,3000,0
+2026-07-31,45541,R-18592,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,543,0,3000,0
+2026-07-31,45541,R-18592,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,554,0,3000,0
+2026-07-31,45541,R-18592,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,528,0,3000,0
+2026-07-31,45541,R-18592,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,544,0,3000,0
+2026-07-31,45541,R-18592,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,552,0,3000,0
+2026-07-31,45541,R-18592,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,551,0,3000,0
+2026-07-31,45541,R-18592,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,533,361,3000,0
 2026-07-31,,R-18591,reposicion éxito medellin,,pe1,0,150,,0
-2026-07-31,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,24,0,,0
-2026-07-31,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,543,0,,0
-2026-07-31,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,546,0,,0
-2026-07-31,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,532,0,,0
-2026-07-31,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,564,0,,0
-2026-07-31,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,534,0,,0
-2026-07-31,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,545,462,,0
-2026-07-31,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,506,0,,0
-,,,,piña special 1ra,PE1,492,502,,0
+2026-07-31,45541,R-18593,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,24,0,3000,0
+2026-07-31,45541,R-18593,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,543,0,3000,0
+2026-07-31,45541,R-18593,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,546,0,3000,0
+2026-07-31,45541,R-18593,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,532,0,3000,0
+2026-07-31,45541,R-18593,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,564,0,3000,0
+2026-07-31,45541,R-18593,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,534,0,3000,0
+2026-07-31,45541,R-18593,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,545,462,3000,0
+2026-07-31,45541,R-18593,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,506,0,3100,0
+2026-07-31,45541,R-18593,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,492,502,3100,0
