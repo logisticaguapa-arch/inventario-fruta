@@ -5,6 +5,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: actualizar-inventario
@@ -13,6 +15,9 @@ concurrency:
 jobs:
   actualizar:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -30,16 +35,18 @@ jobs:
           print(f"Status: {r.status_code}, Tamaño: {len(r.content)} bytes")
           wb = openpyxl.load_workbook(io.BytesIO(r.content), data_only=True)
 
+          # Leer col B (Bin) de Proceso para cruzar con ID
           ws_proc = wb["Proceso"]
           bin_map = {}
           for row in ws_proc.iter_rows(min_row=2, values_only=True):
-              id_val  = row[0]
-              bin_val = row[1]
+              id_val  = row[0]   # Col A - ID
+              bin_val = row[1]   # Col B - Bin
               if id_val:
                   bin_map[str(id_val).strip()] = str(bin_val or "").strip()
 
           print(f"IDs en Proceso: {len(bin_map)}")
 
+          # Leer hoja Inventario
           ws_inv = wb["Inventario"]
           csv = "ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles\n"
           for row in ws_inv.iter_rows(min_row=2, values_only=True):
@@ -57,6 +64,7 @@ jobs:
               f.write(csv)
           print(f"CSV generado: {csv.count(chr(10))-1} registros")
 
+          # ── Hoja Despacho -> despacho.csv (para la vista Facturacion) ──
           def es_anulado(v):
               s = str(v or "").strip().upper()
               return s in ("SI", "SÍ", "X", "ANULADO", "ANULADA", "TRUE")
@@ -67,12 +75,12 @@ jobs:
           n2 = 0
           fechas_vistas = []
           for row in ws_desp.iter_rows(min_row=2, values_only=True):
-              id_val = row[2]
-              remision_val = row[23] if len(row) > 23 else None
-              if not id_val and not remision_val: continue
+              id_val = row[2]        # Col C - ID (vacio en filas que son solo una reposicion adicional)
+              remision_val = row[23] if len(row) > 23 else None  # Col X - Remision
+              if not id_val and not remision_val: continue  # fila totalmente vacia (ni ID ni Remision)
               anula_rm = es_anulado(row[25]) if len(row) > 25 else False
               anula_fv = es_anulado(row[26]) if len(row) > 26 else False
-              if anula_rm or anula_fv: continue
+              if anula_rm or anula_fv: continue  # excluir remisiones/facturas anuladas
 
               fecha_desp = str(row[1])[:10] if row[1] else ""
               if fecha_desp: fechas_vistas.append(fecha_desp)
@@ -82,10 +90,10 @@ jobs:
               kilos      = row[13] or 0
               reposicion = row[15] or 0
               precio_raw = row[22]
-              precio     = "" if precio_raw in (None, "") else precio_raw
+              precio     = "" if precio_raw in (None, "") else precio_raw  # en blanco = en blanco (para que el promedio lo excluya, igual que Excel)
               remision   = str(row[23] or "").replace(",", " ").strip()
               factura    = str(row[24] or "").replace(",", " ").strip()
-              descarte   = row[12] or 0
+              descarte   = row[12] or 0   # Col M - Kilos de descarte
               csv2 += f"{fecha_desp},{factura},{remision},{cliente},{categoria},{calibre},{kilos},{reposicion},{precio},{descarte}\n"
               n2 += 1
 
@@ -103,3 +111,23 @@ jobs:
           git add inventario.csv despacho.csv
           git diff --staged --quiet || git commit -m "Inventario actualizado $(date +'%Y-%m-%d %H:%M')"
           git push origin main --force
+
+      - name: Preparar sitio para Pages
+        run: |
+          mkdir -p _site
+          cp index.html _site/
+          cp validador-cargue.html _site/ 2>/dev/null || true
+          cp inventario.csv _site/
+          cp despacho.csv _site/
+
+      - name: Configurar Pages
+        uses: actions/configure-pages@v5
+
+      - name: Subir artefacto de Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '_site'
+
+      - name: Desplegar a GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
