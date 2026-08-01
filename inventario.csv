@@ -64,7 +64,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 198761,canastas,2026-07-31,PE2,piña special 2da,1.5,416
 198762,canastas,2026-07-31,PE2,piña special 2da,1.5,402
 198764,canastas,2026-07-31,PE2,piña special 2da,1.5,402
-198767,canastas,2026-07-31,PE1,piña special 1ra,,509
 198768,canastas,2026-07-31,PE2,piña special 2da,1.5,393
 198769,canastas,2026-07-31,PE2,piña special 2da,1.5,417
 198770,canastas,2026-07-31,PE2,piña special 2da,1.5,415
@@ -72,12 +71,11 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 198774,canastas,2026-07-31,PE2,piña special 2da,1.5,416
 198776,canastas,2026-07-31,PE2,piña special 2da,1.5,404
 198777,canastas,2026-07-31,PE2,piña special 2da,1.5,404
-198779,canastas,2026-07-31,PE1,piña special 1ra,,493
 198781,canastas,2026-07-31,PE2,piña special 2da,1.5,397
 198785,canastas,2026-07-31,PE2,piña special 2da,1.5,420
 198786,canastas,2026-07-31,PE1,piña special 1ra,1,80
 198787,canastas,2026-07-31,PE2,piña special 2da,1.5,409
-198788,canastas,2026-07-31,PE1,piña special 1ra,,516
+198788,canastas,2026-07-31,PE1,piña special 1ra,,14
 198800,canastas,2026-07-31,PE2,piña special 2da,1.5,412
 198802,canastas,2026-07-31,PE2,piña special 2da,1.5,388
 198803,canastas,2026-07-31,PJUG,piña jugos,3.0 - 4.0,155
@@ -102,17 +100,17 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 198825,canastas,2026-07-31,ADGUA,Piña ADGUA,1.5 - 2.5,308
 198826,canastas,2026-07-31,AD2,Piña AD2,0.0 - 1.0,486
 198827,canastas,2026-07-31,AD1,Piña AD1,0.0 - 1.0,342
-198828,canastas,2026-07-31,,,,0
-198829,canastas,2026-07-31,,,,0
-198830,canastas,2026-07-31,,,,0
-198831,canastas,2026-07-31,,,,0
-198832,canastas,2026-07-31,,,,0
-198833,canastas,2026-07-31,,,,0
-198834,canastas,2026-07-31,,,,0
-198835,canastas,2026-07-31,,,,0
-198836,canastas,2026-07-31,,,,0
-198837,canastas,2026-07-31,,,,0
-198838,canastas,2026-07-31,,,,0
+198828,canastas,2026-07-31,AD1,Piña AD1,1.5 - 2.5,619
+198829,canastas,2026-07-31,AD3,Piña AD3,0.0 - 1.0,193
+198830,canastas,2026-07-31,AD-PIND,AD-piña indstria,1.5 - 2.5,293
+198831,canastas,2026-07-31,PE2,piña special 2da,1.5,404
+198832,canastas,2026-07-31,AD2,Piña AD2,1.5 - 2.5,196
+198833,canastas,2026-07-31,AD-PJUG,AD-piña jugos,3.0 - 4.0,309
+198834,canastas,2026-07-31,AD3,Piña AD3,1.5 - 2.5,188
+198835,canastas,2026-07-31,AD2,Piña AD2,0.0 - 1.0,203
+198836,canastas,2026-07-31,PE2,piña special 2da,1.5,218
+198837,canastas,2026-07-31,PE2,piña special 2da,1.5,220
+198838,canastas,2026-07-31,PE2,piña special 2da,1.5,427
 198839,canastas,2026-07-31,,,,0
 198840,canastas,2026-07-31,,,,0
 198841,canastas,2026-07-31,,,,0
