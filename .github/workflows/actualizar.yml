@@ -1,8 +1,6 @@
 name: Actualizar Inventario
 
 on:
-  schedule:
-    - cron: '*/30 * * * *'
   workflow_dispatch:
 
 permissions:
@@ -105,20 +103,3 @@ jobs:
           git add inventario.csv despacho.csv
           git diff --staged --quiet || git commit -m "Inventario actualizado $(date +'%Y-%m-%d %H:%M')"
           git push origin main --force
-
-      - name: Volver a dispararse pronto (cadena independiente del Excel)
-        if: success() || failure()
-        run: |
-          sleep 60
-          for i in 1 2 3 4 5; do
-            codigo=$(curl -s -o /tmp/respuesta.txt -w "%{http_code}" -X POST \
-              -H "Authorization: Bearer ${{ secrets.DISPATCH_TOKEN }}" \
-              -H "Accept: application/vnd.github+json" \
-              -H "Content-Type: application/json" \
-              -d '{"ref":"main"}' \
-              https://api.github.com/repos/${{ github.repository }}/actions/workflows/actualizar.yml/dispatches)
-            echo "Intento $i -> codigo HTTP: $codigo"
-            cat /tmp/respuesta.txt
-            if [ "$codigo" = "204" ]; then exit 0; fi
-            sleep 15
-          done
