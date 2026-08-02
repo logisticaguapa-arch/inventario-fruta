@@ -45,12 +45,12 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 198885,canastas,2026-08-02,PE1,piña special 1ra,1,570
 198886,canastas,2026-08-02,PE1,piña special 1ra,0.0 - 1.0,538
 198887,canastas,2026-08-02,PE2,piña special 2da,1.5,405
-198888,canastas,2026-08-02,,,,0
-198889,canastas,2026-08-02,,,,0
-198890,canastas,2026-08-02,,,,0
-198891,canastas,2026-08-02,,,,0
-198892,canastas,2026-08-02,,,,0
-198893,canastas,2026-08-02,,,,0
+198888,canastas,2026-08-02,PEBAB,piña special baby,1.5 - 2.5,431
+198889,canastas,2026-08-02,PEGUA,piña special guapita,1.5 - 2.5,484
+198890,canastas,2026-08-02,PIND,piña indstria,1.5 - 2.5,465
+198891,canastas,2026-08-02,PE3,piña special 3ra,0.0 - 1.0,479
+198892,canastas,2026-08-02,PE2,piña special 2da,0.0 - 1.0,523
+198893,canastas,2026-08-02,PEGUA,piña special guapita,1.5 - 2.5,455
 198894,canastas,2026-08-02,,,,0
 198895,canastas,2026-08-02,,,,0
 198896,canastas,2026-08-02,,,,0
