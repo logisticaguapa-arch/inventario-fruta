@@ -86,10 +86,10 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 198932,canastas,2026-08-02,PIND,piña indstria,1.5 - 2.5,415
 198933,canastas,2026-08-02,PEGUA,piña special guapita,1.5 - 2.5,434
 198934,canastas,2026-08-02,PEBAB,piña special baby,1.5 - 2.5,387
-198935,canastas,2026-08-02,,,,0
-198936,canastas,2026-08-02,,,,0
-198937,canastas,2026-08-02,,,,0
-198938,canastas,2026-08-02,,,,0
+198935,canastas,2026-08-02,PE1,piña special 1ra,0.0 - 1.0,524
+198936,canastas,2026-08-02,PE2,piña special 2da,1.5,402
+198937,canastas,2026-08-02,PE1,piña special 1ra,1,573
+198938,canastas,2026-08-02,PE3,piña special 3ra,0.0 - 1.0,482
 198939,canastas,2026-08-02,,,,0
 198940,canastas,2026-08-02,,,,0
 198941,canastas,2026-08-02,,,,0
