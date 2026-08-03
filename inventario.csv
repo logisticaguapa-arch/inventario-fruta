@@ -93,16 +93,16 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 199018,canastas,2026-08-03,PE3,piña special 3ra,0.0 - 1.0,505
 199019,canastas,2026-08-03,PEBAB,piña special baby,1.5 - 2.5,402
 199020,canastas,2026-08-03,PIND,piña indstria,1.5 - 2.5,459
-199021,canastas,2026-08-03,,,,0
-199022,canastas,2026-08-03,,,,0
-199023,canastas,2026-08-03,,,,0
-199024,canastas,2026-08-03,,,,0
-199025,canastas,2026-08-03,,,,0
-199026,canastas,2026-08-03,,,,0
-199027,canastas,2026-08-03,,,,0
-199028,canastas,2026-08-03,,,,0
-199029,canastas,2026-08-03,,,,0
-199030,canastas,2026-08-03,,,,0
+199021,canastas,2026-08-03,PE2,piña special 2da,1.5,405
+199022,canastas,2026-08-03,PE2,piña special 2da,0.0 - 1.0,500
+199023,canastas,2026-08-03,PEGUA,piña special guapita,1.5 - 2.5,475
+199024,canastas,2026-08-03,PEGUA,piña special guapita,1.5 - 2.5,467
+199025,canastas,2026-08-03,PE1,piña special 1ra,0.0 - 1.0,538
+199026,canastas,2026-08-03,PE3,piña special 3ra,0.0 - 1.0,527
+199027,canastas,2026-08-03,PE2,piña special 2da,1.5,405
+199028,canastas,2026-08-03,PEGUA,piña special guapita,1.5 - 2.5,467
+199029,canastas,2026-08-03,PE2,piña special 2da,1.5,406
+199030,canastas,2026-08-03,PIND,piña indstria,1.5 - 2.5,426
 199031,canastas,2026-08-03,,,,0
 199032,canastas,2026-08-03,,,,0
 199033,canastas,2026-08-03,,,,0
