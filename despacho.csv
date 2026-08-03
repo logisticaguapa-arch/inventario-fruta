@@ -15641,9 +15641,10 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-08-01,45551,R-18602,Andres Garcia,piña special 1ra,PE1,31,0,2700,0
 2026-08-01,45551,R-18602,Andres Garcia,piña special 1ra,PE1,42,0,2700,0
 2026-08-01,45551,R-18602,Andres Garcia,piña special 1ra,PE1,10,0,2700,0
-2026-08-02,45552,R-18504,jeronimo martins,piña special 2da,PE2,218,0,3800,0
-2026-08-02,45552,R-18504,jeronimo martins,piña special 2da,PE2,407,0,3800,0
-2026-08-02,45552,R-18504,jeronimo martins,piña special 2da,PE2,220,0,3800,0
-2026-08-02,45552,R-18504,jeronimo martins,piña special 2da,PE2,404,0,3800,0
-2026-08-02,45552,R-18504,jeronimo martins,piña special 2da,PE2,411,0,3800,0
-2026-08-02,45552,R-18504,jeronimo martins,piña special 2da,PE2,408,132,3800,0
+2026-08-02,45552,R-18604,jeronimo martins,piña special 2da,PE2,218,0,3800,0
+2026-08-02,45552,R-18604,jeronimo martins,piña special 2da,PE2,407,0,3800,0
+2026-08-02,45552,R-18604,jeronimo martins,piña special 2da,PE2,220,0,3800,0
+2026-08-02,45552,R-18604,jeronimo martins,piña special 2da,PE2,404,0,3800,0
+2026-08-02,45552,R-18604,jeronimo martins,piña special 2da,PE2,411,0,3800,0
+2026-08-02,45552,R-18604,jeronimo martins,piña special 2da,PE2,408,132,3800,0
+2026-08-02,,R-18605,reposicion jeronimo,,PE2,0,132,,0
