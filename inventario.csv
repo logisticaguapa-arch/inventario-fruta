@@ -1,6 +1,5 @@
 ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 198846,canastas,2026-08-02,PEGUA,piña special guapita,1.5 - 2.5,470
-198847,canastas,2026-08-02,PE3,piña special 3ra,0.0 - 1.0,473
 198849,canastas,2026-08-02,PE2,piña special 2da,1.5,415
 198852,canastas,2026-08-02,PE2,piña special 2da,0.0 - 1.0,213
 198853,canastas,2026-08-02,PE1,piña special 1ra,0.0 - 1.0,177
@@ -22,13 +21,11 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 198880,canastas,2026-08-02,PE3,piña special 3ra,0.0 - 1.0,482
 198887,canastas,2026-08-02,PE2,piña special 2da,1.5,405
 198888,canastas,2026-08-02,PEBAB,piña special baby,1.5 - 2.5,431
-198889,canastas,2026-08-02,PEGUA,piña special guapita,1.5 - 2.5,484
 198890,canastas,2026-08-02,PIND,piña indstria,1.5 - 2.5,465
 198891,canastas,2026-08-02,PE3,piña special 3ra,0.0 - 1.0,427
 198896,canastas,2026-08-02,PE2,piña special 2da,1.5,408
 198897,canastas,2026-08-02,PEGUA,piña special guapita,1.5 - 2.5,490
 198898,canastas,2026-08-02,PE2,piña special 2da,1.5,402
-198900,canastas,2026-08-02,PE3,piña special 3ra,0.0 - 1.0,190
 198903,canastas,2026-08-02,PEGUA,piña special guapita,1.5 - 2.5,440
 198904,canastas,2026-08-02,PE2,piña special 2da,0.0 - 1.0,8
 198905,canastas,2026-08-02,PE2,piña special 2da,0.0 - 1.0,37
@@ -40,7 +37,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 198917,canastas,2026-08-02,PE2,piña special 2da,1.5,414
 198919,canastas,2026-08-02,PEGUA,piña special guapita,1.5 - 2.5,480
 198928,canastas,2026-08-02,PE2,piña special 2da,1.5,404
-198929,canastas,2026-08-02,PEGUA,piña special guapita,1.5 - 2.5,467
 198932,canastas,2026-08-02,PIND,piña indstria,1.5 - 2.5,415
 198936,canastas,2026-08-02,PE2,piña special 2da,1.5,402
 198950,canastas,2026-08-02,PE2,piña special 2da,1.5,407
@@ -106,7 +102,7 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 199031,canastas,2026-08-03,PEBAB,piña special baby,1.5 - 2.5,405
 199032,canastas,2026-08-03,PEGUA,piña special guapita,1.5 - 2.5,470
 199033,canastas,2026-08-03,PEBAB,piña special baby,1.5 - 2.5,406
-199034,canastas,2026-08-03,,,,0
+199034,canastas,2026-08-03,PE3,piña special 3ra,0.0 - 1.0,501
 199035,canastas,2026-08-03,,,,0
 199036,canastas,2026-08-03,,,,0
 199037,canastas,2026-08-03,,,,0
