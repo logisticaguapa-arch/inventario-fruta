@@ -15691,7 +15691,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-08-03,45567,R-18609,Almacenes Éxito S.A. - Barranquilla,piña special 1ra,PE1,568,0,3200,0
 2026-08-03,45567,R-18609,Almacenes Éxito S.A. - Barranquilla,piña special 1ra,PE1,575,489,3200,0
 2026-08-03,45567,R-18609,Almacenes Éxito S.A. - Barranquilla,,pe1,0,408,3300,0
-2026-08-03,,R-18614,Almacenes Éxito S.A. - Barranquilla,,PE1,0,50,,0
+2026-08-03,,R-18614,reposicion éxito barranquilla,,PE1,0,50,,0
 2026-08-03,,R-18610,cartagena,piña special 1ra,PE1,536,0,3000,0
 2026-08-03,,R-18610,cartagena,piña special 1ra,PE1,525,0,3000,12
 2026-08-03,,R-18610,cartagena,piña special 1ra,PE1,555,0,3000,0
@@ -15776,6 +15776,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-08-03,45573,R-18620,jeronimo martins,piña special 2da,PE2,402,0,3100,0
 2026-08-03,45573,R-18620,jeronimo martins,piña special 2da,PE2,405,0,3100,0
 2026-08-03,45573,R-18620,jeronimo martins,piña special 2da,PE2,404,57,3100,0
+2026-08-03,,R-18625,reposicion jeronimo,,,0,195,,0
 2026-08-03,45574,R-18621,Aldinsen Gonzalez,piña indstria,PIND,458,0,1000,0
 2026-08-03,45574,R-18621,Aldinsen Gonzalez,AD-piña indstria,AD-PIND,293,0,1000,0
 2026-08-03,45574,R-18621,Aldinsen Gonzalez,piña indstria,PIND,456,0,1000,0
@@ -15803,8 +15804,8 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-08-03,45577,R-18624,jeronimo martins,piña special 2da,PE2,405,0,3200,0
 2026-08-03,45577,R-18624,jeronimo martins,piña special 2da,PE2,404,0,3200,0
 2026-08-03,45577,R-18624,jeronimo martins,piña special 2da,PE2,405,171,3200,0
-2026-08-03,,,jeronimo martins,piña special 2da,PE2,234,0,3200,0
-2026-08-03,,,jeronimo martins,piña special 2da,PE2,409,0,3200,0
-2026-08-03,,,jeronimo martins,piña special 2da,PE2,407,50,3200,0
-2026-08-03,,,reposicion jeronimo,piña special 2da,PE2,363,0,,0
+2026-08-03,45578,R-18626,jeronimo martins,piña special 2da,PE2,234,0,3200,0
+2026-08-03,45578,R-18626,jeronimo martins,piña special 2da,PE2,409,0,3200,0
+2026-08-03,45578,R-18626,jeronimo martins,piña special 2da,PE2,407,50,3200,0
+2026-08-03,,R-18625,reposicion jeronimo,piña special 2da,PE2,363,0,,0
 2026-08-03,,,descarte,piña special 2da,PE2,0,0,,64
