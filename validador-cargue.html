@@ -317,51 +317,63 @@ async function procesarArchivo(){
   }
 }
 
-// Calcula el umbral optimo de blanco/negro para una imagen (metodo de Otsu),
-// en vez de usar un numero fijo adivinado. Un umbral fijo funciona para texto
-// grande pero rompe letras chicas cuando el fondo no es blanco puro (celdas
-// de color, JPEG comprimido, etc.) -- Otsu lo calcula segun el histograma real
-// de cada imagen, asi que se ajusta solo.
-function calcularUmbralOtsu(histograma, total){
-  let sum=0; for(let i=0;i<256;i++) sum += i*histograma[i];
-  let sumB=0, wB=0, maxVar=0, umbral=127;
-  for(let t=0;t<256;t++){
-    wB += histograma[t];
-    if(wB===0) continue;
-    const wF = total-wB;
-    if(wF===0) break;
-    sumB += t*histograma[t];
-    const mB = sumB/wB, mF = (sum-sumB)/wF;
-    const varEntre = wB*wF*(mB-mF)*(mB-mF);
-    if(varEntre>maxVar){ maxVar=varEntre; umbral=t; }
-  }
-  return umbral;
-}
-// Agranda la imagen (x4) y la convierte a blanco/negro con el umbral de Otsu.
-// Texto chico dentro de celdas de color (como las de esta Orden de Compra) es
-// justo el caso donde Tesseract lee peor sin este paso: al agrandar y binarizar
-// bien se le facilita mucho separar las letras/numeros del fondo.
+// Agranda la imagen (x4) y la convierte a blanco/negro con un UMBRAL LOCAL
+// (adaptativo), no uno global. Esta Orden de Compra tiene filas con fondo
+// blanco y filas con fondo gris/celeste alternado (como una tabla en Excel);
+// un solo umbral para toda la imagen (fijo o incluso Otsu) le atina a algunas
+// filas y rompe otras. El umbral local se recalcula solo, bloque por bloque,
+// comparando cada pixel contra el promedio de su zona cercana -- asi cada fila
+// se binariza con su propio contraste, sin importar el color de fondo que tenga.
 function preprocesarCanvas(srcCanvasOImg, w, h){
   const escala = 4;
+  const W = w*escala, H = h*escala;
   const cvOut = document.createElement('canvas');
-  cvOut.width = w*escala; cvOut.height = h*escala;
+  cvOut.width = W; cvOut.height = H;
   const ctx = cvOut.getContext('2d');
   ctx.imageSmoothingEnabled = true;
   ctx.imageSmoothingQuality = 'high';
-  ctx.drawImage(srcCanvasOImg, 0, 0, w*escala, h*escala);
+  ctx.drawImage(srcCanvasOImg, 0, 0, W, H);
 
-  const img = ctx.getImageData(0,0,cvOut.width,cvOut.height);
+  const img = ctx.getImageData(0,0,W,H);
   const d = img.data;
-  const grises = new Uint8ClampedArray(d.length/4);
-  const histograma = new Array(256).fill(0);
+  const n = W*H;
+  const gris = new Float32Array(n);
   for(let i=0,p=0;i<d.length;i+=4,p++){
-    const gris = 0.299*d[i] + 0.587*d[i+1] + 0.114*d[i+2];
-    grises[p] = gris;
-    histograma[Math.round(gris)]++;
+    gris[p] = 0.299*d[i] + 0.587*d[i+1] + 0.114*d[i+2];
   }
-  const umbral = calcularUmbralOtsu(histograma, grises.length);
+
+  // -- Mapa de "fondo local": se pinta la imagen en gris a un lienzo chiquito
+  // (cada pixel resultante promedia un bloque grande, como un blur barato) y se
+  // vuelve a agrandar con interpolacion -- asi cada pixel del tamano original
+  // tiene un valor de "cuanto claro es su alrededor", sin recorrer nada a mano. --
+  const cvGris = document.createElement('canvas');
+  cvGris.width = W; cvGris.height = H;
+  const ctxGris = cvGris.getContext('2d');
+  const imgGris = ctxGris.createImageData(W,H);
+  for(let p=0;p<n;p++){ const v=gris[p]; const q=p*4; imgGris.data[q]=v; imgGris.data[q+1]=v; imgGris.data[q+2]=v; imgGris.data[q+3]=255; }
+  ctxGris.putImageData(imgGris,0,0);
+
+  const bloque = Math.max(1, Math.round(28*escala/4)); // ~ tamano de una celda de la tabla
+  const cvChico = document.createElement('canvas');
+  cvChico.width = Math.max(1, Math.round(W/bloque));
+  cvChico.height = Math.max(1, Math.round(H/bloque));
+  const ctxChico = cvChico.getContext('2d');
+  ctxChico.imageSmoothingEnabled = true;
+  ctxChico.imageSmoothingQuality = 'high';
+  ctxChico.drawImage(cvGris, 0, 0, cvChico.width, cvChico.height);
+
+  const cvFondo = document.createElement('canvas');
+  cvFondo.width = W; cvFondo.height = H;
+  const ctxFondo = cvFondo.getContext('2d');
+  ctxFondo.imageSmoothingEnabled = true;
+  ctxFondo.imageSmoothingQuality = 'high';
+  ctxFondo.drawImage(cvChico, 0, 0, W, H);
+  const fondo = ctxFondo.getImageData(0,0,W,H).data;
+
+  const C = 15; // que tan mas oscuro que su fondo local debe ser un pixel para contar como "letra"
   for(let i=0,p=0;i<d.length;i+=4,p++){
-    const v = grises[p] > umbral ? 255 : 0;
+    const local = fondo[p*4];
+    const v = gris[p] < (local - C) ? 0 : 255;
     d[i]=d[i+1]=d[i+2]=v;
   }
   ctx.putImageData(img,0,0);
