@@ -1,21 +1,16 @@
 ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
-198993,canastas,2026-08-03,PEBAB,piña special baby,1.5 - 2.5,435
 199009,canastas,2026-08-03,PE3,piña special 3ra,1.5 - 2.5,477
 199012,canastas,2026-08-03,PEBAB,piña special baby,1.5 - 2.5,426
 199015,canastas,2026-08-03,PEBAB,piña special baby,1.5 - 2.5,408
 199019,canastas,2026-08-03,PEBAB,piña special baby,1.5 - 2.5,402
-199031,canastas,2026-08-03,PEBAB,piña special baby,1.5 - 2.5,405
 199033,canastas,2026-08-03,PEBAB,piña special baby,1.5 - 2.5,406
 199035,canastas,2026-08-03,PEBAB,piña special baby,1.5 - 2.5,430
 199036,canastas,2026-08-03,PEBAB,piña special baby,1.5 - 2.5,397
 199046,canastas,2026-08-03,PEBAB,piña special baby,1.5 - 2.5,410
-199058,canastas,2026-08-03,PEBAB,piña special baby,1.5 - 2.5,414
-199066,canastas,2026-08-03,PEBAB,piña special baby,1.5 - 2.5,404
 199078,canastas,2026-08-03,PEBAB,piña special baby,1.5 - 2.5,480
 199087,canastas,2026-08-03,PEBAB,piña special baby,1.5 - 2.5,424
-199088,canastas,2026-08-03,PEBAB,piña special baby,1.5 - 2.5,253
 199098,canastas,2026-08-03,ADBABY,Piña ADBABY,1.5 - 2.5,407
-199117,canastas,2026-08-03,ADBABY,Piña ADBABY,1.5 - 2.5,238
+199117,canastas,2026-08-03,ADBABY,Piña ADBABY,1.5 - 2.5,129
 199122,canastas,2026-08-04,PE3,piña special 3ra,1.5 - 2.5,477
 199123,canastas,2026-08-04,PEGUA,piña special guapita,1.5 - 2.5,490
 199124,canastas,2026-08-04,PE2,piña special 2da,1.5,395
@@ -54,9 +49,9 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 199157,canastas,2026-08-04,PE1,piña special 1ra,4,541
 199158,canastas,2026-08-04,PE1,piña special 1ra,0.0 - 1.0,545
 199160,canastas,2026-08-04,PE2,piña special 2da,0.0 - 1.0,491
-199161,canastas,2026-08-04,,,,0
-199162,canastas,2026-08-04,,,,0
-199163,canastas,2026-08-04,,,,0
+199161,canastas,2026-08-04,PEBAB,piña special baby,1.5 - 2.5,408
+199162,canastas,2026-08-04,PE1,piña special 1ra,1.5 - 2.5,547
+199163,canastas,2026-08-04,PEGUA,piña special guapita,1.5 - 2.5,455
 199164,canastas,2026-08-04,,,,0
 199165,canastas,2026-08-04,,,,0
 199166,canastas,2026-08-04,,,,0
@@ -64,15 +59,15 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 199168,canastas,2026-08-04,,,,0
 199169,canastas,2026-08-04,,,,0
 199170,canastas,2026-08-04,,,,0
-199171,,,,,,0
-199172,,,,,,0
-199173,,,,,,0
-199174,,,,,,0
-199175,,,,,,0
-199176,,,,,,0
-199177,,,,,,0
-199178,,,,,,0
-199179,,,,,,0
+199171,canastas,2026-08-04,,,,0
+199172,canastas,2026-08-04,,,,0
+199173,canastas,2026-08-04,,,,0
+199174,canastas,2026-08-04,,,,0
+199175,canastas,2026-08-04,,,,0
+199176,canastas,2026-08-04,,,,0
+199177,canastas,2026-08-04,,,,0
+199178,canastas,2026-08-04,,,,0
+199179,canastas,2026-08-04,,,,0
 199180,,,,,,0
 199181,,,,,,0
 199182,,,,,,0
