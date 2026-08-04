@@ -15824,30 +15824,30 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-08-04,45581,R-18627,KARINA BORJA,piña special guapita,PEGUA,476,0,700,0
 2026-08-04,45581,R-18627,KARINA BORJA,piña special guapita,PEGUA,465,6,700,0
 2026-08-04,45581,R-18627,KARINA BORJA,piña special guapita,PEGUA,477,125,700,10
-2026-08-04,,,KARINA BORJA,piña special 3ra,PE3,526,0,,0
-2026-08-04,,,KARINA BORJA,piña special 3ra,PE3,473,0,,0
-2026-08-04,,,KARINA BORJA,piña special 3ra,PE3,444,0,,0
-2026-08-04,,,KARINA BORJA,piña special 3ra,PE3,495,0,,7
-2026-08-04,,,KARINA BORJA,piña special 3ra,PE3,490,72,,0
+2026-08-04,45582,R-18629,KARINA BORJA,piña special 3ra,PE3,526,0,700,0
+2026-08-04,45582,R-18629,KARINA BORJA,piña special 3ra,PE3,473,0,700,0
+2026-08-04,45582,R-18629,KARINA BORJA,piña special 3ra,PE3,444,0,700,0
+2026-08-04,45582,R-18629,KARINA BORJA,piña special 3ra,PE3,495,0,700,7
+2026-08-04,45582,R-18629,KARINA BORJA,piña special 3ra,PE3,490,72,700,0
 2026-08-04,,,descarte,piña special 1ra,PE1,0,0,,368
-2026-08-04,,,local medellin,piña special 2da,PE2,259,0,,0
-2026-08-04,,,local medellin,piña special 1ra,PE1,489,0,,0
-2026-08-04,,,local medellin,Piña AD1,AD1,556,0,,0
-2026-08-04,,,local medellin,piña special 1ra,PE1,514,441,,8
-2026-08-04,,,local medellin,piña special 1ra,PE1,115,0,,0
-2026-08-04,,,local medellin,piña special 1ra,PE1,51,0,,0
-2026-08-04,,,local medellin,piña special 1ra,PE1,175,8,,0
-2026-08-04,,,local medellin,piña special 2da,PE2,313,0,,0
-2026-08-04,,,local medellin,Piña AD1,AD1,534,0,,7
-2026-08-04,,,local medellin,Piña AD1,AD1,233,0,,0
-2026-08-04,,,local medellin,piña special 1ra,PE1,534,0,,0
-2026-08-04,,,local medellin,piña special 1ra,PE1,539,21,,0
-2026-08-04,,,local medellin,piña special 1ra,PE1,223,0,,0
-2026-08-04,,,local medellin,piña special 1ra,PE1,434,0,,0
-2026-08-04,,,local medellin,piña special 3ra,PE3,194,0,,0
-2026-08-04,,,local medellin,Piña AD2,AD2,590,0,,0
-2026-08-04,,,local medellin,piña special 2da,PE2,497,0,,0
-2026-08-04,,,local medellin,piña special 2da,PE2,407,0,,0
+2026-08-04,,R-18630,local medellin,piña special 2da,PE2,259,0,3000,0
+2026-08-04,,R-18630,local medellin,piña special 1ra,PE1,489,0,3200,0
+2026-08-04,,R-18630,local medellin,Piña AD1,AD1,556,0,3200,0
+2026-08-04,,R-18630,local medellin,piña special 1ra,PE1,514,441,3200,8
+2026-08-04,,R-18630,local medellin,piña special 1ra,PE1,115,0,3200,0
+2026-08-04,,R-18630,local medellin,piña special 1ra,PE1,51,0,3200,0
+2026-08-04,,R-18630,local medellin,piña special 1ra,PE1,175,8,3200,0
+2026-08-04,,R-18630,local medellin,piña special 2da,PE2,313,0,3000,0
+2026-08-04,,R-18630,local medellin,Piña AD1,AD1,534,0,3200,7
+2026-08-04,,R-18630,local medellin,Piña AD1,AD1,233,0,3200,0
+2026-08-04,,R-18630,local medellin,piña special 1ra,PE1,534,0,3200,0
+2026-08-04,,R-18630,local medellin,piña special 1ra,PE1,539,21,3200,0
+2026-08-04,,R-18630,local medellin,piña special 1ra,PE1,223,0,3200,0
+2026-08-04,,R-18630,local medellin,piña special 1ra,PE1,434,0,3200,0
+2026-08-04,,R-18630,local medellin,piña special 3ra,PE3,194,0,2800,0
+2026-08-04,,R-18630,local medellin,Piña AD2,AD2,590,0,3000,0
+2026-08-04,,R-18630,local medellin,piña special 2da,PE2,497,0,3000,0
+2026-08-04,,R-18630,local medellin,piña special 2da,PE2,407,0,3000,0
 2026-08-04,,,local sincelejo,piña special 3ra,PE3,503,0,,5
 2026-08-04,,,local sincelejo,piña special 3ra,PE3,497,0,,0
 2026-08-04,,,local sincelejo,piña special 3ra,PE3,465,0,,0
@@ -15922,4 +15922,4 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-08-04,,,juan pablo cogollo,piña special baby,PEBAB,408,0,,0
 2026-08-04,,,juan pablo cogollo,piña special baby,PEBAB,253,109,,0
 2026-08-04,,,elias alfonso david burgos,piña special baby,PEBAB,402,0,,0
-2026-08-04,,,elias alfonso david burgos,piña special baby,PEBAB,399,0,,0
+2026-08-04,,,elias alfonso david burgos,piña special baby,PEBAB,399,199,,0
