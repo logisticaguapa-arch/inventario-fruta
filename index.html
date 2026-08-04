@@ -236,20 +236,16 @@ table.ftable .ftotal-row td{color:#052e16!important}
 </div>
 
 <div class="bar" id="barInv">
-  <div class="msel" id="selMad">
-    <button type="button" class="msel-btn" onclick="toggleMsel('selMad')"><span class="msel-label">Toda la madurez</span><span class="msel-arrow">▾</span></button>
-    <div class="msel-panel" id="selMad-panel"></div>
-  </div>
   <div class="msel" id="selCal">
-    <button type="button" class="msel-btn" onclick="toggleMsel('selCal')"><span class="msel-label">Todos los grados de maduración</span><span class="msel-arrow">▾</span></button>
+    <button type="button" class="msel-btn" onclick="toggleMsel('selCal')"><span class="msel-label">Grado de maduración</span><span class="msel-arrow">▾</span></button>
     <div class="msel-panel" id="selCal-panel"></div>
   </div>
   <div class="msel" id="selTam">
-    <button type="button" class="msel-btn" onclick="toggleMsel('selTam')"><span class="msel-label">Todos los calibres</span><span class="msel-arrow">▾</span></button>
+    <button type="button" class="msel-btn" onclick="toggleMsel('selTam')"><span class="msel-label">Calibre</span><span class="msel-arrow">▾</span></button>
     <div class="msel-panel" id="selTam-panel"></div>
   </div>
   <div class="msel" id="selFec">
-    <button type="button" class="msel-btn" onclick="toggleMsel('selFec')"><span class="msel-label">Todas las fechas</span><span class="msel-arrow">▾</span></button>
+    <button type="button" class="msel-btn" onclick="toggleMsel('selFec')"><span class="msel-label">Fecha</span><span class="msel-arrow">▾</span></button>
     <div class="msel-panel" id="selFec-panel"></div>
   </div>
   <button class="breset" onclick="reset()">↺ Limpiar</button>
@@ -445,12 +441,11 @@ function parseCSV(t){
 }
 
 // ── Filtros multi-seleccion ──────────────────────────────────────────────
-const filtros={mad:[],cal:[],tam:[],fec:[],factFecha:'',factCli:[],factCal:[],descFec:[],descCat:[]};
+const filtros={cal:[],tam:[],fec:[],factFecha:'',factCli:[],factCal:[],descFec:[],descCat:[]};
 const MSEL_DEF={
-  selMad:{key:'mad',placeholder:'Toda la madurez'},
-  selCal:{key:'cal',placeholder:'Todos los grados de maduración'},
-  selTam:{key:'tam',placeholder:'Todos los calibres'},
-  selFec:{key:'fec',placeholder:'Todas las fechas'},
+  selCal:{key:'cal',placeholder:'Grado de maduración'},
+  selTam:{key:'tam',placeholder:'Calibre'},
+  selFec:{key:'fec',placeholder:'Fecha'},
   selFactCli:{key:'factCli',placeholder:'Todos los clientes'},
   selFactCal:{key:'factCal',placeholder:'Todos los grados de maduración'},
   selDescFec:{key:'descFec',placeholder:'Todas las fechas'},
@@ -483,12 +478,6 @@ const CALIBRE_OPCIONES=[
   {value:'4',label:'4 · Madura'},
   {value:'3,0 - 4,0',label:'3.0-4.0 · Madura'}
 ];
-const MAD_OPCIONES=[
-  {value:'verde',label:'🟢 Verde (0 - 1.0)'},
-  {value:'pintona',label:'🟡 Pintona (1.5 - 2.5)'},
-  {value:'madura',label:'🟠 Madura (3.0 - 4.0)'}
-];
-
 function toggleMsel(id){
   const el=document.getElementById(id);
   const wasOpen=el.classList.contains('open');
@@ -584,7 +573,6 @@ function updateMselBtn(id){
 function buildFilters(){
   const tams=[...new Set(ALL.map(r=>r.Calidad))].sort();
   const fechas=[...new Set(ALL.map(r=>r.Fecha))].sort();
-  fillMsel('selMad',MAD_OPCIONES);
   fillMsel('selCal',CALIBRE_OPCIONES);
   fillMsel('selTam',tams.map(c=>({value:c,label:(TAM_NAMES[c]||c)+' ('+c+')'})));
   fillMsel('selFec',fechas.map(f=>({value:f,label:fmtF(f)+' — '+horasLabel(horasDesde(f))})));
@@ -601,8 +589,8 @@ function buildFacturaFiltros(){
   if(inputFecha) inputFecha.value=filtros.factFecha;
 }
 function reset(){
-  ['mad','cal','tam','fec'].forEach(k=>filtros[k]=[]);
-  ['selMad','selCal','selTam','selFec'].forEach(id=>{fillMselKeep(id);});
+  ['cal','tam','fec'].forEach(k=>filtros[k]=[]);
+  ['selCal','selTam','selFec'].forEach(id=>{fillMselKeep(id);});
   render();
 }
 function resetFactura(){
@@ -630,8 +618,8 @@ function fillMselKeep(id){
   updateMselBtn(id);
 }
 function filtered(){
-  const m=filtros.mad,cal=filtros.cal,t=filtros.tam,f=filtros.fec;
-  return ALL.filter(r=>(!m.length||m.includes(getMadurez(r.Calibre)))&&(!cal.length||cal.includes(r.Calibre))&&(!t.length||t.includes(r.Calidad))&&(!f.length||f.includes(r.Fecha)));
+  const cal=filtros.cal,t=filtros.tam,f=filtros.fec;
+  return ALL.filter(r=>(!cal.length||cal.includes(r.Calibre))&&(!t.length||t.includes(r.Calidad))&&(!f.length||f.includes(r.Fecha)));
 }
 function filteredFacturacion(){
   const fecha=filtros.factFecha,c=filtros.factCli,cal=filtros.factCal;
