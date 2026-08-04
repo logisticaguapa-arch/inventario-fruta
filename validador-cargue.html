@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
+<title>Validador de Cargue — Agrícola Guapa</title>
+<style>
+/* ============================================================================
+   Estilos copiados/adaptados de index.html para que este modulo se vea
+   identico al resto del tablero. Este archivo es INDEPENDIENTE: no comparte
+   <script> ni <style> por enlace con index.html, para que cada archivo siga
+   siendo autosuficiente (mismo patron que ya usa el proyecto).
+   ============================================================================ */
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',system-ui,sans-serif;background:#f1f5f9;color:#1e293b;min-height:100vh}
+
+header{background:#1e293b;border-bottom:1px solid #334155;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.logo{display:flex;align-items:center;gap:10px}
+header h1{font-size:1.1rem;font-weight:700;color:#e2e8f0}
+header h1 span{color:#94a3b8;font-size:.9rem;font-weight:400;margin-left:10px}
+
+.views{display:flex;gap:10px;padding:16px 24px 14px;flex-wrap:wrap}
+.vbtn{padding:10px 20px;border:1px solid #e2e8f0;border-radius:8px;background:#fff;color:#64748b;font-size:1rem;cursor:pointer;font-weight:700;font-family:inherit;transition:all .15s;text-decoration:none;display:inline-block}
+.vbtn.active{background:#22c55e;color:#0f1923;border-color:#22c55e}
+.vbtn:hover:not(.active){background:#f1f5f9;color:#1e293b}
+
+.content{padding:0 24px 40px;display:flex;flex-direction:column;gap:18px}
+
+.card{background:#fff;border:1px solid #e2e8f0;border-radius:12px;box-shadow:0 1px 4px rgba(0,0,0,0.06);overflow:hidden}
+.card-hdr{background:#1e293b;color:#fff;padding:12px 18px;font-size:1rem;font-weight:800;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.card-body{padding:18px}
+.card-help{font-size:.82rem;color:#64748b;margin-top:6px;line-height:1.5}
+
+/* ── Carga de archivo ── */
+.upload-row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+input[type=file]{font-family:inherit;font-size:.9rem;color:#334155}
+.btn{padding:10px 18px;background:#22c55e;color:#052e16;border:none;border-radius:8px;font-size:.95rem;font-weight:800;cursor:pointer;font-family:inherit;transition:background .15s}
+.btn:hover{background:#16a34a;color:#fff}
+.btn:disabled{background:#e2e8f0;color:#94a3b8;cursor:not-allowed}
+.btn-secundario{padding:9px 16px;background:#fff;color:#334155;border:1px solid #e2e8f0;border-radius:8px;font-size:.88rem;font-weight:700;cursor:pointer;font-family:inherit}
+.btn-secundario:hover{border-color:#94a3b8}
+.estado-proceso{font-size:.88rem;color:#166534;font-weight:700;min-height:1.3em}
+
+/* ── Tablas (mismo estilo que Facturacion/Descarte) ── */
+table.vtable{border-collapse:collapse;width:100%;font-size:.88rem}
+table.vtable th{background:#1e293b;color:#e2e8f0;padding:8px 12px;text-align:right;font-size:.68rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;white-space:nowrap;border-bottom:1px solid #f1f5f9}
+table.vtable th.left{text-align:left}
+table.vtable td{padding:7px 12px;border-bottom:1px solid #f1f5f9;text-align:right;white-space:nowrap;color:#1e293b}
+table.vtable td.left{text-align:left}
+table.vtable tr:hover td{background:#f8fafc}
+table.vtable input[type=text],table.vtable input[type=number]{width:100%;min-width:70px;padding:6px 8px;border:1px solid #e2e8f0;border-radius:6px;font-family:inherit;font-size:.9rem;text-align:right;color:#1e293b}
+table.vtable input[type=text]{text-align:left}
+.fila-sin-promedio td{background:#fef2f2}
+.fila-sin-promedio input{border-color:#fca5a5}
+.total-row td{background:#22c55e;color:#052e16;font-weight:800;border-top:2px solid #166534}
+.btn-borrar{background:none;border:none;color:#dc2626;font-size:1.1rem;cursor:pointer;font-weight:800}
+.btn-borrar:hover{color:#991b1b}
+
+/* ── Semaforo ── */
+.badge-verde{background:#dcfce7;color:#166534;padding:3px 10px;border-radius:20px;font-size:.78rem;font-weight:800}
+.badge-amarillo{background:#fef9c3;color:#854d0e;padding:3px 10px;border-radius:20px;font-size:.78rem;font-weight:800}
+.badge-rojo{background:#fee2e2;color:#991b1b;padding:3px 10px;border-radius:20px;font-size:.78rem;font-weight:800}
+.badge-na{background:#f1f5f9;color:#94a3b8;padding:3px 10px;border-radius:20px;font-size:.78rem;font-weight:800}
+
+/* ── Resumen (tarjetas tipo KPI) ── */
+.kpis{display:flex;gap:12px;flex-wrap:wrap}
+.kpi{flex:1;min-width:160px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:18px 20px}
+.kpi .v{font-size:2.2rem;font-weight:800;line-height:1;color:#1e293b}
+.kpi .l{font-size:.8rem;color:#475569;margin-top:6px;text-transform:uppercase;letter-spacing:.05em;font-weight:700}
+.kpi.estado-general{display:flex;flex-direction:column;justify-content:center;align-items:flex-start}
+
+/* ── Configuracion ── */
+details.config{border:1px solid #e2e8f0;border-radius:12px;background:#fff;overflow:hidden}
+details.config summary{padding:12px 18px;cursor:pointer;font-weight:800;color:#1e293b;background:#f8fafc;list-style:none}
+details.config summary::-webkit-details-marker{display:none}
+details.config summary:before{content:'⚙ ';}
+.config-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;padding:18px}
+@media(max-width:800px){.config-grid{grid-template-columns:1fr}}
+.config-sub h3{font-size:.85rem;text-transform:uppercase;letter-spacing:.05em;color:#475569;margin-bottom:10px}
+.config-add-row{display:flex;gap:8px;margin-top:10px}
+.config-add-row input{flex:1;padding:8px 10px;border:1px solid #e2e8f0;border-radius:6px;font-family:inherit}
+.rangos-form{display:flex;flex-direction:column;gap:10px}
+.rangos-form label{font-size:.82rem;font-weight:700;color:#334155;display:flex;justify-content:space-between;align-items:center;gap:10px}
+.rangos-form input{width:90px;padding:6px 8px;border:1px solid #e2e8f0;border-radius:6px;font-family:inherit;text-align:right}
+
+.empty{text-align:center;padding:32px;color:#64748b;font-size:.9rem}
+.roadmap-nota{font-size:.78rem;color:#94a3b8;text-align:center;padding:10px 0 0}
+@media(max-width:600px){.content,.views{padding-left:12px;padding-right:12px}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="data:image/png;base64,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" style="height:44px;width:auto" alt="Logo Guapa">
+    <h1>Validador de Cargue <span>Agrícola Guapa</span></h1>
+  </div>
+</header>
+
+<div class="views">
+  <a class="vbtn" href="index.html">← Volver al tablero</a>
+</div>
+
+<div class="content">
+
+  <!-- ═══ PASO 1-2: Cargar y leer la Orden de Compra (OCR) ═══ -->
+  <div class="card">
+    <div class="card-hdr">1. Cargar Orden de Compra</div>
+    <div class="card-body">
+      <div class="upload-row">
+        <input type="file" id="archivoOrden" accept="application/pdf,image/jpeg,image/png,image/jpg">
+        <button class="btn" id="btnProcesar" onclick="procesarArchivo()">Leer con OCR</button>
+        <button class="btn-secundario" onclick="agregarFilaExtraida()">+ Agregar fila manual</button>
+      </div>
+      <div class="estado-proceso" id="estadoProceso"></div>
+      <div class="card-help">Acepta PDF o imagen (JPG/PNG). El sistema lee automaticamente Referencia y Kilos de cada linea. Si el OCR se equivoca en algo, puedes corregirlo directamente en la tabla de abajo antes de calcular.</div>
+    </div>
+  </div>
+
+  <!-- ═══ PASO 3 (parcial): lineas extraidas, editables antes de agrupar ═══ -->
+  <div class="card" id="cardExtraidas" style="display:none">
+    <div class="card-hdr">2. Lineas detectadas (revisa y corrige si hace falta)</div>
+    <div class="card-body">
+      <div id="tablaExtraidasWrap"></div>
+      <div class="upload-row" style="margin-top:14px">
+        <button class="btn-secundario" onclick="agregarFilaExtraida()">+ Agregar fila</button>
+        <button class="btn" onclick="agruparYCalcular()">Agrupar y calcular canastillas esperadas →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ PASO 4-9: Tabla de validacion ═══ -->
+  <div class="card" id="cardValidacion" style="display:none">
+    <div class="card-hdr">3. Validación de cargue</div>
+    <div class="card-body">
+      <div id="tablaValidacionWrap"></div>
+    </div>
+  </div>
+
+  <!-- ═══ PASO 10: Resumen ═══ -->
+  <div class="card" id="cardResumen" style="display:none">
+    <div class="card-hdr">4. Resumen del cargue</div>
+    <div class="card-body">
+      <div class="kpis">
+        <div class="kpi"><div class="v" id="rEsperadas">—</div><div class="l">Canastillas esperadas</div></div>
+        <div class="kpi"><div class="v" id="rContadas">—</div><div class="l">Canastillas contadas</div></div>
+        <div class="kpi"><div class="v" id="rDiferencia">—</div><div class="l">Diferencia total</div></div>
+        <div class="kpi estado-general"><div class="l">Estado general</div><div class="v" id="rEstado" style="font-size:1.4rem">—</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ Configuracion: promedios kg/canastilla y rangos del semaforo ═══ -->
+  <details class="config">
+    <summary>Configuración (promedios kg/canastilla y rangos del semáforo)</summary>
+    <div class="config-grid">
+      <div class="config-sub">
+        <h3>Promedio kg por canastilla</h3>
+        <div id="tablaPromediosWrap"></div>
+        <div class="config-add-row">
+          <input type="text" id="nuevaRefPromedio" placeholder="Referencia (ej. PE1)">
+          <input type="number" id="nuevoValPromedio" placeholder="Kg/canastilla" step="0.01">
+          <button class="btn-secundario" onclick="agregarPromedio()">+ Agregar</button>
+        </div>
+        <div class="upload-row" style="margin-top:10px">
+          <button class="btn-secundario" onclick="restaurarPromediosDefault()">↺ Restaurar valores por defecto</button>
+        </div>
+      </div>
+      <div class="config-sub">
+        <h3>Rangos del semáforo (diferencia = contadas − esperadas)</h3>
+        <div class="rangos-form">
+          <label>🟢 Verde — minimo <input type="number" id="rgVerdeMin"></label>
+          <label>🟢 Verde — maximo <input type="number" id="rgVerdeMax"></label>
+          <label>🟡 Amarillo — minimo <input type="number" id="rgAmarilloMin"></label>
+          <label>🟡 Amarillo — maximo <input type="number" id="rgAmarilloMax"></label>
+          <div class="card-help">Se evalua en este orden: si esta dentro del rango verde, es verde; si no, y esta dentro del rango amarillo, es amarillo; cualquier otro caso es rojo.</div>
+          <div class="upload-row">
+            <button class="btn-secundario" onclick="guardarRangos()">Guardar</button>
+            <button class="btn-secundario" onclick="restaurarRangosDefault()">↺ Restaurar valores por defecto</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </details>
+
+  <div class="roadmap-nota">Próximamente: lectura automática desde Excel · conexión con OneDrive · generación de reportes · historial de cargues · estadísticas de errores · aprobación de despacho.</div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tesseract.js/4.1.1/tesseract.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script>
+/* ============================================================================
+   VALIDADOR DE CARGUE — modulo independiente.
+   No depende de index.html ni de ningun otro archivo del proyecto.
+   Organizado en secciones:
+     1) CONFIGURACION (promedios kg/canastilla, rangos del semaforo)
+     2) UTILIDADES (parseo de numeros, formato)
+     3) OCR (lectura de imagen/PDF y extraccion de lineas Referencia+Kg)
+     4) TABLA DE LINEAS EXTRAIDAS (editable antes de agrupar)
+     5) AGRUPACION Y CALCULO (tabla de validacion, semaforo, resumen)
+     6) CONFIGURACION UI (tablas editables de promedios y rangos)
+   ============================================================================ */
+
+// ── 1) CONFIGURACION ──────────────────────────────────────────────────────
+// Valores por defecto. Se guardan en localStorage de este navegador para que
+// se puedan editar sin tocar el codigo ("tabla de configuracion facil de
+// actualizar"). Si se abre en otro computador, arranca con estos valores
+// por defecto hasta que alguien los ajuste ahi.
+const PROMEDIOS_DEFAULT = {
+  'PE1': 18.43,
+  'PE2': 16.90,
+  'PE3': 15.83,
+  'PEGUA': 14.89,
+  'PEBAB': 13.75,
+  'PIND': 15.65
+};
+const RANGOS_DEFAULT = { verdeMin:-2, verdeMax:2, amarilloMin:-5, amarilloMax:5 };
+
+let PROMEDIOS = cargarPromedios();
+let RANGOS = cargarRangos();
+
+function cargarPromedios(){
+  try{
+    const g = JSON.parse(localStorage.getItem('vc_promedios'));
+    if(g && typeof g==='object') return g;
+  }catch(e){}
+  return Object.assign({}, PROMEDIOS_DEFAULT);
+}
+function guardarPromedios(){ localStorage.setItem('vc_promedios', JSON.stringify(PROMEDIOS)); }
+function cargarRangos(){
+  try{
+    const g = JSON.parse(localStorage.getItem('vc_rangos'));
+    if(g && typeof g==='object') return g;
+  }catch(e){}
+  return Object.assign({}, RANGOS_DEFAULT);
+}
+function guardarRangosStorage(){ localStorage.setItem('vc_rangos', JSON.stringify(RANGOS)); }
+
+function estadoSemaforo(diferencia){
+  if(diferencia>=RANGOS.verdeMin && diferencia<=RANGOS.verdeMax) return 'verde';
+  if(diferencia>=RANGOS.amarilloMin && diferencia<=RANGOS.amarilloMax) return 'amarillo';
+  return 'rojo';
+}
+function badgeSemaforo(estado){
+  if(estado==='verde') return '<span class="badge-verde">🟢 OK</span>';
+  if(estado==='amarillo') return '<span class="badge-amarillo">🟡 Revisar</span>';
+  if(estado==='rojo') return '<span class="badge-rojo">🔴 Alerta</span>';
+  return '<span class="badge-na">—</span>';
+}
+
+// ── 2) UTILIDADES ──────────────────────────────────────────────────────────
+// Convierte numeros con formato colombiano (punto de miles, coma decimal, o
+// al reves) a un float normal de JS.
+function parseNumeroOCR(s){
+  s = String(s||'').trim();
+  if(s.includes(',') && s.includes('.')){
+    const lastComma = s.lastIndexOf(','), lastDot = s.lastIndexOf('.');
+    s = lastComma>lastDot ? s.replace(/\./g,'').replace(',', '.') : s.replace(/,/g,'');
+  } else if(s.includes(',')){
+    const partes = s.split(',');
+    s = partes[partes.length-1].length===3 ? s.replace(/,/g,'') : s.replace(',', '.');
+  } else if(s.includes('.')){
+    const partes = s.split('.');
+    if(partes[partes.length-1].length===3) s = s.replace(/\./g,'');
+  }
+  const n = parseFloat(s);
+  return isNaN(n) ? 0 : n;
+}
+function fmtNum(n){ return (Math.round(n*100)/100).toLocaleString('es-CO'); }
+
+// ── 3) OCR ──────────────────────────────────────────────────────────────────
+if(window.pdfjsLib){
+  pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+}
+
+function mostrarEstado(txt){ document.getElementById('estadoProceso').textContent = txt; }
+
+async function procesarArchivo(){
+  const input = document.getElementById('archivoOrden');
+  const file = input.files[0];
+  if(!file){ alert('Selecciona primero un archivo (PDF o imagen).'); return; }
+  document.getElementById('btnProcesar').disabled = true;
+  try{
+    let texto = '';
+    if(file.type==='application/pdf'){
+      texto = await extraerTextoDePDF(file);
+    } else {
+      texto = await extraerTextoDeImagen(file);
+    }
+    const lineas = parsearLineas(texto);
+    if(!lineas.length){
+      mostrarEstado('No se detectaron lineas con el formato "Referencia  Kilos". Agrega las filas manualmente abajo.');
+    } else {
+      mostrarEstado('Listo: '+lineas.length+' linea(s) detectada(s). Revisa y corrige si algo no coincide.');
+    }
+    filasExtraidas = filasExtraidas.concat(lineas);
+    renderTablaExtraidas();
+  } catch(err){
+    mostrarEstado('Error leyendo el archivo: '+err.message+'. Puedes agregar las filas manualmente.');
+  } finally {
+    document.getElementById('btnProcesar').disabled = false;
+  }
+}
+
+async function extraerTextoDeImagen(file){
+  mostrarEstado('Reconociendo texto (OCR)...');
+  const { data } = await Tesseract.recognize(file, 'spa', {
+    logger: m=>{ if(m.status==='recognizing text') mostrarEstado('OCR: '+Math.round((m.progress||0)*100)+'%'); }
+  });
+  return data.text;
+}
+
+async function extraerTextoDePDF(file){
+  const buf = await file.arrayBuffer();
+  const pdf = await pdfjsLib.getDocument({data:buf}).promise;
+  let texto = '';
+  for(let i=1;i<=pdf.numPages;i++){
+    mostrarEstado('Leyendo pagina '+i+' de '+pdf.numPages+'...');
+    const page = await pdf.getPage(i);
+    const viewport = page.getViewport({scale:2});
+    const canvas = document.createElement('canvas');
+    canvas.width = viewport.width; canvas.height = viewport.height;
+    await page.render({canvasContext:canvas.getContext('2d'), viewport}).promise;
+    mostrarEstado('OCR pagina '+i+' de '+pdf.numPages+'...');
+    const { data } = await Tesseract.recognize(canvas, 'spa');
+    texto += data.text + '\n';
+  }
+  return texto;
+}
+
+// Busca lineas con forma "REFERENCIA   1234" o "REFERENCIA 1.234 kg"
+function parsearLineas(texto){
+  const lineas = texto.split('\n').map(l=>l.trim()).filter(l=>l);
+  const regex = /^([A-Za-zÁÉÍÓÚÑáéíóúñ][A-Za-zÁÉÍÓÚÑáéíóúñ0-9\-\/]{1,14})\s+([\d.,]+)\s*(?:kgs?|KGS?)?\.?$/;
+  const resultado = [];
+  lineas.forEach(l=>{
+    const m = l.match(regex);
+    if(m) resultado.push({ referencia: m[1].toUpperCase(), kg: parseNumeroOCR(m[2]) });
+  });
+  return resultado;
+}
+
+// ── 4) TABLA DE LINEAS EXTRAIDAS (editable) ─────────────────────────────────
+let filasExtraidas = [];
+
+function agregarFilaExtraida(){
+  filasExtraidas.push({referencia:'', kg:0});
+  renderTablaExtraidas();
+}
+function borrarFilaExtraida(i){
+  filasExtraidas.splice(i,1);
+  renderTablaExtraidas();
+}
+function actualizarFilaExtraida(i, campo, valor){
+  if(campo==='kg') filasExtraidas[i].kg = parseNumeroOCR(valor);
+  else filasExtraidas[i].referencia = valor.toUpperCase();
+}
+
+function renderTablaExtraidas(){
+  const card = document.getElementById('cardExtraidas');
+  const wrap = document.getElementById('tablaExtraidasWrap');
+  if(!filasExtraidas.length){ card.style.display='none'; return; }
+  card.style.display='';
+  let html = '<table class="vtable"><thead><tr><th class="left">Referencia</th><th>Kg</th><th></th></tr></thead><tbody>';
+  filasExtraidas.forEach(function(f,i){
+    html += '<tr>';
+    html += '<td class="left"><input type="text" value="'+(f.referencia||'').replace(/"/g,'&quot;')+'" onchange="actualizarFilaExtraida('+i+',\'referencia\',this.value)"></td>';
+    html += '<td><input type="number" step="0.01" value="'+f.kg+'" onchange="actualizarFilaExtraida('+i+',\'kg\',this.value)"></td>';
+    html += '<td><button class="btn-borrar" onclick="borrarFilaExtraida('+i+')" title="Eliminar fila">✕</button></td>';
+    html += '</tr>';
+  });
+  html += '</tbody></table>';
+  wrap.innerHTML = html;
+}
+
+// ── 5) AGRUPACION Y CALCULO ──────────────────────────────────────────────────
+let filasValidacion = []; // {referencia, kgTotales, contadas}
+
+function agruparYCalcular(){
+  const grupos = {};
+  const orden = [];
+  filasExtraidas.forEach(function(f){
+    const ref = (f.referencia||'').trim().toUpperCase();
+    if(!ref) return;
+    if(!grupos[ref]){ grupos[ref]=0; orden.push(ref); }
+    grupos[ref] += (parseFloat(f.kg)||0);
+  });
+  if(!orden.length){ alert('No hay referencias validas para agrupar. Revisa la tabla de arriba.'); return; }
+
+  // Conservar "contadas" si esta referencia ya tenia un valor escrito (por si se vuelve a calcular)
+  const contadasPrevias = {};
+  filasValidacion.forEach(function(r){ contadasPrevias[r.referencia] = r.contadas; });
+
+  filasValidacion = orden.map(function(ref){
+    return { referencia:ref, kgTotales:grupos[ref], contadas: contadasPrevias[ref] !== undefined ? contadasPrevias[ref] : '' };
+  });
+
+  document.getElementById('cardValidacion').style.display='';
+  document.getElementById('cardResumen').style.display='';
+  renderTablaValidacion();
+}
+
+function actualizarContadas(i, valor){
+  filasValidacion[i].contadas = valor==='' ? '' : parseNumeroOCR(valor);
+  renderTablaValidacion();
+}
+function actualizarPromedioInline(referencia, valor){
+  const v = parseNumeroOCR(valor);
+  if(v>0){ PROMEDIOS[referencia] = v; guardarPromedios(); }
+  renderTablaValidacion();
+  renderTablaPromedios();
+}
+
+function renderTablaValidacion(){
+  let html = '<table class="vtable"><thead><tr>';
+  html += '<th class="left">Referencia</th><th>Kg Totales</th><th>Promedio Kg/Canastilla</th>';
+  html += '<th>Canastillas Esperadas</th><th>Canastillas Contadas</th><th>Diferencia</th><th>Estado</th>';
+  html += '</tr></thead><tbody>';
+
+  let totalEsperadas = 0, totalContadas = 0, hayContadas = false;
+
+  filasValidacion.forEach(function(r,i){
+    const promedio = PROMEDIOS[r.referencia];
+    const tienePromedio = promedio && promedio>0;
+    const esperadas = tienePromedio ? Math.round(r.kgTotales/promedio) : null;
+    if(esperadas!==null) totalEsperadas += esperadas;
+
+    const tieneContadas = r.contadas!==''&&r.contadas!==null&&r.contadas!==undefined;
+    if(tieneContadas){ totalContadas += parseFloat(r.contadas); hayContadas = true; }
+
+    const diferencia = (tieneContadas && esperadas!==null) ? (parseFloat(r.contadas)-esperadas) : null;
+    const estado = diferencia!==null ? estadoSemaforo(diferencia) : null;
+
+    html += '<tr class="'+(tienePromedio?'':'fila-sin-promedio')+'">';
+    html += '<td class="left">'+r.referencia+'</td>';
+    html += '<td>'+fmtNum(r.kgTotales)+'</td>';
+    if(tienePromedio){
+      html += '<td>'+fmtNum(promedio)+'</td>';
+    } else {
+      html += '<td><input type="number" step="0.01" placeholder="⚠ falta" onchange="actualizarPromedioInline(\''+r.referencia+'\',this.value)"></td>';
+    }
+    html += '<td>'+(esperadas!==null?esperadas.toLocaleString('es-CO'):'—')+'</td>';
+    html += '<td><input type="number" step="1" value="'+(r.contadas===''?'':r.contadas)+'" onchange="actualizarContadas('+i+',this.value)"></td>';
+    html += '<td>'+(diferencia!==null?(diferencia>0?'+':'')+diferencia.toLocaleString('es-CO'):'—')+'</td>';
+    html += '<td>'+(estado?badgeSemaforo(estado):'<span class="badge-na">—</span>')+'</td>';
+    html += '</tr>';
+  });
+
+  const diferenciaTotal = hayContadas ? (totalContadas-totalEsperadas) : null;
+  html += '<tr class="total-row"><td class="left">TOTAL GENERAL</td><td>'+fmtNum(filasValidacion.reduce(function(s,r){return s+r.kgTotales;},0))+'</td><td></td>';
+  html += '<td>'+totalEsperadas.toLocaleString('es-CO')+'</td><td>'+(hayContadas?totalContadas.toLocaleString('es-CO'):'—')+'</td>';
+  html += '<td>'+(diferenciaTotal!==null?(diferenciaTotal>0?'+':'')+diferenciaTotal.toLocaleString('es-CO'):'—')+'</td><td></td></tr>';
+  html += '</tbody></table>';
+  document.getElementById('tablaValidacionWrap').innerHTML = html;
+
+  // -- Resumen (Paso 10) --
+  document.getElementById('rEsperadas').textContent = totalEsperadas.toLocaleString('es-CO');
+  document.getElementById('rContadas').textContent = hayContadas ? totalContadas.toLocaleString('es-CO') : '—';
+  document.getElementById('rDiferencia').textContent = diferenciaTotal!==null ? ((diferenciaTotal>0?'+':'')+diferenciaTotal.toLocaleString('es-CO')) : '—';
+  const estadoGeneral = diferenciaTotal!==null ? estadoSemaforo(diferenciaTotal) : null;
+  const rEstadoEl = document.getElementById('rEstado');
+  if(estadoGeneral==='verde'){ rEstadoEl.textContent='🟢 CARGUE CORRECTO'; rEstadoEl.style.color='#166534'; }
+  else if(estadoGeneral==='amarillo'){ rEstadoEl.textContent='🟡 REVISAR CONTEO'; rEstadoEl.style.color='#854d0e'; }
+  else if(estadoGeneral==='rojo'){ rEstadoEl.textContent='🔴 DIFERENCIA IMPORTANTE'; rEstadoEl.style.color='#991b1b'; }
+  else { rEstadoEl.textContent='—'; rEstadoEl.style.color='#1e293b'; }
+}
+
+// ── 6) CONFIGURACION UI ──────────────────────────────────────────────────────
+function renderTablaPromedios(){
+  let html = '<table class="vtable"><thead><tr><th class="left">Referencia</th><th>Kg/Canastilla</th><th></th></tr></thead><tbody>';
+  Object.keys(PROMEDIOS).sort().forEach(function(ref){
+    html += '<tr><td class="left">'+ref+'</td>';
+    html += '<td><input type="number" step="0.01" value="'+PROMEDIOS[ref]+'" onchange="editarPromedio(\''+ref+'\',this.value)"></td>';
+    html += '<td><button class="btn-borrar" onclick="borrarPromedio(\''+ref+'\')" title="Eliminar">✕</button></td></tr>';
+  });
+  html += '</tbody></table>';
+  document.getElementById('tablaPromediosWrap').innerHTML = html;
+}
+function editarPromedio(ref, valor){
+  const v = parseNumeroOCR(valor);
+  if(v>0){ PROMEDIOS[ref]=v; guardarPromedios(); renderTablaValidacion(); }
+}
+function borrarPromedio(ref){
+  delete PROMEDIOS[ref];
+  guardarPromedios();
+  renderTablaPromedios();
+  renderTablaValidacion();
+}
+function agregarPromedio(){
+  const ref = document.getElementById('nuevaRefPromedio').value.trim().toUpperCase();
+  const val = parseNumeroOCR(document.getElementById('nuevoValPromedio').value);
+  if(!ref || !(val>0)){ alert('Escribe una referencia y un promedio valido (mayor a 0).'); return; }
+  PROMEDIOS[ref]=val;
+  guardarPromedios();
+  document.getElementById('nuevaRefPromedio').value='';
+  document.getElementById('nuevoValPromedio').value='';
+  renderTablaPromedios();
+  renderTablaValidacion();
+}
+function restaurarPromediosDefault(){
+  if(!confirm('¿Restaurar los promedios de kg/canastilla a los valores por defecto? Esto reemplaza tu configuracion actual.')) return;
+  PROMEDIOS = Object.assign({}, PROMEDIOS_DEFAULT);
+  guardarPromedios();
+  renderTablaPromedios();
+  renderTablaValidacion();
+}
+
+function cargarRangosEnFormulario(){
+  document.getElementById('rgVerdeMin').value = RANGOS.verdeMin;
+  document.getElementById('rgVerdeMax').value = RANGOS.verdeMax;
+  document.getElementById('rgAmarilloMin').value = RANGOS.amarilloMin;
+  document.getElementById('rgAmarilloMax').value = RANGOS.amarilloMax;
+}
+function guardarRangos(){
+  RANGOS = {
+    verdeMin: parseNumeroOCR(document.getElementById('rgVerdeMin').value),
+    verdeMax: parseNumeroOCR(document.getElementById('rgVerdeMax').value),
+    amarilloMin: parseNumeroOCR(document.getElementById('rgAmarilloMin').value),
+    amarilloMax: parseNumeroOCR(document.getElementById('rgAmarilloMax').value)
+  };
+  guardarRangosStorage();
+  renderTablaValidacion();
+  mostrarEstado('Rangos del semaforo actualizados.');
+}
+function restaurarRangosDefault(){
+  if(!confirm('¿Restaurar los rangos del semaforo a los valores por defecto?')) return;
+  RANGOS = Object.assign({}, RANGOS_DEFAULT);
+  guardarRangosStorage();
+  cargarRangosEnFormulario();
+  renderTablaValidacion();
+}
+
+// ── Inicializacion ──────────────────────────────────────────────────────────
+renderTablaPromedios();
+cargarRangosEnFormulario();
+
+/* ============================================================================
+   PENSANDO EN EL FUTURO (no implementado todavia, solo dejamos el terreno listo):
+   - Lectura automatica desde Excel: se podria agregar un input de archivo .xlsx
+     que use la misma libreria SheetJS que ya usa index.html para Facturacion,
+     leyendo directamente una hoja de "Orden de Compra" sin necesidad de OCR.
+   - Conexion con OneDrive: requeriria registrar una app en Azure AD y usar
+     Microsoft Graph API para leer el archivo directo desde la nube (evitando
+     el problema de enlaces compartidos que ya vimos en el resto del proyecto).
+   - Generacion de reportes: reutilizar el mismo patron de exportacion a
+     Excel/PDF que ya existe en la pestaña Facturacion de index.html.
+   - Historial de cargues: guardar cada validacion (con fecha) en localStorage
+     o, mas adelante, subirla al mismo repositorio como un CSV adicional para
+     que quede disponible en el tablero principal.
+   - Estadisticas de errores: una vez haya historial, agregar una vista que
+     muestre que referencias tienden a tener mas diferencia entre lo esperado
+     y lo contado.
+   - Aprobacion de despacho: agregar un boton de "Aprobar cargue" que quede
+     bloqueado hasta que el estado general sea verde (o que pida una
+     confirmacion extra si es amarillo/rojo).
+   ============================================================================ */
+</script>
+</body>
+</html>
