@@ -241,11 +241,11 @@ table.ftable .ftotal-row td{color:#052e16!important}
     <div class="msel-panel" id="selMad-panel"></div>
   </div>
   <div class="msel" id="selCal">
-    <button type="button" class="msel-btn" onclick="toggleMsel('selCal')"><span class="msel-label">Todos los calibres</span><span class="msel-arrow">▾</span></button>
+    <button type="button" class="msel-btn" onclick="toggleMsel('selCal')"><span class="msel-label">Todos los grados de maduración</span><span class="msel-arrow">▾</span></button>
     <div class="msel-panel" id="selCal-panel"></div>
   </div>
   <div class="msel" id="selTam">
-    <button type="button" class="msel-btn" onclick="toggleMsel('selTam')"><span class="msel-label">Todos los tamanos</span><span class="msel-arrow">▾</span></button>
+    <button type="button" class="msel-btn" onclick="toggleMsel('selTam')"><span class="msel-label">Todos los calibres</span><span class="msel-arrow">▾</span></button>
     <div class="msel-panel" id="selTam-panel"></div>
   </div>
   <div class="msel" id="selFec">
@@ -265,7 +265,7 @@ table.ftable .ftotal-row td{color:#052e16!important}
     <div class="msel-panel" id="selFactCli-panel"></div>
   </div>
   <div class="msel" id="selFactCal">
-    <button type="button" class="msel-btn" onclick="toggleMsel('selFactCal')"><span class="msel-label">Todos los calibres</span><span class="msel-arrow">▾</span></button>
+    <button type="button" class="msel-btn" onclick="toggleMsel('selFactCal')"><span class="msel-label">Todos los grados de maduración</span><span class="msel-arrow">▾</span></button>
     <div class="msel-panel" id="selFactCal-panel"></div>
   </div>
   <button class="breset" onclick="resetFactura()">↺ Limpiar</button>
@@ -286,9 +286,9 @@ table.ftable .ftotal-row td{color:#052e16!important}
 </div>
 
 <div class="legend" id="legendInv">
-  <div class="leg"><div class="leg-dot" style="background:#22c55e"></div><span>Verde — calibre 0 a 1.0</span></div>
-  <div class="leg"><div class="leg-dot" style="background:#eab308"></div><span>Pintona — calibre 1.5 a 2.5</span></div>
-  <div class="leg"><div class="leg-dot" style="background:#ea580c"></div><span>Madura — calibre 3.0 a 4.0 (vender primero)</span></div>
+  <div class="leg"><div class="leg-dot" style="background:#22c55e"></div><span>Verde — grado de maduración 0 a 1.0</span></div>
+  <div class="leg"><div class="leg-dot" style="background:#eab308"></div><span>Pintona — grado de maduración 1.5 a 2.5</span></div>
+  <div class="leg"><div class="leg-dot" style="background:#ea580c"></div><span>Madura — grado de maduración 3.0 a 4.0 (vender primero)</span></div>
 </div>
 
 <div class="content">
@@ -334,7 +334,7 @@ function getCalibreLabel(c){
 // Si viene vacio/sin dato, se muestra "(Sin calibre)" en vez de dejarlo en blanco.
 function calValLabel(c){
   const s=String(c==null?'':c).trim();
-  if(s==='') return '(Sin calibre)';
+  if(s==='') return '(Sin grado de maduración)';
   return s.replace(/,/g,'.');
 }
 
@@ -448,11 +448,11 @@ function parseCSV(t){
 const filtros={mad:[],cal:[],tam:[],fec:[],factFecha:'',factCli:[],factCal:[],descFec:[],descCat:[]};
 const MSEL_DEF={
   selMad:{key:'mad',placeholder:'Toda la madurez'},
-  selCal:{key:'cal',placeholder:'Todos los calibres'},
-  selTam:{key:'tam',placeholder:'Todos los tamanos'},
+  selCal:{key:'cal',placeholder:'Todos los grados de maduración'},
+  selTam:{key:'tam',placeholder:'Todos los calibres'},
   selFec:{key:'fec',placeholder:'Todas las fechas'},
   selFactCli:{key:'factCli',placeholder:'Todos los clientes'},
-  selFactCal:{key:'factCal',placeholder:'Todos los calibres'},
+  selFactCal:{key:'factCal',placeholder:'Todos los grados de maduración'},
   selDescFec:{key:'descFec',placeholder:'Todas las fechas'},
   selDescCat:{key:'descCat',placeholder:'Todas las categorias'}
 };
@@ -715,7 +715,7 @@ function renderTarjetas(data){
       html+='<div class="mad-section">';
       html+='<div class="mad-hdr '+C.hdr+'">';
       html+='<span class="'+C.badge+'">'+C.label+'</span>';
-      html+='<span class="'+C.badge+'" style="font-size:1.15rem">Calibre '+calValLabel(calVal)+'</span>';
+      html+='<span class="'+C.badge+'" style="font-size:1.15rem">Grado de maduración '+calValLabel(calVal)+'</span>';
       html+='<span style="margin-left:auto;background:rgba(0,0,0,0.35);color:#fff;padding:3px 12px;border-radius:20px;font-size:.85rem;font-weight:800">'+Math.round(kgM).toLocaleString('es-CO')+' kg</span>';
       html+='</div>';
       html+='<div class="tam-grid '+C.bg+'">';
@@ -753,7 +753,7 @@ function renderTabla(dataOriginal){
     if(!agg[r.Fecha][cal]) agg[r.Fecha][cal]={};
     agg[r.Fecha][cal][r.Calidad]=(agg[r.Fecha][cal][r.Calidad]||0)+(parseFloat(r.KgDisponibles)||0);
   });
-  let html='<table class="ctable"><thead><tr><th class="left">Calibre / Tamano</th>';
+  let html='<table class="ctable"><thead><tr><th class="left">Grado de maduración / Calibre</th>';
   fechas.forEach(function(f){
     const h=horasDesde(f);
     html+='<th>'+fmtF(f)+'<br><small style="color:'+urgColor(h)+'">'+horasLabel(h)+'</small></th>';
@@ -779,7 +779,7 @@ function renderTabla(dataOriginal){
       return {tam:tam,total:total,hasData:hasData,kgPorFecha:kgPorFecha};
     }).filter(function(x){return x.hasData;}).sort(function(a,b){return b.total-a.total;});
     if(!filas.length) return;
-    html+='<tr class="mad-group-hdr"><td class="left" colspan="'+(fechas.length+2)+'" style="background:'+bgH+';color:'+fgH+'">'+C.label+' &mdash; calibre '+calValLabel(calVal)+'</td></tr>';
+    html+='<tr class="mad-group-hdr"><td class="left" colspan="'+(fechas.length+2)+'" style="background:'+bgH+';color:'+fgH+'">'+C.label+' &mdash; grado de maduración '+calValLabel(calVal)+'</td></tr>';
     filas.forEach(function(fi){
       let row='<tr><td class="left" style="padding-left:20px;color:#1e293b;font-weight:700">'+(TAM_NAMES[fi.tam]||fi.tam)+'</td>';
       fechas.forEach(function(f){
@@ -847,7 +847,7 @@ function renderBodega(data){
         html += '<div class="bod-dot" style="background:'+fgC+';width:9px;height:9px;border-radius:50%;flex-shrink:0"></div>';
         html += '<div style="flex:1;font-size:.74rem;font-weight:600;color:'+fgC+'">';
         html += '<div>'+C.label+' &middot; '+(TAM_NAMES[to.tam]||to.tam)+'</div>';
-        html += '<div style="font-size:.68rem;font-weight:800;opacity:.9">Calibre '+calValLabel(calVal)+'</div>';
+        html += '<div style="font-size:.68rem;font-weight:800;opacity:.9">Grado de maduración '+calValLabel(calVal)+'</div>';
         html += '</div>';
         html += '<div style="font-size:.82rem;font-weight:800;color:'+fgC+'">'+Math.round(to.kg).toLocaleString('es-CO')+' kg</div>';
         html += '</div>';
@@ -883,7 +883,7 @@ function renderBines(data){
     html += '<div style="font-size:.95rem;font-weight:800;color:#1e293b">Bin '+r.Bin+'</div>';
     html += '<div style="font-size:.85rem;color:#475569;margin-top:2px">'+r.Calidad+' &middot; '+r.Nombre+'</div>';
     html += '<div style="font-size:.78rem;color:#64748b;margin-top:2px">Proceso: '+fmtF(r.Fecha)+'</div>';
-    html += '<div style="font-size:.85rem;font-weight:700;margin-top:3px;color:'+txt+'">'+lbl+' &middot; Calibre '+r.Calibre+'</div>';
+    html += '<div style="font-size:.85rem;font-weight:700;margin-top:3px;color:'+txt+'">'+lbl+' &middot; Grado de maduración '+r.Calibre+'</div>';
     html += '<div style="font-size:.85rem;font-weight:700;color:#1e293b;margin-top:2px">'+Math.round(parseFloat(r.KgDisponibles)||0).toLocaleString('es-CO')+' kg</div>';
     html += '<div style="font-size:.78rem;font-weight:700;margin-top:3px;color:'+urgColor(h)+'">'+horasLabel(h)+' en reposo</div>';
     html += '</div>';
