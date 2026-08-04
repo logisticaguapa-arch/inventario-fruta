@@ -7,17 +7,14 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 198898,canastas,2026-08-02,PE2,piña special 2da,1.5,150
 198903,canastas,2026-08-02,PEGUA,piña special guapita,1.5 - 2.5,210
 198906,canastas,2026-08-02,PEGUA,piña special guapita,1.5 - 2.5,83
-198911,canastas,2026-08-02,PIND,piña indstria,1.5 - 2.5,421
 198912,canastas,2026-08-02,PEGUA,piña special guapita,1.5 - 2.5,488
 198916,canastas,2026-08-02,PE1,piña special 1ra,0.0 - 1.0,53
 198917,canastas,2026-08-02,PE2,piña special 2da,1.5,414
 198956,canastas,2026-08-02,PE2,piña special 2da,1.5,403
 198963,canastas,2026-08-02,PE2,piña special 2da,4,64
 198969,canastas,2026-08-02,PE2,piña special 2da,1.5,161
-198972,canastas,2026-08-02,AD-PJUG,AD-piña jugos,3.0 - 4.0,482
 198977,canastas,2026-08-02,ADGUA,Piña ADGUA,1.5 - 2.5,99
 198979,canastas,2026-08-02,ADGUA,Piña ADGUA,1.5 - 2.5,55
-198980,canastas,2026-08-02,AD-PJUG,AD-piña jugos,3.0 - 4.0,390
 198987,canastas,2026-08-02,AD-PJUG,AD-piña jugos,3.0 - 4.0,122
 198988,canastas,2026-08-03,PE2,piña special 2da,1.5,413
 198990,canastas,2026-08-03,PEGUA,piña special guapita,1.5 - 2.5,492
@@ -137,7 +134,7 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 199111,canastas,2026-08-03,AD2,Piña AD2,1.5 - 2.5,293
 199112,canastas,2026-08-03,ADGUA,Piña ADGUA,1.5 - 2.5,424
 199113,canastas,2026-08-03,AD2,Piña AD2,0.0 - 1.0,289
-199114,canastas,2026-08-03,AD-PIND,AD-piña indstria,1.5 - 2.5,198
+199114,canastas,2026-08-03,AD-PIND,AD-piña indstria,1.5 - 2.5,153
 199115,canastas,2026-08-03,AD3,Piña AD3,0.0 - 1.0,340
 199116,canastas,2026-08-03,AD-PJUG,AD-piña jugos,3.0 - 4.0,248
 199117,canastas,2026-08-03,ADBABY,Piña ADBABY,1.5 - 2.5,238
@@ -145,8 +142,8 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 199119,43,2026-08-03,AD-PJUG,AD-piña jugos,3.0 - 4.0,863
 199120,83,2026-08-03,AD-PJUG,AD-piña jugos,3.0 - 4.0,1358
 199121,113,2026-08-03,AD-PJUG,AD-piña jugos,3.0 - 4.0,675
-199122,canastas,2026-08-03,,,,0
-199123,canastas,2026-08-03,,,,0
+199122,canastas,2026-08-04,,,,0
+199123,canastas,2026-08-05,,,,0
 199124,,,,,,0
 199125,,,,,,0
 199126,,,,,,0
