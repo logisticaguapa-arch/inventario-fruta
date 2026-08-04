@@ -317,12 +317,32 @@ async function procesarArchivo(){
   }
 }
 
-// Agranda la imagen (x3) y la convierte a blanco/negro de alto contraste.
+// Calcula el umbral optimo de blanco/negro para una imagen (metodo de Otsu),
+// en vez de usar un numero fijo adivinado. Un umbral fijo funciona para texto
+// grande pero rompe letras chicas cuando el fondo no es blanco puro (celdas
+// de color, JPEG comprimido, etc.) -- Otsu lo calcula segun el histograma real
+// de cada imagen, asi que se ajusta solo.
+function calcularUmbralOtsu(histograma, total){
+  let sum=0; for(let i=0;i<256;i++) sum += i*histograma[i];
+  let sumB=0, wB=0, maxVar=0, umbral=127;
+  for(let t=0;t<256;t++){
+    wB += histograma[t];
+    if(wB===0) continue;
+    const wF = total-wB;
+    if(wF===0) break;
+    sumB += t*histograma[t];
+    const mB = sumB/wB, mF = (sum-sumB)/wF;
+    const varEntre = wB*wF*(mB-mF)*(mB-mF);
+    if(varEntre>maxVar){ maxVar=varEntre; umbral=t; }
+  }
+  return umbral;
+}
+// Agranda la imagen (x4) y la convierte a blanco/negro con el umbral de Otsu.
 // Texto chico dentro de celdas de color (como las de esta Orden de Compra) es
 // justo el caso donde Tesseract lee peor sin este paso: al agrandar y binarizar
-// se le facilita mucho separar las letras/numeros del fondo.
+// bien se le facilita mucho separar las letras/numeros del fondo.
 function preprocesarCanvas(srcCanvasOImg, w, h){
-  const escala = 3;
+  const escala = 4;
   const cvOut = document.createElement('canvas');
   cvOut.width = w*escala; cvOut.height = h*escala;
   const ctx = cvOut.getContext('2d');
@@ -332,11 +352,16 @@ function preprocesarCanvas(srcCanvasOImg, w, h){
 
   const img = ctx.getImageData(0,0,cvOut.width,cvOut.height);
   const d = img.data;
-  // -- Escala de grises + umbral fijo (blanco/negro) para maxima nitidez de texto --
-  const UMBRAL = 175;
-  for(let i=0;i<d.length;i+=4){
+  const grises = new Uint8ClampedArray(d.length/4);
+  const histograma = new Array(256).fill(0);
+  for(let i=0,p=0;i<d.length;i+=4,p++){
     const gris = 0.299*d[i] + 0.587*d[i+1] + 0.114*d[i+2];
-    const v = gris > UMBRAL ? 255 : 0;
+    grises[p] = gris;
+    histograma[Math.round(gris)]++;
+  }
+  const umbral = calcularUmbralOtsu(histograma, grises.length);
+  for(let i=0,p=0;i<d.length;i+=4,p++){
+    const v = grises[p] > umbral ? 255 : 0;
     d[i]=d[i+1]=d[i+2]=v;
   }
   ctx.putImageData(img,0,0);
@@ -363,13 +388,40 @@ async function extraerTextoDeImagen(file){
   return data.text;
 }
 
+// Agrupa los fragmentos de texto real de un PDF (si lo tiene) en lineas segun
+// su posicion vertical, para que cada fila de una tabla quede en una sola
+// linea de texto -- igual que necesita parsearLineas().
+async function extraerTextoRealDePagina(page){
+  const content = await page.getTextContent();
+  if(!content.items.length) return '';
+  const filas = [];
+  content.items.forEach(function(it){
+    const y = Math.round(it.transform[5]);
+    let fila = filas.find(function(f){ return Math.abs(f.y-y)<=3; });
+    if(!fila){ fila = {y:y, partes:[]}; filas.push(fila); }
+    fila.partes.push({x:it.transform[4], texto:it.str});
+  });
+  filas.sort(function(a,b){ return b.y-a.y; });
+  return filas.map(function(f){
+    return f.partes.sort(function(a,b){return a.x-b.x;}).map(function(p){return p.texto;}).join(' ').replace(/\s+/g,' ').trim();
+  }).join('\n');
+}
+
 async function extraerTextoDePDF(file){
   const buf = await file.arrayBuffer();
   const pdf = await pdfjsLib.getDocument({data:buf}).promise;
   let texto = '';
   for(let i=1;i<=pdf.numPages;i++){
-    mostrarEstado('Leyendo pagina '+i+' de '+pdf.numPages+'...');
     const page = await pdf.getPage(i);
+    // -- Si el PDF tiene texto real incrustado (no es un escaneo), se usa directo:
+    //    cero errores de OCR, no hace falta ni Tesseract ni preprocesar nada. --
+    mostrarEstado('Leyendo texto del PDF, pagina '+i+' de '+pdf.numPages+'...');
+    const textoReal = await extraerTextoRealDePagina(page);
+    if(textoReal && textoReal.trim().length > 20){
+      texto += textoReal + '\n';
+      continue;
+    }
+    // -- Sin texto real (PDF escaneado como imagen): cae a OCR con la imagen preprocesada --
     const viewport = page.getViewport({scale:2});
     const canvasBase = document.createElement('canvas');
     canvasBase.width = viewport.width; canvasBase.height = viewport.height;
