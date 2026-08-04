@@ -136,8 +136,8 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 199107,canastas,2026-08-03,AD1,Piña AD1,1.5 - 2.5,77
 199108,canastas,2026-08-03,AD2,Piña AD2,0.0 - 1.0,592
 199109,canastas,2026-08-03,AD1,Piña AD1,0.0 - 1.0,573
-199110,canastas,2026-08-03,,,,0
-199111,canastas,2026-08-03,,,,0
+199110,canastas,2026-08-03,AD1,Piña AD1,0.0 - 1.0,307
+199111,canastas,2026-08-03,AD2,Piña AD2,1.5 - 2.5,293
 199112,canastas,2026-08-03,,,,0
 199113,canastas,2026-08-03,,,,0
 199114,canastas,2026-08-03,,,,0
