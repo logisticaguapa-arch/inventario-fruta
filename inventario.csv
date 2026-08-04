@@ -1,109 +1,67 @@
 ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
-198990,canastas,2026-08-03,PEGUA,piña special guapita,1.5 - 2.5,492
 198993,canastas,2026-08-03,PEBAB,piña special baby,1.5 - 2.5,435
-198998,canastas,2026-08-03,PEGUA,piña special guapita,1.5 - 2.5,469
-199003,canastas,2026-08-03,PE1,piña special 1ra,0.0 - 1.0,546
-199004,canastas,2026-08-03,PIND,piña indstria,1.5 - 2.5,476
 199005,canastas,2026-08-03,PEGUA,piña special guapita,1.5 - 2.5,483
 199006,canastas,2026-08-03,PEGUA,piña special guapita,1.5 - 2.5,114
 199009,canastas,2026-08-03,PE3,piña special 3ra,1.5 - 2.5,477
-199010,canastas,2026-08-03,PEGUA,piña special guapita,1.5 - 2.5,483
 199012,canastas,2026-08-03,PEBAB,piña special baby,1.5 - 2.5,426
 199015,canastas,2026-08-03,PEBAB,piña special baby,1.5 - 2.5,408
-199017,canastas,2026-08-03,PEGUA,piña special guapita,1.5 - 2.5,466
 199019,canastas,2026-08-03,PEBAB,piña special baby,1.5 - 2.5,402
-199020,canastas,2026-08-03,PIND,piña indstria,1.5 - 2.5,459
-199023,canastas,2026-08-03,PEGUA,piña special guapita,1.5 - 2.5,475
-199025,canastas,2026-08-03,PE1,piña special 1ra,0.0 - 1.0,100
 199028,canastas,2026-08-03,PEGUA,piña special guapita,1.5 - 2.5,467
-199030,canastas,2026-08-03,PIND,piña indstria,1.5 - 2.5,426
 199031,canastas,2026-08-03,PEBAB,piña special baby,1.5 - 2.5,405
 199032,canastas,2026-08-03,PEGUA,piña special guapita,1.5 - 2.5,470
 199033,canastas,2026-08-03,PEBAB,piña special baby,1.5 - 2.5,406
 199035,canastas,2026-08-03,PEBAB,piña special baby,1.5 - 2.5,430
 199036,canastas,2026-08-03,PEBAB,piña special baby,1.5 - 2.5,397
-199037,canastas,2026-08-03,PE1,piña special 1ra,0.5,542
 199039,canastas,2026-08-03,PEGUA,piña special guapita,1.5 - 2.5,301
-199040,canastas,2026-08-03,PEGUA,piña special guapita,1.5 - 2.5,473
-199041,canastas,2026-08-03,PIND,piña indstria,1.5 - 2.5,473
 199046,canastas,2026-08-03,PEBAB,piña special baby,1.5 - 2.5,410
-199048,canastas,2026-08-03,PEGUA,piña special guapita,1.5 - 2.5,470
 199053,canastas,2026-08-03,PEGUA,piña special guapita,1.5 - 2.5,466
-199054,canastas,2026-08-03,PE2,piña special 2da,1,494
-199055,canastas,2026-08-03,PE1,piña special 1ra,0.5,537
-199057,canastas,2026-08-03,PEGUA,piña special guapita,1.5 - 2.5,475
 199058,canastas,2026-08-03,PEBAB,piña special baby,1.5 - 2.5,414
-199061,canastas,2026-08-03,PE2,piña special 2da,1,490
-199062,canastas,2026-08-03,PIND,piña indstria,1.5 - 2.5,61
-199063,canastas,2026-08-03,PIND,piña indstria,1.5 - 2.5,428
-199064,canastas,2026-08-03,PE1,piña special 1ra,0.5,531
 199066,canastas,2026-08-03,PEBAB,piña special baby,1.5 - 2.5,404
-199067,canastas,2026-08-03,PEGUA,piña special guapita,1.5 - 2.5,456
-199070,canastas,2026-08-03,PE2,piña special 2da,1,495
-199071,canastas,2026-08-03,PE1,piña special 1ra,0.5,580
-199072,canastas,2026-08-03,PEGUA,piña special guapita,1.5 - 2.5,467
-199077,canastas,2026-08-03,PE2,piña special 2da,1,495
 199078,canastas,2026-08-03,PEBAB,piña special baby,1.5 - 2.5,480
-199079,canastas,2026-08-03,PEGUA,piña special guapita,1.5 - 2.5,460
-199081,canastas,2026-08-03,PE2,piña special 2da,1,137
-199082,canastas,2026-08-03,PE1,piña special 1ra,0.5,558
-199083,canastas,2026-08-03,PEGUA,piña special guapita,1.5 - 2.5,466
-199084,canastas,2026-08-03,PE1,piña special 1ra,2,554
-199085,canastas,2026-08-03,PE1,piña special 1ra,0.0 - 1.0,572
 199087,canastas,2026-08-03,PEBAB,piña special baby,1.5 - 2.5,424
 199088,canastas,2026-08-03,PEBAB,piña special baby,1.5 - 2.5,253
-199091,canastas,2026-08-03,PE1,piña special 1ra,1.5 - 2.5,414
-199096,canastas,2026-08-03,AD1,Piña AD1,0.0 - 1.0,126
 199098,canastas,2026-08-03,ADBABY,Piña ADBABY,1.5 - 2.5,407
-199102,canastas,2026-08-03,AD-PIND,AD-piña indstria,1.5 - 2.5,465
-199103,canastas,2026-08-03,AD-PIND,AD-piña indstria,1.5 - 2.5,464
-199104,canastas,2026-08-03,AD1,Piña AD1,0.0 - 1.0,570
-199107,canastas,2026-08-03,AD1,Piña AD1,1.5 - 2.5,56
-199110,canastas,2026-08-03,AD1,Piña AD1,0.0 - 1.0,52
-199114,canastas,2026-08-03,AD-PIND,AD-piña indstria,1.5 - 2.5,153
 199117,canastas,2026-08-03,ADBABY,Piña ADBABY,1.5 - 2.5,238
-199119,43,2026-08-03,AD-PJUG,AD-piña jugos,3.0 - 4.0,863
-199120,83,2026-08-03,AD-PJUG,AD-piña jugos,3.0 - 4.0,1358
-199122,canastas,2026-08-04,,,,0
-199123,canastas,2026-08-05,,,,0
-199124,,,,,,0
-199125,,,,,,0
-199126,,,,,,0
-199127,,,,,,0
-199128,,,,,,0
-199129,,,,,,0
-199130,,,,,,0
-199131,,,,,,0
-199132,,,,,,0
-199133,,,,,,0
-199134,,,,,,0
-199135,,,,,,0
-199136,,,,,,0
-199137,,,,,,0
-199138,,,,,,0
-199139,,,,,,0
-199140,,,,,,0
-199141,,,,,,0
-199142,,,,,,0
-199143,,,,,,0
-199144,,,,,,0
-199145,,,,,,0
-199146,,,,,,0
-199147,,,,,,0
-199148,,,,,,0
-199149,,,,,,0
-199150,,,,,,0
-199151,,,,,,0
-199152,,,,,,0
-199153,,,,,,0
-199154,,,,,,0
-199155,,,,,,0
-199156,,,,,,0
-199157,,,,,,0
-199158,,,,,,0
-199159,,,,,,0
-199160,,,,,,0
-199161,,,,,,0
+199122,canastas,2026-08-04,PE3,piña special 3ra,1.5 - 2.5,477
+199123,canastas,2026-08-04,PEGUA,piña special guapita,1.5 - 2.5,490
+199124,canastas,2026-08-04,PE2,piña special 2da,1.5,395
+199125,canastas,2026-08-04,PE2,piña special 2da,1.5 - 2.5,531
+199126,canastas,2026-08-04,PE3,piña special 3ra,1.5 - 2.5,479
+199127,canastas,2026-08-04,PE1,piña special 1ra,1,552
+199128,canastas,2026-08-04,PE1,piña special 1ra,1,536
+199129,canastas,2026-08-04,PE2,piña special 2da,1.5,400
+199130,canastas,2026-08-04,PE1,piña special 1ra,0,538
+199131,canastas,2026-08-04,PE1,piña special 1ra,0.0 - 1.0,562
+199132,canastas,2026-08-04,,,,0
+199133,canastas,2026-08-04,,,,0
+199134,canastas,2026-08-04,,,,0
+199135,canastas,2026-08-04,,,,0
+199136,canastas,2026-08-04,,,,0
+199137,canastas,2026-08-04,,,,0
+199138,canastas,2026-08-04,,,,0
+199139,canastas,2026-08-04,,,,0
+199140,canastas,2026-08-04,,,,0
+199141,canastas,2026-08-04,,,,0
+199142,canastas,2026-08-04,,,,0
+199143,canastas,2026-08-04,,,,0
+199144,canastas,2026-08-04,,,,0
+199145,canastas,2026-08-04,,,,0
+199146,canastas,2026-08-04,,,,0
+199147,canastas,2026-08-04,,,,0
+199148,canastas,2026-08-04,,,,0
+199149,canastas,2026-08-04,,,,0
+199150,canastas,2026-08-04,,,,0
+199151,canastas,2026-08-04,,,,0
+199152,canastas,2026-08-04,,,,0
+199153,canastas,2026-08-04,,,,0
+199154,canastas,2026-08-04,,,,0
+199155,canastas,2026-08-04,,,,0
+199156,canastas,2026-08-04,,,,0
+199157,canastas,2026-08-04,,,,0
+199158,canastas,2026-08-04,,,,0
+199159,canastas,2026-08-04,,,,0
+199160,canastas,2026-08-04,,,,0
+199161,canastas,2026-08-04,,,,0
 199162,,,,,,0
 199163,,,,,,0
 199164,,,,,,0
