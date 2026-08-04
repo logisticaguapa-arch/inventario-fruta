@@ -15809,18 +15809,21 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-08-03,45578,R-18626,jeronimo martins,piña special 2da,PE2,407,50,3200,0
 2026-08-03,,R-18625,reposicion jeronimo,piña special 2da,PE2,363,0,,0
 2026-08-03,,,descarte,piña special 2da,PE2,0,0,,64
-2026-08-04,,,local apartado,Piña ADGUA,ADGUA,420,180,,0
-2026-08-04,,,local apartado,piña special 2da,PE2,187,113,,0
-2026-08-04,,,local apartado,Piña AD1,AD1,572,0,,0
-2026-08-04,,,local apartado,Piña AD1,AD1,569,59,,0
-2026-08-04,,,local apartado,Piña AD2,AD2,288,12,,0
-2026-08-04,,,local apartado,piña special 1ra,PE1,553,247,,0
-2026-08-04,,,local apartado,piña special 2da,PE2,497,0,,0
-2026-08-04,,,local apartado,Piña AD2,AD2,177,26,,0
-2026-08-04,,R-18627,KARINA BORJA,piña special guapita,PEGUA,451,0,,0
-2026-08-04,,R-18627,KARINA BORJA,piña special guapita,PEGUA,476,0,,0
-2026-08-04,,R-18627,KARINA BORJA,piña special guapita,PEGUA,465,6,,0
-2026-08-04,,R-18627,KARINA BORJA,piña special guapita,PEGUA,477,125,,10
+2026-08-04,,R-18628,local apartado,Piña ADGUA,ADGUA,420,180,2200,0
+2026-08-04,,R-18628,local apartado,piña special 2da,PE2,187,113,2800,0
+2026-08-04,,R-18628,local apartado,Piña AD1,AD1,572,0,3200,0
+2026-08-04,,R-18628,local apartado,Piña AD1,AD1,569,59,3200,0
+2026-08-04,,R-18628,local apartado,,PEGUA,0,200,2200,0
+2026-08-04,,R-18628,local apartado,,PIND,0,400,2000,0
+2026-08-04,,R-18628,local apartado,Piña AD2,AD2,288,12,3000,0
+2026-08-04,,R-18628,local apartado,piña special 1ra,PE1,553,247,3000,0
+2026-08-04,,R-18628,local apartado,,PE1,0,300,3000,0
+2026-08-04,,R-18628,local apartado,piña special 2da,PE2,497,0,2800,0
+2026-08-04,,R-18628,local apartado,Piña AD2,AD2,177,26,2800,0
+2026-08-04,,R-18627,KARINA BORJA,piña special guapita,PEGUA,451,0,700,0
+2026-08-04,,R-18627,KARINA BORJA,piña special guapita,PEGUA,476,0,700,0
+2026-08-04,,R-18627,KARINA BORJA,piña special guapita,PEGUA,465,6,700,0
+2026-08-04,,R-18627,KARINA BORJA,piña special guapita,PEGUA,477,125,700,10
 2026-08-04,,,KARINA BORJA,piña special 3ra,PE3,526,0,,0
 2026-08-04,,,KARINA BORJA,piña special 3ra,PE3,473,0,,0
 2026-08-04,,,KARINA BORJA,piña special 3ra,PE3,444,0,,0
