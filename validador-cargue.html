@@ -114,7 +114,11 @@ details.config summary:before{content:'⚙ ';}
         <button class="btn-secundario" onclick="agregarFilaExtraida()">+ Agregar fila manual</button>
       </div>
       <div class="estado-proceso" id="estadoProceso"></div>
-      <div class="card-help">Acepta PDF o imagen (JPG/PNG). El sistema lee automaticamente Referencia y Kilos de cada linea. Si el OCR se equivoca en algo, puedes corregirlo directamente en la tabla de abajo antes de calcular.</div>
+      <div class="card-help">Acepta PDF o imagen (JPG/PNG). El sistema reconoce dos formatos: lineas simples "REFERENCIA  KILOS", o una tabla de Orden de Compra con columnas Orden de cargue / Producto / Fecha Cosecha / Kilos Aprobados / Precio Unitario / Valor Total. Si el OCR se equivoca en algo, puedes corregirlo directamente en la tabla de abajo antes de calcular.</div>
+      <details id="ocrTextoCont" style="display:none;margin-top:10px">
+        <summary style="cursor:pointer;font-size:.85rem;color:#64748b">Ver texto que detecto el OCR (para revisar si algo no se leyo bien)</summary>
+        <pre id="ocrTexto" style="white-space:pre-wrap;font-size:.75rem;background:#f8fafc;border:1px solid #e2e8f0;border-radius:6px;padding:10px;margin-top:6px;max-height:220px;overflow:auto"></pre>
+      </details>
     </div>
   </div>
 
@@ -276,6 +280,14 @@ if(window.pdfjsLib){
 }
 
 function mostrarEstado(txt){ document.getElementById('estadoProceso').textContent = txt; }
+// Guarda el texto crudo que devolvio el OCR para poder revisarlo si algo no se detecto bien.
+function mostrarTextoOCR(texto){
+  const cont = document.getElementById('ocrTextoCont');
+  const pre = document.getElementById('ocrTexto');
+  if(!cont||!pre) return;
+  pre.textContent = texto && texto.trim() ? texto : '(el OCR no devolvio texto)';
+  cont.style.display = '';
+}
 
 async function procesarArchivo(){
   const input = document.getElementById('archivoOrden');
@@ -290,8 +302,9 @@ async function procesarArchivo(){
       texto = await extraerTextoDeImagen(file);
     }
     const lineas = parsearLineas(texto);
+    mostrarTextoOCR(texto);
     if(!lineas.length){
-      mostrarEstado('No se detectaron lineas con el formato "Referencia  Kilos". Agrega las filas manualmente abajo.');
+      mostrarEstado('No se detectaron lineas reconocibles. Revisa el texto detectado abajo (puede que el OCR no haya leido bien el archivo) o agrega las filas manualmente.');
     } else {
       mostrarEstado('Listo: '+lineas.length+' linea(s) detectada(s). Revisa y corrige si algo no coincide.');
     }
@@ -331,12 +344,28 @@ async function extraerTextoDePDF(file){
 }
 
 // Busca lineas con forma "REFERENCIA   1234" o "REFERENCIA 1.234 kg"
+const REGEX_SIMPLE = /^([A-Za-zÁÉÍÓÚÑáéíóúñ][A-Za-zÁÉÍÓÚÑáéíóúñ0-9\-\/]{1,14})\s+([\d.,]+)\s*(?:kgs?|KGS?)?\.?$/;
+// Busca filas de una tabla de Orden de Compra tipo:
+// "0  Special - PE2-V  03/08/2026  2,000  $3,000.0  $6,000,000.0"
+// (Orden de cargue | Producto | Fecha Cosecha | Kilos Aprobados | Precio Unitario | Valor Total)
+// El $ es opcional porque el OCR a veces no lo detecta o lo confunde con otro caracter.
+const REGEX_TABLA_OC = /^(\d{1,4})\s+(.+?)\s+(\d{1,2}\/\d{1,2}\/\d{4})\s+([\d.,]+)\s+[\$S]?\s?[\d.,]+\s+[\$S]?\s?[\d.,]+\.?$/i;
+
+function limpiarProductoOC(p){
+  // Quita el prefijo de categoria (ej. "Special - ") y deja solo la referencia (ej. "PE2-V")
+  return String(p||'').replace(/^special\s*-?\s*/i,'').trim().toUpperCase();
+}
+
 function parsearLineas(texto){
   const lineas = texto.split('\n').map(l=>l.trim()).filter(l=>l);
-  const regex = /^([A-Za-zÁÉÍÓÚÑáéíóúñ][A-Za-zÁÉÍÓÚÑáéíóúñ0-9\-\/]{1,14})\s+([\d.,]+)\s*(?:kgs?|KGS?)?\.?$/;
   const resultado = [];
   lineas.forEach(l=>{
-    const m = l.match(regex);
+    let m = l.match(REGEX_TABLA_OC);
+    if(m){
+      resultado.push({ referencia: limpiarProductoOC(m[2]), kg: parseNumeroOCR(m[4]) });
+      return;
+    }
+    m = l.match(REGEX_SIMPLE);
     if(m) resultado.push({ referencia: m[1].toUpperCase(), kg: parseNumeroOCR(m[2]) });
   });
   return resultado;
