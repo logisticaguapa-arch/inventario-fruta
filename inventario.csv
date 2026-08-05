@@ -7,9 +7,8 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 199140,canastas,2026-08-04,PE2,piña special 2da,1.5 - 2.5,27
 199141,canastas,2026-08-04,PE2,piña special 2da,1.5,399
 199144,canastas,2026-08-04,PE2,piña special 2da,1.5,400
-199153,canastas,2026-08-04,PE3,piña special 3ra,1.5 - 2.5,489
 199157,canastas,2026-08-04,PE1,piña special 1ra,4,541
-199161,canastas,2026-08-04,PEBAB,piña special baby,1.5 - 2.5,298
+199161,canastas,2026-08-04,PEBAB,piña special baby,1.5 - 2.5,149
 199168,canastas,2026-08-04,PEGUA,piña special guapita,1.5 - 2.5,485
 199169,canastas,2026-08-04,PE2,piña special 2da,1.5,401
 199170,canastas,2026-08-04,PEBAB,piña special baby,1.5 - 2.5,410
@@ -42,54 +41,53 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 199239,canastas,2026-08-04,AD2,Piña AD2,1.5 - 2.5,84
 199240,canastas,2026-08-04,AD1,Piña AD1,1,102
 199243,canastas,2026-08-04,AD1,Piña AD1,1.5 - 2.5,308
-199246,canastas,2026-08-04,AD3,Piña AD3,1.5 - 2.5,210
 199248,canastas,2026-08-04,ADBABY,Piña ADBABY,1.5 - 2.5,26
 199250,canastas,2026-08-04,ADGUA,Piña ADGUA,1.5 - 2.5,126
-199256,canastas,2026-08-05,,,,0
-199257,canastas,2026-08-05,,,,0
-199258,canastas,2026-08-05,,,,0
-199259,,,,,,0
-199260,,,,,,0
-199261,,,,,,0
-199262,,,,,,0
-199263,,,,,,0
-199264,,,,,,0
-199265,,,,,,0
-199266,,,,,,0
-199267,,,,,,0
-199268,,,,,,0
-199269,,,,,,0
-199270,,,,,,0
-199271,,,,,,0
-199272,,,,,,0
-199273,,,,,,0
-199274,,,,,,0
-199275,,,,,,0
-199276,,,,,,0
-199277,,,,,,0
-199278,,,,,,0
-199279,,,,,,0
-199280,,,,,,0
-199281,,,,,,0
-199282,,,,,,0
-199283,,,,,,0
-199284,,,,,,0
-199285,,,,,,0
-199286,,,,,,0
-199287,,,,,,0
-199288,,,,,,0
-199289,,,,,,0
-199290,,,,,,0
-199291,,,,,,0
-199292,,,,,,0
-199293,,,,,,0
-199294,,,,,,0
-199295,,,,,,0
-199296,,,,,,0
-199297,,,,,,0
-199298,,,,,,0
-199299,,,,,,0
-199300,,,,,,0
+199256,canastas,2026-08-05,PEGUA,piña special guapita,1.5 - 2.5,439
+199257,canastas,2026-08-05,PEGUA,piña special guapita,1.5 - 2.5,461
+199258,canastas,2026-08-05,PE2,piña special 2da,1.5 - 2.5,497
+199259,canastas,2026-08-05,PE3,piña special 3ra,0.0 - 1.0,459
+199260,canastas,2026-08-05,PE1,piña special 1ra,1.5 - 2.5,534
+199261,canastas,2026-08-05,PEBAB,piña special baby,1.5 - 2.5,399
+199262,canastas,2026-08-05,PIND,piña indstria,1.5 - 2.5,484
+199263,canastas,2026-08-05,PE3,piña special 3ra,1.5 - 2.5,482
+199264,canastas,2026-08-05,PEBAB,piña special baby,1.5 - 2.5,426
+199265,canastas,2026-08-05,PEGUA,piña special guapita,1.5 - 2.5,426
+199266,canastas,2026-08-05,PEGUA,piña special guapita,1.5 - 2.5,481
+199267,canastas,2026-08-05,PEGUA,piña special guapita,1.5 - 2.5,430
+199268,canastas,2026-08-05,PE2,piña special 2da,1.5 - 2.5,505
+199269,canastas,2026-08-05,PEBAB,piña special baby,1.5 - 2.5,421
+199270,canastas,2026-08-05,PE3,piña special 3ra,0.0 - 1.0,480
+199271,canastas,2026-08-05,PE2,piña special 2da,0.0 - 1.0,489
+199272,canastas,2026-08-05,PE1,piña special 1ra,1.5 - 2.5,506
+199273,canastas,2026-08-05,PIND,piña indstria,1.5 - 2.5,483
+199274,canastas,2026-08-05,PEGUA,piña special guapita,1.5 - 2.5,482
+199275,canastas,2026-08-05,PEBAB,piña special baby,1.5 - 2.5,422
+199276,canastas,2026-08-05,PE1,piña special 1ra,4,542
+199277,canastas,2026-08-05,PEBAB,piña special baby,1.5 - 2.5,417
+199278,canastas,2026-08-05,PE1,piña special 1ra,1,524
+199279,canastas,2026-08-05,PEGUA,piña special guapita,1.5 - 2.5,445
+199280,canastas,2026-08-05,PE3,piña special 3ra,1.5 - 2.5,484
+199281,canastas,2026-08-05,PE2,piña special 2da,1.5 - 2.5,501
+199282,canastas,2026-08-05,,,,0
+199283,canastas,2026-08-05,,,,0
+199284,canastas,2026-08-05,,,,0
+199285,canastas,2026-08-05,,,,0
+199286,canastas,2026-08-05,,,,0
+199287,canastas,2026-08-05,,,,0
+199288,canastas,2026-08-05,,,,0
+199289,canastas,2026-08-05,,,,0
+199290,canastas,2026-08-05,,,,0
+199291,canastas,2026-08-05,,,,0
+199292,canastas,2026-08-05,,,,0
+199293,canastas,2026-08-05,,,,0
+199294,canastas,2026-08-05,,,,0
+199295,canastas,2026-08-05,,,,0
+199296,canastas,2026-08-05,,,,0
+199297,canastas,2026-08-05,,,,0
+199298,canastas,2026-08-05,,,,0
+199299,canastas,2026-08-05,,,,0
+199300,canastas,2026-08-05,,,,0
 199301,,,,,,0
 199302,,,,,,0
 199303,,,,,,0
