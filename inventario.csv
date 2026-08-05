@@ -128,10 +128,10 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 199239,canastas,2026-08-04,AD2,Piña AD2,1.5 - 2.5,258
 199240,canastas,2026-08-04,AD1,Piña AD1,1,383
 199241,canastas,2026-08-04,AD-PJUG,AD-piña jugos,3.0 - 4.0,15
-199242,canastas,2026-08-04,,,,0
-199243,canastas,2026-08-04,,,,0
-199244,canastas,2026-08-04,,,,0
-199245,canastas,2026-08-04,,,,0
+199242,canastas,2026-08-04,AD2,Piña AD2,0.0 - 1.0,324
+199243,canastas,2026-08-04,AD1,Piña AD1,1.5 - 2.5,387
+199244,canastas,2026-08-04,AD3,Piña AD3,0.0 - 1.0,246
+199245,canastas,2026-08-04,AD1,Piña AD1,0.0 - 1.0,222
 199246,canastas,2026-08-04,,,,0
 199247,canastas,2026-08-04,,,,0
 199248,canastas,2026-08-04,,,,0
