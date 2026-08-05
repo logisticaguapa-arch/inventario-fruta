@@ -28,12 +28,17 @@ jobs:
       - name: Descargar y procesar Excel
         run: |
           python3 << 'EOF'
-          import requests, openpyxl, io
+          import warnings, requests, openpyxl, io
+          warnings.filterwarnings("ignore", category=UserWarning, module="openpyxl")
 
           url = "https://agricolaguapa-my.sharepoint.com/:x:/g/personal/coordinador_logistico_guapa_com_co/IQDQfo1oimGITIutSnziZXTmAZuo0_tcGIcZvShC86nTMFg?download=1"
           r = requests.get(url, allow_redirects=True, timeout=30)
           print(f"Status: {r.status_code}, Tamaño: {len(r.content)} bytes")
-          wb = openpyxl.load_workbook(io.BytesIO(r.content), data_only=True)
+          # read_only=True: no carga estilos, formatos condicionales ni validaciones de datos
+          # (todo eso el proceso no lo necesita, solo los valores de las celdas) -- con
+          # Proceso/Despacho creciendo a decenas de miles de filas, esto es lo que mas
+          # tiempo ahorra frente a cargar el libro "completo".
+          wb = openpyxl.load_workbook(io.BytesIO(r.content), data_only=True, read_only=True)
 
           # Leer col B (Bin) de Proceso para cruzar con ID
           ws_proc = wb["Proceso"]
@@ -102,6 +107,7 @@ jobs:
           print(f"despacho.csv generado: {n2} registros")
           if fechas_vistas:
               print(f"Rango de fechas despacho: {min(fechas_vistas)} a {max(fechas_vistas)}")
+          wb.close()
           EOF
 
       - name: Subir CSV a GitHub
