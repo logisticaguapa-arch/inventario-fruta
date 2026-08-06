@@ -15986,11 +15986,11 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-08-05,45609,R-18643,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,643,0,800,0
 2026-08-05,45609,R-18643,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,493,0,800,882
 2026-08-05,45609,R-18643,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,531,0,800,0
-2026-08-05,,R-18645,KARINA BORJA,piña special 3ra,PE3,474,0,700,0
-2026-08-05,,R-18645,KARINA BORJA,piña special 3ra,PE3,478,0,700,0
-2026-08-05,,R-18645,KARINA BORJA,piña special 3ra,PE3,475,0,700,0
-2026-08-05,,R-18645,KARINA BORJA,piña special 3ra,PE3,480,135,700,0
-2026-08-05,,R-18645,KARINA BORJA,piña special 3ra,PE3,483,475,700,0
+2026-08-05,45610,R-18645,KARINA BORJA,piña special 3ra,PE3,474,0,700,0
+2026-08-05,45610,R-18645,KARINA BORJA,piña special 3ra,PE3,478,0,700,0
+2026-08-05,45610,R-18645,KARINA BORJA,piña special 3ra,PE3,475,0,700,0
+2026-08-05,45610,R-18645,KARINA BORJA,piña special 3ra,PE3,480,135,700,0
+2026-08-05,45610,R-18645,KARINA BORJA,piña special 3ra,PE3,483,475,700,0
 2026-08-05,,R-18644,local apartado,piña special 1ra,PE1,535,0,3200,0
 2026-08-05,,R-18644,local apartado,piña special 1ra,PE1,505,0,3200,6
 2026-08-05,,R-18644,local apartado,piña special 1ra,PE1,535,2,3200,0
@@ -16022,6 +16022,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-08-05,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,568,0,,0
 2026-08-05,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,537,191,,12
 2026-08-05,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,523,477,,0
+2026-08-05,,R-18646,reposicion éxito medellin,,ad1,0,90,,0
 2026-08-05,,,hugo osorio,piña special baby,PEBAB,421,0,,0
 2026-08-05,,,hugo osorio,piña special baby,PEBAB,430,149,,0
 2026-08-05,,,local medellin,piña special 3ra,PE3,484,0,,0
