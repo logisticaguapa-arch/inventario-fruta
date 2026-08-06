@@ -15924,18 +15924,20 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-08-04,45584,R-18634,juan pablo cogollo,piña special baby,PEBAB,253,109,600,0
 2026-08-04,45585,R-18635,elias alfonso david burgos,piña special baby,PEBAB,402,0,600,0
 2026-08-04,45585,R-18635,elias alfonso david burgos,piña special baby,PEBAB,399,199,600,0
-2026-08-05,,,Almacenes Éxito S.A. - Barranquilla,Piña AD1,AD1,560,0,,0
-2026-08-05,,,Almacenes Éxito S.A. - Barranquilla,piña special 1ra,PE1,547,108,,0
-2026-08-05,,,cartagena,piña special guapita,PEGUA,450,0,,7
-2026-08-05,,,cartagena,piña special guapita,PEGUA,483,0,,0
-2026-08-05,,,cartagena,piña special guapita,PEGUA,454,0,,0
-2026-08-05,,,cartagena,piña special guapita,PEGUA,463,0,,0
-2026-08-05,,,cartagena,piña special guapita,PEGUA,460,0,,0
-2026-08-05,,,cartagena,piña special guapita,PEGUA,493,0,,0
-2026-08-05,,,cartagena,piña special guapita,PEGUA,460,0,,0
-2026-08-05,,,cartagena,piña special guapita,PEGUA,493,244,,0
-2026-08-05,,,elias alfonso david burgos,piña special baby,PEBAB,389,0,,0
-2026-08-05,,,elias alfonso david burgos,piña special baby,PEBAB,425,186,,0
+2026-08-05,45590,R-18638,Almacenes Éxito S.A. - Barranquilla,Piña AD1,AD1,560,0,3200,0
+2026-08-05,45590,R-18638,Almacenes Éxito S.A. - Barranquilla,piña special 1ra,PE1,547,108,3200,0
+2026-08-05,45590,R-18638,Almacenes Éxito S.A. - Barranquilla,,PE1,0,495,3300,0
+2026-08-05,,R-18636,reposicion éxito barranquilla,,PE1,0,60,,0
+2026-08-05,,R-18637,cartagena,piña special guapita,PEGUA,450,0,2000,7
+2026-08-05,,R-18637,cartagena,piña special guapita,PEGUA,483,0,2000,0
+2026-08-05,,R-18637,cartagena,piña special guapita,PEGUA,454,0,2000,0
+2026-08-05,,R-18637,cartagena,piña special guapita,PEGUA,463,0,2000,0
+2026-08-05,,R-18637,cartagena,piña special guapita,PEGUA,460,0,2000,0
+2026-08-05,,R-18637,cartagena,piña special guapita,PEGUA,493,0,2000,0
+2026-08-05,,R-18637,cartagena,piña special guapita,PEGUA,460,0,2000,0
+2026-08-05,,R-18637,cartagena,piña special guapita,PEGUA,493,244,2000,0
+2026-08-05,,R-18339,elias alfonso david burgos,piña special baby,PEBAB,389,0,600,0
+2026-08-05,,R-18339,elias alfonso david burgos,piña special baby,PEBAB,425,186,600,0
 2026-08-05,,,local medellin,piña special 1ra,PE1,538,0,,0
 2026-08-05,,,local medellin,piña special 1ra,PE1,540,0,,0
 2026-08-05,,,local medellin,piña special 1ra,PE1,557,0,,0
