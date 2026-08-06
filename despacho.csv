@@ -15961,40 +15961,41 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-08-05,,R-18641,cartagena,Piña AD1,AD1,566,0,3000,0
 2026-08-05,,R-18641,cartagena,piña special 1ra,PE1,344,0,3000,0
 2026-08-05,,R-18641,cartagena,piña special 1ra,PE1,430,52,3000,0
-2026-08-05,,,local sincelejo,piña special 2da,PE2,505,0,,0
-2026-08-05,,,local sincelejo,piña special 2da,PE2,216,45,,0
-2026-08-05,,,local sincelejo,piña special guapita,PEGUA,216,447,,0
-2026-08-05,,,local sincelejo,Piña AD1,AD1,519,0,,0
-2026-08-05,,,local sincelejo,Piña AD1,AD1,165,12,,0
-2026-08-05,,,local sincelejo,piña special 3ra,PE3,474,0,,0
-2026-08-05,,,local sincelejo,piña special 3ra,PE3,491,0,,0
-2026-08-05,,,local sincelejo,piña special 3ra,PE3,480,0,,6
-2026-08-05,,,local sincelejo,piña special 3ra,PE3,493,62,,0
-2026-08-05,,,local sincelejo,piña special baby,PEBAB,419,81,,0
-2026-08-05,,,local sincelejo,piña special baby,PEBAB,502,0,,0
-2026-08-05,,,local sincelejo,piña special baby,PEBAB,426,237,,2
-2026-08-05,,,Aldinsen Gonzalez,piña indstria,PIND,482,0,,0
-2026-08-05,,,Aldinsen Gonzalez,piña indstria,PIND,462,0,,0
-2026-08-05,,,Aldinsen Gonzalez,piña indstria,PIND,470,0,,0
-2026-08-05,,,Aldinsen Gonzalez,piña indstria,PIND,528,0,,0
-2026-08-05,,,Aldinsen Gonzalez,piña indstria,PIND,269,0,,183
-2026-08-05,,,Aldinsen Gonzalez,AD-piña indstria,AD-PIND,266,0,,0
-2026-08-05,,,Aldinsen Gonzalez,AD-piña indstria,AD-PIND,494,0,,0
-2026-08-05,,,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,14,0,,0
-2026-08-05,,,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,393,0,,74
-2026-08-05,,,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,643,0,,0
-2026-08-05,,,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,493,0,,882
-2026-08-05,,,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,531,0,,0
-2026-08-05,,,KARINA BORJA,piña special 3ra,PE3,474,0,,0
-2026-08-05,,,KARINA BORJA,piña special 3ra,PE3,478,0,,0
-2026-08-05,,,KARINA BORJA,piña special 3ra,PE3,475,0,,0
-2026-08-05,,,KARINA BORJA,piña special 3ra,PE3,480,135,,0
-2026-08-05,,,KARINA BORJA,piña special 3ra,PE3,483,475,,0
-2026-08-05,,,local apartado,piña special 1ra,PE1,535,0,,0
-2026-08-05,,,local apartado,piña special 1ra,PE1,505,0,,6
-2026-08-05,,,local apartado,piña special 1ra,PE1,535,2,,0
-2026-08-05,,,local apartado,piña special 2da,PE2,497,503,,0
-2026-08-05,,,local apartado,piña special guapita,PEGUA,456,44,,1
+2026-08-05,,R-18642,local sincelejo,piña special 2da,PE2,505,0,2500,0
+2026-08-05,,R-18642,local sincelejo,piña special 2da,PE2,216,45,2500,0
+2026-08-05,,R-18642,local sincelejo,piña special guapita,PEGUA,216,447,1600,0
+2026-08-05,,R-18642,local sincelejo,Piña AD1,AD1,519,0,2700,0
+2026-08-05,,R-18642,local sincelejo,Piña AD1,AD1,165,12,2700,0
+2026-08-05,,R-18642,local sincelejo,,PE3,0,200,2100,0
+2026-08-05,,R-18642,local sincelejo,piña special 3ra,PE3,474,0,2100,0
+2026-08-05,,R-18642,local sincelejo,piña special 3ra,PE3,491,0,2100,0
+2026-08-05,,R-18642,local sincelejo,piña special 3ra,PE3,480,0,2100,6
+2026-08-05,,R-18642,local sincelejo,piña special 3ra,PE3,493,62,2100,0
+2026-08-05,,R-18642,local sincelejo,piña special baby,PEBAB,419,81,1500,0
+2026-08-05,,R-18642,local sincelejo,piña special baby,PEBAB,502,0,1500,0
+2026-08-05,,R-18642,local sincelejo,piña special baby,PEBAB,426,237,1500,2
+2026-08-05,45609,R-18643,Aldinsen Gonzalez,piña indstria,PIND,482,0,1000,0
+2026-08-05,45609,R-18643,Aldinsen Gonzalez,piña indstria,PIND,462,0,1000,0
+2026-08-05,45609,R-18643,Aldinsen Gonzalez,piña indstria,PIND,470,0,1000,0
+2026-08-05,45609,R-18643,Aldinsen Gonzalez,piña indstria,PIND,528,0,1000,0
+2026-08-05,45609,R-18643,Aldinsen Gonzalez,piña indstria,PIND,269,0,1000,183
+2026-08-05,45609,R-18643,Aldinsen Gonzalez,AD-piña indstria,AD-PIND,266,0,1000,0
+2026-08-05,45609,R-18643,Aldinsen Gonzalez,AD-piña indstria,AD-PIND,494,0,1000,0
+2026-08-05,45609,R-18643,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,14,0,800,0
+2026-08-05,45609,R-18643,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,393,0,800,74
+2026-08-05,45609,R-18643,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,643,0,800,0
+2026-08-05,45609,R-18643,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,493,0,800,882
+2026-08-05,45609,R-18643,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,531,0,800,0
+2026-08-05,,R-18645,KARINA BORJA,piña special 3ra,PE3,474,0,700,0
+2026-08-05,,R-18645,KARINA BORJA,piña special 3ra,PE3,478,0,700,0
+2026-08-05,,R-18645,KARINA BORJA,piña special 3ra,PE3,475,0,700,0
+2026-08-05,,R-18645,KARINA BORJA,piña special 3ra,PE3,480,135,700,0
+2026-08-05,,R-18645,KARINA BORJA,piña special 3ra,PE3,483,475,700,0
+2026-08-05,,R-18644,local apartado,piña special 1ra,PE1,535,0,3200,0
+2026-08-05,,R-18644,local apartado,piña special 1ra,PE1,505,0,3200,6
+2026-08-05,,R-18644,local apartado,piña special 1ra,PE1,535,2,3200,0
+2026-08-05,,R-18644,local apartado,piña special 2da,PE2,497,503,3000,0
+2026-08-05,,R-18644,local apartado,piña special guapita,PEGUA,456,44,2200,1
 2026-08-05,,,local sincelejo,piña special guapita,PEGUA,456,0,,0
 2026-08-05,,,local sincelejo,piña special guapita,PEGUA,456,288,,0
 2026-08-05,,,local sincelejo,piña special baby,PEBAB,398,0,,0
