@@ -15996,32 +15996,33 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-08-05,,R-18644,local apartado,piña special 1ra,PE1,535,2,3200,0
 2026-08-05,,R-18644,local apartado,piña special 2da,PE2,497,503,3000,0
 2026-08-05,,R-18644,local apartado,piña special guapita,PEGUA,456,44,2200,1
-2026-08-05,,,local sincelejo,piña special guapita,PEGUA,456,0,,0
-2026-08-05,,,local sincelejo,piña special guapita,PEGUA,456,288,,0
-2026-08-05,,,local sincelejo,piña special baby,PEBAB,398,0,,0
-2026-08-05,,,local sincelejo,piña special baby,PEBAB,154,0,,0
-2026-08-05,,,local sincelejo,Piña ADBABY,ADBABY,202,0,,0
-2026-08-05,,,local sincelejo,piña special baby,PEBAB,394,0,,0
-2026-08-05,,,local sincelejo,Piña ADBABY,ADBABY,125,0,,0
-2026-08-05,,,local sincelejo,piña special baby,PEBAB,417,110,,0
-2026-08-05,,,local sincelejo,piña special 3ra,PE3,339,0,,0
-2026-08-05,,,local sincelejo,Piña AD3,AD3,44,0,,0
-2026-08-05,,,local sincelejo,piña special 3ra,PE3,391,0,,0
-2026-08-05,,,local sincelejo,piña special guapita,PEGUA,476,0,,0
-2026-08-05,,,local sincelejo,piña special guapita,PEGUA,473,51,,0
-2026-08-05,,,local sincelejo,piña special 3ra,PE3,466,0,,0
-2026-08-05,,,local sincelejo,piña special 2da,PE2,465,0,,0
-2026-08-05,,,local sincelejo,piña special 2da,PE2,35,0,,0
-2026-08-05,,,local sincelejo,piña special 1ra,PE1,552,0,,0
-2026-08-05,,,local sincelejo,piña special 1ra,PE1,35,0,,0
-2026-08-05,,,local sincelejo,piña special 1ra,PE1,510,403,,0
-2026-08-05,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,564,0,,0
-2026-08-05,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,547,0,,0
-2026-08-05,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,562,0,,0
-2026-08-05,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,531,0,,0
-2026-08-05,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,568,0,,0
-2026-08-05,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,537,191,,12
-2026-08-05,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,523,477,,0
+2026-08-05,,R-18648,local sincelejo,piña special guapita,PEGUA,456,0,1600,0
+2026-08-05,,R-18648,local sincelejo,piña special guapita,PEGUA,456,288,1600,0
+2026-08-05,,R-18648,local sincelejo,piña special baby,PEBAB,398,0,1200,0
+2026-08-05,,R-18648,local sincelejo,piña special baby,PEBAB,154,0,1200,0
+2026-08-05,,R-18648,local sincelejo,Piña ADBABY,ADBABY,202,0,1200,0
+2026-08-05,,R-18648,local sincelejo,piña special baby,PEBAB,394,0,1200,0
+2026-08-05,,R-18648,local sincelejo,Piña ADBABY,ADBABY,125,0,1200,0
+2026-08-05,,R-18648,local sincelejo,piña special baby,PEBAB,417,110,1200,0
+2026-08-05,,R-18648,local sincelejo,piña special 3ra,PE3,339,0,2100,0
+2026-08-05,,R-18648,local sincelejo,Piña AD3,AD3,44,0,2100,0
+2026-08-05,,R-18648,local sincelejo,piña special 3ra,PE3,391,0,2100,0
+2026-08-05,,R-18648,local sincelejo,piña special guapita,PEGUA,476,0,1600,0
+2026-08-05,,R-18648,local sincelejo,piña special guapita,PEGUA,473,51,1600,0
+2026-08-05,,R-18648,local sincelejo,,pe1,0,500,2700,0
+2026-08-05,,R-18648,local sincelejo,piña special 3ra,PE3,466,0,2100,0
+2026-08-05,,R-18648,local sincelejo,piña special 2da,PE2,465,0,2500,0
+2026-08-05,,R-18648,local sincelejo,piña special 2da,PE2,35,0,2500,0
+2026-08-05,,R-18648,local sincelejo,piña special 1ra,PE1,552,0,2700,0
+2026-08-05,,R-18648,local sincelejo,piña special 1ra,PE1,35,0,2700,0
+2026-08-05,,R-18648,local sincelejo,piña special 1ra,PE1,510,403,2700,0
+2026-08-05,45606,R-18647,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,564,0,3000,0
+2026-08-05,45606,R-18647,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,547,0,3000,0
+2026-08-05,45606,R-18647,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,562,0,3000,0
+2026-08-05,45606,R-18647,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,531,0,3000,0
+2026-08-05,45606,R-18647,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,568,0,3000,0
+2026-08-05,45606,R-18647,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,537,191,3000,12
+2026-08-05,45606,R-18647,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,523,477,3100,0
 2026-08-05,,R-18646,reposicion éxito medellin,,ad1,0,90,,0
 2026-08-05,,,hugo osorio,piña special baby,PEBAB,421,0,,0
 2026-08-05,,,hugo osorio,piña special baby,PEBAB,430,149,,0
