@@ -10,7 +10,12 @@ permissions:
 
 concurrency:
   group: actualizar-inventario
-  cancel-in-progress: true
+  # false: si llega un disparo nuevo mientras otro esta corriendo, ESPERA en cola
+  # en vez de matar al que esta corriendo. Con cancel-in-progress:true, una corrida
+  # nueva podia matar a la anterior justo mientras esperaba que GitHub Pages
+  # terminara de desplegar, dejando ese despliegue abandonado a medias y
+  # atascando las corridas siguientes detras de el.
+  cancel-in-progress: false
 
 jobs:
   actualizar:
