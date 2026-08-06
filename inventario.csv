@@ -13,7 +13,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 199185,canastas,2026-08-04,PEBAB,piña special baby,1.5 - 2.5,407
 199197,canastas,2026-08-04,PEGUA,piña special guapita,1.5 - 2.5,475
 199201,canastas,2026-08-04,PE1,piña special 1ra,1,180
-199202,canastas,2026-08-04,PE1,piña special 1ra,4,543
 199204,canastas,2026-08-04,PE2,piña special 2da,1.5,403
 199205,canastas,2026-08-04,PEBAB,piña special baby,1.5 - 2.5,424
 199215,canastas,2026-08-04,PE2,piña special 2da,1.5,265
@@ -75,32 +74,32 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 199313,canastas,2026-08-05,PE2,piña special 2da,1.5 - 2.5,503
 199314,canastas,2026-08-05,PEGUA,piña special guapita,1.5 - 2.5,453
 199315,canastas,2026-08-05,PE3,piña special 3ra,1.5 - 2.5,479
-199316,canastas,2026-08-05,,,,0
-199317,canastas,2026-08-05,,,,0
-199318,canastas,2026-08-05,,,,0
-199319,canastas,2026-08-05,,,,0
-199320,canastas,2026-08-05,,,,0
-199321,canastas,2026-08-05,,,,0
-199322,,,,,,0
-199323,,,,,,0
-199324,,,,,,0
-199325,,,,,,0
-199326,,,,,,0
-199327,,,,,,0
-199328,,,,,,0
-199329,,,,,,0
-199330,,,,,,0
-199331,,,,,,0
-199332,,,,,,0
-199333,,,,,,0
-199334,,,,,,0
-199335,,,,,,0
-199336,,,,,,0
-199337,,,,,,0
-199338,,,,,,0
-199339,,,,,,0
-199340,,,,,,0
-199341,,,,,,0
+199316,canastas,2026-08-05,PE1,piña special 1ra,1.5 - 2.5,518
+199317,canastas,2026-08-05,PEGUA,piña special guapita,1.5 - 2.5,486
+199318,canastas,2026-08-05,PEGUA,piña special guapita,1.5 - 2.5,477
+199319,canastas,2026-08-05,PIND,piña indstria,1.5 - 2.5,502
+199320,canastas,2026-08-05,PE2,piña special 2da,1.5 - 2.5,518
+199321,canastas,2026-08-05,PEBAB,piña special baby,1.5 - 2.5,436
+199322,canastas,2026-08-05,PE2,piña special 2da,1.5 - 2.5,484
+199323,canastas,2026-08-05,PEGUA,piña special guapita,1.5 - 2.5,498
+199324,canastas,2026-08-05,PE3,piña special 3ra,1.5 - 2.5,483
+199325,canastas,2026-08-05,,,,0
+199326,canastas,2026-08-05,,,,0
+199327,canastas,2026-08-05,,,,0
+199328,canastas,2026-08-05,,,,0
+199329,canastas,2026-08-05,,,,0
+199330,canastas,2026-08-05,,,,0
+199331,canastas,2026-08-05,,,,0
+199332,canastas,2026-08-05,,,,0
+199333,canastas,2026-08-05,,,,0
+199334,canastas,2026-08-05,,,,0
+199335,canastas,2026-08-05,,,,0
+199336,canastas,2026-08-05,,,,0
+199337,canastas,2026-08-05,,,,0
+199338,canastas,2026-08-05,,,,0
+199339,canastas,2026-08-05,,,,0
+199340,canastas,2026-08-05,,,,0
+199341,canastas,2026-08-05,,,,0
 199342,,,,,,0
 199343,,,,,,0
 199344,,,,,,0
