@@ -20,6 +20,10 @@ concurrency:
 jobs:
   actualizar:
     runs-on: ubuntu-latest
+    # Limite duro: si algo se cuelga (por ejemplo esperando a que GitHub Pages
+    # termine de desplegar), la corrida se cae sola a los 10 minutos en vez de
+    # quedarse "corriendo" indefinidamente y bloquear la fila para las que siguen.
+    timeout-minutes: 10
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
