@@ -1,22 +1,6 @@
 ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
-199508,canastas,2026-08-12,AD1,Piña AD1,0.0 - 1.0,175
-199509,canastas,2026-08-12,AD1,Piña AD1,0.0 - 1.0,197
+199509,canastas,2026-08-12,AD1,Piña AD1,0.0 - 1.0,45
 199537,canastas,2026-08-12,AD1,Piña AD1,0.0 - 1.0,186
-199538,canastas,2026-08-12,AD1,Piña AD1,0.0 - 1.0,195
-199548,canastas,2026-08-12,AD1,Piña AD1,0.0 - 1.0,186
-199549,canastas,2026-08-12,AD1,Piña AD1,0.0 - 1.0,192
-199550,canastas,2026-08-12,AD1,Piña AD1,0.0 - 1.0,189
-199551,canastas,2026-08-12,AD1,Piña AD1,0.0 - 1.0,136
-199552,canastas,2026-08-12,AD1,Piña AD1,0.0 - 1.0,206
-199553,canastas,2026-08-12,AD1,Piña AD1,0.0 - 1.0,193
-199554,canastas,2026-08-12,AD1,Piña AD1,0.0 - 1.0,219
-199555,canastas,2026-08-12,AD1,Piña AD1,0.0 - 1.0,208
-199570,canastas,2026-08-12,AD1,Piña AD1,0.0 - 1.0,166
-199571,canastas,2026-08-12,AD1,Piña AD1,0.0 - 1.0,188
-199572,canastas,2026-08-12,AD1,Piña AD1,0.0 - 1.0,206
-199573,canastas,2026-08-12,AD1,Piña AD1,0.0 - 1.0,196
-199574,canastas,2026-08-12,AD1,Piña AD1,0.0 - 1.0,200
-199575,canastas,2026-08-12,AD1,Piña AD1,0.0 - 1.0,150
 199583,canastas,2026-08-13,AD2,Piña AD2,1.5,414
 199584,canastas,2026-08-13,AD1,Piña AD1,1.5 - 2.5,554
 199585,canastas,2026-08-13,AD1,Piña AD1,0.0 - 1.0,519
@@ -39,21 +23,21 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 199602,canastas,2026-08-13,AD1,Piña AD1,1.5 - 2.5,559
 199603,canastas,2026-08-13,AD2,Piña AD2,1.5,403
 199604,canastas,2026-08-13,AD1,Piña AD1,0,537
-199605,canastas,2026-08-13,,,,0
-199606,canastas,2026-08-13,,,,0
-199607,canastas,2026-08-13,,,,0
-199608,canastas,2026-08-13,,,,0
-199609,canastas,2026-08-13,,,,0
-199610,canastas,2026-08-13,,,,0
-199611,canastas,2026-08-13,,,,0
-199612,canastas,2026-08-13,,,,0
-199613,canastas,2026-08-13,,,,0
-199614,canastas,2026-08-13,,,,0
-199615,canastas,2026-08-13,,,,0
-199616,canastas,2026-08-13,,,,0
-199617,canastas,2026-08-13,,,,0
-199618,canastas,2026-08-13,,,,0
-199619,canastas,2026-08-13,,,,0
+199605,canastas,2026-08-13,AD1,Piña AD1,1.5 - 2.5,587
+199606,canastas,2026-08-13,AD2,Piña AD2,1.5,419
+199607,canastas,2026-08-13,AD1,Piña AD1,0.0 - 1.0,529
+199608,canastas,2026-08-13,AD1,Piña AD1,3.0 - 4.0,556
+199609,canastas,2026-08-13,AD1,Piña AD1,1,544
+199610,canastas,2026-08-13,AD1,Piña AD1,1,574
+199611,canastas,2026-08-13,AD2,Piña AD2,0.0 - 1.0,499
+199612,canastas,2026-08-13,AD-PIND,AD-piña indstria,1.5 - 2.5,474
+199613,canastas,2026-08-13,AD3,Piña AD3,0.0 - 1.0,500
+199614,canastas,2026-08-13,AD1,Piña AD1,0.0 - 1.0,563
+199615,canastas,2026-08-13,AD2,Piña AD2,1.5,422
+199616,canastas,2026-08-13,AD1,Piña AD1,1.5 - 2.5,582
+199617,canastas,2026-08-13,AD1,Piña AD1,1.5 - 2.5,573
+199618,canastas,2026-08-13,AD1,Piña AD1,1,568
+199619,canastas,2026-08-13,AD2,Piña AD2,1.5 - 2.5,514
 199620,canastas,2026-08-13,,,,0
 199621,canastas,2026-08-13,,,,0
 199622,canastas,2026-08-13,,,,0
