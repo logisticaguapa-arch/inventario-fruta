@@ -18,11 +18,11 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 199574,canastas,2026-08-12,AD1,Piña AD1,0.0 - 1.0,200
 199575,canastas,2026-08-12,AD1,Piña AD1,0.0 - 1.0,150
 199583,canastas,2026-08-13,AD2,Piña AD2,1.5,414
-199584,canastas,2026-08-13,,,,0
-199585,canastas,2026-08-13,,,,0
-199586,canastas,2026-08-13,,,,0
-199587,canastas,2026-08-13,,,,0
-199588,canastas,2026-08-13,,,,0
+199584,canastas,2026-08-13,AD1,Piña AD1,1.5 - 2.5,554
+199585,canastas,2026-08-13,AD1,Piña AD1,0.0 - 1.0,519
+199586,canastas,2026-08-13,AD-PIND,AD-piña indstria,1.5 - 2.5,468
+199587,canastas,2026-08-13,AD1,Piña AD1,1,575
+199588,canastas,2026-08-13,AD1,Piña AD1,1,553
 199589,canastas,2026-08-13,,,,0
 199590,canastas,2026-08-13,,,,0
 199591,canastas,2026-08-13,,,,0
