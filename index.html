@@ -723,10 +723,12 @@ function renderTarjetas(data){
       const mad=getMadurez(calVal);
       const C=getMadClasses(mad);
       const kgM=filas.reduce(function(s,r){return s+(parseFloat(r.KgDisponibles)||0);},0);
+      const clientesGrupo=[...new Set(filas.map(function(r){return getClienteEspecial(r.Calidad, calVal);}).filter(Boolean))];
       html+='<div class="mad-section">';
       html+='<div class="mad-hdr '+C.hdr+'">';
       html+='<span class="'+C.badge+'">'+C.label+'</span>';
       html+='<span class="'+C.badge+'" style="font-size:1.15rem">Grado de maduración '+calValLabel(calVal)+'</span>';
+      if(clientesGrupo.length) html+='<span class="'+C.badge+'">'+clientesGrupo.join(', ')+'</span>';
       html+='<span style="margin-left:auto;background:rgba(0,0,0,0.35);color:#fff;padding:3px 12px;border-radius:20px;font-size:.85rem;font-weight:800">'+Math.round(kgM).toLocaleString('es-CO')+' kg</span>';
       html+='</div>';
       html+='<div class="tam-grid '+C.bg+'">';
