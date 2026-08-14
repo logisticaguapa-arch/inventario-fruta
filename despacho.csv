@@ -16470,9 +16470,9 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-08-13,,R-18696,local sincelejo,Piña ADBABY,ADBABY,262,0,1500,0
 2026-08-13,45669,R-18689,Almacenes Éxito S.A. - Medellin,AL-PE1,AL-PE1,117,0,3000,0
 2026-08-13,45669,R-18689,Almacenes Éxito S.A. - Medellin,AL-PE1,AL-PE1,1500,0,3100,0
-2026-08-14,45673,,Almacenes Éxito S.A. - Medellin,Piña AD1,AD1,581,0,3000,0
-2026-08-14,45673,,Almacenes Éxito S.A. - Medellin,Piña AD1,AD1,404,0,3000,0
-2026-08-14,45673,,Almacenes Éxito S.A. - Medellin,Piña AD1,AD1,584,0,3000,0
+2026-08-14,45673,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,581,0,3000,0
+2026-08-14,45673,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,404,0,3000,0
+2026-08-14,45673,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,584,0,3000,0
 2026-08-14,45673,,Almacenes Éxito S.A. - Medellin,Piña AD1,AD1,538,0,3000,0
 2026-08-14,45673,,Almacenes Éxito S.A. - Medellin,Piña AD1,AD1,548,0,3000,0
 2026-08-14,45673,,Almacenes Éxito S.A. - Medellin,Piña AD1,AD1,537,0,3000,0
@@ -16482,7 +16482,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-08-14,45673,,Almacenes Éxito S.A. - Medellin,Piña AD1,AD1,563,0,3000,0
 2026-08-14,45673,,Almacenes Éxito S.A. - Medellin,Piña AD1,AD1,565,0,3000,0
 2026-08-14,45673,,Almacenes Éxito S.A. - Medellin,Piña AD1,AD1,540,0,3000,0
-2026-08-14,45673,,Almacenes Éxito S.A. - Medellin,Piña AD1,AD1,580,0,3000,0
+2026-08-14,45673,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,580,0,3000,0
 2026-08-14,45673,,Almacenes Éxito S.A. - Medellin,Piña AD1,AD1,325,0,3000,0
 2026-08-14,45673,,Almacenes Éxito S.A. - Medellin,Piña AD1,AD1,571,0,3000,0
 2026-08-14,45673,,Almacenes Éxito S.A. - Medellin,Piña AD1,AD1,569,0,3000,0
@@ -16497,9 +16497,15 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-08-14,,,Aldinsen Gonzalez,AD-piña indstria,AD-PIND,216,0,,0
 2026-08-14,,,Aldinsen Gonzalez,AD-piña indstria,AD-PIND,505,0,,0
 2026-08-14,,,Aldinsen Gonzalez,AD-piña indstria,AD-PIND,459,0,,0
-2026-08-14,,,Aldinsen Gonzalez,AD-piña indstria,AD-PIND,92,0,,0
+2026-08-14,,,Aldinsen Gonzalez,piña indstria,PIND,92,0,,0
 2026-08-14,,,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,100,0,,0
 2026-08-14,,,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,183,0,,0
 2026-08-14,,,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,371,0,,0
 2026-08-14,,,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,286,0,,0
 2026-08-14,,,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,27,0,,44
+2026-08-14,,,jeronimo martins,Piña AD2,AD2,408,0,,0
+2026-08-14,,,jeronimo martins,Piña AD2,AD2,413,0,,0
+2026-08-14,,,jeronimo martins,Piña AD2,AD2,414,0,,0
+2026-08-14,,,jeronimo martins,Piña AD2,AD2,230,0,,0
+2026-08-14,,,jeronimo martins,Piña AD2,AD2,161,0,,0
+2026-08-14,,,jeronimo martins,Piña AD2,AD2,403,0,,0
