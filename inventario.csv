@@ -11,7 +11,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 199689,canastas,2026-08-14,PE1,piña special 1ra,1.5 - 2.5,562
 199690,canastas,2026-08-14,PIND,piña indstria,1.5 - 2.5,477
 199691,canastas,2026-08-14,PE1,piña special 1ra,0.0 - 1.0,569
-199692,canastas,2026-08-14,PE2,piña special 2da,1.5,407
 199693,canastas,2026-08-14,PE1,piña special 1ra,1.5 - 2.5,546
 199694,canastas,2026-08-14,PE2,piña special 2da,1.5 - 2.5,517
 199696,canastas,2026-08-14,PE3,piña special 3ra,0.0 - 1.0,490
@@ -32,8 +31,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 199712,canastas,2026-08-14,PIND,piña indstria,1.5 - 2.5,497
 199713,canastas,2026-08-14,PEBAB,piña special baby,1.5 - 2.5,421
 199714,canastas,2026-08-14,PE1,piña special 1ra,1.5 - 2.5,553
-199715,canastas,2026-08-14,PE2,piña special 2da,1.5,407
-199716,canastas,2026-08-14,PE2,piña special 2da,1.5,412
 199717,canastas,2026-08-14,PE1,piña special 1ra,1.5 - 2.5,566
 199718,canastas,2026-08-14,PE1,piña special 1ra,3.0 - 4.0,522
 199719,canastas,2026-08-14,PE1,piña special 1ra,1.5 - 2.5,536
@@ -45,7 +42,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 199725,canastas,2026-08-14,PE1,piña special 1ra,0.0 - 1.0,553
 199726,canastas,2026-08-14,PEGUA,piña special guapita,1.5 - 2.5,459
 199727,canastas,2026-08-14,PE1,piña special 1ra,1.5 - 2.5,494
-199728,canastas,2026-08-14,PE2,piña special 2da,1.5,400
 199729,canastas,2026-08-14,PE2,piña special 2da,1.5,405
 199730,canastas,2026-08-14,PE2,piña special 2da,1.5,413
 199731,canastas,2026-08-14,PEGUA,piña special guapita,1.5 - 2.5,489
@@ -56,7 +52,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 199737,canastas,2026-08-14,PE1,piña special 1ra,1.5 - 2.5,477
 199738,canastas,2026-08-14,PE2,piña special 2da,1.5 - 2.5,507
 199739,canastas,2026-08-14,PE2,piña special 2da,1.5,410
-199740,canastas,2026-08-14,PE2,piña special 2da,1.5,405
 199741,canastas,2026-08-14,PIND,piña indstria,1.5 - 2.5,456
 199742,canastas,2026-08-14,PE3,piña special 3ra,1.5 - 2.5,490
 199743,canastas,2026-08-14,PE1,piña special 1ra,1.5 - 2.5,590
