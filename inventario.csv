@@ -13,7 +13,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 199672,canastas,2026-08-13,AD2,Piña AD2,1.5,161
 199675,canastas,2026-08-13,AD2,Piña AD2,1.5,230
 199676,canastas,2026-08-13,AD1,Piña AD1,0.0 - 1.0,304
-199683,canastas,2026-08-13,AD-PJUG,AD-piña jugos,3.0 - 4.0,74
 199687,canastas,2026-08-14,AD1,Piña AD1,1.5 - 2.5,521
 199689,canastas,2026-08-14,AD1,Piña AD1,1.5 - 2.5,562
 199690,canastas,2026-08-14,AD-PIND,AD-piña indstria,1.5 - 2.5,477
@@ -63,12 +62,12 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 199737,canastas,2026-08-14,AD1,Piña AD1,1.5 - 2.5,477
 199738,canastas,2026-08-14,AD2,Piña AD2,1.5 - 2.5,507
 199739,canastas,2026-08-14,AD2,Piña AD2,1.5,410
-199740,canastas,2026-08-14,,,,0
-199741,canastas,2026-08-14,,,,0
-199742,canastas,2026-08-14,,,,0
-199743,canastas,2026-08-14,,,,0
-199744,canastas,2026-08-14,,,,0
-199745,canastas,2026-08-14,,,,0
+199740,canastas,2026-08-14,AD2,Piña AD2,1.5,405
+199741,canastas,2026-08-14,AD-PIND,AD-piña indstria,1.5 - 2.5,456
+199742,canastas,2026-08-14,AD3,Piña AD3,1.5 - 2.5,490
+199743,canastas,2026-08-14,AD1,Piña AD1,1.5 - 2.5,590
+199744,canastas,2026-08-14,AD-PIND,AD-piña indstria,1.5 - 2.5,467
+199745,canastas,2026-08-14,AD1,Piña AD1,1.5 - 2.5,580
 199746,canastas,2026-08-14,,,,0
 199747,canastas,2026-08-14,,,,0
 199748,canastas,2026-08-14,,,,0
