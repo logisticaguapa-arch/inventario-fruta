@@ -36,7 +36,7 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 199637,canastas,2026-08-13,AD1,Piña AD1,1,567
 199638,canastas,2026-08-13,AD1,Piña AD1,1,541
 199640,canastas,2026-08-13,AD2,Piña AD2,1.5,413
-199641,canastas,2026-08-13,AD1,Piña AD1,0,483
+199641,canastas,2026-08-13,AD1,Piña AD1,1.5 - 2.5,483
 199642,canastas,2026-08-13,ADGUA,Piña ADGUA,1.5 - 2.5,477
 199643,canastas,2026-08-13,AD2,Piña AD2,1.5 - 2.5,521
 199644,canastas,2026-08-13,AD2,Piña AD2,1.5,408
@@ -46,22 +46,21 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 199648,canastas,2026-08-13,AD-PIND,AD-piña indstria,1.5 - 2.5,481
 199649,canastas,2026-08-13,AD2,Piña AD2,0.0 - 1.0,507
 199650,canastas,2026-08-13,AD1,Piña AD1,1,579
-199651,canastas,2026-08-13,,,,0
-199652,canastas,2026-08-13,,,,0
-199653,canastas,2026-08-13,,,,0
-199654,canastas,2026-08-13,,,,0
-199655,canastas,2026-08-13,,,,0
-199656,canastas,2026-08-13,,,,0
-199657,canastas,2026-08-13,,,,0
-199658,canastas,2026-08-13,,,,0
-199659,canastas,2026-08-13,,,,0
-199660,canastas,2026-08-13,,,,0
-199661,canastas,2026-08-13,,,,0
-199662,canastas,2026-08-13,,,,0
-199663,canastas,2026-08-13,,,,0
-199664,canastas,2026-08-13,,,,0
-199665,canastas,2026-08-13,,,,0
-199666,canastas,2026-08-13,,,,0
+199651,canastas,2026-08-13,AD1,Piña AD1,1,560
+199652,canastas,2026-08-13,AD1,Piña AD1,1,562
+199653,canastas,2026-08-13,AD1,Piña AD1,0.0 - 1.0,576
+199654,canastas,2026-08-13,AD1,Piña AD1,0,541
+199655,canastas,2026-08-13,AD3,Piña AD3,1.5 - 2.5,505
+199656,canastas,2026-08-13,AD1,Piña AD1,1.5 - 2.5,487
+199657,canastas,2026-08-13,AD1,Piña AD1,1,570
+199659,canastas,2026-08-13,AD1,Piña AD1,1,257
+199660,canastas,2026-08-13,AD1,Piña AD1,3.0 - 4.0,580
+199661,canastas,2026-08-13,AD-PJUG,AD-piña jugos,3.0 - 4.0,102
+199662,canastas,2026-08-13,AD1,Piña AD1,1.5 - 2.5,397
+199663,canastas,2026-08-13,AD-PIND,AD-piña indstria,1.5 - 2.5,218
+199664,canastas,2026-08-13,AD2,Piña AD2,1.5,403
+199665,canastas,2026-08-13,ADGUA,Piña ADGUA,1.5 - 2.5,517
+199666,canastas,2026-08-13,AD1,Piña AD1,1.5 - 2.5,161
 199667,canastas,2026-08-13,,,,0
 199668,canastas,2026-08-13,,,,0
 199669,canastas,2026-08-13,,,,0
