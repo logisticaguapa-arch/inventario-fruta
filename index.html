@@ -62,6 +62,7 @@ header h1 span{color:#64748b;font-size:.8rem;font-weight:400;margin-left:8px}
 .msel-actions button:hover{background:#f1f5f9;color:#1e293b;border-color:#94a3b8}
 .msel-search{position:sticky;top:0;z-index:1;width:100%;box-sizing:border-box;padding:8px 10px;margin-bottom:6px;border:1px solid #e2e8f0;border-radius:6px;font-size:.85rem;font-family:inherit;background:#fff;color:#1e293b}
 .msel-search:focus{outline:none;border-color:#22c55e}
+.cliente-esp-badge{display:inline-block;background:#7c3aed;color:#fff;font-size:.62rem;font-weight:800;padding:1px 7px;border-radius:10px;margin-left:6px;vertical-align:middle;letter-spacing:.3px}
 
 /* ── Selector de fecha (Facturacion) ── */
 .fact-date-wrap{display:flex;flex-direction:column;gap:3px}
@@ -331,6 +332,29 @@ function calValLabel(c){
   const s=String(c==null?'':c).trim();
   if(s==='') return '(Sin grado de maduración)';
   return s.replace(/,/g,'.');
+}
+
+// Clientes especiales: ciertas combinaciones de Calibre (tamaño) + Grado de
+// maduración van reservadas a un cliente puntual (Exito, Carulla, Ara) y se
+// separan visualmente del resto del inventario. Es SOLO una etiqueta visual
+// en el tablero -- no cambia los datos, el CSV, ni ningun calculo.
+const CLIENTES_ESPECIALES = [
+  {calidad:'AD1', calibre:'0',   cliente:'CARULLA'},
+  {calidad:'PE1', calibre:'0',   cliente:'CARULLA'},
+  {calidad:'AD1', calibre:'1',   cliente:'EXITO'},
+  {calidad:'PE1', calibre:'1',   cliente:'EXITO'},
+  {calidad:'PE2', calibre:'1.5', cliente:'ARA'},
+  {calidad:'AD2', calibre:'1.5', cliente:'ARA'}
+];
+function getClienteEspecial(calidad, calVal){
+  const cd  = String(calidad||'').trim().toUpperCase();
+  const cal = String(calVal==null?'':calVal).trim().replace(/,/g,'.');
+  const m = CLIENTES_ESPECIALES.find(function(r){return r.calidad===cd && r.calibre===cal;});
+  return m ? m.cliente : null;
+}
+function clienteBadgeHtml(cliente){
+  if(!cliente) return '';
+  return ' <span class="cliente-esp-badge">'+cliente+'</span>';
 }
 
 function getMadClasses(mad){
@@ -713,8 +737,9 @@ function renderTarjetas(data){
         return {tam:tam,ft:ft,kgT:kgT};
       }).sort(function(a,b){return b.kgT-a.kgT;});
       tamsOrdenados.forEach(function(to){
+        const clienteEsp=getClienteEspecial(to.tam, calVal);
         html+='<div class="tam-card '+C.card+'">';
-        html+='<div class="tam-name" style="font-size:1.15rem;font-weight:800;color:#0f172a;margin-bottom:3px">'+(TAM_NAMES[to.tam]||to.tam)+'</div>';
+        html+='<div class="tam-name" style="font-size:1.15rem;font-weight:800;color:#0f172a;margin-bottom:3px">'+(TAM_NAMES[to.tam]||to.tam)+clienteBadgeHtml(clienteEsp)+'</div>';
         html+='<div style="font-size:1.35rem;font-weight:800;color:#1e293b;margin-top:4px">'+Math.round(to.kgT).toLocaleString('es-CO')+' kg</div>';
         html+='<div style="font-size:.92rem;font-weight:800;color:#1e293b;margin-top:5px">'+to.ft.length+' estiba'+(to.ft.length>1?'s':'')+'</div>';
         html+='</div>';
@@ -768,7 +793,8 @@ function renderTabla(dataOriginal){
     if(!filas.length) return;
     html+='<tr class="mad-group-hdr"><td class="left" colspan="'+(fechas.length+2)+'" style="background:'+bgH+';color:'+fgH+'">'+C.label+' &mdash; grado de maduración '+calValLabel(calVal)+'</td></tr>';
     filas.forEach(function(fi){
-      let row='<tr><td class="left" style="padding-left:20px;color:#1e293b;font-weight:700">'+(TAM_NAMES[fi.tam]||fi.tam)+'</td>';
+      const clienteEsp=getClienteEspecial(fi.tam, calVal);
+      let row='<tr><td class="left" style="padding-left:20px;color:#1e293b;font-weight:700">'+(TAM_NAMES[fi.tam]||fi.tam)+clienteBadgeHtml(clienteEsp)+'</td>';
       fechas.forEach(function(f){
         const kg=fi.kgPorFecha[f];
         if(kg>0) row+='<td class="'+C.cell+'">'+Math.round(kg).toLocaleString('es-CO')+'</td>';
@@ -830,10 +856,11 @@ function renderBodega(data){
       }).sort(function(a,b){return b.kg-a.kg;});
       const bgC = madBg(mad), fgC = madFg(mad);
       tamsOrdenados.forEach(function(to){
+        const clienteEsp=getClienteEspecial(to.tam, calVal);
         html += '<div class="bod-item" style="background:'+bgC+';border-radius:6px;padding:6px 8px;display:flex;align-items:center;gap:8px">';
         html += '<div class="bod-dot" style="background:'+fgC+';width:9px;height:9px;border-radius:50%;flex-shrink:0"></div>';
         html += '<div style="flex:1;font-size:.74rem;font-weight:600;color:'+fgC+'">';
-        html += '<div>'+C.label+' &middot; '+(TAM_NAMES[to.tam]||to.tam)+'</div>';
+        html += '<div>'+C.label+' &middot; '+(TAM_NAMES[to.tam]||to.tam)+clienteBadgeHtml(clienteEsp)+'</div>';
         html += '<div style="font-size:.68rem;font-weight:800;opacity:.9">Grado de maduración '+calValLabel(calVal)+'</div>';
         html += '</div>';
         html += '<div style="font-size:.82rem;font-weight:800;color:'+fgC+'">'+Math.round(to.kg).toLocaleString('es-CO')+' kg</div>';
@@ -866,9 +893,10 @@ function renderBines(data){
     const accent = madBg(mad)==='#166534'?'#16a34a':madBg(mad);
     const txt = madTextColor(mad);
     const lbl = mad==='verde'?'Verde':mad==='pintona'?'Pintona':'Madura';
+    const clienteEsp = getClienteEspecial(r.Calidad, r.Calibre);
     html += '<div style="background:#fff;border:1px solid #e2e8f0;border-left:4px solid '+accent+';border-radius:8px;padding:10px 14px;min-width:160px">';
     html += '<div style="font-size:.95rem;font-weight:800;color:#1e293b">Bin '+r.Bin+'</div>';
-    html += '<div style="font-size:.85rem;color:#475569;margin-top:2px">'+r.Calidad+' &middot; '+r.Nombre+'</div>';
+    html += '<div style="font-size:.85rem;color:#475569;margin-top:2px">'+r.Calidad+' &middot; '+r.Nombre+clienteBadgeHtml(clienteEsp)+'</div>';
     html += '<div style="font-size:.78rem;color:#64748b;margin-top:2px">Proceso: '+fmtF(r.Fecha)+'</div>';
     html += '<div style="font-size:.85rem;font-weight:700;margin-top:3px;color:'+txt+'">'+lbl+' &middot; Grado de maduración '+r.Calibre+'</div>';
     html += '<div style="font-size:.85rem;font-weight:700;color:#1e293b;margin-top:2px">'+Math.round(parseFloat(r.KgDisponibles)||0).toLocaleString('es-CO')+' kg</div>';
