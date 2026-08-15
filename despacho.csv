@@ -16514,7 +16514,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-08-14,45676,R-18702,jeronimo martins,piña special 2da,PE2,405,0,3200,0
 2026-08-14,45676,R-18702,jeronimo martins,piña special 2da,PE2,407,0,3200,0
 2026-08-14,45676,R-18702,jeronimo martins,piña special 2da,PE2,400,356,3200,0
-2026-08-14,,,reposicion jeronimo,piña special 2da,PE2,56,184,,0
+2026-08-14,,R-18708,reposicion jeronimo,piña special 2da,PE2,56,184,,0
 2026-08-14,45677,R-18703,KARINA BORJA,Piña AD3,AD3,487,0,900,0
 2026-08-14,45677,R-18703,KARINA BORJA,piña special 3ra,PE3,489,0,900,1
 2026-08-14,45677,R-18703,KARINA BORJA,piña special 3ra,PE3,480,0,900,0
@@ -16572,4 +16572,4 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-08-14,,R-18707,local sincelejo,piña special 2da,PE2,506,0,2600,0
 2026-08-14,,R-18707,local sincelejo,piña special 3ra,PE3,487,0,2200,0
 2026-08-14,,R-18707,local sincelejo,piña special 1ra,PE1,562,438,2800,0
-2026-08-14,,,venta empleados,piña special 1ra,PE1,107,0,,0
+2026-08-14,45678,R-18709,venta empleados,piña special 1ra,PE1,107,0,2200,0
