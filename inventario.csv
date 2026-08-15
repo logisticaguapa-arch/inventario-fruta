@@ -1,5 +1,4 @@
 ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
-199697,canastas,2026-08-14,PE2,piña special 2da,0.0 - 1.0,514
 199701,canastas,2026-08-14,PE1,piña special 1ra,1.5 - 2.5,111
 199704,canastas,2026-08-14,PE2,piña special 2da,1.5,406
 199705,canastas,2026-08-14,PE2,piña special 2da,1.5,400
@@ -11,26 +10,16 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 199742,canastas,2026-08-14,PE3,piña special 3ra,3.0 - 4.0,490
 199751,canastas,2026-08-14,PE2,piña special 2da,1.5,229
 199755,canastas,2026-08-14,PE1,piña special 1ra,1.5 - 2.5,110
-199756,canastas,2026-08-14,PE2,piña special 2da,0.0 - 1.0,505
-199762,canastas,2026-08-14,PE1,piña special 1ra,0.0 - 1.0,551
-199764,canastas,2026-08-14,AD1,Piña AD1,0.0 - 1.0,552
-199765,canastas,2026-08-14,AD1,Piña AD1,0.0 - 1.0,499
-199766,canastas,2026-08-14,AD1,Piña AD1,0.0 - 1.0,504
-199768,canastas,2026-08-14,AD1,Piña AD1,0.0 - 1.0,502
-199770,canastas,2026-08-14,AD1,Piña AD1,0.0 - 1.0,499
-199777,canastas,2026-08-14,AD1,Piña AD1,0.0 - 1.0,499
+199756,canastas,2026-08-14,PE2,piña special 2da,0.0 - 1.0,85
 199779,canastas,2026-08-14,AD3,Piña AD3,1.5 - 2.5,488
 199783,canastas,2026-08-14,AD1,Piña AD1,1.5 - 2.5,323
-199785,canastas,2026-08-14,AD1,Piña AD1,0.0 - 1.0,276
 199786,canastas,2026-08-14,AD1,Piña AD1,1.5 - 2.5,359
 199793,canastas,2026-08-14,AD2,Piña AD2,0.0 - 1.0,519
-199796,canastas,2026-08-14,AD1,Piña AD1,0.0 - 1.0,420
 199797,canastas,2026-08-14,AD3,Piña AD3,0.0 - 1.0,552
 199798,canastas,2026-08-14,PE3,piña special 3ra,1.5 - 2.5,158
 199801,canastas,2026-08-14,PE1,piña special 1ra,1.5 - 2.5,99
 199802,canastas,2026-08-14,PEBAB,piña special baby,1.5 - 2.5,214
 199804,canastas,2026-08-14,AD2,Piña AD2,0.0 - 1.0,415
-199810,canastas,2026-08-14,AD1,Piña AD1,0.0 - 1.0,93
 199811,canastas,2026-08-14,PE2,piña special 2da,1.5,183
 199816,canastas,2026-08-15,PE1,piña special 1ra,1.5 - 2.5,572
 199817,canastas,2026-08-15,PE1,piña special 1ra,3.0 - 4.0,546
@@ -70,21 +59,20 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 199851,canastas,2026-08-15,PE3,piña special 3ra,1.5 - 2.5,486
 199852,canastas,2026-08-15,PE1,piña special 1ra,1.5 - 2.5,554
 199853,canastas,2026-08-15,PE1,piña special 1ra,0,528
-199854,canastas,2026-08-15,,,,0
-199855,canastas,2026-08-15,,,,0
-199856,canastas,2026-08-15,,,,0
-199857,canastas,2026-08-15,,,,0
-199858,canastas,2026-08-15,,,,0
-199859,canastas,2026-08-15,,,,0
-199860,canastas,2026-08-15,,,,0
-199861,canastas,2026-08-15,,,,0
-199862,canastas,2026-08-15,,,,0
-199863,canastas,2026-08-15,,,,0
-199864,canastas,2026-08-15,,,,0
-199865,canastas,2026-08-15,,,,0
-199866,canastas,2026-08-15,,,,0
-199867,canastas,2026-08-15,,,,0
-199868,canastas,2026-08-15,,,,0
+199854,canastas,2026-08-15,PE1,piña special 1ra,1,554
+199855,canastas,2026-08-15,PE1,piña special 1ra,3.0 - 4.0,548
+199856,canastas,2026-08-15,PE1,piña special 1ra,1.5 - 2.5,544
+199857,canastas,2026-08-15,PE2,piña special 2da,1.5 - 2.5,524
+199858,canastas,2026-08-15,PE1,piña special 1ra,0.0 - 1.0,550
+199859,canastas,2026-08-15,PE2,piña special 2da,0.0 - 1.0,498
+199860,canastas,2026-08-15,PIND,piña indstria,1.5 - 2.5,459
+199861,canastas,2026-08-15,PE1,piña special 1ra,1.5 - 2.5,550
+199862,canastas,2026-08-15,PEGUA,piña special guapita,1.5 - 2.5,497
+199863,canastas,2026-08-15,PE2,piña special 2da,1.5 - 2.5,515
+199865,canastas,2026-08-15,PE2,piña special 2da,0.0 - 1.0,506
+199866,canastas,2026-08-15,PE1,piña special 1ra,1.5 - 2.5,545
+199867,canastas,2026-08-15,PE1,piña special 1ra,1,645
+199868,canastas,2026-08-15,PEGUA,piña special guapita,1.5 - 2.5,479
 199869,canastas,2026-08-15,,,,0
 199870,canastas,2026-08-15,,,,0
 199871,canastas,2026-08-15,,,,0
