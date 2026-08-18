@@ -16622,12 +16622,12 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-08-15,,R-18714,cartagena,piña special 1ra,PE1,546,0,3000,0
 2026-08-15,,R-18714,cartagena,Piña AD1,AD1,85,0,3000,0
 2026-08-15,,R-18714,cartagena,piña special 1ra,PE1,96,0,3000,0
-2026-08-15,45687,R-18719,jeronimo martins,piña special 2da,PE2,400,0,3800,0
-2026-08-15,45687,R-18719,jeronimo martins,piña special 2da,PE2,405,0,3800,0
-2026-08-15,45687,R-18719,jeronimo martins,piña special 2da,PE2,410,0,3800,0
-2026-08-15,45687,R-18719,jeronimo martins,piña special 2da,PE2,229,0,3800,0
-2026-08-15,45687,R-18719,jeronimo martins,piña special 2da,PE2,406,130,3800,0
-2026-08-15,,R-18722,reposicion jeronimo,piña special 2da,PE2,53,86,,0
+2026-08-15,45687,R-18719,jeronimo martins,piña special 1ra,PE1,400,0,3800,0
+2026-08-15,45687,R-18719,jeronimo martins,piña special 1ra,PE1,405,0,3800,0
+2026-08-15,45687,R-18719,jeronimo martins,piña special 1ra,PE1,410,0,3800,0
+2026-08-15,45687,R-18719,jeronimo martins,piña special 1ra,PE1,229,0,3800,0
+2026-08-15,45687,R-18719,jeronimo martins,piña special 1ra,PE1,406,130,3800,0
+2026-08-15,,R-18722,reposicion jeronimo,piña special 1ra,PE1,53,86,,0
 2026-08-15,45683,R-18715,Aldinsen Gonzalez,piña indstria,PIND,471,0,1000,0
 2026-08-15,45683,R-18715,Aldinsen Gonzalez,piña indstria,PIND,456,0,1000,0
 2026-08-15,45683,R-18715,Aldinsen Gonzalez,piña indstria,PIND,456,0,1000,0
@@ -16650,19 +16650,19 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-08-15,45684,R-18716,camilo quiñones,piña special 1ra,PE1,542,0,2400,0
 2026-08-15,45684,R-18716,camilo quiñones,piña special 1ra,PE1,556,0,2400,0
 2026-08-15,45684,R-18716,camilo quiñones,piña special 1ra,PE1,260,0,2400,5
-2026-08-15,45685,R-17817,KARINA BORJA,piña special 1ra,PE1,545,0,2300,8
-2026-08-15,45685,R-17817,KARINA BORJA,piña special 1ra,PE1,505,0,2300,0
-2026-08-15,45685,R-17817,KARINA BORJA,piña special 1ra,PE1,556,0,2300,0
-2026-08-15,45685,R-17817,KARINA BORJA,piña special 1ra,PE1,409,0,2300,0
-2026-08-15,45685,R-17817,KARINA BORJA,piña special 1ra,PE1,337,0,2300,0
-2026-08-15,45685,R-17817,KARINA BORJA,piña special 2da,PE2,502,0,2100,4
-2026-08-15,45685,R-17817,KARINA BORJA,piña special 2da,PE2,635,0,2100,0
-2026-08-15,45685,R-17817,KARINA BORJA,piña special 2da,PE2,508,0,2100,0
-2026-08-15,45685,R-17817,KARINA BORJA,piña special 2da,PE2,497,0,2100,0
-2026-08-15,45685,R-17817,KARINA BORJA,piña special 1ra,PE1,516,0,2300,8
-2026-08-15,45685,R-17817,KARINA BORJA,piña special 1ra,PE1,553,0,2300,0
-2026-08-15,45685,R-17817,KARINA BORJA,piña special 1ra,PE1,543,0,2300,0
-2026-08-15,45685,R-17817,KARINA BORJA,piña special 1ra,PE1,567,309,2300,0
+2026-08-15,45685,R-18717,KARINA BORJA,piña special 1ra,PE1,545,0,2300,8
+2026-08-15,45685,R-18717,KARINA BORJA,piña special 1ra,PE1,505,0,2300,0
+2026-08-15,45685,R-18717,KARINA BORJA,piña special 1ra,PE1,556,0,2300,0
+2026-08-15,45685,R-18717,KARINA BORJA,piña special 1ra,PE1,409,0,2300,0
+2026-08-15,45685,R-18717,KARINA BORJA,piña special 1ra,PE1,337,0,2300,0
+2026-08-15,45685,R-18717,KARINA BORJA,piña special 2da,PE2,502,0,2100,4
+2026-08-15,45685,R-18717,KARINA BORJA,piña special 2da,PE2,635,0,2100,0
+2026-08-15,45685,R-18717,KARINA BORJA,piña special 2da,PE2,508,0,2100,0
+2026-08-15,45685,R-18717,KARINA BORJA,piña special 2da,PE2,497,0,2100,0
+2026-08-15,45685,R-18717,KARINA BORJA,piña special 1ra,PE1,516,0,2300,8
+2026-08-15,45685,R-18717,KARINA BORJA,piña special 1ra,PE1,553,0,2300,0
+2026-08-15,45685,R-18717,KARINA BORJA,piña special 1ra,PE1,543,0,2300,0
+2026-08-15,45685,R-18717,KARINA BORJA,piña special 1ra,PE1,567,309,2300,0
 2026-08-15,,R-18718,local sincelejo,piña special 1ra,PE1,550,450,2800,2
 2026-08-15,,R-18718,local sincelejo,piña special 2da,PE2,504,0,2600,3
 2026-08-15,,R-18718,local sincelejo,piña special 2da,PE2,508,488,2600,0
