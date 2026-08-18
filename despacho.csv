@@ -16295,7 +16295,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-08-11,45662,R-18679,Almacenes Éxito S.A. - Medellin,AL-PE1,AL-PE1,1882,0,3000,0
 2026-08-11,45662,R-18679,Almacenes Éxito S.A. - Medellin,AL-PE1,AL-PE1,1096,0,3100,0
 2026-08-11,45664,R-18680,jeronimo martins,AL-PE2,AL-PE2,1043,717,3200,0
-2026-08-11,45665,R-18681,jeronimo martins,AL-PE2,AL-PE2,757,0,3200,0
+2026-08-11,45665,R-18681,jeronimo martins,piña special 2da,PE2,757,0,3200,0
 2026-08-11,45665,R-18681,jeronimo martins,AL-PE2,AL-PE2,1003,0,3200,0
 2026-08-11,45666,R-18684,jeronimo martins,AL-PE2,AL-PE2,1760,0,3200,0
 2026-08-11,,R-18685,reposicion jeronimo,AL-PE2,AL-PE2,53,0,,0
@@ -16767,3 +16767,4 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-08-17,,R-18726,local sincelejo,piña special guapita,PEGUA,392,0,2200,0
 2026-08-17,,R-18726,local sincelejo,piña special guapita,PEGUA,213,0,2200,0
 2026-08-17,,R-18726,local sincelejo,piña special baby,PEBAB,392,0,1500,0
+2026-08-12,,R-18728,local medellin,AL-PE2,AL-PE2,296,0,3600,0
