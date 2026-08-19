@@ -260,9 +260,9 @@ table.ftable .ftotal-row td{color:#052e16!important}
 </div>
 
 <div class="bar" id="barFact" style="display:none">
-  <div class="fact-date-wrap">
-    <label for="factFechaInput" class="fact-date-label">Fecha de despacho</label>
-    <input type="date" id="factFechaInput" class="fact-date-input" onchange="onFactFechaChange(this)">
+  <div class="msel" id="selFactFec">
+    <button type="button" class="msel-btn" onclick="toggleMsel('selFactFec')"><span class="msel-label">Fecha de despacho</span><span class="msel-arrow">▾</span></button>
+    <div class="msel-panel" id="selFactFec-panel"></div>
   </div>
   <div class="msel" id="selFactCli">
     <button type="button" class="msel-btn" onclick="toggleMsel('selFactCli')"><span class="msel-label">Todos los clientes</span><span class="msel-arrow">▾</span></button>
@@ -474,18 +474,19 @@ function parseCSV(t){
 }
 
 // ── Filtros multi-seleccion ──────────────────────────────────────────────
-const filtros={cal:[],tam:[],fec:[],factFecha:'',factCli:[],factCal:[],descFec:[],descCat:[]};
+const filtros={cal:[],tam:[],fec:[],factFecha:[],factCli:[],factCal:[],descFec:[],descCat:[]};
 const MSEL_DEF={
   selCal:{key:'cal',placeholder:'Grado de maduración'},
   selTam:{key:'tam',placeholder:'Calibre'},
   selFec:{key:'fec',placeholder:'Fecha'},
+  selFactFec:{key:'factFecha',placeholder:'Fecha de despacho'},
   selFactCli:{key:'factCli',placeholder:'Todos los clientes'},
   selFactCal:{key:'factCal',placeholder:'Todos los grados de maduración'},
   selDescFec:{key:'descFec',placeholder:'Todas las fechas'},
   selDescCat:{key:'descCat',placeholder:'Todas las categorias'}
 };
 // -- Filtros de fecha con arbol Año / Mes / Semana / Fecha (estilo Power BI) --
-const FECHA_TREE_IDS=['selFec','selDescFec'];
+const FECHA_TREE_IDS=['selFec','selFactFec','selDescFec'];
 const MES_NOMBRES=['','Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
 function anioDe(f){ return f.includes('/') ? f.split('/')[2] : f.split('-')[0]; }
 function mesDe(f){ const m = f.includes('/') ? f.split('/')[1] : f.split('-')[1]; return String(parseInt(m,10)).padStart(2,'0'); }
@@ -509,10 +510,6 @@ function fechaISO(d){
 function ayerISO(){
   const d=new Date(); d.setDate(d.getDate()-1);
   return fechaISO(d);
-}
-function onFactFechaChange(input){
-  filtros.factFecha = input.value;
-  render();
 }
 const CALIBRE_OPCIONES=[
   {value:'0',label:'0 · Verde'},
@@ -767,13 +764,16 @@ function buildFilters(){
 function buildFacturaFiltros(){
   const clientes=[...new Set(DESPACHO.map(r=>r.Cliente).filter(c=>c))].sort();
   const calibres=[...new Set(DESPACHO.map(r=>r.Calibre).filter(c=>c))].sort(function(a,b){return parseFloat(a.replace(',','.'))-parseFloat(b.replace(',','.'));});
+  const fechas=[...new Set(DESPACHO.map(r=>r.FechaDespacho).filter(f=>f))].sort();
   fillMsel('selFactCli',clientes.map(c=>({value:c,label:c})));
   fillMsel('selFactCal',calibres.map(c=>({value:c,label:c.replace(',','.')})));
 
   // -- Fecha: por defecto el dia anterior a hoy, solo la primera vez (no pisar la eleccion del usuario en recargas automaticas) --
-  if(!filtros.factFecha) filtros.factFecha=ayerISO();
-  const inputFecha=document.getElementById('factFechaInput');
-  if(inputFecha) inputFecha.value=filtros.factFecha;
+  if(!filtros.factFecha.length){
+    const y=ayerISO();
+    if(fechas.includes(y)) filtros.factFecha=[y];
+  }
+  buildFechaMsel('selFactFec',fechas);
 }
 function reset(){
   ['cal','tam','fec'].forEach(k=>filtros[k]=[]);
@@ -783,9 +783,10 @@ function reset(){
 function resetFactura(){
   ['factCli','factCal'].forEach(k=>filtros[k]=[]);
   ['selFactCli','selFactCal'].forEach(id=>{fillMselKeep(id);});
-  filtros.factFecha=ayerISO();
-  const inputFecha=document.getElementById('factFechaInput');
-  if(inputFecha) inputFecha.value=filtros.factFecha;
+  const fechas=[...new Set(DESPACHO.map(r=>r.FechaDespacho).filter(f=>f))].sort();
+  const y=ayerISO();
+  filtros.factFecha = fechas.includes(y) ? [y] : [];
+  buildFechaMsel('selFactFec',fechas);
   render();
 }
 function buildDescarteFiltros(){
@@ -811,7 +812,7 @@ function filtered(){
 }
 function filteredFacturacion(){
   const fecha=filtros.factFecha,c=filtros.factCli,cal=filtros.factCal;
-  return DESPACHO.filter(r=>(!fecha||r.FechaDespacho===fecha)&&(!c.length||c.includes(r.Cliente))&&(!cal.length||cal.includes(r.Calibre)));
+  return DESPACHO.filter(r=>(!fecha.length||fecha.includes(r.FechaDespacho))&&(!c.length||c.includes(r.Cliente))&&(!cal.length||cal.includes(r.Calibre)));
 }
 function filteredDescarte(){
   const f=filtros.descFec,cat=filtros.descCat;
@@ -1253,6 +1254,19 @@ function construirFilasExportFacturacion(data){
   return filas;
 }
 const FACT_EXPORT_HEADERS=['Remision','Factura','Cliente','Categoria','Kilos Final','Reposicion Kilos','Promedio Precio'];
+// -- Ahora factFecha es multi-seleccion (arbol Año/Mes/Semana/Fecha) en vez de un solo dia --
+function factFechaEtiqueta(){
+  const f=filtros.factFecha;
+  if(!f.length) return 'todas las fechas';
+  if(f.length===1) return fmtF(f[0]);
+  return f.length+' fechas seleccionadas';
+}
+function factFechaArchivo(){
+  const f=filtros.factFecha;
+  if(!f.length) return 'todas';
+  if(f.length===1) return f[0];
+  return 'multiples-fechas';
+}
 
 function exportExcelFacturacion(){
   const data=filteredFacturacion();
@@ -1261,7 +1275,7 @@ function exportExcelFacturacion(){
   const ws=XLSX.utils.aoa_to_sheet([FACT_EXPORT_HEADERS].concat(filas));
   const wb=XLSX.utils.book_new();
   XLSX.utils.book_append_sheet(wb,ws,'Facturacion');
-  XLSX.writeFile(wb,'Facturacion_'+(filtros.factFecha||'todas')+'.xlsx');
+  XLSX.writeFile(wb,'Facturacion_'+factFechaArchivo()+'.xlsx');
 }
 
 function exportPDFFacturacion(){
@@ -1270,9 +1284,9 @@ function exportPDFFacturacion(){
   const filas=construirFilasExportFacturacion(data);
   const doc=new jspdf.jsPDF({orientation:'landscape'});
   doc.setFontSize(14);
-  doc.text('Facturacion - '+(filtros.factFecha?fmtF(filtros.factFecha):'todas las fechas'),14,16);
+  doc.text('Facturacion - '+factFechaEtiqueta(),14,16);
   doc.autoTable({head:[FACT_EXPORT_HEADERS],body:filas,startY:22,styles:{fontSize:8},headStyles:{fillColor:[30,41,59]}});
-  doc.save('Facturacion_'+(filtros.factFecha||'todas')+'.pdf');
+  doc.save('Facturacion_'+factFechaArchivo()+'.pdf');
 }
 
 // -- Exportar Descarte (Excel / PDF): misma agrupacion Fecha+Categoria+Cliente que renderDescarte --
