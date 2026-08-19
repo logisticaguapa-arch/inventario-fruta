@@ -16775,13 +16775,13 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-08-18,,,descarte,piña special 1ra,PE1,0,0,,545
 2026-08-18,,,descarte,piña special 1ra,PE1,0,0,,85
 2026-08-18,,,descarte,Piña AD1,AD1,0,0,,38
-2026-08-19,,,local apartado,Piña AD1,AD1,210,0,,0
-2026-08-19,,,local apartado,Piña AD1,AD1,218,0,,0
-2026-08-19,,,local apartado,Piña AD1,AD1,217,0,,0
-2026-08-19,,,local apartado,Piña AD1,AD1,222,0,,0
-2026-08-19,,,local apartado,Piña AD1,AD1,221,0,,0
-2026-08-19,,,local apartado,Piña AD1,AD1,211,0,,0
-2026-08-19,,,local apartado,Piña AD1,AD1,83,0,,0
-2026-08-19,,,local apartado,Piña AD1,AD1,226,0,,0
-2026-08-19,,,local apartado,Piña AD1,AD1,238,0,,0
-2026-08-19,,,local apartado,Piña AD1,AD1,154,0,,0
+2026-08-19,,R-18730,local apartado,Piña AD1,AD1,210,0,3200,0
+2026-08-19,,R-18730,local apartado,Piña AD1,AD1,218,0,3200,0
+2026-08-19,,R-18730,local apartado,Piña AD1,AD1,217,0,3200,0
+2026-08-19,,R-18730,local apartado,Piña AD1,AD1,222,0,3200,0
+2026-08-19,,R-18730,local apartado,Piña AD1,AD1,221,0,3200,0
+2026-08-19,,R-18730,local apartado,Piña AD1,AD1,211,0,3200,0
+2026-08-19,,R-18730,local apartado,Piña AD1,AD1,83,0,3200,0
+2026-08-19,,R-18730,local apartado,Piña AD1,AD1,226,0,3200,0
+2026-08-19,,R-18730,local apartado,Piña AD1,AD1,238,0,3200,0
+2026-08-19,,R-18730,local apartado,Piña AD1,AD1,154,0,3200,0
