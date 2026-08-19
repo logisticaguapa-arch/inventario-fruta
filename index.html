@@ -1161,7 +1161,10 @@ function renderInventarioProcesado(data){
   const grupos=Object.keys(totalPorGrupo).sort(function(a,b){return totalPorGrupo[b]-totalPorGrupo[a];});
   grupos.forEach(function(grp){
     html+='<tr class="mad-group-hdr"><td class="left" colspan="'+(calibresPresentes.length+1)+'" style="background:#1e293b;color:#fff">';
-    html+='<span style="font-weight:800">'+grp+'</span>';
+    // -- "GF" antes del numero de grupo: solo se muestra asi en esta tabla, no cambia
+    // el dato ni el filtro (el "(Sin grupo)" de las filas sin dato se deja tal cual). --
+    const grpLabel=grp==='(Sin grupo)'?grp:'GF'+grp;
+    html+='<span style="font-weight:800">'+grpLabel+'</span>';
     html+='<span style="margin-left:14px;font-weight:800;font-size:1.05rem">'+Math.round(totalPorGrupo[grp]).toLocaleString('es-CO')+' kg</span>';
     html+='</td></tr>';
 
