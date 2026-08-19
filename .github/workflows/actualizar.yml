@@ -54,15 +54,32 @@ jobs:
           # tiempo ahorra frente a cargar el libro "completo".
           wb = openpyxl.load_workbook(io.BytesIO(r.content), data_only=True, read_only=True)
 
-          # Leer col B (Bin) de Proceso para cruzar con ID
+          # Leer col B (Bin) de Proceso para cruzar con ID, y de paso armar
+          # procesado.csv con la columna I (Neto) -- ver mas abajo, tras el bucle --
           ws_proc = wb["Proceso"]
           bin_map = {}
+          # -- "Inventario procesado": TODO lo que entro a Proceso (col I - Neto),
+          # sin importar si ya tiene despacho final o no (col N) -- a diferencia de
+          # la hoja Inventario, que solo trae lo que sigue disponible en bodega. --
+          csv3 = "Fecha,Calidad,Calibre,Neto\n"
+          n3 = 0
           for row in ws_proc.iter_rows(min_row=2, values_only=True):
               id_val  = row[0]   # Col A - ID
               bin_val = row[1]   # Col B - Bin
               if id_val:
                   bin_map[str(id_val).strip()] = str(bin_val or "").strip()
 
+              fecha_p   = str(row[2])[:10] if len(row) > 2 and row[2] else ""      # Col C - Fecha
+              calidad_p = str(row[3] or "").replace(",", " ").strip() if len(row) > 3 else ""  # Col D - Calidad
+              calibre_p = ("" if len(row) <= 5 or row[5] is None else str(row[5])).replace(",", ".")  # Col F - Calibre
+              neto_p    = row[8] if len(row) > 8 and row[8] is not None else None  # Col I - Neto
+              if id_val and fecha_p and calidad_p and neto_p is not None:
+                  csv3 += f"{fecha_p},{calidad_p},{calibre_p},{neto_p}\n"
+                  n3 += 1
+
+          with open("procesado.csv", "w", encoding="utf-8") as f:
+              f.write(csv3)
+          print(f"procesado.csv generado: {n3} registros")
           print(f"IDs en Proceso: {len(bin_map)}")
 
           # Leer hoja Inventario
@@ -128,7 +145,7 @@ jobs:
         run: |
           git config user.email "action@github.com"
           git config user.name "GitHub Action"
-          git add inventario.csv despacho.csv
+          git add inventario.csv despacho.csv procesado.csv
           git diff --staged --quiet || git commit -m "Inventario actualizado $(date +'%Y-%m-%d %H:%M')"
           git push origin main --force
 
@@ -138,6 +155,7 @@ jobs:
           cp index.html _site/
           cp inventario.csv _site/
           cp despacho.csv _site/
+          cp procesado.csv _site/
 
       - name: Configurar Pages
         uses: actions/configure-pages@v5
