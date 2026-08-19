@@ -305,6 +305,10 @@ table.ftable .ftotal-row td{color:#052e16!important}
     <button type="button" class="msel-btn" onclick="toggleMsel('selProcFec')"><span class="msel-label">Fecha</span><span class="msel-arrow">▾</span></button>
     <div class="msel-panel" id="selProcFec-panel"></div>
   </div>
+  <div class="msel" id="selProcGrupo">
+    <button type="button" class="msel-btn" onclick="toggleMsel('selProcGrupo')"><span class="msel-label">Grupo</span><span class="msel-arrow">▾</span></button>
+    <div class="msel-panel" id="selProcGrupo-panel"></div>
+  </div>
   <button class="breset" onclick="resetProcesado()">↺ Limpiar</button>
 </div>
 
@@ -454,15 +458,16 @@ function parseProcesadoCSV(t){
       Fecha:(v[0]||'').trim(),
       Calidad:(v[1]||'').trim(),
       Calibre:(v[2]||'').trim(),
-      Neto:parseFloat(v[3])||0
+      Grupo:(v[3]||'').trim(),
+      Neto:parseFloat(v[4])||0
     };
   }).filter(r=>r.Fecha!=='' && r.Calidad!=='');
 }
 function demoProcesado(){return[
-  {Fecha:'2026-08-17',Calidad:'AD1',Calibre:'0,0 - 1,0',Neto:2669},
-  {Fecha:'2026-08-17',Calidad:'AD2',Calibre:'0,0 - 1,0',Neto:802},
-  {Fecha:'2026-08-18',Calidad:'AD1',Calibre:'1,5 - 2,5',Neto:288},
-  {Fecha:'2026-08-18',Calidad:'AD-PJUG',Calibre:'3,0 - 4,0',Neto:255},
+  {Fecha:'2026-08-17',Calidad:'AD1',Calibre:'0,0 - 1,0',Grupo:'Grupo 1',Neto:2669},
+  {Fecha:'2026-08-17',Calidad:'AD2',Calibre:'0,0 - 1,0',Grupo:'Grupo 1',Neto:802},
+  {Fecha:'2026-08-18',Calidad:'AD1',Calibre:'1,5 - 2,5',Grupo:'Grupo 2',Neto:288},
+  {Fecha:'2026-08-18',Calidad:'AD-PJUG',Calibre:'3,0 - 4,0',Grupo:'Grupo 2',Neto:255},
 ];}
 
 function parseDespachoCSV(t){
@@ -519,7 +524,7 @@ function parseCSV(t){
 }
 
 // ── Filtros multi-seleccion ──────────────────────────────────────────────
-const filtros={cal:[],tam:[],fec:[],factFecha:[],factCli:[],factCal:[],descFec:[],descCat:[],procCal:[],procTam:[],procFec:[]};
+const filtros={cal:[],tam:[],fec:[],factFecha:[],factCli:[],factCal:[],descFec:[],descCat:[],procCal:[],procTam:[],procFec:[],procGrupo:[]};
 const MSEL_DEF={
   selCal:{key:'cal',placeholder:'Grado de maduración'},
   selTam:{key:'tam',placeholder:'Calibre'},
@@ -531,7 +536,8 @@ const MSEL_DEF={
   selDescCat:{key:'descCat',placeholder:'Todas las categorias'},
   selProcCal:{key:'procCal',placeholder:'Grado de maduración'},
   selProcTam:{key:'procTam',placeholder:'Calibre'},
-  selProcFec:{key:'procFec',placeholder:'Fecha'}
+  selProcFec:{key:'procFec',placeholder:'Fecha'},
+  selProcGrupo:{key:'procGrupo',placeholder:'Grupo'}
 };
 // -- Filtros de fecha con arbol Año / Mes / Semana / Fecha (estilo Power BI) --
 const FECHA_TREE_IDS=['selFec','selFactFec','selDescFec','selProcFec'];
@@ -851,13 +857,15 @@ function resetDescarte(){
 function buildProcesadoFiltros(){
   const tams=[...new Set(PROCESADO.map(r=>r.Calidad))].sort();
   const fechas=[...new Set(PROCESADO.map(r=>r.Fecha))].sort();
+  const grupos=[...new Set(PROCESADO.map(r=>r.Grupo).filter(g=>g))].sort();
   fillMsel('selProcCal',CALIBRE_OPCIONES);
   fillMsel('selProcTam',tams.map(c=>({value:c,label:(TAM_NAMES[c]||c)+' ('+c+')'})));
   buildFechaMsel('selProcFec',fechas);
+  fillMsel('selProcGrupo',grupos.map(g=>({value:g,label:g})));
 }
 function resetProcesado(){
-  ['procCal','procTam','procFec'].forEach(k=>filtros[k]=[]);
-  ['selProcCal','selProcTam','selProcFec'].forEach(id=>{fillMselKeep(id);});
+  ['procCal','procTam','procFec','procGrupo'].forEach(k=>filtros[k]=[]);
+  ['selProcCal','selProcTam','selProcFec','selProcGrupo'].forEach(id=>{fillMselKeep(id);});
   render();
 }
 function fillMselKeep(id){
@@ -879,8 +887,8 @@ function filteredDescarte(){
   return DESPACHO.filter(r=>(!f.length||f.includes(r.FechaDespacho))&&(!cat.length||cat.includes(r.Categoria)));
 }
 function filteredProcesado(){
-  const cal=filtros.procCal,t=filtros.procTam,f=filtros.procFec;
-  return PROCESADO.filter(r=>(!cal.length||cal.includes(r.Calibre))&&(!t.length||t.includes(r.Calidad))&&(!f.length||f.includes(r.Fecha)));
+  const cal=filtros.procCal,t=filtros.procTam,f=filtros.procFec,g=filtros.procGrupo;
+  return PROCESADO.filter(r=>(!cal.length||cal.includes(r.Calibre))&&(!t.length||t.includes(r.Calidad))&&(!f.length||f.includes(r.Fecha))&&(!g.length||g.includes(r.Grupo)));
 }
 function setView(v){
   currentView=v;
