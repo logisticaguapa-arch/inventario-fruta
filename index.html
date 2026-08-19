@@ -1096,25 +1096,25 @@ function renderTabla(dataOriginal){
 
 // -- INVENTARIO PROCESADO: TODO lo que entro a Proceso (columna Neto), sin importar si
 // ya tiene despacho final o no -- es el "espejo" de Tabla Inventario pero transpuesto:
-// Calibre (tamaño) en filas, ordenadas de mayor a menor, y Grado de maduración en
-// columnas, agrupadas y coloreadas por color igual que Tabla Inventario. --
+// Grupo encima de Calibre (tamaño) en filas -- como una tabla dinamica, cada Grupo
+// de mayor a menor y dentro de el sus Calibres de mayor a menor -- y Grado de
+// maduración en columnas, agrupadas y coloreadas por color igual que Tabla Inventario. --
 function renderInventarioProcesado(data){
   const el=document.getElementById('v-procesado');
   const dataValida=data.filter(function(r){return r.Fecha && r.Fecha.trim()!=='' && r.Calidad && r.Calidad.trim()!=='';});
   if(!dataValida.length){el.innerHTML='<div class="empty">Sin inventario procesado en el periodo seleccionado.</div>';return;}
-  const agg={};          // agg[calVal][tam] = neto
-  const totalPorTam={};  // total por fila (Calibre/tamaño)
-  const totalPorCal={};  // total por columna (Grado de maduración)
+  const agg={};            // agg[grupo][calVal][tam] = neto
+  const totalPorCal={};    // total por columna (Grado de maduración), global
+  const totalPorGrupo={};  // total por grupo (banda superior)
   dataValida.forEach(function(r){
-    const cal=r.Calibre, neto=parseFloat(r.Neto)||0;
-    if(!agg[cal]) agg[cal]={};
-    agg[cal][r.Calidad]=(agg[cal][r.Calidad]||0)+neto;
-    totalPorTam[r.Calidad]=(totalPorTam[r.Calidad]||0)+neto;
+    const grp=r.Grupo||'(Sin grupo)', cal=r.Calibre, neto=parseFloat(r.Neto)||0;
+    if(!agg[grp]) agg[grp]={};
+    if(!agg[grp][cal]) agg[grp][cal]={};
+    agg[grp][cal][r.Calidad]=(agg[grp][cal][r.Calidad]||0)+neto;
     totalPorCal[cal]=(totalPorCal[cal]||0)+neto;
+    totalPorGrupo[grp]=(totalPorGrupo[grp]||0)+neto;
   });
-  // -- Filas (Calibre/tamaño) de mayor a menor por su Neto total --
-  const tams=Object.keys(totalPorTam).sort(function(a,b){return totalPorTam[b]-totalPorTam[a];});
-  // -- Columnas (Grado de maduración) en orden ascendente, agrupadas por color como en Tabla Inventario --
+  // -- Columnas (Grado de maduración) GLOBALES, orden ascendente, agrupadas por color como en Tabla Inventario --
   const calibresPresentes=[...new Set(dataValida.map(function(r){return r.Calibre;}))].sort(function(a,b){
     return parseFloat(String(a).replace(',','.'))-parseFloat(String(b).replace(',','.'));
   });
@@ -1136,15 +1136,15 @@ function renderInventarioProcesado(data){
   const madPctMostrado=new Set();
 
   let html='<table class="ctable"><thead>';
-  html+='<tr><th class="left" rowspan="2">Calibre / Grado de maduración</th>';
-  gruposColor.forEach(function(g){
-    const C=getMadClasses(g.mad);
-    const bgH=madBg(g.mad), fgH=madFg(g.mad);
-    const esPrimeraDelColor=!madPctMostrado.has(g.mad);
-    if(esPrimeraDelColor) madPctMostrado.add(g.mad);
-    const pctColor=grandTotal>0?(((madTotal[g.mad]||0)/grandTotal)*100).toFixed(1).replace('.',','):null;
-    const kgTotalColor=Math.round(madTotal[g.mad]||0).toLocaleString('es-CO');
-    html+='<th colspan="'+g.cols.length+'" style="background:'+bgH+';color:'+fgH+'">';
+  html+='<tr><th class="left" rowspan="2">Grupo / Calibre / Grado de maduración</th>';
+  gruposColor.forEach(function(gc){
+    const C=getMadClasses(gc.mad);
+    const bgH=madBg(gc.mad), fgH=madFg(gc.mad);
+    const esPrimeraDelColor=!madPctMostrado.has(gc.mad);
+    if(esPrimeraDelColor) madPctMostrado.add(gc.mad);
+    const pctColor=grandTotal>0?(((madTotal[gc.mad]||0)/grandTotal)*100).toFixed(1).replace('.',','):null;
+    const kgTotalColor=Math.round(madTotal[gc.mad]||0).toLocaleString('es-CO');
+    html+='<th colspan="'+gc.cols.length+'" style="background:'+bgH+';color:'+fgH+'">';
     html+='<div style="font-size:.78rem">'+C.label+'</div>';
     html+='<div style="font-size:.75rem;font-weight:800;text-transform:none;letter-spacing:0">'+kgTotalColor+' kg'+(esPrimeraDelColor&&pctColor!==null?' &middot; <span style="font-size:.95rem">'+pctColor+'%</span>':'')+'</div>';
     html+='</th>';
@@ -1157,17 +1157,35 @@ function renderInventarioProcesado(data){
   });
   html+='</tr></thead><tbody>';
 
-  tams.forEach(function(t){
-    let row='<tr><td class="left" style="font-weight:700;color:#1e293b">'+(TAM_NAMES[t]||t)+'</td>';
+  // -- Grupos (banda superior, como filas de una tabla dinamica): de mayor a menor por su Neto total --
+  const grupos=Object.keys(totalPorGrupo).sort(function(a,b){return totalPorGrupo[b]-totalPorGrupo[a];});
+  grupos.forEach(function(grp){
+    html+='<tr class="mad-group-hdr"><td class="left" colspan="'+(calibresPresentes.length+1)+'" style="background:#1e293b;color:#fff">';
+    html+='<span style="font-weight:800">'+grp+'</span>';
+    html+='<span style="margin-left:14px;font-weight:800;font-size:1.05rem">'+Math.round(totalPorGrupo[grp]).toLocaleString('es-CO')+' kg</span>';
+    html+='</td></tr>';
+
+    // -- Calibres (tamaño) de ESTE grupo, de mayor a menor por su total dentro del grupo --
+    const totalPorTamGrupo={};
     calibresPresentes.forEach(function(calVal){
-      const mad=getMadurez(calVal);
-      const C=getMadClasses(mad);
-      const v=(agg[calVal]&&agg[calVal][t])||0;
-      if(v>0) row+='<td class="'+C.cell+'">'+Math.round(v).toLocaleString('es-CO')+'</td>';
-      else row+='<td style="color:#ccc">&mdash;</td>';
+      Object.keys((agg[grp]&&agg[grp][calVal])||{}).forEach(function(t){
+        totalPorTamGrupo[t]=(totalPorTamGrupo[t]||0)+agg[grp][calVal][t];
+      });
     });
-    row+='<td>'+Math.round(totalPorTam[t]||0).toLocaleString('es-CO')+'</td></tr>';
-    html+=row;
+    const tamsGrupo=Object.keys(totalPorTamGrupo).sort(function(a,b){return totalPorTamGrupo[b]-totalPorTamGrupo[a];});
+
+    tamsGrupo.forEach(function(t){
+      let row='<tr><td class="left" style="padding-left:20px;font-weight:700;color:#1e293b">'+(TAM_NAMES[t]||t)+'</td>';
+      calibresPresentes.forEach(function(calVal){
+        const mad=getMadurez(calVal);
+        const C=getMadClasses(mad);
+        const v=(agg[grp]&&agg[grp][calVal]&&agg[grp][calVal][t])||0;
+        if(v>0) row+='<td class="'+C.cell+'">'+Math.round(v).toLocaleString('es-CO')+'</td>';
+        else row+='<td style="color:#ccc">&mdash;</td>';
+      });
+      row+='<td>'+Math.round(totalPorTamGrupo[t]||0).toLocaleString('es-CO')+'</td></tr>';
+      html+=row;
+    });
   });
 
   html+='<tr class="tfoot-row"><td class="left">TOTAL GENERAL</td>';
