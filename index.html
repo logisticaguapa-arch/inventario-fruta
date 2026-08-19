@@ -911,6 +911,13 @@ function renderTabla(dataOriginal){
     if(!agg[r.Fecha][cal]) agg[r.Fecha][cal]={};
     agg[r.Fecha][cal][r.Calidad]=(agg[r.Fecha][cal][r.Calidad]||0)+(parseFloat(r.KgDisponibles)||0);
   });
+  // -- Total de kg por fecha (todos los colores) y total del periodo, para calcular
+  // el % de participacion DIARIA de cada color (verde/pintona/madura) mas abajo --
+  const totalesPorFecha={};
+  fechas.forEach(function(f){
+    totalesPorFecha[f]=Object.values(agg[f]||{}).reduce(function(s,m){return s+Object.values(m).reduce(function(a,b){return a+b;},0);},0);
+  });
+  const grandTotalPeriodo=fechas.reduce(function(s,f){return s+totalesPorFecha[f];},0);
   let html='<table class="ctable"><thead><tr><th class="left">Grado de maduración / Calibre</th>';
   fechas.forEach(function(f){
     const h=horasDesde(f);
@@ -920,6 +927,23 @@ function renderTabla(dataOriginal){
   const calibresPresentes=[...new Set(data.map(function(r){return r.Calibre;}))].sort(function(a,b){
     return parseFloat(String(a).replace(',','.'))-parseFloat(String(b).replace(',','.'));
   });
+  // -- % de participacion AGRUPADO por color (verde/pintona/madura), sumando TODOS
+  // los calibres que caen en ese color (ej. "0", "0.5", "1" y "0,0 - 1,0" son todos
+  // verde) -- no un % distinto por cada valor de calibre. --
+  const madTotalPorFecha={};
+  calibresPresentes.forEach(function(calVal){
+    const mad=getMadurez(calVal);
+    if(!madTotalPorFecha[mad]) madTotalPorFecha[mad]={};
+    fechas.forEach(function(f){
+      const kg=Object.values((agg[f]&&agg[f][calVal])||{}).reduce(function(s,v){return s+v;},0);
+      madTotalPorFecha[mad][f]=(madTotalPorFecha[mad][f]||0)+kg;
+    });
+  });
+  const madGrandTotal={};
+  Object.keys(madTotalPorFecha).forEach(function(mad){
+    madGrandTotal[mad]=fechas.reduce(function(s,f){return s+(madTotalPorFecha[mad][f]||0);},0);
+  });
+  const madPctMostrado=new Set(); // el % solo se muestra en la primera banda de cada color
   calibresPresentes.forEach(function(calVal){
     const mad=getMadurez(calVal);
     const C=getMadClasses(mad);
@@ -937,7 +961,21 @@ function renderTabla(dataOriginal){
       return {tam:tam,total:total,hasData:hasData,kgPorFecha:kgPorFecha};
     }).filter(function(x){return x.hasData;}).sort(function(a,b){return b.total-a.total;});
     if(!filas.length) return;
-    html+='<tr class="mad-group-hdr"><td class="left" colspan="'+(fechas.length+2)+'" style="background:'+bgH+';color:'+fgH+'">'+C.label+' &mdash; grado de maduración '+calValLabel(calVal)+'</td></tr>';
+    // -- % y total en kg del color completo (verde/pintona/madura), no de este
+    // calibre puntual -- el % solo se muestra una vez, en la primera banda de ese
+    // color; el total en kg si se repite en todas sus bandas. --
+    const esPrimeraDelColor=!madPctMostrado.has(mad);
+    if(esPrimeraDelColor) madPctMostrado.add(mad);
+    const pctTotal=grandTotalPeriodo>0?Math.round(((madGrandTotal[mad]||0)/grandTotalPeriodo)*100):null;
+    const kgTotalColor=Math.round(madGrandTotal[mad]||0).toLocaleString('es-CO');
+    // -- El % va aparte, en la columna "Total kg" (solo en la primera banda de cada
+    // color) -- el resto de la banda (titulo + total en kg) sigue igual a la izquierda. --
+    html+='<tr class="mad-group-hdr"><td class="left" colspan="'+(fechas.length+1)+'" style="background:'+bgH+';color:'+fgH+'">';
+    html+='<span style="font-weight:800">'+C.label+' &mdash; grado de maduración '+calValLabel(calVal)+'</span>';
+    html+='<span style="margin-left:14px;font-weight:800;font-size:1.05rem">'+kgTotalColor+' kg</span>';
+    html+='</td>';
+    html+='<td style="background:'+bgH+';color:'+fgH+'">'+(esPrimeraDelColor&&pctTotal!==null?'<span style="font-weight:800;font-size:1.3rem">'+pctTotal+'%</span>':'')+'</td>';
+    html+='</tr>';
     filas.forEach(function(fi){
       const clienteEsp=getClienteEspecial(fi.tam, calVal);
       let row='<tr><td class="left" style="padding-left:20px;color:#1e293b;font-weight:700">'+(TAM_NAMES[fi.tam]||fi.tam)+clienteBadgeHtml(clienteEsp)+'</td>';
@@ -950,14 +988,11 @@ function renderTabla(dataOriginal){
       html+=row;
     });
   });
-  let grand=0;
   html+='<tr class="tfoot-row"><td class="left">TOTAL GENERAL</td>';
   fechas.forEach(function(f){
-    const kg=Object.values(agg[f]||{}).reduce(function(s,m){return s+Object.values(m).reduce(function(a,b){return a+b;},0);},0);
-    grand+=kg;
-    html+='<td>'+Math.round(kg).toLocaleString('es-CO')+'</td>';
+    html+='<td>'+Math.round(totalesPorFecha[f]||0).toLocaleString('es-CO')+'</td>';
   });
-  html+='<td>'+Math.round(grand).toLocaleString('es-CO')+'</td></tr></tbody></table>';
+  html+='<td>'+Math.round(grandTotalPeriodo).toLocaleString('es-CO')+'</td></tr></tbody></table>';
   el.innerHTML=html;
 }
 
