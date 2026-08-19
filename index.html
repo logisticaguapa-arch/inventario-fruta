@@ -62,6 +62,14 @@ header h1 span{color:#64748b;font-size:.8rem;font-weight:400;margin-left:8px}
 .msel-actions button:hover{background:#f1f5f9;color:#1e293b;border-color:#94a3b8}
 .msel-search{position:sticky;top:0;z-index:1;width:100%;box-sizing:border-box;padding:8px 10px;margin-bottom:6px;border:1px solid #e2e8f0;border-radius:6px;font-size:.85rem;font-family:inherit;background:#fff;color:#1e293b}
 .msel-search:focus{outline:none;border-color:#22c55e}
+/* Filtro de fecha estilo Power BI: arbol Año > Semana > Fecha dentro del mismo desplegable */
+.fecha-node{display:flex;align-items:center;gap:7px;padding:6px 9px;border-radius:6px}
+.fecha-node:hover{background:#f1f5f9}
+.fecha-node label{display:flex;align-items:center;gap:9px;cursor:pointer;font-size:.88rem;font-weight:700;color:#1e293b;white-space:nowrap}
+.fecha-node input[type=checkbox]{width:16px;height:16px;accent-color:#22c55e;cursor:pointer;flex-shrink:0}
+.fecha-toggle{cursor:pointer;width:14px;display:inline-block;color:#64748b;font-size:.7rem;user-select:none;flex-shrink:0}
+.fecha-hijos{padding-left:15px;border-left:1px dashed #e2e8f0;margin-left:7px}
+.fecha-hijos-dias label{font-weight:600;padding:7px 9px}
 .cliente-esp-badge{display:inline-block;background:#7c3aed;color:#fff;font-size:.62rem;font-weight:800;padding:1px 7px;border-radius:10px;margin-left:6px;vertical-align:middle;letter-spacing:.3px}
 
 /* ── Selector de fecha (Facturacion) ── */
@@ -279,6 +287,8 @@ table.ftable .ftotal-row td{color:#052e16!important}
     <div class="msel-panel" id="selDescCat-panel"></div>
   </div>
   <button class="breset" onclick="resetDescarte()">↺ Limpiar</button>
+  <button class="bexport" onclick="exportExcelDescarte()">⬇ Exportar a Excel</button>
+  <button class="bexport" onclick="exportPDFDescarte()">⬇ Exportar a PDF</button>
 </div>
 
 <div class="legend" id="legendInv">
@@ -474,6 +484,20 @@ const MSEL_DEF={
   selDescFec:{key:'descFec',placeholder:'Todas las fechas'},
   selDescCat:{key:'descCat',placeholder:'Todas las categorias'}
 };
+// -- Filtros de fecha con arbol Año / Semana / Fecha (estilo Power BI) --
+const FECHA_TREE_IDS=['selFec','selDescFec'];
+function anioDe(f){ return f.includes('/') ? f.split('/')[2] : f.split('-')[0]; }
+function isoWeekInfo(f){
+  let y,m,d;
+  if(f.includes('/')){ [d,m,y]=f.split('/'); } else { [y,m,d]=f.split('-'); }
+  const dt=new Date(Date.UTC(parseInt(y),parseInt(m)-1,parseInt(d)));
+  const dayNum=(dt.getUTCDay()+6)%7;
+  dt.setUTCDate(dt.getUTCDate()-dayNum+3);
+  const firstThursday=new Date(Date.UTC(dt.getUTCFullYear(),0,4));
+  const fdDayNum=(firstThursday.getUTCDay()+6)%7;
+  firstThursday.setUTCDate(firstThursday.getUTCDate()-fdDayNum+3);
+  return {week:1+Math.round((dt-firstThursday)/(7*24*3600*1000))};
+}
 
 // -- Helpers de fecha para el filtro de Facturacion (formato YYYY-MM-DD, igual que el CSV) --
 function fechaISO(d){
@@ -531,6 +555,102 @@ function fillMsel(id,items){
   panel.innerHTML=html;
   updateMselBtn(id);
 }
+// Igual que fillMsel, pero agrupa las fechas en un arbol Año > Semana > Fecha
+// (estilo Power BI): marcar un Año o una Semana marca de una vez todos los
+// dias que contiene; los dias individuales se pueden seguir marcando sueltos.
+function buildFechaMsel(id,fechas){
+  const def=MSEL_DEF[id];
+  const panel=document.getElementById(id+'-panel');
+  panel.dataset.values=JSON.stringify(fechas);
+  if(!fechas.length){panel.innerHTML='<div class="msel-empty">Sin opciones</div>';return;}
+  const conHoras = id==='selFec';
+  const porAnio={};
+  fechas.forEach(function(f){
+    const y=anioDe(f), wk=String(isoWeekInfo(f).week).padStart(2,'0');
+    if(!porAnio[y]) porAnio[y]={};
+    if(!porAnio[y][wk]) porAnio[y][wk]=[];
+    porAnio[y][wk].push(f);
+  });
+  const anios=Object.keys(porAnio).sort().reverse();
+
+  let html='<input type="text" class="msel-search" placeholder="Buscar y Enter para marcar..." oninput="filterMsel(\''+id+'\',this.value)" onclick="event.stopPropagation()" onkeydown="if(event.key===\'Enter\'){event.preventDefault();aceptarBusquedaMsel(\''+id+'\');}">';
+  html+='<div class="msel-actions">';
+  html+='<button type="button" class="msel-btn-todos" onclick="selectAllMsel(\''+id+'\')">Seleccionar todos</button>';
+  html+='<button type="button" onclick="clearMsel(\''+id+'\')">Ninguno</button>';
+  html+='</div>';
+  html+='<div class="msel-opciones">';
+  anios.forEach(function(y){
+    const semanas=Object.keys(porAnio[y]).sort().reverse();
+    const diasAnio=semanas.reduce(function(a,wk){return a.concat(porAnio[y][wk]);},[]);
+    html+='<div class="fecha-node fecha-nivel-anio" data-dias="'+diasAnio.join(',')+'">';
+    html+='<span class="fecha-toggle" onclick="toggleFechaNode(this)">▸</span>';
+    html+='<label><input type="checkbox" onchange="onFechaGroupChange(\''+id+'\',this)"><span>'+y+'</span></label>';
+    html+='</div>';
+    html+='<div class="fecha-hijos" style="display:none">';
+    semanas.forEach(function(wk){
+      const dias=porAnio[y][wk].slice().sort();
+      const rango=fmtF(dias[0])+' - '+fmtF(dias[dias.length-1]);
+      html+='<div class="fecha-node fecha-nivel-semana" data-dias="'+dias.join(',')+'">';
+      html+='<span class="fecha-toggle" onclick="toggleFechaNode(this)">▸</span>';
+      html+='<label><input type="checkbox" onchange="onFechaGroupChange(\''+id+'\',this)"><span>Semana '+wk+' · '+rango+'</span></label>';
+      html+='</div>';
+      html+='<div class="fecha-hijos fecha-hijos-dias" style="display:none">';
+      dias.slice().reverse().forEach(function(f){
+        const checked=filtros[def.key].includes(f)?'checked':'';
+        const lbl=fmtF(f)+(conHoras?(' — '+horasLabel(horasDesde(f))):'');
+        const txt=lbl.toLowerCase().replace(/"/g,'&quot;');
+        html+='<label data-txt="'+txt+'"><input type="checkbox" value="'+f+'" '+checked+' onchange="onMselChange(\''+id+'\',this)">'+lbl+'</label>';
+      });
+      html+='</div>';
+    });
+    html+='</div>';
+  });
+  html+='</div>';
+  panel.innerHTML=html;
+  updateMselBtn(id);
+  syncFechaTreeChecks(id);
+}
+function toggleFechaNode(toggleEl){
+  const hijos=toggleEl.closest('.fecha-node').nextElementSibling;
+  if(!hijos||!hijos.classList.contains('fecha-hijos'))return;
+  const abierto=hijos.style.display!=='none';
+  hijos.style.display=abierto?'none':'';
+  toggleEl.textContent=abierto?'▸':'▾';
+}
+function onFechaGroupChange(id,cb){
+  const def=MSEL_DEF[id];
+  const node=cb.closest('.fecha-node');
+  const dias=(node.dataset.dias||'').split(',').filter(Boolean);
+  const panel=document.getElementById(id+'-panel');
+  if(cb.checked){
+    dias.forEach(function(f){ if(!filtros[def.key].includes(f)) filtros[def.key].push(f); });
+  } else {
+    filtros[def.key]=filtros[def.key].filter(function(f){return dias.indexOf(f)===-1;});
+  }
+  dias.forEach(function(f){
+    panel.querySelectorAll('input[type=checkbox][value="'+f+'"]').forEach(function(leaf){leaf.checked=cb.checked;});
+  });
+  updateMselBtn(id);
+  syncFechaTreeChecks(id);
+  render();
+}
+// Recalcula el check/indeterminado de los nodos Año y Semana segun que dias
+// esten realmente seleccionados en filtros -- se llama tras cualquier cambio
+// (marcar un dia suelto, buscar, limpiar, seleccionar todos, etc.)
+function syncFechaTreeChecks(id){
+  if(FECHA_TREE_IDS.indexOf(id)===-1) return;
+  const def=MSEL_DEF[id];
+  const panel=document.getElementById(id+'-panel');
+  if(!panel) return;
+  panel.querySelectorAll('.fecha-node').forEach(function(node){
+    const dias=(node.dataset.dias||'').split(',').filter(Boolean);
+    const cb=node.querySelector('input[type=checkbox]');
+    if(!cb||!dias.length) return;
+    const n=dias.filter(function(f){return filtros[def.key].includes(f);}).length;
+    cb.checked = n===dias.length;
+    cb.indeterminate = n>0 && n<dias.length;
+  });
+}
 // Filtra en vivo las opciones de un desplegable segun lo que se escriba en su buscador.
 // Aplica igual a todos los desplegables, ya que todos usan fillMsel/este mismo panel.
 function filterMsel(id,texto){
@@ -542,6 +662,26 @@ function filterMsel(id,texto){
     lab.style.display = coincide?'':'none';
     if(coincide) visibles++;
   });
+  if(FECHA_TREE_IDS.indexOf(id)!==-1){
+    // Al escribir, expandir los grupos que tengan alguna coincidencia y ocultar
+    // los que no; al borrar la busqueda, volver a colapsar todo como al inicio.
+    panel.querySelectorAll('.fecha-nivel-semana').forEach(function(node){
+      const hijos=node.nextElementSibling;
+      const algunoVisible=!!hijos && Array.from(hijos.querySelectorAll('label[data-txt]')).some(function(l){return l.style.display!=='none';});
+      node.style.display = (!t || algunoVisible) ? '' : 'none';
+      if(hijos) hijos.style.display = (t && algunoVisible) ? '' : 'none';
+      const arrow=node.querySelector('.fecha-toggle');
+      if(arrow) arrow.textContent = (t && algunoVisible) ? '▾' : '▸';
+    });
+    panel.querySelectorAll('.fecha-nivel-anio').forEach(function(node){
+      const hijos=node.nextElementSibling;
+      const algunaVisible=!!hijos && Array.from(hijos.querySelectorAll('.fecha-nivel-semana')).some(function(s){return s.style.display!=='none';});
+      node.style.display = (!t || algunaVisible) ? '' : 'none';
+      if(hijos) hijos.style.display = (t && algunaVisible) ? '' : 'none';
+      const arrow=node.querySelector('.fecha-toggle');
+      if(arrow) arrow.textContent = (t && algunaVisible) ? '▾' : '▸';
+    });
+  }
   // -- El boton "Seleccionar todos" pasa a marcar solo lo que coincide con la busqueda --
   const btnTodos=panel.querySelector('.msel-btn-todos');
   if(btnTodos) btnTodos.textContent = t ? ('Marcar '+visibles+' coincidencia'+(visibles===1?'':'s')) : 'Seleccionar todos';
@@ -551,6 +691,7 @@ function onMselChange(id,cb){
   if(cb.checked){ if(!filtros[key].includes(v)) filtros[key].push(v); }
   else { filtros[key]=filtros[key].filter(function(x){return x!==v;}); }
   updateMselBtn(id);
+  syncFechaTreeChecks(id);
   render();
 }
 function selectAllMsel(id){
@@ -567,6 +708,7 @@ function selectAllMsel(id){
     if(!filtros[def.key].includes(cb.value)) filtros[def.key].push(cb.value);
   });
   updateMselBtn(id);
+  syncFechaTreeChecks(id);
   render();
 }
 // Igual que en Excel: escribes en el buscador y con Enter marca de una vez
@@ -585,6 +727,7 @@ function clearMsel(id){
   filtros[def.key]=[];
   document.getElementById(id+'-panel').querySelectorAll('input[type=checkbox]').forEach(function(cb){cb.checked=false;});
   updateMselBtn(id);
+  syncFechaTreeChecks(id);
   render();
 }
 function updateMselBtn(id){
@@ -598,7 +741,7 @@ function buildFilters(){
   const fechas=[...new Set(ALL.map(r=>r.Fecha))].sort();
   fillMsel('selCal',CALIBRE_OPCIONES);
   fillMsel('selTam',tams.map(c=>({value:c,label:(TAM_NAMES[c]||c)+' ('+c+')'})));
-  fillMsel('selFec',fechas.map(f=>({value:f,label:fmtF(f)+' — '+horasLabel(horasDesde(f))})));
+  buildFechaMsel('selFec',fechas);
 }
 function buildFacturaFiltros(){
   const clientes=[...new Set(DESPACHO.map(r=>r.Cliente).filter(c=>c))].sort();
@@ -625,9 +768,9 @@ function resetFactura(){
   render();
 }
 function buildDescarteFiltros(){
-  const fechas=[...new Set(DESPACHO.map(r=>r.FechaDespacho).filter(f=>f))].sort().reverse();
+  const fechas=[...new Set(DESPACHO.map(r=>r.FechaDespacho).filter(f=>f))].sort();
   const categorias=[...new Set(DESPACHO.map(r=>r.Categoria).filter(c=>c))].sort();
-  fillMsel('selDescFec',fechas.map(f=>({value:f,label:fmtF(f)})));
+  buildFechaMsel('selDescFec',fechas);
   fillMsel('selDescCat',categorias.map(c=>({value:c,label:c})));
 }
 function resetDescarte(){
@@ -639,6 +782,7 @@ function fillMselKeep(id){
   // Vuelve a pintar el panel actual (checkboxes) sin recalcular las opciones
   document.querySelectorAll('#'+id+'-panel input[type=checkbox]').forEach(function(cb){cb.checked=false;});
   updateMselBtn(id);
+  syncFechaTreeChecks(id);
 }
 function filtered(){
   const cal=filtros.cal,t=filtros.tam,f=filtros.fec;
@@ -1072,6 +1216,43 @@ function exportPDFFacturacion(){
   doc.text('Facturacion - '+(filtros.factFecha?fmtF(filtros.factFecha):'todas las fechas'),14,16);
   doc.autoTable({head:[FACT_EXPORT_HEADERS],body:filas,startY:22,styles:{fontSize:8},headStyles:{fillColor:[30,41,59]}});
   doc.save('Facturacion_'+(filtros.factFecha||'todas')+'.pdf');
+}
+
+// -- Exportar Descarte (Excel / PDF): misma agrupacion Fecha+Categoria+Cliente que renderDescarte --
+function construirFilasExportDescarte(data){
+  const grupos={}; const orden=[]; let total=0;
+  data.forEach(function(r){
+    const kd=r.KilosDescarte||0;
+    if(kd<=0) return;
+    total+=kd;
+    const k=r.FechaDespacho+'||'+r.Categoria+'||'+r.Cliente;
+    if(!grupos[k]){ grupos[k]={fecha:r.FechaDespacho,categoria:r.Categoria||'(Sin categoria)',cliente:r.Cliente||'(Sin cliente)',kd:0}; orden.push(k); }
+    grupos[k].kd+=kd;
+  });
+  const filas=orden.map(function(k){return grupos[k];})
+    .sort(function(a,b){ return b.fecha!==a.fecha ? (b.fecha<a.fecha?-1:1) : b.kd-a.kd; })
+    .map(function(f){return [fmtF(f.fecha), f.categoria, f.cliente, Math.round(f.kd)];});
+  filas.push(['TOTAL GENERAL','','',Math.round(total)]);
+  return filas;
+}
+const DESC_EXPORT_HEADERS=['Fecha','Categoria','Cliente','Kilos Descartados'];
+
+function exportExcelDescarte(){
+  const filas=construirFilasExportDescarte(filteredDescarte());
+  if(filas.length<=1){ alert('No hay descartes en el periodo seleccionado.'); return; }
+  const ws=XLSX.utils.aoa_to_sheet([DESC_EXPORT_HEADERS].concat(filas));
+  const wb=XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(wb,ws,'Descarte');
+  XLSX.writeFile(wb,'Descarte_'+fechaISO(new Date())+'.xlsx');
+}
+function exportPDFDescarte(){
+  const filas=construirFilasExportDescarte(filteredDescarte());
+  if(filas.length<=1){ alert('No hay descartes en el periodo seleccionado.'); return; }
+  const doc=new jspdf.jsPDF({orientation:'landscape'});
+  doc.setFontSize(14);
+  doc.text('Descarte',14,16);
+  doc.autoTable({head:[DESC_EXPORT_HEADERS],body:filas,startY:22,styles:{fontSize:8},headStyles:{fillColor:[127,29,29]}});
+  doc.save('Descarte_'+fechaISO(new Date())+'.pdf');
 }
 
 // -- DESCARTE: fruta descartada por dia, tomada de la columna "Kilos de descarte" de Despacho --
