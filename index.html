@@ -1,1528 +1,170 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
-<title>Inventario Fruta — Agrícola Guapa</title>
-<style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Segoe UI',system-ui,sans-serif;background:#f1f5f9;color:#1e293b;min-height:100vh}
-
-/* ── Header estilo Despachos ── */
-header{background:#1e293b;border-bottom:1px solid #334155;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
-.logo{display:flex;align-items:center;gap:10px}
-.logo-icon{width:32px;height:32px;background:#22c55e;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1.1rem}
-header h1{font-size:1.1rem;font-weight:700;color:#e2e8f0}
-header h1 span{color:#64748b;font-size:.8rem;font-weight:400;margin-left:8px}
-.upd{font-size:.72rem;color:#64748b;text-align:right}
-.upd strong{display:block;color:#94a3b8;font-size:.82rem}
-
-/* ── KPIs ── */
-.kpis{display:flex;gap:12px;padding:16px 24px;flex-wrap:wrap}
-.kpi{flex:1;min-width:160px;background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:20px 22px;box-shadow:0 1px 3px rgba(0,0,0,0.07)}
-.kpi .v{font-size:2.4rem;font-weight:800;line-height:1;color:#1e293b}
-.kpi .l{font-size:.85rem;color:#475569;margin-top:6px;text-transform:uppercase;letter-spacing:.05em;font-weight:700}
-.kpi .sub{font-size:1rem;color:#64748b;margin-top:8px;font-weight:700}
-.kpi.urg .v{color:#dc2626}
-.kpi-doble{flex:1.7;min-width:280px}
-.urg-doble-grid{display:flex;gap:26px;margin-top:8px;flex-wrap:wrap}
-.urg-doble-item .v{font-size:2.1rem}
-.urg-doble-item .sub{margin-top:4px}
-.kpi.ok  .v{color:#16a34a}
-.kpi.inf .v{color:#1d4ed8}
-.kpi.def .v{color:#1e293b}
-
-/* ── Views ── */
-.views{display:flex;gap:10px;padding:0 24px 14px;flex-wrap:wrap}
-.vbtn{padding:10px 20px;border:1px solid #e2e8f0;border-radius:8px;background:#fff;color:#64748b;font-size:1rem;cursor:pointer;font-weight:700;font-family:inherit;transition:all .15s}
-.vbtn.active{background:#22c55e;color:#0f1923;border-color:#22c55e}
-.vbtn:hover:not(.active){background:#f1f5f9;color:#1e293b}
-
-/* ── Filters ── */
-.bar{padding:0 24px 14px;display:flex;gap:10px;flex-wrap:wrap;align-items:center;position:relative}
-.breset{padding:9px 18px;background:#fff;color:#64748b;border:1px solid #e2e8f0;border-radius:7px;font-size:.95rem;font-weight:600;cursor:pointer;font-family:inherit}
-.breset:hover{color:#1e293b;border-color:#94a3b8}
-
-/* ── Multi-select desplegable ── */
-.msel{position:relative}
-.msel-btn{padding:9px 14px;border:1px solid #e2e8f0;border-radius:7px;background:#fff;color:#1e293b;font-size:.95rem;font-weight:600;cursor:pointer;font-family:inherit;display:flex;align-items:center;gap:10px;min-width:170px;justify-content:space-between}
-.msel-btn:hover{border-color:#94a3b8}
-.msel.open .msel-btn{border-color:#22c55e}
-.msel-label{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:220px}
-.msel-arrow{color:#94a3b8;font-size:.75rem}
-.msel-panel{display:none;position:absolute;top:calc(100% + 6px);left:0;z-index:50;background:#fff;border:1px solid #e2e8f0;border-radius:9px;box-shadow:0 8px 24px rgba(0,0,0,0.12);padding:6px;min-width:230px;max-height:280px;overflow-y:auto}
-.msel.open .msel-panel{display:block}
-.msel-panel label{display:flex;align-items:center;gap:9px;padding:7px 9px;border-radius:6px;font-size:.88rem;font-weight:600;color:#1e293b;cursor:pointer;white-space:nowrap}
-.msel-panel label:hover{background:#f1f5f9}
-.msel-panel input[type=checkbox]{width:16px;height:16px;accent-color:#22c55e;cursor:pointer;flex-shrink:0}
-.msel-panel .msel-empty{padding:8px 9px;color:#94a3b8;font-size:.85rem}
-.msel-actions{display:flex;gap:6px;padding:2px 2px 8px;margin-bottom:6px;border-bottom:1px solid #f1f5f9}
-.msel-actions button{flex:1;padding:6px 8px;border:1px solid #e2e8f0;border-radius:6px;background:#f8fafc;color:#475569;font-size:.78rem;font-weight:700;cursor:pointer;font-family:inherit}
-.msel-actions button:hover{background:#f1f5f9;color:#1e293b;border-color:#94a3b8}
-.msel-search{position:sticky;top:0;z-index:1;width:100%;box-sizing:border-box;padding:8px 10px;margin-bottom:6px;border:1px solid #e2e8f0;border-radius:6px;font-size:.85rem;font-family:inherit;background:#fff;color:#1e293b}
-.msel-search:focus{outline:none;border-color:#22c55e}
-/* Filtro de fecha estilo Power BI: arbol Año > Semana > Fecha dentro del mismo desplegable */
-.fecha-node{display:flex;align-items:center;gap:7px;padding:6px 9px;border-radius:6px}
-.fecha-node:hover{background:#f1f5f9}
-.fecha-node label{display:flex;align-items:center;gap:9px;cursor:pointer;font-size:.88rem;font-weight:700;color:#1e293b;white-space:nowrap}
-.fecha-node input[type=checkbox]{width:16px;height:16px;accent-color:#22c55e;cursor:pointer;flex-shrink:0}
-.fecha-toggle{cursor:pointer;width:14px;display:inline-block;color:#64748b;font-size:.7rem;user-select:none;flex-shrink:0}
-.fecha-hijos{padding-left:15px;border-left:1px dashed #e2e8f0;margin-left:7px}
-.fecha-hijos-dias label{font-weight:600;padding:7px 9px}
-.cliente-esp-badge{display:inline-block;background:#7c3aed;color:#fff;font-size:.62rem;font-weight:800;padding:1px 7px;border-radius:10px;margin-left:6px;vertical-align:middle;letter-spacing:.3px}
-
-/* ── Selector de fecha (Facturacion) ── */
-.fact-date-wrap{display:flex;flex-direction:column;gap:3px}
-.fact-date-label{font-size:.68rem;color:#64748b;font-weight:700;text-transform:uppercase;letter-spacing:.04em}
-.fact-date-input{padding:8px 12px;border:1px solid #e2e8f0;border-radius:7px;background:#fff;color:#1e293b;font-size:.95rem;font-weight:600;font-family:inherit;cursor:pointer}
-.fact-date-input:hover{border-color:#94a3b8}
-
-/* ── Botones de exportar ── */
-.bexport{padding:9px 16px;background:#1e293b;color:#fff;border:1px solid #1e293b;border-radius:7px;font-size:.9rem;font-weight:700;cursor:pointer;font-family:inherit;transition:background .15s}
-.bexport:hover{background:#334155}
-
-/* ── Legend ── */
-.legend{display:flex;gap:18px;flex-wrap:wrap;padding:0 24px 16px;align-items:center}
-.leg{display:flex;align-items:center;gap:8px;font-size:.92rem;font-weight:600;color:#334155}
-.leg-dot{width:18px;height:18px;border-radius:50%;flex-shrink:0;border:2px solid rgba(255,255,255,0.1)}
-
-.content{padding:0 24px 32px}
-
-/* ── COLORES MADUREZ — estilo Despachos ── */
-/* VERDE */
-.c-verde-bg   {background:#f0fdf4;background-image:none}
-.c-verde-hdr  {background:#166534;color:#fff}
-.c-verde-txt  {color:#15803d;font-weight:800}
-.c-verde-badge{background:#22c55e;color:#052e16;padding:2px 10px;border-radius:20px;font-size:.68rem;font-weight:700}
-.c-verde-card {background:#fff;border:1px solid #86efac;border-left:4px solid #16a34a}
-.c-verde-cell {background:#16a34a;color:#fff;font-weight:700}
-.pina-verde{}
-
-/* PINTONA - AMARILLO VIBRANTE */
-.c-pintona-bg   {background:#fefce8;background-image:none}
-.c-pintona-hdr  {background:#eab308;color:#422006}
-.c-pintona-txt  {color:#a16207;font-weight:800}
-.c-pintona-badge{background:#eab308;color:#422006;padding:2px 10px;border-radius:20px;font-size:.68rem;font-weight:700}
-.c-pintona-card {background:#fff;border:1px solid #fde68a;border-left:4px solid #eab308}
-.c-pintona-cell {background:#eab308;color:#422006;font-weight:700}
-.pina-pintona{}
-
-/* MADURA - NARANJA OSCURO */
-.c-madura-bg   {background:#fff7ed;background-image:none}
-.c-madura-hdr  {background:#ea580c;color:#fff}
-.c-madura-txt  {color:#c2410c;font-weight:800}
-.c-madura-badge{background:#f97316;color:#fff;padding:2px 10px;border-radius:20px;font-size:.68rem;font-weight:700}
-.c-madura-card {background:#fff;border:1px solid #fdba74;border-left:4px solid #ea580c}
-.c-madura-cell {background:#ea580c;color:#fff;font-weight:700}
-.pina-madura{}
-
-/* ── TARJETAS ── */
-.v-tarjetas{display:flex;flex-direction:column;gap:14px}
-.dia-block{background:#fff;border:1px solid #e2e8f0;border-radius:12px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,0.06)}
-.dia-hdr{display:flex;align-items:center;gap:10px;padding:10px 16px;background:#1e293b;border-bottom:1px solid #334155}
-.dia-hdr h2{font-size:.9rem;font-weight:700;color:#fff}
-.horas-critico{background:#7f1d1d;color:#fca5a5;padding:3px 10px;border-radius:20px;font-size:.68rem;font-weight:700}
-.horas-alto{background:#7c2d12;color:#fdba74;padding:3px 10px;border-radius:20px;font-size:.68rem;font-weight:700}
-.horas-medio{background:#78350f;color:#fcd34d;padding:3px 10px;border-radius:20px;font-size:.68rem;font-weight:700}
-.horas-ok{background:#14532d;color:#86efac;padding:3px 10px;border-radius:20px;font-size:.68rem;font-weight:700}
-.dia-kg{margin-left:auto;font-size:.8rem;color:rgba(255,255,255,0.75)}
-.dia-kg strong{color:#fff}
-.dia-pct{background:rgba(255,255,255,0.15);color:#fff;padding:3px 12px;border-radius:20px;font-size:.78rem;font-weight:800}
-
-.mad-section{border-bottom:1px solid #e2e8f0}
-.mad-section:last-child{border-bottom:none}
-.mad-hdr{display:flex;align-items:center;gap:10px;padding:8px 16px;font-size:.78rem;color:#fff}
-.mad-hdr .mad-kg{margin-left:auto;font-size:.88rem;font-weight:700}
-
-.tam-grid{display:flex;flex-wrap:wrap;gap:8px;padding:8px 16px 12px}
-.tam-card{border-radius:8px;padding:10px 14px 12px;min-width:150px;flex:1}
-.tam-card .tam-name{font-size:.7rem;color:#475569;margin-bottom:4px;font-weight:600}
-.tam-card .tam-kg{font-size:1.1rem;font-weight:800;line-height:1.1;color:#0f172a}
-.tam-card .tam-cal{font-size:.62rem;margin-top:4px;color:#334155}
-.tam-card .tam-sub{font-size:.65rem;color:#64748b;margin-top:2px}
-.tam-card .tam-calibre-big{font-size:1.15rem;font-weight:800;line-height:1.1;margin:2px 0 3px;color:#0f172a}
-
-/* ── TABLA ── */
-.v-tabla{overflow-x:auto}
-table.ctable{border-collapse:collapse;width:100%;background:#fff;border-radius:10px;overflow:hidden;font-size:.86rem;border:1px solid #e2e8f0;box-shadow:0 1px 4px rgba(0,0,0,0.06)}
-table.ctable th{background:#1e293b;color:#e2e8f0;padding:6px 10px;text-align:center;font-size:.7rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;white-space:nowrap;border-bottom:1px solid #f1f5f9;line-height:1.25}
-table.ctable th.left{text-align:left}
-table.ctable td{padding:4px 10px;border-bottom:1px solid #f1f5f9;text-align:right;white-space:nowrap;color:#1e293b;line-height:1.2;font-weight:600}
-table.ctable td.left{text-align:left;color:#1e293b;font-weight:700}
-table.ctable tr:hover td{background:#f8fafc}
-.tfoot-row td{background:#f1f5f9;color:#1e293b;font-weight:800;border-top:2px solid #2a3f55;padding:5px 10px}
-.mad-group-hdr td{font-weight:700;padding:4px 10px;font-size:.72rem;letter-spacing:.04em;text-transform:uppercase;color:#fff}
-
-/* ── FACTURACION (tabla dinamica) ── */
-.v-facturacion{overflow-x:auto}
-.v-descarte{overflow-x:auto}
-.fact-summary{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:12px}
-table.ftable{border-collapse:collapse;width:100%;background:#fff;border-radius:10px;overflow:hidden;font-size:.85rem;border:1px solid #e2e8f0;box-shadow:0 1px 4px rgba(0,0,0,0.06)}
-table.ftable th{background:#1e293b;color:#e2e8f0;padding:8px 12px;text-align:right;font-size:.68rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;white-space:nowrap;border-bottom:1px solid #f1f5f9}
-table.ftable th.left{text-align:left}
-table.ftable td{padding:6px 12px;border-bottom:1px solid #f1f5f9;text-align:right;white-space:nowrap;color:#1e293b}
-table.ftable td.left{text-align:left}
-table.ftable tr:hover td{background:#f8fafc}
-.frow-remision td{background:#dcfce7;color:#14532d;font-weight:800;cursor:pointer;border-top:1px solid #86efac;border-bottom:1px solid #86efac}
-.frow-remision .ftog{display:inline-block;width:14px}
-.frow-factura td{background:#f0fdf4;color:#166534;font-weight:700;cursor:pointer}
-.frow-factura .ftog{display:inline-block;width:14px}
-.frow-cliente td{background:#fff;color:#1e293b;font-weight:700;cursor:pointer}
-.frow-cliente .ftog{display:inline-block;width:14px}
-.frow-cat td{background:#fff;color:#334155}
-.frow-cat td.left{font-weight:500}
-.ftotal-row td{background:#22c55e;color:#052e16;font-weight:800;border-top:2px solid #166534}
-/* Forzar color de texto en toda la tabla: evita que el navegador (Safari/iOS) pinte
-   numeros de azul al detectarlos como si fueran telefonos */
-table.ftable td, table.ftable td *{color:inherit!important;text-decoration:none!important}
-table.ftable .frow-remision td{color:#14532d!important}
-table.ftable .frow-factura td{color:#166534!important}
-table.ftable .frow-cliente td{color:#1e293b!important}
-table.ftable .frow-cat td{color:#334155!important}
-table.ftable .ftotal-row td{color:#052e16!important}
-
-/* ── BODEGA ── */
-.v-bodega{display:flex;flex-direction:column;gap:12px}.bod-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
-.bod-card{background:#fff;border:1px solid #e2e8f0;border-radius:10px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,0.06)}
-.bod-top{padding:10px 14px;display:flex;align-items:center;gap:8px;border-bottom:1px solid #2a3f55;background:#1e293b}
-.bod-fecha{font-size:.82rem;font-weight:700;color:#e2e8f0}
-.bod-horas{font-size:.67rem;padding:2px 8px;border-radius:12px;font-weight:700}
-.bod-kg-total{margin-left:auto;font-size:.74rem;color:rgba(255,255,255,0.7)}
-.bod-kg-total strong{color:#fff}
-.urg-wrap{padding:8px 14px}
-.urg-bar{height:4px;border-radius:2px;background:#e2e8f0;overflow:hidden;margin-bottom:4px}
-.urg-fill{height:100%;border-radius:2px}
-.urg-txt{font-size:.65rem;font-weight:600}
-.bod-items{padding:6px 14px 12px;display:flex;flex-direction:column;gap:5px}
-.bod-item{display:flex;align-items:center;gap:8px;padding:5px 8px;border-radius:6px}
-.bod-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0}
-.bod-item-info{flex:1;font-size:.74rem;font-weight:600;color:#fff}
-.bod-item-kg{font-size:.82rem;font-weight:800;color:#fff}
-
-.empty{text-align:center;padding:48px;color:#64748b;font-size:.9rem}
-@media(max-width:600px){.kpis,.bar,.views,.legend,.content{padding-left:12px;padding-right:12px}}
-</style>
-</head>
-<body>
-
-<header>
-  <div class="logo">
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALAAAAEfCAYAAADhikzRAAAfZElEQVR4nO2deXQVRfbHv4/iNXkQsoEaSCYmiIwIRCIZ4WSiBIgGBAHBiANhU4YlyARZA7KIICBLRuCXRGMcJAQQIosREAQD0ciAA4b9xw8RMAOKypKwvdihU78/wsOALFm6uqv61eccj+cg3r79+tu3b1XdugVIJBKJRCKRSCQSiUQikUgkEolEIpFIJBKJRHITNrMdEJHOHdvT++vX09XmL2fPYcOmHPk8KklNsx0QjRFDBtAxCYOhaZqudgkhSH00k85OSpEirgRSwJXkkSYPQVVLGAi4FI2C/6SrTXeghtkOSCTVQQpYIjRSwBKhkQKWCI0UsERopIAlQiMFLBEaKWCJ0EgBS4RGClgiNFLAEqGRApYIjRSwRGikgCVCIwUsERopYInQSAFLhEYKWCI0UsASoZEClgiN2wo4KrINDQ8LpWb7UV1aPPoIjYpsI/x9VBW325U8MC6W9n6xO5o0DgEAJIybRtet3yzkVvbOHdvTlKQZAIDjJwroqrUbkJq+VMh7qSpuE4EnjRtBv9meTd+Y+BqCgwLhdBZDVUswfHA/s12rMi/HvQhVLYHTWYzAgAZIHDUM+Xkb6ZTxCW4TkS0t4EbBQUieP50e2ZNDX+7bC151PeF0Ft/o6aBpGpo0DkFE61bCPfDwsFAa/njoTffidBbD4fDAgLhYHNmTQ5PnT6euL41VsaSAoyLb0KyMFLr102W00zNRAABVVW/7d1W1BK8Nf8VA7/Rh+OB+UNWS2/431712eiYKm9Zm0KyMFBrT4SnhXtKKYKkcuHx+q6old3zA5dE0DU+Et4Sfrw/OXyhk76ROtI1sfc/7c/33lqHNkLZoNo6fKKAZK1ZjcWaWZfJkS0TgSeNG0Py8jTflt5Vp/aRpGqZPGi1MhJo743Vamb6MrvQiMKABJo9PQH7eRjpp3Ahh7vduCCvggIb+SJ4/nX63N5e+3LcXHA6PSgvXhaqWoEPUXxl4yYbnOnW4Y0p0NzRNg6qqcDg88HLfXvhuby5Nnj+dBjT0Z+ClMQgn4IjWrWhWRgr9avPHtNMzUTceSnVRFAWJo+K5j0qJo+KpotirbUdVVWiahk7PRGHH1jU0KyNFyPlkoQSctnAWXbF4EVqGNoOqqhXKcSuKqqro1aOLbvZY0aNrR2haqW72XNNwLUObYUlaEhanzhNKxEIJuN1TEVVOEyqCn58PBsbFcvsAe8d2ow/cX5/J/bvy5LaRbXS3zRKhBJz37/+AEMLMvqqWoPeL3ZnZry4D+76o61fnVgghyM3bycw+C4QScNKidOiR/90J18IGj3OmEa1b0SaNQ5h9fQBAUexITstgZp8FQgn4wOEjtt3f7mcehQf1f4mZ/ary9wF/Yx59jx47gd35+4WaIxZKwADwr8xVzKNwq7AWaBQcxOwalSWgoT/aRraR0fc2CCfgDZtybKd/PMM0CgPA6BF/5yaNGBn/ClNfCCE4/eMZiFiVJ5yAAWDpR2uZpxE8LWxUdeGiohBSAyuyspnZZ4mQAk5NX2q7etXJ9BqKooCHssSyhQuF6TWuXi3Govc+FC76AoIKGACyN25hmgurqornn4thZr+ilC1csMx9FWRv3MLMPmuEFfDEaXNseq5I3Q4/Px8MG9TXtCjcv/cLzBYuXGiahjnvvCtk9AUEFjAAbPtyB/Nc+MXnOzOzfy/iXnqe+dRZ3r//g8Kii8yuwRqhBbzo3SUghN0taJqGRiFBpixsREW2Yb5wQQgRcuqsPEIL+MDhI7b8fYeYR+ExCUMAAH6+PvhLq8eY1SL85fHH4OfrAwB4fdwI5tE3f99B4RYubkVo5wEgpsNTNG3RbDidxcyuQQiBpmk3XhRWUbG8fdc1WeFweCBh3DQh537LI7TzLrZt+IgGBjRg+sCtBCEEv549h4joHsI/f6FTCBcZK1YznVKzGoQQYRcubkX4N9BFft5G6nB4mO2GEDidxQiLfNYSz94SERgA1n66GaxXrKyAotjx2ZbtZruhG5Z4C10c2ZNj+tIv7xBC8HDLtpZ57paJwADwxfavZS58Fwgh2PblDrPd0BVLCXj+ovdtFvuo6AohNbDo3SVmu6ErlhLw8ZMF2JPPdseGqJQtXBzCgcNHLPWGW0rAAJCcliHTiNugKHb8K3OV2W7oDncCjopsQw/u2kLz8zbS7l1iKj0o256303b02AkZhctBCMHxEwXYsCmn0tE3psNT9Jvt2fTgri1cNgjkTsD/nD0FtWop8PSsgwVzpl7vA1Y5Mj9aK6NwOQghWLV2Q6X/v7kzXqep78yEr483atVSMH/mZAbeVQ+u8qGsjBTaKiz0pu0zimLHDwWn8crwcbbjJwsqbEsubPxOZRcuAhr6I/P9d+iDQYF/eBb5+w6hZ9xQbnTDTQQeNqgvfSK85R/2fqlqCQIDGmDzuqW0MsXlK9eslwsbKBPd2k83V/jvD4yLpds3rqSBAQ1u+yzCHw/FiCEDuEkluHiTGgUHYeuny+i9ygcdDg98s3svYvvFV8jv7/bmUncv8KnMwsXi1Hm0fduIe1b2KYodHZ/vZzt67IQuPlYHLiJwZvo7tCLbg5zOYrQKC0V+3sYKdVJct/5zt47CimLH5198ec+/F9G6Fc3P20jbRrapUFmqppUiM30BF1HYdAEnz59O/R+4r8KlkKqqwtOzDpakJWHm1HF3/RFnzU/m4gtjFoSQ64s7d2bK+AS6YvEieHrWqfDWfU3TUL+eH9IWzjJdxKYKuHuXGNqlU4dK7zxwdVLs06s7tmQvu2OD5vMXCt12YYMQgm9278WdBr5+vj7Ykr2MvtK/V5U6fqqqipjotugd281UEZsq4BmTx1RrJ4XTWYzgoEB88elyeqe2qP9M/sAtp9Tu1iqqd2w3umPrGuo6jqGqOJ3FmJKYAB9vryrbqC6mfWJXZ75LQ5s31W0XhcPhgZzcHRg4bMwf7mlL9jIaHBToNjs2CCE4WXAKT3ft84ffIm3hLBoT3Va3LVh3u5YRmBKBE0fF33TGmR6UNWdujW+2Z9Nbz33LZNyKijcIIViTvemmPwsPC6U7tq6h0e2e1HX/oKslrVldjAwXcHhYKB08sDeTTZiqWgJfH29kpi9A+VN4atd26H4tvqGoWe6FTRwVT1dlJOO++vWY9FhzOosxIC4WZpyxYXjY/2Z7NvX18Wb+OXc4PHD02Akc/e44V436jOTLr3chJDgITRqHMN21DZRF/QuFRXgiqquhmjL0YmkLZ9HodpFM+x2Uh/U2eN4x+v4VRUFu3s7bjkNYYVgK0b/3CzQmuq1h4gXKHpy7ihcw/v5VVUX7thGGHpRjyJvi5+uDHVvXmD7pLTEGQgiinu1lO/3jGebXMiQCr1ySTN1pFkACZL7/jiEBi7mAB8bFMm9SJ+ELV1NEI1rTMhfwgUP/d1NfMYn1cT3r/z3yHfNrMRfw7vz9tpeHjcXly1fcujLMXVAUOy5fvoLBIxKxPW8n8zGWodNoWRkp9InwlsznJCXm4HB4YPe3+w3dsWHoSlxsv3jbvAVpUBS7TCksBCEEiqIgNT3T8O1GphRghIeF0pR/zkD9er6GzgtL9EdRFJw9dx4jx0/Djl17DNeTqQXfFd3CIuGTu1UAGoXpOxYGxsXSiWNeBeC+S76iQQgBITUwd0EaUtOXmqoh0wUMlG3jzspIof4P3CdTCs5RFAVnfv4FcYNGVqrNAStM3xMHAKd/PIOI6B62zz7fDtnLgV8cDg9s3fYVIqJ7cCFegJMIXJ7esd3olMQE5oecSCqO61m8OXsBlmd9wpVmuHLGhZ+vD1YuSaYPhTzI9JBryb1RFDu+P1GAAUNHG1KcU1m4SCFu5fyFQjzdtY/to4+zoSiKnDM2CYfDA6s/2YSnu/bhUrwApxG4PJ07tqdvT5uAWrUUmVIYBCEEv/2mYtL0edyfI8e1c+VZnfkuDX88VM4ZM8a1FcusXcaVhcsU4nb0jBtqe//DFTKlYAQhBA6HBz5YslIY8QICRWAXEa1b0eT50+Ht7SUHeDqhKHYUFV3Ca4lvGlJBpidCOVseWdmmD2ZUkOmJMCnErcjKtuphZgWZngjruIsWjz5CP0iZIyvbKoGi2HH23AXEvzYJu/P3C60BoZ0vj6xsqxg8VJDpiSVuwoWsbLszrjQr6X/STa8g0xPL3IiLRsFB+CB5Dn0wKECmFNdxVZANGDqai2MB9ETYQdydOH6yAO06vyQr267jcHjgs8+3ISK6h+XEC1gwApend2w3OnHMq265DM1zBZmeWPbGXPh4eyFraSo1okMjLyiKgu9P/IBe/Yfbzl8oNNsdplguhbiVwqKLeLprH9uylevcIqUoqyD7DE937WN58QJuEIHLE9PhKTp/5mRLphSuCrLxU2dV6UxkUXGbGy2P1SrbRKsg0xPLpxC3o2fcUFtqeqbwlW2iVpDpiVvetAuRK9tEriDTE7e98fKIVtlW2TOjrYxbphC34qpsEyGdUBQ7UtMzpXivI3+EckS0bkWXvJfE7QwFIQR/f3W8W6cMtyIjcDl27Npj+/XsOW4j8YXCIineW6hptgN6ENDQH34+PtVuZ9+ty9Pgub1V/Xq+mDI+ga79dLNuNg8cPiL0CyG08wAwc+o42qdXd2haaTWsUJT9FJRb8br4vcu9y+fqQFFUdAlhkc8KqwNhHQfKdmN8sjJduCkwnlAUO3Lzdglb4C50Dpw0ezK3Ay5RUNUStG8bgVsPSBcFYQXcv/cL8vgunVDVErw1ZazZblQJYQU8Mv5lYRYeeMd1rtuIIQOEi8JCCnjujNept7eX2W5YCqezGMMH9zPbjUojnIAbBQehZ7dOcuDGAEVRkLZwllBRWDgBz50xkcq8lw2qqiImui3Cw0KFEbFQAu4d242GPx4qB24MUdUSzJo23mw3KoxQAh6bMIT7hQbR0TQNTRqHGHJQtx4II+CZU8dRb28vGX0NwOksxvC/izGgE0LAAQ39Eft8ZzlwM5DatT2QPH8691FYCAEvnPMG9z+k1VDVEnR6ph1aPPoI17899wLu3iVGDtxMQtM0JM2ebLYbd4V7AU8cM1wO3EzCNaAbGBfLbRTmWsBTxifQ+vX8ZPQ1EaezGP8YOtBsN+4ItwL28/VB37/1kAM3DvD29sLcGa9zGYW5FfB7C2Zy+YO5I6qqome3jmjSOMRsV/4AlwKO6fAUfSK8pUwdOELTSjHrjfHcBRUuBTx1wkg5cOMMTdMQ/ngoesd240rE3Ak4cVQ8DWjoL6Mvh6hqCcYmDDHbjZvgTsAD+rwgC9U5RdM0eHvXxcyp47iJwlwJeHHqPKoodrPdkNwFVS3BSy90hZ+vj9muAOBIwFGRbWj7thEy9xUATdPw/qLZXERhbgQsB27i4BrQde7Y3nQRcyHgEUMG0EYhQXLgJhCqWoKpiSPNdoOPxiZH9uSY/ibrgaunWtm/f+/28zuun7vsz1zdhER9cRXFjg8zP8abby8wTUemCzht4Swa3e5J4ZaMbxVrUdElnD1/AadO/4SfzvyCi5cu48qVq7h85Qp++63s3mrVUuBZpw68vevC28sLwUEBqF/PD/fVr4e6detA00qhaZpQgiaE4C9tn7MVFl005fqmCjg8LJSuXvauUNNmrt5kZ37+Bfn7DuHrnbuR+/Uu2+kfz1TLbkTrVjQ6KhJP/vUJBAcF3jjnjXcxE0Kwd/8h0/oVmyrgLdnLaHBQoBAPSVHs+PmXs9i6LQ8rsrKZd3UcGBdLu3TsgNDmTUEI4foL5XB4YPCIRGz+4kvD9WSagIcN6ksTRw3jOvq6hHv8RAE+XPYxliz/2PDfy8fbC6+PHUGf69QBiqJwKWRCCH49ew4R0T3cR8AHd22hNWvy2UgaKEsVzp47j3eSP+DmqNbk+dNpp2facZlaKIqCtMXLMTspxdDfypQHU/Ygoric93VF3VVrNmDspLe4EG55mjQOQXLSDG6Pzn2kVXtDfzPD54FbPPoI1+K9fPkK+g8exaV4Adw40HDegjQoip2r4xAUxY7FqfMMnRI1/CHxOnBTFAX5+w6iZ9xQLoV7O1o8+gjNSEuCp2cdbn5Ph8MD/QePMuwsD0Mj8MC4WC57+jocHvjs821CiRcoO98iLPJZrg6mUdUSTJ0w0rDrGSrgfwwdyF3e5nB4YNnKdRg+erJQ4i1PRHQPbkRsdK9hwwTMY09fh8MDq9ZswMRpc4QVr4uI6B62C4VFXIjYyF7Dhgi4SeMQ7nr6KoodObk7uB2sVYWXBrxq4yU9M6rXsCECnvXGeK56+hJCcObnX4U9medOHD9ZgMSpb8Ph8DDbFcN6DTMXMK89fQcMHW0p8bpYt36zbf1nX4CHnS1G9BpmLmDeevo6HB5YmLoYR4+dMNsVZgwfPdlWVHTJbDcM6TXMVMBlPX3rchN9CSE4euwEFr33oSWjb3nSPlzBRSrhdBYjYRi71lRMBfzwQ8HVPAJWXwipgQlT3zbbDUNITV9qO/3jGS5mJRwODwQ09Gdim4stRUZACEFu3i7szt9v+ejr4v0PV3AhYJa4kYBrIGlRutluGMrizCxbkUk7JW6l1o1DyvXFLQRMCEH+vkPMi9Bvh4+3FwIa+pvWR2Hr9q+5mJFgRU2zHTACQgiyN25lfp3wsFDao2tH/PnhRvhTYEP4+njfJB5NK8XVq0789PMv2Lv/MFau/pR5SpOxfDVe7NEZAD8zQXriFgK+etXJdDdF9y4xNGHYQJS1Bvh9Y6amaXA6b56BqVmTIDgoEA+FPIie3Tohf99BOn/R+9ixaw8T/w4cPmI7f76Qmj0jwWrzguVTCEII/vPtPmb2szJS6II5UxEY0ABOZzFUVb3ntKGmaVBVFaqqIrR5U6xYvIhpv7G9Bw5bdjDnFgLekvMVE9s7tq6hrcJawOksrvJcd1mULkafXt2ZdUH/du9BEGLNR23NuyqHpmlM9rRtyV5G/R+4T7dVRqezGC/26Mxk1erAoSOmR+BaSi0mLydTAdeoYe77QQjByYJTutudNG4EbdI4RPclcqezGKNeHaSrTQCG7Y4wA0tHYEJqYO/+w7rb7d+bXQ9jQmowyYfPny/U2yQXWFrAAHD4yFFd7Y0YMoCyzCc1rRRRT7bR3W5h0UXT0wgWWFzANhw49H+6Wox6sg3T+g5N0+D/wP261w5cM7mgqlYtuRJXBajuCwXNmjZhXl1HSA00b9pE1zTi4kXzyytZYGkBX72qb57aKDjoRnM/lmhaKWra9V1jKi3lpypQTywrYFe/Lj0Jbd7UoKYdFC0efURXi6zKGc3GsgIG9M/7/hTQQFd7d0JVSzCgzwuIaN1KlxcmcVQ89X/gflM3FrAqKLJ0LURhYZGu9hr436+rvXuRmf4O9uQfoCcLTlfZRqPgPyHssWZc7QjXE0sL+ILOAvb2MnZ7lKqWoGVoM7QKa1FlG5pWytWeRL2xrIAJqYGii5d1tVm7tkNXexWBx1aqVUGxs0khmObAXl51WZq/B/qvnnrV9dTdpqR6WHgQR1F0Ud/tNOa+kJLbYWEB28BDbwQJWywsYIrLV66Y7YTkOnIpuQq4zmfTi5oWLIYRHQsL2IarOpc8sooikqpjYQEDJdf0nf+sWbOmJaa0jIZl9Z5lBUxIDVy5fFVXm/aalp02Z47exUk37DKxyglqib4R2F7NyXhCiOFF5VZZCLkTlhbwpUv6zkJUp7cBIQSff/Eljhz9XkeP7k2LZn9GdLtIyy4nMxWw2aP239TfdF2Ocx3AXVkUxY4RY6diw6YcUzZX9o7tRmdNG2/qATv2mgIuJUt+78tmlngBYHnWJ7ajx07IPXGice0aH7nfxUv6FhVVBb1LS3nB0gLm+TBxiT5YWsAS6yMFLBEaSwuYlxxYwg5LC1jmwNbH0gLWuyOilVe0RMXaApbVY5bH0gLWuxeBzKn5w9ICrutZR1d7JToXB0mqj2UFrGmlcDj03QZfcu2arvYk1ceyAmbBtWvXLFlPIDIWFjBFbZ2PltJ7j52k+lhYwPrPQpjdJFpk9A4mLiwsYBs86+g7iKsKmqahWdMmZrthWSwsYMDXx1tXe1Xtcl6/ni+yMlIM6i3MI+xu3cJbiijq6tzLrKpdzl1dJr/bm0sr2jEzN28Xxk56y7LHY+kF0whs5kqYppXqnnddvlL1Xc6uzZVedT3v+Y+vjzee69RBR8+ti6VTCL3boV696jTkyFZZc1FxLC1gvduhFl28BBZtWyVVx9oC1rkd6n9P/6SrPUn1sbSA6+icQhScqvpZFRI2WFbAmqbBz9dHV5sbNuXYjMiBAf13Mpt98DorrHlX12FxtJMRh2YTQvDfUz/qatOq3eUtLWDAhqjINrrOou89cJh5QQ8hBMdP/ldXm3qnU7xgcQEDLZrpe+LllpyvmB3a54KQGtie929dbXrVNfaIsFupbmPEO2FpAWuahhbN/qyrzeVZn9hYpxHnzxfq3oqqbl3z60JYYGkBA0DzR/UVMADMXfAeHIyqqxwOD6xcs15XmzEdnrJsHYalBaxpGvwfuB8+3l662l2e9Ylt/Wdf6C5iQgiOHjuB2UkpukbfsMeaW3Z1z9ICdvG32G66R6Dhoyfbvtm9VzcRE0Jw+fIVPN21j+5LfX9+uBHTNv8VoUYNNiuYTAVck4OW/JqmITrqr0xsx/aLt6WmZ0JR7FUe2BFC4HB44GTBKYRFPsvkKfNQj1xayiaLsXwE1jQNoc2bMrM/OynF9nhkZ9vWbXkAynJYRVFuHCdQfsqt/J8piv2GcCdMfZtJ5AUAP18fPHB/fdNTCFYR2PwQaQCEECSOiqd655YuCosuYvA/JtgAoHPH9vSvrcPx8EPB8PHxRp3aDnjVrYuSkhIUFl3ENU3DqdM/4fsTP2DTllzszt/PtDqoz4vdqdnpA0vcQsCapqHrs9GYnZTC/FobNuXYNmzKYX6dihL1ZBvToy9LmKcQPPx4mqYhoKE/Ondsb9nppDvBxwwEu4+M5XNgF6pagpHxr5jthqFMGZ9AWe5H4wG3EbCmaWjSOAS9GUyp8crzz8Vwc7yWh4fcVl9tVLUEI4e7RxROHBVPvb2tWYFWHrcSsKZpqF/PD8nzp1s+Csf1ep6b6MsSpgLm8WxhVVXRpVMHSw/o0hbOonpvaOUVt4rALpzOYrw9bYLuNRI80LljexoT3Raq6h593NxSwEBZz4q1y9MsFYX9fH3w9rQJph4pazRuK2BN0/BgUCBWZ75rGRGvz/oXdbdjFdxWwEBZPhz2WHNLiHjbho/offXrcbBocXtYHfzu1gIGfhfxluxlwop424aP6INBAdyKlyVuL2CgTMTBQYHIz9tIw8NChRFyeFgozc/bSAMDGrjFlNntkAK+jqZp8PSsg1UZyUgcFc+9iEcMGUBXLF4ET886bhl5XUgBl0PTNKhqCYYNisOW7GW0UXCQ2S79gUbBQVid+S4dkzD4RsdLd4btQgajrdSscTqLERwUiM3rltK5M17nJhrPnfE63bxuKQ1t3tStpsruhozAd8AV3Xp264Qje3Jo8vzpNKChv+F+NAoOQvL86fTInhzas1tHQaOu7NBuGq4VrU7PRKFLpw5097f7sf2rnVj03odMd1IMG9SX9ujaEU0ah9xIbUQeqNWpU5uJXSngClImnhKENm+KsMeaY0zCYHr02Ans3X8Y+fsOIvfrXbbTP56pku1GwUFoG9mahoeFosnDja6LthSapslU4R4wFfBVpxO+Pt4CfvLuTPlPeHBQIB4KCULPbh1BCKFOZzF+OvMLzl8oRGlpKS4UFqGk5BquXhdhbYcH7PaasNvt8KrriQb+98PP1wcOh8cNm5pWajnREkJQ8F82rWmZfgbDw0JpZvo7IIRYSsR343aN/1wtWW+3udLqv4vD4YHNW3NvbHrVG+b98iNat6JL3kuy/IOS/BFFUZCbtxMDh41hpjPmsxA7du2xvTp6sjxj2M1QFDv25O9nKl7AoGm0zV98aRs7aSbztqQSPlAUBfn7DiG2XzzzL7xh88Dr1m+2TXpznhSxxVEUO/L3HUTPuKGGHOdk+JlRA+Ni6RsTX7PcSFtSFnm/P/EDszZZt8PwlbjFmVm22UmpzPrrSsyBEIIfCk4ZKl7ApKXk1PSlttT0TClii0AIwa9nz6Fd55cM/6KbVgsxOynF9sGSlVLEgkMIwYXCIkRE9zDlCFPTz02dOXUc7dOru8yJBcTVlJtVX+OKYHo12sRpc2yr1myQkVgwCCH47TcVHZ7rbWoQNF3AADB20lu2zVtzpYgFwVUa0LXXK7bzFwpN9YULAQPA4H9MsOXk7oCiuNe2cNFwiTe2bzyOnyww2x3zc+BbycpIoa3CWghd+2p14gaNZN5ZvqJwE4FdxPaLt+XvOyQjMYcQQjA0YSI34gU4FDAA9Iwbasvfd1AuO3OEoigYmTgN2/N2ciNegMMUojxbspfRh0IedJtGdbyiKHaMmjAD69Zv5k4vXEZgF0937WP7oeCULMU0EYfDA5PenMeleAHOBQwA7Tq/ZPv17DkpYhNwODzwxsx/YnnWJ1yKFxBAwAAQEd3DdqGwSIrYQBwOD8xbkIbFmVncihcQRMAA8ERUV9vly1ekiA3A4fBAanom89YBesC9g+Xx8/XBl5uy3K4HrpEoih0fLFmJN99eIIQ2hHCyPE0ah2DWG+Opl5f1T+Axg9y8nZgxZ5FwupBIJBKJRCKRSCQSiUQikUgkEolEIpFIJBKJRCKRSCQSiUQikUgk4vH/XX9J39YE3o4AAAAASUVORK5CYII=" style="height:44px;width:auto" alt="Logo Guapa">
-    <h1>Inventario de Fruta <span style="color:#94a3b8;font-size:.9rem;font-weight:400;margin-left:10px">Agrícola Guapa</span></h1>
-  </div>
-  <div class="upd"><strong id="ts">—</strong>Última actualización</div>
-</header>
-
-<div class="kpis">
-  <div class="kpi urg kpi-doble">
-    <div class="l">+ de 48 horas criticas</div>
-    <div class="urg-doble-grid">
-      <div class="urg-doble-item">
-        <div class="v" id="kUrgEstibas">—</div>
-        <div class="sub" id="kUrgEstibasKg">—</div>
-      </div>
-      <div class="urg-doble-item">
-        <div class="v" id="kUrgBines">—</div>
-        <div class="sub" id="kUrgBinesKg">—</div>
-      </div>
-    </div>
-  </div>
-  <div class="kpi def"><div class="v" id="kE">—</div><div class="l">Estibas en bodega</div><div class="sub" id="kEKg">—</div></div>
-  <div class="kpi def"><div class="v" id="kBin">—</div><div class="l">Bines en bodega</div><div class="sub" id="kBinKg">—</div></div>
-  <div class="kpi ok" ><div class="v" id="kK">—</div><div class="l">Kg disponibles</div></div>
-  <div class="kpi inf"><div class="v" id="kF">—</div><div class="l">Dias de cosecha</div></div>
-</div>
-
-<div class="views">
-  <button class="vbtn active" onclick="setView('tarjetas')" id="btn-tarjetas">Tarjetas por dia</button>
-  <button class="vbtn" onclick="setView('tabla')"    id="btn-tabla">Tabla Inventario</button>
-  <button class="vbtn" onclick="setView('bodega')"   id="btn-bodega">Bodega + Urgencia</button>
-  <button class="vbtn" onclick="setView('bines')"    id="btn-bines">Bines</button>
-  <button class="vbtn" onclick="setView('facturacion')" id="btn-facturacion">Facturacion</button>
-  <button class="vbtn" onclick="setView('descarte')" id="btn-descarte">Descarte</button>
-  <button class="vbtn" onclick="setView('procesado')" id="btn-procesado">Inventario procesado</button>
-</div>
-
-<div class="bar" id="barInv">
-  <div class="msel" id="selCal">
-    <button type="button" class="msel-btn" onclick="toggleMsel('selCal')"><span class="msel-label">Grado de maduración</span><span class="msel-arrow">▾</span></button>
-    <div class="msel-panel" id="selCal-panel"></div>
-  </div>
-  <div class="msel" id="selTam">
-    <button type="button" class="msel-btn" onclick="toggleMsel('selTam')"><span class="msel-label">Calibre</span><span class="msel-arrow">▾</span></button>
-    <div class="msel-panel" id="selTam-panel"></div>
-  </div>
-  <div class="msel" id="selFec">
-    <button type="button" class="msel-btn" onclick="toggleMsel('selFec')"><span class="msel-label">Fecha</span><span class="msel-arrow">▾</span></button>
-    <div class="msel-panel" id="selFec-panel"></div>
-  </div>
-  <button class="breset" onclick="reset()">↺ Limpiar</button>
-</div>
-
-<div class="bar" id="barFact" style="display:none">
-  <div class="msel" id="selFactFec">
-    <button type="button" class="msel-btn" onclick="toggleMsel('selFactFec')"><span class="msel-label">Fecha de despacho</span><span class="msel-arrow">▾</span></button>
-    <div class="msel-panel" id="selFactFec-panel"></div>
-  </div>
-  <div class="msel" id="selFactCli">
-    <button type="button" class="msel-btn" onclick="toggleMsel('selFactCli')"><span class="msel-label">Todos los clientes</span><span class="msel-arrow">▾</span></button>
-    <div class="msel-panel" id="selFactCli-panel"></div>
-  </div>
-  <div class="msel" id="selFactCal">
-    <button type="button" class="msel-btn" onclick="toggleMsel('selFactCal')"><span class="msel-label">Todos los grados de maduración</span><span class="msel-arrow">▾</span></button>
-    <div class="msel-panel" id="selFactCal-panel"></div>
-  </div>
-  <button class="breset" onclick="resetFactura()">↺ Limpiar</button>
-  <button class="bexport" onclick="exportExcelFacturacion()">⬇ Exportar a Excel</button>
-  <button class="bexport" onclick="exportPDFFacturacion()">⬇ Exportar a PDF</button>
-</div>
-
-<div class="bar" id="barDescarte" style="display:none">
-  <div class="msel" id="selDescFec">
-    <button type="button" class="msel-btn" onclick="toggleMsel('selDescFec')"><span class="msel-label">Todas las fechas</span><span class="msel-arrow">▾</span></button>
-    <div class="msel-panel" id="selDescFec-panel"></div>
-  </div>
-  <div class="msel" id="selDescCat">
-    <button type="button" class="msel-btn" onclick="toggleMsel('selDescCat')"><span class="msel-label">Todas las categorias</span><span class="msel-arrow">▾</span></button>
-    <div class="msel-panel" id="selDescCat-panel"></div>
-  </div>
-  <button class="breset" onclick="resetDescarte()">↺ Limpiar</button>
-  <button class="bexport" onclick="exportExcelDescarte()">⬇ Exportar a Excel</button>
-  <button class="bexport" onclick="exportPDFDescarte()">⬇ Exportar a PDF</button>
-</div>
-
-<div class="bar" id="barProcesado" style="display:none">
-  <div class="msel" id="selProcCal">
-    <button type="button" class="msel-btn" onclick="toggleMsel('selProcCal')"><span class="msel-label">Grado de maduración</span><span class="msel-arrow">▾</span></button>
-    <div class="msel-panel" id="selProcCal-panel"></div>
-  </div>
-  <div class="msel" id="selProcTam">
-    <button type="button" class="msel-btn" onclick="toggleMsel('selProcTam')"><span class="msel-label">Calibre</span><span class="msel-arrow">▾</span></button>
-    <div class="msel-panel" id="selProcTam-panel"></div>
-  </div>
-  <div class="msel" id="selProcFec">
-    <button type="button" class="msel-btn" onclick="toggleMsel('selProcFec')"><span class="msel-label">Fecha</span><span class="msel-arrow">▾</span></button>
-    <div class="msel-panel" id="selProcFec-panel"></div>
-  </div>
-  <button class="breset" onclick="resetProcesado()">↺ Limpiar</button>
-</div>
-
-<div class="legend" id="legendInv">
-  <div class="leg"><div class="leg-dot" style="background:#22c55e"></div><span>Verde — grado de maduración 0 a 1.0</span></div>
-  <div class="leg"><div class="leg-dot" style="background:#eab308"></div><span>Pintona — grado de maduración 1.5 a 2.5</span></div>
-  <div class="leg"><div class="leg-dot" style="background:#ea580c"></div><span>Madura — grado de maduración 3.0 a 4.0 (vender primero)</span></div>
-</div>
-
-<div class="content">
-  <div id="v-tarjetas" class="v-tarjetas"></div>
-  <div id="v-tabla"    class="v-tabla"    style="display:none"></div>
-  <div id="v-bodega"   class="v-bodega"   style="display:none"></div>
-  <div id="v-bines"    class="v-bines"    style="display:none"></div>
-  <div id="v-facturacion" class="v-facturacion" style="display:none"></div>
-  <div id="v-descarte" class="v-descarte" style="display:none"></div>
-  <div id="v-procesado" class="v-tabla" style="display:none"></div>
-</div>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.2/jspdf.plugin.autotable.min.js"></script>
-<script>
-const TAM_NAMES={'PE1':'PE1','PE2':'PE2','PE3':'PE3','PE4':'PE4','PEGUA':'Guapita','PEBAB':'Baby','PIND':'Industria','AD1':'AD1','AD2':'AD2','AD3':'AD3','PJUG':'Jugos'};
-
-function isBin(r){
-  if(!r)return false;
-  const b=String(r.Bin||'').trim().toLowerCase();
-  // Bin field contains a short number (2-3 digits) = bin
-  // Bin field contains "canastas" or empty = canasta/estiba
-  return b!==''&&b!=='canastas'&&b!=='canasta'&&!isNaN(parseFloat(b));
-}
-function getMadurez(c){
-  const s=String(c).trim().replace(',','.');
-  if(s.includes('-')&&!s.startsWith('-')){
-    const parts=s.split('-').map(p=>parseFloat(p.trim()));
-    const avg=(parts[0]+parts[parts.length-1])/2;
-    if(avg<=1.0)return'verde';if(avg<=2.5)return'pintona';return'madura';
-  }
-  const v=parseFloat(s);
-  if(isNaN(v))return'madura';
-  if(v<=1.0)return'verde';if(v<=2.5)return'pintona';return'madura';
-}
-
-function getCalibreLabel(c){
-  const s=String(c).trim();
-  const map={'0':'Verde (0)','0.5':'Verde (0.5)','1':'Verde (1)','0,0 - 1,0':'Verde (0-1)','1.5':'Pintona (1.5)','2':'Pintona (2)','2.5':'Pintona (2.5)','1,5 - 2,5':'Pintona (1.5-2.5)','3':'Madura (3)','4':'Madura (4)','3,0 - 4,0':'Madura (3-4)'};
-  return map[s]||s;
-}
-// Etiqueta legible de un valor de calibre para agrupar por calibre individual.
-// Si viene vacio/sin dato, se muestra "(Sin calibre)" en vez de dejarlo en blanco.
-function calValLabel(c){
-  const s=String(c==null?'':c).trim();
-  if(s==='') return '(Sin grado de maduración)';
-  return s.replace(/,/g,'.');
-}
-
-// Clientes especiales: ciertas combinaciones de Calibre (tamaño) + Grado de
-// maduración van reservadas a un cliente puntual (Exito, Carulla, Ara) y se
-// separan visualmente del resto del inventario. Es SOLO una etiqueta visual
-// en el tablero -- no cambia los datos, el CSV, ni ningun calculo.
-const CLIENTES_ESPECIALES = [
-  {calidad:'AD1', calibre:'0',   cliente:'CARULLA'},
-  {calidad:'PE1', calibre:'0',   cliente:'CARULLA'},
-  {calidad:'AD1', calibre:'1',   cliente:'EXITO'},
-  {calidad:'PE1', calibre:'1',   cliente:'EXITO'},
-  {calidad:'PE2', calibre:'1.5', cliente:'ARA'},
-  {calidad:'AD2', calibre:'1.5', cliente:'ARA'}
-];
-function getClienteEspecial(calidad, calVal){
-  const cd  = String(calidad||'').trim().toUpperCase();
-  const cal = String(calVal==null?'':calVal).trim().replace(/,/g,'.');
-  const m = CLIENTES_ESPECIALES.find(function(r){return r.calidad===cd && r.calibre===cal;});
-  return m ? m.cliente : null;
-}
-function clienteBadgeHtml(cliente){
-  if(!cliente) return '';
-  return ' <span class="cliente-esp-badge">'+cliente+'</span>';
-}
-
-function getMadClasses(mad){
-  const map={verde:{bg:'c-verde-bg',hdr:'c-verde-hdr',txt:'c-verde-txt',badge:'c-verde-badge',card:'c-verde-card',cell:'c-verde-cell',pina:'pina-verde',dot:'#16a34a',label:'VERDE',calib:'0 - 1.0'},pintona:{bg:'c-pintona-bg',hdr:'c-pintona-hdr',txt:'c-pintona-txt',badge:'c-pintona-badge',card:'c-pintona-card',cell:'c-pintona-cell',pina:'pina-pintona',dot:'#eab308',label:'PINTONA',calib:'1.5 - 2.5'},madura:{bg:'c-madura-bg',hdr:'c-madura-hdr',txt:'c-madura-txt',badge:'c-madura-badge',card:'c-madura-card',cell:'c-madura-cell',pina:'pina-madura',dot:'#ea580c',label:'MADURA',calib:'3.0 - 4.0'}};
-  return map[mad]||map.madura;
-}
-// Color único de fondo por madurez, usado en zonas donde no aplica una clase CSS (headers dinámicos, tarjetas de bines, etc.)
-function madBg(mad){return mad==='verde'?'#166534':mad==='pintona'?'#eab308':'#ea580c';}
-// Color de texto legible sobre madBg() — la pintona es un fondo claro y necesita texto oscuro
-function madFg(mad){return mad==='pintona'?'#422006':'#fff';}
-
-function urgColor(h){return h>=72?'#ef4444':h>=48?'#f97316':h>=24?'#eab308':'#22c55e'}
-function urgClass(h){return h>=72?'horas-critico':h>=48?'horas-alto':h>=24?'horas-medio':'horas-ok'}
-function horasDesde(f){
-  if(!f)return 0;
-  let d;
-  if(f.includes('/')){
-    // Format: DD/MM/YYYY
-    const p=f.split('/');
-    d=new Date(p[2]+'-'+p[1]+'-'+p[0]+'T00:00:00');
-  } else {
-    d=new Date(f+'T00:00:00');
-  }
-  return Math.floor((new Date()-d)/3600000);
-}
-function horasLabel(h){const d=Math.floor(h/24),r=h%24;return d>0?d+'d '+r+'h':h+'h'}
-function fmtF(f){
-  if(!f)return'';
-  let y,m,d;
-  if(f.includes('/')){
-    [d,m,y]=f.split('/');
-  } else {
-    [y,m,d]=f.split('-');
-  }
-  const M=['','Ene','Feb','Mar','Abr','May','Jun','Jul','Ago','Sep','Oct','Nov','Dic'];
-  return parseInt(d)+' '+M[parseInt(m)]+' '+y;
-}
-
-let ALL=[],DESPACHO=[],PROCESADO=[],currentView='tarjetas';
-
-async function load(){
-  try{
-    const r=await fetch('inventario.csv?'+Date.now());
-    if(!r.ok)throw 0;
-    ALL=parseCSV(await r.text());
-    document.getElementById('ts').textContent=new Date().toLocaleString('es-CO',{day:'2-digit',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit'});
-  }catch{ALL=demo();document.getElementById('ts').textContent='Datos de demostracion';}
-  try{
-    const r2=await fetch('despacho.csv?'+Date.now());
-    if(!r2.ok)throw 0;
-    DESPACHO=parseDespachoCSV(await r2.text());
-  }catch{DESPACHO=demoDespacho();}
-  try{
-    const r3=await fetch('procesado.csv?'+Date.now());
-    if(!r3.ok)throw 0;
-    PROCESADO=parseProcesadoCSV(await r3.text());
-  }catch{PROCESADO=demoProcesado();}
-  buildFilters();buildFacturaFiltros();buildDescarteFiltros();buildProcesadoFiltros();render();
-}
-// -- "Inventario procesado": TODO lo que entro a Proceso (columna Neto, Proceso!I),
-// sin importar si ya tiene despacho final o no -- a diferencia de inventario.csv,
-// que solo trae lo que sigue disponible en bodega. --
-function parseProcesadoCSV(t){
-  const lines=t.trim().split('\n');
-  if(!lines.length||!lines[0]) return [];
-  return lines.slice(1).filter(l=>l.trim()!=='').map(function(l){
-    const v=l.split(',');
-    return {
-      Fecha:(v[0]||'').trim(),
-      Calidad:(v[1]||'').trim(),
-      Calibre:(v[2]||'').trim(),
-      Neto:parseFloat(v[3])||0
-    };
-  }).filter(r=>r.Fecha!=='' && r.Calidad!=='');
-}
-function demoProcesado(){return[
-  {Fecha:'2026-08-17',Calidad:'AD1',Calibre:'0,0 - 1,0',Neto:2669},
-  {Fecha:'2026-08-17',Calidad:'AD2',Calibre:'0,0 - 1,0',Neto:802},
-  {Fecha:'2026-08-18',Calidad:'AD1',Calibre:'1,5 - 2,5',Neto:288},
-  {Fecha:'2026-08-18',Calidad:'AD-PJUG',Calibre:'3,0 - 4,0',Neto:255},
-];}
-
-function parseDespachoCSV(t){
-  const lines=t.trim().split('\n');
-  if(!lines.length||!lines[0]) return [];
-  return lines.slice(1).filter(l=>l.trim()!=='').map(function(l){
-    const v=l.split(',');
-    return {
-      FechaDespacho:(v[0]||'').trim(),
-      Factura:(v[1]||'').trim(),
-      Remision:(v[2]||'').trim(),
-      Cliente:(v[3]||'').trim(),
-      Categoria:(v[4]||'').trim(),
-      Calibre:(v[5]||'').trim(),
-      KilosFinal:parseFloat(v[6])||0,
-      ReposicionKilos:parseFloat(v[7])||0,
-      Precio:(v[8]===undefined||v[8].trim()==='')?null:parseFloat(v[8]),
-      KilosDescarte:parseFloat(v[9])||0
-    };
-  }).filter(r=>r.FechaDespacho!=='');
-}
-
-function demoDespacho(){return[
-  {FechaDespacho:'2026-07-27',Factura:'',Remision:'R-18518',Cliente:'reposicion exito barranquilla',Categoria:'piña special 1ra',Calibre:'3,0 - 4,0',KilosFinal:0,ReposicionKilos:50,Precio:0,KilosDescarte:0},
-  {FechaDespacho:'2026-07-27',Factura:'',Remision:'R-18520',Cliente:'cartagena',Categoria:'piña special 1ra',Calibre:'3,0 - 4,0',KilosFinal:568,ReposicionKilos:432,Precio:3000,KilosDescarte:12},
-  {FechaDespacho:'2026-07-27',Factura:'',Remision:'R-18520',Cliente:'cartagena',Categoria:'piña special 2da',Calibre:'1,5 - 2,5',KilosFinal:988,ReposicionKilos:12,Precio:2800,KilosDescarte:5},
-  {FechaDespacho:'2026-07-27',Factura:'',Remision:'R-18521',Cliente:'local medellin',Categoria:'piña special 1ra',Calibre:'3,0 - 4,0',KilosFinal:3015,ReposicionKilos:0,Precio:2500,KilosDescarte:0},
-];}
-
-function parseCSV(t){
-  const lines=t.trim().split('\n');
-  const hdr=lines[0].split(',').map(s=>s.trim().replace(/"/g,''));
-  return lines.slice(1).map(l=>{
-    const v=l.split(',').map(s=>s.trim().replace(/"/g,''));
-    const o={};
-    if(v.length>=7){
-      o['ID']=v[0];o['Bin']=v[1];o['Fecha']=v[2];o['Calidad']=v[3];
-      o['Nombre']=v[4];
-      // Calibre puede tener espacios: "1.5 - 2.5" se parte en 3 partes
-      // Reunir las partes del calibre y kg
-      if(v.length===9){
-        // "1.5 - 2.5" se partió en 3: v[5], v[6], v[7], kg en v[8]
-        o['Calibre']=v[5]+' - '+v[7];o['KgDisponibles']=v[8];
-      } else if(v.length===8){
-        o['Calibre']=v[5]+' - '+v[7];o['KgDisponibles']=v[7];
-      } else {
-        o['Calibre']=v[5];o['KgDisponibles']=v[6];
-      }
-    } else {
-      hdr.forEach((h,i)=>o[h]=v[i]||'');
-    }
-    return o;
-  }).filter(r=>r.ID&&r.ID.trim()!=''&&r.Fecha&&r.Fecha.trim()!=''&&r.Calidad&&r.Calidad.trim()!='');
-}
-
-// ── Filtros multi-seleccion ──────────────────────────────────────────────
-const filtros={cal:[],tam:[],fec:[],factFecha:[],factCli:[],factCal:[],descFec:[],descCat:[],procCal:[],procTam:[],procFec:[]};
-const MSEL_DEF={
-  selCal:{key:'cal',placeholder:'Grado de maduración'},
-  selTam:{key:'tam',placeholder:'Calibre'},
-  selFec:{key:'fec',placeholder:'Fecha'},
-  selFactFec:{key:'factFecha',placeholder:'Fecha de despacho'},
-  selFactCli:{key:'factCli',placeholder:'Todos los clientes'},
-  selFactCal:{key:'factCal',placeholder:'Todos los grados de maduración'},
-  selDescFec:{key:'descFec',placeholder:'Todas las fechas'},
-  selDescCat:{key:'descCat',placeholder:'Todas las categorias'},
-  selProcCal:{key:'procCal',placeholder:'Grado de maduración'},
-  selProcTam:{key:'procTam',placeholder:'Calibre'},
-  selProcFec:{key:'procFec',placeholder:'Fecha'}
-};
-// -- Filtros de fecha con arbol Año / Mes / Semana / Fecha (estilo Power BI) --
-const FECHA_TREE_IDS=['selFec','selFactFec','selDescFec','selProcFec'];
-const MES_NOMBRES=['','Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
-function anioDe(f){ return f.includes('/') ? f.split('/')[2] : f.split('-')[0]; }
-function mesDe(f){ const m = f.includes('/') ? f.split('/')[1] : f.split('-')[1]; return String(parseInt(m,10)).padStart(2,'0'); }
-function isoWeekInfo(f){
-  let y,m,d;
-  if(f.includes('/')){ [d,m,y]=f.split('/'); } else { [y,m,d]=f.split('-'); }
-  const dt=new Date(Date.UTC(parseInt(y),parseInt(m)-1,parseInt(d)));
-  const dayNum=(dt.getUTCDay()+6)%7;
-  dt.setUTCDate(dt.getUTCDate()-dayNum+3);
-  const firstThursday=new Date(Date.UTC(dt.getUTCFullYear(),0,4));
-  const fdDayNum=(firstThursday.getUTCDay()+6)%7;
-  firstThursday.setUTCDate(firstThursday.getUTCDate()-fdDayNum+3);
-  return {week:1+Math.round((dt-firstThursday)/(7*24*3600*1000))};
-}
-
-// -- Helpers de fecha para el filtro de Facturacion (formato YYYY-MM-DD, igual que el CSV) --
-function fechaISO(d){
-  const y=d.getFullYear(), m=String(d.getMonth()+1).padStart(2,'0'), day=String(d.getDate()).padStart(2,'0');
-  return y+'-'+m+'-'+day;
-}
-function ayerISO(){
-  const d=new Date(); d.setDate(d.getDate()-1);
-  return fechaISO(d);
-}
-const CALIBRE_OPCIONES=[
-  {value:'0',label:'0 · Verde'},
-  {value:'0.5',label:'0.5 · Verde'},
-  {value:'1',label:'1 · Verde'},
-  {value:'0,0 - 1,0',label:'0.0-1.0 · Verde'},
-  {value:'1.5',label:'1.5 · Pintona'},
-  {value:'2',label:'2 · Pintona'},
-  {value:'2.5',label:'2.5 · Pintona'},
-  {value:'1,5 - 2,5',label:'1.5-2.5 · Pintona'},
-  {value:'3',label:'3 · Madura'},
-  {value:'4',label:'4 · Madura'},
-  {value:'3,0 - 4,0',label:'3.0-4.0 · Madura'}
-];
-function toggleMsel(id){
-  const el=document.getElementById(id);
-  const wasOpen=el.classList.contains('open');
-  document.querySelectorAll('.msel.open').forEach(function(m){m.classList.remove('open');});
-  if(!wasOpen) el.classList.add('open');
-}
-document.addEventListener('click', function(e){
-  if(!e.target.closest('.msel')) document.querySelectorAll('.msel.open').forEach(function(m){m.classList.remove('open');});
-});
-
-function fillMsel(id,items){
-  const def=MSEL_DEF[id];
-  const panel=document.getElementById(id+'-panel');
-  panel.dataset.values=JSON.stringify(items.map(function(it){return it.value;}));
-  if(!items.length){panel.innerHTML='<div class="msel-empty">Sin opciones</div>';return;}
-  let html='<input type="text" class="msel-search" placeholder="Buscar y Enter para marcar..." oninput="filterMsel(\''+id+'\',this.value)" onclick="event.stopPropagation()" onkeydown="if(event.key===\'Enter\'){event.preventDefault();aceptarBusquedaMsel(\''+id+'\');}">';
-  html+='<div class="msel-actions">';
-  html+='<button type="button" class="msel-btn-todos" onclick="selectAllMsel(\''+id+'\')">Seleccionar todos</button>';
-  html+='<button type="button" onclick="clearMsel(\''+id+'\')">Ninguno</button>';
-  html+='</div>';
-  html+='<div class="msel-opciones">';
-  html+=items.map(function(it){
-    const checked=filtros[def.key].includes(it.value)?'checked':'';
-    const txt=String(it.label).toLowerCase().replace(/"/g,'&quot;');
-    return '<label data-txt="'+txt+'"><input type="checkbox" value="'+it.value.replace(/"/g,'&quot;')+'" '+checked+' onchange="onMselChange(\''+id+'\',this)">'+it.label+'</label>';
-  }).join('');
-  html+='</div>';
-  panel.innerHTML=html;
-  updateMselBtn(id);
-}
-// Igual que fillMsel, pero agrupa las fechas en un arbol Año > Mes > Semana > Fecha
-// (estilo Power BI): marcar un Año, un Mes o una Semana marca de una vez todos
-// los dias que contiene; los dias individuales se pueden seguir marcando sueltos.
-function buildFechaMsel(id,fechas){
-  const def=MSEL_DEF[id];
-  const panel=document.getElementById(id+'-panel');
-  panel.dataset.values=JSON.stringify(fechas);
-  if(!fechas.length){panel.innerHTML='<div class="msel-empty">Sin opciones</div>';return;}
-  const conHoras = id==='selFec';
-  const porAnio={};
-  fechas.forEach(function(f){
-    const y=anioDe(f), m=mesDe(f), wk=String(isoWeekInfo(f).week).padStart(2,'0');
-    if(!porAnio[y]) porAnio[y]={};
-    if(!porAnio[y][m]) porAnio[y][m]={};
-    if(!porAnio[y][m][wk]) porAnio[y][m][wk]=[];
-    porAnio[y][m][wk].push(f);
-  });
-  const anios=Object.keys(porAnio).sort().reverse();
-
-  let html='<input type="text" class="msel-search" placeholder="Buscar y Enter para marcar..." oninput="filterMsel(\''+id+'\',this.value)" onclick="event.stopPropagation()" onkeydown="if(event.key===\'Enter\'){event.preventDefault();aceptarBusquedaMsel(\''+id+'\');}">';
-  html+='<div class="msel-actions">';
-  html+='<button type="button" class="msel-btn-todos" onclick="selectAllMsel(\''+id+'\')">Seleccionar todos</button>';
-  html+='<button type="button" onclick="clearMsel(\''+id+'\')">Ninguno</button>';
-  html+='</div>';
-  html+='<div class="msel-opciones">';
-  anios.forEach(function(y){
-    const meses=Object.keys(porAnio[y]).sort().reverse();
-    const diasAnio=meses.reduce(function(a,m){return a.concat(Object.values(porAnio[y][m]).reduce(function(a2,arr){return a2.concat(arr);},[]));},[]);
-    html+='<div class="fecha-node fecha-nivel-anio" data-dias="'+diasAnio.join(',')+'">';
-    html+='<span class="fecha-toggle" onclick="toggleFechaNode(this)">▸</span>';
-    html+='<label><input type="checkbox" onchange="onFechaGroupChange(\''+id+'\',this)"><span>'+y+'</span></label>';
-    html+='</div>';
-    html+='<div class="fecha-hijos" style="display:none">';
-    meses.forEach(function(m){
-      const semanas=Object.keys(porAnio[y][m]).sort().reverse();
-      const diasMes=semanas.reduce(function(a,wk){return a.concat(porAnio[y][m][wk]);},[]);
-      html+='<div class="fecha-node fecha-nivel-mes" data-dias="'+diasMes.join(',')+'">';
-      html+='<span class="fecha-toggle" onclick="toggleFechaNode(this)">▸</span>';
-      html+='<label><input type="checkbox" onchange="onFechaGroupChange(\''+id+'\',this)"><span>'+(MES_NOMBRES[parseInt(m,10)]||m)+'</span></label>';
-      html+='</div>';
-      html+='<div class="fecha-hijos" style="display:none">';
-      semanas.forEach(function(wk){
-        const dias=porAnio[y][m][wk].slice().sort();
-        const rango=fmtF(dias[0])+' - '+fmtF(dias[dias.length-1]);
-        html+='<div class="fecha-node fecha-nivel-semana" data-dias="'+dias.join(',')+'">';
-        html+='<span class="fecha-toggle" onclick="toggleFechaNode(this)">▸</span>';
-        html+='<label><input type="checkbox" onchange="onFechaGroupChange(\''+id+'\',this)"><span>Semana '+wk+' · '+rango+'</span></label>';
-        html+='</div>';
-        html+='<div class="fecha-hijos fecha-hijos-dias" style="display:none">';
-        dias.slice().reverse().forEach(function(f){
-          const checked=filtros[def.key].includes(f)?'checked':'';
-          const lbl=fmtF(f)+(conHoras?(' — '+horasLabel(horasDesde(f))):'');
-          const txt=lbl.toLowerCase().replace(/"/g,'&quot;');
-          html+='<label data-txt="'+txt+'"><input type="checkbox" value="'+f+'" '+checked+' onchange="onMselChange(\''+id+'\',this)">'+lbl+'</label>';
-        });
-        html+='</div>';
-      });
-      html+='</div>';
-    });
-    html+='</div>';
-  });
-  html+='</div>';
-  panel.innerHTML=html;
-  updateMselBtn(id);
-  syncFechaTreeChecks(id);
-}
-function toggleFechaNode(toggleEl){
-  const hijos=toggleEl.closest('.fecha-node').nextElementSibling;
-  if(!hijos||!hijos.classList.contains('fecha-hijos'))return;
-  const abierto=hijos.style.display!=='none';
-  hijos.style.display=abierto?'none':'';
-  toggleEl.textContent=abierto?'▸':'▾';
-}
-function onFechaGroupChange(id,cb){
-  const def=MSEL_DEF[id];
-  const node=cb.closest('.fecha-node');
-  const dias=(node.dataset.dias||'').split(',').filter(Boolean);
-  const panel=document.getElementById(id+'-panel');
-  if(cb.checked){
-    dias.forEach(function(f){ if(!filtros[def.key].includes(f)) filtros[def.key].push(f); });
-  } else {
-    filtros[def.key]=filtros[def.key].filter(function(f){return dias.indexOf(f)===-1;});
-  }
-  dias.forEach(function(f){
-    panel.querySelectorAll('input[type=checkbox][value="'+f+'"]').forEach(function(leaf){leaf.checked=cb.checked;});
-  });
-  updateMselBtn(id);
-  syncFechaTreeChecks(id);
-  render();
-}
-// Recalcula el check/indeterminado de los nodos Año y Semana segun que dias
-// esten realmente seleccionados en filtros -- se llama tras cualquier cambio
-// (marcar un dia suelto, buscar, limpiar, seleccionar todos, etc.)
-function syncFechaTreeChecks(id){
-  if(FECHA_TREE_IDS.indexOf(id)===-1) return;
-  const def=MSEL_DEF[id];
-  const panel=document.getElementById(id+'-panel');
-  if(!panel) return;
-  panel.querySelectorAll('.fecha-node').forEach(function(node){
-    const dias=(node.dataset.dias||'').split(',').filter(Boolean);
-    const cb=node.querySelector('input[type=checkbox]');
-    if(!cb||!dias.length) return;
-    const n=dias.filter(function(f){return filtros[def.key].includes(f);}).length;
-    cb.checked = n===dias.length;
-    cb.indeterminate = n>0 && n<dias.length;
-  });
-}
-// Filtra en vivo las opciones de un desplegable segun lo que se escriba en su buscador.
-// Aplica igual a todos los desplegables, ya que todos usan fillMsel/este mismo panel.
-function filterMsel(id,texto){
-  const panel=document.getElementById(id+'-panel');
-  const t=String(texto||'').trim().toLowerCase();
-  let visibles=0;
-  panel.querySelectorAll('label[data-txt]').forEach(function(lab){
-    const coincide=(!t || lab.dataset.txt.indexOf(t)!==-1);
-    lab.style.display = coincide?'':'none';
-    if(coincide) visibles++;
-  });
-  if(FECHA_TREE_IDS.indexOf(id)!==-1){
-    // Al escribir, expandir los grupos que tengan alguna coincidencia y ocultar
-    // los que no; al borrar la busqueda, volver a colapsar todo como al inicio.
-    panel.querySelectorAll('.fecha-nivel-semana').forEach(function(node){
-      const hijos=node.nextElementSibling;
-      const algunoVisible=!!hijos && Array.from(hijos.querySelectorAll('label[data-txt]')).some(function(l){return l.style.display!=='none';});
-      node.style.display = (!t || algunoVisible) ? '' : 'none';
-      if(hijos) hijos.style.display = (t && algunoVisible) ? '' : 'none';
-      const arrow=node.querySelector('.fecha-toggle');
-      if(arrow) arrow.textContent = (t && algunoVisible) ? '▾' : '▸';
-    });
-    panel.querySelectorAll('.fecha-nivel-mes').forEach(function(node){
-      const hijos=node.nextElementSibling;
-      const algunaVisible=!!hijos && Array.from(hijos.querySelectorAll('.fecha-nivel-semana')).some(function(s){return s.style.display!=='none';});
-      node.style.display = (!t || algunaVisible) ? '' : 'none';
-      if(hijos) hijos.style.display = (t && algunaVisible) ? '' : 'none';
-      const arrow=node.querySelector('.fecha-toggle');
-      if(arrow) arrow.textContent = (t && algunaVisible) ? '▾' : '▸';
-    });
-    panel.querySelectorAll('.fecha-nivel-anio').forEach(function(node){
-      const hijos=node.nextElementSibling;
-      const algunaVisible=!!hijos && Array.from(hijos.querySelectorAll('.fecha-nivel-mes')).some(function(s){return s.style.display!=='none';});
-      node.style.display = (!t || algunaVisible) ? '' : 'none';
-      if(hijos) hijos.style.display = (t && algunaVisible) ? '' : 'none';
-      const arrow=node.querySelector('.fecha-toggle');
-      if(arrow) arrow.textContent = (t && algunaVisible) ? '▾' : '▸';
-    });
-  }
-  // -- El boton "Seleccionar todos" pasa a marcar solo lo que coincide con la busqueda --
-  const btnTodos=panel.querySelector('.msel-btn-todos');
-  if(btnTodos) btnTodos.textContent = t ? ('Marcar '+visibles+' coincidencia'+(visibles===1?'':'s')) : 'Seleccionar todos';
-}
-function onMselChange(id,cb){
-  const key=MSEL_DEF[id].key, v=cb.value;
-  if(cb.checked){ if(!filtros[key].includes(v)) filtros[key].push(v); }
-  else { filtros[key]=filtros[key].filter(function(x){return x!==v;}); }
-  updateMselBtn(id);
-  syncFechaTreeChecks(id);
-  render();
-}
-function selectAllMsel(id){
-  const def=MSEL_DEF[id];
-  const panel=document.getElementById(id+'-panel');
-  // -- Si hay busqueda activa, solo marca las opciones visibles (las que coinciden) --
-  // -- Si no hay busqueda, marca todas, como antes --
-  const labels=Array.from(panel.querySelectorAll('label[data-txt]'));
-  const labelsVisibles=labels.filter(function(lab){return lab.style.display!=='none';});
-  const objetivo=labelsVisibles.length?labelsVisibles:labels;
-  objetivo.forEach(function(lab){
-    const cb=lab.querySelector('input[type=checkbox]');
-    cb.checked=true;
-    if(!filtros[def.key].includes(cb.value)) filtros[def.key].push(cb.value);
-  });
-  updateMselBtn(id);
-  syncFechaTreeChecks(id);
-  render();
-}
-// Igual que en Excel: escribes en el buscador y con Enter marca de una vez
-// las coincidencias y cierra el desplegable, sin tener que hacer clic en nada mas.
-function aceptarBusquedaMsel(id){
-  const panel=document.getElementById(id+'-panel');
-  const texto=panel.querySelector('.msel-search');
-  const t=texto?texto.value.trim():'';
-  if(!t) return; // Enter sin texto escrito no hace nada
-  selectAllMsel(id);
-  const cont=document.getElementById(id);
-  if(cont) cont.classList.remove('open');
-}
-function clearMsel(id){
-  const def=MSEL_DEF[id];
-  filtros[def.key]=[];
-  document.getElementById(id+'-panel').querySelectorAll('input[type=checkbox]').forEach(function(cb){cb.checked=false;});
-  updateMselBtn(id);
-  syncFechaTreeChecks(id);
-  render();
-}
-function updateMselBtn(id){
-  const def=MSEL_DEF[id];
-  const n=filtros[def.key].length;
-  document.querySelector('#'+id+' .msel-label').textContent = n===0?def.placeholder:(n+' seleccionados');
-}
-
-function buildFilters(){
-  const tams=[...new Set(ALL.map(r=>r.Calidad))].sort();
-  const fechas=[...new Set(ALL.map(r=>r.Fecha))].sort();
-  fillMsel('selCal',CALIBRE_OPCIONES);
-  fillMsel('selTam',tams.map(c=>({value:c,label:(TAM_NAMES[c]||c)+' ('+c+')'})));
-  buildFechaMsel('selFec',fechas);
-}
-function buildFacturaFiltros(){
-  const clientes=[...new Set(DESPACHO.map(r=>r.Cliente).filter(c=>c))].sort();
-  const calibres=[...new Set(DESPACHO.map(r=>r.Calibre).filter(c=>c))].sort(function(a,b){return parseFloat(a.replace(',','.'))-parseFloat(b.replace(',','.'));});
-  const fechas=[...new Set(DESPACHO.map(r=>r.FechaDespacho).filter(f=>f))].sort();
-  fillMsel('selFactCli',clientes.map(c=>({value:c,label:c})));
-  fillMsel('selFactCal',calibres.map(c=>({value:c,label:c.replace(',','.')})));
-
-  // -- Fecha: por defecto el dia anterior a hoy, solo la primera vez (no pisar la eleccion del usuario en recargas automaticas) --
-  if(!filtros.factFecha.length){
-    const y=ayerISO();
-    if(fechas.includes(y)) filtros.factFecha=[y];
-  }
-  buildFechaMsel('selFactFec',fechas);
-}
-function reset(){
-  ['cal','tam','fec'].forEach(k=>filtros[k]=[]);
-  ['selCal','selTam','selFec'].forEach(id=>{fillMselKeep(id);});
-  render();
-}
-function resetFactura(){
-  ['factCli','factCal'].forEach(k=>filtros[k]=[]);
-  ['selFactCli','selFactCal'].forEach(id=>{fillMselKeep(id);});
-  const fechas=[...new Set(DESPACHO.map(r=>r.FechaDespacho).filter(f=>f))].sort();
-  const y=ayerISO();
-  filtros.factFecha = fechas.includes(y) ? [y] : [];
-  buildFechaMsel('selFactFec',fechas);
-  render();
-}
-function buildDescarteFiltros(){
-  const fechas=[...new Set(DESPACHO.map(r=>r.FechaDespacho).filter(f=>f))].sort();
-  const categorias=[...new Set(DESPACHO.map(r=>r.Categoria).filter(c=>c))].sort();
-  buildFechaMsel('selDescFec',fechas);
-  fillMsel('selDescCat',categorias.map(c=>({value:c,label:c})));
-}
-function resetDescarte(){
-  ['descFec','descCat'].forEach(k=>filtros[k]=[]);
-  ['selDescFec','selDescCat'].forEach(id=>{fillMselKeep(id);});
-  render();
-}
-function buildProcesadoFiltros(){
-  const tams=[...new Set(PROCESADO.map(r=>r.Calidad))].sort();
-  const fechas=[...new Set(PROCESADO.map(r=>r.Fecha))].sort();
-  fillMsel('selProcCal',CALIBRE_OPCIONES);
-  fillMsel('selProcTam',tams.map(c=>({value:c,label:(TAM_NAMES[c]||c)+' ('+c+')'})));
-  buildFechaMsel('selProcFec',fechas);
-}
-function resetProcesado(){
-  ['procCal','procTam','procFec'].forEach(k=>filtros[k]=[]);
-  ['selProcCal','selProcTam','selProcFec'].forEach(id=>{fillMselKeep(id);});
-  render();
-}
-function fillMselKeep(id){
-  // Vuelve a pintar el panel actual (checkboxes) sin recalcular las opciones
-  document.querySelectorAll('#'+id+'-panel input[type=checkbox]').forEach(function(cb){cb.checked=false;});
-  updateMselBtn(id);
-  syncFechaTreeChecks(id);
-}
-function filtered(){
-  const cal=filtros.cal,t=filtros.tam,f=filtros.fec;
-  return ALL.filter(r=>(!cal.length||cal.includes(r.Calibre))&&(!t.length||t.includes(r.Calidad))&&(!f.length||f.includes(r.Fecha)));
-}
-function filteredFacturacion(){
-  const fecha=filtros.factFecha,c=filtros.factCli,cal=filtros.factCal;
-  return DESPACHO.filter(r=>(!fecha.length||fecha.includes(r.FechaDespacho))&&(!c.length||c.includes(r.Cliente))&&(!cal.length||cal.includes(r.Calibre)));
-}
-function filteredDescarte(){
-  const f=filtros.descFec,cat=filtros.descCat;
-  return DESPACHO.filter(r=>(!f.length||f.includes(r.FechaDespacho))&&(!cat.length||cat.includes(r.Categoria)));
-}
-function filteredProcesado(){
-  const cal=filtros.procCal,t=filtros.procTam,f=filtros.procFec;
-  return PROCESADO.filter(r=>(!cal.length||cal.includes(r.Calibre))&&(!t.length||t.includes(r.Calidad))&&(!f.length||f.includes(r.Fecha)));
-}
-function setView(v){
-  currentView=v;
-  ['tarjetas','tabla','bodega','bines','facturacion','descarte','procesado'].forEach(x=>{document.getElementById('v-'+x).style.display=x===v?'':'none';document.getElementById('btn-'+x).classList.toggle('active',x===v);});
-  const esFact = v==='facturacion';
-  const esDesc = v==='descarte';
-  const esProc = v==='procesado';
-  document.getElementById('barInv').style.display = (esFact||esDesc||esProc)?'none':'';
-  document.getElementById('barFact').style.display = esFact?'':'none';
-  document.getElementById('barDescarte').style.display = esDesc?'':'none';
-  document.getElementById('barProcesado').style.display = esProc?'':'none';
-  document.getElementById('legendInv').style.display = (esFact||esDesc||esProc)?'none':'';
-  render();
-}
-
-function render(){
-  const data=filtered();
-  const kg=data.reduce((s,r)=>s+(parseFloat(r.KgDisponibles)||0),0);
-  const rBines=data.filter(r=>isBin(r));
-  const rEstibas=data.filter(r=>!isBin(r));
-  const nBines=rBines.length;
-  const nEstibas=rEstibas.length;
-  const kgBines=rBines.reduce((s,r)=>s+(parseFloat(r.KgDisponibles)||0),0);
-  const kgEstibas=rEstibas.reduce((s,r)=>s+(parseFloat(r.KgDisponibles)||0),0);
-  const pctBines=kg>0?Math.round(kgBines/kg*100):0;
-  const pctEstibas=kg>0?Math.round(kgEstibas/kg*100):0;
-  const rCriticas=data.filter(r=>horasDesde(r.Fecha)>=48);
-  const rCriticasEstibas=rCriticas.filter(r=>!isBin(r));
-  const rCriticasBines=rCriticas.filter(r=>isBin(r));
-  const kgCriticasEstibas=rCriticasEstibas.reduce((s,r)=>s+(parseFloat(r.KgDisponibles)||0),0);
-  const kgCriticasBines=rCriticasBines.reduce((s,r)=>s+(parseFloat(r.KgDisponibles)||0),0);
-  document.getElementById('kUrgEstibas').textContent=rCriticasEstibas.length.toLocaleString('es-CO');
-  document.getElementById('kUrgEstibasKg').textContent='estibas = '+Math.round(kgCriticasEstibas).toLocaleString('es-CO')+' kilos';
-  document.getElementById('kUrgBines').textContent=rCriticasBines.length.toLocaleString('es-CO');
-  document.getElementById('kUrgBinesKg').textContent='bines = '+Math.round(kgCriticasBines).toLocaleString('es-CO')+' kilos';
-  document.getElementById('kE').textContent=nEstibas.toLocaleString('es-CO');
-  document.getElementById('kBin').textContent=nBines.toLocaleString('es-CO');
-  document.getElementById('kEKg').textContent=Math.round(kgEstibas).toLocaleString('es-CO')+' kg · '+pctEstibas+'%';
-  document.getElementById('kBinKg').textContent=Math.round(kgBines).toLocaleString('es-CO')+' kg · '+pctBines+'%';
-  document.getElementById('kK').textContent=Math.round(kg).toLocaleString('es-CO')+' kg';
-  document.getElementById('kF').textContent=[...new Set(data.map(r=>r.Fecha))].length;
-  if(currentView==='tarjetas')renderTarjetas(data);
-  if(currentView==='tabla')renderTabla(data);
-  if(currentView==='bodega')renderBodega(data);
-  if(currentView==='bines')renderBines(data);
-  if(currentView==='facturacion')renderFacturacion(filteredFacturacion());
-  if(currentView==='descarte')renderDescarte(filteredDescarte());
-  if(currentView==='procesado')renderInventarioProcesado(filteredProcesado());
-}
-
-function renderTarjetas(data){
-  const el=document.getElementById('v-tarjetas');
-  if(!data.length){el.innerHTML='<div class="empty">Sin estibas disponibles.</div>';return;}
-  const fechas=[...new Set(data.map(function(r){return r.Fecha;}))].sort();
-  const kgGlobal=data.reduce(function(s,r){return s+(parseFloat(r.KgDisponibles)||0);},0);
-  let html='';
-  fechas.forEach(function(fecha){
-    const h=horasDesde(fecha);
-    const bloque=data.filter(function(r){return r.Fecha===fecha;});
-    const kgB=bloque.reduce(function(s,r){return s+(parseFloat(r.KgDisponibles)||0);},0);
-    const pct=kgGlobal>0?Math.round(kgB/kgGlobal*100):0;
-    html+='<div class="dia-block">';
-    html+='<div class="dia-hdr"><span class="'+urgClass(h)+'">'+horasLabel(h)+' en bodega</span>';
-    html+='<h2>'+fmtF(fecha)+'</h2>';
-    html+='<span class="dia-pct">'+pct+'% del inventario</span>';
-    html+='<div class="dia-kg">Total: <strong>'+Math.round(kgB).toLocaleString('es-CO')+' kg</strong></div></div>';
-    const calibresPresentes=[...new Set(bloque.map(function(r){return r.Calibre;}))].sort(function(a,b){
-      return parseFloat(String(a).replace(',','.'))-parseFloat(String(b).replace(',','.'));
-    });
-    calibresPresentes.forEach(function(calVal){
-      const filas=bloque.filter(function(r){return r.Calibre===calVal;});
-      if(!filas.length) return;
-      const mad=getMadurez(calVal);
-      const C=getMadClasses(mad);
-      const kgM=filas.reduce(function(s,r){return s+(parseFloat(r.KgDisponibles)||0);},0);
-      const clientesGrupo=[...new Set(filas.map(function(r){return getClienteEspecial(r.Calidad, calVal);}).filter(Boolean))];
-      html+='<div class="mad-section">';
-      html+='<div class="mad-hdr '+C.hdr+'">';
-      html+='<span class="'+C.badge+'">'+C.label+'</span>';
-      html+='<span class="'+C.badge+'" style="font-size:1.15rem">Grado de maduración '+calValLabel(calVal)+'</span>';
-      if(clientesGrupo.length) html+='<span class="'+C.badge+'">'+clientesGrupo.join(', ')+'</span>';
-      html+='<span style="margin-left:auto;background:rgba(0,0,0,0.35);color:#fff;padding:3px 12px;border-radius:20px;font-size:.85rem;font-weight:800">'+Math.round(kgM).toLocaleString('es-CO')+' kg</span>';
-      html+='</div>';
-      html+='<div class="tam-grid '+C.bg+'">';
-      const tamsSet=[...new Set(filas.map(function(r){return r.Calidad;}))];
-      const tamsOrdenados=tamsSet.map(function(tam){
-        const ft=filas.filter(function(r){return r.Calidad===tam;});
-        const kgT=ft.reduce(function(s,r){return s+(parseFloat(r.KgDisponibles)||0);},0);
-        return {tam:tam,ft:ft,kgT:kgT};
-      }).sort(function(a,b){return b.kgT-a.kgT;});
-      tamsOrdenados.forEach(function(to){
-        const clienteEsp=getClienteEspecial(to.tam, calVal);
-        html+='<div class="tam-card '+C.card+'">';
-        html+='<div class="tam-name" style="font-size:1.15rem;font-weight:800;color:#0f172a;margin-bottom:3px">'+(TAM_NAMES[to.tam]||to.tam)+clienteBadgeHtml(clienteEsp)+'</div>';
-        html+='<div style="font-size:1.35rem;font-weight:800;color:#1e293b;margin-top:4px">'+Math.round(to.kgT).toLocaleString('es-CO')+' kg</div>';
-        html+='<div style="font-size:.92rem;font-weight:800;color:#1e293b;margin-top:5px">'+to.ft.length+' estiba'+(to.ft.length>1?'s':'')+'</div>';
-        html+='</div>';
-      });
-      html+='</div></div>';
-    });
-    html+='</div>';
-  });
-  el.innerHTML=html;
-}
-
-function renderTabla(dataOriginal){
-  const el=document.getElementById('v-tabla');
-  // Solo filas con fecha de ingreso a inventario y kilos final validos
-  const data=dataOriginal.filter(function(r){return r.Fecha && r.Fecha.trim()!=='' && (parseFloat(r.KgDisponibles)||0)>0;});
-  if(!data.length){el.innerHTML='<div class="empty">Sin estibas disponibles.</div>';return;}
-  const fechas=[...new Set(data.map(function(r){return r.Fecha;}))].sort();
-  const tams=[...new Set(data.map(function(r){return r.Calidad;}))].sort();
-  const agg={};
-  data.forEach(function(r){
-    const cal=r.Calibre;
-    if(!agg[r.Fecha]) agg[r.Fecha]={};
-    if(!agg[r.Fecha][cal]) agg[r.Fecha][cal]={};
-    agg[r.Fecha][cal][r.Calidad]=(agg[r.Fecha][cal][r.Calidad]||0)+(parseFloat(r.KgDisponibles)||0);
-  });
-  // -- Total de kg por fecha (todos los colores) y total del periodo, para calcular
-  // el % de participacion DIARIA de cada color (verde/pintona/madura) mas abajo --
-  const totalesPorFecha={};
-  fechas.forEach(function(f){
-    totalesPorFecha[f]=Object.values(agg[f]||{}).reduce(function(s,m){return s+Object.values(m).reduce(function(a,b){return a+b;},0);},0);
-  });
-  const grandTotalPeriodo=fechas.reduce(function(s,f){return s+totalesPorFecha[f];},0);
-  let html='<table class="ctable"><thead><tr><th class="left">Grado de maduración / Calibre</th>';
-  fechas.forEach(function(f){
-    const h=horasDesde(f);
-    html+='<th>'+fmtF(f)+'<br><small style="color:'+urgColor(h)+'">'+horasLabel(h)+'</small></th>';
-  });
-  html+='<th>Total kg</th></tr></thead><tbody>';
-  const calibresPresentes=[...new Set(data.map(function(r){return r.Calibre;}))].sort(function(a,b){
-    return parseFloat(String(a).replace(',','.'))-parseFloat(String(b).replace(',','.'));
-  });
-  // -- % de participacion AGRUPADO por color (verde/pintona/madura), sumando TODOS
-  // los calibres que caen en ese color (ej. "0", "0.5", "1" y "0,0 - 1,0" son todos
-  // verde) -- no un % distinto por cada valor de calibre. --
-  const madTotalPorFecha={};
-  calibresPresentes.forEach(function(calVal){
-    const mad=getMadurez(calVal);
-    if(!madTotalPorFecha[mad]) madTotalPorFecha[mad]={};
-    fechas.forEach(function(f){
-      const kg=Object.values((agg[f]&&agg[f][calVal])||{}).reduce(function(s,v){return s+v;},0);
-      madTotalPorFecha[mad][f]=(madTotalPorFecha[mad][f]||0)+kg;
-    });
-  });
-  const madGrandTotal={};
-  Object.keys(madTotalPorFecha).forEach(function(mad){
-    madGrandTotal[mad]=fechas.reduce(function(s,f){return s+(madTotalPorFecha[mad][f]||0);},0);
-  });
-  const madPctMostrado=new Set(); // el % solo se muestra en la primera banda de cada color
-  calibresPresentes.forEach(function(calVal){
-    const mad=getMadurez(calVal);
-    const C=getMadClasses(mad);
-    const bgH=madBg(mad), fgH=madFg(mad);
-    // -- Precalcular totales por tam y ordenar de mayor a menor --
-    const filas=tams.map(function(tam){
-      let total=0,hasData=false;
-      const kgPorFecha={};
-      fechas.forEach(function(f){
-        const kg=(agg[f]&&agg[f][calVal]&&agg[f][calVal][tam])||0;
-        kgPorFecha[f]=kg;
-        if(kg>0) hasData=true;
-        total+=kg;
-      });
-      return {tam:tam,total:total,hasData:hasData,kgPorFecha:kgPorFecha};
-    }).filter(function(x){return x.hasData;}).sort(function(a,b){return b.total-a.total;});
-    if(!filas.length) return;
-    // -- % y total en kg del color completo (verde/pintona/madura), no de este
-    // calibre puntual -- el % solo se muestra una vez, en la primera banda de ese
-    // color; el total en kg si se repite en todas sus bandas. --
-    const esPrimeraDelColor=!madPctMostrado.has(mad);
-    if(esPrimeraDelColor) madPctMostrado.add(mad);
-    // Un decimal para que los 3 colores sumen ~100% (redondeando a entero, verde+pintona+madura solia dar 99%)
-    const pctTotal=grandTotalPeriodo>0?(((madGrandTotal[mad]||0)/grandTotalPeriodo)*100).toFixed(1).replace('.',','):null;
-    const kgTotalColor=Math.round(madGrandTotal[mad]||0).toLocaleString('es-CO');
-    // -- El % va aparte, en la columna "Total kg" (solo en la primera banda de cada
-    // color) -- el resto de la banda (titulo + total en kg) sigue igual a la izquierda. --
-    html+='<tr class="mad-group-hdr"><td class="left" colspan="'+(fechas.length+1)+'" style="background:'+bgH+';color:'+fgH+'">';
-    html+='<span style="font-weight:800">'+C.label+' &mdash; grado de maduración '+calValLabel(calVal)+'</span>';
-    html+='<span style="margin-left:14px;font-weight:800;font-size:1.05rem">'+kgTotalColor+' kg</span>';
-    html+='</td>';
-    html+='<td style="background:'+bgH+';color:'+fgH+'">'+(esPrimeraDelColor&&pctTotal!==null?'<span style="font-weight:800;font-size:1.3rem">'+pctTotal+'%</span>':'')+'</td>';
-    html+='</tr>';
-    filas.forEach(function(fi){
-      const clienteEsp=getClienteEspecial(fi.tam, calVal);
-      let row='<tr><td class="left" style="padding-left:20px;color:#1e293b;font-weight:700">'+(TAM_NAMES[fi.tam]||fi.tam)+clienteBadgeHtml(clienteEsp)+'</td>';
-      fechas.forEach(function(f){
-        const kg=fi.kgPorFecha[f];
-        if(kg>0) row+='<td class="'+C.cell+'">'+Math.round(kg).toLocaleString('es-CO')+'</td>';
-        else row+='<td style="color:#ccc">&mdash;</td>';
-      });
-      row+='<td class="'+C.txt+'">'+Math.round(fi.total).toLocaleString('es-CO')+'</td></tr>';
-      html+=row;
-    });
-  });
-  html+='<tr class="tfoot-row"><td class="left">TOTAL GENERAL</td>';
-  fechas.forEach(function(f){
-    html+='<td>'+Math.round(totalesPorFecha[f]||0).toLocaleString('es-CO')+'</td>';
-  });
-  html+='<td>'+Math.round(grandTotalPeriodo).toLocaleString('es-CO')+'</td></tr></tbody></table>';
-  el.innerHTML=html;
-}
-
-// -- INVENTARIO PROCESADO: TODO lo que entro a Proceso (columna Neto), sin importar si
-// ya tiene despacho final o no -- es el "espejo" de Tabla Inventario, pero con Calibre
-// (tamaño) como columnas en vez de Fecha, y Grado de maduración como filas por color. --
-function renderInventarioProcesado(data){
-  const el=document.getElementById('v-procesado');
-  const dataValida=data.filter(function(r){return r.Fecha && r.Fecha.trim()!=='' && r.Calidad && r.Calidad.trim()!=='';});
-  if(!dataValida.length){el.innerHTML='<div class="empty">Sin inventario procesado en el periodo seleccionado.</div>';return;}
-  const agg={};
-  const totalPorTam={};
-  dataValida.forEach(function(r){
-    const cal=r.Calibre, neto=parseFloat(r.Neto)||0;
-    if(!agg[cal]) agg[cal]={};
-    agg[cal][r.Calidad]=(agg[cal][r.Calidad]||0)+neto;
-    totalPorTam[r.Calidad]=(totalPorTam[r.Calidad]||0)+neto;
-  });
-  // -- Columnas (Calibre/tamaño) ordenadas de mayor a menor por su Neto total, igual
-  // que Tabla Inventario ordena sus filas de mayor a menor --
-  const tams=Object.keys(totalPorTam).sort(function(a,b){return totalPorTam[b]-totalPorTam[a];});
-  const grandTotal=tams.reduce(function(s,t){return s+totalPorTam[t];},0);
-
-  let html='<table class="ctable"><thead><tr><th class="left">Grado de maduración / Calibre</th>';
-  tams.forEach(function(t){ html+='<th>'+(TAM_NAMES[t]||t)+'</th>'; });
-  html+='<th>Total general</th></tr></thead><tbody>';
-
-  const calibresPresentes=[...new Set(dataValida.map(function(r){return r.Calibre;}))].sort(function(a,b){
-    return parseFloat(String(a).replace(',','.'))-parseFloat(String(b).replace(',','.'));
-  });
-  // -- % y total en kg agrupados por color (verde/pintona/madura), igual que Tabla
-  // Inventario: el % solo se muestra una vez, en la primera banda de cada color --
-  const madTotal={};
-  calibresPresentes.forEach(function(calVal){
-    const mad=getMadurez(calVal);
-    madTotal[mad]=(madTotal[mad]||0)+Object.values(agg[calVal]||{}).reduce(function(s,v){return s+v;},0);
-  });
-  const madPctMostrado=new Set();
-
-  calibresPresentes.forEach(function(calVal){
-    const mad=getMadurez(calVal);
-    const C=getMadClasses(mad);
-    const bgH=madBg(mad), fgH=madFg(mad);
-    const totalBanda=Object.values(agg[calVal]||{}).reduce(function(s,v){return s+v;},0);
-    if(totalBanda<=0) return;
-    const esPrimeraDelColor=!madPctMostrado.has(mad);
-    if(esPrimeraDelColor) madPctMostrado.add(mad);
-    const pctColor=grandTotal>0?(((madTotal[mad]||0)/grandTotal)*100).toFixed(1).replace('.',','):null;
-    const kgTotalColor=Math.round(madTotal[mad]||0).toLocaleString('es-CO');
-
-    html+='<tr class="mad-group-hdr"><td class="left" colspan="'+(tams.length+1)+'" style="background:'+bgH+';color:'+fgH+'">';
-    html+='<span style="font-weight:800">'+C.label+' &mdash; grado de maduración '+calValLabel(calVal)+'</span>';
-    html+='<span style="margin-left:14px;font-weight:800;font-size:1.05rem">'+kgTotalColor+' kg</span>';
-    html+='</td>';
-    html+='<td style="background:'+bgH+';color:'+fgH+'">'+(esPrimeraDelColor&&pctColor!==null?'<span style="font-weight:800;font-size:1.3rem">'+pctColor+'%</span>':'')+'</td>';
-    html+='</tr>';
-
-    let row='<tr><td class="left"></td>';
-    tams.forEach(function(t){
-      const v=(agg[calVal]&&agg[calVal][t])||0;
-      if(v>0) row+='<td class="'+C.cell+'">'+Math.round(v).toLocaleString('es-CO')+'</td>';
-      else row+='<td style="color:#ccc">&mdash;</td>';
-    });
-    row+='<td class="'+C.txt+'">'+Math.round(totalBanda).toLocaleString('es-CO')+'</td></tr>';
-    html+=row;
-  });
-
-  html+='<tr class="tfoot-row"><td class="left">TOTAL GENERAL</td>';
-  tams.forEach(function(t){ html+='<td>'+Math.round(totalPorTam[t]||0).toLocaleString('es-CO')+'</td>'; });
-  html+='<td>'+Math.round(grandTotal).toLocaleString('es-CO')+'</td></tr></tbody></table>';
-  el.innerHTML=html;
-}
-
-function renderBodega(data){
-  const el=document.getElementById('v-bodega');
-  const estibas = data.filter(r=>!isBin(r));
-  if(!estibas.length){el.innerHTML='<div class="empty">Sin estibas disponibles.</div>';return;}
-  let html = '';
-
-  // ── ESTIBAS ───────────────────────────────────────────────────────────────
-  const fechas = [...new Set(estibas.map(function(r){return r.Fecha;}))].sort();
-  const maxH   = fechas.length ? Math.max.apply(null, fechas.map(function(f){return horasDesde(f);})) : 0;
-
-  html += '<div class="bod-grid">';
-  fechas.forEach(function(fecha){
-    const h      = horasDesde(fecha);
-    const bloque = estibas.filter(function(r){return r.Fecha===fecha;});
-    const kgT    = bloque.reduce(function(s,r){return s+(parseFloat(r.KgDisponibles)||0);},0);
-    const pct    = Math.min(100, Math.round((h/Math.max(maxH,1))*100));
-
-    html += '<div class="bod-card">';
-    html += '<div class="bod-top"><div class="bod-fecha">'+fmtF(fecha)+'</div>';
-    html += '<span class="bod-horas '+urgClass(h)+'">'+horasLabel(h)+'</span>';
-    html += '<div class="bod-kg-total">Total: <strong>'+Math.round(kgT).toLocaleString('es-CO')+' kg</strong></div></div>';
-    html += '<div class="urg-wrap"><div class="urg-bar"><div class="urg-fill" style="width:'+pct+'%;background:'+urgColor(h)+'"></div></div>';
-    html += '<div class="urg-txt" style="color:'+urgColor(h)+'">'+h+'h en bodega &mdash; '+pct+'% urgencia</div></div>';
-    html += '<div class="bod-items">';
-
-    const calibresPresentes=[...new Set(bloque.map(function(r){return r.Calibre;}))].sort(function(a,b){
-      return parseFloat(String(a).replace(',','.'))-parseFloat(String(b).replace(',','.'));
-    });
-    calibresPresentes.forEach(function(calVal){
-      const fm = bloque.filter(function(r){return r.Calibre===calVal;});
-      if(!fm.length) return;
-      const mad = getMadurez(calVal);
-      const C    = getMadClasses(mad);
-      const tamsSet = [...new Set(fm.map(function(r){return r.Calidad;}))];
-      const tamsOrdenados = tamsSet.map(function(tam){
-        const ft  = fm.filter(function(r){return r.Calidad===tam;});
-        const kg  = ft.reduce(function(s,r){return s+(parseFloat(r.KgDisponibles)||0);},0);
-        return {tam:tam,kg:kg};
-      }).sort(function(a,b){return b.kg-a.kg;});
-      const bgC = madBg(mad), fgC = madFg(mad);
-      tamsOrdenados.forEach(function(to){
-        const clienteEsp=getClienteEspecial(to.tam, calVal);
-        html += '<div class="bod-item" style="background:'+bgC+';border-radius:6px;padding:6px 8px;display:flex;align-items:center;gap:8px">';
-        html += '<div class="bod-dot" style="background:'+fgC+';width:9px;height:9px;border-radius:50%;flex-shrink:0"></div>';
-        html += '<div style="flex:1;font-size:.74rem;font-weight:600;color:'+fgC+'">';
-        html += '<div>'+C.label+' &middot; '+(TAM_NAMES[to.tam]||to.tam)+clienteBadgeHtml(clienteEsp)+'</div>';
-        html += '<div style="font-size:.68rem;font-weight:800;opacity:.9">Grado de maduración '+calValLabel(calVal)+'</div>';
-        html += '</div>';
-        html += '<div style="font-size:.82rem;font-weight:800;color:'+fgC+'">'+Math.round(to.kg).toLocaleString('es-CO')+' kg</div>';
-        html += '</div>';
-      });
-    });
-    html += '</div></div>';
-  });
-  html += '</div>';
-  el.innerHTML = html;
-}
-
-function madTextColor(mad){return mad==='verde'?'#15803d':mad==='pintona'?'#a16207':'#c2410c';}
-
-function renderBines(data){
-  const el=document.getElementById('v-bines');
-  const bines = data.filter(r=>isBin(r)).slice().sort(function(a,b){return (parseFloat(b.KgDisponibles)||0)-(parseFloat(a.KgDisponibles)||0);});
-  if(!bines.length){el.innerHTML='<div class="empty">Sin bines disponibles.</div>';return;}
-
-  const kgTotal = bines.reduce(function(s,r){return s+(parseFloat(r.KgDisponibles)||0);},0);
-  let html = '<div style="background:#f8fafc;border:2px solid #e2e8f0;border-radius:12px;overflow:hidden">';
-  html += '<div style="background:#1e293b;padding:12px 18px;display:flex;align-items:center;gap:12px;flex-wrap:wrap">';
-  html += '<span style="font-size:1.1rem;font-weight:800;color:#fff">BINES EN BODEGA</span>';
-  html += '<span style="background:#fff;color:#1e293b;padding:3px 12px;border-radius:20px;font-size:.85rem;font-weight:800">'+bines.length+' bines</span>';
-  html += '<span style="margin-left:auto;background:rgba(255,255,255,0.2);color:#fff;padding:3px 12px;border-radius:20px;font-size:.85rem;font-weight:800">'+Math.round(kgTotal).toLocaleString('es-CO')+' kg</span>';
-  html += '</div><div style="display:flex;flex-wrap:wrap;gap:10px;padding:16px 18px">';
-  bines.forEach(function(r){
-    const h   = horasDesde(r.Fecha);
-    const mad = getMadurez(r.Calibre);
-    const accent = madBg(mad)==='#166534'?'#16a34a':madBg(mad);
-    const txt = madTextColor(mad);
-    const lbl = mad==='verde'?'Verde':mad==='pintona'?'Pintona':'Madura';
-    const clienteEsp = getClienteEspecial(r.Calidad, r.Calibre);
-    html += '<div style="background:#fff;border:1px solid #e2e8f0;border-left:4px solid '+accent+';border-radius:8px;padding:10px 14px;min-width:160px">';
-    html += '<div style="font-size:.95rem;font-weight:800;color:#1e293b">Bin '+r.Bin+'</div>';
-    html += '<div style="font-size:.85rem;color:#475569;margin-top:2px">'+r.Calidad+' &middot; '+r.Nombre+clienteBadgeHtml(clienteEsp)+'</div>';
-    html += '<div style="font-size:.78rem;color:#64748b;margin-top:2px">Proceso: '+fmtF(r.Fecha)+'</div>';
-    html += '<div style="font-size:.85rem;font-weight:700;margin-top:3px;color:'+txt+'">'+lbl+' &middot; Grado de maduración '+r.Calibre+'</div>';
-    html += '<div style="font-size:.85rem;font-weight:700;color:#1e293b;margin-top:2px">'+Math.round(parseFloat(r.KgDisponibles)||0).toLocaleString('es-CO')+' kg</div>';
-    html += '<div style="font-size:.78rem;font-weight:700;margin-top:3px;color:'+urgColor(h)+'">'+horasLabel(h)+' en reposo</div>';
-    html += '</div>';
-  });
-  html += '</div></div>';
-  el.innerHTML = html;
-}
-
-// -- Agrupa los despachos ya filtrados: Remision > Factura > Cliente > Categoria --
-// Un unico recorrido del arreglo (nada de recorridos repetidos), reutilizado tanto por
-// el render de la tabla como por las exportaciones a Excel/PDF.
-function agruparFacturacion(data){
-  const remisiones={};
-  const ordenRemisiones=[];
-  const grand={kilos:0,reposicion:0,precioSum:0,precioN:0};
-
-  data.forEach(function(r){
-    const tienePrecio = r.Precio!==null && r.Precio!==undefined && !isNaN(r.Precio);
-
-    grand.kilos+=r.KilosFinal; grand.reposicion+=r.ReposicionKilos;
-    if(tienePrecio){ grand.precioSum+=r.Precio; grand.precioN++; }
-
-    const rk=r.Remision||'(Sin remision)';
-    if(!remisiones[rk]){ remisiones[rk]={facturas:{},ordenFacturas:[],kilos:0,reposicion:0,precioSum:0,precioN:0}; ordenRemisiones.push(rk); }
-    const R=remisiones[rk];
-    R.kilos+=r.KilosFinal; R.reposicion+=r.ReposicionKilos;
-    if(tienePrecio){ R.precioSum+=r.Precio; R.precioN++; }
-
-    const fk=r.Factura||'(Sin factura)';
-    if(!R.facturas[fk]){ R.facturas[fk]={clientes:{},ordenClientes:[],kilos:0,reposicion:0,precioSum:0,precioN:0}; R.ordenFacturas.push(fk); }
-    const F=R.facturas[fk];
-    F.kilos+=r.KilosFinal; F.reposicion+=r.ReposicionKilos;
-    if(tienePrecio){ F.precioSum+=r.Precio; F.precioN++; }
-
-    const ck=r.Cliente||'(Sin cliente)';
-    if(!F.clientes[ck]){ F.clientes[ck]={categorias:{},ordenCategorias:[],kilos:0,reposicion:0,precioSum:0,precioN:0}; F.ordenClientes.push(ck); }
-    const C=F.clientes[ck];
-    C.kilos+=r.KilosFinal; C.reposicion+=r.ReposicionKilos;
-    if(tienePrecio){ C.precioSum+=r.Precio; C.precioN++; }
-
-    const cat=r.Categoria||'(Sin categoria)';
-    if(!C.categorias[cat]){ C.categorias[cat]={kilos:0,reposicion:0,precioSum:0,precioN:0}; C.ordenCategorias.push(cat); }
-    const Cat=C.categorias[cat];
-    Cat.kilos+=r.KilosFinal; Cat.reposicion+=r.ReposicionKilos;
-    if(tienePrecio){ Cat.precioSum+=r.Precio; Cat.precioN++; }
-  });
-
-  ordenRemisiones.sort();
-  ordenRemisiones.forEach(function(rk){
-    const R=remisiones[rk];
-    R.ordenFacturas.sort();
-    R.ordenFacturas.forEach(function(fk){
-      const F=R.facturas[fk];
-      F.ordenClientes.sort();
-      F.ordenClientes.forEach(function(ck){
-        F.clientes[ck].ordenCategorias.sort();
-      });
-    });
-  });
-
-  return {remisiones:remisiones, ordenRemisiones:ordenRemisiones, grand:grand};
-}
-
-function promedioTxt(sum,n){ return n?Math.round(sum/n).toLocaleString('es-CO'):'—'; }
-
-function renderFacturacion(data){
-  const el=document.getElementById('v-facturacion');
-  if(!data.length){el.innerHTML='<div class="empty">Sin despachos en la fecha seleccionada.</div>';return;}
-
-  const G=agruparFacturacion(data);
-  const grand=G.grand;
-
-  let html='<div style="background:#1e293b;border-radius:12px 12px 0 0;padding:12px 18px;display:flex;align-items:center;gap:12px;flex-wrap:wrap">';
-  html+='<span style="font-size:1.1rem;font-weight:800;color:#fff">FACTURACION</span>';
-  html+='<span style="background:#fff;color:#1e293b;padding:3px 12px;border-radius:20px;font-size:.85rem;font-weight:800">'+G.ordenRemisiones.length+' remisiones</span>';
-  html+='<span style="margin-left:auto;background:rgba(255,255,255,0.2);color:#fff;padding:3px 12px;border-radius:20px;font-size:.85rem;font-weight:800">'+Math.round(grand.kilos).toLocaleString('es-CO')+' kg final</span>';
-  html+='<span style="background:rgba(255,255,255,0.2);color:#fff;padding:3px 12px;border-radius:20px;font-size:.85rem;font-weight:800">'+Math.round(grand.reposicion).toLocaleString('es-CO')+' kg reposicion</span>';
-  html+='</div>';
-
-  html+='<table class="ftable"><thead><tr>';
-  html+='<th class="left">Remision</th><th class="left">Factura</th><th class="left">Cliente</th><th class="left">Categoria</th>';
-  html+='<th>Kilos Final</th><th>Reposicion Kilos</th><th>Promedio Precio</th>';
-  html+='</tr></thead><tbody>';
-
-  let gid=0;
-  G.ordenRemisiones.forEach(function(rk){
-    const R=G.remisiones[rk];
-    const rgid='fr'+(gid++);
-    html+='<tr class="frow-remision" onclick="toggleGroup(\''+rgid+'\',this)">';
-    html+='<td class="left"><span class="ftog">▾</span>'+rk+'</td><td class="left"></td><td class="left"></td><td class="left"></td>';
-    html+='<td>'+Math.round(R.kilos).toLocaleString('es-CO')+'</td><td>'+Math.round(R.reposicion).toLocaleString('es-CO')+'</td><td>'+promedioTxt(R.precioSum,R.precioN)+'</td></tr>';
-
-    R.ordenFacturas.forEach(function(fk){
-      const F=R.facturas[fk];
-      const fgid='ff'+(gid++);
-      html+='<tr class="frow-factura '+rgid+'" onclick="toggleGroup(\''+fgid+'\',this)">';
-      html+='<td class="left"></td><td class="left"><span class="ftog">▾</span>'+fk+'</td><td class="left"></td><td class="left"></td>';
-      html+='<td>'+Math.round(F.kilos).toLocaleString('es-CO')+'</td><td>'+Math.round(F.reposicion).toLocaleString('es-CO')+'</td><td>'+promedioTxt(F.precioSum,F.precioN)+'</td></tr>';
-
-      F.ordenClientes.forEach(function(ck){
-        const C=F.clientes[ck];
-        const cgid='fc'+(gid++);
-        html+='<tr class="frow-cliente '+rgid+' '+fgid+'" onclick="toggleGroup(\''+cgid+'\',this)">';
-        html+='<td class="left"></td><td class="left"></td><td class="left"><span class="ftog">▾</span>'+ck+'</td><td class="left"></td>';
-        html+='<td>'+Math.round(C.kilos).toLocaleString('es-CO')+'</td><td>'+Math.round(C.reposicion).toLocaleString('es-CO')+'</td><td>'+promedioTxt(C.precioSum,C.precioN)+'</td></tr>';
-
-        C.ordenCategorias.forEach(function(cat){
-          const Cat=C.categorias[cat];
-          html+='<tr class="frow-cat '+rgid+' '+fgid+' '+cgid+'">';
-          html+='<td class="left"></td><td class="left"></td><td class="left"></td><td class="left">'+cat+'</td>';
-          html+='<td>'+Math.round(Cat.kilos).toLocaleString('es-CO')+'</td><td>'+Math.round(Cat.reposicion).toLocaleString('es-CO')+'</td><td>'+promedioTxt(Cat.precioSum,Cat.precioN)+'</td></tr>';
-        });
-      });
-    });
-  });
-
-  html+='<tr class="ftotal-row"><td class="left">TOTAL GENERAL</td><td class="left"></td><td class="left"></td><td class="left"></td>';
-  html+='<td>'+Math.round(grand.kilos).toLocaleString('es-CO')+'</td><td>'+Math.round(grand.reposicion).toLocaleString('es-CO')+'</td><td>'+promedioTxt(grand.precioSum,grand.precioN)+'</td></tr>';
-  html+='</tbody></table>';
-  el.innerHTML=html;
-}
-function toggleGroup(gid, headerRow){
-  const rows=document.querySelectorAll('.'+gid);
-  if(!rows.length) return;
-  const hidden = rows[0].style.display==='none';
-  rows.forEach(function(r){r.style.display = hidden?'':'none';});
-  const icon = headerRow.querySelector('.ftog');
-  if(icon) icon.textContent = hidden?'▾':'▸';
-}
-
-// -- Exportar (Excel / PDF): reutiliza la misma agrupacion, aplanada a filas de detalle --
-function construirFilasExportFacturacion(data){
-  const G=agruparFacturacion(data);
-  const filas=[];
-  G.ordenRemisiones.forEach(function(rk){
-    const R=G.remisiones[rk];
-    R.ordenFacturas.forEach(function(fk){
-      const F=R.facturas[fk];
-      F.ordenClientes.forEach(function(ck){
-        const C=F.clientes[ck];
-        C.ordenCategorias.forEach(function(cat){
-          const Cat=C.categorias[cat];
-          filas.push([rk,fk,ck,cat,Math.round(Cat.kilos),Math.round(Cat.reposicion),Cat.precioN?Math.round(Cat.precioSum/Cat.precioN):0]);
-        });
-      });
-    });
-  });
-  filas.push(['TOTAL GENERAL','','','',Math.round(G.grand.kilos),Math.round(G.grand.reposicion),G.grand.precioN?Math.round(G.grand.precioSum/G.grand.precioN):0]);
-  return filas;
-}
-const FACT_EXPORT_HEADERS=['Remision','Factura','Cliente','Categoria','Kilos Final','Reposicion Kilos','Promedio Precio'];
-// -- Ahora factFecha es multi-seleccion (arbol Año/Mes/Semana/Fecha) en vez de un solo dia --
-function factFechaEtiqueta(){
-  const f=filtros.factFecha;
-  if(!f.length) return 'todas las fechas';
-  if(f.length===1) return fmtF(f[0]);
-  return f.length+' fechas seleccionadas';
-}
-function factFechaArchivo(){
-  const f=filtros.factFecha;
-  if(!f.length) return 'todas';
-  if(f.length===1) return f[0];
-  return 'multiples-fechas';
-}
-
-function exportExcelFacturacion(){
-  const data=filteredFacturacion();
-  if(!data.length){ alert('No hay datos de facturacion para la fecha seleccionada.'); return; }
-  const filas=construirFilasExportFacturacion(data);
-  const ws=XLSX.utils.aoa_to_sheet([FACT_EXPORT_HEADERS].concat(filas));
-  const wb=XLSX.utils.book_new();
-  XLSX.utils.book_append_sheet(wb,ws,'Facturacion');
-  XLSX.writeFile(wb,'Facturacion_'+factFechaArchivo()+'.xlsx');
-}
-
-function exportPDFFacturacion(){
-  const data=filteredFacturacion();
-  if(!data.length){ alert('No hay datos de facturacion para la fecha seleccionada.'); return; }
-  const filas=construirFilasExportFacturacion(data);
-  const doc=new jspdf.jsPDF({orientation:'landscape'});
-  doc.setFontSize(14);
-  doc.text('Facturacion - '+factFechaEtiqueta(),14,16);
-  doc.autoTable({head:[FACT_EXPORT_HEADERS],body:filas,startY:22,styles:{fontSize:8},headStyles:{fillColor:[30,41,59]}});
-  doc.save('Facturacion_'+factFechaArchivo()+'.pdf');
-}
-
-// -- Exportar Descarte (Excel / PDF): misma agrupacion Fecha+Categoria+Cliente que renderDescarte --
-function construirFilasExportDescarte(data){
-  const grupos={}; const orden=[]; let total=0;
-  data.forEach(function(r){
-    const kd=r.KilosDescarte||0;
-    if(kd<=0) return;
-    total+=kd;
-    const k=r.FechaDespacho+'||'+r.Categoria+'||'+r.Cliente;
-    if(!grupos[k]){ grupos[k]={fecha:r.FechaDespacho,categoria:r.Categoria||'(Sin categoria)',cliente:r.Cliente||'(Sin cliente)',kd:0}; orden.push(k); }
-    grupos[k].kd+=kd;
-  });
-  const filas=orden.map(function(k){return grupos[k];})
-    .sort(function(a,b){ return b.fecha!==a.fecha ? (b.fecha<a.fecha?-1:1) : b.kd-a.kd; })
-    .map(function(f){return [fmtF(f.fecha), f.categoria, f.cliente, Math.round(f.kd)];});
-  filas.push(['TOTAL GENERAL','','',Math.round(total)]);
-  return filas;
-}
-const DESC_EXPORT_HEADERS=['Fecha','Categoria','Cliente','Kilos Descartados'];
-
-function exportExcelDescarte(){
-  const filas=construirFilasExportDescarte(filteredDescarte());
-  if(filas.length<=1){ alert('No hay descartes en el periodo seleccionado.'); return; }
-  const ws=XLSX.utils.aoa_to_sheet([DESC_EXPORT_HEADERS].concat(filas));
-  const wb=XLSX.utils.book_new();
-  XLSX.utils.book_append_sheet(wb,ws,'Descarte');
-  XLSX.writeFile(wb,'Descarte_'+fechaISO(new Date())+'.xlsx');
-}
-function exportPDFDescarte(){
-  const filas=construirFilasExportDescarte(filteredDescarte());
-  if(filas.length<=1){ alert('No hay descartes en el periodo seleccionado.'); return; }
-  const doc=new jspdf.jsPDF({orientation:'landscape'});
-  doc.setFontSize(14);
-  doc.text('Descarte',14,16);
-  doc.autoTable({head:[DESC_EXPORT_HEADERS],body:filas,startY:22,styles:{fontSize:8},headStyles:{fillColor:[127,29,29]}});
-  doc.save('Descarte_'+fechaISO(new Date())+'.pdf');
-}
-
-// -- DESCARTE: fruta descartada por dia, tomada de la columna "Kilos de descarte" de Despacho --
-function renderDescarte(data){
-  const el=document.getElementById('v-descarte');
-  // Agrupar Fecha + Categoria + Cliente en un solo recorrido, solo lo que realmente tuvo descarte
-  const grupos={};
-  const orden=[];
-  let totalDescarte=0;
-  data.forEach(function(r){
-    const kd=r.KilosDescarte||0;
-    if(kd<=0) return; // solo nos interesa lo que si tuvo descarte
-    totalDescarte+=kd;
-    const k=r.FechaDespacho+'||'+r.Categoria+'||'+r.Cliente;
-    if(!grupos[k]){ grupos[k]={fecha:r.FechaDespacho,categoria:r.Categoria||'(Sin categoria)',cliente:r.Cliente||'(Sin cliente)',kd:0}; orden.push(k); }
-    grupos[k].kd+=kd;
-  });
-
-  if(!orden.length){el.innerHTML='<div class="empty">Sin descartes en el periodo seleccionado.</div>';return;}
-
-  const filas=orden.map(function(k){return grupos[k];})
-    .sort(function(a,b){ return b.fecha!==a.fecha ? (b.fecha<a.fecha?-1:1) : b.kd-a.kd; });
-
-  let html='<div style="background:#7f1d1d;border-radius:12px 12px 0 0;padding:12px 18px;display:flex;align-items:center;gap:12px;flex-wrap:wrap">';
-  html+='<span style="font-size:1.1rem;font-weight:800;color:#fff">DESCARTE</span>';
-  html+='<span style="background:#fff;color:#7f1d1d;padding:3px 12px;border-radius:20px;font-size:.85rem;font-weight:800">'+filas.length+' registros</span>';
-  html+='<span style="margin-left:auto;background:rgba(255,255,255,0.2);color:#fff;padding:3px 12px;border-radius:20px;font-size:.85rem;font-weight:800">'+Math.round(totalDescarte).toLocaleString('es-CO')+' kg descartados</span>';
-  html+='</div>';
-
-  html+='<table class="ftable"><thead><tr><th class="left">Fecha</th><th class="left">Categoria</th><th class="left">Cliente</th><th>Kilos Descartados</th></tr></thead><tbody>';
-  filas.forEach(function(f){
-    html+='<tr><td class="left">'+fmtF(f.fecha)+'</td><td class="left">'+f.categoria+'</td><td class="left">'+f.cliente+'</td>';
-    html+='<td>'+Math.round(f.kd).toLocaleString('es-CO')+'</td></tr>';
-  });
-  html+='<tr class="ftotal-row"><td class="left">TOTAL GENERAL</td><td class="left"></td><td class="left"></td><td>'+Math.round(totalDescarte).toLocaleString('es-CO')+'</td></tr>';
-  html+='</tbody></table>';
-  el.innerHTML=html;
-}
-
-function demo(){return[
-  {ID:'1',Fecha:'2026-07-10',Calidad:'PE1',Nombre:'pina 1ra',Calibre:'0',KgDisponibles:'705'},
-  {ID:'2',Fecha:'2026-07-10',Calidad:'PE2',Nombre:'pina 2da',Calibre:'3',KgDisponibles:'557'},
-  {ID:'3',Fecha:'2026-07-12',Calidad:'PE1',Nombre:'pina 1ra',Calibre:'1.5',KgDisponibles:'438'},
-  {ID:'4',Fecha:'2026-07-12',Calidad:'PE2',Nombre:'pina 2da',Calibre:'3,0 - 4,0',KgDisponibles:'607'},
-  {ID:'5',Fecha:'2026-07-12',Calidad:'PE3',Nombre:'pina 3ra',Calibre:'2',KgDisponibles:'507'},
-  {ID:'6',Fecha:'2026-07-14',Calidad:'PE1',Nombre:'pina 1ra',Calibre:'0.5',KgDisponibles:'502'},
-  {ID:'7',Fecha:'2026-07-14',Calidad:'PE2',Nombre:'pina 2da',Calibre:'1,5 - 2,5',KgDisponibles:'404'},
-  {ID:'8',Fecha:'2026-07-14',Calidad:'PE3',Nombre:'pina 3ra',Calibre:'4',KgDisponibles:'207'},
-  {ID:'9',Fecha:'2026-07-17',Calidad:'PE1',Nombre:'pina 1ra',Calibre:'1',KgDisponibles:'958'},
-  {ID:'10',Fecha:'2026-07-17',Calidad:'PEGUA',Nombre:'guapita',Calibre:'2.5',KgDisponibles:'312'},
-];}
-
-setInterval(load,300000);
-load();
-
-// -- Al volver a esta pestaña (por ejemplo tras bloquear el celular o cambiar de app),
-// el navegador puede haber pausado el temporizador de arriba para ahorrar bateria.
-// Esto fuerza una recarga inmediata de los datos apenas la pestaña vuelve a estar visible,
-// sin esperar a que se cumplan los 5 minutos ni tener que refrescar manualmente.
-document.addEventListener('visibilitychange', function(){
-  if(document.visibilityState==='visible') load();
-});
-</script>
-</body>
-</html>
+name: Actualizar Inventario
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: actualizar-inventario
+  # false: si llega un disparo nuevo mientras otro esta corriendo, ESPERA en cola
+  # en vez de matar al que esta corriendo. Con cancel-in-progress:true, una corrida
+  # nueva podia matar a la anterior justo mientras esperaba que GitHub Pages
+  # terminara de desplegar, dejando ese despliegue abandonado a medias y
+  # atascando las corridas siguientes detras de el.
+  cancel-in-progress: false
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    # Limite duro: si algo se cuelga (por ejemplo esperando a que GitHub Pages
+    # termine de desplegar), la corrida se cae sola a los 10 minutos en vez de
+    # quedarse "corriendo" indefinidamente y bloquear la fila para las que siguen.
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Instalar dependencias
+        run: pip install openpyxl requests
+
+      - name: Descargar y procesar Excel
+        run: |
+          python3 << 'EOF'
+          import warnings, requests, openpyxl, io
+          warnings.filterwarnings("ignore", category=UserWarning, module="openpyxl")
+
+          import time
+          # &nocache=<timestamp>: evita que SharePoint/CDN entregue una copia
+          # cacheada del archivo. Sin esto, el link de descarga a veces devuelve
+          # una version vieja del Excel aunque el archivo ya se haya actualizado.
+          url = "https://agricolaguapa-my.sharepoint.com/:x:/g/personal/coordinador_logistico_guapa_com_co/IQDQfo1oimGITIutSnziZXTmAZuo0_tcGIcZvShC86nTMFg?download=1&nocache=" + str(int(time.time()))
+          headers = {"Cache-Control": "no-cache, no-store, must-revalidate", "Pragma": "no-cache"}
+          r = requests.get(url, allow_redirects=True, timeout=30, headers=headers)
+          print(f"Status: {r.status_code}, Tamaño: {len(r.content)} bytes")
+          # read_only=True: no carga estilos, formatos condicionales ni validaciones de datos
+          # (todo eso el proceso no lo necesita, solo los valores de las celdas) -- con
+          # Proceso/Despacho creciendo a decenas de miles de filas, esto es lo que mas
+          # tiempo ahorra frente a cargar el libro "completo".
+          wb = openpyxl.load_workbook(io.BytesIO(r.content), data_only=True, read_only=True)
+
+          # Leer col B (Bin) de Proceso para cruzar con ID, y de paso armar
+          # procesado.csv con la columna I (Neto) -- ver mas abajo, tras el bucle --
+          ws_proc = wb["Proceso"]
+          bin_map = {}
+          # -- "Inventario procesado": TODO lo que entro a Proceso (col I - Neto),
+          # sin importar si ya tiene despacho final o no (col N) -- a diferencia de
+          # la hoja Inventario, que solo trae lo que sigue disponible en bodega. --
+          csv3 = "Fecha,Calidad,Calibre,Neto\n"
+          n3 = 0
+          for row in ws_proc.iter_rows(min_row=2, values_only=True):
+              id_val  = row[0]   # Col A - ID
+              bin_val = row[1]   # Col B - Bin
+              if id_val:
+                  bin_map[str(id_val).strip()] = str(bin_val or "").strip()
+
+              fecha_p   = str(row[2])[:10] if len(row) > 2 and row[2] else ""      # Col C - Fecha
+              calidad_p = str(row[3] or "").replace(",", " ").strip() if len(row) > 3 else ""  # Col D - Calidad
+              calibre_p = ("" if len(row) <= 5 or row[5] is None else str(row[5])).replace(",", ".")  # Col F - Calibre
+              neto_p    = row[8] if len(row) > 8 and row[8] is not None else None  # Col I - Neto
+              if id_val and fecha_p and calidad_p and neto_p is not None:
+                  csv3 += f"{fecha_p},{calidad_p},{calibre_p},{neto_p}\n"
+                  n3 += 1
+
+          with open("procesado.csv", "w", encoding="utf-8") as f:
+              f.write(csv3)
+          print(f"procesado.csv generado: {n3} registros")
+          print(f"IDs en Proceso: {len(bin_map)}")
+
+          # Leer hoja Inventario
+          ws_inv = wb["Inventario"]
+          csv = "ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles\n"
+          for row in ws_inv.iter_rows(min_row=2, values_only=True):
+              if not row[0]: continue
+              id_val  = str(row[0]).strip()
+              bin_val = bin_map.get(id_val, "")
+              fecha   = str(row[1])[:10] if row[1] else ""
+              calidad = str(row[2] or "")
+              nombre  = str(row[3] or "").replace(",", " ")
+              calibre = "" if row[4] is None else str(row[4]).replace(",", ".")
+              kg      = str(row[5] or 0)
+              csv += f"{id_val},{bin_val},{fecha},{calidad},{nombre},{calibre},{kg}\n"
+
+          with open("inventario.csv", "w", encoding="utf-8") as f:
+              f.write(csv)
+          print(f"CSV generado: {csv.count(chr(10))-1} registros")
+
+          # ── Hoja Despacho -> despacho.csv (para la vista Facturacion) ──
+          def es_anulado(v):
+              s = str(v or "").strip().upper()
+              return s in ("SI", "SÍ", "X", "ANULADO", "ANULADA", "TRUE")
+
+          ws_desp = wb["Despacho"]
+
+          csv2 = "FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKilos,Precio,KilosDescarte\n"
+          n2 = 0
+          fechas_vistas = []
+          for row in ws_desp.iter_rows(min_row=2, values_only=True):
+              id_val = row[2]        # Col C - ID (vacio en filas que son solo una reposicion adicional)
+              remision_val = row[23] if len(row) > 23 else None  # Col X - Remision
+              if not id_val and not remision_val: continue  # fila totalmente vacia (ni ID ni Remision)
+              anula_rm = es_anulado(row[25]) if len(row) > 25 else False
+              anula_fv = es_anulado(row[26]) if len(row) > 26 else False
+              if anula_rm or anula_fv: continue  # excluir remisiones/facturas anuladas
+
+              fecha_desp = str(row[1])[:10] if row[1] else ""
+              if fecha_desp: fechas_vistas.append(fecha_desp)
+              cliente    = str(row[0] or "").replace(",", " ").strip()
+              calibre    = ("" if row[5] is None else str(row[5])).replace(",", ".").strip()
+              categoria  = str(row[6] or "").replace(",", " ").strip()
+              kilos      = row[13] or 0
+              reposicion = row[15] or 0
+              precio_raw = row[22]
+              precio     = "" if precio_raw in (None, "") else precio_raw  # en blanco = en blanco (para que el promedio lo excluya, igual que Excel)
+              remision   = str(row[23] or "").replace(",", " ").strip()
+              factura    = str(row[24] or "").replace(",", " ").strip()
+              descarte   = row[12] or 0   # Col M - Kilos de descarte
+              csv2 += f"{fecha_desp},{factura},{remision},{cliente},{categoria},{calibre},{kilos},{reposicion},{precio},{descarte}\n"
+              n2 += 1
+
+          with open("despacho.csv", "w", encoding="utf-8") as f:
+              f.write(csv2)
+          print(f"despacho.csv generado: {n2} registros")
+          if fechas_vistas:
+              print(f"Rango de fechas despacho: {min(fechas_vistas)} a {max(fechas_vistas)}")
+          wb.close()
+          EOF
+
+      - name: Subir CSV a GitHub
+        run: |
+          git config user.email "action@github.com"
+          git config user.name "GitHub Action"
+          git add inventario.csv despacho.csv procesado.csv
+          git diff --staged --quiet || git commit -m "Inventario actualizado $(date +'%Y-%m-%d %H:%M')"
+          git push origin main --force
+
+      - name: Preparar sitio para Pages
+        run: |
+          mkdir -p _site
+          cp index.html _site/
+          cp inventario.csv _site/
+          cp despacho.csv _site/
+          cp procesado.csv _site/
+
+      - name: Configurar Pages
+        uses: actions/configure-pages@v5
+
+      - name: Subir artefacto de Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '_site'
+
+      - name: Desplegar a GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
