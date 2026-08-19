@@ -484,9 +484,11 @@ const MSEL_DEF={
   selDescFec:{key:'descFec',placeholder:'Todas las fechas'},
   selDescCat:{key:'descCat',placeholder:'Todas las categorias'}
 };
-// -- Filtros de fecha con arbol Año / Semana / Fecha (estilo Power BI) --
+// -- Filtros de fecha con arbol Año / Mes / Semana / Fecha (estilo Power BI) --
 const FECHA_TREE_IDS=['selFec','selDescFec'];
+const MES_NOMBRES=['','Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
 function anioDe(f){ return f.includes('/') ? f.split('/')[2] : f.split('-')[0]; }
+function mesDe(f){ const m = f.includes('/') ? f.split('/')[1] : f.split('-')[1]; return String(parseInt(m,10)).padStart(2,'0'); }
 function isoWeekInfo(f){
   let y,m,d;
   if(f.includes('/')){ [d,m,y]=f.split('/'); } else { [y,m,d]=f.split('-'); }
@@ -555,9 +557,9 @@ function fillMsel(id,items){
   panel.innerHTML=html;
   updateMselBtn(id);
 }
-// Igual que fillMsel, pero agrupa las fechas en un arbol Año > Semana > Fecha
-// (estilo Power BI): marcar un Año o una Semana marca de una vez todos los
-// dias que contiene; los dias individuales se pueden seguir marcando sueltos.
+// Igual que fillMsel, pero agrupa las fechas en un arbol Año > Mes > Semana > Fecha
+// (estilo Power BI): marcar un Año, un Mes o una Semana marca de una vez todos
+// los dias que contiene; los dias individuales se pueden seguir marcando sueltos.
 function buildFechaMsel(id,fechas){
   const def=MSEL_DEF[id];
   const panel=document.getElementById(id+'-panel');
@@ -566,10 +568,11 @@ function buildFechaMsel(id,fechas){
   const conHoras = id==='selFec';
   const porAnio={};
   fechas.forEach(function(f){
-    const y=anioDe(f), wk=String(isoWeekInfo(f).week).padStart(2,'0');
+    const y=anioDe(f), m=mesDe(f), wk=String(isoWeekInfo(f).week).padStart(2,'0');
     if(!porAnio[y]) porAnio[y]={};
-    if(!porAnio[y][wk]) porAnio[y][wk]=[];
-    porAnio[y][wk].push(f);
+    if(!porAnio[y][m]) porAnio[y][m]={};
+    if(!porAnio[y][m][wk]) porAnio[y][m][wk]=[];
+    porAnio[y][m][wk].push(f);
   });
   const anios=Object.keys(porAnio).sort().reverse();
 
@@ -580,26 +583,36 @@ function buildFechaMsel(id,fechas){
   html+='</div>';
   html+='<div class="msel-opciones">';
   anios.forEach(function(y){
-    const semanas=Object.keys(porAnio[y]).sort().reverse();
-    const diasAnio=semanas.reduce(function(a,wk){return a.concat(porAnio[y][wk]);},[]);
+    const meses=Object.keys(porAnio[y]).sort().reverse();
+    const diasAnio=meses.reduce(function(a,m){return a.concat(Object.values(porAnio[y][m]).reduce(function(a2,arr){return a2.concat(arr);},[]));},[]);
     html+='<div class="fecha-node fecha-nivel-anio" data-dias="'+diasAnio.join(',')+'">';
     html+='<span class="fecha-toggle" onclick="toggleFechaNode(this)">▸</span>';
     html+='<label><input type="checkbox" onchange="onFechaGroupChange(\''+id+'\',this)"><span>'+y+'</span></label>';
     html+='</div>';
     html+='<div class="fecha-hijos" style="display:none">';
-    semanas.forEach(function(wk){
-      const dias=porAnio[y][wk].slice().sort();
-      const rango=fmtF(dias[0])+' - '+fmtF(dias[dias.length-1]);
-      html+='<div class="fecha-node fecha-nivel-semana" data-dias="'+dias.join(',')+'">';
+    meses.forEach(function(m){
+      const semanas=Object.keys(porAnio[y][m]).sort().reverse();
+      const diasMes=semanas.reduce(function(a,wk){return a.concat(porAnio[y][m][wk]);},[]);
+      html+='<div class="fecha-node fecha-nivel-mes" data-dias="'+diasMes.join(',')+'">';
       html+='<span class="fecha-toggle" onclick="toggleFechaNode(this)">▸</span>';
-      html+='<label><input type="checkbox" onchange="onFechaGroupChange(\''+id+'\',this)"><span>Semana '+wk+' · '+rango+'</span></label>';
+      html+='<label><input type="checkbox" onchange="onFechaGroupChange(\''+id+'\',this)"><span>'+(MES_NOMBRES[parseInt(m,10)]||m)+'</span></label>';
       html+='</div>';
-      html+='<div class="fecha-hijos fecha-hijos-dias" style="display:none">';
-      dias.slice().reverse().forEach(function(f){
-        const checked=filtros[def.key].includes(f)?'checked':'';
-        const lbl=fmtF(f)+(conHoras?(' — '+horasLabel(horasDesde(f))):'');
-        const txt=lbl.toLowerCase().replace(/"/g,'&quot;');
-        html+='<label data-txt="'+txt+'"><input type="checkbox" value="'+f+'" '+checked+' onchange="onMselChange(\''+id+'\',this)">'+lbl+'</label>';
+      html+='<div class="fecha-hijos" style="display:none">';
+      semanas.forEach(function(wk){
+        const dias=porAnio[y][m][wk].slice().sort();
+        const rango=fmtF(dias[0])+' - '+fmtF(dias[dias.length-1]);
+        html+='<div class="fecha-node fecha-nivel-semana" data-dias="'+dias.join(',')+'">';
+        html+='<span class="fecha-toggle" onclick="toggleFechaNode(this)">▸</span>';
+        html+='<label><input type="checkbox" onchange="onFechaGroupChange(\''+id+'\',this)"><span>Semana '+wk+' · '+rango+'</span></label>';
+        html+='</div>';
+        html+='<div class="fecha-hijos fecha-hijos-dias" style="display:none">';
+        dias.slice().reverse().forEach(function(f){
+          const checked=filtros[def.key].includes(f)?'checked':'';
+          const lbl=fmtF(f)+(conHoras?(' — '+horasLabel(horasDesde(f))):'');
+          const txt=lbl.toLowerCase().replace(/"/g,'&quot;');
+          html+='<label data-txt="'+txt+'"><input type="checkbox" value="'+f+'" '+checked+' onchange="onMselChange(\''+id+'\',this)">'+lbl+'</label>';
+        });
+        html+='</div>';
       });
       html+='</div>';
     });
@@ -673,9 +686,17 @@ function filterMsel(id,texto){
       const arrow=node.querySelector('.fecha-toggle');
       if(arrow) arrow.textContent = (t && algunoVisible) ? '▾' : '▸';
     });
-    panel.querySelectorAll('.fecha-nivel-anio').forEach(function(node){
+    panel.querySelectorAll('.fecha-nivel-mes').forEach(function(node){
       const hijos=node.nextElementSibling;
       const algunaVisible=!!hijos && Array.from(hijos.querySelectorAll('.fecha-nivel-semana')).some(function(s){return s.style.display!=='none';});
+      node.style.display = (!t || algunaVisible) ? '' : 'none';
+      if(hijos) hijos.style.display = (t && algunaVisible) ? '' : 'none';
+      const arrow=node.querySelector('.fecha-toggle');
+      if(arrow) arrow.textContent = (t && algunaVisible) ? '▾' : '▸';
+    });
+    panel.querySelectorAll('.fecha-nivel-anio').forEach(function(node){
+      const hijos=node.nextElementSibling;
+      const algunaVisible=!!hijos && Array.from(hijos.querySelectorAll('.fecha-nivel-mes')).some(function(s){return s.style.display!=='none';});
       node.style.display = (!t || algunaVisible) ? '' : 'none';
       if(hijos) hijos.style.display = (t && algunaVisible) ? '' : 'none';
       const arrow=node.querySelector('.fecha-toggle');
