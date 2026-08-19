@@ -966,7 +966,8 @@ function renderTabla(dataOriginal){
     // color; el total en kg si se repite en todas sus bandas. --
     const esPrimeraDelColor=!madPctMostrado.has(mad);
     if(esPrimeraDelColor) madPctMostrado.add(mad);
-    const pctTotal=grandTotalPeriodo>0?Math.round(((madGrandTotal[mad]||0)/grandTotalPeriodo)*100):null;
+    // Un decimal para que los 3 colores sumen ~100% (redondeando a entero, verde+pintona+madura solia dar 99%)
+    const pctTotal=grandTotalPeriodo>0?(((madGrandTotal[mad]||0)/grandTotalPeriodo)*100).toFixed(1).replace('.',','):null;
     const kgTotalColor=Math.round(madGrandTotal[mad]||0).toLocaleString('es-CO');
     // -- El % va aparte, en la columna "Total kg" (solo en la primera banda de cada
     // color) -- el resto de la banda (titulo + total en kg) sigue igual a la izquierda. --
