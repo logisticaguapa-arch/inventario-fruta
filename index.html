@@ -241,6 +241,7 @@ table.ftable .ftotal-row td{color:#052e16!important}
   <button class="vbtn" onclick="setView('bines')"    id="btn-bines">Bines</button>
   <button class="vbtn" onclick="setView('facturacion')" id="btn-facturacion">Facturacion</button>
   <button class="vbtn" onclick="setView('descarte')" id="btn-descarte">Descarte</button>
+  <button class="vbtn" onclick="setView('procesado')" id="btn-procesado">Inventario procesado</button>
 </div>
 
 <div class="bar" id="barInv">
@@ -291,6 +292,22 @@ table.ftable .ftotal-row td{color:#052e16!important}
   <button class="bexport" onclick="exportPDFDescarte()">⬇ Exportar a PDF</button>
 </div>
 
+<div class="bar" id="barProcesado" style="display:none">
+  <div class="msel" id="selProcCal">
+    <button type="button" class="msel-btn" onclick="toggleMsel('selProcCal')"><span class="msel-label">Grado de maduración</span><span class="msel-arrow">▾</span></button>
+    <div class="msel-panel" id="selProcCal-panel"></div>
+  </div>
+  <div class="msel" id="selProcTam">
+    <button type="button" class="msel-btn" onclick="toggleMsel('selProcTam')"><span class="msel-label">Calibre</span><span class="msel-arrow">▾</span></button>
+    <div class="msel-panel" id="selProcTam-panel"></div>
+  </div>
+  <div class="msel" id="selProcFec">
+    <button type="button" class="msel-btn" onclick="toggleMsel('selProcFec')"><span class="msel-label">Fecha</span><span class="msel-arrow">▾</span></button>
+    <div class="msel-panel" id="selProcFec-panel"></div>
+  </div>
+  <button class="breset" onclick="resetProcesado()">↺ Limpiar</button>
+</div>
+
 <div class="legend" id="legendInv">
   <div class="leg"><div class="leg-dot" style="background:#22c55e"></div><span>Verde — grado de maduración 0 a 1.0</span></div>
   <div class="leg"><div class="leg-dot" style="background:#eab308"></div><span>Pintona — grado de maduración 1.5 a 2.5</span></div>
@@ -304,6 +321,7 @@ table.ftable .ftotal-row td{color:#052e16!important}
   <div id="v-bines"    class="v-bines"    style="display:none"></div>
   <div id="v-facturacion" class="v-facturacion" style="display:none"></div>
   <div id="v-descarte" class="v-descarte" style="display:none"></div>
+  <div id="v-procesado" class="v-tabla" style="display:none"></div>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
@@ -403,7 +421,7 @@ function fmtF(f){
   return parseInt(d)+' '+M[parseInt(m)]+' '+y;
 }
 
-let ALL=[],DESPACHO=[],currentView='tarjetas';
+let ALL=[],DESPACHO=[],PROCESADO=[],currentView='tarjetas';
 
 async function load(){
   try{
@@ -417,8 +435,35 @@ async function load(){
     if(!r2.ok)throw 0;
     DESPACHO=parseDespachoCSV(await r2.text());
   }catch{DESPACHO=demoDespacho();}
-  buildFilters();buildFacturaFiltros();buildDescarteFiltros();render();
+  try{
+    const r3=await fetch('procesado.csv?'+Date.now());
+    if(!r3.ok)throw 0;
+    PROCESADO=parseProcesadoCSV(await r3.text());
+  }catch{PROCESADO=demoProcesado();}
+  buildFilters();buildFacturaFiltros();buildDescarteFiltros();buildProcesadoFiltros();render();
 }
+// -- "Inventario procesado": TODO lo que entro a Proceso (columna Neto, Proceso!I),
+// sin importar si ya tiene despacho final o no -- a diferencia de inventario.csv,
+// que solo trae lo que sigue disponible en bodega. --
+function parseProcesadoCSV(t){
+  const lines=t.trim().split('\n');
+  if(!lines.length||!lines[0]) return [];
+  return lines.slice(1).filter(l=>l.trim()!=='').map(function(l){
+    const v=l.split(',');
+    return {
+      Fecha:(v[0]||'').trim(),
+      Calidad:(v[1]||'').trim(),
+      Calibre:(v[2]||'').trim(),
+      Neto:parseFloat(v[3])||0
+    };
+  }).filter(r=>r.Fecha!=='' && r.Calidad!=='');
+}
+function demoProcesado(){return[
+  {Fecha:'2026-08-17',Calidad:'AD1',Calibre:'0,0 - 1,0',Neto:2669},
+  {Fecha:'2026-08-17',Calidad:'AD2',Calibre:'0,0 - 1,0',Neto:802},
+  {Fecha:'2026-08-18',Calidad:'AD1',Calibre:'1,5 - 2,5',Neto:288},
+  {Fecha:'2026-08-18',Calidad:'AD-PJUG',Calibre:'3,0 - 4,0',Neto:255},
+];}
 
 function parseDespachoCSV(t){
   const lines=t.trim().split('\n');
@@ -474,7 +519,7 @@ function parseCSV(t){
 }
 
 // ── Filtros multi-seleccion ──────────────────────────────────────────────
-const filtros={cal:[],tam:[],fec:[],factFecha:[],factCli:[],factCal:[],descFec:[],descCat:[]};
+const filtros={cal:[],tam:[],fec:[],factFecha:[],factCli:[],factCal:[],descFec:[],descCat:[],procCal:[],procTam:[],procFec:[]};
 const MSEL_DEF={
   selCal:{key:'cal',placeholder:'Grado de maduración'},
   selTam:{key:'tam',placeholder:'Calibre'},
@@ -483,10 +528,13 @@ const MSEL_DEF={
   selFactCli:{key:'factCli',placeholder:'Todos los clientes'},
   selFactCal:{key:'factCal',placeholder:'Todos los grados de maduración'},
   selDescFec:{key:'descFec',placeholder:'Todas las fechas'},
-  selDescCat:{key:'descCat',placeholder:'Todas las categorias'}
+  selDescCat:{key:'descCat',placeholder:'Todas las categorias'},
+  selProcCal:{key:'procCal',placeholder:'Grado de maduración'},
+  selProcTam:{key:'procTam',placeholder:'Calibre'},
+  selProcFec:{key:'procFec',placeholder:'Fecha'}
 };
 // -- Filtros de fecha con arbol Año / Mes / Semana / Fecha (estilo Power BI) --
-const FECHA_TREE_IDS=['selFec','selFactFec','selDescFec'];
+const FECHA_TREE_IDS=['selFec','selFactFec','selDescFec','selProcFec'];
 const MES_NOMBRES=['','Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
 function anioDe(f){ return f.includes('/') ? f.split('/')[2] : f.split('-')[0]; }
 function mesDe(f){ const m = f.includes('/') ? f.split('/')[1] : f.split('-')[1]; return String(parseInt(m,10)).padStart(2,'0'); }
@@ -800,6 +848,18 @@ function resetDescarte(){
   ['selDescFec','selDescCat'].forEach(id=>{fillMselKeep(id);});
   render();
 }
+function buildProcesadoFiltros(){
+  const tams=[...new Set(PROCESADO.map(r=>r.Calidad))].sort();
+  const fechas=[...new Set(PROCESADO.map(r=>r.Fecha))].sort();
+  fillMsel('selProcCal',CALIBRE_OPCIONES);
+  fillMsel('selProcTam',tams.map(c=>({value:c,label:(TAM_NAMES[c]||c)+' ('+c+')'})));
+  buildFechaMsel('selProcFec',fechas);
+}
+function resetProcesado(){
+  ['procCal','procTam','procFec'].forEach(k=>filtros[k]=[]);
+  ['selProcCal','selProcTam','selProcFec'].forEach(id=>{fillMselKeep(id);});
+  render();
+}
 function fillMselKeep(id){
   // Vuelve a pintar el panel actual (checkboxes) sin recalcular las opciones
   document.querySelectorAll('#'+id+'-panel input[type=checkbox]').forEach(function(cb){cb.checked=false;});
@@ -818,15 +878,21 @@ function filteredDescarte(){
   const f=filtros.descFec,cat=filtros.descCat;
   return DESPACHO.filter(r=>(!f.length||f.includes(r.FechaDespacho))&&(!cat.length||cat.includes(r.Categoria)));
 }
+function filteredProcesado(){
+  const cal=filtros.procCal,t=filtros.procTam,f=filtros.procFec;
+  return PROCESADO.filter(r=>(!cal.length||cal.includes(r.Calibre))&&(!t.length||t.includes(r.Calidad))&&(!f.length||f.includes(r.Fecha)));
+}
 function setView(v){
   currentView=v;
-  ['tarjetas','tabla','bodega','bines','facturacion','descarte'].forEach(x=>{document.getElementById('v-'+x).style.display=x===v?'':'none';document.getElementById('btn-'+x).classList.toggle('active',x===v);});
+  ['tarjetas','tabla','bodega','bines','facturacion','descarte','procesado'].forEach(x=>{document.getElementById('v-'+x).style.display=x===v?'':'none';document.getElementById('btn-'+x).classList.toggle('active',x===v);});
   const esFact = v==='facturacion';
   const esDesc = v==='descarte';
-  document.getElementById('barInv').style.display = (esFact||esDesc)?'none':'';
+  const esProc = v==='procesado';
+  document.getElementById('barInv').style.display = (esFact||esDesc||esProc)?'none':'';
   document.getElementById('barFact').style.display = esFact?'':'none';
   document.getElementById('barDescarte').style.display = esDesc?'':'none';
-  document.getElementById('legendInv').style.display = (esFact||esDesc)?'none':'';
+  document.getElementById('barProcesado').style.display = esProc?'':'none';
+  document.getElementById('legendInv').style.display = (esFact||esDesc||esProc)?'none':'';
   render();
 }
 
@@ -862,6 +928,7 @@ function render(){
   if(currentView==='bines')renderBines(data);
   if(currentView==='facturacion')renderFacturacion(filteredFacturacion());
   if(currentView==='descarte')renderDescarte(filteredDescarte());
+  if(currentView==='procesado')renderInventarioProcesado(filteredProcesado());
 }
 
 function renderTarjetas(data){
@@ -1016,6 +1083,76 @@ function renderTabla(dataOriginal){
     html+='<td>'+Math.round(totalesPorFecha[f]||0).toLocaleString('es-CO')+'</td>';
   });
   html+='<td>'+Math.round(grandTotalPeriodo).toLocaleString('es-CO')+'</td></tr></tbody></table>';
+  el.innerHTML=html;
+}
+
+// -- INVENTARIO PROCESADO: TODO lo que entro a Proceso (columna Neto), sin importar si
+// ya tiene despacho final o no -- es el "espejo" de Tabla Inventario, pero con Calibre
+// (tamaño) como columnas en vez de Fecha, y Grado de maduración como filas por color. --
+function renderInventarioProcesado(data){
+  const el=document.getElementById('v-procesado');
+  const dataValida=data.filter(function(r){return r.Fecha && r.Fecha.trim()!=='' && r.Calidad && r.Calidad.trim()!=='';});
+  if(!dataValida.length){el.innerHTML='<div class="empty">Sin inventario procesado en el periodo seleccionado.</div>';return;}
+  const agg={};
+  const totalPorTam={};
+  dataValida.forEach(function(r){
+    const cal=r.Calibre, neto=parseFloat(r.Neto)||0;
+    if(!agg[cal]) agg[cal]={};
+    agg[cal][r.Calidad]=(agg[cal][r.Calidad]||0)+neto;
+    totalPorTam[r.Calidad]=(totalPorTam[r.Calidad]||0)+neto;
+  });
+  // -- Columnas (Calibre/tamaño) ordenadas de mayor a menor por su Neto total, igual
+  // que Tabla Inventario ordena sus filas de mayor a menor --
+  const tams=Object.keys(totalPorTam).sort(function(a,b){return totalPorTam[b]-totalPorTam[a];});
+  const grandTotal=tams.reduce(function(s,t){return s+totalPorTam[t];},0);
+
+  let html='<table class="ctable"><thead><tr><th class="left">Grado de maduración / Calibre</th>';
+  tams.forEach(function(t){ html+='<th>'+(TAM_NAMES[t]||t)+'</th>'; });
+  html+='<th>Total general</th></tr></thead><tbody>';
+
+  const calibresPresentes=[...new Set(dataValida.map(function(r){return r.Calibre;}))].sort(function(a,b){
+    return parseFloat(String(a).replace(',','.'))-parseFloat(String(b).replace(',','.'));
+  });
+  // -- % y total en kg agrupados por color (verde/pintona/madura), igual que Tabla
+  // Inventario: el % solo se muestra una vez, en la primera banda de cada color --
+  const madTotal={};
+  calibresPresentes.forEach(function(calVal){
+    const mad=getMadurez(calVal);
+    madTotal[mad]=(madTotal[mad]||0)+Object.values(agg[calVal]||{}).reduce(function(s,v){return s+v;},0);
+  });
+  const madPctMostrado=new Set();
+
+  calibresPresentes.forEach(function(calVal){
+    const mad=getMadurez(calVal);
+    const C=getMadClasses(mad);
+    const bgH=madBg(mad), fgH=madFg(mad);
+    const totalBanda=Object.values(agg[calVal]||{}).reduce(function(s,v){return s+v;},0);
+    if(totalBanda<=0) return;
+    const esPrimeraDelColor=!madPctMostrado.has(mad);
+    if(esPrimeraDelColor) madPctMostrado.add(mad);
+    const pctColor=grandTotal>0?(((madTotal[mad]||0)/grandTotal)*100).toFixed(1).replace('.',','):null;
+    const kgTotalColor=Math.round(madTotal[mad]||0).toLocaleString('es-CO');
+
+    html+='<tr class="mad-group-hdr"><td class="left" colspan="'+(tams.length+1)+'" style="background:'+bgH+';color:'+fgH+'">';
+    html+='<span style="font-weight:800">'+C.label+' &mdash; grado de maduración '+calValLabel(calVal)+'</span>';
+    html+='<span style="margin-left:14px;font-weight:800;font-size:1.05rem">'+kgTotalColor+' kg</span>';
+    html+='</td>';
+    html+='<td style="background:'+bgH+';color:'+fgH+'">'+(esPrimeraDelColor&&pctColor!==null?'<span style="font-weight:800;font-size:1.3rem">'+pctColor+'%</span>':'')+'</td>';
+    html+='</tr>';
+
+    let row='<tr><td class="left"></td>';
+    tams.forEach(function(t){
+      const v=(agg[calVal]&&agg[calVal][t])||0;
+      if(v>0) row+='<td class="'+C.cell+'">'+Math.round(v).toLocaleString('es-CO')+'</td>';
+      else row+='<td style="color:#ccc">&mdash;</td>';
+    });
+    row+='<td class="'+C.txt+'">'+Math.round(totalBanda).toLocaleString('es-CO')+'</td></tr>';
+    html+=row;
+  });
+
+  html+='<tr class="tfoot-row"><td class="left">TOTAL GENERAL</td>';
+  tams.forEach(function(t){ html+='<td>'+Math.round(totalPorTam[t]||0).toLocaleString('es-CO')+'</td>'; });
+  html+='<td>'+Math.round(grandTotal).toLocaleString('es-CO')+'</td></tr></tbody></table>';
   el.innerHTML=html;
 }
 
