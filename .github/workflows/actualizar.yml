@@ -40,8 +40,13 @@ jobs:
           import warnings, requests, openpyxl, io
           warnings.filterwarnings("ignore", category=UserWarning, module="openpyxl")
 
-          url = "https://agricolaguapa-my.sharepoint.com/:x:/g/personal/coordinador_logistico_guapa_com_co/IQDQfo1oimGITIutSnziZXTmAZuo0_tcGIcZvShC86nTMFg?download=1"
-          r = requests.get(url, allow_redirects=True, timeout=30)
+          import time
+          # &nocache=<timestamp>: evita que SharePoint/CDN entregue una copia
+          # cacheada del archivo. Sin esto, el link de descarga a veces devuelve
+          # una version vieja del Excel aunque el archivo ya se haya actualizado.
+          url = "https://agricolaguapa-my.sharepoint.com/:x:/g/personal/coordinador_logistico_guapa_com_co/IQDQfo1oimGITIutSnziZXTmAZuo0_tcGIcZvShC86nTMFg?download=1&nocache=" + str(int(time.time()))
+          headers = {"Cache-Control": "no-cache, no-store, must-revalidate", "Pragma": "no-cache"}
+          r = requests.get(url, allow_redirects=True, timeout=30, headers=headers)
           print(f"Status: {r.status_code}, Tamaño: {len(r.content)} bytes")
           # read_only=True: no carga estilos, formatos condicionales ni validaciones de datos
           # (todo eso el proceso no lo necesita, solo los valores de las celdas) -- con
