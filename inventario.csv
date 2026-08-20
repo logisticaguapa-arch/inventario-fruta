@@ -1,23 +1,5 @@
 ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
-199986,canastas,2026-08-19,AD1,Piña AD1,0.0 - 1.0,224
-199987,canastas,2026-08-19,AD1,Piña AD1,0.0 - 1.0,207
-199988,canastas,2026-08-19,AD1,Piña AD1,0.0 - 1.0,48
-199989,canastas,2026-08-19,AD1,Piña AD1,0.0 - 1.0,182
-199990,canastas,2026-08-19,AD1,Piña AD1,0.0 - 1.0,169
-199991,canastas,2026-08-19,AD1,Piña AD1,0.0 - 1.0,238
-199992,canastas,2026-08-19,AD1,Piña AD1,0.0 - 1.0,238
-199993,canastas,2026-08-19,AD1,Piña AD1,0.0 - 1.0,227
-199994,canastas,2026-08-19,AD1,Piña AD1,0.0 - 1.0,209
-199995,canastas,2026-08-19,AD1,Piña AD1,0.0 - 1.0,173
-199996,canastas,2026-08-19,AD2,Piña AD2,0.0 - 1.0,170
-199997,canastas,2026-08-19,AD2,Piña AD2,0.0 - 1.0,147
-199998,canastas,2026-08-19,AD1,Piña AD1,0.0 - 1.0,56
-199999,canastas,2026-08-19,AD2,Piña AD2,0.0 - 1.0,199
-200000,canastas,2026-08-19,AD3,Piña AD3,0.0 - 1.0,22
 200001,canastas,2026-08-19,ADGUA,Piña ADGUA,1.5 - 2.5,10
-200002,canastas,2026-08-19,AD3,Piña AD3,0.0 - 1.0,123
-200003,canastas,2026-08-19,AD2,Piña AD2,0.0 - 1.0,114
-200004,canastas,2026-08-19,AD3,Piña AD3,0.0 - 1.0,50
 200005,canastas,2026-08-19,AD1,Piña AD1,1.5 - 2.5,29
 200006,canastas,2026-08-19,AD1,Piña AD1,1.5 - 2.5,167
 200007,canastas,2026-08-19,AD2,Piña AD2,1.5 - 2.5,42
@@ -25,63 +7,49 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 200009,canastas,2026-08-19,AD-PJUG,AD-piña jugos,3.0 - 4.0,201
 200010,canastas,2026-08-19,AD-PJUG,AD-piña jugos,3.0 - 4.0,89
 200011,canastas,2026-08-19,AD-PIND,AD-piña indstria,1.5 - 2.5,54
-200012,canastas,2026-08-19,AD1,Piña AD1,0.0 - 1.0,223
-200013,canastas,2026-08-19,AD1,Piña AD1,0.0 - 1.0,238
-200014,canastas,2026-08-19,AD1,Piña AD1,0.0 - 1.0,111
-200015,canastas,2026-08-19,AD1,Piña AD1,0.0 - 1.0,217
-200016,canastas,2026-08-19,AD1,Piña AD1,0.0 - 1.0,267
-200017,canastas,2026-08-19,AD1,Piña AD1,0.0 - 1.0,206
-200018,canastas,2026-08-19,AD1,Piña AD1,0.0 - 1.0,229
-200019,canastas,2026-08-19,AD1,Piña AD1,0.0 - 1.0,242
-200020,canastas,2026-08-19,AD1,Piña AD1,0.0 - 1.0,115
-200021,canastas,2026-08-19,AD1,Piña AD1,0.0 - 1.0,141
 200022,canastas,2026-08-19,AD2,Piña AD2,0.0 - 1.0,185
-200023,canastas,2026-08-19,,,,0
-200024,canastas,2026-08-19,,,,0
-200025,canastas,2026-08-19,,,,0
-200026,canastas,2026-08-19,,,,0
-200027,canastas,2026-08-19,,,,0
-200028,canastas,2026-08-19,,,,0
-200029,canastas,2026-08-19,,,,0
-200030,canastas,2026-08-19,,,,0
-200031,canastas,2026-08-19,,,,0
-200032,canastas,2026-08-19,,,,0
-200033,canastas,2026-08-19,,,,0
-200034,canastas,2026-08-19,,,,0
-200035,canastas,2026-08-19,,,,0
-200036,canastas,2026-08-19,,,,0
-200037,canastas,2026-08-19,,,,0
-200038,canastas,2026-08-19,,,,0
-200039,canastas,2026-08-19,,,,0
-200040,canastas,2026-08-19,,,,0
-200041,canastas,2026-08-19,,,,0
-200042,canastas,2026-08-19,,,,0
-200043,canastas,2026-08-19,,,,0
-200044,canastas,2026-08-19,,,,0
-200045,canastas,2026-08-19,,,,0
-200046,canastas,2026-08-19,,,,0
-200047,canastas,2026-08-19,,,,0
-200048,canastas,2026-08-19,,,,0
-200049,canastas,2026-08-19,,,,0
-200050,canastas,2026-08-19,,,,0
-200051,canastas,2026-08-19,,,,0
-200052,canastas,2026-08-19,,,,0
-200053,canastas,2026-08-19,,,,0
-200054,canastas,,,,,0
-200055,canastas,,,,,0
-200056,canastas,,,,,0
-200057,canastas,,,,,0
-200058,canastas,,,,,0
-200059,canastas,,,,,0
-200060,canastas,,,,,0
-200061,canastas,,,,,0
-200062,canastas,,,,,0
-200063,canastas,,,,,0
-200064,canastas,,,,,0
-200065,canastas,,,,,0
-200066,canastas,,,,,0
-200067,canastas,,,,,0
-200068,canastas,,,,,0
+200023,canastas,2026-08-19,AD2,Piña AD2,0.0 - 1.0,102
+200024,canastas,2026-08-19,AD2,Piña AD2,0.0 - 1.0,155
+200025,canastas,2026-08-19,AD2,Piña AD2,0.0 - 1.0,13
+200026,canastas,2026-08-19,AD2,Piña AD2,0.0 - 1.0,58
+200027,canastas,2026-08-19,AD2,Piña AD2,0.0 - 1.0,150
+200028,canastas,2026-08-19,AD2,Piña AD2,0.0 - 1.0,76
+200029,canastas,2026-08-19,AD3,Piña AD3,0.0 - 1.0,184
+200030,canastas,2026-08-19,AD3,Piña AD3,0.0 - 1.0,51
+200031,canastas,2026-08-19,AD3,Piña AD3,0.0 - 1.0,41
+200032,canastas,2026-08-19,AD3,Piña AD3,0.0 - 1.0,92
+200033,canastas,2026-08-19,AD3,Piña AD3,0.0 - 1.0,39
+200034,canastas,2026-08-19,AD-PJUG,AD-piña jugos,3.0 - 4.0,220
+200035,canastas,2026-08-19,AD-PJUG,AD-piña jugos,3.0 - 4.0,31
+200036,canastas,2026-08-19,AD-PIND,AD-piña indstria,1.5 - 2.5,110
+200037,canastas,2026-08-19,ADGUA,Piña ADGUA,1.5 - 2.5,58
+200038,canastas,2026-08-19,AD1,Piña AD1,1.5 - 2.5,22
+200042,canastas,2026-08-19,AD1,Piña AD1,0.0 - 1.0,223
+200043,canastas,2026-08-19,AD1,Piña AD1,0.0 - 1.0,211
+200044,canastas,2026-08-19,AD1,Piña AD1,0.0 - 1.0,212
+200045,canastas,2026-08-19,AD1,Piña AD1,0.0 - 1.0,205
+200046,canastas,2026-08-19,AD1,Piña AD1,0.0 - 1.0,140
+200047,canastas,2026-08-19,AD1,Piña AD1,0.0 - 1.0,186
+200048,canastas,2026-08-19,AD1,Piña AD1,0.0 - 1.0,225
+200049,canastas,2026-08-19,AD2,Piña AD2,0.0 - 1.0,73
+200050,canastas,2026-08-19,AD2,Piña AD2,0.0 - 1.0,77
+200051,canastas,2026-08-19,AD3,Piña AD3,0.0 - 1.0,33
+200052,canastas,2026-08-19,AD-PIND,AD-piña indstria,1.5 - 2.5,78
+200053,canastas,2026-08-19,AD1,Piña AD1,1.5 - 2.5,17
+200055,canastas,2026-08-19,AD1,Piña AD1,0.0 - 1.0,32
+200056,,,,,,0
+200057,,,,,,0
+200058,,,,,,0
+200059,,,,,,0
+200060,,,,,,0
+200061,,,,,,0
+200062,,,,,,0
+200063,,,,,,0
+200064,,,,,,0
+200065,,,,,,0
+200066,,,,,,0
+200067,,,,,,0
+200068,,,,,,0
 200069,,,,,,0
 200070,,,,,,0
 200071,,,,,,0
