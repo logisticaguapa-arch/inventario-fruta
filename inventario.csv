@@ -11,7 +11,7 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 200135,canastas,2026-08-21,PE1,piña special 1ra,0.0 - 1.0,559
 200136,canastas,2026-08-21,PE1,piña special 1ra,0.0 - 1.0,579
 200137,canastas,2026-08-21,PE1,piña special 1ra,1.5 - 2.5,573
-200138,canastas,2026-08-21,PE2,piña special 2da,0.0 - 1.0,522
+200138,canastas,2026-08-21,PE2,piña special 2da,0.0 - 1.0,29
 200139,canastas,2026-08-21,PE1,piña special 1ra,0.0 - 1.0,582
 200140,canastas,2026-08-21,PE1,piña special 1ra,0.0 - 1.0,544
 200141,canastas,2026-08-21,PE1,piña special 1ra,0.0 - 1.0,590
@@ -29,7 +29,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 200153,canastas,2026-08-21,PEGUA,piña special guapita,1.5 - 2.5,452
 200154,canastas,2026-08-21,PE1,piña special 1ra,0.0 - 1.0,569
 200155,canastas,2026-08-21,PE1,piña special 1ra,0.0 - 1.0,558
-200156,canastas,2026-08-21,PE2,piña special 2da,0.0 - 1.0,511
 200157,canastas,2026-08-21,PE1,piña special 1ra,0.0 - 1.0,557
 200158,canastas,2026-08-21,PE2,piña special 2da,1.5 - 2.5,491
 200159,canastas,2026-08-21,PE3,piña special 3ra,0.0 - 1.0,482
@@ -46,21 +45,17 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 200170,canastas,2026-08-21,PE3,piña special 3ra,1.5 - 2.5,479
 200171,canastas,2026-08-21,PIND,piña indstria,1.5 - 2.5,506
 200172,canastas,2026-08-21,PEGUA,piña special guapita,1.5 - 2.5,459
-200173,canastas,2026-08-21,PE2,piña special 2da,0.0 - 1.0,494
 200174,canastas,2026-08-21,PEBAB,piña special baby,1.5 - 2.5,501
 200175,canastas,2026-08-21,PE3,piña special 3ra,0.0 - 1.0,473
 200176,canastas,2026-08-21,PE2,piña special 2da,1.5 - 2.5,449
 200177,canastas,2026-08-21,AD1,Piña AD1,0.0 - 1.0,561
-200178,canastas,2026-08-21,AD1,Piña AD1,0.0 - 1.0,539
 200179,canastas,2026-08-21,AD2,Piña AD2,0.0 - 1.0,514
-200180,canastas,2026-08-21,AD1,Piña AD1,0.0 - 1.0,546
 200181,canastas,2026-08-21,AD1,Piña AD1,0.0 - 1.0,570
 200182,canastas,2026-08-21,AD1,Piña AD1,0.0 - 1.0,560
-200183,canastas,2026-08-21,AD2,Piña AD2,0.0 - 1.0,507
 200184,canastas,2026-08-21,AD1,Piña AD1,0.0 - 1.0,555
 200185,canastas,2026-08-21,AD1,Piña AD1,0.0 - 1.0,553
 200186,canastas,2026-08-21,AD2,Piña AD2,0.0 - 1.0,494
-200187,canastas,2026-08-21,AD1,Piña AD1,0.0 - 1.0,531
+200187,canastas,2026-08-21,AD1,Piña AD1,0.0 - 1.0,109
 200188,canastas,2026-08-21,AD1,Piña AD1,1.5 - 2.5,568
 200189,canastas,2026-08-21,AD1,Piña AD1,0.0 - 1.0,561
 200190,canastas,2026-08-21,AD3,Piña AD3,0.0 - 1.0,474
