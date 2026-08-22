@@ -16978,7 +16978,8 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-08-21,,,local medellin,piña special 1ra,PE1,560,0,,8
 2026-08-21,,,local medellin,piña special 1ra,PE1,587,0,,0
 2026-08-21,,,local medellin,piña special 1ra,PE1,554,196,,0
-2026-08-21,,,local medellin,piña special 1ra,PE1,613,50,,0
+2026-08-21,,,local medellin,piña special 1ra,PE1,613,0,,0
+2026-08-21,,,local medellin,piña special 1ra,PE1,50,0,,0
 2026-08-21,,,KARINA BORJA,piña special 3ra,PE3,469,0,,3
 2026-08-21,,,KARINA BORJA,piña special 3ra,PE3,473,0,,0
 2026-08-21,,,KARINA BORJA,piña special 3ra,PE3,58,0,,0
@@ -16986,3 +16987,10 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-08-21,,,KARINA BORJA,Piña AD2,AD2,512,0,,4
 2026-08-21,,,KARINA BORJA,Piña AD2,AD2,514,0,,0
 2026-08-21,,,KARINA BORJA,piña special 2da,PE2,392,88,,4
+2026-08-21,,,KARINA BORJA,Piña AD3,AD3,192,0,,0
+2026-08-21,,,KARINA BORJA,piña special 3ra,PE3,472,0,,3
+2026-08-21,,,KARINA BORJA,Piña AD3,AD3,316,58,,0
+2026-08-21,,,KARINA BORJA,piña special 3ra,PE3,479,0,,3
+2026-08-21,,,KARINA BORJA,piña special 3ra,PE3,479,4,,0
+2026-08-21,,,local sincelejo,piña special 1ra,PE1,529,0,,4
+2026-08-21,,,local sincelejo,piña special 1ra,PE1,415,56,,0
