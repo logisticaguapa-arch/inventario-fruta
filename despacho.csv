@@ -16987,7 +16987,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-08-21,45744,R-18742,KARINA BORJA,Piña AD2,AD2,512,0,2000,4
 2026-08-21,45744,R-18742,KARINA BORJA,Piña AD2,AD2,514,0,2000,0
 2026-08-21,45744,R-18742,KARINA BORJA,piña special 2da,PE2,392,88,2000,4
-2026-08-21,45744,R-18742,KARINA BORJA,,,0,500,1000,0
+2026-08-21,45744,R-18742,KARINA BORJA,,pind,0,500,1000,0
 2026-08-21,45745,R-18744,KARINA BORJA,Piña AD3,AD3,192,0,1000,0
 2026-08-21,45745,R-18744,KARINA BORJA,piña special 3ra,PE3,472,0,1000,3
 2026-08-21,45745,R-18744,KARINA BORJA,Piña AD3,AD3,316,58,1000,0
@@ -17012,17 +17012,17 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-08-21,,R-18745,local sincelejo,piña special guapita,PEGUA,468,408,2200,0
 2026-08-21,,R-18745,local sincelejo,piña special baby,PEBAB,501,0,1500,0
 2026-08-21,,R-18745,local sincelejo,Piña AD3,AD3,474,8,2600,0
-2026-08-21,,,Aldinsen Gonzalez,piña indstria,PIND,546,0,,0
-2026-08-21,,,Aldinsen Gonzalez,piña indstria,PIND,479,0,,0
-2026-08-21,,,Aldinsen Gonzalez,piña indstria,PIND,437,0,,0
-2026-08-21,,,Aldinsen Gonzalez,piña indstria,PIND,506,0,,0
-2026-08-21,,,Aldinsen Gonzalez,piña indstria,PIND,535,0,,0
-2026-08-21,,,Aldinsen Gonzalez,piña indstria,PIND,507,0,,0
-2026-08-21,,,Aldinsen Gonzalez,piña indstria,PIND,151,0,,0
-2026-08-21,,,Aldinsen Gonzalez,AD-piña indstria,AD-PIND,38,0,,0
-2026-08-21,,,Aldinsen Gonzalez,AD-piña indstria,AD-PIND,451,0,,0
-2026-08-21,,,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,173,0,,0
-2026-08-21,,,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,207,0,,0
-2026-08-21,,,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,499,0,,0
-2026-08-21,,,Aldinsen Gonzalez,piña jugos,PJUG,137,0,,0
-2026-08-21,,,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,29,0,,0
+2026-08-21,45746,R-18746,Aldinsen Gonzalez,piña indstria,PIND,546,0,1000,0
+2026-08-21,45746,R-18746,Aldinsen Gonzalez,piña indstria,PIND,479,0,1000,0
+2026-08-21,45746,R-18746,Aldinsen Gonzalez,piña indstria,PIND,437,0,1000,0
+2026-08-21,45746,R-18746,Aldinsen Gonzalez,piña indstria,PIND,506,0,1000,0
+2026-08-21,45746,R-18746,Aldinsen Gonzalez,piña indstria,PIND,535,0,1000,0
+2026-08-21,45746,R-18746,Aldinsen Gonzalez,piña indstria,PIND,507,0,1000,0
+2026-08-21,45746,R-18746,Aldinsen Gonzalez,piña indstria,PIND,151,0,1000,0
+2026-08-21,45746,R-18746,Aldinsen Gonzalez,AD-piña indstria,AD-PIND,38,0,1000,0
+2026-08-21,45746,R-18746,Aldinsen Gonzalez,AD-piña indstria,AD-PIND,451,0,1000,0
+2026-08-21,45746,R-18746,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,173,0,800,0
+2026-08-21,45746,R-18746,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,207,0,800,0
+2026-08-21,45746,R-18746,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,499,0,800,0
+2026-08-21,45746,R-18746,Aldinsen Gonzalez,piña jugos,PJUG,137,0,800,0
+2026-08-21,45746,R-18746,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,29,0,800,0
