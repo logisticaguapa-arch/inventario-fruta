@@ -12,7 +12,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 200138,canastas,2026-08-21,PE2,piña special 2da,0.0 - 1.0,29
 200139,canastas,2026-08-21,PE1,piña special 1ra,0.0 - 1.0,582
 200140,canastas,2026-08-21,PE1,piña special 1ra,0.0 - 1.0,544
-200142,canastas,2026-08-21,PIND,piña indstria,1.5 - 2.5,479
 200145,canastas,2026-08-21,PE1,piña special 1ra,0.0 - 1.0,549
 200146,canastas,2026-08-21,PE2,piña special 2da,0.0 - 1.0,514
 200148,canastas,2026-08-21,PE1,piña special 1ra,1.5 - 2.5,584
@@ -26,7 +25,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 200159,canastas,2026-08-21,PE3,piña special 3ra,0.0 - 1.0,482
 200160,canastas,2026-08-21,PE1,piña special 1ra,0.0 - 1.0,554
 200161,canastas,2026-08-21,PE1,piña special 1ra,0.0 - 1.0,534
-200162,canastas,2026-08-21,PIND,piña indstria,0.0 - 1.0,438
 200164,canastas,2026-08-21,PEGUA,piña special guapita,0.0 - 1.0,469
 200166,canastas,2026-08-21,PE1,piña special 1ra,1.5 - 2.5,576
 200168,canastas,2026-08-21,PE1,piña special 1ra,0.0 - 1.0,552
@@ -72,15 +70,16 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 200237,canastas,2026-08-21,AD2,Piña AD2,0.0 - 1.0,190
 200239,canastas,2026-08-21,PE2,piña special 2da,0.0 - 1.0,300
 200240,canastas,2026-08-21,AD-PJUG,AD-piña jugos,3.0 - 4.0,207
-200242,canastas,2026-08-21,PEGUA,piña special guapita,1.5 - 2.5,472
 200243,canastas,2026-08-21,AD1,Piña AD1,1.5 - 2.5,87
 200244,canastas,2026-08-21,PEBAB,piña special baby,1.5 - 2.5,330
 200246,canastas,2026-08-21,PE2,piña special 2da,3.0 - 4.0,367
 200247,canastas,2026-08-21,PE1,piña special 1ra,3.0 - 4.0,307
 200248,canastas,2026-08-21,PE3,piña special 3ra,0.0 - 1.0,47
-200249,canastas,2026-08-21,PIND,piña indstria,1.5 - 2.5,547
 200250,canastas,2026-08-21,PE2,piña special 2da,1.5 - 2.5,106
-200251,canastas,2026-08-21,PEGUA,piña special guapita,1.5 - 2.5,517
 200252,canastas,2026-08-21,PE3,piña special 3ra,3.0 - 4.0,179
 200253,canastas,2026-08-21,PE1,piña special 1ra,1.5 - 2.5,180
 200254,canastas,2026-08-21,PE3,piña special 3ra,1.5 - 2.5,520
+200256,canastas,2026-08-21,PE3,piña special 3ra,0.0 - 1.0,220
+200257,canastas,2026-08-21,PEBAB,piña special baby,1.5 - 2.5,267
+200258,canastas,2026-08-21,PJUG,piña jugos,1.5 - 2.5,137
+200259,canastas,2026-08-21,PEGUA,piña special guapita,1.5 - 2.5,16
