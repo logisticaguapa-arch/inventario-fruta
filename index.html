@@ -310,6 +310,7 @@ table.ftable .ftotal-row td{color:#052e16!important}
     <div class="msel-panel" id="selProcGrupo-panel"></div>
   </div>
   <button class="breset" onclick="resetProcesado()">↺ Limpiar</button>
+  <button class="bexport" onclick="exportExcelProcesado()">⬇ Exportar a Excel</button>
 </div>
 
 <div class="legend" id="legendInv">
@@ -1099,6 +1100,42 @@ function renderTabla(dataOriginal){
 // Grupo encima de Calibre (tamaño) en filas -- como una tabla dinamica, cada Grupo
 // de mayor a menor y dentro de el sus Calibres de mayor a menor -- y Grado de
 // maduración en columnas, agrupadas y coloreadas por color igual que Tabla Inventario. --
+// -- Exportar Inventario procesado a Excel: dia a dia, para poder validar el avance
+// de color (verde/pintona/madura) de cada Grupo. Si un mismo Grupo tiene dias en
+// mas de una semana, cada dia sale con su propia Semana (no se mezclan). --
+function construirFilasExportProcesado(data){
+  const dataValida=data.filter(function(r){return r.Fecha && r.Fecha.trim()!=='';});
+  const grupos={};
+  const orden=[];
+  dataValida.forEach(function(r){
+    const grp=r.Grupo||'(Sin grupo)';
+    const key=r.Fecha+'||'+grp;
+    if(!grupos[key]){ grupos[key]={fecha:r.Fecha,grupo:grp,verde:0,pintona:0,madura:0}; orden.push(key); }
+    const mad=getMadurez(r.Calibre);
+    grupos[key][mad]=(grupos[key][mad]||0)+(parseFloat(r.Neto)||0);
+  });
+  const filas=orden.map(function(k){return grupos[k];}).sort(function(a,b){
+    if(a.grupo!==b.grupo) return a.grupo<b.grupo?-1:1;
+    return a.fecha<b.fecha?-1:(a.fecha>b.fecha?1:0);
+  });
+  return filas.map(function(f){
+    const total=f.verde+f.pintona+f.madura;
+    const pct=function(v){return total>0?Math.round((v/total)*1000)/10:0;};
+    const semana='Semana '+String(isoWeekInfo(f.fecha).week).padStart(2,'0');
+    return [semana,f.fecha,f.grupo,Math.round(f.verde),pct(f.verde),Math.round(f.pintona),pct(f.pintona),Math.round(f.madura),pct(f.madura),Math.round(total)];
+  });
+}
+const PROC_EXPORT_HEADERS=['Semana','Fecha','Grupo','Kg Verde','% Verde','Kg Pintona','% Pintona','Kg Madura','% Madura','Total Kg'];
+
+function exportExcelProcesado(){
+  const filas=construirFilasExportProcesado(filteredProcesado());
+  if(!filas.length){ alert('No hay datos de inventario procesado para exportar.'); return; }
+  const ws=XLSX.utils.aoa_to_sheet([PROC_EXPORT_HEADERS].concat(filas));
+  const wb=XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(wb,ws,'Inventario procesado');
+  XLSX.writeFile(wb,'InventarioProcesado_'+fechaISO(new Date())+'.xlsx');
+}
+
 function renderInventarioProcesado(data){
   const el=document.getElementById('v-procesado');
   const dataValida=data.filter(function(r){return r.Fecha && r.Fecha.trim()!=='' && r.Calidad && r.Calidad.trim()!=='';});
