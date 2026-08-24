@@ -1103,8 +1103,13 @@ function renderTabla(dataOriginal){
 // -- Exportar Inventario procesado a Excel: dia a dia, para poder validar el avance
 // de color (verde/pintona/madura) de cada Grupo. Si un mismo Grupo tiene dias en
 // mas de una semana, cada dia sale con su propia Semana (no se mezclan). --
+// Filtro interno (solo aplica a este descargable, no a la tabla en pantalla ni a
+// los demas filtros): estas categorias de Calibre (tamaño/Calidad) se excluyen.
+const PROC_EXPORT_EXCLUIR=['AD1','AD2','AD3','ADGUA','ADBABY','AD-PIND','AD-PJUG'];
 function construirFilasExportProcesado(data){
-  const dataValida=data.filter(function(r){return r.Fecha && r.Fecha.trim()!=='';});
+  const dataValida=data.filter(function(r){
+    return r.Fecha && r.Fecha.trim()!=='' && PROC_EXPORT_EXCLUIR.indexOf(String(r.Calidad||'').trim().toUpperCase())===-1;
+  });
   const grupos={};
   const orden=[];
   dataValida.forEach(function(r){
