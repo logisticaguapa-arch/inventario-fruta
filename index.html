@@ -311,7 +311,6 @@ table.ftable .ftotal-row td{color:#052e16!important}
     <div class="msel-panel" id="selProcGrupo-panel"></div>
   </div>
   <button class="breset" onclick="resetProcesado()">↺ Limpiar</button>
-  <button class="bexport" onclick="exportExcelProcesado()">⬇ Exportar a Excel</button>
 </div>
 
 <div class="bar" id="barSeguimiento" style="display:none">
@@ -324,6 +323,7 @@ table.ftable .ftotal-row td{color:#052e16!important}
     <div class="msel-panel" id="selSeguFec-panel"></div>
   </div>
   <button class="breset" onclick="resetSeguimiento()">↺ Limpiar</button>
+  <button class="bexport" onclick="exportExcelProcesado()">⬇ Exportar a Excel</button>
 </div>
 
 <div class="legend" id="legendInv">
@@ -1167,12 +1167,14 @@ function construirFilasExportProcesado(data){
 const PROC_EXPORT_HEADERS=['Semana','Fecha','Grupo','Kg Verde','% Verde','Kg Pintona','% Pintona','Kg Madura','% Madura','Total Kg'];
 
 function exportExcelProcesado(){
-  const filas=construirFilasExportProcesado(filteredProcesado());
-  if(!filas.length){ alert('No hay datos de inventario procesado para exportar.'); return; }
+  // -- Se movio de Inventario procesado a Seguimiento Grupos: ahora toma los datos
+  // con los filtros de ESA vista (Grupo/Fecha), no los de Inventario procesado. --
+  const filas=construirFilasExportProcesado(filteredSeguimiento());
+  if(!filas.length){ alert('No hay datos de seguimiento para exportar.'); return; }
   const ws=XLSX.utils.aoa_to_sheet([PROC_EXPORT_HEADERS].concat(filas));
   const wb=XLSX.utils.book_new();
-  XLSX.utils.book_append_sheet(wb,ws,'Inventario procesado');
-  XLSX.writeFile(wb,'InventarioProcesado_'+fechaISO(new Date())+'.xlsx');
+  XLSX.utils.book_append_sheet(wb,ws,'Seguimiento grupos');
+  XLSX.writeFile(wb,'SeguimientoGrupos_'+fechaISO(new Date())+'.xlsx');
 }
 
 // -- SEGUIMIENTO GRUPOS: la misma informacion del descargable de Inventario procesado
@@ -1202,7 +1204,20 @@ function renderSeguimientoGrupos(data){
   const bgP=madBg('pintona'), fgP=madFg('pintona');
   const bgM=madBg('madura'), fgM=madFg('madura');
 
-  let html='<table class="ctable"><thead>';
+  // -- Total recuperado de TODAS las fechas/grupos filtrados: kg y % de cada color --
+  let granVerde=0, granPintona=0, granMadura=0;
+  filas.forEach(function(f){ granVerde+=f.verde; granPintona+=f.pintona; granMadura+=f.madura; });
+  const granTotal=granVerde+granPintona+granMadura;
+  const pctG=function(v){return granTotal>0?(v/granTotal*100).toFixed(1).replace('.',','):'0,0';};
+
+  let html='<div style="background:#1e293b;border-radius:12px 12px 0 0;padding:12px 18px;display:flex;align-items:center;gap:12px;flex-wrap:wrap">';
+  html+='<span style="font-size:1.1rem;font-weight:800;color:#fff">SEGUIMIENTO GRUPOS</span>';
+  html+='<span class="'+Cv.badge+'">VERDE '+pctG(granVerde)+'% &middot; '+Math.round(granVerde).toLocaleString('es-CO')+' kg</span>';
+  html+='<span class="'+Cp.badge+'">PINTONA '+pctG(granPintona)+'% &middot; '+Math.round(granPintona).toLocaleString('es-CO')+' kg</span>';
+  html+='<span class="'+Cm.badge+'">MADURA '+pctG(granMadura)+'% &middot; '+Math.round(granMadura).toLocaleString('es-CO')+' kg</span>';
+  html+='<span style="margin-left:auto;background:rgba(255,255,255,0.2);color:#fff;padding:3px 12px;border-radius:20px;font-size:.85rem;font-weight:800">'+Math.round(granTotal).toLocaleString('es-CO')+' kg total</span>';
+  html+='</div>';
+  html+='<table class="ctable"><thead>';
   html+='<tr><th class="left" rowspan="2">Semana</th><th class="left" rowspan="2">Fecha</th><th class="left" rowspan="2">Grupo</th>';
   html+='<th colspan="2" style="background:'+bgV+';color:'+fgV+'">VERDE</th>';
   html+='<th colspan="2" style="background:'+bgP+';color:'+fgP+'">PINTONA</th>';
