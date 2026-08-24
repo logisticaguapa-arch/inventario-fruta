@@ -1210,22 +1210,17 @@ function renderSeguimientoGrupos(data){
   const granTotal=granVerde+granPintona+granMadura;
   const pctG=function(v){return granTotal>0?(v/granTotal*100).toFixed(1).replace('.',','):'0,0';};
 
-  let html='<div style="background:#1e293b;border-radius:12px 12px 0 0;padding:12px 18px;display:flex;align-items:center;gap:12px;flex-wrap:wrap">';
-  html+='<span style="font-size:1.1rem;font-weight:800;color:#fff">SEGUIMIENTO GRUPOS</span>';
-  html+='<span class="'+Cv.badge+'">VERDE '+pctG(granVerde)+'% &middot; '+Math.round(granVerde).toLocaleString('es-CO')+' kg</span>';
-  html+='<span class="'+Cp.badge+'">PINTONA '+pctG(granPintona)+'% &middot; '+Math.round(granPintona).toLocaleString('es-CO')+' kg</span>';
-  html+='<span class="'+Cm.badge+'">MADURA '+pctG(granMadura)+'% &middot; '+Math.round(granMadura).toLocaleString('es-CO')+' kg</span>';
-  html+='<span style="margin-left:auto;background:rgba(255,255,255,0.2);color:#fff;padding:3px 12px;border-radius:20px;font-size:.85rem;font-weight:800">'+Math.round(granTotal).toLocaleString('es-CO')+' kg total</span>';
-  html+='</div>';
-  html+='<table class="ctable"><thead>';
+  let html='<table class="ctable"><thead>';
   html+='<tr><th class="left" rowspan="2">Semana</th><th class="left" rowspan="2">Fecha</th><th class="left" rowspan="2">Grupo</th>';
   html+='<th colspan="2" style="background:'+bgV+';color:'+fgV+'">VERDE</th>';
   html+='<th colspan="2" style="background:'+bgP+';color:'+fgP+'">PINTONA</th>';
   html+='<th colspan="2" style="background:'+bgM+';color:'+fgM+'">MADURA</th>';
   html+='</tr><tr>';
-  html+='<th style="background:'+bgV+';color:'+fgV+'">Kg</th><th style="background:'+bgV+';color:'+fgV+'">%</th>';
-  html+='<th style="background:'+bgP+';color:'+fgP+'">Kg</th><th style="background:'+bgP+';color:'+fgP+'">%</th>';
-  html+='<th style="background:'+bgM+';color:'+fgM+'">Kg</th><th style="background:'+bgM+';color:'+fgM+'">%</th>';
+  // -- Total recuperado de TODAS las fechas/grupos filtrados, puesto directamente en
+  // la fila de encabezado KG/%, debajo de cada color (donde se pidio, no en un banner aparte) --
+  html+='<th style="background:'+bgV+';color:'+fgV+'">'+Math.round(granVerde).toLocaleString('es-CO')+' kg</th><th style="background:'+bgV+';color:'+fgV+'">'+pctG(granVerde)+'%</th>';
+  html+='<th style="background:'+bgP+';color:'+fgP+'">'+Math.round(granPintona).toLocaleString('es-CO')+' kg</th><th style="background:'+bgP+';color:'+fgP+'">'+pctG(granPintona)+'%</th>';
+  html+='<th style="background:'+bgM+';color:'+fgM+'">'+Math.round(granMadura).toLocaleString('es-CO')+' kg</th><th style="background:'+bgM+';color:'+fgM+'">'+pctG(granMadura)+'%</th>';
   html+='</tr></thead><tbody>';
 
   filas.forEach(function(f){
