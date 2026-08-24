@@ -242,6 +242,7 @@ table.ftable .ftotal-row td{color:#052e16!important}
   <button class="vbtn" onclick="setView('facturacion')" id="btn-facturacion">Facturacion</button>
   <button class="vbtn" onclick="setView('descarte')" id="btn-descarte">Descarte</button>
   <button class="vbtn" onclick="setView('procesado')" id="btn-procesado">Inventario procesado</button>
+  <button class="vbtn" onclick="setView('seguimiento')" id="btn-seguimiento">Seguimiento Grupos</button>
 </div>
 
 <div class="bar" id="barInv">
@@ -313,6 +314,18 @@ table.ftable .ftotal-row td{color:#052e16!important}
   <button class="bexport" onclick="exportExcelProcesado()">⬇ Exportar a Excel</button>
 </div>
 
+<div class="bar" id="barSeguimiento" style="display:none">
+  <div class="msel" id="selSeguGrupo">
+    <button type="button" class="msel-btn" onclick="toggleMsel('selSeguGrupo')"><span class="msel-label">Grupo</span><span class="msel-arrow">▾</span></button>
+    <div class="msel-panel" id="selSeguGrupo-panel"></div>
+  </div>
+  <div class="msel" id="selSeguFec">
+    <button type="button" class="msel-btn" onclick="toggleMsel('selSeguFec')"><span class="msel-label">Fecha</span><span class="msel-arrow">▾</span></button>
+    <div class="msel-panel" id="selSeguFec-panel"></div>
+  </div>
+  <button class="breset" onclick="resetSeguimiento()">↺ Limpiar</button>
+</div>
+
 <div class="legend" id="legendInv">
   <div class="leg"><div class="leg-dot" style="background:#22c55e"></div><span>Verde — grado de maduración 0 a 1.0</span></div>
   <div class="leg"><div class="leg-dot" style="background:#eab308"></div><span>Pintona — grado de maduración 1.5 a 2.5</span></div>
@@ -327,6 +340,7 @@ table.ftable .ftotal-row td{color:#052e16!important}
   <div id="v-facturacion" class="v-facturacion" style="display:none"></div>
   <div id="v-descarte" class="v-descarte" style="display:none"></div>
   <div id="v-procesado" class="v-tabla" style="display:none"></div>
+  <div id="v-seguimiento" class="v-tabla" style="display:none"></div>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
@@ -445,7 +459,7 @@ async function load(){
     if(!r3.ok)throw 0;
     PROCESADO=parseProcesadoCSV(await r3.text());
   }catch{PROCESADO=demoProcesado();}
-  buildFilters();buildFacturaFiltros();buildDescarteFiltros();buildProcesadoFiltros();render();
+  buildFilters();buildFacturaFiltros();buildDescarteFiltros();buildProcesadoFiltros();buildSeguimientoFiltros();render();
 }
 // -- "Inventario procesado": TODO lo que entro a Proceso (columna Neto, Proceso!I),
 // sin importar si ya tiene despacho final o no -- a diferencia de inventario.csv,
@@ -525,7 +539,7 @@ function parseCSV(t){
 }
 
 // ── Filtros multi-seleccion ──────────────────────────────────────────────
-const filtros={cal:[],tam:[],fec:[],factFecha:[],factCli:[],factCal:[],descFec:[],descCat:[],procCal:[],procTam:[],procFec:[],procGrupo:[]};
+const filtros={cal:[],tam:[],fec:[],factFecha:[],factCli:[],factCal:[],descFec:[],descCat:[],procCal:[],procTam:[],procFec:[],procGrupo:[],seguGrupo:[],seguFec:[]};
 const MSEL_DEF={
   selCal:{key:'cal',placeholder:'Grado de maduración'},
   selTam:{key:'tam',placeholder:'Calibre'},
@@ -538,10 +552,12 @@ const MSEL_DEF={
   selProcCal:{key:'procCal',placeholder:'Grado de maduración'},
   selProcTam:{key:'procTam',placeholder:'Calibre'},
   selProcFec:{key:'procFec',placeholder:'Fecha'},
-  selProcGrupo:{key:'procGrupo',placeholder:'Grupo'}
+  selProcGrupo:{key:'procGrupo',placeholder:'Grupo'},
+  selSeguGrupo:{key:'seguGrupo',placeholder:'Grupo'},
+  selSeguFec:{key:'seguFec',placeholder:'Fecha'}
 };
 // -- Filtros de fecha con arbol Año / Mes / Semana / Fecha (estilo Power BI) --
-const FECHA_TREE_IDS=['selFec','selFactFec','selDescFec','selProcFec'];
+const FECHA_TREE_IDS=['selFec','selFactFec','selDescFec','selProcFec','selSeguFec'];
 const MES_NOMBRES=['','Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
 function anioDe(f){ return f.includes('/') ? f.split('/')[2] : f.split('-')[0]; }
 function mesDe(f){ const m = f.includes('/') ? f.split('/')[1] : f.split('-')[1]; return String(parseInt(m,10)).padStart(2,'0'); }
@@ -869,6 +885,17 @@ function resetProcesado(){
   ['selProcCal','selProcTam','selProcFec','selProcGrupo'].forEach(id=>{fillMselKeep(id);});
   render();
 }
+function buildSeguimientoFiltros(){
+  const fechas=[...new Set(PROCESADO.map(r=>r.Fecha))].sort();
+  const grupos=[...new Set(PROCESADO.map(r=>r.Grupo).filter(g=>g))].sort();
+  buildFechaMsel('selSeguFec',fechas);
+  fillMsel('selSeguGrupo',grupos.map(g=>({value:g,label:g})));
+}
+function resetSeguimiento(){
+  ['seguGrupo','seguFec'].forEach(k=>filtros[k]=[]);
+  ['selSeguGrupo','selSeguFec'].forEach(id=>{fillMselKeep(id);});
+  render();
+}
 function fillMselKeep(id){
   // Vuelve a pintar el panel actual (checkboxes) sin recalcular las opciones
   document.querySelectorAll('#'+id+'-panel input[type=checkbox]').forEach(function(cb){cb.checked=false;});
@@ -891,17 +918,23 @@ function filteredProcesado(){
   const cal=filtros.procCal,t=filtros.procTam,f=filtros.procFec,g=filtros.procGrupo;
   return PROCESADO.filter(r=>(!cal.length||cal.includes(r.Calibre))&&(!t.length||t.includes(r.Calidad))&&(!f.length||f.includes(r.Fecha))&&(!g.length||g.includes(r.Grupo)));
 }
+function filteredSeguimiento(){
+  const g=filtros.seguGrupo,f=filtros.seguFec;
+  return PROCESADO.filter(r=>(!g.length||g.includes(r.Grupo))&&(!f.length||f.includes(r.Fecha)));
+}
 function setView(v){
   currentView=v;
-  ['tarjetas','tabla','bodega','bines','facturacion','descarte','procesado'].forEach(x=>{document.getElementById('v-'+x).style.display=x===v?'':'none';document.getElementById('btn-'+x).classList.toggle('active',x===v);});
+  ['tarjetas','tabla','bodega','bines','facturacion','descarte','procesado','seguimiento'].forEach(x=>{document.getElementById('v-'+x).style.display=x===v?'':'none';document.getElementById('btn-'+x).classList.toggle('active',x===v);});
   const esFact = v==='facturacion';
   const esDesc = v==='descarte';
   const esProc = v==='procesado';
-  document.getElementById('barInv').style.display = (esFact||esDesc||esProc)?'none':'';
+  const esSegu = v==='seguimiento';
+  document.getElementById('barInv').style.display = (esFact||esDesc||esProc||esSegu)?'none':'';
   document.getElementById('barFact').style.display = esFact?'':'none';
   document.getElementById('barDescarte').style.display = esDesc?'':'none';
   document.getElementById('barProcesado').style.display = esProc?'':'none';
-  document.getElementById('legendInv').style.display = (esFact||esDesc||esProc)?'none':'';
+  document.getElementById('barSeguimiento').style.display = esSegu?'':'none';
+  document.getElementById('legendInv').style.display = (esFact||esDesc||esProc||esSegu)?'none':'';
   render();
 }
 
@@ -938,6 +971,7 @@ function render(){
   if(currentView==='facturacion')renderFacturacion(filteredFacturacion());
   if(currentView==='descarte')renderDescarte(filteredDescarte());
   if(currentView==='procesado')renderInventarioProcesado(filteredProcesado());
+  if(currentView==='seguimiento')renderSeguimientoGrupos(filteredSeguimiento());
 }
 
 function renderTarjetas(data){
@@ -1139,6 +1173,59 @@ function exportExcelProcesado(){
   const wb=XLSX.utils.book_new();
   XLSX.utils.book_append_sheet(wb,ws,'Inventario procesado');
   XLSX.writeFile(wb,'InventarioProcesado_'+fechaISO(new Date())+'.xlsx');
+}
+
+// -- SEGUIMIENTO GRUPOS: la misma informacion del descargable de Inventario procesado
+// (Semana, Fecha, Grupo, Kg y % por color) pero en pantalla, como tabla, con filtros
+// propios de Grupo y Fecha -- ordenada por Semana/Fecha de menor a mayor y Grupo. --
+function renderSeguimientoGrupos(data){
+  const el=document.getElementById('v-seguimiento');
+  const dataValida=data.filter(function(r){return r.Fecha && r.Fecha.trim()!=='';});
+  if(!dataValida.length){el.innerHTML='<div class="empty">Sin datos de seguimiento en el periodo seleccionado.</div>';return;}
+  const grupos={};
+  const orden=[];
+  dataValida.forEach(function(r){
+    const grp=r.Grupo||'(Sin grupo)';
+    const key=r.Fecha+'||'+grp;
+    if(!grupos[key]){ grupos[key]={fecha:r.Fecha,grupo:grp,verde:0,pintona:0,madura:0}; orden.push(key); }
+    const mad=getMadurez(r.Calibre);
+    grupos[key][mad]=(grupos[key][mad]||0)+(parseFloat(r.Neto)||0);
+  });
+  // -- Orden: Semana (se deriva de la Fecha) y Fecha de menor a mayor, y Grupo --
+  const filas=orden.map(function(k){return grupos[k];}).sort(function(a,b){
+    if(a.fecha!==b.fecha) return a.fecha<b.fecha?-1:1;
+    return String(a.grupo).localeCompare(String(b.grupo),'es',{numeric:true});
+  });
+
+  const Cv=getMadClasses('verde'), Cp=getMadClasses('pintona'), Cm=getMadClasses('madura');
+  const bgV=madBg('verde'), fgV=madFg('verde');
+  const bgP=madBg('pintona'), fgP=madFg('pintona');
+  const bgM=madBg('madura'), fgM=madFg('madura');
+
+  let html='<table class="ctable"><thead>';
+  html+='<tr><th class="left" rowspan="2">Semana</th><th class="left" rowspan="2">Fecha</th><th class="left" rowspan="2">Grupo</th>';
+  html+='<th colspan="2" style="background:'+bgV+';color:'+fgV+'">VERDE</th>';
+  html+='<th colspan="2" style="background:'+bgP+';color:'+fgP+'">PINTONA</th>';
+  html+='<th colspan="2" style="background:'+bgM+';color:'+fgM+'">MADURA</th>';
+  html+='</tr><tr>';
+  html+='<th style="background:'+bgV+';color:'+fgV+'">Kg</th><th style="background:'+bgV+';color:'+fgV+'">%</th>';
+  html+='<th style="background:'+bgP+';color:'+fgP+'">Kg</th><th style="background:'+bgP+';color:'+fgP+'">%</th>';
+  html+='<th style="background:'+bgM+';color:'+fgM+'">Kg</th><th style="background:'+bgM+';color:'+fgM+'">%</th>';
+  html+='</tr></thead><tbody>';
+
+  filas.forEach(function(f){
+    const total=f.verde+f.pintona+f.madura;
+    const pct=function(v){return total>0?(v/total*100).toFixed(1).replace('.',','):'0,0';};
+    const semana='Semana '+String(isoWeekInfo(f.fecha).week).padStart(2,'0');
+    let row='<tr><td class="left">'+semana+'</td><td class="left">'+fmtF(f.fecha)+'</td><td class="left" style="font-weight:700">'+f.grupo+'</td>';
+    row+= f.verde>0 ? ('<td class="'+Cv.cell+'">'+Math.round(f.verde).toLocaleString('es-CO')+'</td><td class="'+Cv.cell+'">'+pct(f.verde)+'%</td>') : '<td style="color:#ccc">&mdash;</td><td style="color:#ccc">&mdash;</td>';
+    row+= f.pintona>0 ? ('<td class="'+Cp.cell+'">'+Math.round(f.pintona).toLocaleString('es-CO')+'</td><td class="'+Cp.cell+'">'+pct(f.pintona)+'%</td>') : '<td style="color:#ccc">&mdash;</td><td style="color:#ccc">&mdash;</td>';
+    row+= f.madura>0 ? ('<td class="'+Cm.cell+'">'+Math.round(f.madura).toLocaleString('es-CO')+'</td><td class="'+Cm.cell+'">'+pct(f.madura)+'%</td>') : '<td style="color:#ccc">&mdash;</td><td style="color:#ccc">&mdash;</td>';
+    row+='</tr>';
+    html+=row;
+  });
+  html+='</tbody></table>';
+  el.innerHTML=html;
 }
 
 function renderInventarioProcesado(data){
