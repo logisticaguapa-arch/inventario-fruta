@@ -1,13 +1,10 @@
 ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
-200261,canastas,2026-08-23,PE1,piña special 1ra,1.5 - 2.5,50
-200263,canastas,2026-08-23,PE1,piña special 1ra,1.5 - 2.5,81
 200267,canastas,2026-08-23,PE1,piña special 1ra,0.0 - 1.0,148
 200269,canastas,2026-08-23,PE2,piña special 2da,1.5 - 2.5,211
 200282,canastas,2026-08-23,PE2,piña special 2da,1.5 - 2.5,43
 200283,canastas,2026-08-23,PE1,piña special 1ra,0.0 - 1.0,130
 200284,canastas,2026-08-23,PE1,piña special 1ra,0.0 - 1.0,567
 200288,canastas,2026-08-23,PE1,piña special 1ra,0.0 - 1.0,105
-200290,canastas,2026-08-23,PE1,piña special 1ra,1.5 - 2.5,16
 200297,canastas,2026-08-23,PIND,piña indstria,1.5 - 2.5,260
 200301,canastas,2026-08-23,PE1,piña special 1ra,0.0 - 1.0,56
 200310,canastas,2026-08-23,PE1,piña special 1ra,0.0 - 1.0,37
@@ -16,7 +13,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 200339,canastas,2026-08-23,PE1,piña special 1ra,0.0 - 1.0,90
 200365,canastas,2026-08-23,AD2,Piña AD2,1.5 - 2.5,35
 200366,canastas,2026-08-23,ADBABY,Piña ADBABY,1.5 - 2.5,22
-200369,canastas,2026-08-23,AD1,Piña AD1,1.5 - 2.5,77
 200373,canastas,2026-08-23,AD1,Piña AD1,0.0 - 1.0,418
 200377,canastas,2026-08-24,PE1,piña special 1ra,0.0 - 1.0,499
 200378,canastas,2026-08-24,PE1,piña special 1ra,1.5 - 2.5,590
@@ -64,10 +60,9 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 200432,canastas,2026-08-24,PE1,piña special 1ra,3.0 - 4.0,579
 200433,canastas,2026-08-24,PE1,piña special 1ra,0.0 - 1.0,576
 200434,canastas,2026-08-24,PE3,piña special 3ra,1.5 - 2.5,335
-200435,canastas,2026-08-24,PE3,piña special 3ra,3.0 - 4.0,303
+200435,canastas,2026-08-24,PE3,piña special 3ra,4,303
 200436,canastas,2026-08-24,PE2,piña special 2da,1.5 - 2.5,231
 200437,canastas,2026-08-24,PEGUA,piña special guapita,1.5 - 2.5,206
-200438,canastas,2026-08-24,PE2,piña special 2da,3.0 - 4.0,86
 200439,canastas,2026-08-24,PE1,piña special 1ra,1.5 - 2.5,37
 200440,canastas,2026-08-24,PIND,piña indstria,1.5 - 2.5,315
 200441,canastas,2026-08-24,PE2,piña special 2da,0.0 - 1.0,463
@@ -100,7 +95,7 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 200469,canastas,2026-08-24,AD3,Piña AD3,0.0 - 1.0,321
 200470,canastas,2026-08-24,AD2,Piña AD2,0.0 - 1.0,13
 200471,canastas,2026-08-24,AD1,Piña AD1,0.0 - 1.0,504
-200472,canastas,2026-08-24,AD1,Piña AD1,1.5 - 2.5,212
+200472,canastas,2026-08-24,AD1,Piña AD1,1.5 - 2.5,179
 200473,canastas,2026-08-24,ADGUA,Piña ADGUA,1.5 - 2.5,137
 200474,canastas,2026-08-24,AD1,Piña AD1,0.0 - 1.0,628
 200475,canastas,2026-08-24,AD-PJUG,AD-piña jugos,3.0 - 4.0,167
