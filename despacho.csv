@@ -17152,15 +17152,15 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-08-24,45765,R-18757,KARINA BORJA,piña special 3ra,PE3,496,0,900,0
 2026-08-24,45765,R-18757,KARINA BORJA,Piña AD3,AD3,258,0,900,0
 2026-08-24,45765,R-18757,KARINA BORJA,piña special 3ra,PE3,270,0,900,0
-2026-08-24,,R-18757,local sincelejo,piña special 1ra,PE1,577,0,2800,8
-2026-08-24,,R-18757,local sincelejo,piña special 1ra,PE1,588,0,2800,0
-2026-08-24,,R-18757,local sincelejo,piña special 1ra,PE1,551,284,2800,0
-2026-08-24,,R-18757,local sincelejo,,PE1,0,500,2800,0
-2026-08-24,,R-18757,local sincelejo,piña special 1ra,PE1,547,453,2800,0
-2026-08-24,,R-18757,local sincelejo,,PE1,0,500,2800,0
-2026-08-24,,R-18757,local sincelejo,piña special guapita,PEGUA,477,0,1700,0
-2026-08-24,,R-18757,local sincelejo,piña special guapita,PEGUA,488,35,1700,0
-2026-08-24,,R-18757,local sincelejo,piña special 2da,PE2,530,470,2600,3
+2026-08-24,,R-18759,local sincelejo,piña special 1ra,PE1,577,0,2800,8
+2026-08-24,,R-18759,local sincelejo,piña special 1ra,PE1,588,0,2800,0
+2026-08-24,,R-18759,local sincelejo,piña special 1ra,PE1,551,284,2800,0
+2026-08-24,,R-18759,local sincelejo,,PE1,0,500,2800,0
+2026-08-24,,R-18759,local sincelejo,piña special 1ra,PE1,547,453,2800,0
+2026-08-24,,R-18759,local sincelejo,,PE1,0,500,2800,0
+2026-08-24,,R-18759,local sincelejo,piña special guapita,PEGUA,477,0,1700,0
+2026-08-24,,R-18759,local sincelejo,piña special guapita,PEGUA,488,35,1700,0
+2026-08-24,,R-18759,local sincelejo,piña special 2da,PE2,530,470,2600,3
 2026-08-24,,R-18760,local sincelejo,piña special 2da,PE2,520,480,2600,0
 2026-08-24,,R-18760,local sincelejo,,PE2,0,479,2600,0
 2026-08-24,,R-18760,local sincelejo,piña special guapita,PEGUA,472,0,1700,0
@@ -17185,3 +17185,26 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-08-24,45764,R-18758,Aldinsen Gonzalez,piña indstria,PIND,312,248,1000,0
 2026-08-24,45764,R-18758,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,81,0,800,0
 2026-08-24,45764,R-18758,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,82,0,800,0
+2026-08-25,,,local apartado,piña special 2da,PE2,535,0,,0
+2026-08-25,,,local apartado,piña special 2da,PE2,20,0,,9
+2026-08-25,,,local apartado,Piña AD2,AD2,351,344,,0
+2026-08-25,,,local apartado,piña special 1ra,PE1,550,450,,11
+2026-08-25,,,local apartado,piña special 1ra,PE1,143,57,,0
+2026-08-25,,,local apartado,piña special guapita,PEGUA,482,18,,0
+2026-08-25,,,local medellin,piña special 3ra,PE3,462,98,,0
+2026-08-25,,,local medellin,piña special 2da,PE2,505,0,,0
+2026-08-25,,,local medellin,piña special 2da,PE2,512,0,,0
+2026-08-25,,,local medellin,piña special 2da,PE2,507,0,,0
+2026-08-25,,,local medellin,piña special 2da,PE2,504,0,,0
+2026-08-25,,,local medellin,piña special 2da,PE2,519,453,,0
+2026-08-25,,,local medellin,piña special 2da,PE2,503,0,,0
+2026-08-25,,,local medellin,piña special 2da,PE2,510,87,,0
+2026-08-25,,,local medellin,piña special 2da,PE2,69,0,,0
+2026-08-25,,,local medellin,piña special 2da,PE2,177,0,,0
+2026-08-25,,,local medellin,piña special 2da,PE2,84,0,,0
+2026-08-25,,,local medellin,piña special 2da,PE2,47,39,,0
+2026-08-25,,,local medellin,piña special 1ra,PE1,614,0,,0
+2026-08-25,,,local medellin,piña special 1ra,PE1,582,0,,0
+2026-08-25,,,local medellin,piña special 1ra,PE1,560,0,,0
+2026-08-25,,,local medellin,piña special 1ra,PE1,525,519,,0
+2026-08-25,,,local medellin,piña special 1ra,PE1,311,0,,166
