@@ -1,5 +1,5 @@
 ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
-200377,canastas,2026-08-24,PE1,piña special 1ra,0.0 - 1.0,174
+200377,canastas,2026-08-24,PE1,piña special 1ra,0.0 - 1.0,108
 200385,canastas,2026-08-24,PE1,piña special 1ra,1.5 - 2.5,54
 200392,canastas,2026-08-24,PE1,piña special 1ra,0.0 - 1.0,533
 200393,canastas,2026-08-24,PE2,piña special 2da,0.0 - 1.0,503
@@ -18,7 +18,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 200415,canastas,2026-08-24,PE1,piña special 1ra,1.5 - 2.5,559
 200416,canastas,2026-08-24,PE1,piña special 1ra,1.5 - 2.5,598
 200418,canastas,2026-08-24,PE1,piña special 1ra,1.5 - 2.5,597
-200423,canastas,2026-08-24,PE1,piña special 1ra,0.0 - 1.0,555
 200426,canastas,2026-08-24,PE1,piña special 1ra,1.5 - 2.5,605
 200427,canastas,2026-08-24,PE1,piña special 1ra,1.5 - 2.5,557
 200428,canastas,2026-08-24,PE1,piña special 1ra,1.5 - 2.5,591
@@ -30,15 +29,12 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 200448,canastas,2026-08-24,AD1,Piña AD1,0.0 - 1.0,561
 200449,canastas,2026-08-24,AD1,Piña AD1,0.0 - 1.0,578
 200450,canastas,2026-08-24,AD2,Piña AD2,0.0 - 1.0,520
-200451,canastas,2026-08-24,PE1,piña special 1ra,0.0 - 1.0,292
 200457,canastas,2026-08-24,AD2,Piña AD2,0.0 - 1.0,522
 200461,canastas,2026-08-24,AD1,Piña AD1,0.0 - 1.0,670
 200464,canastas,2026-08-24,AD2,Piña AD2,1.5 - 2.5,85
 200465,canastas,2026-08-24,AD2,Piña AD2,0.0 - 1.0,519
 200467,canastas,2026-08-24,AD1,Piña AD1,1.5 - 2.5,491
 200470,canastas,2026-08-24,AD2,Piña AD2,0.0 - 1.0,13
-200471,canastas,2026-08-24,AD1,Piña AD1,0.0 - 1.0,504
-200474,canastas,2026-08-24,AD1,Piña AD1,0.0 - 1.0,628
 200476,canastas,2026-08-25,PE2,piña special 2da,1.5 - 2.5,17
 200477,canastas,2026-08-25,PE1,piña special 1ra,1.5 - 2.5,454
 200478,canastas,2026-08-25,PE1,piña special 1ra,1.5 - 2.5,550
@@ -78,7 +74,7 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 200512,canastas,2026-08-25,PE2,piña special 2da,3.0 - 4.0,149
 200513,canastas,2026-08-25,PE2,piña special 2da,1.5 - 2.5,353
 200514,canastas,2026-08-25,PE2,piña special 2da,0.0 - 1.0,366
-200515,canastas,2026-08-25,PEGUA,piña special guapita,1.5 - 2.5,63
+200515,canastas,2026-08-25,PEGUA,piña special guapita,1.5 - 2.5,23
 200516,canastas,2026-08-25,PIND,piña indstria,1.5 - 2.5,111
 200517,canastas,2026-08-25,AD1,Piña AD1,0.0 - 1.0,484
 200518,canastas,2026-08-25,AD1,Piña AD1,0.0 - 1.0,545
