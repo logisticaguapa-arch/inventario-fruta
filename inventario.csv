@@ -14,9 +14,9 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 200524,canastas,2026-08-25,AD2,Piña AD2,0.0 - 1.0,428
 200528,canastas,2026-08-25,AD-PJUG,AD-piña jugos,1.5 - 2.5,26
 200532,canastas,2026-08-25,AD-PJUG,AD-piña jugos,3.0 - 4.0,55
-200533,canastas,2026-08-26,,,,0
-200534,canastas,2026-08-26,,,,0
-200535,canastas,2026-08-26,,,,0
+200533,,,,,,0
+200534,,,,,,0
+200535,,,,,,0
 200536,,,,,,0
 200537,,,,,,0
 200538,,,,,,0
