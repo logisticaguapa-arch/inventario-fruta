@@ -67,15 +67,15 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 200669,canastas,2026-08-28,PE1,piña special 1ra,0.0 - 1.0,572
 200670,canastas,2026-08-28,PE2,piña special 2da,1.5 - 2.5,537
 200671,canastas,2026-08-28,PE1,piña special 1ra,1.5 - 2.5,572
-200672,canastas,2026-08-28,,,,492
-200673,canastas,2026-08-28,,,,0
-200674,canastas,2026-08-28,,,,0
-200675,canastas,2026-08-28,,,,0
-200676,canastas,2026-08-28,,,,0
-200677,canastas,2026-08-28,,,,0
-200678,canastas,2026-08-28,,,,0
-200679,canastas,2026-08-28,,,,0
-200680,canastas,2026-08-28,,,,0
+200672,canastas,2026-08-28,PE3,piña special 3ra,0.0 - 1.0,492
+200673,canastas,2026-08-28,PIND,piña indstria,1.5 - 2.5,501
+200674,canastas,2026-08-28,PIND,piña indstria,1.5 - 2.5,479
+200675,canastas,2026-08-28,PE1,piña special 1ra,1.5 - 2.5,556
+200676,canastas,2026-08-28,PE1,piña special 1ra,0.0 - 1.0,599
+200677,canastas,2026-08-28,PE2,piña special 2da,1.5 - 2.5,542
+200678,canastas,2026-08-28,PE1,piña special 1ra,1.5 - 2.5,587
+200679,canastas,2026-08-28,PE2,piña special 2da,0.0 - 1.0,492
+200680,canastas,2026-08-28,PE3,piña special 3ra,0.0 - 1.0,492
 200681,canastas,2026-08-28,,,,0
 200682,canastas,2026-08-28,,,,0
 200683,canastas,2026-08-28,,,,0
