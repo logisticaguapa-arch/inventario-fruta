@@ -17362,18 +17362,77 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-08-26,45797,R-18773,juan pablo cogollo,piña special 1ra,PE1,379,0,2500,0
 2026-08-26,45797,R-18773,juan pablo cogollo,piña special 1ra,PE1,41,0,2500,0
 2026-08-26,45797,R-18773,juan pablo cogollo,Piña AD1,AD1,22,0,2500,22
-2026-08-27,,,local medellin,piña special 1ra,PE1,532,0,,0
-2026-08-27,,,local medellin,piña special 1ra,PE1,578,0,,0
-2026-08-27,,,local medellin,piña special 1ra,PE1,604,286,,0
-2026-08-27,,,local medellin,piña special 2da,PE2,502,0,,8
-2026-08-27,,,local medellin,piña special 2da,PE2,509,0,,0
-2026-08-27,,,local medellin,piña special 2da,PE2,525,0,,0
-2026-08-27,,,local medellin,piña special 2da,PE2,308,0,,0
-2026-08-27,,,local medellin,Piña AD2,AD2,156,0,,0
-2026-08-27,,,local medellin,piña special 1ra,PE1,598,0,,11
-2026-08-27,,,local medellin,piña special 1ra,PE1,560,0,,0
-2026-08-27,,,local medellin,piña special 1ra,PE1,596,0,,0
-2026-08-27,,,local medellin,piña special 1ra,PE1,578,0,,0
-2026-08-27,,,local medellin,piña special 1ra,PE1,576,92,,0
-2026-08-27,,,local medellin,piña special 2da,PE2,498,502,,0
-2026-08-27,,,local medellin,piña special 2da,PE2,8,0,,0
+2026-08-27,,R-18774,local medellin,piña special 1ra,PE1,532,0,3000,0
+2026-08-27,,R-18774,local medellin,piña special 1ra,PE1,578,0,3000,0
+2026-08-27,,R-18774,local medellin,piña special 1ra,PE1,604,286,3000,0
+2026-08-27,,R-18774,local medellin,piña special 2da,PE2,502,0,2800,8
+2026-08-27,,R-18774,local medellin,piña special 2da,PE2,509,0,2800,0
+2026-08-27,,R-18774,local medellin,piña special 2da,PE2,525,0,2800,0
+2026-08-27,,R-18774,local medellin,piña special 2da,PE2,308,0,2800,0
+2026-08-27,,R-18774,local medellin,Piña AD2,AD2,156,0,2800,0
+2026-08-27,,R-18774,local medellin,piña special 1ra,PE1,598,0,3000,11
+2026-08-27,,R-18774,local medellin,piña special 1ra,PE1,560,0,3000,0
+2026-08-27,,R-18774,local medellin,piña special 1ra,PE1,596,0,3000,0
+2026-08-27,,R-18774,local medellin,piña special 1ra,PE1,578,0,3000,0
+2026-08-27,,R-18774,local medellin,piña special 1ra,PE1,576,92,3000,0
+2026-08-27,,R-18774,local medellin,piña special 2da,PE2,498,502,2800,0
+2026-08-27,45801,R-18775,Aldinsen Gonzalez,Piña AD2,AD2,424,0,2200,2
+2026-08-27,45801,R-18775,Aldinsen Gonzalez,Piña AD2,AD2,116,0,2200,0
+2026-08-27,45801,R-18775,Aldinsen Gonzalez,Piña AD1,AD1,562,0,2400,0
+2026-08-27,45801,R-18775,Aldinsen Gonzalez,Piña AD1,AD1,496,0,2400,0
+2026-08-27,45801,R-18775,Aldinsen Gonzalez,Piña AD1,AD1,536,0,2400,0
+2026-08-27,45801,R-18775,Aldinsen Gonzalez,Piña AD1,AD1,475,0,2400,0
+2026-08-27,45801,R-18775,Aldinsen Gonzalez,Piña AD1,AD1,279,0,2400,0
+2026-08-27,45801,R-18775,Aldinsen Gonzalez,piña special 1ra,PE1,370,0,2400,0
+2026-08-27,45801,R-18775,Aldinsen Gonzalez,Piña AD1,AD1,32,51,2400,5
+2026-08-27,,R-18776,local sincelejo,piña special 1ra,PE1,565,0,3200,0
+2026-08-27,,R-18776,local sincelejo,piña special 1ra,PE1,337,98,3200,4
+2026-08-27,,R-18776,local sincelejo,Piña AD1,AD1,579,0,3200,4
+2026-08-27,,R-18776,local sincelejo,piña special 1ra,PE1,390,31,3200,0
+2026-08-27,,R-18776,local sincelejo,piña special 2da,PE2,491,0,3000,6
+2026-08-27,,R-18776,local sincelejo,piña special 2da,PE2,496,0,3000,0
+2026-08-27,,R-18776,local sincelejo,piña special 2da,PE2,486,0,3000,0
+2026-08-27,,R-18776,local sincelejo,piña special 2da,PE2,483,0,3000,0
+2026-08-27,,R-18776,local sincelejo,piña special 2da,PE2,156,0,3000,0
+2026-08-27,,R-18776,local sincelejo,piña special 2da,PE2,7,0,3000,0
+2026-08-27,,R-18776,local sincelejo,Piña AD2,AD2,59,0,3000,0
+2026-08-27,,R-18776,local sincelejo,Piña AD2,AD2,515,0,3000,5
+2026-08-27,,R-18776,local sincelejo,piña special 2da,PE2,379,506,3000,0
+2026-08-27,,R-18776,local sincelejo,piña special 3ra,PE3,481,219,2700,0
+2026-08-27,,R-18776,local sincelejo,piña special 3ra,PE3,470,0,2700,1
+2026-08-27,,R-18776,local sincelejo,piña special 3ra,PE3,224,0,2700,0
+2026-08-27,,R-18776,local sincelejo,Piña AD3,AD3,6,0,2700,0
+2026-08-27,,R-18776,local sincelejo,piña special 3ra,PE3,51,0,2700,0
+2026-08-27,,R-18776,local sincelejo,piña special guapita,PEGUA,448,0,2200,4
+2026-08-27,,R-18776,local sincelejo,piña special guapita,PEGUA,458,0,2200,0
+2026-08-27,,R-18776,local sincelejo,piña special guapita,PEGUA,481,413,2200,0
+2026-08-27,,R-18776,local sincelejo,,PEBAB,0,197,1500,0
+2026-08-27,45802,R-18777,Aldinsen Gonzalez,AD-piña indstria,AD-PIND,470,0,1000,5
+2026-08-27,45802,R-18777,Aldinsen Gonzalez,AD-piña indstria,AD-PIND,429,0,1000,0
+2026-08-27,45802,R-18777,Aldinsen Gonzalez,piña indstria,PIND,108,0,1000,0
+2026-08-27,45802,R-18777,Aldinsen Gonzalez,piña indstria,PIND,120,0,1000,0
+2026-08-27,45802,R-18777,Aldinsen Gonzalez,piña indstria,PIND,288,0,1000,0
+2026-08-27,45802,R-18777,Aldinsen Gonzalez,piña indstria,PIND,502,0,1000,0
+2026-08-27,45802,R-18777,Aldinsen Gonzalez,piña indstria,PIND,510,0,1000,0
+2026-08-27,45802,R-18777,Aldinsen Gonzalez,AD-piña indstria,AD-PIND,141,0,1000,0
+2026-08-27,45802,R-18777,Aldinsen Gonzalez,piña indstria,PIND,546,4,1000,0
+2026-08-27,45802,R-18777,Aldinsen Gonzalez,00:00:00,AD-PJUG,54,0,800,0
+2026-08-27,45802,R-18777,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,26,0,800,0
+2026-08-27,45802,R-18777,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,224,0,800,0
+2026-08-27,45802,R-18777,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,213,0,800,12
+2026-08-27,,R-18778,cartagena,,PE1,0,500,3000,0
+2026-08-27,,R-18778,cartagena,Piña AD1,,542,0,3000,0
+2026-08-27,,R-18778,cartagena,Piña AD1,AD1,533,0,3000,0
+2026-08-27,,R-18778,cartagena,Piña AD1,AD1,586,0,3000,0
+2026-08-27,,R-18778,cartagena,Piña AD1,AD1,547,0,3000,0
+2026-08-27,,R-18778,cartagena,piña special 1ra,PE1,516,0,3000,0
+2026-08-27,,R-18778,cartagena,piña special 1ra,PE1,569,0,3000,0
+2026-08-27,,R-18778,cartagena,piña special 1ra,PE1,538,0,3000,0
+2026-08-27,,R-18778,cartagena,Piña AD1,AD1,585,84,3000,0
+2026-08-27,,R-18778,cartagena,Piña AD2,AD2,524,0,2800,0
+2026-08-27,,R-18778,cartagena,piña special 2da,PE2,523,0,2800,0
+2026-08-27,,R-18778,cartagena,piña special 2da,PE2,529,0,2800,0
+2026-08-27,,R-18778,cartagena,piña special 2da,PE2,524,0,2800,0
+2026-08-27,,R-18778,cartagena,Piña AD2,AD2,137,0,2800,0
+2026-08-27,,R-18778,cartagena,Piña AD2,AD2,115,0,2800,0
+2026-08-27,,R-18778,cartagena,piña special 2da,PE2,8,140,2800,0
