@@ -3,14 +3,12 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 200547,canastas,2026-08-27,PE1,piña special 1ra,0.0 - 1.0,613
 200548,canastas,2026-08-27,PE1,piña special 1ra,1.5 - 2.5,76
 200555,canastas,2026-08-27,PE3,piña special 3ra,0.0 - 1.0,491
-200556,canastas,2026-08-27,PE1,piña special 1ra,1,541
 200558,canastas,2026-08-27,PE1,piña special 1ra,1.5 - 2.5,221
 200559,canastas,2026-08-27,PEGUA,piña special guapita,1.5 - 2.5,55
 200560,canastas,2026-08-27,PE1,piña special 1ra,0.0 - 1.0,594
 200563,canastas,2026-08-27,PE1,piña special 1ra,0.0 - 1.0,539
 200564,canastas,2026-08-27,PE1,piña special 1ra,0.0 - 1.0,185
 200566,canastas,2026-08-27,PE1,piña special 1ra,1.5 - 2.5,584
-200569,canastas,2026-08-27,PE1,piña special 1ra,1,533
 200571,canastas,2026-08-27,PE1,piña special 1ra,0.0 - 1.0,163
 200572,canastas,2026-08-27,PE3,piña special 3ra,0.0 - 1.0,502
 200575,canastas,2026-08-27,PEBAB,piña special baby,1.5 - 2.5,414
@@ -22,7 +20,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 200596,canastas,2026-08-27,PE1,piña special 1ra,1.5 - 2.5,94
 200599,canastas,2026-08-27,PEBAB,piña special baby,1.5 - 2.5,94
 200601,canastas,2026-08-27,PE1,piña special 1ra,3.0 - 4.0,377
-200605,canastas,2026-08-27,PE1,piña special 1ra,0,470
 200613,canastas,2026-08-27,ADBABY,Piña ADBABY,1.5 - 2.5,8
 200615,canastas,2026-08-27,ADGUA,Piña ADGUA,1.5 - 2.5,23
 200621,canastas,2026-08-27,AD3,Piña AD3,0.0 - 1.0,383
@@ -60,10 +57,10 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 200657,canastas,2026-08-28,PEBAB,piña special baby,1.5 - 2.5,427
 200658,canastas,2026-08-28,PE3,piña special 3ra,0.0 - 1.0,493
 200659,canastas,2026-08-28,PE2,piña special 2da,1.5 - 2.5,558
-200660,canastas,2026-08-28,,,,0
-200661,canastas,2026-08-28,,,,0
-200662,canastas,2026-08-28,,,,0
-200663,canastas,2026-08-28,,,,0
+200660,canastas,2026-08-28,PE1,piña special 1ra,1.5 - 2.5,585
+200661,canastas,2026-08-28,PE1,piña special 1ra,0.0 - 1.0,593
+200662,canastas,2026-08-28,PE3,piña special 3ra,1.5 - 2.5,504
+200663,canastas,2026-08-28,PEGUA,piña special guapita,1.5 - 2.5,0
 200664,canastas,2026-08-28,,,,0
 200665,canastas,2026-08-28,,,,0
 200666,canastas,2026-08-28,,,,0
