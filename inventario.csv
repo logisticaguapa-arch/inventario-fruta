@@ -1,8 +1,5 @@
 ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 200555,canastas,2026-08-27,PE3,piña special 3ra,0.0 - 1.0,491
-200572,canastas,2026-08-27,PE3,piña special 3ra,0.0 - 1.0,502
-200582,canastas,2026-08-27,PE3,piña special 3ra,0.0 - 1.0,272
-200595,canastas,2026-08-27,PE3,piña special 3ra,0.0 - 1.0,500
 200621,canastas,2026-08-27,AD3,Piña AD3,0.0 - 1.0,383
 200627,canastas,2026-08-28,PE1,piña special 1ra,0.0 - 1.0,582
 200628,canastas,2026-08-28,PE1,piña special 1ra,1.5 - 2.5,589
@@ -15,7 +12,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 200635,canastas,2026-08-28,PE2,piña special 2da,1.5 - 2.5,519
 200636,canastas,2026-08-28,PE1,piña special 1ra,1.5 - 2.5,572
 200638,canastas,2026-08-28,PE2,piña special 2da,1.5 - 2.5,526
-200639,canastas,2026-08-28,PEGUA,piña special guapita,1.5 - 2.5,363
 200640,canastas,2026-08-28,PE2,piña special 2da,0.0 - 1.0,76
 200644,canastas,2026-08-28,PE1,piña special 1ra,1.5 - 2.5,589
 200645,canastas,2026-08-28,PE2,piña special 2da,1.5 - 2.5,544
@@ -32,7 +28,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 200659,canastas,2026-08-28,PE2,piña special 2da,1.5 - 2.5,208
 200660,canastas,2026-08-28,PE1,piña special 1ra,1.5 - 2.5,585
 200661,canastas,2026-08-28,PE1,piña special 1ra,0.0 - 1.0,52
-200663,canastas,2026-08-28,PEGUA,piña special guapita,1.5 - 2.5,500
 200664,canastas,2026-08-28,PE2,piña special 2da,1.5 - 2.5,528
 200666,canastas,2026-08-28,PE1,piña special 1ra,1.5 - 2.5,574
 200667,canastas,2026-08-28,PE1,piña special 1ra,0.0 - 1.0,600
@@ -67,12 +62,10 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 200724,canastas,2026-08-28,AD-PJUG,AD-piña jugos,3.0 - 4.0,496
 200725,canastas,2026-08-28,ADBABY,Piña ADBABY,1.5 - 2.5,5
 200727,canastas,2026-08-28,AD1,Piña AD1,0.0 - 1.0,246
-200729,canastas,2026-08-28,ADGUA,Piña ADGUA,1.5 - 2.5,109
 200730,canastas,2026-08-28,AD2,Piña AD2,1.5 - 2.5,207
 200733,canastas,2026-08-28,AD1,Piña AD1,1.5 - 2.5,253
 200737,canastas,2026-08-28,AD-PJUG,AD-piña jugos,1.5 - 2.5,49
 200738,canastas,2026-08-28,AD-PJUG,AD-piña jugos,3.0 - 4.0,64
-200739,canastas,2026-08-29,,,,0
 200740,canastas,2026-08-29,,,,0
 200741,canastas,2026-08-29,,,,0
 200742,canastas,2026-08-29,,,,0
