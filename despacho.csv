@@ -17613,10 +17613,10 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-08-29,45827,R-18792,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,64,0,800,0
 2026-08-29,45827,R-18792,Aldinsen Gonzalez,piña jugos,PJUG,42,0,800,0
 2026-08-29,45827,R-18792,Aldinsen Gonzalez,piña jugos,PJUG,87,0,800,15
-2026-08-30,,,karina barajas,piña special 3ra,PE3,498,0,,0
-2026-08-30,,,karina barajas,piña special 3ra,PE3,491,0,,0
-2026-08-30,,,karina barajas,piña special 3ra,PE3,485,0,,0
-2026-08-30,,,karina barajas,piña special 3ra,PE3,484,42,,0
+2026-08-30,,R-18793,karina barajas,piña special 3ra,PE3,498,0,900,0
+2026-08-30,,R-18793,karina barajas,piña special 3ra,PE3,491,0,900,0
+2026-08-30,,R-18793,karina barajas,piña special 3ra,PE3,485,0,900,0
+2026-08-30,,R-18793,karina barajas,piña special 3ra,PE3,484,42,900,0
 2026-08-30,,,claudia andrea varela,Piña AD2,AD2,473,0,,0
 2026-08-30,,,claudia andrea varela,piña special 2da,PE2,523,0,,0
 2026-08-30,,,claudia andrea varela,piña special 2da,PE2,526,0,,0
@@ -17664,3 +17664,5 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-08-30,,,andres ruben oquendo,piña special 1ra,PE1,126,26,,0
 2026-08-30,,,andres ruben oquendo,piña special 1ra,PE1,526,0,,0
 2026-08-30,,,andres ruben oquendo,piña special 1ra,PE1,544,0,,0
+2026-08-30,,,andres ruben oquendo,piña special 1ra,PE1,523,0,,0
+2026-08-30,,,andres ruben oquendo,piña special 1ra,PE1,20,0,,0
