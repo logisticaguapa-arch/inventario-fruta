@@ -17613,56 +17613,58 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-08-29,45827,R-18792,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,64,0,800,0
 2026-08-29,45827,R-18792,Aldinsen Gonzalez,piña jugos,PJUG,42,0,800,0
 2026-08-29,45827,R-18792,Aldinsen Gonzalez,piña jugos,PJUG,87,0,800,15
-2026-08-30,,R-18793,karina barajas,piña special 3ra,PE3,498,0,900,0
-2026-08-30,,R-18793,karina barajas,piña special 3ra,PE3,491,0,900,0
-2026-08-30,,R-18793,karina barajas,piña special 3ra,PE3,485,0,900,0
-2026-08-30,,R-18793,karina barajas,piña special 3ra,PE3,484,42,900,0
-2026-08-30,,,claudia andrea varela,Piña AD2,AD2,473,0,,0
-2026-08-30,,,claudia andrea varela,piña special 2da,PE2,523,0,,0
-2026-08-30,,,claudia andrea varela,piña special 2da,PE2,526,0,,0
-2026-08-30,,,claudia andrea varela,piña special 2da,PE2,534,0,,0
-2026-08-30,,,claudia andrea varela,piña special 2da,PE2,495,0,,0
-2026-08-30,,,claudia andrea varela,piña special 2da,PE2,529,0,,0
-2026-08-30,,,claudia andrea varela,piña special 2da,PE2,532,0,,0
-2026-08-30,,,claudia andrea varela,piña special 2da,PE2,326,62,,0
-2026-08-30,,,claudia andrea varela,piña special 1ra,PE1,570,430,,0
-2026-08-30,,,dario alberto,piña special 1ra,PE1,568,0,,0
-2026-08-30,,,dario alberto,piña special 1ra,PE1,484,0,,0
-2026-08-30,,,dario alberto,piña special 1ra,PE1,550,0,,0
-2026-08-30,,,dario alberto,Piña AD1,AD1,242,0,,0
-2026-08-30,,,dario alberto,piña special 1ra,PE1,566,0,,0
-2026-08-30,,,dario alberto,piña special 1ra,PE1,154,0,,0
-2026-08-30,,,dario alberto,piña special 1ra,PE1,50,0,,0
-2026-08-30,,,dario alberto,piña special 1ra,PE1,178,0,,0
-2026-08-30,,,dario alberto,piña special 1ra,PE1,116,0,,0
-2026-08-30,,,dario alberto,piña special 1ra,PE1,134,0,,0
-2026-08-30,,,dario alberto,piña special 1ra,PE1,173,95,,0
-2026-08-30,,,dario alberto,piña special 1ra,PE1,562,0,,0
-2026-08-30,,,dario alberto,piña special 1ra,PE1,557,0,,0
-2026-08-30,,,dario alberto,piña special 1ra,PE1,577,0,,0
-2026-08-30,,,dario alberto,piña special 1ra,PE1,166,138,,0
-2026-08-30,,,local sincelejo,piña special 2da,PE2,528,0,,0
-2026-08-30,,,local sincelejo,piña special 2da,PE2,532,0,,0
-2026-08-30,,,local sincelejo,piña special 2da,PE2,537,0,,0
-2026-08-30,,,local sincelejo,piña special 2da,PE2,186,217,,0
-2026-08-30,,,local sincelejo,piña special guapita,PEGUA,476,0,,0
-2026-08-30,,,local sincelejo,piña special guapita,PEGUA,495,0,,0
-2026-08-30,,,local sincelejo,piña special guapita,PEGUA,475,0,,0
-2026-08-30,,,local sincelejo,piña special guapita,PEGUA,268,0,,0
-2026-08-30,,,local sincelejo,piña special guapita,PEGUA,55,0,,0
-2026-08-30,,,local sincelejo,piña special baby,PEBAB,448,0,,0
-2026-08-30,,,local sincelejo,piña special baby,PEBAB,452,0,,0
-2026-08-30,,,local sincelejo,piña special 3ra,PE3,229,0,,0
-2026-08-30,,,local sincelejo,piña special 3ra,PE3,476,0,,0
-2026-08-30,,,local sincelejo,Piña AD3,AD3,265,0,,0
-2026-08-30,,,andres ruben oquendo,piña special 2da,PE2,480,0,,0
-2026-08-30,,,andres ruben oquendo,piña special 1ra,PE1,568,0,,0
-2026-08-30,,,andres ruben oquendo,piña special 1ra,PE1,565,0,,0
-2026-08-30,,,andres ruben oquendo,piña special 1ra,PE1,567,0,,0
-2026-08-30,,,andres ruben oquendo,piña special 1ra,PE1,548,0,,0
-2026-08-30,,,andres ruben oquendo,piña special 1ra,PE1,600,0,,0
-2026-08-30,,,andres ruben oquendo,piña special 1ra,PE1,126,26,,0
-2026-08-30,,,andres ruben oquendo,piña special 1ra,PE1,526,0,,0
-2026-08-30,,,andres ruben oquendo,piña special 1ra,PE1,544,0,,0
-2026-08-30,,,andres ruben oquendo,piña special 1ra,PE1,523,0,,0
-2026-08-30,,,andres ruben oquendo,piña special 1ra,PE1,20,0,,0
+2026-08-30,45828,R-18793,karina barajas,piña special 3ra,PE3,498,0,900,0
+2026-08-30,45828,R-18793,karina barajas,piña special 3ra,PE3,491,0,900,0
+2026-08-30,45828,R-18793,karina barajas,piña special 3ra,PE3,485,0,900,0
+2026-08-30,45828,R-18793,karina barajas,piña special 3ra,PE3,484,42,900,0
+2026-08-30,45829,R-18796,claudia andrea varela,Piña AD2,AD2,473,0,2400,0
+2026-08-30,45829,R-18796,claudia andrea varela,piña special 2da,PE2,523,0,2400,0
+2026-08-30,45829,R-18796,claudia andrea varela,piña special 2da,PE2,526,0,2400,0
+2026-08-30,45829,R-18796,claudia andrea varela,piña special 2da,PE2,534,0,2400,0
+2026-08-30,45829,R-18796,claudia andrea varela,piña special 2da,PE2,495,0,2400,0
+2026-08-30,45829,R-18796,claudia andrea varela,piña special 2da,PE2,529,0,2400,0
+2026-08-30,45829,R-18796,claudia andrea varela,piña special 2da,PE2,532,0,2400,0
+2026-08-30,45829,R-18796,claudia andrea varela,piña special 2da,PE2,326,62,2400,0
+2026-08-30,45829,R-18796,claudia andrea varela,piña special 1ra,PE1,570,430,2600,0
+2026-08-30,45830,R-18795,dario alberto,piña special 1ra,PE1,568,0,2400,0
+2026-08-30,45830,R-18795,dario alberto,piña special 1ra,PE1,484,0,2400,0
+2026-08-30,45830,R-18795,dario alberto,piña special 1ra,PE1,550,0,2400,0
+2026-08-30,45830,R-18795,dario alberto,Piña AD1,AD1,242,0,2400,0
+2026-08-30,45830,R-18795,dario alberto,piña special 1ra,PE1,566,0,2400,0
+2026-08-30,45830,R-18795,dario alberto,piña special 1ra,PE1,154,0,2400,0
+2026-08-30,45830,R-18795,dario alberto,piña special 1ra,PE1,50,0,2400,0
+2026-08-30,45830,R-18795,dario alberto,piña special 1ra,PE1,178,0,2400,0
+2026-08-30,45830,R-18795,dario alberto,piña special 1ra,PE1,116,0,2400,0
+2026-08-30,45830,R-18795,dario alberto,piña special 1ra,PE1,134,0,2400,0
+2026-08-30,45830,R-18795,dario alberto,piña special 1ra,PE1,173,95,2400,0
+2026-08-30,45830,R-18795,dario alberto,piña special 1ra,PE1,562,0,2600,0
+2026-08-30,45830,R-18795,dario alberto,piña special 1ra,PE1,557,0,2600,0
+2026-08-30,45830,R-18795,dario alberto,piña special 1ra,PE1,577,0,2600,0
+2026-08-30,45830,R-18795,dario alberto,piña special 1ra,PE1,166,138,2600,0
+2026-08-30,,R-18794,local sincelejo,piña special 2da,PE2,528,0,2600,0
+2026-08-30,,R-18794,local sincelejo,piña special 2da,PE2,532,0,2600,0
+2026-08-30,,R-18794,local sincelejo,piña special 2da,PE2,537,0,2600,0
+2026-08-30,,R-18794,local sincelejo,piña special 2da,PE2,186,217,2600,0
+2026-08-30,,R-18794,local sincelejo,piña special guapita,PEGUA,476,0,1700,0
+2026-08-30,,R-18794,local sincelejo,piña special guapita,PEGUA,495,0,1700,0
+2026-08-30,,R-18794,local sincelejo,piña special guapita,PEGUA,475,0,1700,0
+2026-08-30,,R-18794,local sincelejo,piña special guapita,PEGUA,268,0,1700,0
+2026-08-30,,R-18794,local sincelejo,piña special guapita,PEGUA,55,0,1700,0
+2026-08-30,,R-18794,local sincelejo,,PE1,0,500,2800,0
+2026-08-30,,R-18794,local sincelejo,piña special baby,PEBAB,448,0,1200,0
+2026-08-30,,R-18794,local sincelejo,piña special baby,PEBAB,452,0,1200,0
+2026-08-30,,R-18794,local sincelejo,,PE3,0,425,2200,0
+2026-08-30,,R-18794,local sincelejo,piña special 3ra,PE3,229,0,2200,0
+2026-08-30,,R-18794,local sincelejo,piña special 3ra,PE3,476,0,2200,0
+2026-08-30,,R-18794,local sincelejo,Piña AD3,AD3,265,0,2200,0
+2026-08-30,45831,R-18797,andres ruben oquendo,piña special 2da,PE2,480,0,2200,0
+2026-08-30,45831,R-18797,andres ruben oquendo,piña special 1ra,PE1,568,0,2600,0
+2026-08-30,45831,R-18797,andres ruben oquendo,piña special 1ra,PE1,565,0,2600,0
+2026-08-30,45831,R-18797,andres ruben oquendo,piña special 1ra,PE1,567,0,2600,0
+2026-08-30,45831,R-18797,andres ruben oquendo,piña special 1ra,PE1,548,0,2600,0
+2026-08-30,45831,R-18797,andres ruben oquendo,piña special 1ra,PE1,600,0,2600,0
+2026-08-30,45831,R-18797,andres ruben oquendo,piña special 1ra,PE1,126,26,2600,0
+2026-08-30,45831,R-18797,andres ruben oquendo,piña special 1ra,PE1,526,0,2400,0
+2026-08-30,45831,R-18797,andres ruben oquendo,piña special 1ra,PE1,544,0,2400,0
+2026-08-30,45831,R-18797,andres ruben oquendo,piña special 1ra,PE1,523,0,2400,0
+2026-08-30,45831,R-18797,andres ruben oquendo,piña special 1ra,PE1,20,0,2400,0
