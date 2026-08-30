@@ -83,9 +83,9 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 200898,canastas,2026-08-30,PE1,piña special 1ra,3.0 - 4.0,564
 200899,canastas,2026-08-30,PE2,piña special 2da,3.0 - 4.0,517
 200900,canastas,2026-08-30,PE2,piña special 2da,1.5 - 2.5,509
-200901,canastas,2026-08-30,,,,0
-200902,canastas,2026-08-30,,,,0
-200903,canastas,2026-08-30,,,,0
+200901,canastas,2026-08-30,PE1,piña special 1ra,1.5 - 2.5,584
+200902,canastas,2026-08-30,PIND,piña indstria,1.5 - 2.5,504
+200903,canastas,2026-08-30,PE3,piña special 3ra,1.5 - 2.5,499
 200904,canastas,2026-08-30,,,,0
 200905,canastas,2026-08-30,,,,0
 200906,canastas,2026-08-30,,,,0
