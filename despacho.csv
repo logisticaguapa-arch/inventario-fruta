@@ -17681,16 +17681,16 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-08-31,,R-18798,local medellin,piña special 1ra,PE1,551,324,3000,4
 2026-08-31,,R-18798,local medellin,piña special 1ra,PE1,561,0,3000,6
 2026-08-31,,R-18798,local medellin,piña special 1ra,PE1,549,390,3000,0
-2026-08-31,,R-18799,Andres Garcia,piña special 1ra,PE1,579,0,,0
-2026-08-31,,R-18799,Andres Garcia,piña special 1ra,PE1,540,0,,0
-2026-08-31,,R-18799,Andres Garcia,piña special 1ra,PE1,564,234,,0
-2026-08-31,,R-18799,Andres Garcia,piña special 1ra,PE1,587,0,,10
-2026-08-31,,R-18799,Andres Garcia,piña special 1ra,PE1,563,0,,0
-2026-08-31,,R-18799,Andres Garcia,piña special 1ra,PE1,566,0,,0
-2026-08-31,,R-18799,Andres Garcia,piña special 1ra,PE1,600,184,,0
-2026-08-31,,R-18799,Andres Garcia,piña special 2da,PE2,507,0,,6
-2026-08-31,,R-18799,Andres Garcia,piña special 2da,PE2,517,0,,0
-2026-08-31,,R-18799,Andres Garcia,piña special 2da,PE2,520,0,,0
+2026-08-31,,R-18799,Andres Garcia,piña special 1ra,PE1,579,0,2400,0
+2026-08-31,,R-18799,Andres Garcia,piña special 1ra,PE1,540,0,2400,0
+2026-08-31,,R-18799,Andres Garcia,piña special 1ra,PE1,564,234,2400,0
+2026-08-31,,R-18799,Andres Garcia,piña special 1ra,PE1,587,0,2400,10
+2026-08-31,,R-18799,Andres Garcia,piña special 1ra,PE1,563,0,2400,0
+2026-08-31,,R-18799,Andres Garcia,piña special 1ra,PE1,566,0,2400,0
+2026-08-31,,R-18799,Andres Garcia,piña special 1ra,PE1,600,184,2400,0
+2026-08-31,,R-18799,Andres Garcia,piña special 2da,PE2,507,0,2200,6
+2026-08-31,,R-18799,Andres Garcia,piña special 2da,PE2,517,0,2200,0
+2026-08-31,,R-18799,Andres Garcia,piña special 2da,PE2,520,0,2200,0
 2026-08-31,,,Andres Garcia,piña special 2da,PE2,465,391,,0
 2026-08-31,,R-18800,KARINA BORJA,piña special guapita,PEGUA,476,0,,4
 2026-08-31,,R-18800,KARINA BORJA,piña special guapita,PEGUA,436,0,,0
@@ -17784,3 +17784,5 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-08-31,,,juan pablo cogollo,piña special 3ra,PE3,457,0,,3
 2026-08-31,,,juan pablo cogollo,piña special 3ra,PE3,443,0,,0
 2026-08-31,,,juan pablo cogollo,piña special 3ra,PE3,502,34,,0
+2026-08-31,,,descarte,piña special 1ra,PE1,0,0,,29
+2026-08-31,,,descarte,piña special 1ra,PE1,0,0,,24
