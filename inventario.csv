@@ -2,17 +2,13 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 200745,canastas,2026-08-29,PE1,piña special 1ra,0.0 - 1.0,579
 200802,canastas,2026-08-29,PE1,piña special 1ra,0.0 - 1.0,292
 200828,canastas,2026-08-29,PE1,piña special 1ra,4,29
-200831,canastas,2026-08-29,PE1,piña special 1ra,0.0 - 1.0,358
 200833,canastas,2026-08-29,PE1,piña special 1ra,4,24
-200835,canastas,2026-08-29,PE1,piña special 1ra,0.0 - 1.0,664
 200856,canastas,2026-08-30,PE1,piña special 1ra,1.5 - 2.5,586
 200858,canastas,2026-08-30,PE1,piña special 1ra,1.5 - 2.5,588
 200861,canastas,2026-08-30,PE1,piña special 1ra,1.5 - 2.5,558
-200867,canastas,2026-08-30,PE3,piña special 3ra,3.0 - 4.0,466
 200868,canastas,2026-08-30,PE1,piña special 1ra,1.5 - 2.5,610
 200875,canastas,2026-08-30,PE1,piña special 1ra,1.5 - 2.5,578
 200880,canastas,2026-08-30,PE1,piña special 1ra,1.5 - 2.5,601
-200884,canastas,2026-08-30,PE3,piña special 3ra,3.0 - 4.0,456
 200886,canastas,2026-08-30,PE1,piña special 1ra,1.5 - 2.5,601
 200887,canastas,2026-08-30,PE1,piña special 1ra,1.5 - 2.5,563
 200894,canastas,2026-08-30,PE1,piña special 1ra,1.5 - 2.5,571
@@ -24,7 +20,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 200937,canastas,2026-08-30,PE1,piña special 1ra,4,122
 200938,canastas,2026-08-30,PE1,piña special 1ra,1.5 - 2.5,470
 200940,canastas,2026-08-30,PE1,piña special 1ra,3.0 - 4.0,210
-200941,canastas,2026-08-30,PE3,piña special 3ra,3.0 - 4.0,509
 200944,canastas,2026-08-30,PE1,piña special 1ra,1.5 - 2.5,327
 200952,canastas,2026-08-31,PE1,piña special 1ra,0.0 - 1.0,591
 200953,canastas,2026-08-31,PE2,piña special 2da,0.0 - 1.0,519
@@ -100,7 +95,7 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 201026,canastas,2026-08-31,AD2,Piña AD2,0.0 - 1.0,286
 201027,canastas,2026-08-31,AD2,Piña AD2,1.5 - 2.5,46
 201028,canastas,2026-08-31,AD1,Piña AD1,0.0 - 1.0,614
-201029,canastas,2026-08-31,PE3,piña special 3ra,3.0 - 4.0,98
+201029,canastas,2026-08-31,PE3,piña special 3ra,3.0 - 4.0,64
 201030,canastas,2026-08-31,PEGUA,piña special guapita,1.5 - 2.5,20
 201031,canastas,2026-08-31,AD3,Piña AD3,0.0 - 1.0,56
 201032,canastas,2026-08-31,AD1,Piña AD1,1.5 - 2.5,249
