@@ -40,7 +40,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 200963,canastas,2026-08-31,PE3,piña special 3ra,0.0 - 1.0,476
 200964,canastas,2026-08-31,PE1,piña special 1ra,1.5 - 2.5,556
 200965,canastas,2026-08-31,PE2,piña special 2da,0.0 - 1.0,516
-200966,canastas,2026-08-31,PE2,piña special 2da,1.5 - 2.5,509
 200967,canastas,2026-08-31,PE1,piña special 1ra,0.0 - 1.0,572
 200968,canastas,2026-08-31,PE1,piña special 1ra,1.5 - 2.5,606
 200969,canastas,2026-08-31,PE1,piña special 1ra,1.5 - 2.5,554
@@ -66,7 +65,7 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 200991,canastas,2026-08-31,PE1,piña special 1ra,1.5 - 2.5,564
 200992,canastas,2026-08-31,PE1,piña special 1ra,0.0 - 1.0,582
 200993,canastas,2026-08-31,PE2,piña special 2da,0.0 - 1.0,526
-200994,canastas,2026-08-31,PE2,piña special 2da,1.5 - 2.5,520
+200994,canastas,2026-08-31,PE2,piña special 2da,1.5 - 2.5,464
 200995,canastas,2026-08-31,PE1,piña special 1ra,1.5 - 2.5,553
 200996,canastas,2026-08-31,PIND,piña indstria,1.5 - 2.5,496
 200997,canastas,2026-08-31,PEGUA,piña special guapita,1.5 - 2.5,477
@@ -78,41 +77,41 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 201003,canastas,2026-08-31,PE1,piña special 1ra,3.0 - 4.0,580
 201004,canastas,2026-08-31,PEGUA,piña special guapita,1.5 - 2.5,556
 201005,canastas,2026-08-31,PE1,piña special 1ra,1.5 - 2.5,543
-201006,canastas,2026-08-31,,,,0
-201007,canastas,2026-08-31,,,,0
-201008,canastas,2026-08-31,,,,0
-201009,canastas,2026-08-31,,,,0
-201010,canastas,2026-08-31,,,,0
-201011,canastas,2026-08-31,,,,0
-201012,canastas,2026-08-31,,,,0
-201013,canastas,2026-08-31,,,,0
-201014,canastas,2026-08-31,,,,0
-201015,canastas,2026-08-31,,,,0
-201016,canastas,2026-08-31,,,,0
-201017,canastas,2026-08-31,,,,0
-201018,canastas,2026-08-31,,,,0
-201019,canastas,2026-08-31,,,,0
-201020,,,,,,0
-201021,,,,,,0
-201022,,,,,,0
-201023,,,,,,0
-201024,,,,,,0
-201025,,,,,,0
-201026,,,,,,0
-201027,,,,,,0
-201028,,,,,,0
-201029,,,,,,0
-201030,,,,,,0
-201031,,,,,,0
-201032,,,,,,0
-201033,,,,,,0
-201034,,,,,,0
-201035,,,,,,0
-201036,,,,,,0
-201037,,,,,,0
-201038,,,,,,0
-201039,,,,,,0
-201040,,,,,,0
+201006,canastas,2026-08-31,PE1,piña special 1ra,1.5 - 2.5,587
+201007,canastas,2026-08-31,PE1,piña special 1ra,0.0 - 1.0,378
+201008,canastas,2026-08-31,PE2,piña special 2da,0.0 - 1.0,437
+201009,canastas,2026-08-31,PE2,piña special 2da,1.5 - 2.5,326
+201010,canastas,2026-08-31,PE1,piña special 1ra,1.5 - 2.5,555
+201011,canastas,2026-08-31,PE2,piña special 2da,3.0 - 4.0,226
+201012,canastas,2026-08-31,PE1,piña special 1ra,3.0 - 4.0,55
+201013,canastas,2026-08-31,PE1,piña special 1ra,0.0 - 1.0,428
+201014,canastas,2026-08-31,PEGUA,piña special guapita,1.5 - 2.5,434
+201015,canastas,2026-08-31,PE1,piña special 1ra,0.0 - 1.0,519
+201016,canastas,2026-08-31,PE3,piña special 3ra,0.0 - 1.0,242
+201017,canastas,2026-08-31,PE2,piña special 2da,1.5 - 2.5,192
+201018,canastas,2026-08-31,PIND,piña indstria,1.5 - 2.5,313
+201019,canastas,2026-08-31,PEBAB,piña special baby,1.5 - 2.5,306
+201020,canastas,2026-08-31,PEBAB,piña special baby,1.5 - 2.5,394
+201021,canastas,2026-08-31,PEGUA,piña special guapita,1.5 - 2.5,192
+201022,canastas,2026-08-31,PE1,piña special 1ra,3.0 - 4.0,622
+201023,canastas,2026-08-31,PE2,piña special 2da,0.0 - 1.0,433
+201024,canastas,2026-08-31,PE3,piña special 3ra,1.5 - 2.5,533
+201025,canastas,2026-08-31,AD1,Piña AD1,0.0 - 1.0,562
+201026,canastas,2026-08-31,AD2,Piña AD2,0.0 - 1.0,286
+201027,canastas,2026-08-31,AD2,Piña AD2,1.5 - 2.5,46
+201028,canastas,2026-08-31,AD1,Piña AD1,0.0 - 1.0,614
+201029,canastas,2026-08-31,PE3,piña special 3ra,3.0 - 4.0,98
+201030,canastas,2026-08-31,PEGUA,piña special guapita,1.5 - 2.5,20
+201031,canastas,2026-08-31,AD3,Piña AD3,0.0 - 1.0,56
+201032,canastas,2026-08-31,AD1,Piña AD1,1.5 - 2.5,249
+201033,canastas,2026-08-31,AD-PJUG,AD-piña jugos,3.0 - 4.0,195
+201034,canastas,2026-08-31,AD1,Piña AD1,1.5 - 2.5,134
+201035,canastas,2026-08-31,AD-PIND,AD-piña indstria,1.5 - 2.5,113
+201036,canastas,2026-08-31,,,,0
+201037,canastas,2026-08-31,,,,0
+201038,canastas,2026-08-31,,,,0
+201039,canastas,2026-08-31,,,,0
+201040,canastas,2026-08-31,,,,0
 201041,,,,,,0
 201042,,,,,,0
 201043,,,,,,0
