@@ -17699,36 +17699,68 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-08-31,,R-18800,KARINA BORJA,Piña AD3,AD3,131,0,,0
 2026-08-31,,R-18800,KARINA BORJA,piña special 3ra,PE3,27,280,,0
 2026-08-31,,R-18800,KARINA BORJA,piña special 3ra,PE3,234,0,,0
-2026-08-31,,,local medellin,piña special 1ra,PE1,531,0,,9
-2026-08-31,,,local medellin,piña special 1ra,PE1,570,0,,0
-2026-08-31,,,local medellin,piña special 1ra,PE1,538,0,,0
-2026-08-31,,,local medellin,piña special 1ra,PE1,545,0,,0
-2026-08-31,,,local medellin,piña special 1ra,PE1,565,351,,0
-2026-08-31,,,local medellin,piña special 2da,PE2,507,0,,4
-2026-08-31,,,local medellin,piña special 2da,PE2,316,0,,0
-2026-08-31,,,local medellin,piña special 2da,PE2,130,0,,0
-2026-08-31,,,local medellin,piña special 1ra,PE1,555,0,,7
-2026-08-31,,,local medellin,piña special 1ra,PE1,552,0,,0
-2026-08-31,,,local medellin,piña special 1ra,PE1,564,0,,0
-2026-08-31,,,local medellin,piña special 1ra,PE1,60,0,,0
-2026-08-31,,,local medellin,piña special 1ra,PE1,58,0,,0
-,,,,piña special 1ra,PE1,59,88,,0
-2026-08-31,,,local sincelejo,piña special guapita,PEGUA,478,22,,0
-2026-08-31,,,local sincelejo,piña special baby,PEBAB,457,0,,0
-2026-08-31,,,local sincelejo,piña special baby,PEBAB,297,0,,2
-2026-08-31,,,local sincelejo,piña special baby,PEBAB,423,0,,0
-2026-08-31,,,local sincelejo,piña special 3ra,PE3,492,8,,1
-2026-08-31,,,local sincelejo,piña special guapita,PEGUA,464,0,,2
-2026-08-31,,,local sincelejo,piña special guapita,PEGUA,143,0,,0
-2026-08-31,,,local sincelejo,piña special guapita,PEGUA,6,0,,0
-2026-08-31,,,local sincelejo,piña special 3ra,PE3,490,10,,0
-2026-08-31,,,local sincelejo,piña special 2da,PE2,515,285,,4
-2026-08-31,,,andres ruben oquendo,piña special 1ra,PE1,521,0,,17
-2026-08-31,,,andres ruben oquendo,piña special 1ra,PE1,552,0,,0
-2026-08-31,,,andres ruben oquendo,piña special 1ra,PE1,571,0,,0
-2026-08-31,,,andres ruben oquendo,piña special 1ra,PE1,548,0,,0
-2026-08-31,,,andres ruben oquendo,piña special 1ra,PE1,557,0,,0
-2026-08-31,,,andres ruben oquendo,piña special 1ra,PE1,571,0,,0
-2026-08-31,,,andres ruben oquendo,piña special 1ra,PE1,563,0,,0
-2026-08-31,,,andres ruben oquendo,piña special 1ra,PE1,563,0,,0
-2026-08-31,,,andres ruben oquendo,piña special 1ra,PE1,554,0,,4
+2026-08-31,,R-18801,local medellin,piña special 1ra,PE1,531,0,,9
+2026-08-31,,R-18801,local medellin,piña special 1ra,PE1,570,0,,0
+2026-08-31,,R-18801,local medellin,piña special 1ra,PE1,538,0,,0
+2026-08-31,,R-18801,local medellin,piña special 1ra,PE1,545,0,,0
+2026-08-31,,R-18801,local medellin,piña special 1ra,PE1,565,351,,0
+2026-08-31,,R-18801,local medellin,piña special 2da,PE2,507,0,,4
+2026-08-31,,R-18801,local medellin,piña special 2da,PE2,316,0,,0
+2026-08-31,,R-18801,local medellin,piña special 2da,PE2,130,0,,0
+2026-08-31,,R-18801,local medellin,piña special 1ra,PE1,555,0,,7
+2026-08-31,,R-18801,local medellin,piña special 1ra,PE1,552,0,,0
+2026-08-31,,R-18801,local medellin,piña special 1ra,PE1,564,0,,0
+2026-08-31,,R-18801,local medellin,piña special 1ra,PE1,60,0,,0
+2026-08-31,,R-18801,local medellin,piña special 1ra,PE1,58,0,,0
+2026-08-31,,R-18801,local medellin,piña special 1ra,PE1,59,88,,0
+2026-08-31,,R-18804,local sincelejo,piña special guapita,PEGUA,478,22,,0
+2026-08-31,,R-18804,local sincelejo,piña special baby,PEBAB,457,0,,0
+2026-08-31,,R-18804,local sincelejo,piña special baby,PEBAB,297,0,,2
+2026-08-31,,R-18804,local sincelejo,piña special baby,PEBAB,423,0,,0
+2026-08-31,,R-18804,local sincelejo,piña special 3ra,PE3,492,8,,1
+2026-08-31,,R-18804,local sincelejo,piña special guapita,PEGUA,464,0,,2
+2026-08-31,,R-18804,local sincelejo,piña special guapita,PEGUA,143,0,,0
+2026-08-31,,R-18804,local sincelejo,piña special guapita,PEGUA,6,0,,0
+2026-08-31,,R-18804,local sincelejo,piña special 3ra,PE3,490,10,,0
+2026-08-31,,R-18804,local sincelejo,piña special 2da,PE2,515,285,,4
+2026-08-31,,R-18804,local sincelejo,piña special 3ra,PE3,188,0,,0
+2026-08-31,,R-18804,local sincelejo,piña special 3ra,PE3,185,0,,0
+2026-08-31,,R-18804,local sincelejo,piña special 2da,PE2,522,278,,0
+2026-08-31,,R-18804,local sincelejo,piña special 1ra,PE1,486,0,,0
+2026-08-31,,R-18804,local sincelejo,piña special 1ra,PE1,517,197,,0
+2026-08-31,,R-18805,andres ruben oquendo,piña special 1ra,PE1,521,0,,17
+2026-08-31,,R-18805,andres ruben oquendo,piña special 1ra,PE1,552,0,,0
+2026-08-31,,R-18805,andres ruben oquendo,piña special 1ra,PE1,571,0,,0
+2026-08-31,,R-18805,andres ruben oquendo,piña special 1ra,PE1,548,0,,0
+2026-08-31,,R-18805,andres ruben oquendo,piña special 1ra,PE1,557,0,,0
+2026-08-31,,R-18805,andres ruben oquendo,piña special 1ra,PE1,571,0,,0
+2026-08-31,,R-18805,andres ruben oquendo,piña special 1ra,PE1,563,0,,0
+2026-08-31,,R-18805,andres ruben oquendo,piña special 1ra,PE1,532,0,,4
+2026-08-31,,R-18805,andres ruben oquendo,piña special 1ra,PE1,22,0,,0
+2026-08-31,,R-18805,andres ruben oquendo,piña special 2da,PE2,482,0,,3
+2026-08-31,,R-18805,andres ruben oquendo,piña special 2da,PE2,530,0,,0
+2026-08-31,,R-18805,andres ruben oquendo,piña special 2da,PE2,507,481,,0
+2026-08-31,,R-18802,Aldinsen Gonzalez,piña indstria,PIND,483,0,,0
+2026-08-31,,R-18802,Aldinsen Gonzalez,piña indstria,PIND,551,0,,0
+2026-08-31,,R-18802,Aldinsen Gonzalez,piña indstria,PIND,498,0,,0
+2026-08-31,,R-18802,Aldinsen Gonzalez,piña indstria,PIND,521,0,,0
+2026-08-31,,R-18802,Aldinsen Gonzalez,piña indstria,PIND,490,0,,0
+2026-08-31,,R-18802,Aldinsen Gonzalez,piña jugos,PJUG,64,0,,0
+2026-08-31,,,claudia andrea varela,piña special 2da,PE2,527,0,,0
+2026-08-31,,,claudia andrea varela,piña special 2da,PE2,306,0,,0
+2026-08-31,,,claudia andrea varela,piña special 2da,PE2,38,0,,0
+2026-08-31,,,claudia andrea varela,piña special 2da,PE2,516,0,,0
+2026-08-31,,,claudia andrea varela,piña special 2da,PE2,521,0,,0
+2026-08-31,,,claudia andrea varela,piña special 2da,PE2,523,0,,0
+2026-08-31,,,claudia andrea varela,piña special 2da,PE2,475,0,,0
+2026-08-31,,,claudia andrea varela,piña special 2da,PE2,94,0,,0
+2026-08-31,,,claudia andrea varela,piña special 1ra,PE1,535,0,,0
+2026-08-31,,,claudia andrea varela,piña special 1ra,PE1,465,0,,0
+2026-08-31,,,Afrucol S.A.S.,piña special 2da,PE2,578,0,,0
+2026-08-31,,,Afrucol S.A.S.,piña special 2da,PE2,523,0,,0
+2026-08-31,,,Afrucol S.A.S.,piña special 2da,PE2,501,0,,0
+2026-08-31,,,Afrucol S.A.S.,piña special 2da,PE2,29,0,,0
+2026-08-31,,,Afrucol S.A.S.,piña special 2da,PE2,233,0,,0
+2026-08-31,,,Afrucol S.A.S.,piña special 2da,PE2,229,0,,0
+2026-08-31,,,Afrucol S.A.S.,piña special 2da,PE2,41,0,,0
+2026-08-31,,,Afrucol S.A.S.,piña special 2da,PE2,66,0,,0
