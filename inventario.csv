@@ -1,8 +1,6 @@
 ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 200923,canastas,2026-08-30,PE1,piña special 1ra,3.0 - 4.0,182
 200940,canastas,2026-08-30,PE1,piña special 1ra,3.0 - 4.0,210
-200973,canastas,2026-08-31,PE1,piña special 1ra,1.5 - 2.5,587
-201005,canastas,2026-08-31,PE1,piña special 1ra,1.5 - 2.5,543
 201037,canastas,2026-09-01,PEGUA,piña special guapita,1.5 - 2.5,465
 201038,canastas,2026-09-01,PE1,piña special 1ra,0.0 - 1.0,172
 201039,canastas,2026-09-01,PE1,piña special 1ra,1.5 - 2.5,319
@@ -30,26 +28,26 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 201061,canastas,2026-09-01,AD1,Piña AD1,0.0 - 1.0,507
 201062,canastas,2026-09-01,AD-PIND,AD-piña indstria,1.5 - 2.5,504
 201063,canastas,2026-09-01,AD1,Piña AD1,0.0 - 1.0,498
-201064,canastas,2026-09-01,,,,0
-201065,canastas,2026-09-01,,,,0
-201066,canastas,2026-09-01,,,,0
-201067,,,,,,0
-201068,,,,,,0
-201069,,,,,,0
-201070,,,,,,0
-201071,,,,,,0
-201072,,,,,,0
-201073,,,,,,0
-201074,,,,,,0
-201075,,,,,,0
-201076,,,,,,0
-201077,,,,,,0
-201078,,,,,,0
-201079,,,,,,0
-201080,,,,,,0
-201081,,,,,,0
-201082,,,,,,0
-201083,,,,,,0
+201064,canastas,2026-09-01,AD2,Piña AD2,0.0 - 1.0,505
+201065,canastas,2026-09-01,AD1,Piña AD1,0.0 - 1.0,485
+201066,canastas,2026-09-01,AD1,Piña AD1,0.0 - 1.0,538
+201067,canastas,2026-09-01,AD2,Piña AD2,0.0 - 1.0,519
+201068,canastas,2026-09-01,AD1,Piña AD1,0.0 - 1.0,569
+201069,canastas,2026-09-01,AD1,Piña AD1,1.5 - 2.5,621
+201070,canastas,2026-09-01,AD1,Piña AD1,0.0 - 1.0,172
+201071,canastas,2026-09-01,AD2,Piña AD2,3.0 - 4.0,40
+201072,canastas,2026-09-01,AD2,Piña AD2,0.0 - 1.0,506
+201073,canastas,2026-09-01,AD-PJUG,AD-piña jugos,3.0 - 4.0,28
+201074,canastas,2026-09-01,AD3,Piña AD3,3.0 - 4.0,13
+201075,canastas,2026-09-01,ADBABY,Piña ADBABY,1.5 - 2.5,11
+201076,canastas,2026-09-01,AD3,Piña AD3,1.5 - 2.5,24
+201077,canastas,2026-09-01,AD-PJUG,AD-piña jugos,3.0 - 4.0,37
+201078,canastas,2026-09-01,AD1,Piña AD1,3.0 - 4.0,406
+201079,canastas,2026-09-01,AD3,Piña AD3,0.0 - 1.0,376
+201080,canastas,2026-09-01,AD-PIND,AD-piña indstria,1.5 - 2.5,65
+201081,canastas,2026-09-01,ADGUA,Piña ADGUA,1.5 - 2.5,160
+201082,canastas,2026-09-01,AD2,Piña AD2,1.5 - 2.5,144
+201083,canastas,2026-09-01,,,,0
 201084,,,,,,0
 201085,,,,,,0
 201086,,,,,,0
