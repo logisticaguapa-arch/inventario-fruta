@@ -17795,16 +17795,16 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-09-01,,R-18809,local apartado,,pind,0,113,2000,0
 2026-09-01,,R-18809,local apartado,AD-piña jugos,AD-PJUG,193,0,2000,0
 2026-09-01,,R-18809,local apartado,AD-piña jugos,AD-PJUG,91,0,2000,0
-2026-09-01,,R-18810,elkin dario cardona,piña special 1ra,PE1,459,0,2800,0
-2026-09-01,,R-18810,elkin dario cardona,piña special 1ra,PE1,569,0,2800,0
-2026-09-01,,R-18810,elkin dario cardona,piña special 1ra,PE1,584,0,2800,0
-2026-09-01,,R-18810,elkin dario cardona,piña special 1ra,PE1,593,0,2800,0
-2026-09-01,,R-18810,elkin dario cardona,piña special 1ra,PE1,559,0,2800,0
-2026-09-01,,R-18810,elkin dario cardona,piña special 1ra,PE1,577,0,2800,0
-2026-09-01,,R-18810,elkin dario cardona,piña special 1ra,PE1,574,0,2800,0
-2026-09-01,,R-18810,elkin dario cardona,piña special 1ra,PE1,535,0,2800,18
-2026-09-01,,R-18810,elkin dario cardona,piña special 1ra,PE1,565,0,2800,0
-2026-09-01,,R-18810,elkin dario cardona,piña special 1ra,PE1,574,411,2800,0
+2026-09-01,45860,R-18810,elkin dario cardona,piña special 1ra,PE1,459,0,2800,0
+2026-09-01,45860,R-18810,elkin dario cardona,piña special 1ra,PE1,569,0,2800,0
+2026-09-01,45860,R-18810,elkin dario cardona,piña special 1ra,PE1,584,0,2800,0
+2026-09-01,45860,R-18810,elkin dario cardona,piña special 1ra,PE1,593,0,2800,0
+2026-09-01,45860,R-18810,elkin dario cardona,piña special 1ra,PE1,559,0,2800,0
+2026-09-01,45860,R-18810,elkin dario cardona,piña special 1ra,PE1,577,0,2800,0
+2026-09-01,45860,R-18810,elkin dario cardona,piña special 1ra,PE1,574,0,2800,0
+2026-09-01,45860,R-18810,elkin dario cardona,piña special 1ra,PE1,535,0,2800,18
+2026-09-01,45860,R-18810,elkin dario cardona,piña special 1ra,PE1,565,0,2800,0
+2026-09-01,45860,R-18810,elkin dario cardona,piña special 1ra,PE1,574,411,2800,0
 2026-09-01,,R-18811,local medellin,piña special 1ra,PE1,562,0,3000,0
 2026-09-01,,R-18811,local medellin,piña special 1ra,PE1,539,0,3000,8
 2026-09-01,,R-18811,local medellin,piña special 1ra,PE1,571,0,3000,0
@@ -17817,19 +17817,19 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-09-01,,R-18811,local medellin,piña special 2da,PE2,510,0,2800,3
 2026-09-01,,R-18811,local medellin,piña special 2da,PE2,322,0,2800,0
 2026-09-01,,R-18811,local medellin,Piña AD2,AD2,46,0,2800,0
-2026-09-01,,R-18812,local medellin,piña special 1ra,PE1,548,0,,6
-2026-09-01,,R-18812,local medellin,piña special 1ra,PE1,560,0,,0
-2026-09-01,,R-18812,local medellin,piña special 1ra,PE1,572,0,,0
-2026-09-01,,R-18812,local medellin,Piña AD1,AD1,94,26,,0
-2026-09-01,,R-18812,local medellin,piña special 2da,PE2,504,0,,5
-2026-09-01,,R-18812,local medellin,piña special 2da,PE2,508,0,,0
-2026-09-01,,R-18812,local medellin,piña special 2da,PE2,224,0,,0
-2026-09-01,,R-18812,local medellin,piña special 2da,PE2,513,0,,0
-2026-09-01,,R-18812,local medellin,piña special 1ra,PE1,610,0,,8
-2026-09-01,,R-18812,local medellin,piña special 1ra,PE1,575,0,,0
-2026-09-01,,R-18812,local medellin,piña special 1ra,PE1,575,0,,0
-2026-09-01,,R-18812,local medellin,piña special 1ra,PE1,560,0,,0
-2026-09-01,,R-18812,local medellin,piña special 1ra,PE1,54,0,,0
+2026-09-01,,R-18812,local medellin,piña special 1ra,PE1,548,0,3000,6
+2026-09-01,,R-18812,local medellin,piña special 1ra,PE1,560,0,3000,0
+2026-09-01,,R-18812,local medellin,piña special 1ra,PE1,572,0,3000,0
+2026-09-01,,R-18812,local medellin,Piña AD1,AD1,94,26,3000,0
+2026-09-01,,R-18812,local medellin,piña special 2da,PE2,504,0,2800,5
+2026-09-01,,R-18812,local medellin,piña special 2da,PE2,508,0,2800,0
+2026-09-01,,R-18812,local medellin,piña special 2da,PE2,224,0,2800,0
+2026-09-01,,R-18812,local medellin,piña special 2da,PE2,513,0,2800,0
+2026-09-01,,R-18812,local medellin,piña special 1ra,PE1,610,0,3000,8
+2026-09-01,,R-18812,local medellin,piña special 1ra,PE1,575,0,3000,0
+2026-09-01,,R-18812,local medellin,piña special 1ra,PE1,575,0,3000,0
+2026-09-01,,R-18812,local medellin,piña special 1ra,PE1,560,0,3000,0
+2026-09-01,,R-18812,local medellin,piña special 1ra,PE1,54,0,3000,0
 2026-09-01,,R-18813,cartagena,Piña AD1,AD1,610,0,3000,0
 2026-09-01,,R-18813,cartagena,piña special 1ra,PE1,574,0,3000,19
 2026-09-01,,R-18813,cartagena,piña special 1ra,PE1,425,0,3000,0
@@ -17844,37 +17844,40 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-09-01,,R-18813,cartagena,piña special 2da,PE2,515,0,2800,3
 2026-09-01,,R-18813,cartagena,Piña AD2,AD2,283,0,2800,0
 2026-09-01,,R-18813,cartagena,piña special 2da,PE2,131,71,2800,0
-2026-09-01,,R-18815,local sincelejo,piña special 1ra,PE1,365,135,,0
-2026-09-01,,R-18815,local sincelejo,piña special guapita,PEGUA,474,526,,0
-2026-09-01,,R-18815,local sincelejo,piña special 3ra,PE3,490,0,,0
-2026-09-01,,R-18815,local sincelejo,piña special 3ra,PE3,191,0,,0
-2026-09-01,,R-18815,local sincelejo,piña special baby,PEBAB,400,0,,0
-2026-09-01,,R-18815,local sincelejo,piña special baby,PEBAB,414,186,,0
-2026-09-01,,R-18815,local sincelejo,piña special 1ra,PE1,375,0,,0
-2026-09-01,,R-18815,local sincelejo,piña special 1ra,PE1,25,0,,0
-2026-09-01,,R-18815,local sincelejo,piña special 2da,PE2,519,0,,2
-2026-09-01,,R-18815,local sincelejo,piña special 2da,PE2,359,0,,0
-2026-09-01,,R-18815,local sincelejo,piña special guapita,PEGUA,448,0,,0
-2026-09-01,,R-18815,local sincelejo,piña special guapita,PEGUA,475,0,,2
-2026-09-01,,R-18815,local sincelejo,piña special guapita,PEGUA,191,0,,0
-2026-09-01,,R-18815,local sincelejo,piña special guapita,PEGUA,104,0,,0
-2026-09-01,,R-18815,local sincelejo,piña special guapita,PEGUA,20,0,,0
-2026-09-01,,R-18815,local sincelejo,piña special guapita,PEGUA,26,0,,0
-2026-09-01,,R-18815,local sincelejo,piña special baby,PEBAB,394,0,,0
-2026-09-01,,R-18815,local sincelejo,piña special baby,PEBAB,116,0,,2
-2026-09-01,,R-18815,local sincelejo,piña special 3ra,PE3,448,0,,3
-2026-09-01,,R-18815,local sincelejo,Piña AD3,AD3,56,0,,0
-2026-09-01,,R-18815,local sincelejo,piña special 3ra,PE3,472,0,,0
-2026-09-01,,R-18815,local sincelejo,piña special 3ra,PE3,241,0,,0
-2026-09-01,,R-18815,local sincelejo,piña special 3ra,PE3,464,0,,0
-2026-09-01,,R-18815,local sincelejo,piña special 3ra,PE3,62,0,,0
-2026-09-01,,R-18815,local sincelejo,piña special 3ra,PE3,526,0,,0
-2026-09-01,,R-18815,local sincelejo,piña special 1ra,PE1,561,0,,0
-2026-09-01,,R-18814,Aldinsen Gonzalez,piña indstria,PIND,378,0,,17
-2026-09-01,,R-18814,Aldinsen Gonzalez,piña indstria,PIND,491,0,,0
-2026-09-01,,R-18814,Aldinsen Gonzalez,piña indstria,PIND,497,0,,0
-2026-09-01,,R-18814,Aldinsen Gonzalez,piña indstria,PIND,310,0,,0
-2026-09-01,,R-18814,Aldinsen Gonzalez,AD-piña indstria,AD-PIND,112,0,,0
-2026-09-01,,R-18814,Aldinsen Gonzalez,piña special 1ra,PE1,85,0,,30
-2026-09-01,,R-18814,Aldinsen Gonzalez,piña special 1ra,PE1,565,0,,0
-2026-09-01,,R-18814,Aldinsen Gonzalez,piña special 1ra,PE1,271,0,,8
+2026-09-01,,R-18815,local sincelejo,piña special 1ra,PE1,365,135,3200,0
+2026-09-01,,R-18815,local sincelejo,piña special guapita,PEGUA,474,526,2200,0
+2026-09-01,,R-18815,local sincelejo,piña special 3ra,PE3,490,0,2700,0
+2026-09-01,,R-18815,local sincelejo,piña special 3ra,PE3,191,0,2700,0
+2026-09-01,,R-18815,local sincelejo,piña special baby,PEBAB,400,0,1500,0
+2026-09-01,,R-18815,local sincelejo,piña special baby,PEBAB,414,186,1500,0
+2026-09-01,,R-18815,local sincelejo,piña special 1ra,PE1,375,0,2800,0
+2026-09-01,,R-18815,local sincelejo,piña special 1ra,PE1,25,0,2800,0
+2026-09-01,,R-18815,local sincelejo,piña special 2da,PE2,519,0,2600,2
+2026-09-01,,R-18815,local sincelejo,piña special 2da,PE2,359,0,2600,0
+2026-09-01,,R-18815,local sincelejo,piña special guapita,PEGUA,448,0,1700,0
+2026-09-01,,R-18815,local sincelejo,piña special guapita,PEGUA,475,0,1700,2
+2026-09-01,,R-18815,local sincelejo,piña special guapita,PEGUA,191,0,1700,0
+2026-09-01,,R-18815,local sincelejo,piña special guapita,PEGUA,104,0,1700,0
+2026-09-01,,R-18815,local sincelejo,piña special guapita,PEGUA,20,0,1700,0
+2026-09-01,,R-18815,local sincelejo,piña special guapita,PEGUA,26,0,1700,0
+2026-09-01,,R-18815,local sincelejo,piña special baby,PEBAB,394,0,1200,0
+2026-09-01,,R-18815,local sincelejo,piña special baby,PEBAB,116,0,1200,2
+2026-09-01,,R-18815,local sincelejo,piña special 3ra,PE3,448,0,2200,3
+2026-09-01,,R-18815,local sincelejo,Piña AD3,AD3,56,0,2200,0
+2026-09-01,,R-18815,local sincelejo,piña special 3ra,PE3,472,0,2200,0
+2026-09-01,,R-18815,local sincelejo,piña special 3ra,PE3,241,0,2200,0
+2026-09-01,,R-18815,local sincelejo,piña special 3ra,PE3,464,0,2200,0
+2026-09-01,,R-18815,local sincelejo,piña special 3ra,PE3,62,0,2200,0
+2026-09-01,,R-18815,local sincelejo,piña special 3ra,PE3,526,0,2200,0
+2026-09-01,,R-18815,local sincelejo,piña special 1ra,PE1,561,0,2800,0
+2026-09-01,,R-18814,Aldinsen Gonzalez,piña indstria,PIND,378,0,1000,17
+2026-09-01,,R-18814,Aldinsen Gonzalez,piña indstria,PIND,491,0,1000,0
+2026-09-01,,R-18814,Aldinsen Gonzalez,piña indstria,PIND,497,0,1000,0
+2026-09-01,,R-18814,Aldinsen Gonzalez,piña indstria,PIND,310,0,1000,0
+2026-09-01,,R-18814,Aldinsen Gonzalez,AD-piña indstria,AD-PIND,112,0,1000,0
+2026-09-01,,R-18814,Aldinsen Gonzalez,piña special 1ra,PE1,85,0,2400,30
+2026-09-01,,R-18814,Aldinsen Gonzalez,piña special 1ra,PE1,565,0,2400,0
+2026-09-01,,R-18814,Aldinsen Gonzalez,piña special 1ra,PE1,271,0,2400,8
+2026-09-01,,,andres ruben oquendo,piña special 1ra,PE1,533,0,,0
+2026-09-01,,,andres ruben oquendo,piña special 1ra,PE1,588,0,,0
+2026-09-01,,,andres ruben oquendo,piña special 1ra,PE1,307,0,,12
