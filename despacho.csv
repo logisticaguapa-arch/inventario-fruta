@@ -17805,15 +17805,44 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-09-01,,R-18810,elkin dario cardona,piña special 1ra,PE1,535,0,2800,18
 2026-09-01,,R-18810,elkin dario cardona,piña special 1ra,PE1,565,0,2800,0
 2026-09-01,,R-18810,elkin dario cardona,piña special 1ra,PE1,574,411,2800,0
-2026-09-01,,,local medellin,piña special 1ra,PE1,562,0,3000,0
-2026-09-01,,,local medellin,piña special 1ra,PE1,539,0,3000,8
-2026-09-01,,,local medellin,piña special 1ra,PE1,571,0,3000,0
-2026-09-01,,,local medellin,piña special 1ra,PE1,571,57,3000,0
-2026-09-01,,,local medellin,piña special 1ra,PE1,553,47,3000,0
-2026-09-01,,,local medellin,piña special 2da,PE2,516,0,2800,5
-2026-09-01,,,local medellin,piña special 2da,PE2,518,0,2800,0
-2026-09-01,,,local medellin,piña special 2da,PE2,435,231,2800,0
-2026-09-01,,,local medellin,piña special 2da,PE2,280,0,2800,0
-2026-09-01,,,local medellin,piña special 2da,PE2,510,0,2800,3
-2026-09-01,,,local medellin,piña special 2da,PE2,322,0,2800,0
-2026-09-01,,,local medellin,Piña AD2,AD2,46,0,2800,0
+2026-09-01,,R-18811,local medellin,piña special 1ra,PE1,562,0,3000,0
+2026-09-01,,R-18811,local medellin,piña special 1ra,PE1,539,0,3000,8
+2026-09-01,,R-18811,local medellin,piña special 1ra,PE1,571,0,3000,0
+2026-09-01,,R-18811,local medellin,piña special 1ra,PE1,571,57,3000,0
+2026-09-01,,R-18811,local medellin,piña special 1ra,PE1,553,47,3000,0
+2026-09-01,,R-18811,local medellin,piña special 2da,PE2,516,0,2800,5
+2026-09-01,,R-18811,local medellin,piña special 2da,PE2,518,0,2800,0
+2026-09-01,,R-18811,local medellin,piña special 2da,PE2,435,231,2800,0
+2026-09-01,,R-18811,local medellin,piña special 2da,PE2,280,0,2800,0
+2026-09-01,,R-18811,local medellin,piña special 2da,PE2,510,0,2800,3
+2026-09-01,,R-18811,local medellin,piña special 2da,PE2,322,0,2800,0
+2026-09-01,,R-18811,local medellin,Piña AD2,AD2,46,0,2800,0
+2026-09-01,,R-18812,local medellin,piña special 1ra,PE1,548,0,,6
+2026-09-01,,R-18812,local medellin,piña special 1ra,PE1,560,0,,0
+2026-09-01,,R-18812,local medellin,piña special 1ra,PE1,572,0,,0
+2026-09-01,,R-18812,local medellin,Piña AD1,AD1,94,26,,0
+2026-09-01,,R-18812,local medellin,piña special 2da,PE2,504,0,,5
+2026-09-01,,R-18812,local medellin,piña special 2da,PE2,508,0,,0
+2026-09-01,,R-18812,local medellin,piña special 2da,PE2,224,0,,0
+2026-09-01,,R-18812,local medellin,piña special 2da,PE2,513,0,,0
+2026-09-01,,R-18812,local medellin,piña special 1ra,PE1,610,0,,8
+2026-09-01,,R-18812,local medellin,piña special 1ra,PE1,575,0,,0
+2026-09-01,,R-18812,local medellin,piña special 1ra,PE1,575,0,,0
+2026-09-01,,R-18812,local medellin,piña special 1ra,PE1,560,0,,0
+2026-09-01,,R-18812,local medellin,piña special 1ra,PE1,54,0,,0
+2026-09-01,,R-18813,cartagena,Piña AD1,AD1,610,0,3000,0
+2026-09-01,,R-18813,cartagena,piña special 1ra,PE1,574,0,3000,19
+2026-09-01,,R-18813,cartagena,piña special 1ra,PE1,425,0,3000,0
+2026-09-01,,R-18813,cartagena,piña special 1ra,PE1,612,0,3000,0
+2026-09-01,,R-18813,cartagena,Piña AD1,AD1,558,0,3000,0
+2026-09-01,,R-18813,cartagena,piña special 1ra,PE1,606,0,3000,0
+2026-09-01,,R-18813,cartagena,piña special 1ra,PE1,587,0,3000,0
+2026-09-01,,R-18813,cartagena,piña special 1ra,PE1,567,461,3000,0
+2026-09-01,,R-18813,cartagena,piña special 1ra,PE1,544,0,3000,8
+2026-09-01,,R-18813,cartagena,piña special 1ra,PE1,530,0,3000,0
+2026-09-01,,R-18813,cartagena,piña special 1ra,PE1,601,325,3000,0
+2026-09-01,,R-18813,cartagena,piña special 2da,PE2,515,0,2800,3
+2026-09-01,,R-18813,cartagena,Piña AD2,AD2,283,0,2800,0
+2026-09-01,,R-18813,cartagena,piña special 2da,PE2,131,71,2800,0
+2026-09-01,,,local sincelejo,piña special 1ra,PE1,365,0,,0
+2026-09-01,,,local sincelejo,piña special 1ra,PE1,158,0,,0
