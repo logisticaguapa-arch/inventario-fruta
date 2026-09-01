@@ -17786,8 +17786,34 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-08-31,45857,R-18808,juan pablo cogollo,piña special 3ra,PE3,502,34,800,0
 2026-08-31,,,descarte,piña special 1ra,PE1,0,0,,29
 2026-08-31,,,descarte,piña special 1ra,PE1,0,0,,24
-2026-09-01,,,local apartado,piña special guapita,PEGUA,430,370,,0
-2026-09-01,,,local apartado,piña special 1ra,PE1,567,0,,0
-2026-09-01,,,local apartado,piña special 1ra,PE1,516,167,,0
-2026-09-01,,,local apartado,AD-piña jugos,AD-PJUG,193,0,,0
-2026-09-01,,,local apartado,AD-piña jugos,AD-PJUG,91,0,,0
+2026-09-01,,R-18809,local apartado,piña special guapita,PEGUA,430,370,2200,0
+2026-09-01,,R-18809,local apartado,piña special 1ra,PE1,567,0,3200,0
+2026-09-01,,R-18809,local apartado,piña special 1ra,PE1,516,167,3200,0
+2026-09-01,,R-18809,local apartado,,pe1,0,150,3200,0
+2026-09-01,,R-18809,local apartado,,pe2,0,150,3000,0
+2026-09-01,,R-18809,local apartado,,pe2,0,180,3000,0
+2026-09-01,,R-18809,local apartado,,pind,0,113,2000,0
+2026-09-01,,R-18809,local apartado,AD-piña jugos,AD-PJUG,193,0,2000,0
+2026-09-01,,R-18809,local apartado,AD-piña jugos,AD-PJUG,91,0,2000,0
+2026-09-01,,R-18810,elkin dario cardona,piña special 1ra,PE1,459,0,2800,0
+2026-09-01,,R-18810,elkin dario cardona,piña special 1ra,PE1,569,0,2800,0
+2026-09-01,,R-18810,elkin dario cardona,piña special 1ra,PE1,584,0,2800,0
+2026-09-01,,R-18810,elkin dario cardona,piña special 1ra,PE1,593,0,2800,0
+2026-09-01,,R-18810,elkin dario cardona,piña special 1ra,PE1,559,0,2800,0
+2026-09-01,,R-18810,elkin dario cardona,piña special 1ra,PE1,577,0,2800,0
+2026-09-01,,R-18810,elkin dario cardona,piña special 1ra,PE1,574,0,2800,0
+2026-09-01,,R-18810,elkin dario cardona,piña special 1ra,PE1,535,0,2800,18
+2026-09-01,,R-18810,elkin dario cardona,piña special 1ra,PE1,565,0,2800,0
+2026-09-01,,R-18810,elkin dario cardona,piña special 1ra,PE1,574,411,2800,0
+2026-09-01,,,local medellin,piña special 1ra,PE1,562,0,3000,0
+2026-09-01,,,local medellin,piña special 1ra,PE1,539,0,3000,8
+2026-09-01,,,local medellin,piña special 1ra,PE1,571,0,3000,0
+2026-09-01,,,local medellin,piña special 1ra,PE1,571,57,3000,0
+2026-09-01,,,local medellin,piña special 1ra,PE1,553,47,3000,0
+2026-09-01,,,local medellin,piña special 2da,PE2,516,0,2800,5
+2026-09-01,,,local medellin,piña special 2da,PE2,518,0,2800,0
+2026-09-01,,,local medellin,piña special 2da,PE2,435,231,2800,0
+2026-09-01,,,local medellin,piña special 2da,PE2,280,0,2800,0
+2026-09-01,,,local medellin,piña special 2da,PE2,510,0,2800,3
+2026-09-01,,,local medellin,piña special 2da,PE2,322,0,2800,0
+2026-09-01,,,local medellin,Piña AD2,AD2,46,0,2800,0
