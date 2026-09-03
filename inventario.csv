@@ -1,10 +1,10 @@
 ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 201049,canastas,2026-09-01,PEBAB,piña special baby,1.5 - 2.5,291
-201052,canastas,2026-09-01,AD2,Piña AD2,0.0 - 1.0,494
+201052,canastas,2026-09-01,AD2,Piña AD2,0.0 - 1.0,491
 201053,canastas,2026-09-01,AD1,Piña AD1,0.0 - 1.0,273
 201056,canastas,2026-09-01,AD1,Piña AD1,0.0 - 1.0,507
 201059,canastas,2026-09-01,AD2,Piña AD2,0.0 - 1.0,512
-201063,canastas,2026-09-01,AD1,Piña AD1,0.0 - 1.0,445
+201063,canastas,2026-09-01,AD1,Piña AD1,0.0 - 1.0,95
 201072,canastas,2026-09-01,AD2,Piña AD2,0.0 - 1.0,6
 201075,canastas,2026-09-01,ADBABY,Piña ADBABY,1.5 - 2.5,11
 201093,canastas,2026-09-02,AD3,Piña AD3,1.5 - 2.5,37
@@ -12,7 +12,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 201096,canastas,2026-09-02,AD3,Piña AD3,3.0 - 4.0,29
 201098,canastas,2026-09-02,AD1,Piña AD1,0.0 - 1.0,585
 201099,canastas,2026-09-02,AD3,Piña AD3,0.0 - 1.0,478
-201101,canastas,2026-09-02,AD1,Piña AD1,0.0 - 1.0,595
 201106,canastas,2026-09-02,AD1,Piña AD1,0.0 - 1.0,581
 201113,,,,,,0
 201114,,,,,,0
