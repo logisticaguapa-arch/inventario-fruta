@@ -17922,25 +17922,25 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-09-02,,R-18818,local medellin,AD-piña jugos,AD-PJUG,36,0,2600,0
 2026-09-02,,R-18818,local medellin,AD-piña jugos,AD-PJUG,28,0,2600,0
 2026-09-02,,R-18818,local medellin,AD-piña jugos,AD-PJUG,96,0,2600,0
-2026-09-03,,,local apartado,Piña ADGUA,ADGUA,189,0,,0
-2026-09-03,,,local apartado,Piña AD2,AD2,512,188,,0
-2026-09-03,,,local apartado,Piña AD1,AD1,562,0,,0
-2026-09-03,,,local apartado,Piña AD1,AD1,413,25,,0
-2026-09-03,,,local medellin,AD-piña jugos,AD-PJUG,25,0,,0
-2026-09-03,,,local medellin,Piña AD1,AD1,483,0,,6
-2026-09-03,,,local medellin,Piña AD1,AD1,533,0,,0
-2026-09-03,,,local medellin,Piña AD1,AD1,513,0,,0
-2026-09-03,,,local medellin,Piña AD1,AD1,494,0,,0
-2026-09-03,,,local medellin,Piña AD1,AD1,590,387,,0
-2026-09-03,,,local medellin,Piña AD2,AD2,511,0,,0
-2026-09-03,,,local medellin,Piña AD2,AD2,508,0,,0
-2026-09-03,,,local medellin,Piña AD2,AD2,318,0,,0
-2026-09-03,,,local medellin,Piña AD2,AD2,281,20,,3
-2026-09-03,,,local medellin,Piña AD2,AD2,141,0,,0
-2026-09-03,,,local medellin,Piña AD1,AD1,198,0,,0
-2026-09-03,,,local medellin,Piña AD2,AD2,159,0,,1
-2026-09-03,,,local medellin,Piña AD1,AD1,352,0,,0
-2026-09-03,,,local medellin,Piña AD1,AD1,166,0,,0
+2026-09-03,,R-18819,local apartado,Piña ADGUA,ADGUA,189,0,2200,0
+2026-09-03,,R-18819,local apartado,Piña AD2,AD2,512,188,1900,0
+2026-09-03,,R-18819,local apartado,Piña AD1,AD1,562,0,3200,0
+2026-09-03,,R-18819,local apartado,Piña AD1,AD1,413,25,3200,0
+2026-09-03,,R-18820,local medellin,AD-piña jugos,AD-PJUG,25,0,2600,0
+2026-09-03,,R-18820,local medellin,Piña AD1,AD1,483,0,3000,6
+2026-09-03,,R-18820,local medellin,Piña AD1,AD1,533,0,3000,0
+2026-09-03,,R-18820,local medellin,Piña AD1,AD1,513,0,3000,0
+2026-09-03,,R-18820,local medellin,Piña AD1,AD1,494,0,3000,0
+2026-09-03,,R-18820,local medellin,Piña AD1,AD1,590,387,3000,0
+2026-09-03,,R-18820,local medellin,Piña AD2,AD2,511,0,2800,0
+2026-09-03,,R-18820,local medellin,Piña AD2,AD2,508,0,2800,0
+2026-09-03,,R-18820,local medellin,Piña AD2,AD2,318,0,2800,0
+2026-09-03,,R-18820,local medellin,Piña AD2,AD2,281,20,2800,3
+2026-09-03,,R-18820,local medellin,Piña AD2,AD2,141,0,2800,0
+2026-09-03,,R-18820,local medellin,Piña AD1,AD1,198,0,3000,0
+2026-09-03,,R-18820,local medellin,Piña AD2,AD2,159,0,2800,1
+2026-09-03,,R-18820,local medellin,Piña AD1,AD1,352,0,3000,0
+2026-09-03,,R-18820,local medellin,Piña AD1,AD1,166,0,3000,0
 2026-09-03,,,cartagena,Piña AD1,AD1,503,0,,0
 2026-09-03,,,cartagena,Piña AD1,AD1,483,0,,0
 2026-09-03,,,cartagena,Piña AD1,AD1,497,0,,0
@@ -17950,9 +17950,23 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-09-03,,,cartagena,Piña AD1,AD1,562,0,,0
 2026-09-03,,,cartagena,Piña AD1,AD1,532,0,,0
 2026-09-03,,,cartagena,Piña AD1,AD1,513,350,,15
+2026-09-03,,,cartagena,Piña AD2,AD2,506,0,,0
+2026-09-03,,,cartagena,Piña AD2,AD2,482,0,,0
+2026-09-03,,,descarte,Piña AD2,AD2,0,0,,6
 2026-09-03,,,local sincelejo,AD-piña indstria,AD-PIND,172,0,,0
 2026-09-03,,,local sincelejo,AD-piña indstria,AD-PIND,590,0,,0
 2026-09-03,,,local sincelejo,Piña AD2,AD2,512,0,,0
 2026-09-03,,,local sincelejo,Piña AD2,AD2,497,0,,0
 2026-09-03,,,local sincelejo,piña special 2da,PE2,24,3,,0
-2026-09-03,,,local sincelejo,Piña AD1,AD1,592,0,,0
+2026-09-03,,,local sincelejo,Piña AD1,AD1,583,452,,9
+2026-09-03,,,local sincelejo,Piña AD1,AD1,580,0,,0
+2026-09-03,,,local sincelejo,Piña AD1,AD1,572,0,,0
+2026-09-03,,,local sincelejo,Piña AD1,AD1,49,0,,0
+2026-09-03,,,local sincelejo,Piña AD1,AD1,87,0,,0
+2026-09-03,,,local sincelejo,Piña AD1,AD1,114,0,,0
+2026-09-03,,,local sincelejo,Piña AD1,AD1,266,0,,0
+2026-09-03,,,local sincelejo,Piña AD3,AD3,28,0,,0
+2026-09-03,,,local sincelejo,Piña AD3,AD3,37,0,,0
+2026-09-03,,,local sincelejo,Piña AD3,AD3,475,0,,0
+2026-09-03,,,local sincelejo,piña special baby,PEBAB,284,0,,0
+2026-09-03,,,local sincelejo,Piña ADBABY,ADBABY,11,0,,0
