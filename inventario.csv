@@ -19,13 +19,11 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 201068,canastas,2026-09-01,AD1,Piña AD1,0.0 - 1.0,569
 201072,canastas,2026-09-01,AD2,Piña AD2,0.0 - 1.0,6
 201075,canastas,2026-09-01,ADBABY,Piña ADBABY,1.5 - 2.5,11
-201085,canastas,2026-09-02,AD1,Piña AD1,0.0 - 1.0,536
 201086,canastas,2026-09-02,AD2,Piña AD2,0.0 - 1.0,292
 201087,canastas,2026-09-02,AD-PIND,AD-piña indstria,1.5 - 2.5,593
 201088,canastas,2026-09-02,AD2,Piña AD2,0.0 - 1.0,320
 201090,canastas,2026-09-02,AD2,Piña AD2,0.0 - 1.0,510
 201091,canastas,2026-09-02,AD2,Piña AD2,0.0 - 1.0,514
-201092,canastas,2026-09-02,AD1,Piña AD1,0.0 - 1.0,492
 201093,canastas,2026-09-02,AD3,Piña AD3,1.5 - 2.5,37
 201094,canastas,2026-09-02,AD1,Piña AD1,0.0 - 1.0,506
 201096,canastas,2026-09-02,AD3,Piña AD3,3.0 - 4.0,29
@@ -37,12 +35,10 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 201104,canastas,2026-09-02,AD1,Piña AD1,0.0 - 1.0,594
 201105,canastas,2026-09-02,AD1,Piña AD1,0.0 - 1.0,497
 201106,canastas,2026-09-02,AD1,Piña AD1,0.0 - 1.0,581
-201107,canastas,2026-09-02,AD1,Piña AD1,0.0 - 1.0,517
 201108,canastas,2026-09-02,AD1,Piña AD1,1.5 - 2.5,168
 201109,canastas,2026-09-02,AD2,Piña AD2,1.5 - 2.5,162
 201110,canastas,2026-09-02,AD-PIND,AD-piña indstria,1.5 - 2.5,174
 201111,canastas,2026-09-02,AD1,Piña AD1,3.0 - 4.0,201
-201112,canastas,2026-09-02,AD-PJUG,AD-piña jugos,3.0 - 4.0,26
 201113,,,,,,0
 201114,,,,,,0
 201115,,,,,,0
