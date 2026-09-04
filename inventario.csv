@@ -29,34 +29,32 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 201139,canastas,2026-09-04,PE2,piña special 2da,2,407
 201140,canastas,2026-09-04,PE1,piña special 1ra,1.5 - 2.5,553
 201141,canastas,2026-09-04,PE2,piña special 2da,2,392
-201142,canastas,2026-09-04,,,,0
-201143,canastas,2026-09-04,,,,0
-201144,canastas,2026-09-04,,,,0
-201145,canastas,2026-09-04,,,,0
-201146,canastas,2026-09-04,,,,0
-201147,canastas,2026-09-04,,,,0
-201148,canastas,2026-09-04,,,,0
-201149,canastas,2026-09-04,,,,0
-201150,,,,,,0
-201151,,,,,,0
-201152,,,,,,0
-201153,,,,,,0
-201154,,,,,,0
-201155,,,,,,0
-201156,,,,,,0
-201157,,,,,,0
-201158,,,,,,0
-201159,,,,,,0
-201160,,,,,,0
-201161,,,,,,0
-201162,,,,,,0
-201163,,,,,,0
-201164,,,,,,0
-201165,,,,,,0
-201166,,,,,,0
-201167,,,,,,0
-201168,,,,,,0
-201169,,,,,,0
+201142,canastas,2026-09-04,PE1,piña special 1ra,1,591
+201143,canastas,2026-09-04,PE2,piña special 2da,3.0 - 4.0,501
+201144,canastas,2026-09-04,PE1,piña special 1ra,3.0 - 4.0,552
+201145,canastas,2026-09-04,PE1,piña special 1ra,1.5 - 2.5,587
+201146,canastas,2026-09-04,PE2,piña special 2da,2,415
+201147,canastas,2026-09-04,PE1,piña special 1ra,1,580
+201148,canastas,2026-09-04,PE2,piña special 2da,2,411
+201149,canastas,2026-09-04,PIND,piña indstria,1.5 - 2.5,446
+201151,canastas,2026-09-04,PE3,piña special 3ra,1.5 - 2.5,485
+201152,canastas,2026-09-04,PE2,piña special 2da,2,403
+201153,canastas,2026-09-04,PEGUA,piña special guapita,1.5 - 2.5,470
+201154,canastas,2026-09-04,PE3,piña special 3ra,1.5 - 2.5,492
+201155,canastas,2026-09-04,PE1,piña special 1ra,3.0 - 4.0,544
+201156,canastas,2026-09-04,PE2,piña special 2da,1.5 - 2.5,508
+201158,canastas,2026-09-04,PE1,piña special 1ra,3.0 - 4.0,547
+201159,canastas,2026-09-04,PE2,piña special 2da,2,409
+201160,canastas,2026-09-04,PE2,piña special 2da,3.0 - 4.0,499
+201161,canastas,2026-09-04,PE3,piña special 3ra,0.0 - 1.0,472
+201162,canastas,2026-09-04,PE1,piña special 1ra,1,569
+201163,canastas,2026-09-04,,,,0
+201164,canastas,2026-09-04,,,,0
+201165,canastas,2026-09-04,,,,0
+201166,canastas,2026-09-04,,,,0
+201167,canastas,2026-09-04,,,,0
+201168,canastas,2026-09-04,,,,0
+201169,canastas,2026-09-04,,,,0
 201170,,,,,,0
 201171,,,,,,0
 201172,,,,,,0
