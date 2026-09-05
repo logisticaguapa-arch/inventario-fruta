@@ -17992,25 +17992,26 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-09-04,45913,R-18826,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,590,0,3000,0
 2026-09-04,45913,R-18826,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,584,0,3000,0
 2026-09-04,45913,R-18826,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,585,231,3000,0
-2026-09-04,,,local sincelejo,Piña AD1,AD1,594,0,,0
-2026-09-04,,,local sincelejo,Piña AD1,AD1,406,0,,0
-2026-09-04,,,local sincelejo,piña special 1ra,PE1,587,0,,0
-2026-09-04,,,local sincelejo,Piña AD1,AD1,163,0,,0
-2026-09-04,,,local sincelejo,piña special 2da,PE2,592,0,,0
-2026-09-04,,,local sincelejo,Piña AD2,AD2,408,0,,0
-2026-09-04,,,local sincelejo,piña special 3ra,PE3,225,39,,0
-2026-09-04,,,local sincelejo,piña special guapita,PEGUA,467,0,,0
-2026-09-04,,,local sincelejo,piña special guapita,PEGUA,474,59,,0
-2026-09-04,,,local sincelejo,Piña AD3,AD3,615,385,,0
-2026-09-04,,,local sincelejo,piña special baby,PEBAB,406,0,,0
-2026-09-04,,,local sincelejo,piña special baby,PEBAB,434,0,,0
-2026-09-04,,,local sincelejo,Piña ADBABY,ADBABY,28,0,,0
-2026-09-04,,,local sincelejo,piña special guapita,PEGUA,477,0,,0
-2026-09-04,,,jeronimo martins,piña special 2da,PE2,394,0,,0
-2026-09-04,,,jeronimo martins,piña special 2da,PE2,405,0,,0
-2026-09-04,,,jeronimo martins,piña special 2da,PE2,405,0,,0
-2026-09-04,,,jeronimo martins,piña special 2da,PE2,409,0,,0
-2026-09-04,,,jeronimo martins,piña special 2da,PE2,392,55,,0
+2026-09-04,,R-18825,reposicion éxito medellin,,pe1,0,100,,0
+2026-09-04,,R-18828,local sincelejo,Piña AD1,AD1,594,0,2800,0
+2026-09-04,,R-18828,local sincelejo,Piña AD1,AD1,406,0,2800,0
+2026-09-04,,R-18828,local sincelejo,piña special 1ra,PE1,587,0,3200,0
+2026-09-04,,R-18828,local sincelejo,Piña AD1,AD1,163,0,3200,0
+2026-09-04,,R-18828,local sincelejo,piña special 2da,PE2,592,0,3000,0
+2026-09-04,,R-18828,local sincelejo,Piña AD2,AD2,408,0,3000,0
+2026-09-04,,R-18828,local sincelejo,piña special 3ra,PE3,225,39,2600,0
+2026-09-04,,R-18828,local sincelejo,piña special guapita,PEGUA,467,0,2200,0
+2026-09-04,,R-18828,local sincelejo,piña special guapita,PEGUA,474,59,2200,0
+2026-09-04,,R-18828,local sincelejo,Piña AD3,AD3,615,385,2700,0
+2026-09-04,,R-18828,local sincelejo,piña special baby,PEBAB,406,0,1500,0
+2026-09-04,,R-18828,local sincelejo,piña special baby,PEBAB,434,0,1500,0
+2026-09-04,,R-18828,local sincelejo,Piña ADBABY,ADBABY,28,0,1500,0
+2026-09-04,,R-18828,local sincelejo,piña special guapita,PEGUA,477,0,2200,0
+2026-09-04,,R-18827,jeronimo martins,piña special 2da,PE2,394,0,3100,0
+2026-09-04,,R-18827,jeronimo martins,piña special 2da,PE2,405,0,3100,0
+2026-09-04,,R-18827,jeronimo martins,piña special 2da,PE2,405,0,3100,0
+2026-09-04,,R-18827,jeronimo martins,piña special 2da,PE2,409,367,3100,0
+2026-09-04,,,reposicion jeronimo,piña special 2da,PE2,25,55,,0
 2026-09-04,,,cartagena,Piña AD1,AD1,554,0,,0
 2026-09-04,,,cartagena,Piña AD1,AD1,531,0,,0
 2026-09-04,,,cartagena,Piña AD1,AD1,551,0,,0
@@ -18040,7 +18041,6 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-09-04,,,local sincelejo,piña special 1ra,PE1,150,0,,0
 2026-09-04,,,local sincelejo,piña special 3ra,PE3,468,0,,0
 2026-09-04,,,local sincelejo,piña special 3ra,PE3,169,0,,0
-2026-09-04,,,local sincelejo,Piña AD3,AD3,0,0,,116
 2026-09-04,,,local sincelejo,piña special guapita,PEGUA,308,0,,0
 2026-09-04,,,local sincelejo,Piña ADGUA,ADGUA,184,0,,0
 2026-09-04,,,local sincelejo,piña special guapita,PEGUA,458,150,,0
