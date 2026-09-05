@@ -12,7 +12,7 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 201134,canastas,2026-09-04,PE2,piña special 2da,2,403
 201137,canastas,2026-09-04,PE1,piña special 1ra,1.5 - 2.5,294
 201139,canastas,2026-09-04,PE2,piña special 2da,2,407
-201143,canastas,2026-09-04,PE2,piña special 2da,3.0 - 4.0,501
+201143,canastas,2026-09-04,PE2,piña special 2da,3.0 - 4.0,438
 201146,canastas,2026-09-04,PE2,piña special 2da,2,415
 201148,canastas,2026-09-04,PE2,piña special 2da,2,411
 201149,canastas,2026-09-04,PIND,piña indstria,1.5 - 2.5,446
@@ -29,8 +29,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 201177,canastas,2026-09-04,PE1,piña special 1ra,3.0 - 4.0,401
 201178,canastas,2026-09-04,PE1,piña special 1ra,3.0 - 4.0,484
 201179,canastas,2026-09-04,PE2,piña special 2da,2,324
-201180,canastas,2026-09-04,PE2,piña special 2da,3.0 - 4.0,503
-201181,canastas,2026-09-04,PE1,piña special 1ra,0.0 - 1.0,151
 201182,canastas,2026-09-04,PE3,piña special 3ra,1.5 - 2.5,595
 201183,canastas,2026-09-04,PE1,piña special 1ra,3.0 - 4.0,158
 201185,canastas,2026-09-04,PEGUA,piña special guapita,1.5 - 2.5,459
@@ -39,30 +37,19 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 201189,canastas,2026-09-04,PE2,piña special 2da,3.0 - 4.0,317
 201191,canastas,2026-09-04,PEGUA,piña special guapita,1.5 - 2.5,248
 201192,canastas,2026-09-04,PE3,piña special 3ra,0.0 - 1.0,170
-201195,canastas,2026-09-04,AD-PJUG,AD-piña jugos,3.0 - 4.0,523
-201196,canastas,2026-09-04,AD1,Piña AD1,0.0 - 1.0,598
 201197,canastas,2026-09-04,AD1,Piña AD1,1.5 - 2.5,500
 201198,canastas,2026-09-04,AD1,Piña AD1,1.5 - 2.5,585
 201199,canastas,2026-09-04,PE3,piña special 3ra,3.0 - 4.0,415
-201200,canastas,2026-09-04,AD1,Piña AD1,0.0 - 1.0,114
 201203,canastas,2026-09-04,AD3,Piña AD3,0.0 - 1.0,116
-201204,canastas,2026-09-04,AD1,Piña AD1,0.0 - 1.0,370
 201205,canastas,2026-09-04,AD-PIND,AD-piña indstria,1.5 - 2.5,434
-201207,canastas,2026-09-04,AD-PJUG,AD-piña jugos,3.0 - 4.0,539
 201208,canastas,2026-09-04,AD-PIND,AD-piña indstria,1.5 - 2.5,473
-201210,canastas,2026-09-04,AD2,Piña AD2,0.0 - 1.0,125
 201217,canastas,2026-09-04,AD1,Piña AD1,1.5 - 2.5,557
 201219,canastas,2026-09-04,AD3,Piña AD3,1.5 - 2.5,71
-201224,canastas,2026-09-04,AD1,Piña AD1,1.5 - 2.5,460
-201225,canastas,2026-09-04,AD-PJUG,AD-piña jugos,3.0 - 4.0,157
+201224,canastas,2026-09-04,AD1,Piña AD1,1.5 - 2.5,190
 201228,canastas,2026-09-04,PEGUA,piña special guapita,1.5 - 2.5,308
-201229,canastas,2026-09-04,AD-PJUG,AD-piña jugos,3.0 - 4.0,369
-201230,canastas,2026-09-04,AD-PJUG,AD-piña jugos,3.0 - 4.0,292
 201231,canastas,2026-09-04,AD-PIND,AD-piña indstria,1.5 - 2.5,170
 201233,canastas,2026-09-04,ADGUA,Piña ADGUA,1.5 - 2.5,185
 201234,canastas,2026-09-04,AD1,Piña AD1,1.5 - 2.5,163
-201235,canastas,2026-09-04,AD-PJUG,AD-piña jugos,3.0 - 4.0,110
-201236,canastas,2026-09-04,AD-PJUG,AD-piña jugos,3.0 - 4.0,458
 201238,canastas,2026-09-04,,,,0
 201239,canastas,2026-09-04,,,,0
 201240,canastas,2026-09-04,,,,0
