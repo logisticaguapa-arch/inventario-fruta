@@ -18053,21 +18053,26 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-09-04,45915,R-18830,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,531,0,800,0
 2026-09-04,45915,R-18830,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,521,0,800,0
 2026-09-04,45915,R-18830,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,157,0,800,0
-2026-09-05,,,local apartado,Piña AD1,AD1,498,0,,0
-2026-09-05,,,local apartado,Piña AD1,AD1,547,0,,6
-2026-09-05,,,local apartado,piña special 1ra,PE1,573,0,,7
-2026-09-05,,,local apartado,Piña AD1,AD1,568,0,,12
-2026-09-05,,,local apartado,piña special 1ra,PE1,555,259,,0
-2026-09-05,,,local apartado,piña special guapita,PEGUA,497,0,,1
-2026-09-05,,,local apartado,piña special guapita,PEGUA,338,0,,0
-2026-09-05,,,local apartado,piña special guapita,PEGUA,243,122,,0
-2026-09-05,,,jeronimo martins,piña special 2da,PE2,415,0,,0
-2026-09-05,,,jeronimo martins,piña special 2da,PE2,411,0,,0
-2026-09-05,,,jeronimo martins,piña special 2da,PE2,408,0,,0
-2026-09-05,,,jeronimo martins,piña special 2da,PE2,348,288,,0
-2026-09-05,,,jeronimo martins,piña special 2da,PE2,115,0,,0
-2026-09-05,,,jeronimo martins,piña special 2da,PE2,411,0,,0
-2026-09-05,,,jeronimo martins,piña special 2da,PE2,417,0,,0
-2026-09-05,,,jeronimo martins,piña special 2da,PE2,418,0,,0
-2026-09-05,,,jeronimo martins,piña special 2da,PE2,407,102,,0
-2026-09-05,,,reposicion jeronimo,piña special 2da,PE2,222,0,,0
+2026-09-05,,R-18834,local apartado,Piña AD1,AD1,498,0,3200,0
+2026-09-05,,R-18834,local apartado,Piña AD1,AD1,547,0,3200,6
+2026-09-05,,R-18834,local apartado,piña special 1ra,PE1,573,0,3200,7
+2026-09-05,,R-18834,local apartado,Piña AD1,AD1,568,0,3200,12
+2026-09-05,,R-18834,local apartado,piña special 1ra,PE1,555,259,3200,0
+2026-09-05,,R-18834,local apartado,piña special guapita,PEGUA,497,0,2200,1
+2026-09-05,,R-18834,local apartado,piña special guapita,PEGUA,338,0,2200,0
+2026-09-05,,R-18834,local apartado,piña special guapita,PEGUA,243,122,2200,0
+2026-09-05,45917,R-18837,jeronimo martins,piña special 2da,PE2,415,0,3200,0
+2026-09-05,45917,R-18837,jeronimo martins,piña special 2da,PE2,411,0,3200,0
+2026-09-05,45917,R-18837,jeronimo martins,piña special 2da,PE2,408,0,3200,0
+2026-09-05,45917,R-18837,jeronimo martins,piña special 2da,PE2,348,288,3200,0
+2026-09-05,45918,R-18836,jeronimo martins,piña special 2da,PE2,115,0,3200,0
+2026-09-05,45918,R-18836,jeronimo martins,piña special 2da,PE2,411,0,3200,0
+2026-09-05,45918,R-18836,jeronimo martins,piña special 2da,PE2,417,0,3200,0
+2026-09-05,45918,R-18836,jeronimo martins,piña special 2da,PE2,418,0,3200,0
+2026-09-05,45918,R-18836,jeronimo martins,piña special 2da,PE2,407,102,3200,0
+2026-09-05,,R-18835,reposicion jeronimo,piña special 2da,PE2,222,0,,0
+2026-09-05,,,KARINA BORJA,piña indstria,PIND,440,0,,0
+2026-09-05,,,KARINA BORJA,AD-piña indstria,AD-PIND,426,0,,5
+2026-09-05,,,KARINA BORJA,piña indstria,PIND,495,0,,0
+2026-09-05,,,KARINA BORJA,AD-piña indstria,AD-PIND,469,0,,0
+2026-09-05,,,KARINA BORJA,AD-piña indstria,AD-PIND,168,0,,0

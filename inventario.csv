@@ -4,11 +4,9 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 201123,canastas,2026-09-04,PE3,piña special 3ra,1.5 - 2.5,494
 201126,canastas,2026-09-04,PE1,piña special 1ra,3.0 - 4.0,543
 201127,canastas,2026-09-04,PE1,piña special 1ra,3.0 - 4.0,545
-201131,canastas,2026-09-04,PIND,piña indstria,1.5 - 2.5,499
 201133,canastas,2026-09-04,PEGUA,piña special guapita,1.5 - 2.5,208
 201137,canastas,2026-09-04,PE1,piña special 1ra,1.5 - 2.5,35
 201143,canastas,2026-09-04,PE2,piña special 2da,3.0 - 4.0,438
-201149,canastas,2026-09-04,PIND,piña indstria,1.5 - 2.5,446
 201151,canastas,2026-09-04,PE3,piña special 3ra,1.5 - 2.5,79
 201154,canastas,2026-09-04,PE3,piña special 3ra,1.5 - 2.5,80
 201160,canastas,2026-09-04,PE2,piña special 2da,3.0 - 4.0,499
@@ -21,11 +19,8 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 201189,canastas,2026-09-04,PE2,piña special 2da,3.0 - 4.0,317
 201199,canastas,2026-09-04,PE3,piña special 3ra,3.0 - 4.0,415
 201203,canastas,2026-09-04,AD3,Piña AD3,0.0 - 1.0,116
-201205,canastas,2026-09-04,AD-PIND,AD-piña indstria,1.5 - 2.5,434
-201208,canastas,2026-09-04,AD-PIND,AD-piña indstria,1.5 - 2.5,473
 201219,canastas,2026-09-04,AD3,Piña AD3,1.5 - 2.5,71
 201224,canastas,2026-09-04,AD1,Piña AD1,1.5 - 2.5,190
-201231,canastas,2026-09-04,AD-PIND,AD-piña indstria,1.5 - 2.5,170
 201234,canastas,2026-09-04,AD1,Piña AD1,1.5 - 2.5,163
 201238,canastas,2026-09-04,,,,0
 201239,canastas,2026-09-04,,,,0
