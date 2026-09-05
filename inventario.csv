@@ -4,10 +4,8 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 201117,canastas,2026-09-04,PE1,piña special 1ra,1,252
 201118,canastas,2026-09-04,PE1,piña special 1ra,3.0 - 4.0,99
 201119,canastas,2026-09-04,PE2,piña special 2da,2,411
-201120,canastas,2026-09-04,PE1,piña special 1ra,1.5 - 2.5,589
 201121,canastas,2026-09-04,PE2,piña special 2da,1.5 - 2.5,595
 201123,canastas,2026-09-04,PE3,piña special 3ra,1.5 - 2.5,494
-201125,canastas,2026-09-04,PE2,piña special 2da,2,405
 201126,canastas,2026-09-04,PE1,piña special 1ra,3.0 - 4.0,543
 201127,canastas,2026-09-04,PE1,piña special 1ra,3.0 - 4.0,545
 201131,canastas,2026-09-04,PIND,piña indstria,1.5 - 2.5,499
@@ -31,10 +29,8 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 201161,canastas,2026-09-04,PE3,piña special 3ra,0.0 - 1.0,472
 201163,canastas,2026-09-04,PEBAB,piña special baby,1.5 - 2.5,436
 201164,canastas,2026-09-04,PE3,piña special 3ra,1.5 - 2.5,505
-201165,canastas,2026-09-04,PE2,piña special 2da,2,405
 201166,canastas,2026-09-04,PEGUA,piña special guapita,1.5 - 2.5,477
 201168,canastas,2026-09-04,PE3,piña special 3ra,3.0 - 4.0,225
-201169,canastas,2026-09-04,PE2,piña special 2da,2,394
 201170,canastas,2026-09-04,PE1,piña special 1ra,1.5 - 2.5,560
 201171,canastas,2026-09-04,PE1,piña special 1ra,3.0 - 4.0,533
 201172,canastas,2026-09-04,PE1,piña special 1ra,0.0 - 1.0,516
@@ -66,13 +62,12 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 201199,canastas,2026-09-04,PE3,piña special 3ra,3.0 - 4.0,454
 201200,canastas,2026-09-04,AD1,Piña AD1,0.0 - 1.0,576
 201201,canastas,2026-09-04,AD1,Piña AD1,0.0 - 1.0,406
-201202,canastas,2026-09-04,,,,0
-201203,canastas,2026-09-04,,,,0
-201204,canastas,2026-09-04,,,,0
-201205,canastas,2026-09-04,,,,0
-201206,canastas,2026-09-04,,,,0
-201207,canastas,2026-09-04,,,,0
-201208,canastas,2026-09-04,,,,0
+201202,canastas,2026-09-04,AD2,Piña AD2,0.0 - 1.0,519
+201203,canastas,2026-09-04,AD3,Piña AD3,0.0 - 1.0,501
+201204,canastas,2026-09-04,AD1,Piña AD1,0.0 - 1.0,562
+201205,canastas,2026-09-04,AD-PIND,AD-piña indstria,1.5 - 2.5,434
+201207,canastas,2026-09-04,AD-PJUG,AD-piña jugos,3.0 - 4.0,539
+201208,canastas,2026-09-04,AD-PIND,AD-piña indstria,1.5 - 2.5,473
 201209,canastas,2026-09-04,,,,0
 201210,canastas,2026-09-04,,,,0
 201211,canastas,2026-09-04,,,,0
