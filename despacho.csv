@@ -18007,47 +18007,49 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-09-04,,R-18828,local sincelejo,piña special baby,PEBAB,434,0,1500,0
 2026-09-04,,R-18828,local sincelejo,Piña ADBABY,ADBABY,28,0,1500,0
 2026-09-04,,R-18828,local sincelejo,piña special guapita,PEGUA,477,0,2200,0
-2026-09-04,,R-18827,jeronimo martins,piña special 2da,PE2,394,0,3100,0
-2026-09-04,,R-18827,jeronimo martins,piña special 2da,PE2,405,0,3100,0
-2026-09-04,,R-18827,jeronimo martins,piña special 2da,PE2,405,0,3100,0
-2026-09-04,,R-18827,jeronimo martins,piña special 2da,PE2,409,367,3100,0
-2026-09-04,,,reposicion jeronimo,piña special 2da,PE2,25,55,,0
-2026-09-04,,,cartagena,Piña AD1,AD1,554,0,,0
-2026-09-04,,,cartagena,Piña AD1,AD1,531,0,,0
-2026-09-04,,,cartagena,Piña AD1,AD1,551,0,,0
-2026-09-04,,,cartagena,Piña AD1,AD1,585,0,,0
-2026-09-04,,,cartagena,Piña AD1,AD1,606,0,,0
-2026-09-04,,,cartagena,Piña AD1,AD1,568,0,,0
-2026-09-04,,,cartagena,Piña AD1,AD1,413,192,,0
-2026-09-04,,,cartagena,Piña AD2,AD2,521,0,,0
-2026-09-04,,,cartagena,Piña AD2,AD2,523,0,,0
-2026-09-04,,,cartagena,Piña AD2,AD2,621,0,,0
-2026-09-04,,,cartagena,Piña AD2,AD2,516,0,,0
-2026-09-04,,,cartagena,Piña AD2,AD2,290,29,,0
-2026-09-04,,,venta empleados,Piña AD1,AD1,290,0,,0
-2026-09-04,,,local sincelejo,piña special 2da,PE2,643,0,,0
-2026-09-04,,,local sincelejo,Piña AD2,AD2,519,338,,0
-2026-09-04,,,local sincelejo,Piña AD1,AD1,522,0,,0
-2026-09-04,,,local sincelejo,piña special 1ra,PE1,516,462,,0
-2026-09-04,,,local sincelejo,piña special 2da,PE2,498,0,,0
-2026-09-04,,,local sincelejo,piña special 2da,PE2,498,0,,0
-2026-09-04,,,local sincelejo,piña special 2da,PE2,202,0,,0
-2026-09-04,,,local sincelejo,Piña AD2,AD2,148,0,,0
-2026-09-04,,,local sincelejo,Piña AD2,AD2,125,0,,0
-2026-09-04,,,local sincelejo,piña special 2da,PE2,496,63,,0
-2026-09-04,,,local sincelejo,Piña AD1,AD1,370,0,,0
-2026-09-04,,,local sincelejo,Piña AD1,AD1,114,0,,0
-2026-09-04,,,local sincelejo,Piña AD1,AD1,596,0,,0
-2026-09-04,,,local sincelejo,piña special 1ra,PE1,150,0,,0
-2026-09-04,,,local sincelejo,piña special 3ra,PE3,468,0,,0
-2026-09-04,,,local sincelejo,piña special 3ra,PE3,169,0,,0
-2026-09-04,,,local sincelejo,piña special guapita,PEGUA,308,0,,0
-2026-09-04,,,local sincelejo,Piña ADGUA,ADGUA,184,0,,0
-2026-09-04,,,local sincelejo,piña special guapita,PEGUA,458,150,,0
-2026-09-04,,,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,369,0,,0
-2026-09-04,,,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,291,0,,0
-2026-09-04,,,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,446,0,,12
-2026-09-04,,,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,108,0,,0
-2026-09-04,,,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,531,0,,0
-2026-09-04,,,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,521,0,,0
-2026-09-04,,,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,157,0,,0
+2026-09-04,45914,R-18827,jeronimo martins,piña special 2da,PE2,394,0,3100,0
+2026-09-04,45914,R-18827,jeronimo martins,piña special 2da,PE2,405,0,3100,0
+2026-09-04,45914,R-18827,jeronimo martins,piña special 2da,PE2,405,0,3100,0
+2026-09-04,45914,R-18827,jeronimo martins,piña special 2da,PE2,409,367,3100,0
+2026-09-04,,R-18832,reposicion jeronimo,piña special 2da,PE2,25,55,,0
+2026-09-04,,R-18829,cartagena,Piña AD1,AD1,554,0,3000,0
+2026-09-04,,R-18829,cartagena,Piña AD1,AD1,531,0,3000,0
+2026-09-04,,R-18829,cartagena,Piña AD1,AD1,551,0,3000,0
+2026-09-04,,R-18829,cartagena,Piña AD1,AD1,585,0,3000,0
+2026-09-04,,R-18829,cartagena,Piña AD1,AD1,606,0,3000,0
+2026-09-04,,R-18829,cartagena,Piña AD1,AD1,568,0,3000,0
+2026-09-04,,R-18829,cartagena,Piña AD1,AD1,413,192,3000,0
+2026-09-04,,R-18829,cartagena,Piña AD2,AD2,521,0,2800,0
+2026-09-04,,R-18829,cartagena,Piña AD2,AD2,523,0,2800,0
+2026-09-04,,R-18829,cartagena,Piña AD2,AD2,621,0,2800,0
+2026-09-04,,R-18829,cartagena,Piña AD2,AD2,516,0,2800,0
+2026-09-04,,R-18829,cartagena,Piña AD2,AD2,290,29,2800,0
+2026-09-04,45916,R-18833,venta empleados,Piña AD1,AD1,290,0,2200,0
+2026-09-04,,R-18831,local sincelejo,piña special 2da,PE2,643,0,2600,0
+2026-09-04,,R-18831,local sincelejo,Piña AD2,AD2,519,338,2600,0
+2026-09-04,,R-18831,local sincelejo,Piña AD1,AD1,522,0,2800,0
+2026-09-04,,R-18831,local sincelejo,piña special 1ra,PE1,516,462,2800,0
+2026-09-04,,R-18831,local sincelejo,piña special 2da,PE2,498,0,2600,0
+2026-09-04,,R-18831,local sincelejo,piña special 2da,PE2,498,0,2600,0
+2026-09-04,,R-18831,local sincelejo,piña special 2da,PE2,202,0,2600,0
+2026-09-04,,R-18831,local sincelejo,Piña AD2,AD2,148,0,2600,0
+2026-09-04,,R-18831,local sincelejo,Piña AD2,AD2,125,0,2600,0
+2026-09-04,,R-18831,local sincelejo,piña special 2da,PE2,496,63,2600,0
+2026-09-04,,R-18831,local sincelejo,Piña AD1,AD1,370,0,2800,0
+2026-09-04,,R-18831,local sincelejo,Piña AD1,AD1,114,0,2800,0
+2026-09-04,,R-18831,local sincelejo,Piña AD1,AD1,596,0,2800,0
+2026-09-04,,R-18831,local sincelejo,piña special 1ra,PE1,150,0,2800,0
+2026-09-04,,R-18831,local sincelejo,,PE1,0,270,2800,0
+2026-09-04,,R-18831,local sincelejo,piña special 3ra,PE3,468,0,2200,0
+2026-09-04,,R-18831,local sincelejo,piña special 3ra,PE3,169,0,2200,0
+2026-09-04,,R-18831,local sincelejo,,PE3,0,412,2200,0
+2026-09-04,,R-18831,local sincelejo,piña special guapita,PEGUA,308,0,1800,0
+2026-09-04,,R-18831,local sincelejo,Piña ADGUA,ADGUA,184,0,1800,0
+2026-09-04,,R-18831,local sincelejo,piña special guapita,PEGUA,458,150,1800,0
+2026-09-04,45915,R-18830,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,369,0,800,0
+2026-09-04,45915,R-18830,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,291,0,800,0
+2026-09-04,45915,R-18830,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,446,0,800,12
+2026-09-04,45915,R-18830,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,108,0,800,0
+2026-09-04,45915,R-18830,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,531,0,800,0
+2026-09-04,45915,R-18830,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,521,0,800,0
+2026-09-04,45915,R-18830,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,157,0,800,0
