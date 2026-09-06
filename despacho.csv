@@ -18085,26 +18085,34 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-09-05,45920,R-18839,KARINA BORJA,piña special 3ra,PE3,80,0,900,0
 2026-09-05,45920,R-18839,KARINA BORJA,Piña AD3,AD3,70,0,900,0
 2026-09-05,45920,R-18839,KARINA BORJA,piña special 3ra,PE3,411,0,900,0
-2026-09-05,,,local medellin,piña special 1ra,PE1,576,0,,0
-2026-09-05,,,local medellin,piña special 1ra,PE1,573,351,,0
-2026-09-05,,,local medellin,piña special 2da,PE2,524,0,,0
-2026-09-05,,,local medellin,piña special 2da,PE2,514,0,,0
-2026-09-05,,,local medellin,piña special 2da,PE2,509,0,,0
-2026-09-05,,,local medellin,piña special 2da,PE2,521,0,,0
-2026-09-05,,,local medellin,piña special 2da,PE2,515,417,,0
-2026-09-05,,,local medellin,Piña AD1,AD1,160,0,,0
-2026-09-05,,,local medellin,Piña AD1,AD1,188,0,,0
-2026-09-05,,,local medellin,piña special 1ra,PE1,35,0,,0
-2026-09-05,,,local medellin,piña special 2da,PE2,491,0,,0
-2026-09-05,,,local medellin,piña special 2da,PE2,9,0,,0
-2026-09-05,,,local medellin,piña special 1ra,PE1,539,0,,0
-2026-09-05,,,local medellin,piña special 1ra,PE1,61,0,,0
-2026-09-05,,,local medellin,piña special 1ra,PE1,128,0,,0
-2026-09-05,,,local medellin,piña special 1ra,PE1,481,0,,0
-2026-09-05,,,local medellin,piña special 1ra,PE1,397,0,,0
-2026-09-05,,,local medellin,piña special 1ra,PE1,84,73,,0
+2026-09-05,,R-18840,local medellin,piña special 1ra,PE1,576,0,3200,0
+2026-09-05,,R-18840,local medellin,piña special 1ra,PE1,573,351,3200,0
+2026-09-05,,R-18840,local medellin,piña special 2da,PE2,524,0,3200,0
+2026-09-05,,R-18840,local medellin,piña special 2da,PE2,514,0,3200,0
+2026-09-05,,R-18840,local medellin,piña special 2da,PE2,509,0,3200,0
+2026-09-05,,R-18840,local medellin,piña special 2da,PE2,521,0,3200,0
+2026-09-05,,R-18840,local medellin,piña special 2da,PE2,515,417,3200,0
+2026-09-05,,R-18840,local medellin,Piña AD1,AD1,160,0,3200,0
+2026-09-05,,R-18840,local medellin,Piña AD1,AD1,188,0,3200,0
+2026-09-05,,R-18840,local medellin,piña special 1ra,PE1,35,0,3200,0
+2026-09-05,,R-18840,local medellin,piña special 2da,PE2,491,0,3000,0
+2026-09-05,,R-18840,local medellin,piña special 2da,PE2,9,0,3000,0
+2026-09-05,,R-18840,local medellin,piña special 1ra,PE1,539,0,3200,0
+2026-09-05,,R-18840,local medellin,piña special 1ra,PE1,61,0,3200,0
+2026-09-05,,R-18840,local medellin,piña special 1ra,PE1,128,0,3200,0
+2026-09-05,,R-18840,local medellin,piña special 1ra,PE1,481,0,3200,0
+2026-09-05,,R-18840,local medellin,piña special 1ra,PE1,397,0,3200,0
+2026-09-05,,R-18840,local medellin,piña special 1ra,PE1,84,0,3200,0
+2026-09-05,,R-18840,local medellin,piña special 1ra,PE1,73,0,3200,0
 2026-09-05,,,local medellin,piña special 1ra,PE1,534,466,,0
 2026-09-05,,,local medellin,piña special 1ra,PE1,231,0,,0
 2026-09-05,,,local medellin,piña special 1ra,PE1,21,0,,0
 2026-09-05,,,local medellin,piña special 1ra,PE1,524,0,,0
 2026-09-05,,,local medellin,piña special 1ra,PE1,569,0,,0
+2026-09-05,,,local medellin,piña special 1ra,PE1,564,0,,0
+2026-09-05,,,local medellin,piña special 1ra,PE1,560,0,,0
+2026-09-05,,,local medellin,piña special 1ra,PE1,545,0,,0
+2026-09-05,,,local medellin,piña special 1ra,PE1,564,0,,0
+2026-09-05,,,local medellin,piña special 1ra,PE1,566,0,,0
+2026-09-05,,,local medellin,piña special 1ra,PE1,565,0,,0
+2026-09-05,,,local medellin,piña special 1ra,PE1,543,0,,0
