@@ -18116,9 +18116,21 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-09-05,,,local medellin,piña special 1ra,PE1,566,0,,0
 2026-09-05,,,local medellin,piña special 1ra,PE1,565,0,,0
 2026-09-05,,,local medellin,piña special 1ra,PE1,543,0,,0
-2026-09-05,,,local sincelejo,piña special 2da,PE2,511,0,,0
-2026-09-05,,,local sincelejo,piña special 2da,PE2,510,0,,0
-2026-09-05,,,local sincelejo,piña special 2da,PE2,511,0,,0
-2026-09-05,,,local sincelejo,piña special 2da,PE2,468,0,,0
-2026-09-05,,,local sincelejo,piña special 1ra,PE1,509,491,,0
-2026-09-05,,,local sincelejo,piña special 3ra,PE3,496,0,,0
+2026-09-05,,,local sincelejo,piña special 2da,PE2,511,0,2600,0
+2026-09-05,,,local sincelejo,piña special 2da,PE2,510,0,2600,0
+2026-09-05,,,local sincelejo,piña special 2da,PE2,511,0,2600,0
+2026-09-05,,,local sincelejo,piña special 2da,PE2,468,0,2600,0
+2026-09-05,,,local sincelejo,piña special 1ra,PE1,509,491,2800,0
+2026-09-05,,,local sincelejo,piña special 3ra,PE3,496,0,2200,0
+2026-09-05,,,local sincelejo,piña special 3ra,PE3,504,0,,0
+2026-09-05,,,local sincelejo,piña special guapita,PEGUA,468,0,,0
+2026-09-05,,,local sincelejo,piña special guapita,PEGUA,488,0,,0
+2026-09-05,,,local sincelejo,piña special guapita,PEGUA,483,0,,0
+2026-09-05,,,local sincelejo,piña special guapita,PEGUA,484,77,,0
+2026-09-05,,,local sincelejo,Piña AD2,AD2,523,0,,0
+2026-09-05,,,local sincelejo,piña special 1ra,PE1,495,0,,0
+2026-09-05,,,local sincelejo,piña special 1ra,PE1,505,0,,0
+2026-09-05,,,local sincelejo,piña special 2da,PE2,546,0,,0
+2026-09-05,,,local sincelejo,piña special 2da,PE2,522,0,,0
+2026-09-05,,,local sincelejo,piña special 2da,PE2,513,0,,0
+2026-09-05,,,local sincelejo,piña special 2da,PE2,216,66,,0
