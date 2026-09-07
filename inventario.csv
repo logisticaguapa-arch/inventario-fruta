@@ -2,18 +2,14 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 201246,canastas,2026-09-05,PE1,piña special 1ra,1.5 - 2.5,25
 201311,canastas,2026-09-05,PE1,piña special 1ra,1.5 - 2.5,589
 201328,canastas,2026-09-05,AD1,Piña AD1,1.5 - 2.5,208
-201358,canastas,2026-09-06,PIND,piña indstria,1.5 - 2.5,477
 201362,canastas,2026-09-06,PE2,piña special 2da,3.0 - 4.0,21
 201379,canastas,2026-09-06,PE2,piña special 2da,3.0 - 4.0,513
-201382,canastas,2026-09-06,PIND,piña indstria,1.5 - 2.5,445
-201406,canastas,2026-09-06,PIND,piña indstria,1.5 - 2.5,497
 201408,canastas,2026-09-06,PE2,piña special 2da,3.0 - 4.0,520
-201416,canastas,2026-09-06,PIND,piña indstria,1.5 - 2.5,431
 201422,canastas,2026-09-06,PE2,piña special 2da,3.0 - 4.0,300
 201425,canastas,2026-09-06,AD-PIND,AD-piña indstria,1.5 - 2.5,60
 201429,canastas,2026-09-06,AD-PJUG,AD-piña jugos,3.0 - 4.0,132
 201430,canastas,2026-09-06,PEBAB,piña special baby,1.5 - 2.5,54
-201433,canastas,2026-09-06,PE2,piña special 2da,3.0 - 4.0,326
+201433,canastas,2026-09-06,PE2,piña special 2da,3.0 - 4.0,285
 201436,canastas,2026-09-06,PE2,piña special 2da,3.0 - 4.0,330
 201437,canastas,2026-09-06,AD-PJUG,AD-piña jugos,3.0 - 4.0,7
 201439,canastas,2026-09-07,PE1,piña special 1ra,1.5 - 2.5,587
@@ -43,27 +39,27 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 201465,canastas,2026-09-07,AD1,Piña AD1,0.0 - 1.0,584
 201466,canastas,2026-09-07,AD2,Piña AD2,0.0 - 1.0,537
 201467,canastas,2026-09-07,AD1,Piña AD1,0.0 - 1.0,566
-201468,canastas,2026-09-07,,,,0
-201469,canastas,2026-09-07,,,,0
-201470,canastas,2026-09-07,,,,0
-201471,,,,,,0
-201472,,,,,,0
-201473,,,,,,0
-201474,,,,,,0
-201475,,,,,,0
-201476,,,,,,0
-201477,,,,,,0
-201478,,,,,,0
-201479,,,,,,0
-201480,,,,,,0
-201481,,,,,,0
-201482,,,,,,0
-201483,,,,,,0
-201484,,,,,,0
-201485,,,,,,0
-201486,,,,,,0
-201487,,,,,,0
-201488,,,,,,0
+201468,canastas,2026-09-07,AD1,Piña AD1,0.0 - 1.0,587
+201469,canastas,2026-09-07,AD1,Piña AD1,0.0 - 1.0,411
+201470,canastas,2026-09-07,ADGUA,Piña ADGUA,1.5 - 2.5,131
+201471,canastas,2026-09-07,AD2,Piña AD2,0.0 - 1.0,672
+201472,canastas,2026-09-07,ADBABY,Piña ADBABY,1.5 - 2.5,10
+201473,canastas,2026-09-07,AD3,Piña AD3,0.0 - 1.0,286
+201474,canastas,2026-09-07,AD2,Piña AD2,3.0 - 4.0,64
+201475,canastas,2026-09-07,AD1,Piña AD1,0.0 - 1.0,554
+201476,canastas,2026-09-07,AD2,Piña AD2,1.5 - 2.5,68
+201477,canastas,2026-09-07,AD3,Piña AD3,3.0 - 4.0,21
+201478,canastas,2026-09-07,,,,192
+201479,canastas,2026-09-07,,,,0
+201480,canastas,2026-09-07,,,,0
+201481,canastas,2026-09-07,,,,0
+201482,canastas,2026-09-07,,,,0
+201483,canastas,2026-09-07,,,,0
+201484,canastas,2026-09-07,,,,0
+201485,canastas,2026-09-07,,,,0
+201486,canastas,2026-09-07,,,,0
+201487,canastas,2026-09-07,,,,0
+201488,canastas,2026-09-07,,,,0
 201489,,,,,,0
 201490,,,,,,0
 201491,,,,,,0
