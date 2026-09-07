@@ -18278,18 +18278,21 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-09-07,,R-18854,local medellin,piña special 3ra,PE3,481,0,2800,0
 2026-09-07,,R-18854,local medellin,piña special 3ra,PE3,103,0,2800,0
 2026-09-07,,R-18854,local medellin,piña special 3ra,PE3,30,0,2800,0
-2026-09-07,,,Andres Garcia,piña special 1ra,PE1,187,0,3000,0
-2026-09-07,,,Andres Garcia,piña special 1ra,PE1,546,0,3000,0
-2026-09-07,,,Andres Garcia,piña special 1ra,PE1,527,0,3000,0
-2026-09-07,,,Andres Garcia,piña special 1ra,PE1,515,0,3000,0
-2026-09-07,,,Andres Garcia,piña special 1ra,PE1,227,0,3000,0
-2026-09-07,,,Andres Garcia,piña special 1ra,PE1,47,0,3000,0
-2026-09-07,,,Andres Garcia,piña special 1ra,PE1,78,0,3000,0
-2026-09-07,,,Andres Garcia,piña special 2da,PE2,520,0,2800,0
-2026-09-07,,,Andres Garcia,piña special 2da,PE2,515,0,2800,0
-2026-09-07,,,Andres Garcia,piña special 2da,PE2,514,0,2800,0
-2026-09-07,,,Andres Garcia,piña special 2da,PE2,491,41,,12
+2026-09-07,,R-18855,Andres Garcia,piña special 1ra,PE1,187,0,3000,0
+2026-09-07,,R-18855,Andres Garcia,piña special 1ra,PE1,546,0,3000,0
+2026-09-07,,R-18855,Andres Garcia,piña special 1ra,PE1,527,0,3000,0
+2026-09-07,,R-18855,Andres Garcia,piña special 1ra,PE1,515,0,3000,0
+2026-09-07,,R-18855,Andres Garcia,piña special 1ra,PE1,227,0,3000,0
+2026-09-07,,R-18855,Andres Garcia,piña special 1ra,PE1,47,0,3000,0
+2026-09-07,,R-18855,Andres Garcia,piña special 1ra,PE1,78,0,3000,0
+2026-09-07,,R-18855,Andres Garcia,piña special 2da,PE2,520,0,2800,0
+2026-09-07,,R-18855,Andres Garcia,piña special 2da,PE2,515,0,2800,0
+2026-09-07,,R-18855,Andres Garcia,piña special 2da,PE2,514,0,2800,0
+2026-09-07,,R-18855,Andres Garcia,piña special 2da,PE2,491,41,2800,12
 2026-09-07,,,Aldinsen Gonzalez,piña indstria,PIND,427,0,,0
 2026-09-07,,,Aldinsen Gonzalez,piña indstria,PIND,495,0,,0
 2026-09-07,,,Aldinsen Gonzalez,piña indstria,PIND,443,0,,0
 2026-09-07,,,Aldinsen Gonzalez,piña indstria,PIND,475,0,,0
+2026-09-07,,,Aldinsen Gonzalez,AD-piña indstria,AD-PIND,59,11,,0
+2026-09-07,,,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,131,0,,0
+2026-09-07,,,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,7,0,,0

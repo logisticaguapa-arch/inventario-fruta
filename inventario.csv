@@ -6,18 +6,15 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 201379,canastas,2026-09-06,PE2,piña special 2da,3.0 - 4.0,513
 201408,canastas,2026-09-06,PE2,piña special 2da,3.0 - 4.0,520
 201422,canastas,2026-09-06,PE2,piña special 2da,3.0 - 4.0,300
-201425,canastas,2026-09-06,AD-PIND,AD-piña indstria,1.5 - 2.5,60
-201429,canastas,2026-09-06,AD-PJUG,AD-piña jugos,3.0 - 4.0,132
 201430,canastas,2026-09-06,PEBAB,piña special baby,1.5 - 2.5,54
 201433,canastas,2026-09-06,PE2,piña special 2da,3.0 - 4.0,285
 201436,canastas,2026-09-06,PE2,piña special 2da,3.0 - 4.0,330
-201437,canastas,2026-09-06,AD-PJUG,AD-piña jugos,3.0 - 4.0,7
 201439,canastas,2026-09-07,PE1,piña special 1ra,1.5 - 2.5,587
 201440,canastas,2026-09-07,PE1,piña special 1ra,1.5 - 2.5,588
 201441,canastas,2026-09-07,PEGUA,piña special guapita,1.5 - 2.5,478
 201442,canastas,2026-09-07,PE1,piña special 1ra,1.5 - 2.5,590
 201443,canastas,2026-09-07,PE1,piña special 1ra,3.0 - 4.0,575
-201444,canastas,2026-09-07,PIND,piña indstria,1.5 - 2.5,514
+201444,canastas,2026-09-07,PIND,piña indstria,1.5 - 2.5,503
 201445,canastas,2026-09-07,PE2,piña special 2da,1.5 - 2.5,526
 201446,canastas,2026-09-07,PE1,piña special 1ra,1.5 - 2.5,579
 201447,canastas,2026-09-07,PE1,piña special 1ra,1.5 - 2.5,623
@@ -49,13 +46,13 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 201475,canastas,2026-09-07,AD1,Piña AD1,0.0 - 1.0,554
 201476,canastas,2026-09-07,AD2,Piña AD2,1.5 - 2.5,68
 201477,canastas,2026-09-07,AD3,Piña AD3,3.0 - 4.0,21
-201478,canastas,2026-09-07,,,,192
-201479,canastas,2026-09-07,,,,0
-201480,canastas,2026-09-07,,,,0
-201481,canastas,2026-09-07,,,,0
-201482,canastas,2026-09-07,,,,0
-201483,canastas,2026-09-07,,,,0
-201484,canastas,2026-09-07,,,,0
+201478,canastas,2026-09-07,AD1,Piña AD1,1.5 - 2.5,192
+201479,canastas,2026-09-07,AD1,Piña AD1,3.0 - 4.0,161
+201480,canastas,2026-09-07,AD3,Piña AD3,1.5 - 2.5,14
+201481,canastas,2026-09-07,AD-PIND,AD-piña indstria,1.5 - 2.5,164
+201482,canastas,2026-09-07,AD2,Piña AD2,0.0 - 1.0,139
+201483,canastas,2026-09-07,AD-PJUG,AD-piña jugos,3.0 - 4.0,238
+201484,canastas,2026-09-07,AD-PJUG,AD-piña jugos,3.0 - 4.0,67
 201485,canastas,2026-09-07,,,,0
 201486,canastas,2026-09-07,,,,0
 201487,canastas,2026-09-07,,,,0
