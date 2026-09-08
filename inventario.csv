@@ -1,7 +1,4 @@
 ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
-201246,canastas,2026-09-05,PE1,piña special 1ra,1.5 - 2.5,25
-201311,canastas,2026-09-05,PE1,piña special 1ra,1.5 - 2.5,589
-201328,canastas,2026-09-05,AD1,Piña AD1,1.5 - 2.5,208
 201362,canastas,2026-09-06,PE2,piña special 2da,3.0 - 4.0,21
 201379,canastas,2026-09-06,PE2,piña special 2da,3.0 - 4.0,513
 201408,canastas,2026-09-06,PE2,piña special 2da,3.0 - 4.0,520
@@ -9,14 +6,12 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 201430,canastas,2026-09-06,PEBAB,piña special baby,1.5 - 2.5,54
 201433,canastas,2026-09-06,PE2,piña special 2da,3.0 - 4.0,285
 201436,canastas,2026-09-06,PE2,piña special 2da,3.0 - 4.0,330
-201439,canastas,2026-09-07,PE1,piña special 1ra,1.5 - 2.5,587
-201440,canastas,2026-09-07,PE1,piña special 1ra,1.5 - 2.5,588
 201443,canastas,2026-09-07,PE1,piña special 1ra,3.0 - 4.0,575
 201444,canastas,2026-09-07,PIND,piña indstria,1.5 - 2.5,503
 201445,canastas,2026-09-07,PE2,piña special 2da,1.5 - 2.5,526
 201446,canastas,2026-09-07,PE1,piña special 1ra,1.5 - 2.5,251
 201447,canastas,2026-09-07,PE1,piña special 1ra,1.5 - 2.5,623
-201449,canastas,2026-09-07,PE1,piña special 1ra,1.5 - 2.5,640
+201449,canastas,2026-09-07,PE1,piña special 1ra,1.5 - 2.5,285
 201450,canastas,2026-09-07,PE3,piña special 3ra,1.5 - 2.5,492
 201451,canastas,2026-09-07,PE3,piña special 3ra,3.0 - 4.0,185
 201453,canastas,2026-09-07,PE1,piña special 1ra,1.5 - 2.5,582
@@ -30,11 +25,10 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 201462,canastas,2026-09-07,PIND,piña indstria,1.5 - 2.5,398
 201463,canastas,2026-09-07,PE3,piña special 3ra,0.0 - 1.0,124
 201465,canastas,2026-09-07,AD1,Piña AD1,0.0 - 1.0,584
-201466,canastas,2026-09-07,AD2,Piña AD2,0.0 - 1.0,537
+201466,canastas,2026-09-07,AD2,Piña AD2,0.0 - 1.0,190
 201468,canastas,2026-09-07,AD1,Piña AD1,0.0 - 1.0,84
 201469,canastas,2026-09-07,AD1,Piña AD1,0.0 - 1.0,411
 201470,canastas,2026-09-07,ADGUA,Piña ADGUA,1.5 - 2.5,117
-201471,canastas,2026-09-07,AD2,Piña AD2,0.0 - 1.0,672
 201472,canastas,2026-09-07,ADBABY,Piña ADBABY,1.5 - 2.5,10
 201473,canastas,2026-09-07,AD3,Piña AD3,0.0 - 1.0,286
 201474,canastas,2026-09-07,AD2,Piña AD2,3.0 - 4.0,64
