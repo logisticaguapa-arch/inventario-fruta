@@ -81,8 +81,8 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 201568,canastas,2026-09-09,PE1,piña special 1ra,0.0 - 1.0,137
 201569,canastas,2026-09-09,PE1,piña special 1ra,3.0 - 4.0,98
 201570,canastas,2026-09-09,AD-PIND,AD-piña indstria,1.5 - 2.5,125
-201571,canastas,2026-09-09,,,,0
-201572,canastas,2026-09-09,,,,0
+201571,canastas,2026-09-09,AD1,Piña AD1,1.5 - 2.5,313
+201572,canastas,2026-09-09,ADGUA,Piña ADGUA,1.5 - 2.5,77
 201573,canastas,2026-09-09,,,,0
 201574,canastas,2026-09-09,,,,0
 201575,canastas,2026-09-09,,,,0
