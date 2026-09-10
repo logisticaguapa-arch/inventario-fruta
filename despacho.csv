@@ -18415,14 +18415,15 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-09-09,45970,R-18866,KARINA BORJA,AD-piña jugos,AD-PJUG,196,0,1000,0
 2026-09-09,45970,R-18866,KARINA BORJA,AD-piña jugos,AD-PJUG,239,0,1000,0
 2026-09-09,45970,R-18866,KARINA BORJA,AD-piña jugos,AD-PJUG,504,0,1000,2
-2026-09-10,,,local apartado,Piña AD1,AD1,563,0,,0
-2026-09-10,,,local apartado,piña special 1ra,PE1,357,0,,4
-2026-09-10,,,local apartado,Piña AD1,AD1,188,0,,0
-2026-09-10,,,local apartado,piña special 1ra,PE1,73,0,,0
-2026-09-10,,,local apartado,piña special 2da,PE2,516,0,,0
-2026-09-10,,,local apartado,piña special 2da,PE2,197,0,,1
-2026-09-10,,,local apartado,Piña AD2,AD2,450,0,,1
-2026-09-10,,,local apartado,piña special 2da,PE2,269,0,,0
-2026-09-10,,,local apartado,Piña AD2,AD2,8,0,,0
-2026-09-10,,,local apartado,piña special 2da,PE2,47,0,,0
-2026-09-10,,,local apartado,Piña ADGUA,ADGUA,198,0,,0
+2026-09-10,,R-18867,local apartado,Piña AD1,AD1,563,0,,0
+2026-09-10,,R-18867,local apartado,piña special 1ra,PE1,357,0,,4
+2026-09-10,,R-18867,local apartado,Piña AD1,AD1,188,0,,0
+2026-09-10,,R-18867,local apartado,piña special 1ra,PE1,73,0,,0
+2026-09-10,,R-18867,local apartado,piña special 2da,PE2,516,0,,0
+2026-09-10,,R-18867,local apartado,piña special 2da,PE2,197,0,,1
+2026-09-10,,R-18867,local apartado,Piña AD2,AD2,450,0,,1
+2026-09-10,,R-18867,local apartado,piña special 2da,PE2,269,0,,0
+2026-09-10,,R-18867,local apartado,Piña AD2,AD2,8,0,,0
+2026-09-10,,R-18867,local apartado,piña special 2da,PE2,47,0,,0
+2026-09-10,,R-18867,local apartado,,PE1,0,300,,0
+2026-09-10,,R-18867,local apartado,Piña ADGUA,ADGUA,198,0,,0
