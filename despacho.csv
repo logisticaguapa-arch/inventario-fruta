@@ -18352,7 +18352,47 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-09-08,45947,R-18860,Aldinsen Gonzalez,piña indstria,PIND,398,0,1000,0
 2026-09-08,45947,R-18860,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,67,0,800,0
 2026-09-08,45947,R-18860,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,235,0,800,0
-2026-09-09,,,local apartado,piña special 2da,PE2,528,472,,0
-2026-09-09,,,local apartado,piña special 1ra,PE1,559,0,,0
-2026-09-09,,,local apartado,piña special 1ra,PE1,591,0,,0
-2026-09-09,,,local apartado,piña special 1ra,PE1,546,304,,0
+2026-09-09,,R-18861,local apartado,piña special 2da,PE2,528,472,3000,0
+2026-09-09,,R-18861,local apartado,piña special 1ra,PE1,559,0,3200,0
+2026-09-09,,R-18861,local apartado,piña special 1ra,PE1,591,0,3200,0
+2026-09-09,,R-18861,local apartado,piña special 1ra,PE1,546,304,3200,0
+2026-09-09,,R-18862,cartagena,piña special 1ra,PE1,586,0,3000,8
+2026-09-09,,R-18862,cartagena,piña special 1ra,PE1,573,0,3000,0
+2026-09-09,,R-18862,cartagena,piña special 1ra,PE1,595,0,3000,0
+2026-09-09,,R-18862,cartagena,piña special 1ra,PE1,594,0,3000,0
+2026-09-09,,R-18862,cartagena,piña special 1ra,PE1,568,0,3000,0
+2026-09-09,,R-18862,cartagena,Piña AD1,AD1,419,368,3000,0
+2026-09-09,,R-18862,cartagena,piña special 2da,PE2,523,48,2800,1
+2026-09-09,,R-18862,cartagena,piña special 1ra,PE1,527,0,3000,8
+2026-09-09,,R-18862,cartagena,piña special 1ra,PE1,585,0,3000,0
+2026-09-09,,R-18862,cartagena,piña special 1ra,PE1,568,320,3000,0
+2026-09-09,,R-18863,local sincelejo,,pe1,0,500,2800,0
+2026-09-09,,R-18863,local sincelejo,piña special 1ra,PE1,546,0,2800,8
+2026-09-09,,R-18863,local sincelejo,Piña AD1,AD1,554,0,2800,0
+2026-09-09,,R-18863,local sincelejo,piña special 1ra,PE1,593,307,2800,0
+2026-09-09,,R-18863,local sincelejo,piña special 2da,PE2,514,0,2600,6
+2026-09-09,,R-18863,local sincelejo,Piña AD2,AD2,526,525,2600,0
+2026-09-09,,R-18863,local sincelejo,Piña AD3,AD3,395,0,2200,0
+2026-09-09,,R-18863,local sincelejo,piña special guapita,PEGUA,478,0,1700,3
+2026-09-09,,R-18863,local sincelejo,piña special guapita,PEGUA,488,0,1700,0
+2026-09-09,,R-18863,local sincelejo,piña special guapita,PEGUA,498,0,1700,0
+2026-09-09,,R-18863,local sincelejo,piña special guapita,PEGUA,241,0,1700,0
+2026-09-09,,R-18863,local sincelejo,piña special baby,PEBAB,363,0,1200,0
+2026-09-09,,R-18863,local sincelejo,piña special baby,PEBAB,12,0,1200,0
+2026-09-09,,,local medellin,piña special 2da,PE2,74,0,3000,0
+2026-09-09,,,local medellin,Piña AD1,AD1,510,0,3200,4
+2026-09-09,,,local medellin,Piña AD1,AD1,98,0,3200,0
+2026-09-09,,,local medellin,piña special 1ra,PE1,255,0,3200,0
+2026-09-09,,,local medellin,piña special 1ra,PE1,137,0,3200,0
+2026-09-09,,,local medellin,piña special 1ra,PE1,506,0,3200,4
+2026-09-09,,,local medellin,piña special 1ra,PE1,451,5,3200,0
+2026-09-09,,,local medellin,piña special 2da,PE2,517,483,3000,4
+2026-09-09,,,local medellin,piña special 1ra,PE1,565,0,3200,10
+2026-09-09,,,local medellin,piña special 1ra,PE1,564,0,3200,0
+2026-09-09,,,local medellin,piña special 1ra,PE1,531,0,3200,0
+2026-09-09,,,local medellin,piña special 1ra,PE1,590,0,3200,0
+2026-09-09,,,local medellin,piña special 1ra,PE1,542,0,3200,0
+2026-09-09,,,local medellin,piña special 1ra,PE1,515,0,3200,0
+2026-09-09,,,local medellin,piña special 1ra,PE1,543,0,3200,0
+2026-09-09,,,local medellin,piña special 1ra,PE1,560,0,3200,0
+2026-09-09,,,local medellin,piña special 1ra,PE1,558,32,3200,0
