@@ -37,8 +37,22 @@ jobs:
       - name: Descargar y procesar Excel
         run: |
           python3 << 'EOF'
-          import warnings, requests, openpyxl, io
+          import warnings, requests, openpyxl, io, datetime
           warnings.filterwarnings("ignore", category=UserWarning, module="openpyxl")
+
+          MESES_ES = ["", "enero","febrero","marzo","abril","mayo","junio","julio",
+                      "agosto","septiembre","octubre","noviembre","diciembre"]
+          def semana_mes_anio(fecha_str):
+              # Semana ISO 8601 / mes en español / año -- calculados a partir de una
+              # fecha "YYYY-MM-DD". Se usan con la fecha de DESPACHO, porque esa hoja
+              # no trae estas columnas ya calculadas como si las trae Proceso.
+              try:
+                  y, m, d = fecha_str.split("-")[:3]
+                  dt = datetime.date(int(y), int(m), int(d))
+                  _, semana_iso, _ = dt.isocalendar()
+                  return str(semana_iso), MESES_ES[dt.month], str(dt.year)
+              except Exception:
+                  return "", "", ""
 
           import time
           # &nocache=<timestamp>: evita que SharePoint/CDN entregue una copia
@@ -58,6 +72,13 @@ jobs:
           # procesado.csv con la columna I (Neto) -- ver mas abajo, tras el bucle --
           ws_proc = wb["Proceso"]
           bin_map = {}
+          # -- proceso_info: por ID, los datos que "Descarte" necesita tomar de
+          # Proceso (Motivo descarte, Bin, Grupo, Lote, Bruto, Tara, Neto, Calidad).
+          # La FECHA de ese reporte NO sale de aqui -- sale de Despacho (ver mas abajo),
+          # porque el usuario confirmo que el descarte se debe reportar con la fecha
+          # en que se DESPACHO, no con la fecha en que se PROCESO (pueden ser dias
+          # distintos, y el total diario real esta en Despacho, no en Proceso). --
+          proceso_info = {}
           # -- "Inventario procesado": TODO lo que entro a Proceso (col I - Neto,
           # col P - Grupo), sin importar si ya tiene despacho final o no (col O) --
           # a diferencia de la hoja Inventario, que solo trae lo que sigue
@@ -68,54 +89,38 @@ jobs:
           # Grupo ahora es P).
           csv3 = "Fecha,Calidad,Calibre,Grupo,Neto\n"
           n3 = 0
-          # -- "Descarte": una fila por cada registro de Proceso que SI tuvo
-          # descarte (col L - Kilos de descarte > 0), con el motivo (col M,
-          # nueva) y los demas datos para armar el reporte tal como lo pide
-          # el usuario (Año/Semana/Mes/Fecha/Grupo/Lote/Bin/Bruto/Tara/Neto/
-          # Kilos descarte/Motivo/Calidad -- Area y Lugar de descarte son
-          # siempre fijos "POSTCOSECHA"/"DESPACHOS" y se agregan en el tablero). --
-          csv4 = "Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad\n"
-          n4 = 0
           for row in ws_proc.iter_rows(min_row=2, values_only=True):
               id_val  = row[0]   # Col A - ID
               bin_val = row[1]   # Col B - Bin
               bin_str = str(bin_val or "").strip()
-              if id_val:
-                  bin_map[str(id_val).strip()] = bin_str
+              id_str  = str(id_val).strip() if id_val else ""
+              if id_str:
+                  bin_map[id_str] = bin_str
 
               fecha_p   = str(row[2])[:10] if len(row) > 2 and row[2] else ""      # Col C - Fecha
               calidad_p = str(row[3] or "").replace(",", " ").strip() if len(row) > 3 else ""  # Col D - Calidad
               calibre_p = ("" if len(row) <= 5 or row[5] is None else str(row[5])).replace(",", ".")  # Col F - Calibre
+              bruto_p   = row[6] if len(row) > 6 and row[6] is not None else 0   # Col G - BRUTO
+              tara_p    = row[7] if len(row) > 7 and row[7] is not None else 0   # Col H - TARA
               neto_p    = row[8] if len(row) > 8 and row[8] is not None else None  # Col I - Neto
+              motivo_p  = str(row[12] or "").replace(",", " ").strip() if len(row) > 12 else ""  # Col M - Motivo descarte
               grupo_p   = str(row[15] or "").replace(",", " ").strip() if len(row) > 15 else ""  # Col P - Grupo
+              lote_p    = str(row[17] or "").replace(",", " ").strip() if len(row) > 17 else ""  # Col R - Lote
               if id_val and fecha_p and calidad_p and neto_p is not None:
                   csv3 += f"{fecha_p},{calidad_p},{calibre_p},{grupo_p},{neto_p}\n"
                   n3 += 1
 
-              descarte_kg = row[11] if len(row) > 11 and row[11] is not None else 0  # Col L - Kilos de descarte
-              try:
-                  descarte_kg_num = float(descarte_kg)
-              except (TypeError, ValueError):
-                  descarte_kg_num = 0
-              if id_val and fecha_p and descarte_kg_num > 0:
-                  motivo_p = str(row[12] or "").replace(",", " ").strip() if len(row) > 12 else ""  # Col M - Motivo descarte
-                  bruto_p  = row[6] if len(row) > 6 and row[6] is not None else 0   # Col G - BRUTO
-                  tara_p   = row[7] if len(row) > 7 and row[7] is not None else 0   # Col H - TARA
-                  lote_p   = str(row[17] or "").replace(",", " ").strip() if len(row) > 17 else ""  # Col R - Lote
-                  semana_p = str(row[18] or "").replace(",", " ").strip() if len(row) > 18 else ""  # Col S - Semana
-                  mes_p    = str(row[19] or "").replace(",", " ").strip() if len(row) > 19 else ""  # Col T - mes
-                  anio_p   = str(row[20] or "").replace(",", " ").strip() if len(row) > 20 else ""  # Col U - año
-                  csv4 += f"{anio_p},{semana_p},{mes_p},{fecha_p},{grupo_p},{lote_p},{bin_str},{bruto_p},{tara_p},{neto_p},{descarte_kg_num},{motivo_p},{calidad_p}\n"
-                  n4 += 1
+              if id_str:
+                  proceso_info[id_str] = {
+                      "motivo": motivo_p, "bin": bin_str, "grupo": grupo_p, "lote": lote_p,
+                      "bruto": bruto_p, "tara": tara_p, "neto": neto_p if neto_p is not None else 0,
+                      "calidad": calidad_p,
+                  }
 
           with open("procesado.csv", "w", encoding="utf-8") as f:
               f.write(csv3)
           print(f"procesado.csv generado: {n3} registros")
           print(f"IDs en Proceso: {len(bin_map)}")
-
-          with open("descarte.csv", "w", encoding="utf-8") as f:
-              f.write(csv4)
-          print(f"descarte.csv generado: {n4} registros")
 
           # Leer hoja Inventario
           ws_inv = wb["Inventario"]
@@ -152,6 +157,12 @@ jobs:
           csv2 = "FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKilos,Precio,KilosDescarte\n"
           n2 = 0
           fechas_vistas = []
+          # -- "Descarte": una fila por cada linea de Despacho que SI tuvo descarte
+          # (col M - Kilos de descarte > 0), con la fecha REAL de despacho (no la de
+          # Proceso), y el Motivo/Bin/Grupo/Lote/Bruto/Tara/Neto cruzados por ID
+          # desde proceso_info (armado arriba, hoja Proceso). --
+          csv4 = "Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad\n"
+          n4 = 0
           for row in ws_desp.iter_rows(min_row=2, values_only=True):
               id_val = row[2]        # Col C - ID (vacio en filas que son solo una reposicion adicional)
               remision_val = row[23] if len(row) > 23 else None  # Col X - Remision
@@ -175,11 +186,35 @@ jobs:
               csv2 += f"{fecha_desp},{factura},{remision},{cliente},{categoria},{calibre},{kilos},{reposicion},{precio},{descarte}\n"
               n2 += 1
 
+              try:
+                  descarte_num = float(descarte)
+              except (TypeError, ValueError):
+                  descarte_num = 0
+              if descarte_num > 0 and fecha_desp:
+                  sem_d, mes_d, anio_d = semana_mes_anio(fecha_desp)
+                  id_str = str(id_val).strip() if id_val else ""
+                  info = proceso_info.get(id_str, {})
+                  motivo_d  = info.get("motivo", "")
+                  bin_d     = info.get("bin", "")
+                  grupo_d   = info.get("grupo", "")
+                  lote_d    = info.get("lote", "")
+                  bruto_d   = info.get("bruto", 0)
+                  tara_d    = info.get("tara", 0)
+                  neto_d    = info.get("neto", 0)
+                  calidad_d = info.get("calidad", "")
+                  csv4 += f"{anio_d},{sem_d},{mes_d},{fecha_desp},{grupo_d},{lote_d},{bin_d},{bruto_d},{tara_d},{neto_d},{descarte_num},{motivo_d},{calidad_d}\n"
+                  n4 += 1
+
           with open("despacho.csv", "w", encoding="utf-8") as f:
               f.write(csv2)
           print(f"despacho.csv generado: {n2} registros")
           if fechas_vistas:
               print(f"Rango de fechas despacho: {min(fechas_vistas)} a {max(fechas_vistas)}")
+
+          with open("descarte.csv", "w", encoding="utf-8") as f:
+              f.write(csv4)
+          print(f"descarte.csv generado: {n4} registros (con fecha de despacho)")
+
           wb.close()
           EOF
 
