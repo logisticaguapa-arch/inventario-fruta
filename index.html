@@ -451,6 +451,22 @@ function fmtF(f){
   const M=['','Ene','Feb','Mar','Abr','May','Jun','Jul','Ago','Sep','Oct','Nov','Dic'];
   return parseInt(d)+' '+M[parseInt(m)]+' '+y;
 }
+// -- Fecha en formato DD/MM/AAAA completo (dia, mes y año en numeros) -- se usa
+// en Descarte para que al copiar/pegar la tabla en otra hoja de Excel, la fecha
+// se reconozca como fecha real y no como texto (el formato "1 Sep 2026" no
+// se pega bien en Excel) --
+function fmtFechaCompleta(f){
+  if(!f) return '';
+  let y,m,d;
+  if(f.includes('/')){
+    [d,m,y]=f.split('/');
+  } else {
+    [y,m,d]=f.split('-');
+  }
+  const dd=String(parseInt(d)).padStart(2,'0');
+  const mm=String(parseInt(m)).padStart(2,'0');
+  return dd+'/'+mm+'/'+y;
+}
 
 let ALL=[],DESPACHO=[],PROCESADO=[],DESCARTE=[],currentView='tarjetas';
 // -- Clasificacion Floracion / Induccion segun Calidad (columna D de Proceso) --
@@ -1676,7 +1692,7 @@ function exportPDFFacturacion(){
 
 // -- Exportar Descarte (Excel / PDF): mismo formato exacto de la tabla en
 // pantalla, para que se pueda pegar directo en otra hoja --
-const DESC_EXPORT_HEADERS=['Año','Semana','Mes','Fecha','Grupo de forza','Lote','Bin','Peso bruto','Tara','Peso neto','Peso neto variable','Motivo de descarte','Área','Lugar de descarte','Cosecha'];
+const DESC_EXPORT_HEADERS=['Año','Semana','Mes','Fecha','Tipo de cosecha','Grupo de forza','Lote','Bin','Peso bruto','Tara','Peso neto','Motivo de descarte','Área','Lugar de descarte'];
 
 function ordenarDescarte(data){
   return data.slice().sort(function(a,b){
@@ -1688,12 +1704,12 @@ function ordenarDescarte(data){
 
 function construirFilasExportDescarte(data){
   const filas=ordenarDescarte(data).map(function(r){
-    return [r.Anio,r.Semana,r.Mes,fmtF(r.Fecha),r.Grupo,r.Lote,r.Bin,
-      Math.round(r.Bruto),fmtNumOrBlank(r.Tara),Math.round(r.Neto),Math.round(r.DescarteKg),
-      r.Motivo,'POSTCOSECHA','DESPACHOS',getCosecha(r.Calidad)];
+    return [r.Anio,r.Semana,r.Mes,fmtFechaCompleta(r.Fecha),getCosecha(r.Calidad),r.Grupo,r.Lote,r.Bin,
+      Math.round(r.Bruto),fmtNumOrBlank(r.Tara),Math.round(r.Neto),
+      r.Motivo,'POSTCOSECHA','DESPACHOS'];
   });
   let total=0; data.forEach(function(r){total+=r.DescarteKg||0;});
-  filas.push(['','','','','','','','','','',Math.round(total),'TOTAL GENERAL','','','']);
+  filas.push(['','','','','','','','','','',Math.round(total),'TOTAL GENERAL','','']);
   return filas;
 }
 
@@ -1759,23 +1775,23 @@ function renderDescarte(data){
 
   html+='<table class="ftable"><thead><tr>'
     +'<th class="left">Año</th><th class="left">Semana</th><th class="left">Mes</th><th class="left">Fecha</th>'
-    +'<th class="left">Grupo de forza</th><th class="left">Lote</th><th class="left">Bin</th>'
-    +'<th>Peso bruto</th><th>Tara</th><th>Peso neto</th><th>Peso neto variable</th>'
-    +'<th class="left">Motivo de descarte</th><th class="left">Área</th><th class="left">Lugar de descarte</th><th class="left">Cosecha</th>'
+    +'<th class="left">Tipo de cosecha</th><th class="left">Grupo de forza</th><th class="left">Lote</th><th class="left">Bin</th>'
+    +'<th>Peso bruto</th><th>Tara</th><th>Peso neto</th>'
+    +'<th class="left">Motivo de descarte</th><th class="left">Área</th><th class="left">Lugar de descarte</th>'
     +'</tr></thead><tbody>';
   filas.forEach(function(r){
     const cosecha=getCosecha(r.Calidad);
     const badgeClass=cosecha==='FLORACION'?'desc-cosecha-flor':'desc-cosecha-ind';
     html+='<tr>'
-      +'<td class="left">'+r.Anio+'</td><td class="left">'+r.Semana+'</td><td class="left">'+r.Mes+'</td><td class="left">'+fmtF(r.Fecha)+'</td>'
+      +'<td class="left">'+r.Anio+'</td><td class="left">'+r.Semana+'</td><td class="left">'+r.Mes+'</td><td class="left">'+fmtFechaCompleta(r.Fecha)+'</td>'
+      +'<td class="left"><span class="desc-cosecha-badge '+badgeClass+'">'+cosecha+'</span></td>'
       +'<td class="left">'+(r.Grupo||'')+'</td><td class="left">'+(r.Lote||'')+'</td><td class="left">'+(r.Bin||'')+'</td>'
       +'<td>'+Math.round(r.Bruto).toLocaleString('es-CO')+'</td><td>'+fmtNumOrBlank(r.Tara)+'</td>'
-      +'<td>'+Math.round(r.Neto).toLocaleString('es-CO')+'</td><td>'+Math.round(r.DescarteKg).toLocaleString('es-CO')+'</td>'
+      +'<td>'+Math.round(r.Neto).toLocaleString('es-CO')+'</td>'
       +'<td class="left">'+(r.Motivo||'')+'</td><td class="left">POSTCOSECHA</td><td class="left">DESPACHOS</td>'
-      +'<td class="left"><span class="desc-cosecha-badge '+badgeClass+'">'+cosecha+'</span></td>'
       +'</tr>';
   });
-  html+='<tr class="ftotal-row"><td class="left" colspan="10">TOTAL GENERAL</td><td>'+Math.round(totalKg).toLocaleString('es-CO')+'</td><td class="left" colspan="4"></td></tr>';
+  html+='<tr class="ftotal-row"><td class="left" colspan="10">TOTAL GENERAL</td><td>'+Math.round(totalKg).toLocaleString('es-CO')+'</td><td class="left" colspan="3"></td></tr>';
   html+='</tbody></table>';
   el.innerHTML=html;
 }
