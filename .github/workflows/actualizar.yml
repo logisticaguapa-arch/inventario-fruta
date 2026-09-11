@@ -198,10 +198,13 @@ jobs:
                   bin_d     = info.get("bin", "")
                   grupo_d   = info.get("grupo", "")
                   lote_d    = info.get("lote", "")
-                  bruto_d   = info.get("bruto", 0)
-                  tara_d    = info.get("tara", 0)
-                  neto_d    = info.get("neto", 0)
                   calidad_d = info.get("calidad", "")
+                  # Peso bruto, Peso neto y Peso neto variable van todos con el mismo
+                  # valor: los Kilos de descarte reales de esta linea de Despacho.
+                  # Tara se deja vacia (no aplica en este reporte).
+                  bruto_d   = descarte_num
+                  tara_d    = ""
+                  neto_d    = descarte_num
                   csv4 += f"{anio_d},{sem_d},{mes_d},{fecha_desp},{grupo_d},{lote_d},{bin_d},{bruto_d},{tara_d},{neto_d},{descarte_num},{motivo_d},{calidad_d}\n"
                   n4 += 1
 
