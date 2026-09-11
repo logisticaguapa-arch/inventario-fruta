@@ -459,6 +459,11 @@ function getCosecha(calidad){
   return COSECHA_FLORACION.has(String(calidad||'').trim().toUpperCase()) ? 'FLORACION' : 'INDUCCION';
 }
 const DESC_COLORES=['#dc2626','#ea580c','#d97706','#65a30d','#0891b2','#2563eb','#7c3aed','#db2777','#059669','#9333ea','#b91c1c','#0e7490'];
+// -- Tara en Descarte se deja siempre en blanco (no aplica en este reporte) --
+function fmtNumOrBlank(v){
+  if(v===''||v===null||v===undefined) return '';
+  return Math.round(v).toLocaleString('es-CO');
+}
 
 async function load(){
   try{
@@ -525,8 +530,11 @@ function parseDescarteCSV(t){
       Grupo:(v[4]||'').trim(),
       Lote:(v[5]||'').trim(),
       Bin:(v[6]||'').trim(),
+      // Peso bruto y Peso neto siempre vienen iguales a Kilos de descarte
+      // (ver actualizar.yml) -- Tara se deja vacia a proposito, no aplica
+      // en este reporte, por eso NO se fuerza a numero (se muestra en blanco).
       Bruto:parseFloat(v[7])||0,
-      Tara:parseFloat(v[8])||0,
+      Tara:(v[8]!==undefined?v[8].trim():''),
       Neto:parseFloat(v[9])||0,
       DescarteKg:parseFloat(v[10])||0,
       Motivo:(v[11]||'').trim(),
@@ -535,10 +543,10 @@ function parseDescarteCSV(t){
   }).filter(r=>r.Fecha!=='');
 }
 function demoDescarte(){return[
-  {Anio:'2026',Semana:'1',Mes:'enero',Fecha:'2026-01-02',Grupo:'3325',Lote:'66',Bin:'Bin',Bruto:2151,Tara:400,Neto:1751,DescarteKg:1751,Motivo:'Daño por reposo',Calidad:'PE1'},
-  {Anio:'2026',Semana:'1',Mes:'enero',Fecha:'2026-01-02',Grupo:'3325',Lote:'66',Bin:'Canastas',Bruto:203,Tara:30,Neto:173,DescarteKg:173,Motivo:'Daño por reposo',Calidad:'PE1'},
-  {Anio:'2026',Semana:'3',Mes:'enero',Fecha:'2026-01-16',Grupo:'3341',Lote:'70',Bin:'Bin',Bruto:1980,Tara:400,Neto:1580,DescarteKg:420,Motivo:'Golpes en cosecha',Calidad:'AD1'},
-  {Anio:'2026',Semana:'5',Mes:'febrero',Fecha:'2026-02-02',Grupo:'3360',Lote:'75',Bin:'Bin',Bruto:2200,Tara:400,Neto:1800,DescarteKg:260,Motivo:'Quemado de sol',Calidad:'PE2'},
+  {Anio:'2026',Semana:'1',Mes:'enero',Fecha:'2026-01-02',Grupo:'3325',Lote:'66',Bin:'Bin',Bruto:1751,Tara:'',Neto:1751,DescarteKg:1751,Motivo:'Daño por reposo',Calidad:'PE1'},
+  {Anio:'2026',Semana:'1',Mes:'enero',Fecha:'2026-01-02',Grupo:'3325',Lote:'66',Bin:'Canastas',Bruto:173,Tara:'',Neto:173,DescarteKg:173,Motivo:'Daño por reposo',Calidad:'PE1'},
+  {Anio:'2026',Semana:'3',Mes:'enero',Fecha:'2026-01-16',Grupo:'3341',Lote:'70',Bin:'Bin',Bruto:420,Tara:'',Neto:420,DescarteKg:420,Motivo:'Golpes en cosecha',Calidad:'AD1'},
+  {Anio:'2026',Semana:'5',Mes:'febrero',Fecha:'2026-02-02',Grupo:'3360',Lote:'75',Bin:'Bin',Bruto:260,Tara:'',Neto:260,DescarteKg:260,Motivo:'Quemado de sol',Calidad:'PE2'},
 ];}
 
 function parseDespachoCSV(t){
@@ -1681,7 +1689,7 @@ function ordenarDescarte(data){
 function construirFilasExportDescarte(data){
   const filas=ordenarDescarte(data).map(function(r){
     return [r.Anio,r.Semana,r.Mes,fmtF(r.Fecha),r.Grupo,r.Lote,r.Bin,
-      Math.round(r.Bruto),Math.round(r.Tara),Math.round(r.Neto),Math.round(r.DescarteKg),
+      Math.round(r.Bruto),fmtNumOrBlank(r.Tara),Math.round(r.Neto),Math.round(r.DescarteKg),
       r.Motivo,'POSTCOSECHA','DESPACHOS',getCosecha(r.Calidad)];
   });
   let total=0; data.forEach(function(r){total+=r.DescarteKg||0;});
@@ -1761,7 +1769,7 @@ function renderDescarte(data){
     html+='<tr>'
       +'<td class="left">'+r.Anio+'</td><td class="left">'+r.Semana+'</td><td class="left">'+r.Mes+'</td><td class="left">'+fmtF(r.Fecha)+'</td>'
       +'<td class="left">'+(r.Grupo||'')+'</td><td class="left">'+(r.Lote||'')+'</td><td class="left">'+(r.Bin||'')+'</td>'
-      +'<td>'+Math.round(r.Bruto).toLocaleString('es-CO')+'</td><td>'+Math.round(r.Tara).toLocaleString('es-CO')+'</td>'
+      +'<td>'+Math.round(r.Bruto).toLocaleString('es-CO')+'</td><td>'+fmtNumOrBlank(r.Tara)+'</td>'
       +'<td>'+Math.round(r.Neto).toLocaleString('es-CO')+'</td><td>'+Math.round(r.DescarteKg).toLocaleString('es-CO')+'</td>'
       +'<td class="left">'+(r.Motivo||'')+'</td><td class="left">POSTCOSECHA</td><td class="left">DESPACHOS</td>'
       +'<td class="left"><span class="desc-cosecha-badge '+badgeClass+'">'+cosecha+'</span></td>'
