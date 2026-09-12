@@ -43,33 +43,33 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 201666,canastas,2026-09-12,PE2,piña special 2da,1.5 - 2.5,525
 201667,canastas,2026-09-12,PE3,piña special 3ra,0.0 - 1.0,481
 201668,canastas,2026-09-12,PE3,piña special 3ra,1.5 - 2.5,484
-201669,canastas,2026-09-12,,,,0
-201670,canastas,2026-09-12,,,,0
-201671,canastas,2026-09-12,,,,0
-201672,canastas,2026-09-12,,,,0
-201673,canastas,2026-09-12,,,,0
-201674,canastas,2026-09-12,,,,0
-201675,canastas,2026-09-12,,,,0
-201676,,,,,,0
-201677,,,,,,0
-201678,,,,,,0
-201679,,,,,,0
-201680,,,,,,0
-201681,,,,,,0
-201682,,,,,,0
-201683,,,,,,0
-201684,,,,,,0
-201685,,,,,,0
-201686,,,,,,0
-201687,,,,,,0
-201688,,,,,,0
-201689,,,,,,0
-201690,,,,,,0
-201691,,,,,,0
-201692,,,,,,0
-201693,,,,,,0
-201694,,,,,,0
-201695,,,,,,0
+201669,canastas,2026-09-12,PE1,piña special 1ra,0.0 - 1.0,574
+201670,canastas,2026-09-12,PE2,piña special 2da,1.5 - 2.5,476
+201671,canastas,2026-09-12,PE1,piña special 1ra,1.5 - 2.5,542
+201672,canastas,2026-09-12,PE2,piña special 2da,1.5 - 2.5,533
+201673,canastas,2026-09-12,PE2,piña special 2da,0.0 - 1.0,389
+201674,canastas,2026-09-12,PE1,piña special 1ra,0.0 - 1.0,330
+201675,canastas,2026-09-12,PE2,piña special 2da,1.5 - 2.5,188
+201676,canastas,2026-09-12,PE1,piña special 1ra,1.5 - 2.5,386
+201677,canastas,2026-09-12,PE3,piña special 3ra,1.5 - 2.5,380
+201678,canastas,2026-09-12,PE1,piña special 1ra,0.0 - 1.0,506
+201679,canastas,2026-09-12,PE1,piña special 1ra,1.5 - 2.5,385
+201680,canastas,2026-09-12,PE2,piña special 2da,0.0 - 1.0,445
+201681,canastas,2026-09-12,PEGUA,piña special guapita,1.5 - 2.5,400
+201682,canastas,2026-09-12,PEBAB,piña special baby,1.5 - 2.5,466
+201683,canastas,2026-09-12,PE1,piña special 1ra,3.0 - 4.0,114
+201684,canastas,2026-09-12,PE3,piña special 3ra,0.0 - 1.0,211
+201685,canastas,2026-09-12,PIND,piña indstria,1.5 - 2.5,493
+201686,canastas,2026-09-12,,,,0
+201687,canastas,2026-09-12,,,,0
+201688,canastas,2026-09-12,,,,0
+201689,canastas,2026-09-12,,,,0
+201690,canastas,2026-09-12,,,,0
+201691,canastas,2026-09-12,,,,0
+201692,canastas,2026-09-12,,,,0
+201693,canastas,2026-09-12,,,,0
+201694,canastas,2026-09-12,,,,0
+201695,canastas,2026-09-12,,,,0
 201696,,,,,,0
 201697,,,,,,0
 201698,,,,,,0
