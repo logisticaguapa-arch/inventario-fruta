@@ -1,17 +1,16 @@
 ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 201721,canastas,2026-09-14,PE1,piña special 1ra,1.5 - 2.5,471
-201729,canastas,2026-09-14,PIND,piña indstria,1.5 - 2.5,470
 201731,canastas,2026-09-14,PE2,piña special 2da,0.0 - 1.0,88
-201752,canastas,2026-09-14,PE2,piña special 2da,1.5,111
+201752,canastas,2026-09-14,PE2,piña special 2da,1.5,98
 201755,canastas,2026-09-14,PE2,piña special 2da,1.5,338
 201757,canastas,2026-09-14,PE2,piña special 2da,0.0 - 1.0,25
-201758,canastas,2026-09-14,PIND,piña indstria,1.5 - 2.5,487
 201768,canastas,2026-09-14,PE3,piña special 3ra,0.0 - 1.0,475
 201769,canastas,2026-09-14,PE2,piña special 2da,0.0 - 1.0,522
 201770,canastas,2026-09-14,PE1,piña special 1ra,0.0 - 1.0,546
 201773,canastas,2026-09-14,PE1,piña special 1ra,1.5 - 2.5,484
 201774,canastas,2026-09-14,PE1,piña special 1ra,0.0 - 1.0,339
 201775,canastas,2026-09-14,PE2,piña special 2da,0.0 - 1.0,427
+201780,canastas,2026-09-14,PE1,piña special 1ra,3.0 - 4.0,497
 201781,canastas,2026-09-14,PE3,piña special 3ra,0.0 - 1.0,344
 201783,canastas,2026-09-14,PEGUA,piña special guapita,1.5 - 2.5,103
 201786,canastas,2026-09-14,PE2,piña special 2da,0.0 - 1.0,149
@@ -22,6 +21,7 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 201794,canastas,2026-09-14,AD1,Piña AD1,0.0 - 1.0,557
 201796,canastas,2026-09-14,AD1,Piña AD1,0.0 - 1.0,579
 201798,canastas,2026-09-14,AD1,Piña AD1,0.0 - 1.0,554
+201800,canastas,2026-09-14,AD2,Piña AD2,3.0 - 4.0,28
 201804,canastas,2026-09-14,AD1,Piña AD1,0.0 - 1.0,157
 201805,canastas,2026-09-14,AD2,Piña AD2,0.0 - 1.0,42
 201808,canastas,2026-09-14,AD2,Piña AD2,0.0 - 1.0,207
@@ -30,10 +30,8 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 201812,canastas,2026-09-14,AD3,Piña AD3,3.0 - 4.0,41
 201813,canastas,2026-09-14,AD3,Piña AD3,0.0 - 1.0,189
 201816,canastas,2026-09-14,AD2,Piña AD2,0.0 - 1.0,204
-201819,canastas,2026-09-14,AD1,Piña AD1,3.0 - 4.0,329
 201820,canastas,2026-09-14,AD1,Piña AD1,0.0 - 1.0,99
-201822,canastas,2026-09-14,AD-PJUG,AD-PJUG,3.0 - 4.0,142
-201823,canastas,2026-09-15,PE2,piña special 2da,3.0 - 4.0,31
+201823,canastas,2026-09-15,,,,0
 201824,canastas,2026-09-15,,,,0
 201825,canastas,2026-09-15,,,,0
 201826,canastas,2026-09-15,,,,0

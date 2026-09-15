@@ -18630,7 +18630,6 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-09-14,,R-18887,local medellin,piña special 1ra,PE1,563,343,3200,0
 2026-09-14,,R-18887,local medellin,,PE1,0,239,3200,0
 2026-09-14,,R-18887,local medellin,,PE2,0,122,3000,0
-2026-09-14,,R-18887,local medellin,Piña AD2,AD2,0,0,3000,0
 2026-09-14,,R-18888,local sincelejo,piña special baby,PEBAB,424,0,1200,0
 2026-09-14,,R-18888,local sincelejo,piña special baby,PEBAB,139,0,1200,0
 2026-09-14,,R-18888,local sincelejo,piña special 3ra,PE3,487,113,2200,0
@@ -18662,7 +18661,10 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-09-15,,,jeronimo martins,piña special 2da,PE2,411,0,,0
 2026-09-15,,,jeronimo martins,piña special 2da,PE2,404,0,,0
 2026-09-15,,,jeronimo martins,piña special 2da,PE2,397,0,,0
-2026-09-15,,,jeronimo martins,piña special 2da,PE2,404,386,,0
-2026-09-15,,,Aldinsen Gonzalez,piña indstria,PIND,486,0,,0
+2026-09-15,,,jeronimo martins,piña special 2da,PE2,168,399,,13
+2026-09-15,,,Aldinsen Gonzalez,piña indstria,PIND,465,0,,0
 2026-09-15,,,Aldinsen Gonzalez,AD-piña indstria,AD-PIND,375,0,,0
 2026-09-15,,,Aldinsen Gonzalez,piña indstria,PIND,179,0,,0
+2026-09-15,,,Aldinsen Gonzalez,piña indstria,PIND,482,0,,0
+2026-09-15,,,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,142,0,,0
+2026-09-15,,,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,262,0,,54

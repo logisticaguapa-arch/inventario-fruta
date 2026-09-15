@@ -2779,3 +2779,5 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,38,septiembre,2026-09-14,2726,53,canastas,2.0,,2.0,2.0,Muestreo,AD1
 2026,38,septiembre,2026-09-15,1826,50,canastas,4.0,,4.0,4.0,Muestreo,PE1
 2026,38,septiembre,2026-09-15,2626,47,canastas,2.0,,2.0,2.0,Muestreo,AD1
+2026,38,septiembre,2026-09-15,1826,45,canastas,13.0,,13.0,13.0,,PE2
+2026,38,septiembre,2026-09-15,2626,47,canastas,54.0,,54.0,54.0,Daño por reposo,AD-PJUG
