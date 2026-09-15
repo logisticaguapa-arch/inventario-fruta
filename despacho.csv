@@ -18600,14 +18600,14 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-09-14,46013,R-18883,jeronimo martins,piña special 2da,PE2,412,0,3200,0
 2026-09-14,46013,R-18883,jeronimo martins,piña special 2da,PE2,412,252,3200,0
 2026-09-14,,,reposicion jeronimo,piña special 2da,PE2,161,70,,0
-2026-09-14,,R-18885,KARINA BORJA,piña special 3ra,PE3,480,0,1000,2
-2026-09-14,,R-18885,KARINA BORJA,piña special 3ra,PE3,401,119,1000,0
-2026-09-14,,R-18885,KARINA BORJA,Piña AD3,AD3,469,0,1000,2
-2026-09-14,,R-18885,KARINA BORJA,Piña AD3,AD3,51,0,1000,0
-2026-09-14,,R-18885,KARINA BORJA,piña special 3ra,PE3,358,0,1000,0
-2026-09-14,,R-18885,KARINA BORJA,piña special 3ra,PE3,122,0,1000,0
-2026-09-14,,,yamilet correa sepulveda,piña special 1ra,PE1,500,0,,2
-2026-09-14,,,yamilet correa sepulveda,Piña AD1,AD1,500,0,,2
+2026-09-14,46014,R-18885,KARINA BORJA,piña special 3ra,PE3,480,0,1000,2
+2026-09-14,46014,R-18885,KARINA BORJA,piña special 3ra,PE3,401,119,1000,0
+2026-09-14,46014,R-18885,KARINA BORJA,Piña AD3,AD3,469,0,1000,2
+2026-09-14,46014,R-18885,KARINA BORJA,Piña AD3,AD3,51,0,1000,0
+2026-09-14,46014,R-18885,KARINA BORJA,piña special 3ra,PE3,358,0,1000,0
+2026-09-14,46014,R-18885,KARINA BORJA,piña special 3ra,PE3,122,0,1000,0
+2026-09-14,46015,R-18884,yamilet correa sepulveda,piña special 1ra,PE1,500,0,3200,2
+2026-09-14,46015,R-18884,yamilet correa sepulveda,Piña AD1,AD1,500,0,3200,2
 2026-09-14,,,cartagena,piña special 1ra,PE1,580,0,,0
 2026-09-14,,,cartagena,piña special 1ra,PE1,537,0,,0
 2026-09-14,,,cartagena,piña special 1ra,PE1,571,0,,0
@@ -18628,7 +18628,12 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-09-14,,,local medellin,piña special 1ra,PE1,528,0,,0
 2026-09-14,,,local medellin,piña special 1ra,PE1,566,0,,0
 2026-09-14,,,local medellin,piña special 1ra,PE1,563,343,,0
+2026-09-14,,,local medellin,Piña AD1,AD1,0,0,,0
 2026-09-14,,,local sincelejo,piña special baby,PEBAB,424,0,,0
 2026-09-14,,,local sincelejo,piña special baby,PEBAB,139,0,,0
 2026-09-14,,,local sincelejo,piña special 3ra,PE3,487,113,,0
 2026-09-14,,,local sincelejo,piña special 3ra,PE3,472,28,,0
+2026-09-14,,,local sincelejo,piña special guapita,PEGUA,453,0,,0
+2026-09-14,,,local sincelejo,piña special guapita,PEGUA,451,0,,0
+2026-09-14,,,local sincelejo,piña special guapita,PEGUA,480,116,,0
+2026-09-14,,,local sincelejo,Piña AD1,AD1,560,0,,0
