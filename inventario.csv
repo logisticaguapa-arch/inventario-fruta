@@ -81,10 +81,10 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 201814,canastas,2026-09-14,AD2,Piña AD2,1.5 - 2.5,121
 201815,canastas,2026-09-14,AD1,Piña AD1,0.0 - 1.0,582
 201816,canastas,2026-09-14,AD2,Piña AD2,0.0 - 1.0,204
-201817,canastas,2026-09-14,,,,0
-201818,canastas,2026-09-14,,,,0
-201819,canastas,2026-09-14,,,,0
-201820,canastas,2026-09-14,,,,0
+201817,canastas,2026-09-14,ADGUA,Piña ADGUA,1.5 - 2.5,274
+201818,canastas,2026-09-14,AD1,Piña AD1,1.5 - 2.5,394
+201819,canastas,2026-09-14,AD1,Piña AD1,3.0 - 4.0,568
+201820,canastas,2026-09-14,AD1,Piña AD1,0.0 - 1.0,346
 201821,canastas,2026-09-14,,,,0
 201822,canastas,2026-09-14,,,,0
 201823,canastas,2026-09-14,,,,0
