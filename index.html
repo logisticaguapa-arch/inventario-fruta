@@ -440,6 +440,51 @@ function horasDesde(f){
   return Math.floor((new Date()-d)/3600000);
 }
 function horasLabel(h){const d=Math.floor(h/24),r=h%24;return d>0?d+'d '+r+'h':h+'h'}
+
+// -- HORA_INGRESO: mapa ID -> hora real de ingreso (columna "Hora ingreso" de
+// Proceso). Si un item tiene este dato, se usa para calcular "horas en bodega"
+// desde el momento REAL en que entro, en vez de asumir medianoche de su Fecha
+// (que sobreestimaba las horas de todo lo que entro el mismo dia). --
+let HORA_INGRESO={};
+function parseHoraIngresoCSV(t){
+  const map={};
+  const lines=t.trim().split('\n');
+  if(!lines.length||!lines[0]) return map;
+  lines.slice(1).forEach(function(l){
+    if(l.trim()==='') return;
+    const v=l.split(',');
+    const id=(v[0]||'').trim();
+    const hora=(v[1]||'').trim();
+    if(id && hora) map[id]=hora;
+  });
+  return map;
+}
+function horaIngresoDate(id){
+  if(!id) return null;
+  const s=HORA_INGRESO[String(id).trim()];
+  if(!s) return null;
+  const dt=new Date(s.replace(' ','T'));
+  return isNaN(dt.getTime())?null:dt;
+}
+// -- Para un item individual: usa su propia hora de ingreso si existe, si no
+// cae al calculo por fecha (medianoche) de siempre. --
+function horasDesdeItem(r){
+  const dt=horaIngresoDate(r&&r.ID);
+  if(dt) return Math.max(0,Math.floor((new Date()-dt)/3600000));
+  return horasDesde(r&&r.Fecha);
+}
+// -- Para el resumen de un dia completo (varios items): usa la hora de ingreso
+// MAS ANTIGUA (peor caso) entre los items de ese dia que tengan el dato; si
+// ninguno lo tiene, cae al calculo por fecha (medianoche) de siempre. --
+function horasDesdeGrupo(fecha,filas){
+  let min=null;
+  (filas||[]).forEach(function(r){
+    const dt=horaIngresoDate(r.ID);
+    if(dt && (!min || dt<min)) min=dt;
+  });
+  if(min) return Math.max(0,Math.floor((new Date()-min)/3600000));
+  return horasDesde(fecha);
+}
 function fmtF(f){
   if(!f)return'';
   let y,m,d;
@@ -503,6 +548,11 @@ async function load(){
     if(!r4.ok)throw 0;
     DESCARTE=parseDescarteCSV(await r4.text());
   }catch{DESCARTE=demoDescarte();}
+  try{
+    const r5=await fetch('horaingreso.csv?'+Date.now());
+    if(!r5.ok)throw 0;
+    HORA_INGRESO=parseHoraIngresoCSV(await r5.text());
+  }catch{HORA_INGRESO={};}
   buildFilters();buildFacturaFiltros();buildDescarteFiltros();buildProcesadoFiltros();buildSeguimientoFiltros();render();
 }
 // -- "Inventario procesado": TODO lo que entro a Proceso (columna Neto, Proceso!I),
@@ -756,7 +806,7 @@ function buildFechaMsel(id,fechas){
         html+='<div class="fecha-hijos fecha-hijos-dias" style="display:none">';
         dias.slice().reverse().forEach(function(f){
           const checked=filtros[def.key].includes(f)?'checked':'';
-          const lbl=fmtF(f)+(conHoras?(' — '+horasLabel(horasDesde(f))):'');
+          const lbl=fmtF(f)+(conHoras?(' — '+horasLabel(horasDesdeGrupo(f, ALL.filter(function(r){return r.Fecha===f;})))):'');
           const txt=lbl.toLowerCase().replace(/"/g,'&quot;');
           html+='<label data-txt="'+txt+'"><input type="checkbox" value="'+f+'" '+checked+' onchange="onMselChange(\''+id+'\',this)">'+lbl+'</label>';
         });
@@ -1029,7 +1079,7 @@ function render(){
   const kgEstibas=rEstibas.reduce((s,r)=>s+(parseFloat(r.KgDisponibles)||0),0);
   const pctBines=kg>0?Math.round(kgBines/kg*100):0;
   const pctEstibas=kg>0?Math.round(kgEstibas/kg*100):0;
-  const rCriticas=data.filter(r=>horasDesde(r.Fecha)>=48);
+  const rCriticas=data.filter(r=>horasDesdeItem(r)>=48);
   const rCriticasEstibas=rCriticas.filter(r=>!isBin(r));
   const rCriticasBines=rCriticas.filter(r=>isBin(r));
   const kgCriticasEstibas=rCriticasEstibas.reduce((s,r)=>s+(parseFloat(r.KgDisponibles)||0),0);
@@ -1061,8 +1111,8 @@ function renderTarjetas(data){
   const kgGlobal=data.reduce(function(s,r){return s+(parseFloat(r.KgDisponibles)||0);},0);
   let html='';
   fechas.forEach(function(fecha){
-    const h=horasDesde(fecha);
     const bloque=data.filter(function(r){return r.Fecha===fecha;});
+    const h=horasDesdeGrupo(fecha,bloque);
     const kgB=bloque.reduce(function(s,r){return s+(parseFloat(r.KgDisponibles)||0);},0);
     const pct=kgGlobal>0?Math.round(kgB/kgGlobal*100):0;
     html+='<div class="dia-block">';
@@ -1132,7 +1182,7 @@ function renderTabla(dataOriginal){
   const grandTotalPeriodo=fechas.reduce(function(s,f){return s+totalesPorFecha[f];},0);
   let html='<table class="ctable"><thead><tr><th class="left">Grado de maduración / Calibre</th>';
   fechas.forEach(function(f){
-    const h=horasDesde(f);
+    const h=horasDesdeGrupo(f, data.filter(function(r){return r.Fecha===f;}));
     html+='<th>'+fmtF(f)+'<br><small style="color:'+urgColor(h)+'">'+horasLabel(h)+'</small></th>';
   });
   html+='<th>Total kg</th></tr></thead><tbody>';
@@ -1428,12 +1478,12 @@ function renderBodega(data){
 
   // ── ESTIBAS ───────────────────────────────────────────────────────────────
   const fechas = [...new Set(estibas.map(function(r){return r.Fecha;}))].sort();
-  const maxH   = fechas.length ? Math.max.apply(null, fechas.map(function(f){return horasDesde(f);})) : 0;
+  const maxH   = fechas.length ? Math.max.apply(null, fechas.map(function(f){return horasDesdeGrupo(f, estibas.filter(function(r){return r.Fecha===f;}));})) : 0;
 
   html += '<div class="bod-grid">';
   fechas.forEach(function(fecha){
-    const h      = horasDesde(fecha);
     const bloque = estibas.filter(function(r){return r.Fecha===fecha;});
+    const h      = horasDesdeGrupo(fecha, bloque);
     const kgT    = bloque.reduce(function(s,r){return s+(parseFloat(r.KgDisponibles)||0);},0);
     const pct    = Math.min(100, Math.round((h/Math.max(maxH,1))*100));
 
@@ -1493,7 +1543,7 @@ function renderBines(data){
   html += '<span style="margin-left:auto;background:rgba(255,255,255,0.2);color:#fff;padding:3px 12px;border-radius:20px;font-size:.85rem;font-weight:800">'+Math.round(kgTotal).toLocaleString('es-CO')+' kg</span>';
   html += '</div><div style="display:flex;flex-wrap:wrap;gap:10px;padding:16px 18px">';
   bines.forEach(function(r){
-    const h   = horasDesde(r.Fecha);
+    const h   = horasDesdeItem(r);
     const mad = getMadurez(r.Calibre);
     const accent = madBg(mad)==='#166534'?'#16a34a':madBg(mad);
     const txt = madTextColor(mad);
