@@ -18591,21 +18591,21 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-09-12,,R-18880,cartagena,Piña AD1,AD1,172,0,3000,0
 2026-09-12,,R-18880,cartagena,piña special 1ra,PE1,93,0,3000,0
 2026-09-12,,R-18881,cartagena,piña special 1ra,PE1,102,0,3000,0
-2026-09-14,,,jeronimo martins,piña special 2da,PE2,400,0,,0
-2026-09-14,,,jeronimo martins,piña special 2da,PE2,402,0,,0
-2026-09-14,,,jeronimo martins,piña special 2da,PE2,422,0,,0
-2026-09-14,,,jeronimo martins,piña special 2da,PE2,396,140,,13
-2026-09-14,,,jeronimo martins,piña special 2da,PE2,265,0,,0
-2026-09-14,,,jeronimo martins,piña special 2da,PE2,419,0,,0
-2026-09-14,,,jeronimo martins,piña special 2da,PE2,412,0,,0
-2026-09-14,,,jeronimo martins,piña special 2da,PE2,412,252,,0
+2026-09-14,46012,R-18882,jeronimo martins,piña special 2da,PE2,400,0,3200,0
+2026-09-14,46012,R-18882,jeronimo martins,piña special 2da,PE2,402,0,3200,0
+2026-09-14,46012,R-18882,jeronimo martins,piña special 2da,PE2,422,0,3200,0
+2026-09-14,46012,R-18882,jeronimo martins,piña special 2da,PE2,396,140,3200,13
+2026-09-14,46013,R-18883,jeronimo martins,piña special 2da,PE2,265,0,3200,0
+2026-09-14,46013,R-18883,jeronimo martins,piña special 2da,PE2,419,0,3200,0
+2026-09-14,46013,R-18883,jeronimo martins,piña special 2da,PE2,412,0,3200,0
+2026-09-14,46013,R-18883,jeronimo martins,piña special 2da,PE2,412,252,3200,0
 2026-09-14,,,reposicion jeronimo,piña special 2da,PE2,161,70,,0
-2026-09-14,,,KARINA BORJA,piña special 3ra,PE3,480,0,,2
-2026-09-14,,,KARINA BORJA,piña special 3ra,PE3,401,119,,0
-2026-09-14,,,KARINA BORJA,Piña AD3,AD3,469,0,,2
-2026-09-14,,,KARINA BORJA,Piña AD3,AD3,51,0,,0
-2026-09-14,,,KARINA BORJA,piña special 3ra,PE3,358,0,,0
-2026-09-14,,,KARINA BORJA,piña special 3ra,PE3,122,0,,0
+2026-09-14,,R-18885,KARINA BORJA,piña special 3ra,PE3,480,0,1000,2
+2026-09-14,,R-18885,KARINA BORJA,piña special 3ra,PE3,401,119,1000,0
+2026-09-14,,R-18885,KARINA BORJA,Piña AD3,AD3,469,0,1000,2
+2026-09-14,,R-18885,KARINA BORJA,Piña AD3,AD3,51,0,1000,0
+2026-09-14,,R-18885,KARINA BORJA,piña special 3ra,PE3,358,0,1000,0
+2026-09-14,,R-18885,KARINA BORJA,piña special 3ra,PE3,122,0,1000,0
 2026-09-14,,,yamilet correa sepulveda,piña special 1ra,PE1,500,0,,2
 2026-09-14,,,yamilet correa sepulveda,Piña AD1,AD1,500,0,,2
 2026-09-14,,,cartagena,piña special 1ra,PE1,580,0,,0
@@ -18624,3 +18624,11 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-09-14,,,local medellin,piña special 2da,PE2,511,489,,0
 2026-09-14,,,local medellin,piña special 2da,PE2,497,0,,0
 2026-09-14,,,local medellin,piña special 2da,PE2,275,0,,0
+2026-09-14,,,local medellin,piña special 2da,PE2,354,4,,0
+2026-09-14,,,local medellin,piña special 1ra,PE1,528,0,,0
+2026-09-14,,,local medellin,piña special 1ra,PE1,566,0,,0
+2026-09-14,,,local medellin,piña special 1ra,PE1,563,343,,0
+2026-09-14,,,local sincelejo,piña special baby,PEBAB,424,0,,0
+2026-09-14,,,local sincelejo,piña special baby,PEBAB,139,0,,0
+2026-09-14,,,local sincelejo,piña special 3ra,PE3,487,113,,0
+2026-09-14,,,local sincelejo,piña special 3ra,PE3,472,28,,0
