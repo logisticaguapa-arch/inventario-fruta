@@ -1,36 +1,18 @@
 ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
-201721,canastas,2026-09-14,PE1,piña special 1ra,1.5 - 2.5,471
 201731,canastas,2026-09-14,PE2,piña special 2da,0.0 - 1.0,88
 201752,canastas,2026-09-14,PE2,piña special 2da,1.5,98
 201755,canastas,2026-09-14,PE2,piña special 2da,1.5,338
-201757,canastas,2026-09-14,PE2,piña special 2da,0.0 - 1.0,25
 201768,canastas,2026-09-14,PE3,piña special 3ra,0.0 - 1.0,475
-201769,canastas,2026-09-14,PE2,piña special 2da,0.0 - 1.0,522
-201770,canastas,2026-09-14,PE1,piña special 1ra,0.0 - 1.0,546
-201773,canastas,2026-09-14,PE1,piña special 1ra,1.5 - 2.5,484
-201774,canastas,2026-09-14,PE1,piña special 1ra,0.0 - 1.0,339
-201775,canastas,2026-09-14,PE2,piña special 2da,0.0 - 1.0,427
-201780,canastas,2026-09-14,PE1,piña special 1ra,3.0 - 4.0,497
 201781,canastas,2026-09-14,PE3,piña special 3ra,0.0 - 1.0,344
 201783,canastas,2026-09-14,PEGUA,piña special guapita,1.5 - 2.5,103
-201786,canastas,2026-09-14,PE2,piña special 2da,0.0 - 1.0,149
-201789,canastas,2026-09-14,AD1,Piña AD1,0.0 - 1.0,551
 201791,canastas,2026-09-14,PE3,piña special 3ra,0.0 - 1.0,117
-201792,canastas,2026-09-14,AD1,Piña AD1,0.0 - 1.0,566
-201793,canastas,2026-09-14,AD2,Piña AD2,0.0 - 1.0,61
-201794,canastas,2026-09-14,AD1,Piña AD1,0.0 - 1.0,557
-201796,canastas,2026-09-14,AD1,Piña AD1,0.0 - 1.0,579
-201798,canastas,2026-09-14,AD1,Piña AD1,0.0 - 1.0,554
-201800,canastas,2026-09-14,AD2,Piña AD2,3.0 - 4.0,28
-201804,canastas,2026-09-14,AD1,Piña AD1,0.0 - 1.0,157
+201793,canastas,2026-09-14,AD2,Piña AD2,0.0 - 1.0,40
 201805,canastas,2026-09-14,AD2,Piña AD2,0.0 - 1.0,42
 201808,canastas,2026-09-14,AD2,Piña AD2,0.0 - 1.0,207
 201809,canastas,2026-09-14,ADBABY,Piña ADBABY,1.5 - 2.5,20
-201811,canastas,2026-09-14,AD3,Piña AD3,1.5 - 2.5,36
 201812,canastas,2026-09-14,AD3,Piña AD3,3.0 - 4.0,41
 201813,canastas,2026-09-14,AD3,Piña AD3,0.0 - 1.0,189
 201816,canastas,2026-09-14,AD2,Piña AD2,0.0 - 1.0,204
-201820,canastas,2026-09-14,AD1,Piña AD1,0.0 - 1.0,99
 201823,canastas,2026-09-15,,,,0
 201824,canastas,2026-09-15,,,,0
 201825,canastas,2026-09-15,,,,0
