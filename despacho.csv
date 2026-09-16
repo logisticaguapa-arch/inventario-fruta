@@ -18657,35 +18657,36 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-09-15,,R-18889,local apartado,Piña AD2,AD2,114,0,3000,0
 2026-09-15,,R-18889,local apartado,Piña AD1,AD1,388,0,3200,2
 2026-09-15,,R-18889,local apartado,piña special 1ra,PE1,176,66,3200,0
-2026-09-15,,R-18892,jeronimo martins,piña special 2da,PE2,421,0,3100,0
-2026-09-15,,R-18892,jeronimo martins,piña special 2da,PE2,411,0,3100,0
-2026-09-15,,R-18892,jeronimo martins,piña special 2da,PE2,404,0,3100,0
-2026-09-15,,R-18892,jeronimo martins,piña special 2da,PE2,397,0,3100,0
-2026-09-15,,R-18892,jeronimo martins,piña special 2da,PE2,168,399,3100,13
-2026-09-15,,R-18890,Aldinsen Gonzalez,piña indstria,PIND,465,0,1300,0
-2026-09-15,,R-18890,Aldinsen Gonzalez,AD-piña indstria,AD-PIND,375,0,1300,0
-2026-09-15,,R-18890,Aldinsen Gonzalez,piña indstria,PIND,179,0,1300,0
-2026-09-15,,R-18890,Aldinsen Gonzalez,piña indstria,PIND,482,0,1300,0
-2026-09-15,,R-18890,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,142,0,1000,0
-2026-09-15,,R-18890,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,262,0,1000,54
-2026-09-15,,,local medellin,Piña AD1,AD1,538,0,,16
-2026-09-15,,,local medellin,Piña AD1,AD1,575,0,,0
-2026-09-15,,,local medellin,Piña AD1,AD1,554,0,,0
-2026-09-15,,,local medellin,Piña AD1,AD1,561,0,,0
-2026-09-15,,,local medellin,Piña AD1,AD1,551,0,,0
-2026-09-15,,,local medellin,piña special 1ra,PE1,540,0,,0
-2026-09-15,,,local medellin,piña special 1ra,PE1,335,0,,0
-2026-09-15,,,local medellin,Piña AD1,AD1,92,0,,0
-2026-09-15,,,local medellin,Piña AD1,AD1,155,0,,0
-2026-09-15,,,local medellin,piña special 2da,PE2,420,0,,3
-2026-09-15,,,local medellin,piña special 2da,PE2,516,0,,0
-2026-09-15,,,local medellin,piña special 2da,PE2,145,0,,0
-2026-09-15,,,local medellin,piña special 2da,PE2,23,21,,0
-2026-09-15,,,local medellin,piña special 1ra,PE1,481,0,,0
-2026-09-15,,,local medellin,piña special 1ra,PE1,463,0,,0
-2026-09-15,,,local medellin,piña special 1ra,PE1,475,0,,0
-2026-09-15,,,local medellin,Piña AD2,AD2,28,0,,0
-2026-09-15,,,local medellin,Piña AD3,AD3,36,0,,0
+2026-09-15,46018,R-18892,jeronimo martins,piña special 2da,PE2,421,0,3100,0
+2026-09-15,46018,R-18892,jeronimo martins,piña special 2da,PE2,411,0,3100,0
+2026-09-15,46018,R-18892,jeronimo martins,piña special 2da,PE2,404,0,3100,0
+2026-09-15,46018,R-18892,jeronimo martins,piña special 2da,PE2,397,0,3100,0
+2026-09-15,46018,R-18892,jeronimo martins,piña special 2da,PE2,168,399,3100,13
+2026-09-15,,R-18891,reposicion jeronimo,,PE2,0,223,,0
+2026-09-15,46017,R-18890,Aldinsen Gonzalez,piña indstria,PIND,465,0,1300,0
+2026-09-15,46017,R-18890,Aldinsen Gonzalez,AD-piña indstria,AD-PIND,375,0,1300,0
+2026-09-15,46017,R-18890,Aldinsen Gonzalez,piña indstria,PIND,179,0,1300,0
+2026-09-15,46017,R-18890,Aldinsen Gonzalez,piña indstria,PIND,482,0,1300,0
+2026-09-15,46017,R-18890,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,142,0,1000,0
+2026-09-15,46017,R-18890,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,262,0,1000,54
+2026-09-15,,R-18893,local medellin,Piña AD1,AD1,538,0,3200,16
+2026-09-15,,R-18893,local medellin,Piña AD1,AD1,575,0,3200,0
+2026-09-15,,R-18893,local medellin,Piña AD1,AD1,554,0,3200,0
+2026-09-15,,R-18893,local medellin,Piña AD1,AD1,561,0,3200,0
+2026-09-15,,R-18893,local medellin,Piña AD1,AD1,551,0,3200,0
+2026-09-15,,R-18893,local medellin,piña special 1ra,PE1,540,0,3200,0
+2026-09-15,,R-18893,local medellin,piña special 1ra,PE1,335,0,3200,0
+2026-09-15,,R-18893,local medellin,Piña AD1,AD1,92,0,3200,0
+2026-09-15,,R-18893,local medellin,Piña AD1,AD1,155,0,3200,0
+2026-09-15,,R-18893,local medellin,piña special 2da,PE2,420,0,3000,3
+2026-09-15,,R-18893,local medellin,piña special 2da,PE2,516,0,3000,0
+2026-09-15,,R-18893,local medellin,piña special 2da,PE2,145,0,3000,0
+2026-09-15,,R-18893,local medellin,piña special 2da,PE2,23,21,3000,0
+2026-09-15,,R-18893,local medellin,piña special 1ra,PE1,481,0,3200,0
+2026-09-15,,R-18893,local medellin,piña special 1ra,PE1,463,0,3200,0
+2026-09-15,,R-18893,local medellin,piña special 1ra,PE1,475,0,3200,0
+2026-09-15,,R-18893,local medellin,Piña AD2,AD2,28,0,3000,0
+2026-09-15,,R-18893,local medellin,Piña AD3,AD3,36,0,2800,0
 2026-09-15,,,descarte,Piña AD3,AD3,0,0,,41
 2026-09-15,,,KARINA BORJA,piña special 3ra,PE3,336,0,,6
 2026-09-15,,,KARINA BORJA,Piña AD3,AD3,187,0,,0
@@ -18735,3 +18736,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-09-15,,,local sincelejo,Piña ADBABY,ADBABY,29,0,,0
 2026-09-15,,,local sincelejo,Piña AD3,AD3,303,0,,0
 2026-09-15,,,local sincelejo,Piña AD2,AD2,510,0,,0
+2026-09-15,,,local sincelejo,piña special 2da,PE2,467,0,,0
+2026-09-15,,,local sincelejo,piña special 1ra,PE1,516,0,,0
+2026-09-15,,,local sincelejo,piña special 1ra,PE1,546,0,,0
+2026-09-15,,,local sincelejo,piña special 1ra,PE1,540,398,,0
