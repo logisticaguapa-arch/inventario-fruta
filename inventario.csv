@@ -3,7 +3,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 201827,canastas,2026-09-15,PE2,piña special 2da,1.5,408
 201829,canastas,2026-09-15,PE1,piña special 1ra,1.5 - 2.5,572
 201831,canastas,2026-09-15,PE1,piña special 1ra,1,555
-201833,canastas,2026-09-15,PEGUA,piña special guapita,1.5 - 2.5,503
 201834,canastas,2026-09-15,PE2,piña special 2da,1.5,419
 201835,canastas,2026-09-15,PIND,piña indstria,1.5 - 2.5,479
 201836,canastas,2026-09-15,PE2,piña special 2da,1.5,416
@@ -22,15 +21,11 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 201859,canastas,2026-09-15,PE2,piña special 2da,1.5,411
 201860,canastas,2026-09-15,PE1,piña special 1ra,1,576
 201861,canastas,2026-09-15,PIND,piña indstria,1.5 - 2.5,466
-201866,canastas,2026-09-15,PE2,piña special 2da,1.5 - 2.5,512
 201867,canastas,2026-09-15,PEGUA,piña special guapita,1.5 - 2.5,480
-201868,canastas,2026-09-15,PE3,piña special 3ra,1.5 - 2.5,253
 201869,canastas,2026-09-15,PE1,piña special 1ra,1,581
 201870,canastas,2026-09-15,PE2,piña special 2da,1.5,412
-201872,canastas,2026-09-15,PEGUA,piña special guapita,1.5 - 2.5,493
 201873,canastas,2026-09-15,PE2,piña special 2da,1.5,313
 201874,canastas,2026-09-15,PE2,piña special 2da,1.5,176
-201876,canastas,2026-09-15,PE2,piña special 2da,1.5 - 2.5,382
 201877,canastas,2026-09-15,PIND,piña indstria,1.5 - 2.5,387
 201885,canastas,2026-09-15,PE2,piña special 2da,3.0 - 4.0,595
 201886,canastas,2026-09-15,PE1,piña special 1ra,1,184
@@ -46,19 +41,17 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 201901,canastas,2026-09-15,AD-PJUG,AD-PJUG,3.0 - 4.0,479
 201905,canastas,2026-09-15,AD2,Piña AD2,0.0 - 1.0,521
 201908,canastas,2026-09-15,AD2,Piña AD2,0.0 - 1.0,460
-201909,canastas,2026-09-15,AD3,Piña AD3,1.5 - 2.5,43
 201911,canastas,2026-09-15,AD-PIND,AD-piña indstria,1.5 - 2.5,359
 201912,canastas,2026-09-15,AD-PJUG,,3.0 - 4.0,237
-201914,canastas,2026-09-15,ADGUA,Piña ADGUA,1.5 - 2.5,258
-201915,canastas,2026-09-15,AD2,Piña AD2,1.5 - 2.5,131
+201914,canastas,2026-09-15,ADGUA,Piña ADGUA,1.5 - 2.5,249
 201916,canastas,2026-09-15,AD1,Piña AD1,3.0 - 4.0,69
 201917,canastas,2026-09-15,AD1,Piña AD1,1.5 - 2.5,290
 201918,canastas,2026-09-15,AD1,Piña AD1,0.0 - 1.0,214
 201919,canastas,2026-09-15,AD1,Piña AD1,3.0 - 4.0,42
 201920,canastas,2026-09-15,AD-PJUG,,3.0 - 4.0,123
-201921,canastas,2026-09-15,,,,0
-201922,canastas,2026-09-15,,,,0
-201923,canastas,2026-09-15,,,,0
+201921,canastas,2026-09-16,,,,0
+201922,canastas,2026-09-16,,,,0
+201923,canastas,2026-09-16,,,,0
 201924,,,,,,0
 201925,,,,,,0
 201926,,,,,,0
