@@ -29,16 +29,14 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 201848,canastas,2026-09-15,PE1,piña special 1ra,1.5 - 2.5,420
 201850,canastas,2026-09-15,PEGUA,piña special guapita,1.5 - 2.5,496
 201851,canastas,2026-09-15,PE2,piña special 2da,1.5,409
-201852,canastas,2026-09-15,PE1,piña special 1ra,1.5 - 2.5,561
 201853,canastas,2026-09-15,PE1,piña special 1ra,1,560
 201854,canastas,2026-09-15,PE2,piña special 2da,1.5,406
 201855,canastas,2026-09-15,PE1,piña special 1ra,1,573
 201856,canastas,2026-09-15,PE2,piña special 2da,0.0 - 1.0,502
-201858,canastas,2026-09-15,PE1,piña special 1ra,1.5 - 2.5,569
+201858,canastas,2026-09-15,PE1,piña special 1ra,1.5 - 2.5,130
 201859,canastas,2026-09-15,PE2,piña special 2da,1.5,411
 201860,canastas,2026-09-15,PE1,piña special 1ra,1,576
 201861,canastas,2026-09-15,PIND,piña indstria,1.5 - 2.5,466
-201864,canastas,2026-09-15,PE1,piña special 1ra,0.0 - 1.0,549
 201866,canastas,2026-09-15,PE2,piña special 2da,1.5 - 2.5,512
 201867,canastas,2026-09-15,PEGUA,piña special guapita,1.5 - 2.5,480
 201868,canastas,2026-09-15,PE3,piña special 3ra,1.5 - 2.5,253
@@ -51,7 +49,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 201876,canastas,2026-09-15,PE2,piña special 2da,1.5 - 2.5,382
 201877,canastas,2026-09-15,PIND,piña indstria,1.5 - 2.5,387
 201881,canastas,2026-09-15,PE2,piña special 2da,0.0 - 1.0,468
-201882,canastas,2026-09-15,PE1,piña special 1ra,0.0 - 1.0,438
 201884,canastas,2026-09-15,PEGUA,piña special guapita,1.5 - 2.5,357
 201885,canastas,2026-09-15,PE2,piña special 2da,3.0 - 4.0,595
 201886,canastas,2026-09-15,PE1,piña special 1ra,1,184
@@ -68,7 +65,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 201898,canastas,2026-09-15,AD2,Piña AD2,1.5,407
 201900,canastas,2026-09-15,AD1,Piña AD1,0.0 - 1.0,560
 201901,canastas,2026-09-15,AD-PJUG,AD-PJUG,3.0 - 4.0,479
-201902,canastas,2026-09-15,AD1,Piña AD1,0.0 - 1.0,532
 201903,canastas,2026-09-15,AD2,Piña AD2,0.0 - 1.0,511
 201905,canastas,2026-09-15,AD2,Piña AD2,0.0 - 1.0,521
 201908,canastas,2026-09-15,AD2,Piña AD2,0.0 - 1.0,460
