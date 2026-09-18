@@ -19,7 +19,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 202100,canastas,2026-09-18,PE2,piña special 2da,1.5,413
 202102,canastas,2026-09-18,PE2,piña special 2da,1.5,411
 202104,canastas,2026-09-18,PE1,piña special 1ra,3.0 - 4.0,551
-202105,canastas,2026-09-18,PE1,piña special 1ra,1.5 - 2.5,546
 202106,canastas,2026-09-18,PEGUA,piña special guapita,1.5 - 2.5,485
 202107,canastas,2026-09-18,PE3,piña special 3ra,1.5 - 2.5,450
 202108,canastas,2026-09-18,PIND,piña indstria,1.5 - 2.5,441
@@ -30,7 +29,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 202115,canastas,2026-09-18,PE1,piña special 1ra,3.0 - 4.0,550
 202116,canastas,2026-09-18,PE2,piña special 2da,1.5,408
 202118,canastas,2026-09-18,PE2,piña special 2da,3.0 - 4.0,507
-202119,canastas,2026-09-18,PE1,piña special 1ra,1.5 - 2.5,529
 202121,canastas,2026-09-18,PE2,piña special 2da,1.5,406
 202123,canastas,2026-09-18,PEGUA,piña special guapita,1.5 - 2.5,475
 202124,canastas,2026-09-18,PE2,piña special 2da,1.5,405
@@ -38,7 +36,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 202126,canastas,2026-09-18,PE2,piña special 2da,1.5,462
 202127,canastas,2026-09-18,PE2,piña special 2da,0.0 - 1.0,484
 202128,canastas,2026-09-18,PE2,piña special 2da,1.5 - 2.5,428
-202129,canastas,2026-09-18,PE1,piña special 1ra,1.5 - 2.5,529
 202130,canastas,2026-09-18,PE1,piña special 1ra,3.0 - 4.0,538
 202132,canastas,2026-09-18,PE3,piña special 3ra,1.5 - 2.5,456
 202133,canastas,2026-09-18,PE2,piña special 2da,1.5 - 2.5,499
@@ -67,7 +64,7 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 202161,canastas,2026-09-18,PE1,piña special 1ra,4,404
 202162,canastas,2026-09-18,PE2,piña special 2da,3.0 - 4.0,244
 202163,canastas,2026-09-18,PE2,piña special 2da,0.0 - 1.0,283
-202164,canastas,2026-09-18,PE1,piña special 1ra,1.5 - 2.5,354
+202164,canastas,2026-09-18,PE1,piña special 1ra,1.5 - 2.5,251
 202165,canastas,2026-09-18,PEGUA,piña special guapita,1.5 - 2.5,480
 202166,canastas,2026-09-18,PE3,piña special 3ra,3.0 - 4.0,144
 202167,canastas,2026-09-18,PEBAB,piña special baby,1.5 - 2.5,448
