@@ -2,15 +2,11 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 202008,canastas,2026-09-17,PE1,piña special 1ra,1,533
 202010,canastas,2026-09-17,PE2,piña special 2da,3.0 - 4.0,511
 202011,canastas,2026-09-17,PEGUA,piña special guapita,1.5 - 2.5,490
-202012,canastas,2026-09-17,PE2,piña special 2da,3.0 - 4.0,525
 202013,canastas,2026-09-17,PE1,piña special 1ra,4,482
-202021,canastas,2026-09-17,PE2,piña special 2da,3.0 - 4.0,496
 202022,canastas,2026-09-17,PE1,piña special 1ra,1,545
 202025,canastas,2026-09-17,PE2,piña special 2da,0.0 - 1.0,522
 202029,canastas,2026-09-17,PE1,piña special 1ra,1,529
 202033,canastas,2026-09-17,PEGUA,piña special guapita,1.5 - 2.5,32
-202034,canastas,2026-09-17,PE2,piña special 2da,3.0 - 4.0,515
-202035,canastas,2026-09-17,PE2,piña special 2da,3.0 - 4.0,508
 202036,canastas,2026-09-17,PE2,piña special 2da,1.5 - 2.5,36
 202038,canastas,2026-09-17,PE1,piña special 1ra,1,526
 202039,canastas,2026-09-17,PE2,piña special 2da,0.0 - 1.0,495
@@ -30,7 +26,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 202076,canastas,2026-09-17,PE1,piña special 1ra,1,423
 202080,canastas,2026-09-17,PE3,piña special 3ra,1.5 - 2.5,39
 202081,canastas,2026-09-17,PE2,piña special 2da,0.0 - 1.0,256
-202084,canastas,2026-09-17,PE2,piña special 2da,4,321
 202087,canastas,2026-09-17,PE3,piña special 3ra,1.5 - 2.5,93
 202089,canastas,2026-09-17,PE3,piña special 3ra,0.0 - 1.0,227
 202091,canastas,2026-09-17,PE2,piña special 2da,0.0 - 1.0,184
@@ -77,11 +72,11 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 202135,canastas,2026-09-18,PE2,piña special 2da,3.0 - 4.0,505
 202136,canastas,2026-09-18,PE2,piña special 2da,1.5,467
 202137,canastas,2026-09-18,PE1,piña special 1ra,1,529
-202138,canastas,2026-09-18,,,,0
-202139,canastas,2026-09-18,,,,0
-202140,canastas,2026-09-18,,,,0
-202141,canastas,2026-09-18,,,,0
-202142,canastas,2026-09-18,,,,0
+202138,canastas,2026-09-18,PE1,piña special 1ra,1,618
+202139,canastas,2026-09-18,PEGUA,piña special guapita,1.5 - 2.5,477
+202140,canastas,2026-09-18,PE2,piña special 2da,1.5 - 2.5,509
+202141,canastas,2026-09-18,PE1,piña special 1ra,0.0 - 1.0,538
+202142,canastas,2026-09-18,PE1,piña special 1ra,1.5 - 2.5,550
 202143,canastas,2026-09-18,,,,0
 202144,canastas,2026-09-18,,,,0
 202145,canastas,2026-09-18,,,,0
