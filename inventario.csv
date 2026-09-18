@@ -15,9 +15,7 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 202049,canastas,2026-09-17,PE1,piña special 1ra,1,556
 202051,canastas,2026-09-17,PE1,piña special 1ra,1,531
 202053,canastas,2026-09-17,PEBAB,piña special baby,1.5 - 2.5,379
-202054,canastas,2026-09-17,PE2,piña special 2da,3.0 - 4.0,522
 202058,canastas,2026-09-17,PE2,piña special 2da,3.0 - 4.0,493
-202059,canastas,2026-09-17,PE2,piña special 2da,3.0 - 4.0,438
 202060,canastas,2026-09-17,PE1,piña special 1ra,1,531
 202064,canastas,2026-09-17,PEGUA,piña special guapita,1.5 - 2.5,484
 202066,canastas,2026-09-17,PE1,piña special 1ra,1,532
@@ -33,7 +31,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 202094,canastas,2026-09-17,PE3,piña special 3ra,0.0 - 1.0,175
 202095,canastas,2026-09-17,PE3,piña special 3ra,1.5 - 2.5,368
 202097,canastas,2026-09-17,PE3,piña special 3ra,1.5 - 2.5,569
-202098,canastas,2026-09-17,PE2,piña special 2da,3.0 - 4.0,367
 202099,canastas,2026-09-17,PJUG,piña jugos,3.0 - 4.0,235
 202100,canastas,2026-09-18,PE2,piña special 2da,1.5,413
 202101,canastas,2026-09-18,PE1,piña special 1ra,1,527
@@ -77,13 +74,13 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 202140,canastas,2026-09-18,PE2,piña special 2da,1.5 - 2.5,509
 202141,canastas,2026-09-18,PE1,piña special 1ra,0.0 - 1.0,538
 202142,canastas,2026-09-18,PE1,piña special 1ra,1.5 - 2.5,550
-202143,canastas,2026-09-18,,,,0
-202144,canastas,2026-09-18,,,,0
-202145,canastas,2026-09-18,,,,0
-202146,canastas,2026-09-18,,,,0
-202147,canastas,2026-09-18,,,,0
-202148,canastas,2026-09-18,,,,0
-202149,canastas,2026-09-18,,,,0
+202143,canastas,2026-09-18,PE1,piña special 1ra,1,259
+202144,canastas,2026-09-18,PE1,piña special 1ra,3.0 - 4.0,534
+202145,canastas,2026-09-18,PE2,piña special 2da,1.5 - 2.5,516
+202146,canastas,2026-09-18,PE2,piña special 2da,0.0 - 1.0,490
+202147,canastas,2026-09-18,PE2,piña special 2da,3.0 - 4.0,511
+202148,canastas,2026-09-18,PEGUA,piña special guapita,1.5 - 2.5,466
+202149,canastas,2026-09-18,PIND,piña indstria,1.5 - 2.5,440
 202150,canastas,2026-09-18,,,,0
 202151,canastas,2026-09-18,,,,0
 202152,canastas,2026-09-18,,,,0
