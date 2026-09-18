@@ -3,7 +3,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 201932,canastas,2026-09-16,PE2,piña special 2da,3.0 - 4.0,490
 201938,canastas,2026-09-16,PE2,piña special 2da,3.0 - 4.0,484
 201947,canastas,2026-09-16,PE2,piña special 2da,3.0 - 4.0,478
-201959,canastas,2026-09-16,PE1,piña special 1ra,3.0 - 4.0,563
 201963,canastas,2026-09-16,PE1,piña special 1ra,3.0 - 4.0,566
 201966,canastas,2026-09-16,PE1,piña special 1ra,3.0 - 4.0,494
 201970,canastas,2026-09-16,PE2,piña special 2da,3.0 - 4.0,514
@@ -13,14 +12,11 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 202011,canastas,2026-09-17,PEGUA,piña special guapita,1.5 - 2.5,490
 202012,canastas,2026-09-17,PE2,piña special 2da,3.0 - 4.0,525
 202013,canastas,2026-09-17,PE1,piña special 1ra,4,550
-202015,canastas,2026-09-17,PE1,piña special 1ra,3.0 - 4.0,520
 202017,canastas,2026-09-17,PE2,piña special 2da,3.0 - 4.0,537
 202018,canastas,2026-09-17,PE3,piña special 3ra,3.0 - 4.0,36
-202020,canastas,2026-09-17,PE1,piña special 1ra,3.0 - 4.0,526
 202021,canastas,2026-09-17,PE2,piña special 2da,3.0 - 4.0,496
 202022,canastas,2026-09-17,PE1,piña special 1ra,1,545
 202025,canastas,2026-09-17,PE2,piña special 2da,0.0 - 1.0,522
-202028,canastas,2026-09-17,PE1,piña special 1ra,3.0 - 4.0,548
 202029,canastas,2026-09-17,PE1,piña special 1ra,1,529
 202033,canastas,2026-09-17,PEGUA,piña special guapita,1.5 - 2.5,32
 202034,canastas,2026-09-17,PE2,piña special 2da,3.0 - 4.0,515
@@ -37,7 +33,7 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 202051,canastas,2026-09-17,PE1,piña special 1ra,1,531
 202053,canastas,2026-09-17,PEBAB,piña special baby,1.5 - 2.5,379
 202054,canastas,2026-09-17,PE2,piña special 2da,3.0 - 4.0,522
-202055,canastas,2026-09-17,PE1,piña special 1ra,3.0 - 4.0,531
+202055,canastas,2026-09-17,PE1,piña special 1ra,3.0 - 4.0,491
 202058,canastas,2026-09-17,PE2,piña special 2da,3.0 - 4.0,493
 202059,canastas,2026-09-17,PE2,piña special 2da,3.0 - 4.0,503
 202060,canastas,2026-09-17,PE1,piña special 1ra,1,531
@@ -47,13 +43,11 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 202068,canastas,2026-09-17,PE2,piña special 2da,3.0 - 4.0,521
 202070,canastas,2026-09-17,PE1,piña special 1ra,1,560
 202072,canastas,2026-09-17,PE1,piña special 1ra,1,545
-202074,canastas,2026-09-17,PE1,piña special 1ra,3.0 - 4.0,528
 202076,canastas,2026-09-17,PE1,piña special 1ra,1,423
 202078,canastas,2026-09-17,PE2,piña special 2da,3.0 - 4.0,545
 202079,canastas,2026-09-17,PE1,piña special 1ra,4,278
 202080,canastas,2026-09-17,PE3,piña special 3ra,1.5 - 2.5,39
 202081,canastas,2026-09-17,PE2,piña special 2da,0.0 - 1.0,256
-202083,canastas,2026-09-17,PE1,piña special 1ra,3.0 - 4.0,236
 202084,canastas,2026-09-17,PE2,piña special 2da,4,321
 202087,canastas,2026-09-17,PE3,piña special 3ra,1.5 - 2.5,93
 202089,canastas,2026-09-17,PE3,piña special 3ra,0.0 - 1.0,227
