@@ -18934,18 +18934,38 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-09-18,46064,R-18920,Andres Garcia,piña special 1ra,PE1,494,0,2800,0
 2026-09-18,46064,R-18920,Andres Garcia,piña special 1ra,PE1,548,0,2800,0
 2026-09-18,46064,R-18920,Andres Garcia,piña special 1ra,PE1,148,0,2800,0
-2026-09-18,,,andres ruben oquendo,piña special 1ra,PE1,552,0,,0
-2026-09-18,,,andres ruben oquendo,piña special 1ra,PE1,554,0,,0
-2026-09-18,,,andres ruben oquendo,piña special 1ra,PE1,270,68,,4
-2026-09-18,,,andres ruben oquendo,piña special 2da,PE2,504,0,,13
-2026-09-18,,,andres ruben oquendo,piña special 2da,PE2,539,0,,0
-2026-09-18,,,andres ruben oquendo,piña special 2da,PE2,530,0,,0
-2026-09-18,,,andres ruben oquendo,piña special 2da,PE2,505,0,,0
-2026-09-18,,,andres ruben oquendo,piña special 2da,PE2,501,0,,0
-2026-09-18,,,andres ruben oquendo,piña special 2da,PE2,316,0,,0
-2026-09-18,,,andres ruben oquendo,piña special 2da,PE2,508,0,,0
-2026-09-18,,,andres ruben oquendo,piña special 2da,PE2,489,0,,0
-2026-09-18,,,andres ruben oquendo,piña special 2da,PE2,517,0,,0
-2026-09-18,,,andres ruben oquendo,piña special 2da,PE2,432,0,,0
-2026-09-18,,,andres ruben oquendo,piña special 2da,PE2,362,0,,0
-2026-09-18,,,andres ruben oquendo,piña special 2da,PE2,517,154,,0
+2026-09-18,46067,R-18921,andres ruben oquendo,piña special 1ra,PE1,552,0,2700,0
+2026-09-18,46067,R-18921,andres ruben oquendo,piña special 1ra,PE1,554,0,2700,0
+2026-09-18,46067,R-18921,andres ruben oquendo,piña special 1ra,PE1,270,68,2700,4
+2026-09-18,46067,R-18921,andres ruben oquendo,piña special 2da,PE2,504,0,2500,13
+2026-09-18,46067,R-18921,andres ruben oquendo,piña special 2da,PE2,539,0,2500,0
+2026-09-18,46067,R-18921,andres ruben oquendo,piña special 2da,PE2,530,0,2500,0
+2026-09-18,46067,R-18921,andres ruben oquendo,piña special 2da,PE2,505,0,2500,0
+2026-09-18,46067,R-18921,andres ruben oquendo,piña special 2da,PE2,501,0,2500,0
+2026-09-18,46067,R-18921,andres ruben oquendo,piña special 2da,PE2,316,0,2500,0
+2026-09-18,46067,R-18921,andres ruben oquendo,piña special 2da,PE2,508,0,2500,0
+2026-09-18,46067,R-18921,andres ruben oquendo,piña special 2da,PE2,489,0,2500,0
+2026-09-18,46067,R-18921,andres ruben oquendo,piña special 2da,PE2,517,0,2500,0
+2026-09-18,46067,R-18921,andres ruben oquendo,piña special 2da,PE2,432,0,2500,0
+2026-09-18,46067,R-18921,andres ruben oquendo,piña special 2da,PE2,362,0,2500,0
+2026-09-18,46067,R-18921,andres ruben oquendo,piña special 2da,PE2,517,154,2500,0
+2026-09-18,46066,R-18924,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,598,0,3000,18
+2026-09-18,46066,R-18924,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,539,0,3000,0
+2026-09-18,46066,R-18924,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,533,0,3000,0
+2026-09-18,46066,R-18924,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,527,0,3000,0
+2026-09-18,46066,R-18924,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,526,0,3000,0
+2026-09-18,46066,R-18924,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,520,0,3000,0
+2026-09-18,46066,R-18924,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,553,0,3000,0
+2026-09-18,46066,R-18924,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,539,0,3000,0
+2026-09-18,46066,R-18924,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,520,145,3000,0
+2026-09-18,,R-18922,reposicion éxito medellin,,PE1,0,100,,0
+2026-09-18,46066,R-18923,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,530,0,3000,0
+2026-09-18,46066,R-18923,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,524,0,3000,0
+2026-09-18,46066,R-18923,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,529,0,3000,0
+2026-09-18,46066,R-18923,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,526,0,3000,0
+2026-09-18,46066,R-18923,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,526,0,3000,0
+2026-09-18,46066,R-18923,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,551,0,3000,0
+2026-09-18,46066,R-18923,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,527,0,3000,0
+2026-09-18,46066,R-18923,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,12,0,3000,0
+2026-09-18,46066,R-18923,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,527,0,3000,0
+2026-09-18,46066,R-18923,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,522,226,3000,0
