@@ -18980,22 +18980,30 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-09-18,46068,R-18925,KARINA BORJA,piña special 3ra,PE3,444,0,1000,0
 2026-09-18,46068,R-18925,KARINA BORJA,piña special 3ra,PE3,407,19,1000,0
 2026-09-18,46069,R-18926,venta empleados,piña special 1ra,PE1,134,0,2200,0
-2026-09-18,,,local sincelejo,piña special 1ra,PE1,545,0,2800,0
-2026-09-18,,,local sincelejo,piña special 1ra,PE1,523,0,2800,6
-2026-09-18,,,local sincelejo,piña special 1ra,PE1,529,103,2800,0
-2026-09-18,,,local sincelejo,piña special 1ra,PE1,353,0,2800,6
-2026-09-18,,,local sincelejo,piña special 1ra,PE1,537,0,2800,0
-2026-09-18,,,local sincelejo,piña special 1ra,PE1,197,0,2800,0
-2026-09-18,,,local sincelejo,piña special 1ra,PE1,550,377,2800,0
-2026-09-18,,,local sincelejo,piña special 2da,PE2,476,0,2600,5
-2026-09-18,,,local sincelejo,piña special 2da,PE2,21,0,2600,0
-2026-09-18,,,local sincelejo,piña special 2da,PE2,28,0,2600,0
-2026-09-18,,,local sincelejo,piña special 2da,PE2,523,0,2600,0
-2026-09-18,,,local sincelejo,piña special 2da,PE2,507,345,2200,0
-2026-09-18,,,local sincelejo,piña special 3ra,PE3,449,0,2200,0
-2026-09-18,,,local sincelejo,piña special 3ra,PE3,454,0,,0
-2026-09-18,,,local sincelejo,piña special 3ra,PE3,360,0,,3
-2026-09-18,,,local sincelejo,piña special 3ra,PE3,468,0,,0
-2026-09-18,,,local sincelejo,piña special 3ra,PE3,144,16,,0
-2026-09-18,,,juan pablo cogollo,piña special 1ra,PE1,478,0,,0
-2026-09-18,,,juan pablo cogollo,piña special 2da,PE2,493,0,,0
+2026-09-18,,R-18927,local sincelejo,piña special 1ra,PE1,545,0,2800,0
+2026-09-18,,R-18927,local sincelejo,piña special 1ra,PE1,523,0,2800,6
+2026-09-18,,R-18927,local sincelejo,piña special 1ra,PE1,529,103,2800,0
+2026-09-18,,R-18927,local sincelejo,piña special 1ra,PE1,353,0,2800,6
+2026-09-18,,R-18927,local sincelejo,piña special 1ra,PE1,537,0,2800,0
+2026-09-18,,R-18927,local sincelejo,piña special 1ra,PE1,197,0,2800,0
+2026-09-18,,R-18927,local sincelejo,piña special 1ra,PE1,550,377,2800,0
+2026-09-18,,R-18927,local sincelejo,piña special 2da,PE2,476,0,2600,5
+2026-09-18,,R-18927,local sincelejo,piña special 2da,PE2,21,0,2600,0
+2026-09-18,,R-18927,local sincelejo,piña special 2da,PE2,28,0,2600,0
+2026-09-18,,R-18927,local sincelejo,piña special 2da,PE2,523,0,2600,0
+2026-09-18,,R-18927,local sincelejo,piña special 2da,PE2,507,345,2200,0
+2026-09-18,,R-18927,local sincelejo,piña special 3ra,PE3,449,0,2200,0
+2026-09-18,,R-18927,local sincelejo,piña special 3ra,PE3,454,0,2200,0
+2026-09-18,,R-18927,local sincelejo,piña special 3ra,PE3,360,0,2200,3
+2026-09-18,,R-18927,local sincelejo,piña special 3ra,PE3,468,0,2200,0
+2026-09-18,,R-18927,local sincelejo,piña special 3ra,PE3,144,16,2200,0
+2026-09-18,,R-18927,local sincelejo,piña special guapita,PEGUA,479,0,1700,0
+2026-09-18,,R-18927,local sincelejo,piña special guapita,PEGUA,478,0,1700,0
+2026-09-18,,R-18927,local sincelejo,piña special guapita,PEGUA,24,0,1700,0
+2026-09-18,,R-18927,local sincelejo,piña special guapita,PEGUA,472,0,1700,6
+2026-09-18,,R-18927,local sincelejo,piña special guapita,PEGUA,475,0,1700,0
+2026-09-18,,R-18927,local sincelejo,piña special guapita,PEGUA,464,322,1700,0
+2026-09-18,,R-18927,local sincelejo,piña special baby,PEBAB,374,0,1200,0
+2026-09-18,46070,R-18928,juan pablo cogollo,piña special 1ra,PE1,474,26,2700,4
+2026-09-18,46070,R-18928,juan pablo cogollo,piña special 2da,PE2,486,0,2500,0
+2026-09-18,46070,R-18928,juan pablo cogollo,piña special 2da,PE2,345,169,2500,3
