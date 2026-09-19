@@ -64,14 +64,14 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 202219,canastas,2026-09-19,AD3,Piña AD3,0.0 - 1.0,40
 202220,canastas,2026-09-19,AD1,Piña AD1,0.0 - 1.0,572
 202221,canastas,2026-09-19,AD-PJUG,AD-PJUG,3.0 - 4.0,17
-202222,canastas,2026-09-19,,,,0
-202223,canastas,2026-09-19,,,,0
-202224,canastas,2026-09-19,,,,0
-202225,canastas,2026-09-19,,,,0
-202226,canastas,2026-09-19,,,,0
-202227,canastas,2026-09-19,,,,0
-202228,canastas,2026-09-19,,,,0
-202229,canastas,2026-09-19,,,,0
+202222,canastas,2026-09-19,AD2,Piña AD2,0.0 - 1.0,520
+202223,canastas,2026-09-19,AD2,Piña AD2,3.0 - 4.0,14
+202224,canastas,2026-09-19,AD1,Piña AD1,0.0 - 1.0,504
+202225,canastas,2026-09-19,AD1,Piña AD1,1.5 - 2.5,57
+202226,canastas,2026-09-19,AD2,Piña AD2,1.5 - 2.5,13
+202227,canastas,2026-09-19,AD2,Piña AD2,0.0 - 1.0,323
+202228,canastas,2026-09-19,AD3,Piña AD3,0.0 - 1.0,270
+202229,canastas,2026-09-19,AD1,Piña AD1,3.0 - 4.0,104
 202230,canastas,2026-09-19,,,,0
 202231,canastas,2026-09-19,,,,0
 202232,canastas,2026-09-19,,,,0
