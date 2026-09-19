@@ -18969,17 +18969,17 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-09-18,46066,R-18923,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,12,0,3000,0
 2026-09-18,46066,R-18923,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,527,0,3000,0
 2026-09-18,46066,R-18923,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,522,226,3000,0
-2026-09-18,,R-18925,KARINA BORJA,piña special 3ra,PE3,221,0,1000,3
-2026-09-18,,R-18925,KARINA BORJA,piña special 3ra,PE3,172,0,1000,0
-2026-09-18,,R-18925,KARINA BORJA,piña special 3ra,PE3,550,0,1000,0
-2026-09-18,,R-18925,KARINA BORJA,piña special 3ra,PE3,464,11,1000,0
-2026-09-18,,R-18925,KARINA BORJA,piña special 3ra,PE3,563,0,1000,3
-2026-09-18,,R-18925,KARINA BORJA,piña special 3ra,PE3,19,0,1000,0
-2026-09-18,,R-18925,KARINA BORJA,piña special 3ra,PE3,91,0,1000,0
-2026-09-18,,R-18925,KARINA BORJA,piña special 3ra,PE3,39,0,1000,0
-2026-09-18,,R-18925,KARINA BORJA,piña special 3ra,PE3,444,0,1000,0
-2026-09-18,,R-18925,KARINA BORJA,piña special 3ra,PE3,407,19,1000,0
-2026-09-18,,,venta empleados,piña special 1ra,PE1,134,0,2200,0
+2026-09-18,46068,R-18925,KARINA BORJA,piña special 3ra,PE3,221,0,1000,3
+2026-09-18,46068,R-18925,KARINA BORJA,piña special 3ra,PE3,172,0,1000,0
+2026-09-18,46068,R-18925,KARINA BORJA,piña special 3ra,PE3,550,0,1000,0
+2026-09-18,46068,R-18925,KARINA BORJA,piña special 3ra,PE3,464,11,1000,0
+2026-09-18,46068,R-18925,KARINA BORJA,piña special 3ra,PE3,563,0,1000,3
+2026-09-18,46068,R-18925,KARINA BORJA,piña special 3ra,PE3,19,0,1000,0
+2026-09-18,46068,R-18925,KARINA BORJA,piña special 3ra,PE3,91,0,1000,0
+2026-09-18,46068,R-18925,KARINA BORJA,piña special 3ra,PE3,39,0,1000,0
+2026-09-18,46068,R-18925,KARINA BORJA,piña special 3ra,PE3,444,0,1000,0
+2026-09-18,46068,R-18925,KARINA BORJA,piña special 3ra,PE3,407,19,1000,0
+2026-09-18,46069,R-18926,venta empleados,piña special 1ra,PE1,134,0,2200,0
 2026-09-18,,,local sincelejo,piña special 1ra,PE1,545,0,2800,0
 2026-09-18,,,local sincelejo,piña special 1ra,PE1,523,0,2800,6
 2026-09-18,,,local sincelejo,piña special 1ra,PE1,529,103,2800,0
@@ -18991,4 +18991,8 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-09-18,,,local sincelejo,piña special 2da,PE2,21,0,2600,0
 2026-09-18,,,local sincelejo,piña special 2da,PE2,28,0,2600,0
 2026-09-18,,,local sincelejo,piña special 2da,PE2,523,0,2600,0
-2026-09-18,,,local sincelejo,piña special 2da,PE2,507,0,,0
+2026-09-18,,,local sincelejo,piña special 2da,PE2,507,345,2200,0
+2026-09-18,,,local sincelejo,piña special 3ra,PE3,449,0,2200,0
+2026-09-18,,,local sincelejo,piña special 3ra,PE3,454,0,,0
+2026-09-18,,,local sincelejo,piña special 3ra,PE3,360,0,,3
+2026-09-18,,,local sincelejo,piña special 3ra,PE3,468,0,,0
