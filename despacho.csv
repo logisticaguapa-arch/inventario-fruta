@@ -19074,26 +19074,39 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-09-19,46095,R-18934,Andres Garcia,piña special 2da,PE2,399,0,2800,0
 2026-09-19,46095,R-18934,Andres Garcia,piña special 2da,PE2,405,0,2800,0
 2026-09-19,46095,R-18934,Andres Garcia,piña special 2da,PE2,409,0,2800,0
-2026-09-19,,,cartagena,piña special 1ra,PE1,535,0,,0
-2026-09-19,,,cartagena,Piña AD1,AD1,569,0,,0
-2026-09-19,,,cartagena,piña special 1ra,PE1,545,0,,0
-2026-09-19,,,cartagena,piña special 1ra,PE1,570,0,,0
-2026-09-19,,,cartagena,piña special 1ra,PE1,548,0,,0
-2026-09-19,,,cartagena,piña special 2da,PE2,510,0,,0
-2026-09-19,,,cartagena,piña special 2da,PE2,474,0,,0
-2026-09-19,,,cartagena,piña special 2da,PE2,263,0,,0
-2026-09-19,,,cartagena,piña special 2da,PE2,505,0,,0
-2026-09-19,,,cartagena,piña special 2da,PE2,531,0,,0
-2026-09-19,,,cartagena,Piña AD2,AD2,14,0,,0
-2026-09-19,,,cartagena,piña special guapita,PEGUA,474,0,,0
-2026-09-19,,,cartagena,piña special guapita,PEGUA,275,0,,0
-2026-09-19,,,cartagena,piña special guapita,PEGUA,471,0,,0
-2026-09-19,,,cartagena,Piña ADGUA,ADGUA,13,0,,0
-2026-09-19,,,cartagena,Piña ADGUA,ADGUA,90,0,,0
-2026-09-19,,,cartagena,piña special 1ra,PE1,510,0,,0
-2026-09-19,,,cartagena,Piña AD1,AD1,104,0,,0
-2026-09-19,,,cartagena,piña special baby,PEBAB,117,0,,0
-2026-09-19,,,cartagena,piña special baby,PEBAB,413,0,,0
-2026-09-19,,,cartagena,Piña AD1,AD1,500,0,,0
-2026-09-19,,,cartagena,Piña AD1,AD1,348,0,,0
-2026-09-19,,,cartagena,piña special 1ra,PE1,555,0,,0
+2026-09-19,,R-18935,cartagena,piña special 1ra,PE1,535,0,3000,0
+2026-09-19,,R-18935,cartagena,Piña AD1,AD1,569,0,3000,0
+2026-09-19,,R-18935,cartagena,piña special 1ra,PE1,545,0,3000,0
+2026-09-19,,R-18935,cartagena,piña special 1ra,PE1,570,0,3000,0
+2026-09-19,,R-18935,cartagena,piña special 1ra,PE1,548,0,3000,0
+2026-09-19,,R-18935,cartagena,piña special 2da,PE2,510,0,2800,0
+2026-09-19,,R-18935,cartagena,piña special 2da,PE2,474,0,2800,0
+2026-09-19,,R-18935,cartagena,piña special 2da,PE2,263,0,2800,0
+2026-09-19,,R-18935,cartagena,piña special 2da,PE2,505,0,2800,0
+2026-09-19,,R-18935,cartagena,piña special 2da,PE2,531,0,2800,0
+2026-09-19,,R-18935,cartagena,Piña AD2,AD2,14,0,2800,0
+2026-09-19,,R-18935,cartagena,piña special guapita,PEGUA,474,0,2000,0
+2026-09-19,,R-18935,cartagena,piña special guapita,PEGUA,275,0,2000,0
+2026-09-19,,R-18935,cartagena,piña special guapita,PEGUA,471,0,2000,0
+2026-09-19,,R-18935,cartagena,Piña ADGUA,ADGUA,13,0,2000,0
+2026-09-19,,R-18935,cartagena,Piña ADGUA,ADGUA,90,0,2000,0
+2026-09-19,,R-18935,cartagena,piña special 1ra,PE1,510,0,3000,0
+2026-09-19,,R-18935,cartagena,Piña AD1,AD1,104,0,3000,0
+2026-09-19,,R-18935,cartagena,piña special baby,PEBAB,117,0,2000,0
+2026-09-19,,R-18935,cartagena,piña special baby,PEBAB,413,0,2000,0
+2026-09-19,,R-18936,cartagena,Piña AD1,AD1,500,0,,0
+2026-09-19,,R-18936,cartagena,Piña AD1,AD1,348,0,,0
+2026-09-19,,R-18936,cartagena,piña special 1ra,PE1,555,0,,0
+2026-09-19,,R-18936,cartagena,piña special 1ra,PE1,266,0,,0
+2026-09-19,,R-18936,cartagena,piña special 1ra,PE1,555,0,,0
+2026-09-19,,R-18936,cartagena,piña special 2da,PE2,313,0,,0
+2026-09-19,,R-18936,cartagena,piña special 2da,PE2,521,0,,0
+2026-09-19,,R-18936,cartagena,Piña AD2,AD2,517,0,,0
+2026-09-19,,R-18936,cartagena,piña special 2da,PE2,584,0,,0
+2026-09-19,,R-18936,cartagena,piña special 2da,PE2,528,0,,0
+2026-09-19,,R-18936,cartagena,Piña AD2,AD2,321,0,,0
+2026-09-19,,R-18936,cartagena,piña special 1ra,PE1,518,0,,0
+2026-09-19,,R-18936,cartagena,,,0,0,,0
+2026-09-19,,R-18936,cartagena,,,0,0,,0
+2026-09-19,,R-18936,cartagena,,,0,0,,0
+2026-09-19,,R-18936,cartagena,,,0,0,,0
