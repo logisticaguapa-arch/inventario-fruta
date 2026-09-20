@@ -19034,17 +19034,60 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-09-19,,R-18930,local medellin,piña special 2da,PE2,500,0,3000,2
 2026-09-19,,R-18930,local medellin,piña special 3ra,PE3,495,0,2800,1
 2026-09-19,,R-18930,local medellin,piña special 3ra,PE3,8,0,2800,0
-2026-09-19,,,dario alberto,piña special 2da,PE2,244,0,,0
-2026-09-19,,,dario alberto,piña special 2da,PE2,585,71,,0
-2026-09-19,,,dario alberto,piña special 1ra,PE1,279,0,,0
-2026-09-19,,,dario alberto,piña special 1ra,PE1,378,0,,0
-2026-09-19,,,dario alberto,piña special 1ra,PE1,406,0,,0
-2026-09-19,,,dario alberto,piña special 1ra,PE1,470,0,,37
+2026-09-19,46094,R-18931,dario alberto,piña special 2da,PE2,244,0,2600,0
+2026-09-19,46094,R-18931,dario alberto,piña special 2da,PE2,585,71,2600,0
+2026-09-19,46094,R-18931,dario alberto,piña special 1ra,PE1,279,0,2800,0
+2026-09-19,46094,R-18931,dario alberto,piña special 1ra,PE1,378,0,2800,0
+2026-09-19,46094,R-18931,dario alberto,piña special 1ra,PE1,406,0,2800,0
+2026-09-19,46094,R-18931,dario alberto,piña special 1ra,PE1,470,0,2800,37
 2026-09-19,,,descarte,piña jugos,PJUG,0,0,,235
+2026-09-19,,R-18932,cortesia,,,0,30,,0
 2026-09-19,,,local sincelejo,piña special 1ra,PE1,550,0,,0
 2026-09-19,,,local sincelejo,piña special 1ra,PE1,538,0,,0
 2026-09-19,,,local sincelejo,piña special 1ra,PE1,353,0,,0
 2026-09-19,,,local sincelejo,Piña AD1,AD1,57,0,,0
 2026-09-19,,,local sincelejo,piña special 2da,PE2,509,0,,0
 2026-09-19,,,local sincelejo,piña special 2da,PE2,152,0,,0
-2026-09-19,,,local sincelejo,Piña AD2,AD2,13,0,,0
+2026-09-19,,,local sincelejo,Piña AD2,AD2,13,26,,0
+2026-09-19,,,local sincelejo,piña special 3ra,PE3,556,0,,0
+2026-09-19,,,local sincelejo,piña special 3ra,PE3,498,0,,0
+2026-09-19,,,local sincelejo,piña special 3ra,PE3,500,0,,0
+2026-09-19,,,local sincelejo,Piña AD3,AD3,269,0,,0
+2026-09-19,,,local sincelejo,piña special 3ra,PE3,76,0,,0
+2026-09-19,,,local sincelejo,Piña AD3,AD3,40,0,,0
+2026-09-19,,,local sincelejo,piña special 3ra,PE3,513,0,,0
+2026-09-19,,,local sincelejo,piña special 3ra,PE3,245,0,,0
+2026-09-19,,,local sincelejo,piña special 3ra,PE3,511,0,,0
+2026-09-19,,,local sincelejo,piña special 3ra,PE3,368,0,,0
+2026-09-19,,,local sincelejo,piña special guapita,PEGUA,471,0,,0
+2026-09-19,,,local sincelejo,piña special guapita,PEGUA,328,0,,0
+2026-09-19,,,local sincelejo,piña special guapita,PEGUA,30,0,,0
+2026-09-19,,,local sincelejo,piña special baby,PEBAB,221,0,,0
+2026-09-19,,,local sincelejo,piña special baby,PEBAB,444,0,,0
+2026-09-19,,,local sincelejo,piña special baby,PEBAB,109,0,,0
+2026-09-19,,,Andres Garcia,piña special 2da,PE2,404,0,,0
+2026-09-19,,,Andres Garcia,piña special 2da,PE2,403,0,,0
+2026-09-19,,,Andres Garcia,piña special 2da,PE2,399,0,,0
+2026-09-19,,,Andres Garcia,piña special 2da,PE2,457,0,,0
+2026-09-19,,,Andres Garcia,piña special 2da,PE2,399,0,,0
+2026-09-19,,,Andres Garcia,piña special 2da,PE2,442,0,,0
+2026-09-19,,,Andres Garcia,piña special 2da,PE2,399,0,,0
+2026-09-19,,,Andres Garcia,piña special 2da,PE2,405,0,,0
+2026-09-19,,,Andres Garcia,piña special 2da,PE2,409,0,,0
+2026-09-19,,,cartagena,piña special 1ra,PE1,535,0,,0
+2026-09-19,,,cartagena,Piña AD1,AD1,569,0,,0
+2026-09-19,,,cartagena,piña special 1ra,PE1,545,0,,0
+2026-09-19,,,cartagena,piña special 1ra,PE1,570,0,,0
+2026-09-19,,,cartagena,piña special 1ra,PE1,548,0,,0
+2026-09-19,,,cartagena,piña special 2da,PE2,510,0,,0
+2026-09-19,,,cartagena,piña special 2da,PE2,474,0,,0
+2026-09-19,,,cartagena,piña special 2da,PE2,263,0,,0
+2026-09-19,,,cartagena,piña special 2da,PE2,505,0,,0
+2026-09-19,,,cartagena,piña special 2da,PE2,531,0,,0
+2026-09-19,,,cartagena,Piña AD2,AD2,14,0,,0
+2026-09-19,,,cartagena,piña special guapita,PEGUA,474,0,,0
+2026-09-19,,,cartagena,piña special guapita,PEGUA,275,0,,0
+2026-09-19,,,cartagena,piña special guapita,PEGUA,471,0,,0
+2026-09-19,,,cartagena,Piña ADGUA,ADGUA,13,0,,0
+2026-09-19,,,cartagena,Piña ADGUA,ADGUA,90,0,,0
+2026-09-19,,,cartagena,piña special 1ra,PE1,510,0,,0
