@@ -271,6 +271,10 @@ table.ftable .ftotal-row td{color:#052e16!important}
     <div class="msel-panel" id="selFec-panel"></div>
   </div>
   <button class="breset" onclick="reset()">↺ Limpiar</button>
+  <span id="barInvTarjetasExtra">
+    <button class="bexport" onclick="exportExcelIngresado()">⬇ Inventario ingresado</button>
+    <button class="bexport" onclick="exportExcelDespachoDetalle()">⬇ Detalle Despacho</button>
+  </span>
 </div>
 
 <div class="bar" id="barFact" style="display:none">
@@ -513,7 +517,7 @@ function fmtFechaCompleta(f){
   return dd+'/'+mm+'/'+y;
 }
 
-let ALL=[],DESPACHO=[],PROCESADO=[],DESCARTE=[],currentView='tarjetas';
+let ALL=[],DESPACHO=[],PROCESADO=[],DESCARTE=[],INGRESADO=[],currentView='tarjetas';
 // -- Clasificacion Floracion / Induccion segun Calidad (columna D de Proceso) --
 const COSECHA_FLORACION=new Set(['AD1','AD2','AD3','ADGUA','ADBABY','AD-PIND','AD-PJUG']);
 function getCosecha(calidad){
@@ -553,6 +557,11 @@ async function load(){
     if(!r5.ok)throw 0;
     HORA_INGRESO=parseHoraIngresoCSV(await r5.text());
   }catch{HORA_INGRESO={};}
+  try{
+    const r6=await fetch('ingresado.csv?'+Date.now());
+    if(!r6.ok)throw 0;
+    INGRESADO=parseIngresadoCSV(await r6.text());
+  }catch{INGRESADO=demoIngresado();}
   buildFilters();buildFacturaFiltros();buildDescarteFiltros();buildProcesadoFiltros();buildSeguimientoFiltros();render();
 }
 // -- "Inventario procesado": TODO lo que entro a Proceso (columna Neto, Proceso!I),
@@ -630,16 +639,48 @@ function parseDespachoCSV(t){
       KilosFinal:parseFloat(v[6])||0,
       ReposicionKilos:parseFloat(v[7])||0,
       Precio:(v[8]===undefined||v[8].trim()==='')?null:parseFloat(v[8]),
-      KilosDescarte:parseFloat(v[9])||0
+      KilosDescarte:parseFloat(v[9])||0,
+      // -- Agregados para el boton "Detalle Despacho" de Tarjetas por dia --
+      ID:(v[10]||'').trim(),
+      FechaProceso:(v[11]||'').trim(),
+      Grado:(v[12]||'').trim(),
+      Grupo:(v[13]||'').trim(),
+      Lote:(v[14]||'').trim()
     };
   }).filter(r=>r.FechaDespacho!=='');
 }
 
 function demoDespacho(){return[
-  {FechaDespacho:'2026-07-27',Factura:'',Remision:'R-18518',Cliente:'reposicion exito barranquilla',Categoria:'piña special 1ra',Calibre:'3,0 - 4,0',KilosFinal:0,ReposicionKilos:50,Precio:0,KilosDescarte:0},
-  {FechaDespacho:'2026-07-27',Factura:'',Remision:'R-18520',Cliente:'cartagena',Categoria:'piña special 1ra',Calibre:'3,0 - 4,0',KilosFinal:568,ReposicionKilos:432,Precio:3000,KilosDescarte:12},
-  {FechaDespacho:'2026-07-27',Factura:'',Remision:'R-18520',Cliente:'cartagena',Categoria:'piña special 2da',Calibre:'1,5 - 2,5',KilosFinal:988,ReposicionKilos:12,Precio:2800,KilosDescarte:5},
-  {FechaDespacho:'2026-07-27',Factura:'',Remision:'R-18521',Cliente:'local medellin',Categoria:'piña special 1ra',Calibre:'3,0 - 4,0',KilosFinal:3015,ReposicionKilos:0,Precio:2500,KilosDescarte:0},
+  {FechaDespacho:'2026-07-27',Factura:'',Remision:'R-18518',Cliente:'reposicion exito barranquilla',Categoria:'piña special 1ra',Calibre:'3,0 - 4,0',KilosFinal:0,ReposicionKilos:50,Precio:0,KilosDescarte:0,ID:'201480',FechaProceso:'2026-07-26',Grado:'3,0 - 4,0',Grupo:'2426',Lote:'22'},
+  {FechaDespacho:'2026-07-27',Factura:'',Remision:'R-18520',Cliente:'cartagena',Categoria:'piña special 1ra',Calibre:'3,0 - 4,0',KilosFinal:568,ReposicionKilos:432,Precio:3000,KilosDescarte:12,ID:'201481',FechaProceso:'2026-07-26',Grado:'3,0 - 4,0',Grupo:'2426',Lote:'22'},
+  {FechaDespacho:'2026-07-27',Factura:'',Remision:'R-18520',Cliente:'cartagena',Categoria:'piña special 2da',Calibre:'1,5 - 2,5',KilosFinal:988,ReposicionKilos:12,Precio:2800,KilosDescarte:5,ID:'201482',FechaProceso:'2026-07-26',Grado:'1,5 - 2,5',Grupo:'2426',Lote:'22'},
+  {FechaDespacho:'2026-07-27',Factura:'',Remision:'R-18521',Cliente:'local medellin',Categoria:'piña special 1ra',Calibre:'3,0 - 4,0',KilosFinal:3015,ReposicionKilos:0,Precio:2500,KilosDescarte:0,ID:'201483',FechaProceso:'2026-07-26',Grado:'3,0 - 4,0',Grupo:'2426',Lote:'22'},
+];}
+
+// -- "Inventario ingresado" (boton en Tarjetas por dia): TODO lo que entro a
+// Proceso, tomado directo de esa hoja -- sujeto al mismo filtro de fecha que
+// el resto de Tarjetas por dia. --
+function parseIngresadoCSV(t){
+  const lines=t.trim().split('\n');
+  if(!lines.length||!lines[0]) return [];
+  return lines.slice(1).filter(l=>l.trim()!=='').map(function(l){
+    const v=l.split(',');
+    return {
+      ID:(v[0]||'').trim(),
+      FechaProceso:(v[1]||'').trim(),
+      Calibre:(v[2]||'').trim(),
+      Categoria:(v[3]||'').trim(),
+      Grado:(v[4]||'').trim(),
+      PesoNeto:parseFloat(v[5])||0,
+      Lote:(v[6]||'').trim(),
+      Grupo:(v[7]||'').trim()
+    };
+  }).filter(r=>r.ID!=='' && r.FechaProceso!=='');
+}
+function demoIngresado(){return[
+  {ID:'201480',FechaProceso:'2026-07-26',Calibre:'AD1',Categoria:'Piña AD1',Grado:'0,0 - 1,0',PesoNeto:596,Lote:'22',Grupo:'2426'},
+  {ID:'201481',FechaProceso:'2026-07-26',Calibre:'PE1',Categoria:'piña special 1ra',Grado:'1,5 - 2,5',PesoNeto:521,Lote:'22',Grupo:'2426'},
+  {ID:'201482',FechaProceso:'2026-07-27',Calibre:'PE2',Categoria:'piña special 2da',Grado:'3,0 - 4,0',PesoNeto:592,Lote:'23',Grupo:'2427'},
 ];}
 
 function parseCSV(t){
@@ -1036,6 +1077,17 @@ function filtered(){
   const cal=filtros.cal,t=filtros.tam,f=filtros.fec;
   return ALL.filter(r=>(!cal.length||cal.includes(r.Calibre))&&(!t.length||t.includes(r.Calidad))&&(!f.length||f.includes(r.Fecha)));
 }
+// -- Los dos botones de descarga de Tarjetas por dia usan el MISMO filtro de
+// fecha (filtros.fec) que ya se ve en esa vista, comparado contra FechaProceso
+// (que es lo que ese filtro representa en toda la app). --
+function filteredIngresado(){
+  const f=filtros.fec;
+  return INGRESADO.filter(r=>(!f.length||f.includes(r.FechaProceso)));
+}
+function filteredDespachoDetalle(){
+  const f=filtros.fec;
+  return DESPACHO.filter(r=>(!f.length||f.includes(r.FechaProceso)));
+}
 function filteredFacturacion(){
   const fecha=filtros.factFecha,c=filtros.factCli,cal=filtros.factCal;
   return DESPACHO.filter(r=>(!fecha.length||fecha.includes(r.FechaDespacho))&&(!c.length||c.includes(r.Cliente))&&(!cal.length||cal.includes(r.Calibre)));
@@ -1055,6 +1107,7 @@ function filteredSeguimiento(){
 function setView(v){
   currentView=v;
   ['tarjetas','tabla','bodega','bines','facturacion','descarte','procesado','seguimiento'].forEach(x=>{document.getElementById('v-'+x).style.display=x===v?'':'none';document.getElementById('btn-'+x).classList.toggle('active',x===v);});
+  document.getElementById('barInvTarjetasExtra').style.display = (v==='tarjetas')?'':'none';
   const esFact = v==='facturacion';
   const esDesc = v==='descarte';
   const esProc = v==='procesado';
@@ -1717,6 +1770,42 @@ function factFechaArchivo(){
   if(!f.length) return 'todas';
   if(f.length===1) return f[0];
   return 'multiples-fechas';
+}
+
+// -- Botones de Tarjetas por dia: "Inventario ingresado" (de Proceso) y
+// "Detalle Despacho" (de Despacho) -- ambos sujetos al filtro de fecha activo. --
+const INGRESADO_EXPORT_HEADERS=['ID','Fecha Proceso','Calibre','Categoria','Grado','Peso Neto','Lote','GF'];
+function exportExcelIngresado(){
+  const data=filteredIngresado();
+  if(!data.length){ alert('No hay inventario ingresado para la fecha seleccionada.'); return; }
+  const filas=data.slice().sort(function(a,b){
+    if(a.FechaProceso!==b.FechaProceso) return a.FechaProceso<b.FechaProceso?-1:1;
+    return String(a.ID).localeCompare(String(b.ID),'es',{numeric:true});
+  }).map(function(r){
+    return [r.ID, fmtF(r.FechaProceso), r.Calibre, r.Categoria, r.Grado, Math.round(r.PesoNeto),
+      r.Lote, r.Grupo?('GF'+r.Grupo):''];
+  });
+  const ws=XLSX.utils.aoa_to_sheet([INGRESADO_EXPORT_HEADERS].concat(filas));
+  const wb=XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(wb,ws,'Inventario ingresado');
+  XLSX.writeFile(wb,'InventarioIngresado_'+fechaISO(new Date())+'.xlsx');
+}
+
+const DESPACHO_DET_EXPORT_HEADERS=['Cliente','Fecha despacho','ID','Fecha Proceso','Calibre','Categoria','Grado','Kilos final','Grupo','Lote','Precio'];
+function exportExcelDespachoDetalle(){
+  const data=filteredDespachoDetalle();
+  if(!data.length){ alert('No hay despachos para la fecha seleccionada.'); return; }
+  const filas=data.slice().sort(function(a,b){
+    if(a.FechaProceso!==b.FechaProceso) return a.FechaProceso<b.FechaProceso?-1:1;
+    return String(a.ID).localeCompare(String(b.ID),'es',{numeric:true});
+  }).map(function(r){
+    return [r.Cliente, fmtF(r.FechaDespacho), r.ID, fmtF(r.FechaProceso), r.Calibre, r.Categoria,
+      r.Grado, Math.round(r.KilosFinal), r.Grupo, r.Lote, (r.Precio===null?'':r.Precio)];
+  });
+  const ws=XLSX.utils.aoa_to_sheet([DESPACHO_DET_EXPORT_HEADERS].concat(filas));
+  const wb=XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(wb,ws,'Detalle Despacho');
+  XLSX.writeFile(wb,'DetalleDespacho_'+fechaISO(new Date())+'.xlsx');
 }
 
 function exportExcelFacturacion(){
