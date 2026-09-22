@@ -517,11 +517,19 @@ function fmtF(f){
 // se pega bien en Excel) --
 function fmtFechaCompleta(f){
   if(!f) return '';
+  f=String(f);
   let y,m,d;
   if(f.includes('/')){
     [d,m,y]=f.split('/');
-  } else {
+  } else if(f.includes('-')){
     [y,m,d]=f.split('-');
+  } else if(/^\d+(\.\d+)?$/.test(f)){
+    // -- Respaldo por si llega un numero serial de Excel en vez de fecha -- ver fmtF --
+    const base=Date.UTC(1899,11,30);
+    const dt=new Date(base+parseFloat(f)*86400000);
+    y=dt.getUTCFullYear(); m=dt.getUTCMonth()+1; d=dt.getUTCDate();
+  } else {
+    return f;
   }
   const dd=String(parseInt(d)).padStart(2,'0');
   const mm=String(parseInt(m)).padStart(2,'0');
@@ -1798,7 +1806,7 @@ function exportExcelIngresado(){
     if(a.FechaProceso!==b.FechaProceso) return a.FechaProceso<b.FechaProceso?-1:1;
     return String(a.ID).localeCompare(String(b.ID),'es',{numeric:true});
   }).map(function(r){
-    return [r.ID, fmtF(r.FechaProceso), r.Calibre, r.Categoria, r.Grado, Math.round(r.PesoNeto),
+    return [r.ID, fmtFechaCompleta(r.FechaProceso), r.Calibre, r.Categoria, r.Grado, Math.round(r.PesoNeto),
       r.Lote, r.Grupo];
   });
   const ws=XLSX.utils.aoa_to_sheet([INGRESADO_EXPORT_HEADERS].concat(filas));
@@ -1815,7 +1823,7 @@ function exportExcelDespachoDetalle(){
     if(a.FechaDespacho!==b.FechaDespacho) return a.FechaDespacho<b.FechaDespacho?-1:1;
     return String(a.ID).localeCompare(String(b.ID),'es',{numeric:true});
   }).map(function(r){
-    return [r.Cliente, fmtF(r.FechaDespacho), r.ID, fmtF(r.FechaProceso), r.Calibre, r.Categoria,
+    return [r.Cliente, fmtFechaCompleta(r.FechaDespacho), r.ID, fmtFechaCompleta(r.FechaProceso), r.Calibre, r.Categoria,
       r.Grado, Math.round(r.KilosFinal), r.Grupo, r.Lote, (r.Precio===null?'':r.Precio)];
   });
   const ws=XLSX.utils.aoa_to_sheet([DESPACHO_DET_EXPORT_HEADERS].concat(filas));
