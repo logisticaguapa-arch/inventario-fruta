@@ -2860,3 +2860,5 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,39,septiembre,2026-09-21,2026,33,canastas,33.0,,33.0,33.0,Daño por reposo,AD-PJUG
 2026,39,septiembre,2026-09-22,2826,32,canastas,6.0,,6.0,6.0,Muestreo,AD1
 2026,39,septiembre,2026-09-22,2026,33,canastas,6.0,,6.0,6.0,Muestreo,AD-PIND
+2026,39,septiembre,2026-09-22,1926,33,canastas,49.0,,49.0,49.0,Enferma,PIND
+2026,39,septiembre,2026-09-22,1926,33,canastas,45.0,,45.0,45.0,Enferma,PJUG
