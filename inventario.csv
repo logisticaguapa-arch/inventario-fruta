@@ -42,8 +42,8 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 202310,canastas,2026-09-22,PIND,piña indstria,1.5 - 2.5,481
 202311,canastas,2026-09-22,PE1,piña special 1ra,1,563
 202312,canastas,2026-09-22,PE2,piña special 2da,1.5,402
-202313,canastas,2026-09-22,,,,0
-202314,canastas,2026-09-22,,,,0
+202313,canastas,2026-09-22,PE1,piña special 1ra,0.0 - 1.0,552
+202314,canastas,2026-09-22,PE2,piña special 2da,1.5,403
 202315,canastas,2026-09-22,,,,0
 202316,canastas,2026-09-22,,,,0
 202317,canastas,2026-09-22,,,,0
