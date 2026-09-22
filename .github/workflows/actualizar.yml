@@ -68,6 +68,19 @@ jobs:
           # tiempo ahorra frente a cargar el libro "completo".
           wb = openpyxl.load_workbook(io.BytesIO(r.content), data_only=True, read_only=True)
 
+          # -- Hoja Validacion: diccionario Calidad/Calibre (codigo, ej AD1) -> Nombre
+          # legible (ej "Piña AD1"), igual que el macro de Excel arma "Nombre" para
+          # Inventario. Se usa para la "Categoria" del reporte "Inventario ingresado". --
+          dict_val = {}
+          try:
+              ws_val = wb["Validacion"]
+              for row in ws_val.iter_rows(min_row=2, values_only=True):
+                  clave = str(row[0] or "").strip() if row and len(row) > 0 else ""
+                  if clave and clave not in dict_val:
+                      dict_val[clave] = str(row[1] or "").strip() if len(row) > 1 else ""
+          except Exception:
+              dict_val = {}
+
           # Leer col B (Bin) de Proceso para cruzar con ID, y de paso armar
           # procesado.csv con la columna I (Neto) -- ver mas abajo, tras el bucle --
           ws_proc = wb["Proceso"]
@@ -93,6 +106,14 @@ jobs:
           # para poder calcular "horas en bodega" desde el momento real en que
           # entro el bin, en vez de asumir medianoche del dia de la Fecha. --
           hora_map = {}
+          # -- "Inventario ingresado" (boton nuevo en Tarjetas por dia): TODO lo
+          # que entro a Proceso ese dia, sin importar si ya se despacho o no.
+          # NOTA: en el archivo del usuario, la columna D de Proceso (antes
+          # "calidad") ahora se llama "Calibre" y trae el codigo (AD1, AD2, PE1,
+          # etc.) -- la col F ("Grado") es el rango de madurez (0,0-1,0 / 1,5-2,5).
+          # "Categoria" es el nombre legible de ese codigo, sacado de Validacion. --
+          csv6 = "ID,FechaProceso,Calibre,Categoria,Grado,PesoNeto,Lote,Grupo\n"
+          n6 = 0
           for row in ws_proc.iter_rows(min_row=2, values_only=True):
               id_val  = row[0]   # Col A - ID
               bin_val = row[1]   # Col B - Bin
@@ -124,10 +145,20 @@ jobs:
                   if hora_p:
                       hora_map[id_str] = hora_p
 
+              if id_str and fecha_p:
+                  categoria_ing = dict_val.get(calidad_p, calidad_p)
+                  neto_ing = neto_p if neto_p is not None else 0
+                  csv6 += f"{id_str},{fecha_p},{calidad_p},{categoria_ing},{calibre_p},{neto_ing},{lote_p},{grupo_p}\n"
+                  n6 += 1
+
           with open("procesado.csv", "w", encoding="utf-8") as f:
               f.write(csv3)
           print(f"procesado.csv generado: {n3} registros")
           print(f"IDs en Proceso: {len(bin_map)}")
+
+          with open("ingresado.csv", "w", encoding="utf-8") as f:
+              f.write(csv6)
+          print(f"ingresado.csv generado: {n6} registros")
 
           csv5 = "ID,HoraIngreso\n"
           n5 = 0
@@ -170,7 +201,10 @@ jobs:
 
           ws_desp = wb["Despacho"]
 
-          csv2 = "FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKilos,Precio,KilosDescarte\n"
+          # NOTA: se agregaron ID, FechaProceso, Grado, Grupo y Lote al final --
+          # se usan en el boton "Detalle Despacho" de Tarjetas por dia. Todo lo
+          # demas del CSV se dejo intacto para no romper Facturacion/Descarte.
+          csv2 = "FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKilos,Precio,KilosDescarte,ID,FechaProceso,Grado,Grupo,Lote\n"
           n2 = 0
           fechas_vistas = []
           # -- "Descarte": una fila por cada linea de Despacho que SI tuvo descarte
@@ -199,7 +233,14 @@ jobs:
               remision   = str(row[23] or "").replace(",", " ").strip()
               factura    = str(row[24] or "").replace(",", " ").strip()
               descarte   = row[12] or 0   # Col M - Kilos de descarte
-              csv2 += f"{fecha_desp},{factura},{remision},{cliente},{categoria},{calibre},{kilos},{reposicion},{precio},{descarte}\n"
+
+              id_str_d    = str(id_val).strip() if id_val else ""            # Col C - ID
+              fecha_proc_d = str(row[4])[:10] if len(row) > 4 and row[4] else ""  # Col E - Fecha Proceso
+              grado_d     = ("" if len(row) <= 7 or row[7] is None else str(row[7])).replace(",", ".").strip()  # Col H - Grado
+              grupo_desp  = str(row[16] or "").replace(",", " ").strip() if len(row) > 16 else ""  # Col Q - Grupo
+              lote_desp   = str(row[18] or "").replace(",", " ").strip() if len(row) > 18 else ""  # Col S - Lote
+
+              csv2 += f"{fecha_desp},{factura},{remision},{cliente},{categoria},{calibre},{kilos},{reposicion},{precio},{descarte},{id_str_d},{fecha_proc_d},{grado_d},{grupo_desp},{lote_desp}\n"
               n2 += 1
 
               try:
@@ -241,7 +282,7 @@ jobs:
         run: |
           git config user.email "action@github.com"
           git config user.name "GitHub Action"
-          git add inventario.csv despacho.csv procesado.csv descarte.csv horaingreso.csv
+          git add inventario.csv despacho.csv procesado.csv descarte.csv horaingreso.csv ingresado.csv
           git diff --staged --quiet || git commit -m "Inventario actualizado $(date +'%Y-%m-%d %H:%M')"
           git push origin main --force
 
@@ -254,6 +295,7 @@ jobs:
           cp procesado.csv _site/
           cp descarte.csv _site/
           cp horaingreso.csv _site/
+          cp ingresado.csv _site/
 
       - name: Configurar Pages
         uses: actions/configure-pages@v5
