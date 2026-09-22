@@ -2862,3 +2862,6 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,39,septiembre,2026-09-22,2026,33,canastas,6.0,,6.0,6.0,Muestreo,AD-PIND
 2026,39,septiembre,2026-09-22,1926,33,canastas,49.0,,49.0,49.0,Enferma,PIND
 2026,39,septiembre,2026-09-22,1926,33,canastas,45.0,,45.0,45.0,Enferma,PJUG
+2026,39,septiembre,2026-09-22,,,canastas,17.0,,17.0,17.0,Muestreo,PE1
+2026,39,septiembre,2026-09-22,,,canastas,6.0,,6.0,6.0,Muestreo,AD2
+2026,39,septiembre,2026-09-22,,,canastas,1.0,,1.0,1.0,Muestreo,PE3
