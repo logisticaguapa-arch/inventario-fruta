@@ -1797,7 +1797,29 @@ function factFechaArchivo(){
 }
 
 // -- Botones de Tarjetas por dia: "Inventario ingresado" (de Proceso) y
-// "Detalle Despacho" (de Despacho) -- ambos sujetos al filtro de fecha activo. --
+// "Detalle Despacho" (de Despacho) -- ambos sujetos al filtro de fecha activo.
+// Se descargan como .csv (separado por comas), no .xlsx. --
+function csvEscape(v){
+  if(v===null||v===undefined) v='';
+  v=String(v);
+  if(/[",;\n\r]/.test(v)) v='"'+v.replace(/"/g,'""')+'"';
+  return v;
+}
+function filasACSV(headers, filas){
+  const lineas=[headers.map(csvEscape).join(',')];
+  filas.forEach(function(r){ lineas.push(r.map(csvEscape).join(',')); });
+  return lineas.join('\r\n');
+}
+function descargarCSV(nombreArchivo, contenido){
+  // ﻿ (BOM UTF-8) al inicio para que Excel reconozca bien las tildes/ñ al abrir el csv
+  const blob=new Blob(['﻿'+contenido], {type:'text/csv;charset=utf-8;'});
+  const url=URL.createObjectURL(blob);
+  const a=document.createElement('a');
+  a.href=url; a.download=nombreArchivo;
+  document.body.appendChild(a); a.click(); document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
+
 const INGRESADO_EXPORT_HEADERS=['ID','Fecha Proceso','Calibre','Categoria','Grado','Peso Neto','Lote','GF'];
 function exportExcelIngresado(){
   const data=filteredIngresado();
@@ -1809,10 +1831,7 @@ function exportExcelIngresado(){
     return [r.ID, fmtFechaCompleta(r.FechaProceso), r.Calibre, r.Categoria, r.Grado, Math.round(r.PesoNeto),
       r.Lote, r.Grupo];
   });
-  const ws=XLSX.utils.aoa_to_sheet([INGRESADO_EXPORT_HEADERS].concat(filas));
-  const wb=XLSX.utils.book_new();
-  XLSX.utils.book_append_sheet(wb,ws,'Inventario ingresado');
-  XLSX.writeFile(wb,'InventarioIngresado_'+fechaISO(new Date())+'.xlsx');
+  descargarCSV('formulario proceso.csv', filasACSV(INGRESADO_EXPORT_HEADERS, filas));
 }
 
 const DESPACHO_DET_EXPORT_HEADERS=['Cliente','Fecha despacho','ID','Fecha Proceso','Calibre','Categoria','Grado','Kilos final','Grupo','Lote','Precio'];
@@ -1826,10 +1845,7 @@ function exportExcelDespachoDetalle(){
     return [r.Cliente, fmtFechaCompleta(r.FechaDespacho), r.ID, fmtFechaCompleta(r.FechaProceso), r.Calibre, r.Categoria,
       r.Grado, Math.round(r.KilosFinal), r.Grupo, r.Lote, (r.Precio===null?'':r.Precio)];
   });
-  const ws=XLSX.utils.aoa_to_sheet([DESPACHO_DET_EXPORT_HEADERS].concat(filas));
-  const wb=XLSX.utils.book_new();
-  XLSX.utils.book_append_sheet(wb,ws,'Detalle Despacho');
-  XLSX.writeFile(wb,'DetalleDespacho_'+fechaISO(new Date())+'.xlsx');
+  descargarCSV('formulario despachos.csv', filasACSV(DESPACHO_DET_EXPORT_HEADERS, filas));
 }
 
 function exportExcelFacturacion(){
