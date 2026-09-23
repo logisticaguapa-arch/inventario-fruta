@@ -19229,17 +19229,17 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-09-22,46118,R-18946,KARINA BORJA,piña special 3ra,PE3,484,0,1300,0,202317,2026-09-22,1.5 - 2.5,1926,33
 2026-09-22,46118,R-18946,KARINA BORJA,piña special 3ra,PE3,483,0,1300,0,202307,2026-09-22,1.5 - 2.5,1926,46
 2026-09-22,46118,R-18946,KARINA BORJA,piña special 3ra,PE3,171,0,1300,0,202355,2026-09-22,3.0 - 4.0,1926,46
-2026-09-23,,R-18947,local apartado,piña special 1ra,PE1,548,452,,0,202328,2026-09-22,0.0 - 1.0,1926,33
-2026-09-23,,R-18947,local apartado,piña special 2da,PE2,500,0,,3,202327,2026-09-22,0.0 - 1.0,1926,33
-2026-09-23,,R-18947,local apartado,piña special 2da,PE2,382,0,,0,202342,2026-09-22,0.0 - 1.0,1926,46
-2026-09-23,,R-18947,local apartado,Piña AD2,AD2,68,0,,0,202365,2026-09-22,0.0 - 1.0,2926,34
-2026-09-23,,R-18947,local apartado,piña special 2da,PE2,141,0,,0,202354,2026-09-22,0.0 - 1.0,1926,46
-2026-09-23,,R-18947,local apartado,piña special 2da,PE2,260,0,,0,202350,2026-09-22,3.0 - 4.0,1926,46
-2026-09-23,,R-18947,local apartado,piña special 1ra,PE1,323,0,,0,202358,2026-09-22,3.0 - 4.0,1926,46
-2026-09-23,,R-18947,local apartado,piña special guapita,PEGUA,443,0,,2,202308,2026-09-22,1.5 - 2.5,1926,46
-2026-09-23,,R-18947,local apartado,piña special guapita,PEGUA,441,0,,0,202322,2026-09-22,1.5 - 2.5,1926,33
-2026-09-23,,R-18947,local apartado,piña special guapita,PEGUA,21,0,,0,202359,2026-09-22,1.5 - 2.5,1926,46
-2026-09-23,,R-18947,local apartado,Piña ADGUA,ADGUA,26,0,,0,202367,2026-09-22,1.5 - 2.5,2926,34
+2026-09-23,,R-18947,local apartado,piña special 1ra,PE1,548,452,3200,0,202328,2026-09-22,0.0 - 1.0,1926,33
+2026-09-23,,R-18947,local apartado,piña special 2da,PE2,500,0,3000,3,202327,2026-09-22,0.0 - 1.0,1926,33
+2026-09-23,,R-18947,local apartado,piña special 2da,PE2,382,0,3000,0,202342,2026-09-22,0.0 - 1.0,1926,46
+2026-09-23,,R-18947,local apartado,Piña AD2,AD2,68,0,3000,0,202365,2026-09-22,0.0 - 1.0,2926,34
+2026-09-23,,R-18947,local apartado,piña special 2da,PE2,141,0,3000,0,202354,2026-09-22,0.0 - 1.0,1926,46
+2026-09-23,,R-18947,local apartado,piña special 2da,PE2,260,0,3000,0,202350,2026-09-22,3.0 - 4.0,1926,46
+2026-09-23,,R-18947,local apartado,piña special 1ra,PE1,323,0,3200,0,202358,2026-09-22,3.0 - 4.0,1926,46
+2026-09-23,,R-18947,local apartado,piña special guapita,PEGUA,443,0,2000,2,202308,2026-09-22,1.5 - 2.5,1926,46
+2026-09-23,,R-18947,local apartado,piña special guapita,PEGUA,441,0,2000,0,202322,2026-09-22,1.5 - 2.5,1926,33
+2026-09-23,,R-18947,local apartado,piña special guapita,PEGUA,21,0,2000,0,202359,2026-09-22,1.5 - 2.5,1926,46
+2026-09-23,,R-18947,local apartado,Piña ADGUA,ADGUA,26,0,2000,0,202367,2026-09-22,1.5 - 2.5,2926,34
 2026-09-23,,,descarte,AL-PE1,AL-PE1,0,0,,17,202375,2026-09-23,1.5 - 2.5,1926,33
 2026-09-23,46136,R-18949,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,561,0,3000,0,202296,2026-09-22,1,1926,46
 2026-09-23,46136,R-18949,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,566,0,3000,0,202294,2026-09-22,1,1926,46
