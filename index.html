@@ -274,6 +274,7 @@ table.ftable .ftotal-row td{color:#052e16!important}
   <span id="barInvTarjetasExtra">
     <button class="bexport" onclick="exportExcelIngresado()">⬇ Inventario ingresado</button>
     <button class="bexport" onclick="exportExcelDespachoDetalle()">⬇ Detalle Despacho</button>
+    <button class="bexport" onclick="exportExcelCumplimientoGrado()">⬇ Cumplimiento por grado</button>
   </span>
 </div>
 
@@ -1846,6 +1847,48 @@ function exportExcelDespachoDetalle(){
       r.Grado, Math.round(r.KilosFinal), r.Grupo, r.Lote, (r.Precio===null?'':r.Precio)];
   });
   descargarCSV('formulario despachos.csv', filasACSV(DESPACHO_DET_EXPORT_HEADERS, filas));
+}
+
+// -- Cumplimiento por grado de maduracion, por categoria: de "Inventario
+// ingresado" (Proceso), sujeto al mismo filtro de fecha. Una fila por
+// Categoria, una columna por cada grado real (0.0-1.0 / 1.5-2.5 / 3.0-4.0),
+// con la SUMA del Peso Neto de los registros de esa categoria que caen en
+// ese grado. Se descarga como .xlsx (a diferencia de los dos botones de
+// arriba, que ahora son .csv). --
+const CUMPLIMIENTO_GRADOS=[
+  {key:'0.0-1.0', label:'Real 0.0-1.0'},
+  {key:'1.5-2.5', label:'Real 1.5-2.5'},
+  {key:'3.0-4.0', label:'Real 3.0-4.0'}
+];
+function normGrado(g){
+  return String(g||'').replace(/,/g,'.').replace(/\s+/g,'');
+}
+function exportExcelCumplimientoGrado(){
+  const data=filteredIngresado();
+  if(!data.length){ alert('No hay inventario ingresado para la fecha seleccionada.'); return; }
+  const porCategoria={};
+  data.forEach(function(r){
+    const cat=r.Categoria||'(sin categoria)';
+    if(!porCategoria[cat]){
+      porCategoria[cat]={};
+      CUMPLIMIENTO_GRADOS.forEach(function(g){ porCategoria[cat][g.key]=0; });
+    }
+    const gKey=normGrado(r.Grado);
+    if(CUMPLIMIENTO_GRADOS.some(function(g){return g.key===gKey;})){
+      porCategoria[cat][gKey]+=(r.PesoNeto||0);
+    }
+  });
+  const categorias=Object.keys(porCategoria).sort(function(a,b){return a.localeCompare(b,'es');});
+  const headers=['Categoria'].concat(CUMPLIMIENTO_GRADOS.map(function(g){return g.label;}));
+  const filas=categorias.map(function(cat){
+    const fila=[cat];
+    CUMPLIMIENTO_GRADOS.forEach(function(g){ fila.push(Math.round(porCategoria[cat][g.key]||0)); });
+    return fila;
+  });
+  const ws=XLSX.utils.aoa_to_sheet([headers].concat(filas));
+  const wb=XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(wb,ws,'Cumplimiento grado');
+  XLSX.writeFile(wb,'CumplimientoGrado_'+fechaISO(new Date())+'.xlsx');
 }
 
 function exportExcelFacturacion(){
