@@ -274,7 +274,6 @@ table.ftable .ftotal-row td{color:#052e16!important}
   <span id="barInvTarjetasExtra">
     <button class="bexport" onclick="exportExcelIngresado()">⬇ Inventario ingresado</button>
     <button class="bexport" onclick="exportExcelDespachoDetalle()">⬇ Detalle Despacho</button>
-    <button class="bexport" onclick="exportExcelCumplimientoGrado()">⬇ Cumplimiento por grado</button>
   </span>
 </div>
 
@@ -328,6 +327,7 @@ table.ftable .ftotal-row td{color:#052e16!important}
     <div class="msel-panel" id="selProcGrupo-panel"></div>
   </div>
   <button class="breset" onclick="resetProcesado()">↺ Limpiar</button>
+  <button class="bexport" onclick="exportExcelCumplimientoGrado()">⬇ Cumplimiento por grado</button>
 </div>
 
 <div class="bar" id="barSeguimiento" style="display:none">
@@ -408,7 +408,9 @@ const CLIENTES_ESPECIALES = [
   {calidad:'AD1', calibre:'1',   cliente:'EXITO'},
   {calidad:'PE1', calibre:'1',   cliente:'EXITO'},
   {calidad:'PE2', calibre:'1.5', cliente:'ARA'},
-  {calidad:'AD2', calibre:'1.5', cliente:'ARA'}
+  {calidad:'AD2', calibre:'1.5', cliente:'ARA'},
+  {calidad:'PE1', calibre:'1.5', cliente:'ARA'},
+  {calidad:'AD1', calibre:'1.5', cliente:'ARA'}
 ];
 function getClienteEspecial(calidad, calVal){
   const cd  = String(calidad||'').trim().toUpperCase();
@@ -1863,9 +1865,16 @@ const CUMPLIMIENTO_GRADOS=[
 function normGrado(g){
   return String(g||'').replace(/,/g,'.').replace(/\s+/g,'');
 }
+function filteredIngresadoProcesado(){
+  // -- El boton "Cumplimiento por grado" vive en Inventario procesado, asi que
+  // usa el filtro de fecha PROPIO de esa vista (filtros.procFec), no el de
+  // Tarjetas por dia (filtros.fec). --
+  const f=filtros.procFec;
+  return INGRESADO.filter(r=>(!f.length||f.includes(r.FechaProceso)));
+}
 function exportExcelCumplimientoGrado(){
-  const data=filteredIngresado();
-  if(!data.length){ alert('No hay inventario ingresado para la fecha seleccionada.'); return; }
+  const data=filteredIngresadoProcesado();
+  if(!data.length){ alert('No hay inventario procesado para la fecha seleccionada.'); return; }
   const porCategoria={};
   data.forEach(function(r){
     const cat=r.Categoria||'(sin categoria)';
