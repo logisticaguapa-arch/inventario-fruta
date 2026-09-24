@@ -2896,3 +2896,9 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,39,septiembre,2026-09-24,,,canastas,3.0,,3.0,3.0,Muestreo,PEGUA
 2026,39,septiembre,2026-09-24,1926,33,canastas,2.0,,2.0,2.0,Muestreo,PE3
 2026,39,septiembre,2026-09-24,1926,46,canastas,3.0,,3.0,3.0,Muestreo,PE1
+2026,39,septiembre,2026-09-24,1926,33,canastas,5.0,,5.0,5.0,Muestreo,PE2
+2026,39,septiembre,2026-09-24,1926,33,canastas,2.0,,2.0,2.0,Muestreo,PE3
+2026,39,septiembre,2026-09-24,,,canastas,3.0,,3.0,3.0,Muestreo,PE3
+2026,39,septiembre,2026-09-24,2926,34,canastas,15.0,,15.0,15.0,Daño por reposo,AD-PJUG
+2026,39,septiembre,2026-09-24,2926,34,canastas,139.0,,139.0,139.0,Daño por reposo,AD-PJUG
+2026,39,septiembre,2026-09-24,2926,34,canastas,41.0,,41.0,41.0,Daño por reposo,AD-PJUG
