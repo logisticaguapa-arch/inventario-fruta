@@ -22,7 +22,7 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 202399,canastas,2026-09-23,PE3,piña special 3ra,1.5 - 2.5,482
 202403,canastas,2026-09-23,PIND,piña indstria,1.5 - 2.5,453
 202405,canastas,2026-09-23,PE2,piña special 2da,1.5 - 2.5,524
-202406,canastas,2026-09-23,PE1,piña special 1ra,1.5 - 2.5,549
+202406,canastas,2026-09-23,PE1,piña special 1ra,1.5 - 2.5,47
 202407,canastas,2026-09-23,PEGUA,piña special guapita,1.5 - 2.5,471
 202408,canastas,2026-09-23,PEGUA,piña special guapita,1.5 - 2.5,484
 202410,canastas,2026-09-23,PE3,piña special 3ra,1.5 - 2.5,467
@@ -72,29 +72,29 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 202472,canastas,2026-09-23,PIND,piña indstria,1.5 - 2.5,367
 202473,canastas,2026-09-23,PEGUA,piña special guapita,1.5 - 2.5,398
 202474,canastas,2026-09-23,PE3,piña special 3ra,1.5 - 2.5,421
-202475,canastas,2026-09-23,,,,0
-202476,canastas,2026-09-23,,,,0
-202477,canastas,2026-09-23,,,,0
-202478,canastas,2026-09-23,,,,0
-202479,canastas,2026-09-23,,,,0
-202480,canastas,2026-09-23,,,,0
-202481,canastas,2026-09-23,,,,0
-202482,canastas,2026-09-23,,,,0
+202475,canastas,2026-09-23,PE3,piña special 3ra,0.0 - 1.0,386
+202476,canastas,2026-09-23,PE3,piña special 3ra,1.5 - 2.5,536
+202477,canastas,2026-09-23,PE2,piña special 2da,3.0 - 4.0,214
+202478,canastas,2026-09-23,PE2,piña special 2da,3.0 - 4.0,523
+202479,canastas,2026-09-23,PEBAB,piña special baby,1.5 - 2.5,429
+202480,canastas,2026-09-23,PE2,piña special 2da,3.0 - 4.0,294
+202481,canastas,2026-09-23,AD1,Piña AD1,0.0 - 1.0,590
+202482,canastas,2026-09-23,AD1,Piña AD1,0.0 - 1.0,608
 202483,canastas,2026-09-23,,,,0
 202484,canastas,2026-09-23,,,,0
 202485,canastas,2026-09-23,,,,0
 202486,canastas,2026-09-23,,,,0
 202487,canastas,2026-09-23,,,,0
-202488,,2026-09-23,,,,0
-202489,,,,,,0
-202490,,,,,,0
-202491,,,,,,0
-202492,,,,,,0
-202493,,,,,,0
-202494,,,,,,0
-202495,,,,,,0
-202496,,,,,,0
-202497,,,,,,0
+202488,canastas,2026-09-23,,,,0
+202489,canastas,2026-09-23,,,,0
+202490,canastas,2026-09-23,,,,0
+202491,canastas,2026-09-23,,,,0
+202492,canastas,2026-09-23,,,,0
+202493,canastas,2026-09-23,,,,0
+202494,canastas,2026-09-23,,,,0
+202495,canastas,2026-09-23,,,,0
+202496,canastas,2026-09-23,,,,0
+202497,canastas,2026-09-23,,,,0
 202498,,,,,,0
 202499,,,,,,0
 202500,,,,,,0
