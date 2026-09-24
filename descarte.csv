@@ -2888,6 +2888,6 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,39,septiembre,2026-09-23,1926,33,canastas,5.0,,5.0,5.0,Muestreo,PIND
 2026,39,septiembre,2026-09-24,2626,77,canastas,2.0,,2.0,2.0,Muestreo,AD1
 2026,39,septiembre,2026-09-24,1926,33,canastas,6.0,,6.0,6.0,Muestreo,PE1
-2026,39,septiembre,2026-09-24,,,canastas,16.0,,16.0,16.0,,AL-PE1
+2026,39,septiembre,2026-09-24,1926,33,canastas,16.0,,16.0,16.0,,AL-PE1
 2026,39,septiembre,2026-09-24,1926,33,canastas,10.0,,10.0,10.0,Muestreo,PEGUA
 2026,39,septiembre,2026-09-24,1926,46,canastas,7.0,,7.0,7.0,Muestreo,PIND
