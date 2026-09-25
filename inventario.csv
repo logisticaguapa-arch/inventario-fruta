@@ -28,7 +28,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 202637,canastas,2026-09-25,PEBAB,piña special baby,1.5 - 2.5,420
 202638,canastas,2026-09-25,PE3,piña special 3ra,0.0 - 1.0,489
 202641,canastas,2026-09-25,PE3,piña special 3ra,1.5 - 2.5,479
-202642,canastas,2026-09-25,PE2,piña special 2da,1.5 - 2.5,505
 202643,canastas,2026-09-25,PE2,piña special 2da,0.0 - 1.0,505
 202644,canastas,2026-09-25,PEBAB,piña special baby,1.5 - 2.5,435
 202645,canastas,2026-09-25,PE2,piña special 2da,3.0 - 4.0,501
@@ -73,7 +72,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 202688,canastas,2026-09-25,PE1,piña special 1ra,0.0 - 1.0,553
 202689,canastas,2026-09-25,PEBAB,piña special baby,1.5 - 2.5,436
 202690,canastas,2026-09-25,PE3,piña special 3ra,3.0 - 4.0,487
-202691,canastas,2026-09-25,PE2,piña special 2da,1.5 - 2.5,507
 202692,canastas,2026-09-25,PE1,piña special 1ra,3.0 - 4.0,516
 202693,canastas,2026-09-25,PE2,piña special 2da,3.0 - 4.0,507
 202694,canastas,2026-09-25,PE1,piña special 1ra,1.5 - 2.5,540
@@ -120,8 +118,8 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 202737,canastas,2026-09-25,PEGUA,piña special guapita,1.5 - 2.5,383
 202738,canastas,2026-09-25,PIND,piña indstria,1.5 - 2.5,18
 202739,canastas,2026-09-25,PE1,piña special 1ra,3.0 - 4.0,385
-202740,canastas,2026-09-25,,,,0
-202741,canastas,2026-09-25,,,,0
+202740,canastas,2026-09-25,PEGUA,piña special guapita,1.5 - 2.5,362
+202741,canastas,2026-09-25,PE1,piña special 1ra,0.0 - 1.0,161
 202742,canastas,2026-09-25,,,,0
 202743,canastas,2026-09-25,,,,0
 202744,canastas,2026-09-25,,,,0
