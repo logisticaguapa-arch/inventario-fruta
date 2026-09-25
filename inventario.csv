@@ -1,6 +1,5 @@
 ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 202507,canastas,2026-09-24,PE1,piña special 1ra,0.0 - 1.0,518
-202509,canastas,2026-09-24,PE1,piña special 1ra,1.5 - 2.5,506
 202513,canastas,2026-09-24,PE1,piña special 1ra,1,548
 202514,canastas,2026-09-24,PE1,piña special 1ra,0.0 - 1.0,556
 202516,canastas,2026-09-24,PEBAB,piña special baby,1.5 - 2.5,429
@@ -12,22 +11,14 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 202536,canastas,2026-09-24,PEBAB,piña special baby,1.5 - 2.5,423
 202537,canastas,2026-09-24,PE1,piña special 1ra,1,561
 202539,canastas,2026-09-24,PE1,piña special 1ra,0.0 - 1.0,539
-202540,canastas,2026-09-24,PE2,piña special 2da,0.0 - 1.0,495
 202549,canastas,2026-09-24,PE1,piña special 1ra,1,539
-202553,canastas,2026-09-24,PE2,piña special 2da,1.5 - 2.5,82
 202556,canastas,2026-09-24,PE1,piña special 1ra,0.0 - 1.0,515
 202557,canastas,2026-09-24,PEBAB,piña special baby,1.5 - 2.5,414
-202560,canastas,2026-09-24,PE2,piña special 2da,0.0 - 1.0,499
 202561,canastas,2026-09-24,PE1,piña special 1ra,0.0 - 1.0,543
 202562,canastas,2026-09-24,PE1,piña special 1ra,1,547
-202566,canastas,2026-09-24,PE2,piña special 2da,1.5 - 2.5,502
-202567,canastas,2026-09-24,PE2,piña special 2da,0.0 - 1.0,509
 202572,canastas,2026-09-24,PE1,piña special 1ra,1,555
-202577,canastas,2026-09-24,PE2,piña special 2da,1.5 - 2.5,509
 202588,canastas,2026-09-24,PEBAB,piña special baby,1.5 - 2.5,429
 202591,canastas,2026-09-24,PE1,piña special 1ra,1,554
-202592,canastas,2026-09-24,PE2,piña special 2da,0.0 - 1.0,148
-202593,canastas,2026-09-24,PE2,piña special 2da,1.5 - 2.5,347
 202594,canastas,2026-09-24,PEBAB,piña special baby,1.5 - 2.5,269
 202595,canastas,2026-09-24,PE1,piña special 1ra,0.0 - 1.0,84
 202603,canastas,2026-09-24,PE1,piña special 1ra,1,132
@@ -36,9 +27,7 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 202618,canastas,2026-09-24,AD3,Piña AD3,1.5 - 2.5,7
 202619,canastas,2026-09-24,AD1,Piña AD1,1,298
 202622,canastas,2026-09-24,AD1,Piña AD1,0.0 - 1.0,184
-202625,canastas,2026-09-24,AD2,Piña AD2,0.0 - 1.0,323
-202626,canastas,2026-09-24,AD2,Piña AD2,1.5 - 2.5,62
-202627,canastas,2026-09-25,,,,0
+202627,canastas,2026-09-25,PEBAB,piña special baby,1.5 - 2.5,417
 202628,canastas,2026-09-25,,,,0
 202629,canastas,2026-09-25,,,,0
 202630,canastas,2026-09-25,,,,0
