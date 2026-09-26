@@ -19570,27 +19570,29 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-09-25,46186,R-18981,hugo miguel jimenez,piña special baby,PEBAB,433,0,800,0,202716,2026-09-25,1.5 - 2.5,1926,33
 2026-09-25,46186,R-18981,hugo miguel jimenez,piña special baby,PEBAB,419,379,800,0,202679,2026-09-25,1.5 - 2.5,1926,33
 2026-09-25,46187,R-18982,venta empleados,piña special 1ra,PE1,237,0,2200,0,202743,2026-09-25,1.5 - 2.5,1926,33
-2026-09-26,,,local apartado,piña special 1ra,PE1,548,452,3200,2,202702,2026-09-25,0.0 - 1.0,1926,33
-2026-09-26,,,local apartado,piña special baby,PEBAB,282,18,1800,0,202729,2026-09-25,1.5 - 2.5,1926,33
-2026-09-26,,,Andres Garcia,piña special 3ra,PE3,304,0,1300,0,202730,2026-09-25,1.5 - 2.5,1926,33
-2026-09-26,,,Andres Garcia,piña special 3ra,PE3,476,20,,1,202659,2026-09-25,1.5 - 2.5,1926,33
-2026-09-26,,,Andres Garcia,piña special 2da,PE2,495,0,2900,8,202677,2026-09-25,1.5 - 2.5,1926,33
-2026-09-26,,,Andres Garcia,piña special 2da,PE2,490,0,,0,202656,2026-09-25,1.5 - 2.5,1926,33
-2026-09-26,,,Andres Garcia,piña special 2da,PE2,498,0,,0,202658,2026-09-25,1.5 - 2.5,1926,33
-2026-09-26,,,Andres Garcia,piña special 2da,PE2,496,0,,0,202671,2026-09-25,1.5 - 2.5,1926,33
-2026-09-26,,,Andres Garcia,piña special 2da,PE2,59,0,,0,202719,2026-09-25,1.5 - 2.5,1926,33
-2026-09-26,,,Andres Garcia,piña special 2da,PE2,10,0,,0,202630,2026-09-25,1.5 - 2.5,1926,33
-2026-09-26,,,Andres Garcia,piña special 2da,PE2,405,26,,0,202683,2026-09-25,1.5,1926,33
-2026-09-26,,,Andres Garcia,piña special 1ra,PE1,399,0,,0,202708,2026-09-25,1.5,1926,33
-2026-09-26,,,Andres Garcia,piña special 1ra,PE1,392,0,,0,202685,2026-09-25,1.5,1926,33
-2026-09-26,,,Andres Garcia,piña special 3ra,PE3,106,0,1300,0,202690,2026-09-25,3.0 - 4.0,1926,33
-2026-09-26,,,Andres Garcia,piña special 2da,PE2,479,0,2700,5,202682,2026-09-25,3.0 - 4.0,1926,33
-2026-09-26,,,Andres Garcia,piña special 2da,PE2,579,0,2700,0,202721,2026-09-25,3.0 - 4.0,1926,33
-2026-09-26,,,Andres Garcia,piña special 2da,PE2,495,0,2700,0,202645,2026-09-25,3.0 - 4.0,1926,33
-2026-09-26,,,Andres Garcia,piña special 2da,PE2,501,0,2700,0,202693,2026-09-25,3.0 - 4.0,1926,33
-2026-09-26,,,Andres Garcia,piña special 1ra,PE1,382,0,2900,0,202739,2026-09-25,3.0 - 4.0,1926,33
-2026-09-26,,,Andres Garcia,piña special 1ra,PE1,83,0,2900,2,202735,2026-09-25,3.0 - 4.0,1926,33
-2026-09-26,,,Andres Garcia,piña special 1ra,PE1,28,0,2900,0,202748,2026-09-26,3.0 - 4.0,,
+2026-09-26,,R-18983,local apartado,piña special 1ra,PE1,548,452,3200,2,202702,2026-09-25,0.0 - 1.0,1926,33
+2026-09-26,,R-18983,local apartado,,pe2,0,400,3000,0,,,1,,
+2026-09-26,,R-18983,local apartado,,PE2,0,400,3000,0,,,2,,
+2026-09-26,,R-18983,local apartado,piña special baby,PEBAB,282,18,1800,0,202729,2026-09-25,1.5 - 2.5,1926,33
+2026-09-26,,R-18984,Andres Garcia,piña special 3ra,PE3,304,0,1300,0,202730,2026-09-25,1.5 - 2.5,1926,33
+2026-09-26,,R-18984,Andres Garcia,piña special 3ra,PE3,476,20,1300,1,202659,2026-09-25,1.5 - 2.5,1926,33
+2026-09-26,,R-18984,Andres Garcia,piña special 2da,PE2,495,0,2900,8,202677,2026-09-25,1.5 - 2.5,1926,33
+2026-09-26,,R-18984,Andres Garcia,piña special 2da,PE2,490,0,2900,0,202656,2026-09-25,1.5 - 2.5,1926,33
+2026-09-26,,R-18984,Andres Garcia,piña special 2da,PE2,498,0,2900,0,202658,2026-09-25,1.5 - 2.5,1926,33
+2026-09-26,,R-18984,Andres Garcia,piña special 2da,PE2,496,0,2900,0,202671,2026-09-25,1.5 - 2.5,1926,33
+2026-09-26,,R-18984,Andres Garcia,piña special 2da,PE2,59,0,2900,0,202719,2026-09-25,1.5 - 2.5,1926,33
+2026-09-26,,R-18984,Andres Garcia,piña special 2da,PE2,10,0,2900,0,202630,2026-09-25,1.5 - 2.5,1926,33
+2026-09-26,,R-18984,Andres Garcia,piña special 2da,PE2,405,26,2900,0,202683,2026-09-25,1.5,1926,33
+2026-09-26,,R-18984,Andres Garcia,piña special 1ra,PE1,399,0,3100,0,202708,2026-09-25,1.5,1926,33
+2026-09-26,,R-18984,Andres Garcia,piña special 1ra,PE1,392,0,3100,0,202685,2026-09-25,1.5,1926,33
+2026-09-26,,R-18984,Andres Garcia,piña special 3ra,PE3,106,0,1300,0,202690,2026-09-25,3.0 - 4.0,1926,33
+2026-09-26,,R-18984,Andres Garcia,piña special 2da,PE2,479,0,2700,5,202682,2026-09-25,3.0 - 4.0,1926,33
+2026-09-26,,R-18984,Andres Garcia,piña special 2da,PE2,579,0,2700,0,202721,2026-09-25,3.0 - 4.0,1926,33
+2026-09-26,,R-18984,Andres Garcia,piña special 2da,PE2,495,0,2700,0,202645,2026-09-25,3.0 - 4.0,1926,33
+2026-09-26,,R-18984,Andres Garcia,piña special 2da,PE2,501,0,2700,0,202693,2026-09-25,3.0 - 4.0,1926,33
+2026-09-26,,R-18984,Andres Garcia,piña special 1ra,PE1,382,0,2900,0,202739,2026-09-25,3.0 - 4.0,1926,33
+2026-09-26,,R-18984,Andres Garcia,piña special 1ra,PE1,83,0,2900,2,202735,2026-09-25,3.0 - 4.0,1926,33
+2026-09-26,,R-18984,Andres Garcia,piña special 1ra,PE1,28,0,2900,0,202748,2026-09-26,3.0 - 4.0,,
 2026-09-26,,,cartagena,piña special 1ra,PE1,536,0,,0,202698,2026-09-25,0.0 - 1.0,1926,33
 2026-09-26,,,cartagena,piña special 1ra,PE1,536,0,,0,202663,2026-09-25,0.0 - 1.0,1926,33
 2026-09-26,,,cartagena,piña special 1ra,PE1,391,0,,0,202733,2026-09-25,0.0 - 1.0,1926,33
@@ -19605,3 +19607,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-09-26,,,local medellin,piña special 2da,PE2,501,0,,0,202750,2026-09-26,1.5 - 2.5,,
 2026-09-26,,,local medellin,piña special 2da,PE2,503,0,,0,202782,2026-09-26,1.5 - 2.5,,
 2026-09-26,,,local medellin,piña special 2da,PE2,500,176,,0,202783,2026-09-26,1.5 - 2.5,,
+2026-09-26,,,local medellin,piña special 2da,PE2,498,0,,0,202701,2026-09-25,0.0 - 1.0,1926,33
+2026-09-26,,,local medellin,piña special 2da,PE2,28,44,,0,202724,2026-09-25,0.0 - 1.0,1926,33
+2026-09-26,,,local medellin,piña special 2da,PE2,410,0,,0,202705,2026-09-25,1.5,1926,33
+2026-09-26,,,local medellin,piña special 2da,PE2,408,0,,0,202655,2026-09-25,1.5,1926,33
