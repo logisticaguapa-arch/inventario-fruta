@@ -19712,10 +19712,11 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-09-26,46212,R-18994,KARINA BORJA,piña special 3ra,PE3,489,0,1200,0,202778,2026-09-26,0.0 - 1.0,1926,33
 2026-09-26,46212,R-18994,KARINA BORJA,piña special 3ra,PE3,498,0,1200,0,202840,2026-09-26,0.0 - 1.0,1926,46
 2026-09-26,46212,R-18994,KARINA BORJA,piña special 3ra,PE3,490,113,1200,0,202768,2026-09-26,0.0 - 1.0,1926,33
-2026-09-27,,,jeronimo martins,piña special 1ra,PE1,390,0,,0,202775,2026-09-26,1.5,1926,33
-2026-09-27,,,jeronimo martins,piña special 2da,PE2,405,0,,0,202749,2026-09-26,1.5,1926,46
-2026-09-27,,,jeronimo martins,piña special 2da,PE2,404,0,,0,202785,2026-09-26,1.5,1926,46
-2026-09-27,,,jeronimo martins,piña special 2da,PE2,395,0,,0,202773,2026-09-26,1.5,1926,33
-2026-09-27,,,jeronimo martins,piña special 1ra,PE1,400,0,,0,202757,2026-09-26,1.5,1926,46
-2026-09-27,,,jeronimo martins,piña special 2da,PE2,405,0,,0,202761,2026-09-26,1.5,1926,33
-2026-09-27,,,jeronimo martins,piña special 1ra,PE1,461,220,,0,202794,2026-09-26,1.5,1926,46
+2026-09-27,46213,R-18995,jeronimo martins,piña special 1ra,PE1,390,0,3100,0,202775,2026-09-26,1.5,1926,33
+2026-09-27,46213,R-18995,jeronimo martins,piña special 2da,PE2,405,0,3100,0,202749,2026-09-26,1.5,1926,46
+2026-09-27,46213,R-18995,jeronimo martins,piña special 2da,PE2,404,0,3100,0,202785,2026-09-26,1.5,1926,46
+2026-09-27,46213,R-18995,jeronimo martins,piña special 2da,PE2,395,0,3100,0,202773,2026-09-26,1.5,1926,33
+2026-09-27,46213,R-18995,jeronimo martins,piña special 1ra,PE1,400,0,3100,0,202757,2026-09-26,1.5,1926,46
+2026-09-27,46213,R-18995,jeronimo martins,piña special 2da,PE2,405,0,3100,0,202761,2026-09-26,1.5,1926,33
+2026-09-27,46213,R-18995,jeronimo martins,piña special 1ra,PE1,461,220,3100,0,202794,2026-09-26,1.5,1926,46
+2026-09-27,,R-18996,reposicion jeronimo,,PE2,0,120,,0,,,1.5,,
