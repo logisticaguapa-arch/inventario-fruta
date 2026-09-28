@@ -19721,17 +19721,17 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-09-27,46213,R-18995,jeronimo martins,piña special 1ra,PE1,461,0,3100,0,202794,2026-09-26,1.5,1926,46
 2026-09-27,46213,R-18995,jeronimo martins,,PE2,0,220,3100,0,,,1.5,,
 2026-09-27,,R-18996,reposicion jeronimo,,PE2,0,120,,0,,,1.5,,
-2026-09-28,,,local medellin,piña special 1ra,PE1,525,0,,4,202884,2026-09-27,1.5 - 2.5,1926,46
-2026-09-28,,,local medellin,piña special 1ra,PE1,576,255,,0,202918,2026-09-27,1.5 - 2.5,1926,46
-2026-09-28,,,local medellin,piña special 1ra,PE1,626,0,,8,202972,2026-09-27,3.0 - 4.0,1926,33
-2026-09-28,,,local medellin,piña special 1ra,PE1,565,0,,0,202958,2026-09-27,3.0 - 4.0,1926,33
-2026-09-28,,,local medellin,piña special 1ra,PE1,516,0,,0,202953,2026-09-27,3.0 - 4.0,1926,33
-2026-09-28,,,local medellin,piña special 1ra,PE1,515,0,,0,202964,2026-09-27,3.0 - 4.0,1926,33
-2026-09-28,,,local medellin,piña special 1ra,PE1,112,0,,0,202985,2026-09-27,3.0 - 4.0,1926,33
-2026-09-28,,,local medellin,piña special 2da,PE2,494,506,,5,202968,2026-09-27,3.0 - 4.0,1926,33
-2026-09-28,,,local medellin,piña special 3ra,PE3,483,17,,1,202980,2026-09-27,1.5 - 2.5,1926,33
-2026-09-28,,,local medellin,piña special 3ra,PE3,492,0,,1,202988,2026-09-27,3.0 - 4.0,1926,33
-2026-09-28,,,local medellin,piña special 3ra,PE3,278,0,,0,202989,2026-09-27,3.0 - 4.0,1926,33
+2026-09-28,,R-18997,local medellin,piña special 1ra,PE1,525,0,,4,202884,2026-09-27,1.5 - 2.5,1926,46
+2026-09-28,,R-18997,local medellin,piña special 1ra,PE1,576,255,,0,202918,2026-09-27,1.5 - 2.5,1926,46
+2026-09-28,,R-18997,local medellin,piña special 1ra,PE1,626,0,,8,202972,2026-09-27,3.0 - 4.0,1926,33
+2026-09-28,,R-18997,local medellin,piña special 1ra,PE1,565,0,,0,202958,2026-09-27,3.0 - 4.0,1926,33
+2026-09-28,,R-18997,local medellin,piña special 1ra,PE1,516,0,,0,202953,2026-09-27,3.0 - 4.0,1926,33
+2026-09-28,,R-18997,local medellin,piña special 1ra,PE1,515,0,,0,202964,2026-09-27,3.0 - 4.0,1926,33
+2026-09-28,,R-18997,local medellin,piña special 1ra,PE1,112,0,,0,202985,2026-09-27,3.0 - 4.0,1926,33
+2026-09-28,,R-18997,local medellin,piña special 2da,PE2,494,506,,5,202968,2026-09-27,3.0 - 4.0,1926,33
+2026-09-28,,R-18997,local medellin,piña special 3ra,PE3,483,17,,1,202980,2026-09-27,1.5 - 2.5,1926,33
+2026-09-28,,R-18997,local medellin,piña special 3ra,PE3,492,0,,1,202988,2026-09-27,3.0 - 4.0,1926,33
+2026-09-28,,R-18997,local medellin,piña special 3ra,PE3,278,0,,0,202989,2026-09-27,3.0 - 4.0,1926,33
 2026-09-28,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,579,0,,17,202881,2026-09-27,1,1926,46
 2026-09-28,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,565,0,,0,202882,2026-09-27,1,1926,46
 2026-09-28,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,566,0,,0,202888,2026-09-27,1,1926,46
@@ -19826,3 +19826,11 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-09-28,,,local sincelejo,Piña AD2,AD2,594,0,,0,202865,2026-09-26,0.0 - 1.0,2126,33
 2026-09-28,,,local sincelejo,piña special 2da,PE2,492,0,,6,202931,2026-09-27,0.0 - 1.0,1926,46
 2026-09-28,,,local sincelejo,piña special 2da,PE2,495,100,,0,202917,2026-09-27,0.0 - 1.0,1926,46
+2026-09-28,,,jeronimo martins,piña special 2da,PE2,404,0,,0,202901,2026-09-27,1.5,1926,46
+2026-09-28,,,jeronimo martins,piña special 2da,PE2,408,0,,0,202892,2026-09-27,1.5,1926,46
+2026-09-28,,,jeronimo martins,piña special 2da,PE2,401,0,,0,202883,2026-09-27,1.5,1926,46
+2026-09-28,,,jeronimo martins,piña special 2da,PE2,395,152,,12,202899,2026-09-27,1.5,1926,46
+2026-09-28,,,jeronimo martins,piña special 2da,PE2,319,0,,0,202941,2026-09-27,1.5,1926,46
+2026-09-28,,,jeronimo martins,piña special 2da,PE2,405,0,,0,202913,2026-09-27,1.5,1926,46
+2026-09-28,,,jeronimo martins,piña special 2da,PE2,404,0,,0,202926,2026-09-27,1.5,1926,46
+2026-09-28,,,jeronimo martins,piña special 2da,PE2,409,0,,0,202910,2026-09-27,1.5,1926,46
