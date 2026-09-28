@@ -19718,7 +19718,8 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-09-27,46213,R-18995,jeronimo martins,piña special 2da,PE2,395,0,3100,0,202773,2026-09-26,1.5,1926,33
 2026-09-27,46213,R-18995,jeronimo martins,piña special 1ra,PE1,400,0,3100,0,202757,2026-09-26,1.5,1926,46
 2026-09-27,46213,R-18995,jeronimo martins,piña special 2da,PE2,405,0,3100,0,202761,2026-09-26,1.5,1926,33
-2026-09-27,46213,R-18995,jeronimo martins,piña special 1ra,PE1,461,220,3100,0,202794,2026-09-26,1.5,1926,46
+2026-09-27,46213,R-18995,jeronimo martins,piña special 1ra,PE1,461,0,3100,0,202794,2026-09-26,1.5,1926,46
+2026-09-27,46213,R-18995,jeronimo martins,,PE2,0,220,3100,0,,,1.5,,
 2026-09-27,,R-18996,reposicion jeronimo,,PE2,0,120,,0,,,1.5,,
 2026-09-28,,,local medellin,piña special 1ra,PE1,525,0,,4,202884,2026-09-27,1.5 - 2.5,1926,46
 2026-09-28,,,local medellin,piña special 1ra,PE1,576,255,,0,202918,2026-09-27,1.5 - 2.5,1926,46
@@ -19782,5 +19783,22 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-09-28,,,local sincelejo,piña special guapita,PEGUA,19,41,,0,202898,2026-09-27,1.5 - 2.5,1926,46
 2026-09-28,,,local sincelejo,piña special 2da,PE2,514,0,,0,202900,2026-09-27,1.5 - 2.5,1926,46
 2026-09-28,,,local sincelejo,piña special 2da,PE2,510,0,,0,202946,2026-09-27,1.5 - 2.5,1926,46
+2026-09-28,,,local sincelejo,piña special 2da,PE2,194,0,,0,202984,2026-09-27,1.5 - 2.5,1926,33
+2026-09-28,,,local sincelejo,piña special 1ra,PE1,565,0,,0,202805,2026-09-26,0.0 - 1.0,1926,33
+2026-09-28,,,local sincelejo,Piña AD1,AD1,546,0,,0,202863,2026-09-26,0.0 - 1.0,2226,33
+2026-09-28,,,local sincelejo,piña special 1ra,PE1,115,0,,0,202799,2026-09-26,0.0 - 1.0,1926,46
 2026-09-28,,,yamilet correa sepulveda,piña special 1ra,PE1,580,0,,0,202929,2026-09-27,1.5 - 2.5,1926,46
 2026-09-28,,,yamilet correa sepulveda,piña special 1ra,PE1,115,5,,0,202893,2026-09-27,1.5 - 2.5,1926,46
+2026-09-28,,,camilo quiñones,piña indstria,PIND,430,0,,0,202952,2026-09-27,1.5 - 2.5,1926,33
+2026-09-28,,,camilo quiñones,piña indstria,PIND,360,0,,6,202979,2026-09-27,1.5 - 2.5,1926,33
+2026-09-28,,,camilo quiñones,piña indstria,PIND,473,0,,0,202891,2026-09-27,1.5 - 2.5,1926,46
+2026-09-28,,,camilo quiñones,piña indstria,PIND,482,0,,0,202908,2026-09-27,1.5 - 2.5,1926,46
+2026-09-28,,,camilo quiñones,piña indstria,PIND,446,0,,30,202933,2026-09-27,1.5 - 2.5,1926,46
+2026-09-28,,,camilo quiñones,piña jugos,PJUG,445,0,,0,202991,2026-09-27,3.0 - 4.0,1926,33
+2026-09-28,,,camilo quiñones,piña special 3ra,PE3,476,0,,0,202850,2026-09-26,3.0 - 4.0,1926,46
+2026-09-28,,,camilo quiñones,piña special 3ra,PE3,478,0,,0,202764,2026-09-26,3.0 - 4.0,1926,33
+2026-09-28,,,camilo quiñones,piña special 2da,PE2,496,0,,0,202754,2026-09-26,3.0 - 4.0,1926,46
+2026-09-28,,,camilo quiñones,piña special 2da,PE2,488,0,,0,202765,2026-09-26,3.0 - 4.0,1926,33
+2026-09-28,,,camilo quiñones,piña special 2da,PE2,181,0,,0,202852,2026-09-26,3.0 - 4.0,1926,46
+2026-09-28,,,camilo quiñones,piña special 2da,PE2,492,0,,0,202822,2026-09-26,3.0 - 4.0,1926,46
+2026-09-28,,,camilo quiñones,piña special 2da,PE2,516,0,,0,202954,2026-09-27,3.0 - 4.0,1926,33
