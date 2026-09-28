@@ -19731,6 +19731,16 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-09-28,,,local medellin,piña special 3ra,PE3,483,17,,1,202980,2026-09-27,1.5 - 2.5,1926,33
 2026-09-28,,,local medellin,piña special 3ra,PE3,492,0,,1,202988,2026-09-27,3.0 - 4.0,1926,33
 2026-09-28,,,local medellin,piña special 3ra,PE3,278,0,,0,202989,2026-09-27,3.0 - 4.0,1926,33
+2026-09-28,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,579,0,,17,202881,2026-09-27,1,1926,46
+2026-09-28,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,565,0,,0,202882,2026-09-27,1,1926,46
+2026-09-28,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,566,0,,0,202888,2026-09-27,1,1926,46
+2026-09-28,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,563,0,,0,202911,2026-09-27,1,1926,46
+2026-09-28,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,585,0,,0,202906,2026-09-27,1,1926,46
+2026-09-28,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,561,0,,0,202897,2026-09-27,1,1926,46
+2026-09-28,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,601,0,,0,202890,2026-09-27,1,1926,46
+2026-09-28,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,567,0,,0,202914,2026-09-27,1,1926,46
+2026-09-28,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,579,0,,0,202896,2026-09-27,1,1926,46
+2026-09-28,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,593,241,,0,202885,2026-09-27,1,1926,46
 2026-09-28,,,local sincelejo,Piña AD1,AD1,541,0,,8,202861,2026-09-26,0.0 - 1.0,2226,33
 2026-09-28,,,local sincelejo,piña special 1ra,PE1,536,0,,0,202795,2026-09-26,0.0 - 1.0,1926,46
 2026-09-28,,,local sincelejo,piña special 1ra,PE1,555,368,,0,202779,2026-09-26,0.0 - 1.0,1926,46
@@ -19742,6 +19752,8 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-09-28,,,local sincelejo,piña special 3ra,PE3,464,12,,0,202966,2026-09-27,1.5 - 2.5,1926,33
 2026-09-28,,,local sincelejo,piña special 3ra,PE3,363,40,,0,202770,2026-09-26,1.5 - 2.5,1926,33
 2026-09-28,,,local sincelejo,piña special guapita,PEGUA,470,457,,2,202950,2026-09-27,1.5 - 2.5,1926,33
+2026-09-28,,,local sincelejo,Piña ADGUA,ADGUA,251,0,,0,202870,2026-09-26,1.5 - 2.5,2126,33
+2026-09-28,,,local sincelejo,piña special guapita,PEGUA,105,4,,0,202846,2026-09-26,1.5 - 2.5,1926,46
 2026-09-28,,,local medellin,Piña AD1,AD1,501,0,,6,202866,2026-09-26,0.0 - 1.0,2126,33
 2026-09-28,,,local medellin,piña special 1ra,PE1,549,450,,0,202801,2026-09-26,0.0 - 1.0,1926,33
 2026-09-28,,,local medellin,piña special 2da,PE2,512,0,,3,202815,2026-09-26,0.0 - 1.0,1926,46
@@ -19750,3 +19762,11 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-09-28,,,local medellin,piña special 2da,PE2,456,0,,0,202973,2026-09-27,1.5 - 2.5,1926,33
 2026-09-28,,,local medellin,piña special 2da,PE2,513,0,,0,202923,2026-09-27,1.5 - 2.5,1926,46
 2026-09-28,,,local medellin,piña special 2da,PE2,507,24,,5,202948,2026-09-27,1.5 - 2.5,1926,46
+2026-09-28,,,local medellin,piña special 1ra,PE1,553,0,,8,202963,2026-09-27,1.5 - 2.5,1926,33
+2026-09-28,,,local medellin,piña special 1ra,PE1,539,0,,0,202942,2026-09-27,1.5 - 2.5,1926,46
+2026-09-28,,,local medellin,piña special 1ra,PE1,428,0,,0,202977,2026-09-27,1.5 - 2.5,1926,33
+2026-09-28,,,local medellin,piña special 1ra,PE1,11,0,,0,202992,2026-09-28,1.5 - 2.5,,
+2026-09-28,,,local medellin,piña special 1ra,PE1,494,0,,0,202902,2026-09-27,1.5 - 2.5,1926,46
+2026-09-28,,,local medellin,piña special 1ra,PE1,341,134,,0,202969,2026-09-27,1.5 - 2.5,1926,33
+2026-09-28,,,local sincelejo,piña special 3ra,PE3,442,0,,0,202960,2026-09-27,1.5 - 2.5,1926,33
+2026-09-28,,,local sincelejo,piña special guapita,PEGUA,494,0,,0,202909,2026-09-27,1.5 - 2.5,1926,46
