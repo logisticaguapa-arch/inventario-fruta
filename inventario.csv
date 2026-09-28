@@ -50,7 +50,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 202894,canastas,2026-09-27,PE1,piña special 1ra,0.0 - 1.0,515
 202895,canastas,2026-09-27,PE1,piña special 1ra,0.0 - 1.0,577
 202899,canastas,2026-09-27,PE2,piña special 2da,1.5,407
-202900,canastas,2026-09-27,PE2,piña special 2da,1.5 - 2.5,516
 202901,canastas,2026-09-27,PE2,piña special 2da,1.5,404
 202904,canastas,2026-09-27,PE1,piña special 1ra,1,251
 202905,canastas,2026-09-27,PE1,piña special 1ra,0.0 - 1.0,513
@@ -82,7 +81,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 202941,canastas,2026-09-27,PE2,piña special 2da,1.5,471
 202943,canastas,2026-09-27,PE2,piña special 2da,0.0 - 1.0,503
 202945,canastas,2026-09-27,PE2,piña special 2da,3.0 - 4.0,514
-202946,canastas,2026-09-27,PE2,piña special 2da,1.5 - 2.5,512
 202947,canastas,2026-09-27,PE2,piña special 2da,0.0 - 1.0,505
 202949,canastas,2026-09-27,PE1,piña special 1ra,0.0 - 1.0,533
 202951,canastas,2026-09-27,PE1,piña special 1ra,1.5 - 2.5,559
@@ -118,11 +116,11 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 203002,canastas,2026-09-28,PE1,piña special 1ra,1.5 - 2.5,605
 203003,canastas,2026-09-28,PE1,piña special 1ra,0.0 - 1.0,549
 203004,canastas,2026-09-28,PE1,piña special 1ra,1.5,402
-203005,canastas,2026-09-28,PEGUA,piña special guapita,1.5 - 2.5,478
+203005,canastas,2026-09-28,PEGUA,piña special guapita,1.5 - 2.5,437
 203006,canastas,2026-09-28,PE1,piña special 1ra,0.0 - 1.0,534
-203007,canastas,2026-09-28,,,,0
-203008,canastas,2026-09-28,,,,0
-203009,canastas,2026-09-28,,,,0
+203007,canastas,2026-09-28,PE1,piña special 1ra,0.0 - 1.0,499
+203008,canastas,2026-09-28,PE1,piña special 1ra,1.5 - 2.5,581
+203009,canastas,2026-09-28,PE1,piña special 1ra,3.0 - 4.0,562
 203010,canastas,2026-09-28,,,,0
 203011,canastas,2026-09-28,,,,0
 203012,canastas,2026-09-28,,,,0
