@@ -19753,7 +19753,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-09-28,,,local sincelejo,piña special 3ra,PE3,464,12,,0,202966,2026-09-27,1.5 - 2.5,1926,33
 2026-09-28,,,local sincelejo,piña special 3ra,PE3,363,40,,0,202770,2026-09-26,1.5 - 2.5,1926,33
 2026-09-28,,,local sincelejo,piña special guapita,PEGUA,470,457,,2,202950,2026-09-27,1.5 - 2.5,1926,33
-2026-09-28,,,local sincelejo,Piña ADGUA,ADGUA,251,0,,0,202870,2026-09-26,1.5 - 2.5,2126,33
+2026-09-28,,,local sincelejo,Piña ADGUA,ADGUA,248,0,,3,202870,2026-09-26,1.5 - 2.5,2126,33
 2026-09-28,,,local sincelejo,piña special guapita,PEGUA,105,4,,0,202846,2026-09-26,1.5 - 2.5,1926,46
 2026-09-28,,,local medellin,Piña AD1,AD1,501,0,,6,202866,2026-09-26,0.0 - 1.0,2126,33
 2026-09-28,,,local medellin,piña special 1ra,PE1,549,450,,0,202801,2026-09-26,0.0 - 1.0,1926,33
@@ -19807,6 +19807,12 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-09-28,,,camilo quiñones,piña special 1ra,PE1,562,0,,0,202751,2026-09-26,1.5 - 2.5,1926,46
 2026-09-28,,,camilo quiñones,piña special 1ra,PE1,145,0,,0,202807,2026-09-26,1.5 - 2.5,1926,33
 2026-09-28,,,camilo quiñones,piña special 1ra,PE1,85,0,,0,202848,2026-09-26,1.5 - 2.5,1926,46
+2026-09-28,,,camilo quiñones,Piña AD1,AD1,26,0,,0,202867,2026-09-26,1.5 - 2.5,2126,33
+2026-09-28,,,camilo quiñones,piña special 1ra,PE1,283,0,,0,202859,2026-09-26,1.5 - 2.5,1926,46
+2026-09-28,,,camilo quiñones,piña special 1ra,PE1,511,0,,0,202821,2026-09-26,3.0 - 4.0,1926,46
+2026-09-28,,,camilo quiñones,Piña AD1,AD1,15,0,,0,202876,2026-09-26,3.0 - 4.0,2126,33
+2026-09-28,,,camilo quiñones,piña special 1ra,PE1,23,0,,0,202756,2026-09-26,3.0 - 4.0,1926,46
+2026-09-28,,,camilo quiñones,piña special 1ra,PE1,506,0,,40,202845,2026-09-26,3.0 - 4.0,1926,46
 2026-09-28,,,local sincelejo,piña special 2da,PE2,513,0,,0,202829,2026-09-26,0.0 - 1.0,1926,46
 2026-09-28,,,local sincelejo,piña special 2da,PE2,484,0,,0,202774,2026-09-26,0.0 - 1.0,1926,33
 2026-09-28,,,local sincelejo,piña special 2da,PE2,491,0,,0,202838,2026-09-26,0.0 - 1.0,1926,33
@@ -19815,3 +19821,8 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-09-28,,,local sincelejo,piña special 1ra,PE1,567,0,,0,202745,2026-09-26,0.0 - 1.0,1926,46
 2026-09-28,,,local sincelejo,piña special 1ra,PE1,565,0,,0,202814,2026-09-26,0.0 - 1.0,1926,46
 2026-09-28,,,local sincelejo,piña special 1ra,PE1,528,0,,0,202818,2026-09-26,0.0 - 1.0,1926,46
+2026-09-28,,,local sincelejo,Piña AD1,AD1,315,25,,8,202869,2026-09-26,0.0 - 1.0,2126,33
+2026-09-28,,,local sincelejo,piña special 2da,PE2,522,0,,0,202839,2026-09-26,0.0 - 1.0,1926,46
+2026-09-28,,,local sincelejo,Piña AD2,AD2,594,0,,0,202865,2026-09-26,0.0 - 1.0,2126,33
+2026-09-28,,,local sincelejo,piña special 2da,PE2,492,0,,6,202931,2026-09-27,0.0 - 1.0,1926,46
+2026-09-28,,,local sincelejo,piña special 2da,PE2,495,0,,0,202917,2026-09-27,0.0 - 1.0,1926,46

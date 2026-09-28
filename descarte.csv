@@ -2937,6 +2937,7 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,40,septiembre,2026-09-28,2226,33,canastas,3.0,,3.0,3.0,Muestreo,AD2
 2026,40,septiembre,2026-09-28,1926,46,canastas,6.0,,6.0,6.0,Muestreo,PE3
 2026,40,septiembre,2026-09-28,1926,33,canastas,2.0,,2.0,2.0,Muestreo,PEGUA
+2026,40,septiembre,2026-09-28,2126,33,canastas,3.0,,3.0,3.0,Muestreo,ADGUA
 2026,40,septiembre,2026-09-28,2126,33,canastas,6.0,,6.0,6.0,Muestreo,AD1
 2026,40,septiembre,2026-09-28,1926,46,canastas,3.0,,3.0,3.0,Muestreo,PE2
 2026,40,septiembre,2026-09-28,1926,46,canastas,5.0,,5.0,5.0,Muestreo,PE2
@@ -2945,4 +2946,7 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,40,septiembre,2026-09-28,1926,33,canastas,6.0,,6.0,6.0,Muestreo,PIND
 2026,40,septiembre,2026-09-28,1926,46,canastas,30.0,,30.0,30.0,Enferma,PIND
 2026,40,septiembre,2026-09-28,1926,33,canastas,5.0,,5.0,5.0,Muestreo,PE2
+2026,40,septiembre,2026-09-28,1926,46,canastas,40.0,,40.0,40.0,Daño por reposo,PE1
 2026,40,septiembre,2026-09-28,2226,33,canastas,6.0,,6.0,6.0,Muestreo,AD2
+2026,40,septiembre,2026-09-28,2126,33,canastas,8.0,,8.0,8.0,Muestreo,AD1
+2026,40,septiembre,2026-09-28,1926,46,canastas,6.0,,6.0,6.0,Muestreo,PE2
