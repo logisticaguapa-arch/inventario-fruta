@@ -19830,12 +19830,14 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-09-28,,R-19005,local sincelejo,Piña AD2,AD2,594,0,2600,0,202865,2026-09-26,0.0 - 1.0,2126,33
 2026-09-28,,R-19005,local sincelejo,piña special 2da,PE2,492,0,2600,6,202931,2026-09-27,0.0 - 1.0,1926,46
 2026-09-28,,R-19005,local sincelejo,piña special 2da,PE2,495,100,2600,0,202917,2026-09-27,0.0 - 1.0,1926,46
-2026-09-28,,R-19006,jeronimo martins,piña special 2da,PE2,404,0,3200,0,202901,2026-09-27,1.5,1926,46
-2026-09-28,,R-19006,jeronimo martins,piña special 2da,PE2,408,0,3200,0,202892,2026-09-27,1.5,1926,46
-2026-09-28,,R-19006,jeronimo martins,piña special 2da,PE2,401,0,3200,0,202883,2026-09-27,1.5,1926,46
-2026-09-28,,R-19006,jeronimo martins,piña special 2da,PE2,395,152,3200,12,202899,2026-09-27,1.5,1926,46
-2026-09-28,,R-19007,jeronimo martins,piña special 2da,PE2,319,0,3200,0,202941,2026-09-27,1.5,1926,46
-2026-09-28,,R-19007,jeronimo martins,piña special 2da,PE2,405,0,3200,0,202913,2026-09-27,1.5,1926,46
-2026-09-28,,R-19007,jeronimo martins,piña special 2da,PE2,404,0,3200,0,202926,2026-09-27,1.5,1926,46
-2026-09-28,,R-19007,jeronimo martins,piña special 2da,PE2,409,0,3200,0,202910,2026-09-27,1.5,1926,46
-2026-09-28,,R-19007,jeronimo martins,piña special 2da,PE2,78,145,3200,0,202976,2026-09-27,1.5,1926,33
+2026-09-28,46239,R-19006,jeronimo martins,piña special 2da,PE2,404,0,3200,0,202901,2026-09-27,1.5,1926,46
+2026-09-28,46239,R-19006,jeronimo martins,piña special 2da,PE2,408,0,3200,0,202892,2026-09-27,1.5,1926,46
+2026-09-28,46239,R-19006,jeronimo martins,piña special 2da,PE2,401,0,3200,0,202883,2026-09-27,1.5,1926,46
+2026-09-28,46239,R-19006,jeronimo martins,piña special 2da,PE2,395,152,3200,12,202899,2026-09-27,1.5,1926,46
+2026-09-28,46240,R-19007,jeronimo martins,piña special 2da,PE2,319,0,3200,0,202941,2026-09-27,1.5,1926,46
+2026-09-28,46240,R-19007,jeronimo martins,piña special 2da,PE2,405,0,3200,0,202913,2026-09-27,1.5,1926,46
+2026-09-28,46240,R-19007,jeronimo martins,piña special 2da,PE2,404,0,3200,0,202926,2026-09-27,1.5,1926,46
+2026-09-28,46240,R-19007,jeronimo martins,piña special 2da,PE2,409,0,3200,0,202910,2026-09-27,1.5,1926,46
+2026-09-28,46240,R-19007,jeronimo martins,piña special 2da,PE2,78,145,3200,0,202976,2026-09-27,1.5,1926,33
+2026-09-28,,R-19008,reposicion jeronimo,,,0,208,,0,,,,,
+2026-09-28,,,descarte,piña special 2da,PE2,0,0,,100,202728,2026-09-25,3.0 - 4.0,1926,33
