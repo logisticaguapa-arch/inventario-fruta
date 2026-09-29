@@ -23,7 +23,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 202993,canastas,2026-09-28,PE1,piña special 1ra,0.0 - 1.0,536
 202994,canastas,2026-09-28,PE1,piña special 1ra,0.0 - 1.0,534
 202995,canastas,2026-09-28,PE1,piña special 1ra,0.0 - 1.0,494
-202997,canastas,2026-09-28,PE2,piña special 2da,0.0 - 1.0,496
 202999,canastas,2026-09-28,PE1,piña special 1ra,0.0 - 1.0,517
 203001,canastas,2026-09-28,PE2,piña special 2da,1.5 - 2.5,513
 203003,canastas,2026-09-28,PE1,piña special 1ra,0.0 - 1.0,549
@@ -32,7 +31,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 203010,canastas,2026-09-28,PE2,piña special 2da,0.0 - 1.0,24
 203012,canastas,2026-09-28,PE1,piña special 1ra,0.0 - 1.0,527
 203013,canastas,2026-09-28,PE1,piña special 1ra,0.0 - 1.0,495
-203018,canastas,2026-09-28,PE2,piña special 2da,0.0 - 1.0,515
 203019,canastas,2026-09-28,PE1,piña special 1ra,0.0 - 1.0,531
 203020,canastas,2026-09-28,PE1,piña special 1ra,0.0 - 1.0,536
 203024,canastas,2026-09-28,PE3,piña special 3ra,1.5 - 2.5,480
@@ -112,14 +110,14 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 203153,canastas,2026-09-29,PE1,piña special 1ra,0.0 - 1.0,548
 203154,canastas,2026-09-29,PE1,piña special 1ra,1.5 - 2.5,549
 203155,canastas,2026-09-29,PE2,piña special 2da,0.0 - 1.0,507
-203156,canastas,2026-09-29,,,,0
-203157,canastas,2026-09-29,,,,0
-203158,canastas,2026-09-29,,,,0
-203159,canastas,2026-09-29,,,,0
-203160,canastas,2026-09-29,,,,0
-203161,canastas,2026-09-29,,,,0
-203162,canastas,2026-09-29,,,,0
-203163,canastas,2026-09-29,,,,0
+203156,canastas,2026-09-29,PE1,piña special 1ra,1.5 - 2.5,600
+203157,canastas,2026-09-29,PE2,piña special 2da,1.5,471
+203158,canastas,2026-09-29,PE1,piña special 1ra,3.0 - 4.0,575
+203159,canastas,2026-09-29,PE1,piña special 1ra,0.0 - 1.0,559
+203160,canastas,2026-09-29,PE1,piña special 1ra,0.0 - 1.0,561
+203161,canastas,2026-09-29,PE3,piña special 3ra,1.5 - 2.5,500
+203162,canastas,2026-09-29,PE1,piña special 1ra,1.5,400
+203163,canastas,2026-09-29,PEGUA,piña special guapita,1.5 - 2.5,499
 203164,canastas,2026-09-29,,,,0
 203165,canastas,2026-09-29,,,,0
 203166,canastas,2026-09-29,,,,0
