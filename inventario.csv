@@ -190,11 +190,11 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 203127,canastas,2026-09-28,AD2,Piña AD2,0.0 - 1.0,308
 203128,canastas,2026-09-28,AD1,Piña AD1,0.0 - 1.0,482
 203129,canastas,2026-09-28,AD1,Piña AD1,0.0 - 1.0,576
-203130,canastas,2026-09-28,,,,0
-203131,canastas,2026-09-28,,,,0
-203132,canastas,2026-09-28,,,,0
-203133,canastas,2026-09-28,,,,0
-203134,canastas,2026-09-28,,,,0
+203130,canastas,2026-09-28,AD1,Piña AD1,0.0 - 1.0,168
+203131,canastas,2026-09-28,AD-PIND,AD-piña indstria,1.5 - 2.5,255
+203132,canastas,2026-09-28,AD1,Piña AD1,1.5 - 2.5,282
+203133,canastas,2026-09-28,PJUG,piña jugos,3.0 - 4.0,500
+203134,canastas,2026-09-28,AD-PJUG,,3.0 - 4.0,212
 203135,canastas,2026-09-28,,,,0
 203136,canastas,2026-09-28,,,,0
 203137,canastas,2026-09-28,,,,0
