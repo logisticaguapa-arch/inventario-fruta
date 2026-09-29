@@ -19841,17 +19841,17 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-09-28,46240,R-19007,jeronimo martins,piña special 2da,PE2,78,145,3200,0,202976,2026-09-27,1.5,1926,33
 2026-09-28,,R-19008,reposicion jeronimo,,,0,208,,0,,,,,
 2026-09-28,,,descarte,piña special 2da,PE2,0,0,,100,202728,2026-09-25,3.0 - 4.0,1926,33
-2026-09-29,,R-19012,local apartado,piña special 1ra,PE1,635,0,,6,202971,2026-09-27,0.0 - 1.0,1926,33
-2026-09-29,,R-19012,local apartado,piña special 1ra,PE1,504,361,,0,202894,2026-09-27,0.0 - 1.0,1926,46
-2026-09-29,,R-19012,local apartado,piña special guapita,PEGUA,457,0,,2,203011,2026-09-28,1.5 - 2.5,1926,46
-2026-09-29,,R-19012,local apartado,Piña ADGUA,ADGUA,243,100,,0,203123,2026-09-28,1.5 - 2.5,2226,47
-2026-09-29,,R-19012,local apartado,piña special 2da,PE2,114,0,,0,202959,2026-09-27,1.5,1926,33
-2026-09-29,,R-19012,local apartado,,pe2,0,300,,0,,,1,,
-2026-09-29,,R-19012,local apartado,AD-piña indstria,AD-PIND,168,47,,85,203131,2026-09-28,1.5 - 2.5,2226,47
-2026-09-29,,R-19012,local apartado,,PE3,0,200,,0,,,2,,
-2026-09-29,,R-19012,local apartado,,PE2,0,400,,0,,,2,,
-2026-09-29,,R-19012,local apartado,piña special guapita,PEGUA,122,78,,0,203087,2026-09-28,1.5 - 2.5,1926,46
-2026-09-29,,R-19012,local apartado,piña special 1ra,PE1,536,164,,2,202915,2026-09-27,1.5 - 2.5,1926,46
+2026-09-29,,R-19012,local apartado,piña special 1ra,PE1,635,0,3200,6,202971,2026-09-27,0.0 - 1.0,1926,33
+2026-09-29,,R-19012,local apartado,piña special 1ra,PE1,504,361,3200,0,202894,2026-09-27,0.0 - 1.0,1926,46
+2026-09-29,,R-19012,local apartado,piña special guapita,PEGUA,457,0,2200,2,203011,2026-09-28,1.5 - 2.5,1926,46
+2026-09-29,,R-19012,local apartado,Piña ADGUA,ADGUA,243,100,2200,0,203123,2026-09-28,1.5 - 2.5,2226,47
+2026-09-29,,R-19012,local apartado,piña special 2da,PE2,114,0,3000,0,202959,2026-09-27,1.5,1926,33
+2026-09-29,,R-19012,local apartado,,pe2,0,300,3000,0,,,1,,
+2026-09-29,,R-19012,local apartado,AD-piña indstria,AD-PIND,168,47,2200,85,203131,2026-09-28,1.5 - 2.5,2226,47
+2026-09-29,,R-19012,local apartado,,PE3,0,200,2500,0,,,2,,
+2026-09-29,,R-19012,local apartado,,PE2,0,400,3000,0,,,2,,
+2026-09-29,,R-19012,local apartado,piña special guapita,PEGUA,122,78,2200,0,203087,2026-09-28,1.5 - 2.5,1926,46
+2026-09-29,,R-19012,local apartado,piña special 1ra,PE1,536,164,3200,2,202915,2026-09-27,1.5 - 2.5,1926,46
 2026-09-29,,R-19011,local medellin,piña special 2da,PE2,499,0,,3,203069,2026-09-28,0.0 - 1.0,1926,46
 2026-09-29,,R-19011,local medellin,Piña AD2,AD2,505,196,,0,203102,2026-09-28,0.0 - 1.0,2126,47
 2026-09-29,,R-19011,local medellin,,PE2,0,400,,0,,,2,,
