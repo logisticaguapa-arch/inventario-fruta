@@ -1265,7 +1265,7 @@ function renderTabla(dataOriginal){
     const h=horasDesdeGrupo(f, data.filter(function(r){return r.Fecha===f;}));
     html+='<th>'+fmtF(f)+'<br><small style="color:'+urgColor(h)+'">'+horasLabel(h)+'</small></th>';
   });
-  html+='<th>Total kg</th><th>% Participación</th></tr></thead><tbody>';
+  html+='<th>Total kg</th><th style="width:1%">%</th></tr></thead><tbody>';
   const calibresPresentes=[...new Set(data.map(function(r){return r.Calibre;}))].sort(function(a,b){
     return parseFloat(String(a).replace(',','.'))-parseFloat(String(b).replace(',','.'));
   });
@@ -1509,7 +1509,7 @@ function renderInventarioProcesado(data){
     html+='<div style="font-size:.75rem;font-weight:800;text-transform:none;letter-spacing:0">'+kgTotalColor+' kg'+(esPrimeraDelColor&&pctColor!==null?' &middot; <span style="font-size:.95rem">'+pctColor+'%</span>':'')+'</div>';
     html+='</th>';
   });
-  html+='<th rowspan="2">Total general</th></tr><tr>';
+  html+='<th rowspan="2">Total general</th><th rowspan="2" style="width:1%">%</th></tr><tr>';
   calibresPresentes.forEach(function(calVal){
     const mad=getMadurez(calVal);
     const bgH=madBg(mad), fgH=madFg(mad);
@@ -1546,14 +1546,17 @@ function renderInventarioProcesado(data){
         if(v>0) row+='<td class="'+C.cell+'">'+Math.round(v).toLocaleString('es-CO')+'</td>';
         else row+='<td style="color:#ccc">&mdash;</td>';
       });
-      row+='<td>'+Math.round(totalPorTamGrupo[t]||0).toLocaleString('es-CO')+'</td></tr>';
+      const pctTam=grandTotal>0?((totalPorTamGrupo[t]/grandTotal)*100).toFixed(1).replace('.',','):'0,0';
+      row+='<td>'+Math.round(totalPorTamGrupo[t]||0).toLocaleString('es-CO')+'</td>';
+      row+='<td>'+pctTam+'%</td></tr>';
       html+=row;
     });
   });
 
   html+='<tr class="tfoot-row"><td class="left">TOTAL GENERAL</td>';
   calibresPresentes.forEach(function(calVal){ html+='<td>'+Math.round(totalPorCal[calVal]||0).toLocaleString('es-CO')+'</td>'; });
-  html+='<td>'+Math.round(grandTotal).toLocaleString('es-CO')+'</td></tr></tbody></table>';
+  html+='<td>'+Math.round(grandTotal).toLocaleString('es-CO')+'</td>';
+  html+='<td>'+(grandTotal>0?'100,0':'0,0')+'%</td></tr></tbody></table>';
   el.innerHTML=html;
 }
 
