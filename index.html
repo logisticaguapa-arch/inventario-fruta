@@ -247,8 +247,8 @@ table.ftable .ftotal-row td{color:#052e16!important}
 </div>
 
 <div class="views">
-  <button class="vbtn active" onclick="setView('tarjetas')" id="btn-tarjetas">Tarjetas por dia</button>
-  <button class="vbtn" onclick="setView('tabla')"    id="btn-tabla">Tabla Inventario</button>
+  <button class="vbtn active" onclick="setView('tabla')"    id="btn-tabla">Tabla Inventario</button>
+  <button class="vbtn" onclick="setView('tarjetas')" id="btn-tarjetas">Tarjetas por dia</button>
   <button class="vbtn" onclick="setView('bodega')"   id="btn-bodega">Bodega + Urgencia</button>
   <button class="vbtn" onclick="setView('bines')"    id="btn-bines">Bines</button>
   <button class="vbtn" onclick="setView('facturacion')" id="btn-facturacion">Facturacion</button>
@@ -271,7 +271,7 @@ table.ftable .ftotal-row td{color:#052e16!important}
     <div class="msel-panel" id="selFec-panel"></div>
   </div>
   <button class="breset" onclick="reset()">↺ Limpiar</button>
-  <span id="barInvTarjetasExtra">
+  <span id="barInvTarjetasExtra" style="display:none">
     <button class="bexport" onclick="exportExcelIngresado()">⬇ Inventario ingresado</button>
     <button class="bexport" onclick="exportExcelDespachoDetalle()">⬇ Detalle Despacho</button>
   </span>
@@ -350,8 +350,8 @@ table.ftable .ftotal-row td{color:#052e16!important}
 </div>
 
 <div class="content">
-  <div id="v-tarjetas" class="v-tarjetas"></div>
-  <div id="v-tabla"    class="v-tabla"    style="display:none"></div>
+  <div id="v-tarjetas" class="v-tarjetas" style="display:none"></div>
+  <div id="v-tabla"    class="v-tabla"></div>
   <div id="v-bodega"   class="v-bodega"   style="display:none"></div>
   <div id="v-bines"    class="v-bines"    style="display:none"></div>
   <div id="v-facturacion" class="v-facturacion" style="display:none"></div>
@@ -539,7 +539,7 @@ function fmtFechaCompleta(f){
   return dd+'/'+mm+'/'+y;
 }
 
-let ALL=[],DESPACHO=[],PROCESADO=[],DESCARTE=[],INGRESADO=[],currentView='tarjetas';
+let ALL=[],DESPACHO=[],PROCESADO=[],DESCARTE=[],INGRESADO=[],currentView='tabla';
 // -- Clasificacion Floracion / Induccion segun Calidad (columna D de Proceso) --
 const COSECHA_FLORACION=new Set(['AD1','AD2','AD3','ADGUA','ADBABY','AD-PIND','AD-PJUG']);
 function getCosecha(calidad){
@@ -1265,7 +1265,7 @@ function renderTabla(dataOriginal){
     const h=horasDesdeGrupo(f, data.filter(function(r){return r.Fecha===f;}));
     html+='<th>'+fmtF(f)+'<br><small style="color:'+urgColor(h)+'">'+horasLabel(h)+'</small></th>';
   });
-  html+='<th>Total kg</th></tr></thead><tbody>';
+  html+='<th>Total kg</th><th>% Participación</th></tr></thead><tbody>';
   const calibresPresentes=[...new Set(data.map(function(r){return r.Calibre;}))].sort(function(a,b){
     return parseFloat(String(a).replace(',','.'))-parseFloat(String(b).replace(',','.'));
   });
@@ -1317,6 +1317,7 @@ function renderTabla(dataOriginal){
     html+='<span style="font-weight:800">'+C.label+' &mdash; grado de maduración '+calValLabel(calVal)+'</span>';
     html+='<span style="margin-left:14px;font-weight:800;font-size:1.05rem">'+kgTotalColor+' kg</span>';
     html+='</td>';
+    html+='<td style="background:'+bgH+';color:'+fgH+'"></td>';
     html+='<td style="background:'+bgH+';color:'+fgH+'">'+(esPrimeraDelColor&&pctTotal!==null?'<span style="font-weight:800;font-size:1.3rem">'+pctTotal+'%</span>':'')+'</td>';
     html+='</tr>';
     filas.forEach(function(fi){
@@ -1327,7 +1328,12 @@ function renderTabla(dataOriginal){
         if(kg>0) row+='<td class="'+C.cell+'">'+Math.round(kg).toLocaleString('es-CO')+'</td>';
         else row+='<td style="color:#ccc">&mdash;</td>';
       });
-      row+='<td class="'+C.txt+'">'+Math.round(fi.total).toLocaleString('es-CO')+'</td></tr>';
+      // -- % de participacion de ESTA categoria (tam) sobre el total general del
+      // periodo (todas las fechas, todos los colores) -- va al lado derecho del
+      // total en kg de la fila. --
+      const pctTam=grandTotalPeriodo>0?((fi.total/grandTotalPeriodo)*100).toFixed(1).replace('.',','):'0,0';
+      row+='<td class="'+C.txt+'">'+Math.round(fi.total).toLocaleString('es-CO')+'</td>';
+      row+='<td class="'+C.txt+'">'+pctTam+'%</td></tr>';
       html+=row;
     });
   });
@@ -1335,7 +1341,8 @@ function renderTabla(dataOriginal){
   fechas.forEach(function(f){
     html+='<td>'+Math.round(totalesPorFecha[f]||0).toLocaleString('es-CO')+'</td>';
   });
-  html+='<td>'+Math.round(grandTotalPeriodo).toLocaleString('es-CO')+'</td></tr></tbody></table>';
+  html+='<td>'+Math.round(grandTotalPeriodo).toLocaleString('es-CO')+'</td>';
+  html+='<td>'+(grandTotalPeriodo>0?'100,0':'0,0')+'%</td></tr></tbody></table>';
   el.innerHTML=html;
 }
 
@@ -1852,19 +1859,11 @@ function exportExcelDespachoDetalle(){
 }
 
 // -- Cumplimiento por grado de maduracion, por categoria: de "Inventario
-// ingresado" (Proceso), sujeto al mismo filtro de fecha. Una fila por
-// Categoria, una columna por cada grado real (0.0-1.0 / 1.5-2.5 / 3.0-4.0),
-// con la SUMA del Peso Neto de los registros de esa categoria que caen en
-// ese grado. Se descarga como .xlsx (a diferencia de los dos botones de
-// arriba, que ahora son .csv). --
-const CUMPLIMIENTO_GRADOS=[
-  {key:'0.0-1.0', label:'Real 0.0-1.0'},
-  {key:'1.5-2.5', label:'Real 1.5-2.5'},
-  {key:'3.0-4.0', label:'Real 3.0-4.0'}
-];
-function normGrado(g){
-  return String(g||'').replace(/,/g,'.').replace(/\s+/g,'');
-}
+// ingresado" (Proceso), sujeto al filtro de fecha de Inventario procesado.
+// Una fila por Categoria, una columna por cada valor de Grado EXACTO tal como
+// viene en el archivo (sin agrupar en rangos -- si hay "0", "0.5", "1", "1.5",
+// "2", "2.5", etc. como valores distintos, cada uno es su propia columna),
+// con la SUMA del Peso Neto de los registros de esa categoria en ese grado. --
 function filteredIngresadoProcesado(){
   // -- El boton "Cumplimiento por grado" vive en Inventario procesado, asi que
   // usa el filtro de fecha PROPIO de esa vista (filtros.procFec), no el de
@@ -1875,23 +1874,34 @@ function filteredIngresadoProcesado(){
 function exportExcelCumplimientoGrado(){
   const data=filteredIngresadoProcesado();
   if(!data.length){ alert('No hay inventario procesado para la fecha seleccionada.'); return; }
+  // -- Grados distintos que EXISTEN de verdad en los datos filtrados, en su
+  // forma original (solo se recorta espacio sobrante) -- no se agrupan. --
+  const gradosPresentes=[...new Set(data.map(function(r){return String(r.Grado||'').trim();}))]
+    .filter(function(g){return g!=='';})
+    .sort(function(a,b){
+      const na=parseFloat(a.replace(',','.'));
+      const nb=parseFloat(b.replace(',','.'));
+      if(isNaN(na)||isNaN(nb)) return a.localeCompare(b,'es');
+      if(na!==nb) return na-nb;
+      return a.localeCompare(b,'es');
+    });
   const porCategoria={};
   data.forEach(function(r){
     const cat=r.Categoria||'(sin categoria)';
+    const g=String(r.Grado||'').trim();
     if(!porCategoria[cat]){
       porCategoria[cat]={};
-      CUMPLIMIENTO_GRADOS.forEach(function(g){ porCategoria[cat][g.key]=0; });
+      gradosPresentes.forEach(function(gg){ porCategoria[cat][gg]=0; });
     }
-    const gKey=normGrado(r.Grado);
-    if(CUMPLIMIENTO_GRADOS.some(function(g){return g.key===gKey;})){
-      porCategoria[cat][gKey]+=(r.PesoNeto||0);
+    if(g!==''){
+      porCategoria[cat][g]=(porCategoria[cat][g]||0)+(r.PesoNeto||0);
     }
   });
   const categorias=Object.keys(porCategoria).sort(function(a,b){return a.localeCompare(b,'es');});
-  const headers=['Categoria'].concat(CUMPLIMIENTO_GRADOS.map(function(g){return g.label;}));
+  const headers=['Categoria'].concat(gradosPresentes.map(function(g){return 'Real '+g.replace(/,/g,'.');}));
   const filas=categorias.map(function(cat){
     const fila=[cat];
-    CUMPLIMIENTO_GRADOS.forEach(function(g){ fila.push(Math.round(porCategoria[cat][g.key]||0)); });
+    gradosPresentes.forEach(function(g){ fila.push(Math.round(porCategoria[cat][g]||0)); });
     return fila;
   });
   const ws=XLSX.utils.aoa_to_sheet([headers].concat(filas));
