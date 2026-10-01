@@ -2984,10 +2984,12 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,40,septiembre,2026-09-30,1926,45,canastas,4.0,,4.0,4.0,Muestreo,PE1
 2026,40,septiembre,2026-09-30,1926,46,canastas,5.0,,5.0,5.0,Muestreo,PE3
 2026,40,septiembre,2026-09-30,1926,33,canastas,4.0,,4.0,4.0,Muestreo,PE1
+2026,40,septiembre,2026-09-30,1926,46,canastas,15.0,,15.0,15.0,Enferma,PE1
 2026,40,septiembre,2026-09-30,1926,45,canastas,16.0,,16.0,16.0,Muestreo,PE1
 2026,40,septiembre,2026-09-30,1926,46,canastas,4.0,,4.0,4.0,Muestreo,PE1
 2026,40,septiembre,2026-09-30,1926,45,canastas,3.0,,3.0,3.0,Muestreo,PE2
 2026,40,septiembre,2026-09-30,1926,46,canastas,7.0,,7.0,7.0,Muestreo,PE3
+2026,40,septiembre,2026-09-30,2226,47,canastas,15.0,,15.0,15.0,Golpe Despacho,AD3
 2026,40,septiembre,2026-09-30,1926,46,canastas,4.0,,4.0,4.0,Muestreo,PEGUA
 2026,40,septiembre,2026-09-30,1926,46,canastas,555.0,,555.0,555.0,Enferma,PE1
 2026,40,septiembre,2026-09-30,1926,46,canastas,573.0,,573.0,573.0,Enferma,PE1
@@ -3002,3 +3004,7 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,40,septiembre,2026-09-30,1926,33,canastas,21.0,,21.0,21.0,Enferma,PE1
 2026,40,septiembre,2026-09-30,1926,46,canastas,513.0,,513.0,513.0,Muestreo,PE1
 2026,40,septiembre,2026-09-30,1926,46,canastas,578.0,,578.0,578.0,Enferma,PE1
+2026,40,septiembre,2026-09-30,1926,45,canastas,3.0,,3.0,3.0,Muestreo,PEBAB
+2026,40,septiembre,2026-09-30,1926,33,canastas,4.0,,4.0,4.0,Golpe Despacho,PEBAB
+2026,40,septiembre,2026-09-30,1926,46,canastas,120.0,,120.0,120.0,Muestreo,PE2
+2026,40,octubre,2026-10-01,2226,47,canastas,4.0,,4.0,4.0,Muestreo,AD1
