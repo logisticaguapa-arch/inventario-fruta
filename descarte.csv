@@ -3027,3 +3027,7 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,40,octubre,2026-10-01,2426,46,canastas,7.0,,7.0,7.0,Daño por reposo,AD2
 2026,40,octubre,2026-10-01,2026,45,canastas,5.0,,5.0,5.0,Muestreo,PE1
 2026,40,octubre,2026-10-01,2226,47,canastas,16.0,,16.0,16.0,Muestreo,AD1
+2026,40,octubre,2026-10-01,1926,46,canastas,480.0,,480.0,480.0,Enferma,PE1
+2026,40,octubre,2026-10-01,1926,46,canastas,16.0,,16.0,16.0,Muestreo,PE1
+2026,40,octubre,2026-10-01,2226,47,canastas,4.0,,4.0,4.0,Muestreo,AD1
+2026,40,octubre,2026-10-01,2226,47,canastas,16.0,,16.0,16.0,Enferma,AD1
