@@ -3010,4 +3010,7 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,40,octubre,2026-10-01,2226,47,canastas,4.0,,4.0,4.0,Muestreo,AD1
 2026,40,octubre,2026-10-01,1926,45,canastas,6.0,,6.0,6.0,Muestreo,PE2
 2026,40,octubre,2026-10-01,2426,46,canastas,6.0,,6.0,6.0,Muestreo,AD2
+2026,40,octubre,2026-10-01,1926,46,canastas,15.0,,15.0,15.0,Enferma,PE1
 2026,40,octubre,2026-10-01,2226,46,canastas,6.0,,6.0,6.0,Muestreo,AD2
+2026,40,octubre,2026-10-01,1926,46,canastas,3.0,,3.0,3.0,Muestreo,PE2
+2026,40,octubre,2026-10-01,1926,45,canastas,3.0,,3.0,3.0,Muestreo,PE2
