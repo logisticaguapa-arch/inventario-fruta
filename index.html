@@ -414,8 +414,22 @@ const CLIENTES_ESPECIALES = [
 ];
 function getClienteEspecial(calidad, calVal){
   const cd  = String(calidad||'').trim().toUpperCase();
-  const cal = String(calVal==null?'':calVal).trim().replace(/,/g,'.');
-  const m = CLIENTES_ESPECIALES.find(function(r){return r.calidad===cd && r.calibre===cal;});
+  const calStr = String(calVal==null?'':calVal).trim();
+  // -- Si es un RANGO (ej "0,0 - 1,0"), no es un grado puntual -- no aplica
+  // ninguna de estas reglas (evita que el primer numero del rango, ej el "0"
+  // de "0,0 - 1,0", haga match por error con una regla guardada como "0"). --
+  if(/-/.test(calStr)) return null;
+  // -- Comparar el grado como NUMERO, no como texto exacto: el dato puede venir
+  // como "1", "1.0" o "1,0" segun como haya quedado escrita la celda en Excel,
+  // y los tres deben hacer match igual (antes, al comparar texto exacto, "1,0"
+  // o "1.0" no hacian match con la regla guardada como "1" y la etiqueta
+  // desaparecia aunque el grado fuera el mismo). --
+  const calNum = parseFloat(calStr.replace(/,/g,'.'));
+  const m = CLIENTES_ESPECIALES.find(function(r){
+    if(r.calidad!==cd) return false;
+    const refNum = parseFloat(String(r.calibre).replace(/,/g,'.'));
+    return !isNaN(calNum) && !isNaN(refNum) && calNum===refNum;
+  });
   return m ? m.cliente : null;
 }
 function clienteBadgeHtml(cliente){
