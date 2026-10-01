@@ -44,7 +44,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 203138,canastas,2026-09-29,PE1,piña special 1ra,0.0 - 1.0,567
 203141,canastas,2026-09-29,PE2,piña special 2da,1.5 - 2.5,189
 203142,canastas,2026-09-29,PE1,piña special 1ra,0.0 - 1.0,573
-203143,canastas,2026-09-29,PE2,piña special 2da,0.0 - 1.0,502
 203144,canastas,2026-09-29,PE1,piña special 1ra,0.0 - 1.0,572
 203147,canastas,2026-09-29,PE1,piña special 1ra,1.5 - 2.5,567
 203148,canastas,2026-09-29,PE1,piña special 1ra,0.0 - 1.0,541
@@ -87,7 +86,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 203227,canastas,2026-09-29,AD2,Piña AD2,0.0 - 1.0,528
 203228,canastas,2026-09-29,AD1,Piña AD1,0.0 - 1.0,560
 203229,canastas,2026-09-29,AD1,Piña AD1,0.0 - 1.0,565
-203231,canastas,2026-09-29,AD2,Piña AD2,0.0 - 1.0,505
 203232,canastas,2026-09-29,AD1,Piña AD1,0.0 - 1.0,573
 203235,canastas,2026-09-29,AD1,Piña AD1,0.0 - 1.0,582
 203236,canastas,2026-09-29,AD1,Piña AD1,0.0 - 1.0,542
@@ -172,24 +170,24 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 203330,canastas,2026-09-30,AD1,Piña AD1,1.5 - 2.5,156
 203331,canastas,2026-09-30,AD-PJUG,,3.0 - 4.0,122
 203333,canastas,2026-09-30,PJUG,piña jugos,3.0 - 4.0,345
-203334,canastas,2026-10-01,,,,0
-203335,canastas,2026-10-01,,,,0
-203336,canastas,2026-10-01,,,,0
+203334,canastas,2026-10-01,PE1,piña special 1ra,0.0 - 1.0,573
+203335,canastas,2026-10-01,PE1,piña special 1ra,1,561
+203336,canastas,2026-10-01,PE1,piña special 1ra,1.5 - 2.5,582
 203337,canastas,2026-10-01,,,,0
-203338,,,,,,0
-203339,,,,,,0
-203340,,,,,,0
-203341,,,,,,0
-203342,,,,,,0
-203343,,,,,,0
-203344,,,,,,0
-203345,,,,,,0
-203346,,,,,,0
-203347,,,,,,0
-203348,,,,,,0
-203349,,,,,,0
-203350,,,,,,0
-203351,,,,,,0
+203338,canastas,2026-10-01,,,,0
+203339,canastas,2026-10-01,,,,0
+203340,canastas,2026-10-01,,,,0
+203341,canastas,2026-10-01,,,,0
+203342,canastas,2026-10-01,,,,0
+203343,canastas,2026-10-01,,,,0
+203344,canastas,2026-10-01,,,,0
+203345,canastas,2026-10-01,,,,0
+203346,canastas,2026-10-01,,,,0
+203347,canastas,2026-10-01,,,,0
+203348,canastas,2026-10-01,,,,0
+203349,canastas,2026-10-01,,,,0
+203350,canastas,2026-10-01,,,,0
+203351,canastas,2026-10-01,,,,0
 203352,,,,,,0
 203353,,,,,,0
 203354,,,,,,0
