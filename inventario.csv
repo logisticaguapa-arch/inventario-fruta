@@ -107,7 +107,7 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 203405,canastas,2026-10-01,AD2,Piña AD2,0.0 - 1.0,498
 203406,canastas,2026-10-01,AD1,Piña AD1,0.0 - 1.0,557
 203407,canastas,2026-10-01,AD1,Piña AD1,1,383
-203408,canastas,2026-10-01,,,,0
+203408,canastas,2026-10-01,PIND,piña indstria,1.5 - 2.5,353
 203409,canastas,2026-10-01,,,,0
 203410,canastas,2026-10-01,,,,0
 203411,canastas,2026-10-01,,,,0
