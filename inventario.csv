@@ -19,11 +19,7 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 203245,canastas,2026-09-29,AD1,Piña AD1,0.0 - 1.0,174
 203250,canastas,2026-09-29,AD2,Piña AD2,1.5 - 2.5,70
 203255,canastas,2026-09-29,AD1,Piña AD1,0.0 - 1.0,297
-203261,canastas,2026-09-30,PE1,piña special 1ra,1,546
-203262,canastas,2026-09-30,PE1,piña special 1ra,1,564
 203270,canastas,2026-09-30,PE1,piña special 1ra,1.5 - 2.5,555
-203281,canastas,2026-09-30,PE1,piña special 1ra,1,584
-203292,canastas,2026-09-30,PE1,piña special 1ra,1,543
 203297,canastas,2026-09-30,PE1,piña special 1ra,1.5 - 2.5,551
 203304,canastas,2026-09-30,PE2,piña special 2da,1.5,337
 203308,canastas,2026-09-30,PE1,piña special 1ra,1.5 - 2.5,184
@@ -32,7 +28,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 203334,canastas,2026-10-01,PE1,piña special 1ra,0.0 - 1.0,573
 203335,canastas,2026-10-01,PE1,piña special 1ra,1,561
 203336,canastas,2026-10-01,PE1,piña special 1ra,1.5 - 2.5,582
-203337,canastas,2026-10-01,PE1,piña special 1ra,1,552
 203338,canastas,2026-10-01,PE1,piña special 1ra,0.0 - 1.0,599
 203339,canastas,2026-10-01,PE2,piña special 2da,0.0 - 1.0,509
 203340,canastas,2026-10-01,PE2,piña special 2da,1.5 - 2.5,497
@@ -46,7 +41,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 203348,canastas,2026-10-01,PE1,piña special 1ra,1.5 - 2.5,577
 203349,canastas,2026-10-01,PE1,piña special 1ra,1.5 - 2.5,567
 203350,canastas,2026-10-01,PE2,piña special 2da,0.0 - 1.0,180
-203351,canastas,2026-10-01,PE1,piña special 1ra,1,537
 203352,canastas,2026-10-01,PIND,piña indstria,1.5 - 2.5,454
 203353,canastas,2026-10-01,PE1,piña special 1ra,0.0 - 1.0,597
 203354,canastas,2026-10-01,PE3,piña special 3ra,1.5 - 2.5,506
@@ -116,8 +110,8 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 203419,canastas,2026-10-01,AD2,Piña AD2,1.5 - 2.5,158
 203420,canastas,2026-10-01,AD2,Piña AD2,1.5 - 2.5,167
 203421,canastas,2026-10-01,AD-PJUG,,3.0 - 4.0,178
-203422,canastas,2026-10-01,,,,0
-203423,canastas,2026-10-01,,,,0
+203422,canastas,2026-10-01,AD3,Piña AD3,1.5 - 2.5,99
+203423,canastas,2026-10-01,ADBABY,Piña ADBABY,1.5 - 2.5,74
 203424,canastas,2026-10-01,,,,0
 203425,canastas,2026-10-01,,,,0
 203426,canastas,2026-10-01,,,,0
