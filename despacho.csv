@@ -20439,18 +20439,18 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-03,,,cartagena,piña special 1ra,PE1,571,0,,0,203443,2026-10-02,1.5 - 2.5,2026,45
 2026-10-03,,,cartagena,piña special 1ra,PE1,561,0,,0,203427,2026-10-02,1.5 - 2.5,2026,45
 2026-10-03,,,cartagena,piña special 1ra,PE1,495,222,,8,203448,2026-10-02,1.5 - 2.5,2026,45
-2026-10-03,,,Aldinsen Gonzalez,piña indstria,PIND,459,0,,0,203462,2026-10-02,1.5 - 2.5,2026,45
-2026-10-03,,,Aldinsen Gonzalez,piña indstria,PIND,480,0,,0,203438,2026-10-02,1.5 - 2.5,2026,45
-2026-10-03,,,Aldinsen Gonzalez,piña indstria,PIND,417,0,,0,203491,2026-10-02,1.5 - 2.5,2026,33
-2026-10-03,,,Aldinsen Gonzalez,piña indstria,PIND,445,0,,0,203474,2026-10-02,1.5 - 2.5,2026,54
-2026-10-03,,,Aldinsen Gonzalez,piña indstria,PIND,481,0,,0,203454,2026-10-02,1.5 - 2.5,2026,45
-2026-10-03,,,Aldinsen Gonzalez,piña indstria,PIND,475,0,,0,203428,2026-10-02,1.5 - 2.5,2026,33
-2026-10-03,,,Aldinsen Gonzalez,AD-piña indstria,AD-PIND,72,0,,0,203518,2026-10-02,1.5 - 2.5,2326,32
-2026-10-03,,,Aldinsen Gonzalez,piña indstria,PIND,16,0,,7,203519,2026-10-02,1.5 - 2.5,2026,33
-2026-10-03,,,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,43,0,,0,203521,2026-10-02,3.0 - 4.0,2326,32
-2026-10-03,,,carmen susana hoyos,piña special 1ra,PE1,140,0,,0,203452,2026-10-02,1.5 - 2.5,2026,45
-2026-10-03,,,carmen susana hoyos,piña special 1ra,PE1,187,0,,0,203513,2026-10-02,1.5 - 2.5,2026,33
-2026-10-03,,,carmen susana hoyos,piña special 1ra,PE1,105,0,,0,203482,2026-10-02,1.5 - 2.5,2026,33
-2026-10-03,,,carmen susana hoyos,piña special 1ra,PE1,529,0,,0,203540,2026-10-03,1.5 - 2.5,,
-2026-10-03,,,carmen susana hoyos,piña special 1ra,PE1,509,0,,0,203546,2026-10-03,1.5 - 2.5,,
-2026-10-03,,,carmen susana hoyos,piña special 1ra,PE1,33,0,,0,203558,2026-10-03,1.5 - 2.5,,
+2026-10-03,46370,R-19069,Aldinsen Gonzalez,piña indstria,PIND,459,0,1600,0,203462,2026-10-02,1.5 - 2.5,2026,45
+2026-10-03,46370,R-19069,Aldinsen Gonzalez,piña indstria,PIND,480,0,1600,0,203438,2026-10-02,1.5 - 2.5,2026,45
+2026-10-03,46370,R-19069,Aldinsen Gonzalez,piña indstria,PIND,417,0,1600,0,203491,2026-10-02,1.5 - 2.5,2026,33
+2026-10-03,46370,R-19069,Aldinsen Gonzalez,piña indstria,PIND,445,0,1600,0,203474,2026-10-02,1.5 - 2.5,2026,54
+2026-10-03,46370,R-19069,Aldinsen Gonzalez,piña indstria,PIND,481,0,1600,0,203454,2026-10-02,1.5 - 2.5,2026,45
+2026-10-03,46370,R-19069,Aldinsen Gonzalez,piña indstria,PIND,475,0,1600,0,203428,2026-10-02,1.5 - 2.5,2026,33
+2026-10-03,46370,R-19069,Aldinsen Gonzalez,AD-piña indstria,AD-PIND,72,0,1600,0,203518,2026-10-02,1.5 - 2.5,2326,32
+2026-10-03,46370,R-19069,Aldinsen Gonzalez,piña indstria,PIND,16,0,1600,7,203519,2026-10-02,1.5 - 2.5,2026,33
+2026-10-03,46370,R-19069,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,43,0,1400,0,203521,2026-10-02,3.0 - 4.0,2326,32
+2026-10-03,46369,R-19071,carmen susana hoyos,piña special 1ra,PE1,140,0,2600,0,203452,2026-10-02,1.5 - 2.5,2026,45
+2026-10-03,46369,R-19071,carmen susana hoyos,piña special 1ra,PE1,187,0,2600,0,203513,2026-10-02,1.5 - 2.5,2026,33
+2026-10-03,46369,R-19071,carmen susana hoyos,piña special 1ra,PE1,105,0,2600,0,203482,2026-10-02,1.5 - 2.5,2026,33
+2026-10-03,46369,R-19071,carmen susana hoyos,piña special 1ra,PE1,529,0,2600,0,203540,2026-10-03,1.5 - 2.5,,
+2026-10-03,46369,R-19071,carmen susana hoyos,piña special 1ra,PE1,509,0,2600,0,203546,2026-10-03,1.5 - 2.5,,
+2026-10-03,46369,R-19071,carmen susana hoyos,piña special 1ra,PE1,33,0,2600,0,203558,2026-10-03,1.5 - 2.5,,
