@@ -117,13 +117,13 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 203523,canastas,2026-10-02,AD3,Piña AD3,0.0 - 1.0,90
 203524,canastas,2026-10-02,PE1,piña special 1ra,3.0 - 4.0,253
 203525,canastas,2026-10-02,PE2,piña special 2da,3.0 - 4.0,221
-203526,canastas,2026-10-02,,,,0
-203527,canastas,2026-10-02,,,,0
-203528,canastas,2026-10-02,,,,0
-203529,canastas,2026-10-02,,,,0
-203530,,,,,,0
-203531,,,,,,0
-203532,,,,,,0
+203526,canastas,2026-10-02,PE2,piña special 2da,1.5 - 2.5,265
+203527,canastas,2026-10-02,PE1,piña special 1ra,0.0 - 1.0,672
+203528,canastas,2026-10-02,PEBAB,piña special baby,1.5 - 2.5,475
+203529,canastas,2026-10-02,PE3,piña special 3ra,1.5 - 2.5,305
+203530,canastas,2026-10-02,PE3,piña special 3ra,0.0 - 1.0,354
+203531,canastas,2026-10-02,,,,0
+203532,canastas,2026-10-02,,,,0
 203533,,,,,,0
 203534,,,,,,0
 203535,,,,,,0
