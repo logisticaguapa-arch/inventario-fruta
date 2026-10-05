@@ -2993,16 +2993,16 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,40,septiembre,2026-09-30,1926,46,canastas,4.0,,4.0,4.0,Muestreo,PEGUA
 2026,40,septiembre,2026-09-30,1926,46,canastas,555.0,,555.0,555.0,Enferma,PE1
 2026,40,septiembre,2026-09-30,1926,46,canastas,573.0,,573.0,573.0,Enferma,PE1
-2026,40,septiembre,2026-09-30,1926,46,canastas,604.0,,604.0,604.0,Muestreo,PE1
+2026,40,septiembre,2026-09-30,1926,46,canastas,604.0,,604.0,604.0,Enferma,PE1
 2026,40,septiembre,2026-09-30,1926,46,canastas,561.0,,561.0,561.0,Enferma,PE1
 2026,40,septiembre,2026-09-30,1926,46,canastas,425.0,,425.0,425.0,Enferma,PE1
-2026,40,septiembre,2026-09-30,1926,46,canastas,586.0,,586.0,586.0,Muestreo,PE1
+2026,40,septiembre,2026-09-30,1926,46,canastas,586.0,,586.0,586.0,Enferma,PE1
 2026,40,septiembre,2026-09-30,1926,33,canastas,559.0,,559.0,559.0,Muestreo,PE1
-2026,40,septiembre,2026-09-30,1926,46,canastas,576.0,,576.0,576.0,Muestreo,PE1
+2026,40,septiembre,2026-09-30,1926,46,canastas,576.0,,576.0,576.0,Enferma,PE1
 2026,40,septiembre,2026-09-30,1926,46,canastas,287.0,,287.0,287.0,Enferma,PE1
 2026,40,septiembre,2026-09-30,1926,33,canastas,141.0,,141.0,141.0,Enferma,PE1
 2026,40,septiembre,2026-09-30,1926,33,canastas,21.0,,21.0,21.0,Enferma,PE1
-2026,40,septiembre,2026-09-30,1926,46,canastas,513.0,,513.0,513.0,Muestreo,PE1
+2026,40,septiembre,2026-09-30,1926,46,canastas,513.0,,513.0,513.0,Enferma,PE1
 2026,40,septiembre,2026-09-30,1926,46,canastas,578.0,,578.0,578.0,Enferma,PE1
 2026,40,septiembre,2026-09-30,1926,45,canastas,3.0,,3.0,3.0,Muestreo,PEBAB
 2026,40,septiembre,2026-09-30,1926,33,canastas,4.0,,4.0,4.0,Golpe Despacho,PEBAB
@@ -3072,7 +3072,7 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,40,octubre,2026-10-03,2026,33,canastas,6.0,,6.0,6.0,Sobre madura empacadora,PE1
 2026,40,octubre,2026-10-03,2026,45,canastas,10.0,,10.0,10.0,Muestreo,PE1
 2026,40,octubre,2026-10-03,2026,33,canastas,4.0,,4.0,4.0,Enferma,PE1
-2026,40,octubre,2026-10-03,2026,45,canastas,8.0,,8.0,8.0,,PE1
+2026,40,octubre,2026-10-03,2026,45,canastas,8.0,,8.0,8.0,Muestreo,PE1
 2026,40,octubre,2026-10-03,2026,33,canastas,7.0,,7.0,7.0,Sobre madura empacadora,PIND
 2026,41,octubre,2026-10-05,2026,33,canastas,7.0,,7.0,7.0,Muestreo,PE2
 2026,41,octubre,2026-10-05,2026,45,canastas,20.0,,20.0,20.0,Muestreo,PE1
