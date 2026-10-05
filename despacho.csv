@@ -20512,8 +20512,14 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-05,,R-19077,Aldinsen Gonzalez,AD-piña indstria,AD-PIND,199,0,1600,8,203586,2026-10-03,1.5 - 2.5,2826,35
 2026-10-05,,R-19077,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,285,0,1400,50,203589,2026-10-03,3.0 - 4.0,2826,35
 2026-10-05,,R-19077,Aldinsen Gonzalez,piña jugos,PJUG,21,0,1400,0,203508,2026-10-02,3.0 - 4.0,2026,33
-2026-10-05,,,hugo miguel jimenez,Piña ADGUA,ADGUA,75,0,,0,203511,2026-10-02,1.5 - 2.5,2326,32
-2026-10-05,,,hugo miguel jimenez,piña special guapita,PEGUA,457,0,,0,203581,2026-10-03,1.5 - 2.5,2026,33
-2026-10-05,,,hugo miguel jimenez,piña special guapita,PEGUA,447,99,,2,203535,2026-10-03,1.5 - 2.5,2026,33
+2026-10-05,,R-19079,hugo miguel jimenez,Piña ADGUA,ADGUA,75,0,1000,0,203511,2026-10-02,1.5 - 2.5,2326,32
+2026-10-05,,R-19079,hugo miguel jimenez,piña special guapita,PEGUA,457,0,1000,0,203581,2026-10-03,1.5 - 2.5,2026,33
+2026-10-05,,R-19079,hugo miguel jimenez,piña special guapita,PEGUA,447,99,1000,2,203535,2026-10-03,1.5 - 2.5,2026,33
 2026-10-05,,,local sincelejo,piña special 1ra,PE1,534,0,,0,203595,2026-10-03,0.0 - 1.0,2026,33
-2026-10-05,,,local sincelejo,piña special 1ra,PE1,559,0,,0,203556,2026-10-03,0.0 - 1.0,2026,45
+2026-10-05,,,local sincelejo,piña special 1ra,PE1,559,26,,0,203556,2026-10-03,0.0 - 1.0,2026,45
+2026-10-05,,,local sincelejo,Piña AD1,AD1,78,0,,0,203590,2026-10-03,0.0 - 1.0,2826,35
+2026-10-05,,,local sincelejo,piña special 1ra,PE1,557,0,,0,203574,2026-10-03,0.0 - 1.0,2026,45
+2026-10-05,,,local sincelejo,piña special 1ra,PE1,576,0,,0,203548,2026-10-03,0.0 - 1.0,2026,33
+2026-10-05,,,local sincelejo,piña special 1ra,PE1,530,0,,0,203543,2026-10-03,0.0 - 1.0,2026,33
+2026-10-05,,,local sincelejo,Piña AD1,AD1,77,0,,13,203585,2026-10-03,0.0 - 1.0,2826,35
+2026-10-05,,,local sincelejo,piña special 1ra,PE1,278,0,,0,203601,2026-10-03,0.0 - 1.0,2026,33
