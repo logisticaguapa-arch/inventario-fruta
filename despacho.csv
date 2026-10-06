@@ -20549,39 +20549,39 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-05,46405,R-19081,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,570,0,3000,0,203633,2026-10-05,1,2026,33
 2026-10-05,46405,R-19081,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,565,0,3000,0,203647,2026-10-05,1,2026,45
 2026-10-05,46405,R-19081,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,567,0,3000,0,203651,2026-10-05,1,2026,45
-2026-10-05,46405,R-19081,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,564,0,3000,0,203673,2026-10-05,1,,
-2026-10-05,46405,R-19081,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,576,0,3000,0,203680,2026-10-05,1,,
-2026-10-05,46405,R-19081,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,641,236,3000,0,203687,2026-10-05,1,,
+2026-10-05,46405,R-19081,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,564,0,3000,0,203673,2026-10-05,1,2026,45
+2026-10-05,46405,R-19081,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,576,0,3000,0,203680,2026-10-05,1,2026,33
+2026-10-05,46405,R-19081,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,641,236,3000,0,203687,2026-10-05,1,2026,45
 2026-10-05,,R-19082,Almacenes Éxito S.A. - Medellin,,PE1,0,80,,0,,,1,,
 2026-10-05,,,jeronimo martins,piña special 2da,PE2,419,0,,0,203655,2026-10-05,1.5,2026,45
 2026-10-05,,,jeronimo martins,piña special 2da,PE2,415,0,,0,203623,2026-10-05,1.5,2026,45
 2026-10-05,,,jeronimo martins,piña special 2da,PE2,412,0,,0,203634,2026-10-05,1.5,2026,33
 2026-10-05,,,jeronimo martins,piña special 2da,PE2,424,0,,0,203637,2026-10-05,1.5,2026,33
-2026-10-05,,,jeronimo martins,piña special 2da,PE2,471,0,,0,203703,2026-10-05,1.5,,
-2026-10-05,,,jeronimo martins,piña special 2da,PE2,406,0,,0,203676,2026-10-05,1.5,,
-2026-10-05,,,jeronimo martins,piña special 2da,PE2,408,0,,0,203681,2026-10-05,1.5,,
-2026-10-05,,,jeronimo martins,piña special 2da,PE2,412,0,,0,203690,2026-10-05,1.5,,
-2026-10-05,,,jeronimo martins,piña special 2da,PE2,425,0,,0,203718,2026-10-05,1.5,,
-2026-10-05,,,local medellin,piña special 1ra,PE1,543,457,,4,203670,2026-10-05,0.0 - 1.0,,
+2026-10-05,,,jeronimo martins,piña special 2da,PE2,471,0,,0,203703,2026-10-05,1.5,2026,45
+2026-10-05,,,jeronimo martins,piña special 2da,PE2,406,0,,0,203676,2026-10-05,1.5,2026,33
+2026-10-05,,,jeronimo martins,piña special 2da,PE2,408,0,,0,203681,2026-10-05,1.5,2026,33
+2026-10-05,,,jeronimo martins,piña special 2da,PE2,412,0,,0,203690,2026-10-05,1.5,2026,45
+2026-10-05,,,jeronimo martins,piña special 2da,PE2,425,0,,0,203718,2026-10-05,1.5,2026,45
+2026-10-05,,,local medellin,piña special 1ra,PE1,543,457,,4,203670,2026-10-05,0.0 - 1.0,2026,45
 2026-10-05,,,local medellin,piña special 1ra,PE1,575,0,,0,203627,2026-10-05,1.5 - 2.5,2026,45
-2026-10-05,,,local medellin,piña special 1ra,PE1,541,0,,0,203678,2026-10-05,1.5 - 2.5,,
-2026-10-05,,,local medellin,piña special 1ra,PE1,547,337,,5,203684,2026-10-05,1.5 - 2.5,,
-2026-10-05,,,local medellin,piña special 3ra,PE3,498,0,,1,203700,2026-10-05,1.5 - 2.5,,
-2026-10-05,,,local medellin,piña special 3ra,PE3,2,0,,0,203708,2026-10-05,1.5 - 2.5,,
+2026-10-05,,,local medellin,piña special 1ra,PE1,541,0,,0,203678,2026-10-05,1.5 - 2.5,2026,33
+2026-10-05,,,local medellin,piña special 1ra,PE1,547,337,,5,203684,2026-10-05,1.5 - 2.5,2026,45
+2026-10-05,,,local medellin,piña special 3ra,PE3,498,0,,1,203700,2026-10-05,1.5 - 2.5,2026,45
+2026-10-05,,,local medellin,piña special 3ra,PE3,2,0,,0,203708,2026-10-05,1.5 - 2.5,2026,45
 2026-10-05,,,local medellin,piña special 3ra,PE3,495,0,,0,203666,2026-10-05,3.0 - 4.0,2026,33
 2026-10-05,,,local medellin,piña special 3ra,PE3,483,0,,3,203642,2026-10-05,3.0 - 4.0,2026,45
-2026-10-05,,,local medellin,piña special 3ra,PE3,22,0,,0,203715,2026-10-05,3.0 - 4.0,,
-2026-10-05,,,local medellin,piña special 2da,PE2,510,0,,5,203674,2026-10-05,0.0 - 1.0,,
-2026-10-05,,,local medellin,piña special 2da,PE2,521,0,,0,203716,2026-10-05,0.0 - 1.0,,
-2026-10-05,,,KARINA BORJA,piña special 3ra,PE3,492,0,,0,203694,2026-10-05,0.0 - 1.0,,
-2026-10-05,,,KARINA BORJA,piña special 3ra,PE3,492,0,,0,203722,2026-10-05,0.0 - 1.0,,
+2026-10-05,,,local medellin,piña special 3ra,PE3,22,0,,0,203715,2026-10-05,3.0 - 4.0,2026,45
+2026-10-05,,,local medellin,piña special 2da,PE2,510,0,,5,203674,2026-10-05,0.0 - 1.0,2026,33
+2026-10-05,,,local medellin,piña special 2da,PE2,521,0,,0,203716,2026-10-05,0.0 - 1.0,2026,45
+2026-10-05,,,KARINA BORJA,piña special 3ra,PE3,492,0,,0,203694,2026-10-05,0.0 - 1.0,2026,45
+2026-10-05,,,KARINA BORJA,piña special 3ra,PE3,492,0,,0,203722,2026-10-05,0.0 - 1.0,2026,45
 2026-10-05,,,KARINA BORJA,piña special 3ra,PE3,494,0,,0,203665,2026-10-05,1.5 - 2.5,2026,33
-2026-10-05,,,KARINA BORJA,piña special 3ra,PE3,487,0,,0,203730,2026-10-05,1.5 - 2.5,,
+2026-10-05,,,KARINA BORJA,piña special 3ra,PE3,487,0,,0,203730,2026-10-05,1.5 - 2.5,2026,45
 2026-10-05,,,KARINA BORJA,piña special 3ra,PE3,494,0,,0,203645,2026-10-05,1.5 - 2.5,2026,45
 2026-10-05,,,KARINA BORJA,piña special 3ra,PE3,481,0,,0,203624,2026-10-05,1.5 - 2.5,2026,45
-2026-10-05,,,KARINA BORJA,piña special 3ra,PE3,44,0,,0,203749,2026-10-05,1.5 - 2.5,,
+2026-10-05,,,KARINA BORJA,piña special 3ra,PE3,44,0,,0,203749,2026-10-05,1.5 - 2.5,2026,45
 2026-10-05,,,Del cultivo L.F. sas,piña special 2da,PE2,500,0,,0,203659,2026-10-05,1.5 - 2.5,2026,33
-2026-10-05,,,Del cultivo L.F. sas,piña special 1ra,PE1,601,399,,0,203725,2026-10-05,0.0 - 1.0,,
+2026-10-05,,,Del cultivo L.F. sas,piña special 1ra,PE1,601,399,,0,203725,2026-10-05,0.0 - 1.0,2026,45
 2026-10-05,,,Del cultivo L.F. sas,piña special 1ra,PE1,578,0,,0,203616,2026-10-05,1.5 - 2.5,2026,45
-2026-10-05,,,Del cultivo L.F. sas,piña special 1ra,PE1,559,0,,0,203719,2026-10-05,1.5 - 2.5,,
-2026-10-05,,,Del cultivo L.F. sas,piña special 1ra,PE1,537,326,,0,203699,2026-10-05,1.5 - 2.5,,
+2026-10-05,,,Del cultivo L.F. sas,piña special 1ra,PE1,559,0,,0,203719,2026-10-05,1.5 - 2.5,2026,45
+2026-10-05,,,Del cultivo L.F. sas,piña special 1ra,PE1,537,326,,0,203699,2026-10-05,1.5 - 2.5,2026,45
