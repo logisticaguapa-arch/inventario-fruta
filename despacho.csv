@@ -20460,21 +20460,21 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-04,46380,R-19074,jeronimo martins,piña special 1ra,PE1,464,0,3100,0,203562,2026-10-03,1.5,2026,45
 2026-10-04,46380,R-19074,jeronimo martins,piña special 2da,PE2,449,158,3100,0,203565,2026-10-03,1.5,2026,45
 2026-10-04,,R-19075,reposicion jeronimo,,PE2,0,140,,0,,,1.5,,
-2026-10-05,,R-19076,leidy jhoana suaza,piña special 2da,PE2,499,0,2800,0,203555,2026-10-03,1.5 - 2.5,2026,45
-2026-10-05,,R-19076,leidy jhoana suaza,piña special 2da,PE2,503,0,2800,0,203592,2026-10-03,1.5 - 2.5,2026,33
-2026-10-05,,R-19076,leidy jhoana suaza,piña special 2da,PE2,505,0,2800,0,203580,2026-10-03,1.5 - 2.5,2026,33
-2026-10-05,,R-19076,leidy jhoana suaza,piña special 2da,PE2,491,458,2800,7,203536,2026-10-03,1.5 - 2.5,2026,33
-2026-10-05,,R-19076,leidy jhoana suaza,piña special 1ra,PE1,580,0,3000,0,203594,2026-10-03,1.5 - 2.5,2026,33
-2026-10-05,,R-19076,leidy jhoana suaza,piña special 1ra,PE1,583,0,3000,0,203557,2026-10-03,1.5 - 2.5,2026,45
-2026-10-05,,R-19076,leidy jhoana suaza,piña special 1ra,PE1,515,0,3000,20,203559,2026-10-03,1.5 - 2.5,2026,45
-2026-10-05,,R-19076,leidy jhoana suaza,piña special 1ra,PE1,587,0,3000,0,203547,2026-10-03,1.5 - 2.5,2026,33
-2026-10-05,,R-19076,leidy jhoana suaza,piña special 1ra,PE1,565,0,3000,0,203563,2026-10-03,1.5 - 2.5,2026,45
-2026-10-05,,R-19076,leidy jhoana suaza,piña special 1ra,PE1,573,0,3000,0,203554,2026-10-03,1.5 - 2.5,2026,45
-2026-10-05,,R-19076,leidy jhoana suaza,piña special 1ra,PE1,548,0,3000,0,203575,2026-10-03,1.5 - 2.5,2026,45
-2026-10-05,,R-19076,leidy jhoana suaza,piña special 1ra,PE1,547,0,3000,0,203578,2026-10-03,1.5 - 2.5,2026,45
-2026-10-05,,R-19076,leidy jhoana suaza,piña special 1ra,PE1,527,0,3000,0,203533,2026-10-03,1.5 - 2.5,2026,33
-2026-10-05,,R-19076,leidy jhoana suaza,piña special 1ra,PE1,559,0,3000,21,203549,2026-10-03,1.5 - 2.5,2026,33
-2026-10-05,,R-19076,leidy jhoana suaza,piña special 1ra,PE1,324,31,3000,0,203597,2026-10-03,1.5 - 2.5,2026,33
+2026-10-05,46412,R-19076,leidy jhoana suaza,piña special 2da,PE2,499,0,2800,0,203555,2026-10-03,1.5 - 2.5,2026,45
+2026-10-05,46412,R-19076,leidy jhoana suaza,piña special 2da,PE2,503,0,2800,0,203592,2026-10-03,1.5 - 2.5,2026,33
+2026-10-05,46412,R-19076,leidy jhoana suaza,piña special 2da,PE2,505,0,2800,0,203580,2026-10-03,1.5 - 2.5,2026,33
+2026-10-05,46412,R-19076,leidy jhoana suaza,piña special 2da,PE2,491,458,2800,7,203536,2026-10-03,1.5 - 2.5,2026,33
+2026-10-05,46412,R-19076,leidy jhoana suaza,piña special 1ra,PE1,580,0,3000,0,203594,2026-10-03,1.5 - 2.5,2026,33
+2026-10-05,46412,R-19076,leidy jhoana suaza,piña special 1ra,PE1,583,0,3000,0,203557,2026-10-03,1.5 - 2.5,2026,45
+2026-10-05,46412,R-19076,leidy jhoana suaza,piña special 1ra,PE1,515,0,3000,20,203559,2026-10-03,1.5 - 2.5,2026,45
+2026-10-05,46412,R-19076,leidy jhoana suaza,piña special 1ra,PE1,587,0,3000,0,203547,2026-10-03,1.5 - 2.5,2026,33
+2026-10-05,46412,R-19076,leidy jhoana suaza,piña special 1ra,PE1,565,0,3000,0,203563,2026-10-03,1.5 - 2.5,2026,45
+2026-10-05,46412,R-19076,leidy jhoana suaza,piña special 1ra,PE1,573,0,3000,0,203554,2026-10-03,1.5 - 2.5,2026,45
+2026-10-05,46412,R-19076,leidy jhoana suaza,piña special 1ra,PE1,548,0,3000,0,203575,2026-10-03,1.5 - 2.5,2026,45
+2026-10-05,46412,R-19076,leidy jhoana suaza,piña special 1ra,PE1,547,0,3000,0,203578,2026-10-03,1.5 - 2.5,2026,45
+2026-10-05,46412,R-19076,leidy jhoana suaza,piña special 1ra,PE1,527,0,3000,0,203533,2026-10-03,1.5 - 2.5,2026,33
+2026-10-05,46412,R-19076,leidy jhoana suaza,piña special 1ra,PE1,559,0,3000,21,203549,2026-10-03,1.5 - 2.5,2026,33
+2026-10-05,46412,R-19076,leidy jhoana suaza,piña special 1ra,PE1,324,31,3000,0,203597,2026-10-03,1.5 - 2.5,2026,33
 2026-10-05,,R-19078,local medellin,piña special 2da,PE2,231,0,3000,0,203456,2026-10-02,1.5,2026,45
 2026-10-05,,R-19078,local medellin,piña special 2da,PE2,106,0,3000,0,203542,2026-10-03,1.5,2026,33
 2026-10-05,,R-19078,local medellin,piña special 2da,PE2,108,0,3000,0,203520,2026-10-02,1.5,2026,33
