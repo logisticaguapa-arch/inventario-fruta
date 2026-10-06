@@ -57,10 +57,10 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 203802,canastas,2026-10-06,PE1,piña special 1ra,1.5 - 2.5,518
 203803,canastas,2026-10-06,PE3,piña special 3ra,0.0 - 1.0,498
 203804,canastas,2026-10-06,PE1,piña special 1ra,3.0 - 4.0,586
-203805,canastas,2026-10-06,,,,0
-203806,canastas,2026-10-06,,,,0
-203807,canastas,2026-10-06,,,,0
-203808,canastas,2026-10-06,,,,0
+203805,canastas,2026-10-06,PE2,piña special 2da,3.0 - 4.0,516
+203806,canastas,2026-10-06,PE1,piña special 1ra,3.0 - 4.0,589
+203807,canastas,2026-10-06,PE2,piña special 2da,1.5 - 2.5,499
+203808,canastas,2026-10-06,PIND,piña indstria,1.5 - 2.5,482
 203809,canastas,2026-10-06,,,,0
 203810,canastas,2026-10-06,,,,0
 203811,canastas,2026-10-06,,,,0
