@@ -20586,7 +20586,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-05,46407,R-19087,Del cultivo L.F. sas,piña special 1ra,PE1,578,0,3200,0,203616,2026-10-05,1.5 - 2.5,2026,45
 2026-10-05,46407,R-19087,Del cultivo L.F. sas,piña special 1ra,PE1,559,0,3200,0,203719,2026-10-05,1.5 - 2.5,2026,45
 2026-10-05,46407,R-19087,Del cultivo L.F. sas,piña special 1ra,PE1,537,326,3200,0,203699,2026-10-05,1.5 - 2.5,2026,45
-2026-10-06,,,descarte,AL-PE3,AL-PE3,0,0,,25,203767,2026-10-06,3.0 - 4.0,,
+2026-10-06,,,descarte,AL-PE3,AL-PE3,0,0,,25,203767,2026-10-06,3.0 - 4.0,2026,33
 2026-10-06,,R-19089,local apartado,,PIND,0,200,2000,0,,,2,,
 2026-10-06,,R-19089,local apartado,,PE1,0,402,3200,0,,,1,,
 2026-10-06,,R-19089,local apartado,piña special 2da,PE2,286,0,3000,0,203740,2026-10-05,0.0 - 1.0,2026,45
@@ -20676,4 +20676,5 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-06,,R-19096,Andres Garcia,piña special 2da,PE2,512,448,2800,0,203667,2026-10-05,3.0 - 4.0,2026,33
 2026-10-06,,R-19096,Andres Garcia,piña special 1ra,PE1,549,0,3000,0,203629,2026-10-05,3.0 - 4.0,2026,45
 2026-10-06,,R-19096,Andres Garcia,piña special 1ra,PE1,270,0,3000,0,203751,2026-10-05,3.0 - 4.0,2026,45
-2026-10-06,,R-19096,Andres Garcia,piña special 1ra,PE1,181,0,3000,0,203775,2026-10-06,3.0 - 4.0,,
+2026-10-06,,R-19096,Andres Garcia,piña special 1ra,PE1,181,0,3000,0,203775,2026-10-06,3.0 - 4.0,2026,33
+2026-10-06,,,venta empleados,piña special 2da,PE2,20,0,,0,203788,2026-10-06,1.5 - 2.5,2026,33
