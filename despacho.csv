@@ -20594,17 +20594,17 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-06,,R-19089,local apartado,piña special guapita,PEGUA,482,68,2200,0,203689,2026-10-05,1.5 - 2.5,2026,45
 2026-10-06,,R-19089,local apartado,,PE2,0,410,3000,0,,,2,,
 2026-10-06,,R-19089,local apartado,piña special 1ra,PE1,544,16,3200,0,203672,2026-10-05,1.5 - 2.5,2026,45
-2026-10-06,,,maicol alexander clavijo torres,piña special 2da,PE2,507,493,,3,203632,2026-10-05,3.0 - 4.0,2026,33
-2026-10-06,,,maicol alexander clavijo torres,piña special 1ra,PE1,525,0,,8,203710,2026-10-05,1.5 - 2.5,2026,45
-2026-10-06,,,maicol alexander clavijo torres,piña special 1ra,PE1,535,0,,0,203696,2026-10-05,1.5 - 2.5,2026,45
-2026-10-06,,,maicol alexander clavijo torres,piña special 1ra,PE1,527,0,,0,203649,2026-10-05,1.5 - 2.5,2026,45
-2026-10-06,,,maicol alexander clavijo torres,piña special 1ra,PE1,543,56,,0,203638,2026-10-05,1.5 - 2.5,2026,33
-2026-10-06,,,maicol alexander clavijo torres,piña special 1ra,PE1,583,0,,0,203707,2026-10-05,3.0 - 4.0,2026,45
-2026-10-06,,,maicol alexander clavijo torres,piña special 1ra,PE1,547,0,,12,203641,2026-10-05,3.0 - 4.0,2026,33
-2026-10-06,,,maicol alexander clavijo torres,piña special 1ra,PE1,558,0,,0,203617,2026-10-05,3.0 - 4.0,2026,45
-2026-10-06,,,maicol alexander clavijo torres,piña special 1ra,PE1,539,0,,0,203679,2026-10-05,3.0 - 4.0,2026,33
-2026-10-06,,,maicol alexander clavijo torres,piña special 1ra,PE1,533,0,,0,203654,2026-10-05,3.0 - 4.0,2026,45
-2026-10-06,,,maicol alexander clavijo torres,piña special 1ra,PE1,543,30,,4,203636,2026-10-05,3.0 - 4.0,2026,33
+2026-10-06,,,leidy jhoana suaza,piña special 2da,PE2,507,493,,3,203632,2026-10-05,3.0 - 4.0,2026,33
+2026-10-06,,,leidy jhoana suaza,piña special 1ra,PE1,525,0,,8,203710,2026-10-05,1.5 - 2.5,2026,45
+2026-10-06,,,leidy jhoana suaza,piña special 1ra,PE1,535,0,,0,203696,2026-10-05,1.5 - 2.5,2026,45
+2026-10-06,,,leidy jhoana suaza,piña special 1ra,PE1,527,0,,0,203649,2026-10-05,1.5 - 2.5,2026,45
+2026-10-06,,,leidy jhoana suaza,piña special 1ra,PE1,543,56,,0,203638,2026-10-05,1.5 - 2.5,2026,33
+2026-10-06,,,leidy jhoana suaza,piña special 1ra,PE1,583,0,,0,203707,2026-10-05,3.0 - 4.0,2026,45
+2026-10-06,,,leidy jhoana suaza,piña special 1ra,PE1,547,0,,12,203641,2026-10-05,3.0 - 4.0,2026,33
+2026-10-06,,,leidy jhoana suaza,piña special 1ra,PE1,558,0,,0,203617,2026-10-05,3.0 - 4.0,2026,45
+2026-10-06,,,leidy jhoana suaza,piña special 1ra,PE1,539,0,,0,203679,2026-10-05,3.0 - 4.0,2026,33
+2026-10-06,,,leidy jhoana suaza,piña special 1ra,PE1,533,0,,0,203654,2026-10-05,3.0 - 4.0,2026,45
+2026-10-06,,,leidy jhoana suaza,piña special 1ra,PE1,543,30,,4,203636,2026-10-05,3.0 - 4.0,2026,33
 2026-10-06,,R-19091,local medellin,piña special 2da,PE2,499,0,3000,7,203639,2026-10-05,1.5 - 2.5,2026,33
 2026-10-06,,R-19091,local medellin,piña special 2da,PE2,479,0,3000,0,203739,2026-10-05,1.5 - 2.5,2026,45
 2026-10-06,,R-19091,local medellin,piña special 2da,PE2,499,0,3000,0,203622,2026-10-05,1.5 - 2.5,2026,45
@@ -20660,15 +20660,20 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-06,,R-19093,local sincelejo,Piña AD1,AD1,93,0,2800,0,203764,2026-10-05,1.5 - 2.5,2826,34
 2026-10-06,,R-19093,local sincelejo,Piña AD3,AD3,51,0,2200,0,203755,2026-10-05,0.0 - 1.0,2926,34
 2026-10-06,,R-19093,local sincelejo,piña special 3ra,PE3,248,0,2200,0,203752,2026-10-05,0.0 - 1.0,2026,45
-2026-10-06,,,Aldinsen Gonzalez,piña indstria,PIND,476,0,,0,203695,2026-10-05,1.5 - 2.5,2026,45
-2026-10-06,,,Aldinsen Gonzalez,piña indstria,PIND,310,0,,0,203724,2026-10-05,1.5 - 2.5,2026,45
-2026-10-06,,,Aldinsen Gonzalez,piña indstria,PIND,473,0,,0,203635,2026-10-05,1.5 - 2.5,2026,33
-2026-10-06,,,Aldinsen Gonzalez,piña indstria,PIND,502,0,,0,203677,2026-10-05,1.5 - 2.5,2026,33
-2026-10-06,,,Aldinsen Gonzalez,piña indstria,PIND,496,0,,0,203704,2026-10-05,1.5 - 2.5,2026,45
-2026-10-06,,,Aldinsen Gonzalez,piña indstria,PIND,504,0,,0,203620,2026-10-05,1.5 - 2.5,2026,45
-2026-10-06,,,Aldinsen Gonzalez,AD-piña indstria,AD-PIND,354,0,,0,203759,2026-10-05,1.5 - 2.5,2826,34
-2026-10-06,,,Aldinsen Gonzalez,piña indstria,PIND,476,0,,0,203657,2026-10-05,1.5 - 2.5,2026,33
-2026-10-06,,,Aldinsen Gonzalez,piña indstria,PIND,350,0,,0,203742,2026-10-05,1.5 - 2.5,2026,45
+2026-10-06,,,Aldinsen Gonzalez,piña indstria,PIND,476,0,1600,0,203695,2026-10-05,1.5 - 2.5,2026,45
+2026-10-06,,,Aldinsen Gonzalez,piña indstria,PIND,310,0,1600,0,203724,2026-10-05,1.5 - 2.5,2026,45
+2026-10-06,,,Aldinsen Gonzalez,piña indstria,PIND,473,0,1600,0,203635,2026-10-05,1.5 - 2.5,2026,33
+2026-10-06,,,Aldinsen Gonzalez,piña indstria,PIND,502,0,1600,0,203677,2026-10-05,1.5 - 2.5,2026,33
+2026-10-06,,,Aldinsen Gonzalez,piña indstria,PIND,496,0,1600,0,203704,2026-10-05,1.5 - 2.5,2026,45
+2026-10-06,,,Aldinsen Gonzalez,piña indstria,PIND,504,0,1600,0,203620,2026-10-05,1.5 - 2.5,2026,45
+2026-10-06,,,Aldinsen Gonzalez,AD-piña indstria,AD-PIND,354,0,1600,0,203759,2026-10-05,1.5 - 2.5,2826,34
+2026-10-06,,,Aldinsen Gonzalez,piña indstria,PIND,476,0,1600,0,203657,2026-10-05,1.5 - 2.5,2026,33
+2026-10-06,,,Aldinsen Gonzalez,piña indstria,PIND,350,0,1600,0,203742,2026-10-05,1.5 - 2.5,2026,45
 2026-10-06,,,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,224,0,,0,203758,2026-10-05,3.0 - 4.0,2926,34
-2026-10-06,,,Aldinsen Gonzalez,piña jugos,PJUG,265,0,,0,203766,2026-10-05,3.0 - 4.0,2026,45
-2026-10-06,,,Andres Garcia,piña special 2da,PE2,522,0,,0,203729,2026-10-05,3.0 - 4.0,2026,45
+2026-10-06,,,Aldinsen Gonzalez,piña jugos,PJUG,235,0,,30,203766,2026-10-05,3.0 - 4.0,2026,45
+2026-10-06,,R-19096,Andres Garcia,piña special 2da,PE2,522,0,2800,0,203729,2026-10-05,3.0 - 4.0,2026,45
+2026-10-06,,R-19096,Andres Garcia,piña special 2da,PE2,518,0,2800,0,203685,2026-10-05,3.0 - 4.0,2026,45
+2026-10-06,,R-19096,Andres Garcia,piña special 2da,PE2,512,448,2800,0,203667,2026-10-05,3.0 - 4.0,2026,33
+2026-10-06,,R-19096,Andres Garcia,piña special 1ra,PE1,549,0,3000,0,203629,2026-10-05,3.0 - 4.0,2026,45
+2026-10-06,,R-19096,Andres Garcia,piña special 1ra,PE1,270,0,3000,0,203751,2026-10-05,3.0 - 4.0,2026,45
+2026-10-06,,R-19096,Andres Garcia,piña special 1ra,PE1,181,0,3000,0,203775,2026-10-06,3.0 - 4.0,,
