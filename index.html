@@ -328,6 +328,7 @@ table.ftable .ftotal-row td{color:#052e16!important}
   </div>
   <button class="breset" onclick="resetProcesado()">↺ Limpiar</button>
   <button class="bexport" onclick="exportExcelCumplimientoGrado()">⬇ Cumplimiento por grado</button>
+  <button class="bexport" onclick="exportExcelProcesadoDiario()">⬇ Procesado dia a dia</button>
 </div>
 
 <div class="bar" id="barSeguimiento" style="display:none">
@@ -1888,6 +1889,45 @@ function filteredIngresadoProcesado(){
   const f=filtros.procFec;
   return INGRESADO.filter(r=>(!f.length||f.includes(r.FechaProceso)));
 }
+// -- Inventario procesado DIA A DIA: la misma informacion de la tabla (Grupo /
+// Calibre / Grado de maduracion), pero separada por cada dia seleccionado en
+// el filtro de Fecha -- NO acumulada. Una fila por Fecha + Grupo + Calibre, una
+// columna por cada Grado de maduracion y el total. Respeta tambien los demas
+// filtros de la vista (Grado, Calibre, Grupo). Sin fechas elegidas = todos los dias. --
+function exportExcelProcesadoDiario(){
+  const data=filteredProcesado().filter(function(r){return r.Fecha && r.Fecha.trim()!=='' && r.Calidad && r.Calidad.trim()!=='';});
+  if(!data.length){ alert('No hay inventario procesado para las fechas seleccionadas.'); return; }
+  const grados=[...new Set(data.map(function(r){return r.Calibre;}))].sort(function(a,b){
+    return parseFloat(String(a).replace(',','.'))-parseFloat(String(b).replace(',','.'));
+  });
+  const agg={};  // agg[fecha||grupo||calidad][grado] = neto
+  data.forEach(function(r){
+    const grp=r.Grupo||'(Sin grupo)';
+    const key=r.Fecha+'||'+grp+'||'+r.Calidad;
+    if(!agg[key]) agg[key]={fecha:r.Fecha,grupo:grp,tam:r.Calidad,kg:{}};
+    agg[key].kg[r.Calibre]=(agg[key].kg[r.Calibre]||0)+(parseFloat(r.Neto)||0);
+  });
+  const filas=Object.values(agg).map(function(x){
+    const total=grados.reduce(function(s,g){return s+(x.kg[g]||0);},0);
+    return {x:x,total:total};
+  }).sort(function(a,b){
+    if(a.x.fecha!==b.x.fecha) return a.x.fecha<b.x.fecha?-1:1;
+    if(a.x.grupo!==b.x.grupo) return String(a.x.grupo).localeCompare(String(b.x.grupo),'es',{numeric:true});
+    return b.total-a.total;
+  }).map(function(o){
+    const x=o.x;
+    const fila=[fmtFechaCompleta(x.fecha), x.grupo==='(Sin grupo)'?x.grupo:'GF'+x.grupo, TAM_NAMES[x.tam]||x.tam];
+    grados.forEach(function(g){ fila.push(Math.round(x.kg[g]||0)); });
+    fila.push(Math.round(o.total));
+    return fila;
+  });
+  const headers=['Fecha','Grupo','Calibre'].concat(grados.map(function(g){return 'Grado '+calValLabel(g);})).concat(['Total kg']);
+  const ws=XLSX.utils.aoa_to_sheet([headers].concat(filas));
+  const wb=XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(wb,ws,'Procesado dia a dia');
+  XLSX.writeFile(wb,'ProcesadoDiaADia_'+fechaISO(new Date())+'.xlsx');
+}
+
 function exportExcelCumplimientoGrado(){
   const data=filteredIngresadoProcesado();
   if(!data.length){ alert('No hay inventario procesado para la fecha seleccionada.'); return; }
