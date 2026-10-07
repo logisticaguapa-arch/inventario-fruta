@@ -1901,68 +1901,48 @@ function filteredIngresadoProcesado(){
   const f=filtros.procFec;
   return INGRESADO.filter(r=>(!f.length||f.includes(r.FechaProceso)));
 }
-// -- Inventario procesado DIA A DIA: la MISMA tabla que se ve en pantalla en
-// Inventario procesado (Grupo / Calibre en filas, Grado de maduracion en
-// columnas, Total general y %), pero una por cada dia elegido en el filtro de
-// Fecha -- NO acumulada. Cada dia sale en su propia hoja, y el % de cada hoja
-// es sobre el total de ESE dia. Respeta tambien los filtros de Grado, Calibre
-// y Grupo. Hay que elegir al menos una fecha. --
-function armarFilasProcesadoDia(dataDia){
-  const agg={}, totalPorCal={}, totalPorGrupo={};
-  dataDia.forEach(function(r){
-    const grp=r.Grupo||'(Sin grupo)', cal=r.Calibre, neto=parseFloat(r.Neto)||0;
-    if(!agg[grp]) agg[grp]={};
-    if(!agg[grp][cal]) agg[grp][cal]={};
-    agg[grp][cal][r.Calidad]=(agg[grp][cal][r.Calidad]||0)+neto;
-    totalPorCal[cal]=(totalPorCal[cal]||0)+neto;
-    totalPorGrupo[grp]=(totalPorGrupo[grp]||0)+neto;
-  });
-  const grados=[...new Set(dataDia.map(function(r){return r.Calibre;}))].sort(function(a,b){
-    return parseFloat(String(a).replace(',','.'))-parseFloat(String(b).replace(',','.'));
-  });
-  const grandTotal=grados.reduce(function(s,c){return s+(totalPorCal[c]||0);},0);
-  const fmtKg=function(v){return Math.round(v).toLocaleString('es-CO');};
-  const fmtPct=function(v){return (grandTotal>0?((v/grandTotal)*100).toFixed(1).replace('.',','):'0,0')+'%';};
-  const madTotal={};
-  grados.forEach(function(g){const m=getMadurez(g);madTotal[m]=(madTotal[m]||0)+(totalPorCal[g]||0);});
-  const yaPuesto=new Set();
-  const r1=['GRUPO / CALIBRE / GRADO DE MADURACIÓN'], r2=[''];
-  grados.forEach(function(g){
-    const m=getMadurez(g);
-    if(!yaPuesto.has(m)){ yaPuesto.add(m); r1.push(getMadClasses(m).label+' '+fmtKg(madTotal[m]||0)+' kg · '+fmtPct(madTotal[m]||0)); }
-    else r1.push('');
-    r2.push(calValLabel(g));
-  });
-  r1.push('TOTAL GENERAL','%'); r2.push('','');
-  const filas=[r1,r2];
-  Object.keys(totalPorGrupo).sort(function(a,b){return totalPorGrupo[b]-totalPorGrupo[a];}).forEach(function(grp){
-    const lbl=grp==='(Sin grupo)'?grp:'GF'+grp;
-    filas.push([lbl+'  '+fmtKg(totalPorGrupo[grp])+' KG'].concat(grados.map(function(){return '';})).concat(['','']));
-    const totTam={};
-    grados.forEach(function(g){Object.keys((agg[grp]&&agg[grp][g])||{}).forEach(function(t){totTam[t]=(totTam[t]||0)+agg[grp][g][t];});});
-    Object.keys(totTam).sort(function(a,b){return totTam[b]-totTam[a];}).forEach(function(t){
-      const fila=[TAM_NAMES[t]||t];
-      grados.forEach(function(g){const v=(agg[grp]&&agg[grp][g]&&agg[grp][g][t])||0; fila.push(v>0?Math.round(v):'');});
-      fila.push(Math.round(totTam[t]), fmtPct(totTam[t]));
-      filas.push(fila);
-    });
-  });
-  const ft=['TOTAL GENERAL'];
-  grados.forEach(function(g){ft.push(Math.round(totalPorCal[g]||0));});
-  ft.push(Math.round(grandTotal), grandTotal>0?'100,0%':'0,0%');
-  filas.push(ft);
-  return filas;
-}
+// -- Inventario procesado DIA A DIA: la misma informacion de la tabla de
+// Inventario procesado (Grupo / Calibre / Grado de maduracion), pero LINEAL en
+// una sola hoja y separada por cada dia elegido en el filtro de Fecha -- NO
+// acumulada. Una fila por Fecha + Grupo + Calibre (el Grupo va en su propia
+// celda en cada fila), una columna por cada Grado de maduracion, Total general
+// y % (el % es sobre el total de ESE dia). Respeta tambien los filtros de
+// Grado, Calibre y Grupo. Hay que elegir al menos una fecha. --
 function exportExcelProcesadoDiario(){
   const data=filteredProcesado().filter(function(r){return r.Fecha && r.Fecha.trim()!=='' && r.Calidad && r.Calidad.trim()!=='';});
   if(!filtros.procFec.length){ alert('Elige en el filtro de Fecha los dias que quieres descargar.'); return; }
-  const fechas=[...new Set(data.map(function(r){return r.Fecha;}))].sort();
-  if(!fechas.length){ alert('No hay inventario procesado para las fechas seleccionadas.'); return; }
-  const wb=XLSX.utils.book_new();
-  fechas.forEach(function(f){
-    const filas=armarFilasProcesadoDia(data.filter(function(r){return r.Fecha===f;}));
-    XLSX.utils.book_append_sheet(wb,XLSX.utils.aoa_to_sheet(filas),fmtFechaCompleta(f).replace(/\//g,'-'));
+  if(!data.length){ alert('No hay inventario procesado para las fechas seleccionadas.'); return; }
+  const grados=[...new Set(data.map(function(r){return r.Calibre;}))].sort(function(a,b){
+    return parseFloat(String(a).replace(',','.'))-parseFloat(String(b).replace(',','.'));
   });
+  const fechas=[...new Set(data.map(function(r){return r.Fecha;}))].sort();
+  const filas=[];
+  fechas.forEach(function(f){
+    const dia=data.filter(function(r){return r.Fecha===f;});
+    const agg={}, totalDia=dia.reduce(function(s,r){return s+(parseFloat(r.Neto)||0);},0);
+    dia.forEach(function(r){
+      const grp=r.Grupo||'(Sin grupo)', key=grp+'||'+r.Calidad;
+      if(!agg[key]) agg[key]={grp:grp,tam:r.Calidad,kg:{},total:0};
+      const n=parseFloat(r.Neto)||0;
+      agg[key].kg[r.Calibre]=(agg[key].kg[r.Calibre]||0)+n;
+      agg[key].total+=n;
+    });
+    const totalGrupo={};
+    Object.values(agg).forEach(function(x){totalGrupo[x.grp]=(totalGrupo[x.grp]||0)+x.total;});
+    Object.values(agg).sort(function(a,b){
+      if(a.grp!==b.grp) return totalGrupo[b.grp]-totalGrupo[a.grp];
+      return b.total-a.total;
+    }).forEach(function(x){
+      const fila=[fmtFechaCompleta(f), x.grp==='(Sin grupo)'?x.grp:'GF'+x.grp, TAM_NAMES[x.tam]||x.tam];
+      grados.forEach(function(g){const v=x.kg[g]||0; fila.push(v>0?Math.round(v):'');});
+      fila.push(Math.round(x.total), (totalDia>0?((x.total/totalDia)*100).toFixed(1).replace('.',','):'0,0')+'%');
+      filas.push(fila);
+    });
+  });
+  const headers=['Fecha','Grupo','Calibre'].concat(grados.map(function(g){return getMadClasses(getMadurez(g)).label+' '+calValLabel(g);})).concat(['Total general','%']);
+  const ws=XLSX.utils.aoa_to_sheet([headers].concat(filas));
+  const wb=XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(wb,ws,'Procesado dia a dia');
   XLSX.writeFile(wb,'ProcesadoDiaADia_'+fechaISO(new Date())+'.xlsx');
 }
 
