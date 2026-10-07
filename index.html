@@ -553,10 +553,10 @@ function fmtFechaCompleta(f){
 }
 
 let ALL=[],DESPACHO=[],PROCESADO=[],DESCARTE=[],INGRESADO=[],currentView='tabla';
-// -- Clasificacion Floracion / Induccion segun Calidad (columna D de Proceso) --
+// -- Clasificacion Natural (antes "Floracion") / Induccion segun Calidad (columna D de Proceso) --
 const COSECHA_FLORACION=new Set(['AD1','AD2','AD3','ADGUA','ADBABY','AD-PIND','AD-PJUG']);
 function getCosecha(calidad){
-  return COSECHA_FLORACION.has(String(calidad||'').trim().toUpperCase()) ? 'FLORACION' : 'INDUCCION';
+  return COSECHA_FLORACION.has(String(calidad||'').trim().toUpperCase()) ? 'NATURAL' : 'INDUCCION';
 }
 const DESC_COLORES=['#dc2626','#ea580c','#d97706','#65a30d','#0891b2','#2563eb','#7c3aed','#db2777','#059669','#9333ea','#b91c1c','#0e7490'];
 // -- Tara en Descarte se deja siempre en blanco (no aplica en este reporte) --
@@ -2097,7 +2097,7 @@ function renderDescarte(data){
     +'</tr></thead><tbody>';
   filas.forEach(function(r){
     const cosecha=getCosecha(r.Calidad);
-    const badgeClass=cosecha==='FLORACION'?'desc-cosecha-flor':'desc-cosecha-ind';
+    const badgeClass=cosecha==='NATURAL'?'desc-cosecha-flor':'desc-cosecha-ind';
     html+='<tr>'
       +'<td class="left">'+r.Anio+'</td><td class="left">'+r.Semana+'</td><td class="left">'+r.Mes+'</td><td class="left">'+fmtFechaCompleta(r.Fecha)+'</td>'
       +'<td class="left"><span class="desc-cosecha-badge '+badgeClass+'">'+cosecha+'</span></td>'
