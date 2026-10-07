@@ -20691,8 +20691,18 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-06,46422,R-19101,jeronimo martins,piña special 2da,PE2,152,0,3100,0,203869,2026-10-06,1.5,2026,45
 2026-10-06,,R-19099,reposicion jeronimo,,PE2,0,170,,0,,,1.5,,
 2026-10-07,,,descarte,AL-PE1,AL-PE1,0,0,,21,203921,2026-10-07,1.5 - 2.5,,
-2026-10-07,,,local apartado,piña special 2da,PE2,511,489,,3,203837,2026-10-06,0.0 - 1.0,2026,45
-2026-10-07,,,local apartado,piña special 1ra,PE1,497,3,,2,203820,2026-10-06,1.5 - 2.5,2026,45
-2026-10-07,,,local apartado,Piña AD1,AD1,534,0,,8,203918,2026-10-06,0.0 - 1.0,2926,34
-2026-10-07,,,local apartado,piña special 1ra,PE1,584,0,,0,203830,2026-10-06,0.0 - 1.0,2026,45
-2026-10-07,,,local apartado,Piña AD1,AD1,551,331,,0,203908,2026-10-06,0.0 - 1.0,3126,32
+2026-10-07,,R-19102,local apartado,piña special 2da,PE2,511,489,3000,3,203837,2026-10-06,0.0 - 1.0,2026,45
+2026-10-07,,R-19102,local apartado,piña special 1ra,PE1,497,3,3200,2,203820,2026-10-06,1.5 - 2.5,2026,45
+2026-10-07,,R-19102,local apartado,,PE2,0,300,3000,0,,,2,,
+2026-10-07,,R-19102,local apartado,Piña AD1,AD1,534,0,3200,8,203918,2026-10-06,0.0 - 1.0,2926,34
+2026-10-07,,R-19102,local apartado,piña special 1ra,PE1,584,0,3200,0,203830,2026-10-06,0.0 - 1.0,2026,45
+2026-10-07,,R-19102,local apartado,Piña AD1,AD1,551,331,3200,0,203908,2026-10-06,0.0 - 1.0,3126,32
+2026-10-07,,,Aldinsen Gonzalez,AD-piña indstria,AD-PIND,461,0,,0,203909,2026-10-06,1.5 - 2.5,3126,32
+2026-10-07,,,Aldinsen Gonzalez,piña indstria,PIND,448,0,,0,203773,2026-10-06,1.5 - 2.5,2026,33
+2026-10-07,,,Aldinsen Gonzalez,piña indstria,PIND,425,0,,0,203881,2026-10-06,1.5 - 2.5,2026,45
+2026-10-07,,,Aldinsen Gonzalez,piña indstria,PIND,210,0,,0,203897,2026-10-06,1.5 - 2.5,2026,33
+2026-10-07,,,Aldinsen Gonzalez,piña indstria,PIND,444,0,,10,203868,2026-10-06,1.5 - 2.5,2026,45
+2026-10-07,,,Aldinsen Gonzalez,piña indstria,PIND,459,0,,0,203846,2026-10-06,1.5 - 2.5,2026,45
+2026-10-07,,,Aldinsen Gonzalez,piña indstria,PIND,439,0,,0,203796,2026-10-06,1.5 - 2.5,2026,45
+2026-10-07,,,KARINA BORJA,piña special guapita,PEGUA,473,27,,1,203885,2026-10-06,1.5 - 2.5,2026,45
+2026-10-07,,,KARINA BORJA,piña special 3ra,PE3,559,0,,0,203898,2026-10-06,1.5 - 2.5,2026,33
