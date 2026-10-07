@@ -271,10 +271,6 @@ table.ftable .ftotal-row td{color:#052e16!important}
     <div class="msel-panel" id="selFec-panel"></div>
   </div>
   <button class="breset" onclick="reset()">↺ Limpiar</button>
-  <span id="barInvTarjetasExtra" style="display:none">
-    <button class="bexport" onclick="exportExcelIngresado()">⬇ Inventario ingresado</button>
-    <button class="bexport" onclick="exportExcelDespachoDetalle()">⬇ Detalle Despacho</button>
-  </span>
 </div>
 
 <div class="bar" id="barFact" style="display:none">
@@ -293,6 +289,8 @@ table.ftable .ftotal-row td{color:#052e16!important}
   <button class="breset" onclick="resetFactura()">↺ Limpiar</button>
   <button class="bexport" onclick="exportExcelFacturacion()">⬇ Exportar a Excel</button>
   <button class="bexport" onclick="exportPDFFacturacion()">⬇ Exportar a PDF</button>
+  <button class="bexport" onclick="exportExcelIngresado()">⬇ Inventario ingresado</button>
+  <button class="bexport" onclick="exportExcelDespachoDetalle()">⬇ Detalle Despacho</button>
 </div>
 
 <div class="bar" id="barDescarte" style="display:none">
@@ -1040,6 +1038,21 @@ function buildFilters(){
   fillMsel('selTam',tams.map(c=>({value:c,label:(TAM_NAMES[c]||c)+' ('+c+')'})));
   buildFechaMsel('selFec',fechas);
 }
+// -- Todos los dias de cada año (enero a diciembre) de los años que aparecen en
+// los datos + el año actual, para que el menu de fechas de Facturacion deje
+// elegir cualquier dia, tenga o no despachos. --
+function diasDelAnio(fechasConDatos){
+  const anios=new Set([new Date().getFullYear()]);
+  fechasConDatos.forEach(function(f){const y=parseInt(String(f).slice(0,4),10); if(y>=2000&&y<=2100) anios.add(y);});
+  const out=new Set(fechasConDatos);
+  anios.forEach(function(y){
+    for(let m=0;m<12;m++){
+      const n=new Date(Date.UTC(y,m+1,0)).getUTCDate();
+      for(let d=1;d<=n;d++) out.add(y+'-'+String(m+1).padStart(2,'0')+'-'+String(d).padStart(2,'0'));
+    }
+  });
+  return [...out].sort();
+}
 function buildFacturaFiltros(){
   const clientes=[...new Set(DESPACHO.map(r=>r.Cliente).filter(c=>c))].sort();
   const calibres=[...new Set(DESPACHO.map(r=>r.Calibre).filter(c=>c))].sort(function(a,b){return parseFloat(a.replace(',','.'))-parseFloat(b.replace(',','.'));});
@@ -1052,7 +1065,7 @@ function buildFacturaFiltros(){
     const y=ayerISO();
     if(fechas.includes(y)) filtros.factFecha=[y];
   }
-  buildFechaMsel('selFactFec',fechas);
+  buildFechaMsel('selFactFec',diasDelAnio(fechas));
 }
 function reset(){
   ['cal','tam','fec'].forEach(k=>filtros[k]=[]);
@@ -1065,7 +1078,7 @@ function resetFactura(){
   const fechas=[...new Set(DESPACHO.map(r=>r.FechaDespacho).filter(f=>f))].sort();
   const y=ayerISO();
   filtros.factFecha = fechas.includes(y) ? [y] : [];
-  buildFechaMsel('selFactFec',fechas);
+  buildFechaMsel('selFactFec',diasDelAnio(fechas));
   render();
 }
 function buildDescarteFiltros(){
@@ -1118,7 +1131,7 @@ function filtered(){
 // fecha (filtros.fec) que ya se ve en esa vista, comparado contra FechaProceso
 // (que es lo que ese filtro representa en toda la app). --
 function filteredIngresado(){
-  const f=filtros.fec;
+  const f=filtros.factFecha;  // ahora viven en Facturacion: usan su filtro de fecha
   return INGRESADO.filter(r=>(!f.length||f.includes(r.FechaProceso)));
 }
 function filteredDespachoDetalle(){
@@ -1127,7 +1140,7 @@ function filteredDespachoDetalle(){
   // de otro dia (cuando un lote procesado un dia se despacha otro) y ademas
   // excluia filas de reposicion sin ID (su FechaProceso queda vacia porque esa
   // columna es una formula que depende del ID). --
-  const f=filtros.fec;
+  const f=filtros.factFecha;
   return DESPACHO.filter(r=>(!f.length||f.includes(r.FechaDespacho)));
 }
 function filteredFacturacion(){
@@ -1149,7 +1162,6 @@ function filteredSeguimiento(){
 function setView(v){
   currentView=v;
   ['tarjetas','tabla','bodega','bines','facturacion','descarte','procesado','seguimiento'].forEach(x=>{document.getElementById('v-'+x).style.display=x===v?'':'none';document.getElementById('btn-'+x).classList.toggle('active',x===v);});
-  document.getElementById('barInvTarjetasExtra').style.display = (v==='tarjetas')?'':'none';
   const esFact = v==='facturacion';
   const esDesc = v==='descarte';
   const esProc = v==='procesado';
@@ -1889,42 +1901,68 @@ function filteredIngresadoProcesado(){
   const f=filtros.procFec;
   return INGRESADO.filter(r=>(!f.length||f.includes(r.FechaProceso)));
 }
-// -- Inventario procesado DIA A DIA: la misma informacion de la tabla (Grupo /
-// Calibre / Grado de maduracion), pero separada por cada dia seleccionado en
-// el filtro de Fecha -- NO acumulada. Una fila por Fecha + Grupo + Calibre, una
-// columna por cada Grado de maduracion y el total. Respeta tambien los demas
-// filtros de la vista (Grado, Calibre, Grupo). Sin fechas elegidas = todos los dias. --
-function exportExcelProcesadoDiario(){
-  const data=filteredProcesado().filter(function(r){return r.Fecha && r.Fecha.trim()!=='' && r.Calidad && r.Calidad.trim()!=='';});
-  if(!data.length){ alert('No hay inventario procesado para las fechas seleccionadas.'); return; }
-  const grados=[...new Set(data.map(function(r){return r.Calibre;}))].sort(function(a,b){
+// -- Inventario procesado DIA A DIA: la MISMA tabla que se ve en pantalla en
+// Inventario procesado (Grupo / Calibre en filas, Grado de maduracion en
+// columnas, Total general y %), pero una por cada dia elegido en el filtro de
+// Fecha -- NO acumulada. Cada dia sale en su propia hoja, y el % de cada hoja
+// es sobre el total de ESE dia. Respeta tambien los filtros de Grado, Calibre
+// y Grupo. Hay que elegir al menos una fecha. --
+function armarFilasProcesadoDia(dataDia){
+  const agg={}, totalPorCal={}, totalPorGrupo={};
+  dataDia.forEach(function(r){
+    const grp=r.Grupo||'(Sin grupo)', cal=r.Calibre, neto=parseFloat(r.Neto)||0;
+    if(!agg[grp]) agg[grp]={};
+    if(!agg[grp][cal]) agg[grp][cal]={};
+    agg[grp][cal][r.Calidad]=(agg[grp][cal][r.Calidad]||0)+neto;
+    totalPorCal[cal]=(totalPorCal[cal]||0)+neto;
+    totalPorGrupo[grp]=(totalPorGrupo[grp]||0)+neto;
+  });
+  const grados=[...new Set(dataDia.map(function(r){return r.Calibre;}))].sort(function(a,b){
     return parseFloat(String(a).replace(',','.'))-parseFloat(String(b).replace(',','.'));
   });
-  const agg={};  // agg[fecha||grupo||calidad][grado] = neto
-  data.forEach(function(r){
-    const grp=r.Grupo||'(Sin grupo)';
-    const key=r.Fecha+'||'+grp+'||'+r.Calidad;
-    if(!agg[key]) agg[key]={fecha:r.Fecha,grupo:grp,tam:r.Calidad,kg:{}};
-    agg[key].kg[r.Calibre]=(agg[key].kg[r.Calibre]||0)+(parseFloat(r.Neto)||0);
+  const grandTotal=grados.reduce(function(s,c){return s+(totalPorCal[c]||0);},0);
+  const fmtKg=function(v){return Math.round(v).toLocaleString('es-CO');};
+  const fmtPct=function(v){return (grandTotal>0?((v/grandTotal)*100).toFixed(1).replace('.',','):'0,0')+'%';};
+  const madTotal={};
+  grados.forEach(function(g){const m=getMadurez(g);madTotal[m]=(madTotal[m]||0)+(totalPorCal[g]||0);});
+  const yaPuesto=new Set();
+  const r1=['GRUPO / CALIBRE / GRADO DE MADURACIÓN'], r2=[''];
+  grados.forEach(function(g){
+    const m=getMadurez(g);
+    if(!yaPuesto.has(m)){ yaPuesto.add(m); r1.push(getMadClasses(m).label+' '+fmtKg(madTotal[m]||0)+' kg · '+fmtPct(madTotal[m]||0)); }
+    else r1.push('');
+    r2.push(calValLabel(g));
   });
-  const filas=Object.values(agg).map(function(x){
-    const total=grados.reduce(function(s,g){return s+(x.kg[g]||0);},0);
-    return {x:x,total:total};
-  }).sort(function(a,b){
-    if(a.x.fecha!==b.x.fecha) return a.x.fecha<b.x.fecha?-1:1;
-    if(a.x.grupo!==b.x.grupo) return String(a.x.grupo).localeCompare(String(b.x.grupo),'es',{numeric:true});
-    return b.total-a.total;
-  }).map(function(o){
-    const x=o.x;
-    const fila=[fmtFechaCompleta(x.fecha), x.grupo==='(Sin grupo)'?x.grupo:'GF'+x.grupo, TAM_NAMES[x.tam]||x.tam];
-    grados.forEach(function(g){ fila.push(Math.round(x.kg[g]||0)); });
-    fila.push(Math.round(o.total));
-    return fila;
+  r1.push('TOTAL GENERAL','%'); r2.push('','');
+  const filas=[r1,r2];
+  Object.keys(totalPorGrupo).sort(function(a,b){return totalPorGrupo[b]-totalPorGrupo[a];}).forEach(function(grp){
+    const lbl=grp==='(Sin grupo)'?grp:'GF'+grp;
+    filas.push([lbl+'  '+fmtKg(totalPorGrupo[grp])+' KG'].concat(grados.map(function(){return '';})).concat(['','']));
+    const totTam={};
+    grados.forEach(function(g){Object.keys((agg[grp]&&agg[grp][g])||{}).forEach(function(t){totTam[t]=(totTam[t]||0)+agg[grp][g][t];});});
+    Object.keys(totTam).sort(function(a,b){return totTam[b]-totTam[a];}).forEach(function(t){
+      const fila=[TAM_NAMES[t]||t];
+      grados.forEach(function(g){const v=(agg[grp]&&agg[grp][g]&&agg[grp][g][t])||0; fila.push(v>0?Math.round(v):'');});
+      fila.push(Math.round(totTam[t]), fmtPct(totTam[t]));
+      filas.push(fila);
+    });
   });
-  const headers=['Fecha','Grupo','Calibre'].concat(grados.map(function(g){return 'Grado '+calValLabel(g);})).concat(['Total kg']);
-  const ws=XLSX.utils.aoa_to_sheet([headers].concat(filas));
+  const ft=['TOTAL GENERAL'];
+  grados.forEach(function(g){ft.push(Math.round(totalPorCal[g]||0));});
+  ft.push(Math.round(grandTotal), grandTotal>0?'100,0%':'0,0%');
+  filas.push(ft);
+  return filas;
+}
+function exportExcelProcesadoDiario(){
+  const data=filteredProcesado().filter(function(r){return r.Fecha && r.Fecha.trim()!=='' && r.Calidad && r.Calidad.trim()!=='';});
+  if(!filtros.procFec.length){ alert('Elige en el filtro de Fecha los dias que quieres descargar.'); return; }
+  const fechas=[...new Set(data.map(function(r){return r.Fecha;}))].sort();
+  if(!fechas.length){ alert('No hay inventario procesado para las fechas seleccionadas.'); return; }
   const wb=XLSX.utils.book_new();
-  XLSX.utils.book_append_sheet(wb,ws,'Procesado dia a dia');
+  fechas.forEach(function(f){
+    const filas=armarFilasProcesadoDia(data.filter(function(r){return r.Fecha===f;}));
+    XLSX.utils.book_append_sheet(wb,XLSX.utils.aoa_to_sheet(filas),fmtFechaCompleta(f).replace(/\//g,'-'));
+  });
   XLSX.writeFile(wb,'ProcesadoDiaADia_'+fechaISO(new Date())+'.xlsx');
 }
 
