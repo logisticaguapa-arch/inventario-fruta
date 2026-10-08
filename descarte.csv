@@ -3154,3 +3154,13 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,41,octubre,2026-10-07,2026,45,canastas,12.0,,12.0,12.0,Muestreo,PE2
 2026,41,octubre,2026-10-08,2826,32,canastas,8.0,,8.0,8.0,Muestreo,AD1
 2026,41,octubre,2026-10-08,2026,33,canastas,1.0,,1.0,1.0,Muestreo,PEGUA
+2026,41,octubre,2026-10-08,2026,45,canastas,8.0,,8.0,8.0,Muestreo,PE2
+2026,41,octubre,2026-10-08,2026,45,canastas,26.0,,26.0,26.0,Daño por reposo,PE2
+2026,41,octubre,2026-10-08,2026,45,canastas,12.0,,12.0,12.0,Muestreo,PE1
+2026,41,octubre,2026-10-08,2026,45,canastas,20.0,,20.0,20.0,Daño por reposo,PE1
+2026,41,octubre,2026-10-08,2026,33,canastas,3.0,,3.0,3.0,Muestreo,PE2
+2026,41,octubre,2026-10-08,2026,33,canastas,16.0,,16.0,16.0,Muestreo,PE1
+2026,41,octubre,2026-10-08,2026,45,canastas,1.0,,1.0,1.0,Muestreo,PE2
+2026,41,octubre,2026-10-08,2026,45,canastas,3.0,,3.0,3.0,Muestreo,PE3
+2026,41,octubre,2026-10-08,2826,32,canastas,10.0,,10.0,10.0,Muestreo,AD-PIND
+2026,41,octubre,2026-10-08,2026,45,canastas,41.0,,41.0,41.0,Golpe Despacho,PIND
