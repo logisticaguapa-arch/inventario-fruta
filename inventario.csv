@@ -146,10 +146,10 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 204261,canastas,2026-10-08,AD-PIND,AD-piña indstria,1.5 - 2.5,501
 204262,canastas,2026-10-08,AD-PJUG,,3.0 - 4.0,143
 204263,canastas,2026-10-08,PJUG,piña jugos,3.0 - 4.0,561
-204264,canastas,2026-10-09,,,,0
-204265,canastas,2026-10-09,,,,0
-204266,canastas,2026-10-09,,,,0
-204267,canastas,2026-10-09,,,,0
+204264,canastas,2026-10-09,PE2,piña special 2da,3.0 - 4.0,517
+204265,canastas,2026-10-09,PE1,piña special 1ra,3.0 - 4.0,560
+204266,canastas,2026-10-09,PE1,piña special 1ra,1,560
+204267,canastas,2026-10-09,PIND,piña indstria,1.5 - 2.5,505
 204268,canastas,2026-10-09,,,,0
 204269,canastas,2026-10-09,,,,0
 204270,canastas,2026-10-09,,,,0
