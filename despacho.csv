@@ -21087,13 +21087,20 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-09,,,andres ruben oquendo,piña special 2da,PE2,494,0,,0,203993,2026-10-07,3.0 - 4.0,2026,45
 2026-10-09,,,andres ruben oquendo,piña special 2da,PE2,503,0,,0,203996,2026-10-07,3.0 - 4.0,2026,45
 2026-10-09,,,andres ruben oquendo,piña special 2da,PE2,498,10,,0,204032,2026-10-07,3.0 - 4.0,2026,33
-2026-10-09,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,532,0,,21,204323,2026-10-09,1,,
-2026-10-09,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,557,0,,0,204271,2026-10-09,1,,
-2026-10-09,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,568,0,,0,204284,2026-10-09,1,,
-2026-10-09,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,603,0,,0,204334,2026-10-09,1,,
-2026-10-09,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,564,0,,0,204297,2026-10-09,1,,
-2026-10-09,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,565,0,,0,204307,2026-10-09,1,,
-2026-10-09,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,560,0,,0,204266,2026-10-09,1,,
-2026-10-09,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,567,0,,0,204277,2026-10-09,1,,
-2026-10-09,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,570,0,,0,204289,2026-10-09,1,,
-2026-10-09,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,563,351,,0,204302,2026-10-09,1,,
+2026-10-09,46515,R-19143,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,532,0,3000,21,204323,2026-10-09,1,,
+2026-10-09,46515,R-19143,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,557,0,3000,0,204271,2026-10-09,1,,
+2026-10-09,46515,R-19143,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,568,0,3000,0,204284,2026-10-09,1,,
+2026-10-09,46515,R-19143,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,603,0,3000,0,204334,2026-10-09,1,,
+2026-10-09,46515,R-19143,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,564,0,3000,0,204297,2026-10-09,1,,
+2026-10-09,46515,R-19143,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,565,0,3000,0,204307,2026-10-09,1,,
+2026-10-09,46515,R-19143,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,560,0,3000,0,204266,2026-10-09,1,,
+2026-10-09,46515,R-19143,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,567,0,3000,0,204277,2026-10-09,1,,
+2026-10-09,46515,R-19143,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,570,0,3000,0,204289,2026-10-09,1,,
+2026-10-09,46515,R-19143,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,563,351,3000,0,204302,2026-10-09,1,,
+2026-10-09,,R-19142,reposicion éxito medellin,,PE1,0,80,,0,,,1,,
+2026-10-09,,,KARINA BORJA,piña special guapita,PEGUA,302,0,,0,204100,2026-10-08,1.5 - 2.5,2026,33
+2026-10-09,,,KARINA BORJA,Piña ADGUA,ADGUA,29,0,,0,204253,2026-10-08,1.5 - 2.5,2226,46
+2026-10-09,,,KARINA BORJA,piña special guapita,PEGUA,472,0,,2,204319,2026-10-09,1.5 - 2.5,,
+2026-10-09,,,KARINA BORJA,piña special guapita,PEGUA,487,0,,0,204321,2026-10-09,1.5 - 2.5,,
+2026-10-09,,,KARINA BORJA,piña special guapita,PEGUA,449,0,,0,204276,2026-10-09,1.5 - 2.5,,
+2026-10-09,,,KARINA BORJA,Piña ADGUA,ADGUA,9,0,,0,204384,2026-10-09,1.5 - 2.5,,
