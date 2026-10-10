@@ -16,7 +16,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 204037,canastas,2026-10-07,PE1,piña special 1ra,3.0 - 4.0,548
 204053,canastas,2026-10-07,PE2,piña special 2da,3.0 - 4.0,508
 204095,canastas,2026-10-08,PE1,piña special 1ra,3.0 - 4.0,546
-204096,canastas,2026-10-08,PEBAB,piña special baby,1.5 - 2.5,408
 204097,canastas,2026-10-08,PE2,piña special 2da,3.0 - 4.0,516
 204102,canastas,2026-10-08,PE1,piña special 1ra,3.0 - 4.0,525
 204103,canastas,2026-10-08,PE2,piña special 2da,3.0 - 4.0,518
@@ -29,12 +28,11 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 204115,canastas,2026-10-08,PE1,piña special 1ra,3.0 - 4.0,551
 204116,canastas,2026-10-08,PE1,piña special 1ra,3.0 - 4.0,569
 204118,canastas,2026-10-08,PE1,piña special 1ra,3.0 - 4.0,488
-204119,canastas,2026-10-08,PEBAB,piña special baby,1.5 - 2.5,413
 204121,canastas,2026-10-08,PE2,piña special 2da,3.0 - 4.0,528
 204123,canastas,2026-10-08,PE1,piña special 1ra,3.0 - 4.0,578
 204125,canastas,2026-10-08,PE1,piña special 1ra,3.0 - 4.0,499
 204126,canastas,2026-10-08,PE1,piña special 1ra,3.0 - 4.0,566
-204127,canastas,2026-10-08,PE1,piña special 1ra,1.5 - 2.5,248
+204127,canastas,2026-10-08,PE1,piña special 1ra,1.5 - 2.5,218
 204128,canastas,2026-10-08,PE2,piña special 2da,3.0 - 4.0,526
 204130,canastas,2026-10-08,PE1,piña special 1ra,3.0 - 4.0,582
 204132,canastas,2026-10-08,PE1,piña special 1ra,3.0 - 4.0,494
@@ -52,12 +50,10 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 204151,canastas,2026-10-08,PE1,piña special 1ra,3.0 - 4.0,475
 204152,canastas,2026-10-08,PE2,piña special 2da,3.0 - 4.0,531
 204153,canastas,2026-10-08,PE1,piña special 1ra,3.0 - 4.0,560
-204157,canastas,2026-10-08,PE1,piña special 1ra,1.5 - 2.5,224
 204159,canastas,2026-10-08,PE1,piña special 1ra,3.0 - 4.0,566
 204161,canastas,2026-10-08,PE1,piña special 1ra,3.0 - 4.0,473
 204162,canastas,2026-10-08,PE2,piña special 2da,3.0 - 4.0,531
 204163,canastas,2026-10-08,PE1,piña special 1ra,3.0 - 4.0,541
-204164,canastas,2026-10-08,PEBAB,piña special baby,1.5 - 2.5,433
 204165,canastas,2026-10-08,PE1,piña special 1ra,3.0 - 4.0,579
 204166,canastas,2026-10-08,PE1,piña special 1ra,3.0 - 4.0,570
 204168,canastas,2026-10-08,PE2,piña special 2da,3.0 - 4.0,504
@@ -65,7 +61,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 204171,canastas,2026-10-08,PE2,piña special 2da,3.0 - 4.0,524
 204172,canastas,2026-10-08,PIND,piña indstria,1.5 - 2.5,450
 204173,canastas,2026-10-08,PEBAB,piña special baby,1.5 - 2.5,401
-204174,canastas,2026-10-08,PE2,piña special 2da,1.5,175
 204176,canastas,2026-10-08,PE1,piña special 1ra,3.0 - 4.0,555
 204177,canastas,2026-10-08,PE1,piña special 1ra,3.0 - 4.0,539
 204179,canastas,2026-10-08,PE1,piña special 1ra,3.0 - 4.0,547
@@ -88,24 +83,17 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 204208,canastas,2026-10-08,PE2,piña special 2da,3.0 - 4.0,522
 204211,canastas,2026-10-08,PE1,piña special 1ra,3.0 - 4.0,512
 204212,canastas,2026-10-08,PE1,piña special 1ra,3.0 - 4.0,540
-204213,canastas,2026-10-08,PEBAB,piña special baby,1.5 - 2.5,390
 204216,canastas,2026-10-08,PE2,piña special 2da,3.0 - 4.0,312
 204218,canastas,2026-10-08,PE3,piña special 3ra,3.0 - 4.0,94
 204221,canastas,2026-10-08,PE1,piña special 1ra,3.0 - 4.0,597
 204222,canastas,2026-10-08,PE2,piña special 2da,3.0 - 4.0,481
-204225,canastas,2026-10-08,PEBAB,piña special baby,1.5 - 2.5,375
-204227,canastas,2026-10-08,PEBAB,piña special baby,1.5 - 2.5,424
 204231,canastas,2026-10-08,PE1,piña special 1ra,3.0 - 4.0,114
 204232,canastas,2026-10-08,AD-PJUG,AD-PJUG,3.0 - 4.0,462
-204233,canastas,2026-10-08,PEBAB,piña special baby,1.5 - 2.5,247
 204237,canastas,2026-10-08,AD-PJUG,,3.0 - 4.0,454
 204240,canastas,2026-10-08,AD-PJUG,,3.0 - 4.0,455
 204243,canastas,2026-10-08,AD-PJUG,,3.0 - 4.0,496
-204244,canastas,2026-10-08,AD1,Piña AD1,1,436
 204245,canastas,2026-10-08,AD-PJUG,,3.0 - 4.0,451
 204248,canastas,2026-10-08,AD-PJUG,,3.0 - 4.0,514
-204249,canastas,2026-10-08,AD2,Piña AD2,1.5,175
-204251,canastas,2026-10-08,AD1,Piña AD1,1,65
 204260,canastas,2026-10-08,PE3,piña special 3ra,3.0 - 4.0,89
 204261,canastas,2026-10-08,AD-PIND,AD-piña indstria,1.5 - 2.5,221
 204262,canastas,2026-10-08,AD-PJUG,,3.0 - 4.0,143
@@ -145,7 +133,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 204306,canastas,2026-10-09,PE2,piña special 2da,3.0 - 4.0,512
 204308,canastas,2026-10-09,PE1,piña special 1ra,1.5 - 2.5,582
 204309,canastas,2026-10-09,PE1,piña special 1ra,1.5 - 2.5,566
-204310,canastas,2026-10-09,PE2,piña special 2da,1.5 - 2.5,504
 204311,canastas,2026-10-09,PIND,piña indstria,1.5 - 2.5,508
 204312,canastas,2026-10-09,PIND,piña indstria,1.5 - 2.5,517
 204313,canastas,2026-10-09,PE1,piña special 1ra,1.5 - 2.5,592
@@ -201,13 +188,12 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 204370,canastas,2026-10-09,PE3,piña special 3ra,0.0 - 1.0,259
 204371,canastas,2026-10-09,PE1,piña special 1ra,1.5 - 2.5,597
 204372,canastas,2026-10-09,PE2,piña special 2da,0.0 - 1.0,128
-204373,canastas,2026-10-09,PEGUA,piña special guapita,1.5 - 2.5,568
+204373,canastas,2026-10-09,PEGUA,piña special guapita,1.5 - 2.5,68
 204374,canastas,2026-10-09,PE2,piña special 2da,3.0 - 4.0,334
 204375,canastas,2026-10-09,PIND,piña indstria,1.5 - 2.5,281
 204376,canastas,2026-10-09,PE3,piña special 3ra,0.0 - 1.0,272
 204377,canastas,2026-10-09,PE3,piña special 3ra,3.0 - 4.0,311
 204378,canastas,2026-10-09,PEBAB,piña special baby,1.5 - 2.5,450
-204379,canastas,2026-10-09,PE2,piña special 2da,0.0 - 1.0,180
 204380,canastas,2026-10-09,AD1,Piña AD1,0.0 - 1.0,602
 204381,canastas,2026-10-09,PE2,piña special 2da,1.5,289
 204383,canastas,2026-10-09,ADBABY,Piña ADBABY,1.5 - 2.5,394
@@ -218,13 +204,12 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 204391,canastas,2026-10-09,AD1,Piña AD1,0.0 - 1.0,612
 204392,canastas,2026-10-09,AD-PIND,AD-piña indstria,1.5 - 2.5,524
 204393,canastas,2026-10-09,AD1,Piña AD1,0.0 - 1.0,602
-204394,canastas,2026-10-09,AD1,Piña AD1,0.0 - 1.0,613
-204395,canastas,2026-10-09,AD2,Piña AD2,0.0 - 1.0,234
+204394,canastas,2026-10-09,AD1,Piña AD1,0.0 - 1.0,113
 204396,canastas,2026-10-09,ADBABY,Piña ADBABY,1.5 - 2.5,28
 204397,canastas,2026-10-09,AD3,Piña AD3,0.0 - 1.0,569
 204400,canastas,2026-10-09,AD1,Piña AD1,0.0 - 1.0,482
 204401,canastas,2026-10-09,AD1,Piña AD1,0.0 - 1.0,239
-204403,canastas,2026-10-09,AD2,Piña AD2,0.0 - 1.0,514
+204403,canastas,2026-10-09,AD2,Piña AD2,0.0 - 1.0,448
 204404,canastas,2026-10-09,AD-PJUG,,3.0 - 4.0,455
 204405,canastas,2026-10-09,PE1,piña special 1ra,3.0 - 4.0,592
 204406,canastas,2026-10-09,PE3,piña special 3ra,3.0 - 4.0,47
@@ -234,276 +219,3 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 204410,canastas,2026-10-09,PEGUA,piña special guapita,1.5 - 2.5,47
 204411,canastas,2026-10-09,PEBAB,piña special baby,1.5 - 2.5,17
 204412,canastas,2026-10-09,PE1,piña special 1ra,3.0 - 4.0,301
-204413,canastas,2026-10-09,PE1,piña special 1ra,3.0 - 4.0,128
-204414,canastas,2026-10-09,PE1,piña special 1ra,3.0 - 4.0,429
-204415,canastas,2026-10-09,PE1,piña special 1ra,0.0 - 1.0,587
-204416,canastas,2026-10-09,PIND,piña indstria,1.5 - 2.5,265
-204417,canastas,2026-10-09,PIND,piña indstria,1.5 - 2.5,220
-204418,canastas,2026-10-09,PE1,piña special 1ra,1.5 - 2.5,568
-204419,canastas,2026-10-09,PEGUA,piña special guapita,1.5 - 2.5,244
-204420,canastas,2026-10-09,PE1,piña special 1ra,1.5,62
-204421,canastas,2026-10-09,AD1,Piña AD1,0.0 - 1.0,605
-204422,canastas,2026-10-09,PE2,piña special 2da,1.5,49
-204423,canastas,2026-10-09,PJUG,piña jugos,3.0 - 4.0,484
-10,canastas,2026-10-09,PE1,piña special 1ra,3.0 - 4.0,1493
-140,canastas,2026-10-09,PE1,piña special 1ra,3.0 - 4.0,1342
-110,canastas,2026-10-09,PE1,piña special 1ra,3.0 - 4.0,1384
-63,canastas,2026-10-09,PE1,piña special 1ra,3.0 - 4.0,1519
-88,canastas,2026-10-09,PE1,piña special 1ra,3.0 - 4.0,1569
-109,canastas,2026-10-09,PE1,piña special 1ra,3.0 - 4.0,1341
-204431,canastas,2026-10-09,,,,0
-204432,canastas,2026-10-09,,,,0
-204433,canastas,2026-10-09,,,,0
-204434,canastas,2026-10-09,,,,0
-204435,canastas,2026-10-09,,,,0
-204436,canastas,2026-10-09,,,,0
-204437,canastas,2026-10-09,,,,0
-204438,canastas,2026-10-09,,,,0
-204439,canastas,2026-10-09,,,,0
-204440,canastas,2026-10-09,,,,0
-204441,canastas,2026-10-09,,,,0
-204442,canastas,2026-10-09,,,,0
-204443,canastas,2026-10-09,,,,0
-204444,canastas,2026-10-09,,,,0
-204445,canastas,2026-10-09,,,,0
-204446,canastas,2026-10-09,,,,0
-204447,canastas,2026-10-09,,,,0
-204448,canastas,2026-10-09,,,,0
-204449,canastas,2026-10-09,,,,0
-204450,canastas,2026-10-09,,,,0
-204451,canastas,2026-10-09,,,,0
-204452,canastas,2026-10-09,,,,0
-204453,canastas,2026-10-09,,,,0
-204454,canastas,2026-10-09,,,,0
-204455,canastas,2026-10-09,,,,0
-204456,canastas,2026-10-09,,,,0
-204457,canastas,2026-10-09,,,,0
-204458,canastas,2026-10-09,,,,0
-204459,canastas,2026-10-09,,,,0
-204460,canastas,2026-10-09,,,,0
-204461,canastas,2026-10-09,,,,0
-204462,canastas,2026-10-09,,,,0
-204463,canastas,2026-10-09,,,,0
-204464,canastas,2026-10-09,,,,0
-204465,canastas,2026-10-09,,,,0
-204466,canastas,2026-10-09,,,,0
-204467,canastas,2026-10-09,,,,0
-204468,canastas,2026-10-09,,,,0
-204469,canastas,2026-10-09,,,,0
-204470,canastas,2026-10-09,,,,0
-204471,canastas,2026-10-09,,,,0
-204472,canastas,2026-10-09,,,,0
-204473,canastas,2026-10-09,,,,0
-204474,canastas,2026-10-09,,,,0
-204475,canastas,2026-10-09,,,,0
-204476,canastas,2026-10-09,,,,0
-204477,canastas,2026-10-09,,,,0
-204478,canastas,2026-10-09,,,,0
-204479,canastas,2026-10-09,,,,0
-204480,canastas,2026-10-09,,,,0
-204481,canastas,2026-10-09,,,,0
-204482,canastas,2026-10-09,,,,0
-204483,canastas,2026-10-09,,,,0
-204484,canastas,2026-10-09,,,,0
-204485,canastas,2026-10-09,,,,0
-204486,canastas,2026-10-09,,,,0
-204487,canastas,2026-10-09,,,,0
-204488,canastas,2026-10-09,,,,0
-204489,canastas,2026-10-09,,,,0
-204490,canastas,2026-10-09,,,,0
-204491,canastas,2026-10-09,,,,0
-204492,canastas,2026-10-09,,,,0
-204493,canastas,2026-10-09,,,,0
-204494,canastas,2026-10-09,,,,0
-204495,canastas,2026-10-09,,,,0
-204496,canastas,2026-10-09,,,,0
-204497,canastas,2026-10-09,,,,0
-204498,canastas,2026-10-09,,,,0
-204499,canastas,2026-10-09,,,,0
-204500,canastas,2026-10-09,,,,0
-204501,canastas,2026-10-09,,,,0
-204502,canastas,2026-10-09,,,,0
-204503,canastas,2026-10-09,,,,0
-204504,canastas,2026-10-09,,,,0
-204505,canastas,2026-10-09,,,,0
-204506,canastas,2026-10-09,,,,0
-204507,canastas,2026-10-09,,,,0
-204508,canastas,2026-10-09,,,,0
-204509,canastas,2026-10-09,,,,0
-204510,canastas,2026-10-09,,,,0
-204511,canastas,2026-10-09,,,,0
-204512,canastas,2026-10-09,,,,0
-204513,canastas,2026-10-09,,,,0
-204514,canastas,2026-10-09,,,,0
-204515,canastas,2026-10-09,,,,0
-204516,canastas,2026-10-09,,,,0
-204517,canastas,2026-10-09,,,,0
-204518,canastas,2026-10-09,,,,0
-204519,canastas,2026-10-09,,,,0
-204520,canastas,2026-10-09,,,,0
-204521,canastas,2026-10-09,,,,0
-204522,canastas,2026-10-09,,,,0
-204523,canastas,2026-10-09,,,,0
-204524,canastas,2026-10-09,,,,0
-204525,canastas,2026-10-09,,,,0
-204526,canastas,2026-10-09,,,,0
-204527,canastas,2026-10-09,,,,0
-204528,canastas,2026-10-09,,,,0
-204529,canastas,2026-10-09,,,,0
-204530,canastas,2026-10-09,,,,0
-204531,canastas,2026-10-09,,,,0
-204532,canastas,2026-10-09,,,,0
-204533,canastas,2026-10-09,,,,0
-204534,canastas,2026-10-09,,,,0
-204535,canastas,2026-10-09,,,,0
-204536,canastas,2026-10-09,,,,0
-204537,canastas,2026-10-09,,,,0
-204538,canastas,2026-10-09,,,,0
-204539,canastas,2026-10-09,,,,0
-204540,canastas,2026-10-09,,,,0
-204541,canastas,2026-10-09,,,,0
-204542,canastas,2026-10-09,,,,0
-204543,canastas,2026-10-09,,,,0
-204544,canastas,2026-10-09,,,,0
-204545,canastas,2026-10-09,,,,0
-204546,canastas,2026-10-09,,,,0
-204547,canastas,2026-10-09,,,,0
-204548,canastas,2026-10-09,,,,0
-204549,canastas,2026-10-09,,,,0
-204550,canastas,2026-10-09,,,,0
-204551,canastas,2026-10-09,,,,0
-204552,canastas,2026-10-09,,,,0
-204553,canastas,2026-10-09,,,,0
-204554,canastas,2026-10-09,,,,0
-204555,canastas,2026-10-09,,,,0
-204556,canastas,2026-10-09,,,,0
-204557,canastas,2026-10-09,,,,0
-204558,,,,,,0
-204559,,,,,,0
-204560,,,,,,0
-204561,,,,,,0
-204562,,,,,,0
-204563,,,,,,0
-204564,,,,,,0
-204565,,,,,,0
-204566,,,,,,0
-204567,,,,,,0
-204568,,,,,,0
-204569,,,,,,0
-204570,,,,,,0
-204571,,,,,,0
-204572,,,,,,0
-204573,,,,,,0
-204574,,,,,,0
-204575,,,,,,0
-204576,,,,,,0
-204577,,,,,,0
-204578,,,,,,0
-204579,,,,,,0
-204580,,,,,,0
-204581,,,,,,0
-204582,,,,,,0
-204583,,,,,,0
-204584,,,,,,0
-204585,,,,,,0
-204586,,,,,,0
-204587,,,,,,0
-204588,,,,,,0
-204589,,,,,,0
-204590,,,,,,0
-204591,,,,,,0
-204592,,,,,,0
-204593,,,,,,0
-204594,,,,,,0
-204595,,,,,,0
-204596,,,,,,0
-204597,,,,,,0
-204598,,,,,,0
-204599,,,,,,0
-204600,,,,,,0
-204601,,,,,,0
-204602,,,,,,0
-204603,,,,,,0
-204604,,,,,,0
-204605,,,,,,0
-204606,,,,,,0
-204607,,,,,,0
-204608,,,,,,0
-204609,,,,,,0
-204610,,,,,,0
-204611,,,,,,0
-204612,,,,,,0
-204613,,,,,,0
-204614,,,,,,0
-204615,,,,,,0
-204616,,,,,,0
-204617,,,,,,0
-204618,,,,,,0
-204619,,,,,,0
-204620,,,,,,0
-204621,,,,,,0
-204622,,,,,,0
-204623,,,,,,0
-204624,,,,,,0
-204625,,,,,,0
-204626,,,,,,0
-204627,,,,,,0
-204628,,,,,,0
-204629,,,,,,0
-204630,,,,,,0
-204631,,,,,,0
-204632,,,,,,0
-204633,,,,,,0
-204634,,,,,,0
-204635,,,,,,0
-204636,,,,,,0
-204637,,,,,,0
-204638,,,,,,0
-204639,,,,,,0
-204640,,,,,,0
-204641,,,,,,0
-204642,,,,,,0
-204643,,,,,,0
-204644,,,,,,0
-204645,,,,,,0
-204646,,,,,,0
-204647,,,,,,0
-204648,,,,,,0
-204649,,,,,,0
-204650,,,,,,0
-204651,,,,,,0
-204652,,,,,,0
-204653,,,,,,0
-204654,,,,,,0
-204655,,,,,,0
-204656,,,,,,0
-204657,,,,,,0
-204658,,,,,,0
-204659,,,,,,0
-204660,,,,,,0
-204661,,,,,,0
-204662,,,,,,0
-204663,,,,,,0
-204664,,,,,,0
-204665,,,,,,0
-204666,,,,,,0
-204667,,,,,,0
-204668,,,,,,0
-204669,,,,,,0
-204670,,,,,,0
-204671,,,,,,0
-204672,,,,,,0
-204673,,,,,,0
-204674,,,,,,0
-204675,,,,,,0
-204676,,,,,,0
-204677,,,,,,0
-204678,,,,,,0
-204679,,,,,,0
-204680,,,,,,0
-204681,,,,,,0
-204682,,,,,,0
-204683,,,,,,0
-204684,,,,,,0
-204685,,,,,,0
-204686,,,,,,0
