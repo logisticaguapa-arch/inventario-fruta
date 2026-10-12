@@ -309,8 +309,8 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 204584,97,2026-10-11,PE2,piña special 2da,3.0 - 4.0,1204
 204585,canastas,2026-10-11,PJUG,piña jugos,3.0 - 4.0,468
 204586,canastas,2026-10-11,PJUG,piña jugos,3.0 - 4.0,140
-204587,canastas,2026-10-11,,,,0
-204588,canastas,2026-10-11,,,,0
+204587,,,,,,0
+204588,,,,,,0
 204589,,,,,,0
 204590,,,,,,0
 204591,,,,,,0
