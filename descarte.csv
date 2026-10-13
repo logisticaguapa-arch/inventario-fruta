@@ -1382,7 +1382,6 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,26,junio,2026-06-27,626,75,canastas,6.0,,6.0,6.0,,PE2
 2026,27,junio,2026-06-29,626,1,canastas,40.0,,40.0,40.0,,PEGUA
 2026,27,junio,2026-06-29,626,1,canastas,1.0,,1.0,1.0,,PEBAB
-2026,27,junio,2026-06-29,826,3,canastas,2.0,,2.0,2.0,,AD1
 2026,27,junio,2026-06-29,626,1,canastas,12.0,,12.0,12.0,,PE2
 2026,27,junio,2026-06-29,626,76,canastas,3.0,,3.0,3.0,,PE3
 2026,27,junio,2026-06-29,826,3,canastas,7.0,,7.0,7.0,,AD2
@@ -1474,7 +1473,6 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,27,julio,2026-07-02,926,72,canastas,10.0,,10.0,10.0,,AD1
 2026,27,julio,2026-07-02,726,74,canastas,20.0,,20.0,20.0,,PE1
 2026,27,julio,2026-07-02,1126,72,canastas,13.0,,13.0,13.0,,AD1
-2026,27,julio,2026-07-02,1126,72,canastas,8.0,,8.0,8.0,,AD1
 2026,27,julio,2026-07-02,726,74,canastas,15.0,,15.0,15.0,,PE2
 2026,27,julio,2026-07-02,626,1,canastas,14.0,,14.0,14.0,,PE2
 2026,27,julio,2026-07-02,1026,72,canastas,6.0,,6.0,6.0,,AD1
@@ -1764,8 +1762,6 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,28,julio,2026-07-11,1426,73,62,1506.0,,1506.0,1506.0,,AD-PJUG
 2026,28,julio,2026-07-11,1526,73,19,656.0,,656.0,656.0,,AD-PJUG
 2026,28,julio,2026-07-11,1526,73,canastas,5.0,,5.0,5.0,,AD2
-2026,28,julio,2026-07-11,1526,73,canastas,2.0,,2.0,2.0,,AD1
-2026,28,julio,2026-07-11,1526,73,canastas,7.0,,7.0,7.0,,AD1
 2026,28,julio,2026-07-11,1526,73,canastas,3.0,,3.0,3.0,,AD1
 2026,28,julio,2026-07-11,826,3,canastas,8.0,,8.0,8.0,,PEGUA
 2026,28,julio,2026-07-11,826,3,canastas,7.0,,7.0,7.0,,PEGUA
@@ -3245,3 +3241,36 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,42,octubre,2026-10-12,2126,46,canastas,5.0,,5.0,5.0,Muestreo,PE2
 2026,42,octubre,2026-10-12,2026,33,canastas,9.0,,9.0,9.0,Muestreo,PE1
 2026,42,octubre,2026-10-12,2126,46,canastas,11.0,,11.0,11.0,Muestreo,PE1
+2026,42,octubre,2026-10-12,2026,33,canastas,4.0,,4.0,4.0,Muestreo,PE2
+2026,42,octubre,2026-10-12,2026,33,canastas,4.0,,4.0,4.0,Muestreo,PE3
+2026,42,octubre,2026-10-12,2126,46,canastas,1.0,,1.0,1.0,Muestreo,PE2
+2026,42,octubre,2026-10-12,2026,33,canastas,2.0,,2.0,2.0,Muestreo,PE3
+2026,42,octubre,2026-10-12,2126,46,canastas,3.0,,3.0,3.0,Muestreo,PEGUA
+2026,42,octubre,2026-10-12,2026,33,canastas,4.0,,4.0,4.0,Muestreo,PEBAB
+2026,42,octubre,2026-10-12,2326,52,canastas,4.0,,4.0,4.0,Muestreo,AD1
+2026,42,octubre,2026-10-12,2126,33,canastas,4.0,,4.0,4.0,Muestreo,PEGUA
+2026,42,octubre,2026-10-12,2026,33,canastas,2.0,,2.0,2.0,Muestreo,PEBAB
+2026,42,octubre,2026-10-12,2526,77,canastas,3.0,,3.0,3.0,Muestreo,AD1
+2026,42,octubre,2026-10-12,2126,46,canastas,2.0,,2.0,2.0,Muestreo,PEGUA
+2026,42,octubre,2026-10-12,2126,46,canastas,3.0,,3.0,3.0,Muestreo,PE3
+2026,42,octubre,2026-10-12,2126,46,canastas,2.0,,2.0,2.0,Muestreo,PE3
+2026,42,octubre,2026-10-12,2026,33,canastas,1.0,,1.0,1.0,Muestreo,PEBAB
+2026,42,octubre,2026-10-12,2026,45,canastas,183.0,,183.0,183.0,Daño por reposo,PE1
+2026,42,octubre,2026-10-12,2026,45,canastas,59.0,,59.0,59.0,Daño por reposo,PE2
+2026,42,octubre,2026-10-12,2026,45,canastas,550.0,,550.0,550.0,Daño por reposo,PE1
+2026,42,octubre,2026-10-12,2026,45,canastas,566.0,,566.0,566.0,Daño por reposo,PE1
+2026,42,octubre,2026-10-12,2026,45,canastas,58.0,,58.0,58.0,Daño por reposo,PE1
+2026,42,octubre,2026-10-12,2026,45,canastas,582.0,,582.0,582.0,Daño por reposo,PE1
+2026,42,octubre,2026-10-12,2026,33,canastas,391.0,,391.0,391.0,Daño por reposo,PE1
+2026,42,octubre,2026-10-12,2026,33,canastas,508.0,,508.0,508.0,Daño por reposo,PE2
+2026,42,octubre,2026-10-12,3226,77,canastas,15.0,,15.0,15.0,Muestreo,AD1
+2026,42,octubre,2026-10-12,2126,46,canastas,10.0,,10.0,10.0,Muestreo,PE1
+2026,42,octubre,2026-10-12,2126,46,canastas,14.0,,14.0,14.0,Muestreo,PE2
+2026,42,octubre,2026-10-12,2126,46,canastas,150.0,,150.0,150.0,Daño por reposo,PE2
+2026,42,octubre,2026-10-12,3426,74,canastas,113.0,,113.0,113.0,Daño por reposo,AD1
+2026,42,octubre,2026-10-12,2026,33,canastas,16.0,,16.0,16.0,Muestreo,PE1
+2026,42,octubre,2026-10-12,2126,46,88,150.0,,150.0,150.0,Sobre madura empacadora,PE1
+2026,42,octubre,2026-10-12,2026,33,canastas,127.0,,127.0,127.0,Daño por reposo,PE1
+2026,42,octubre,2026-10-12,2126,46,63,150.0,,150.0,150.0,Daño por reposo,PE1
+2026,42,octubre,2026-10-12,2126,46,canastas,26.0,,26.0,26.0,Daño por reposo,PE1
+2026,42,octubre,2026-10-12,2126,46,canastas,180.0,,180.0,180.0,,PE1
