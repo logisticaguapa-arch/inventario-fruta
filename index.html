@@ -740,6 +740,14 @@ function parseCSV(t){
     } else {
       hdr.forEach((h,i)=>o[h]=v[i]||'');
     }
+    // -- Los BINES se numeran con un ID corto (1 a 3 digitos: 10, 63, 140...),
+    // las estibas/canastas con IDs de 6 digitos. Si el campo Bin vino vacio o
+    // como "canastas" (porque en Proceso quedo asi) pero el ID es de bin, se
+    // toma el ID como numero de bin -- si no, un bin quedaba contado como estiba. --
+    if(/^\d{1,3}$/.test(String(o.ID||'').trim())){
+      const b=String(o.Bin||'').trim().toLowerCase();
+      if(b===''||b==='canastas'||b==='canasta') o.Bin=String(o.ID).trim();
+    }
     return o;
   }).filter(r=>r.ID&&r.ID.trim()!=''&&r.Fecha&&r.Fecha.trim()!=''&&r.Calidad&&r.Calidad.trim()!='');
 }
@@ -1123,9 +1131,25 @@ function fillMselKeep(id){
   updateMselBtn(id);
   syncFechaTreeChecks(id);
 }
+// -- Normaliza un grado de maduracion para COMPARAR: las opciones del filtro
+// vienen con coma ("0,0 - 1,0") y los datos con punto ("0.0 - 1.0") -- antes se
+// comparaba el texto exacto y los rangos nunca coincidian, por eso el filtro de
+// Grado de maduracion no mostraba lo elegido. Aqui "0,0 - 1,0", "0.0-1.0" y
+// "0.0 - 1.0" son lo mismo, y "1", "1.0" y "1,0" tambien. --
+function normCal(c){
+  const s=String(c==null?'':c).trim().replace(/,/g,'.');
+  if(s==='') return '';
+  if(s.includes('-')&&!s.startsWith('-')) return s.split('-').map(function(p){const n=parseFloat(p.trim());return isNaN(n)?p.trim():String(n);}).join('-');
+  const n=parseFloat(s); return isNaN(n)?s:String(n);
+}
+function calCoincide(sel,valor){
+  if(!sel.length) return true;
+  const v=normCal(valor);
+  return sel.some(function(x){return normCal(x)===v;});
+}
 function filtered(){
   const cal=filtros.cal,t=filtros.tam,f=filtros.fec;
-  return ALL.filter(r=>(!cal.length||cal.includes(r.Calibre))&&(!t.length||t.includes(r.Calidad))&&(!f.length||f.includes(r.Fecha)));
+  return ALL.filter(r=>calCoincide(cal,r.Calibre)&&(!t.length||t.includes(r.Calidad))&&(!f.length||f.includes(r.Fecha)));
 }
 // -- Los dos botones de descarga de Tarjetas por dia usan el MISMO filtro de
 // fecha (filtros.fec) que ya se ve en esa vista, comparado contra FechaProceso
@@ -1153,7 +1177,7 @@ function filteredDescarte(){
 }
 function filteredProcesado(){
   const cal=filtros.procCal,t=filtros.procTam,f=filtros.procFec,g=filtros.procGrupo;
-  return PROCESADO.filter(r=>(!cal.length||cal.includes(r.Calibre))&&(!t.length||t.includes(r.Calidad))&&(!f.length||f.includes(r.Fecha))&&(!g.length||g.includes(r.Grupo)));
+  return PROCESADO.filter(r=>calCoincide(cal,r.Calibre)&&(!t.length||t.includes(r.Calidad))&&(!f.length||f.includes(r.Fecha))&&(!g.length||g.includes(r.Grupo)));
 }
 function filteredSeguimiento(){
   const g=filtros.seguGrupo,f=filtros.seguFec;
