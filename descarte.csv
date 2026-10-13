@@ -3269,8 +3269,11 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,42,octubre,2026-10-12,2126,46,canastas,150.0,,150.0,150.0,Daño por reposo,PE2
 2026,42,octubre,2026-10-12,3426,74,canastas,113.0,,113.0,113.0,Daño por reposo,AD1
 2026,42,octubre,2026-10-12,2026,33,canastas,16.0,,16.0,16.0,Muestreo,PE1
-2026,42,octubre,2026-10-12,2126,46,88,150.0,,150.0,150.0,Sobre madura empacadora,PE1
-2026,42,octubre,2026-10-12,2026,33,canastas,127.0,,127.0,127.0,Daño por reposo,PE1
+2026,42,octubre,2026-10-12,2126,46,109,1271.0,,1271.0,1271.0,Daño por reposo,PE1
+2026,42,octubre,2026-10-12,2126,46,88,1496.0,,1496.0,1496.0,Daño por reposo,PE1
+2026,42,octubre,2026-10-12,2126,46,10,1418.0,,1418.0,1418.0,Daño por reposo,PE1
+2026,42,octubre,2026-10-12,2126,46,canastas,575.0,,575.0,575.0,Daño por reposo,PE1
+2026,42,octubre,2026-10-12,2026,33,canastas,517.0,,517.0,517.0,Daño por reposo,PE1
 2026,42,octubre,2026-10-12,2126,46,63,150.0,,150.0,150.0,Daño por reposo,PE1
 2026,42,octubre,2026-10-12,2126,46,canastas,26.0,,26.0,26.0,Daño por reposo,PE1
 2026,42,octubre,2026-10-12,2126,46,canastas,180.0,,180.0,180.0,,PE1
