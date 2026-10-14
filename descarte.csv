@@ -3189,7 +3189,7 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,41,octubre,2026-10-09,2026,33,canastas,4.0,,4.0,4.0,Muestreo,PE1
 2026,41,octubre,2026-10-09,2026,45,canastas,1.0,,1.0,1.0,Muestreo,PE2
 2026,41,octubre,2026-10-09,2026,45,canastas,1.0,,1.0,1.0,Muestreo,PE2
-2026,41,octubre,2026-10-09,2026,45,canastas,16.0,,16.0,16.0,391,PE1
+2026,41,octubre,2026-10-09,2026,45,canastas,16.0,,16.0,16.0,Muestreo,PE1
 2026,41,octubre,2026-10-09,2026,33,canastas,4.0,,4.0,4.0,Muestreo,PE3
 2026,41,octubre,2026-10-09,2026,33,canastas,13.0,,13.0,13.0,Golpe Despacho,PE3
 2026,41,octubre,2026-10-09,2226,46,canastas,4.0,,4.0,4.0,Muestreo,AD1
@@ -3198,8 +3198,8 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,41,octubre,2026-10-09,2026,45,canastas,5.0,,5.0,5.0,Muestreo,PEGUA
 2026,41,octubre,2026-10-09,2226,46,canastas,22.0,,22.0,22.0,Enferma,AD-PIND
 2026,41,octubre,2026-10-09,2026,33,canastas,6.0,,6.0,6.0,Muestreo,PE2
-2026,41,octubre,2026-10-09,2026,45,canastas,10.0,,10.0,10.0,58,PE1
-2026,41,octubre,2026-10-09,2026,45,canastas,30.0,,30.0,30.0,508,PE1
+2026,41,octubre,2026-10-09,2026,45,canastas,10.0,,10.0,10.0,Muestreo,PE1
+2026,41,octubre,2026-10-09,2026,45,canastas,30.0,,30.0,30.0,Muestreo,PE1
 2026,41,octubre,2026-10-09,2026,45,canastas,11.0,,11.0,11.0,Muestreo,PE1
 2026,41,octubre,2026-10-09,2026,33,canastas,20.0,,20.0,20.0,Muestreo,PE1
 2026,41,octubre,2026-10-09,2026,45,canastas,9.0,,9.0,9.0,Muestreo,PE2
@@ -3388,3 +3388,15 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,42,octubre,2026-10-13,2326,52,canastas,535.0,,535.0,535.0,Daño por reposo,AD-PJUG
 2026,42,octubre,2026-10-13,2126,46,canastas,468.0,,468.0,468.0,Daño por reposo,PJUG
 2026,42,octubre,2026-10-13,2326,77,canastas,148.0,,148.0,148.0,Daño por reposo,AD-PJUG
+2026,42,octubre,2026-10-14,2126,46,canastas,5.0,,5.0,5.0,Muestreo,PE2
+2026,42,octubre,2026-10-14,2126,46,canastas,12.0,,12.0,12.0,Muestreo,PE2
+2026,42,octubre,2026-10-14,2126,33,canastas,19.0,,19.0,19.0,Muestreo,PE1
+2026,42,octubre,2026-10-14,2126,33,canastas,4.0,,4.0,4.0,Muestreo,PE1
+2026,42,octubre,2026-10-14,2126,46,canastas,4.0,,4.0,4.0,Muestreo,PE2
+2026,42,octubre,2026-10-14,2126,46,canastas,3.0,,3.0,3.0,Muestreo,PE3
+2026,42,octubre,2026-10-14,2126,33,canastas,3.0,,3.0,3.0,Muestreo,PEGUA
+2026,42,octubre,2026-10-14,2126,46,canastas,19.0,,19.0,19.0,Muestreo,PE2
+2026,42,octubre,2026-10-14,2126,33,canastas,41.0,,41.0,41.0,Muestreo,PE2
+2026,42,octubre,2026-10-14,2126,46,canastas,2.0,,2.0,2.0,Muestreo,PEBAB
+2026,42,octubre,2026-10-14,3126,78,canastas,20.0,,20.0,20.0,Muestreo,AD1
+2026,42,octubre,2026-10-14,2126,46,canastas,8.0,,8.0,8.0,Muestreo,PE1
