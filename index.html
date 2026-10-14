@@ -1442,7 +1442,7 @@ function exportExcelProcesado(){
   const ws=XLSX.utils.aoa_to_sheet([PROC_EXPORT_HEADERS].concat(filas));
   const wb=XLSX.utils.book_new();
   XLSX.utils.book_append_sheet(wb,ws,'Seguimiento grupos');
-  XLSX.writeFile(wb,'SeguimientoGrupos_'+fechaISO(new Date())+'.xlsx');
+  XLSX.writeFile(wb,'SeguimientoGrupos.xlsx');
 }
 
 // -- SEGUIMIENTO GRUPOS: la misma informacion del descargable de Inventario procesado
@@ -1967,7 +1967,7 @@ function exportExcelProcesadoDiario(){
   const ws=XLSX.utils.aoa_to_sheet([headers].concat(filas));
   const wb=XLSX.utils.book_new();
   XLSX.utils.book_append_sheet(wb,ws,'Procesado dia a dia');
-  XLSX.writeFile(wb,'ProcesadoDiaADia_'+fechaISO(new Date())+'.xlsx');
+  XLSX.writeFile(wb,'ProcesadoDiaADia.xlsx');
 }
 
 function exportExcelCumplimientoGrado(){
@@ -2006,7 +2006,7 @@ function exportExcelCumplimientoGrado(){
   const ws=XLSX.utils.aoa_to_sheet([headers].concat(filas));
   const wb=XLSX.utils.book_new();
   XLSX.utils.book_append_sheet(wb,ws,'Cumplimiento grado');
-  XLSX.writeFile(wb,'CumplimientoGrado_'+fechaISO(new Date())+'.xlsx');
+  XLSX.writeFile(wb,'CumplimientoGrado.xlsx');
 }
 
 function exportExcelFacturacion(){
@@ -2016,7 +2016,7 @@ function exportExcelFacturacion(){
   const ws=XLSX.utils.aoa_to_sheet([FACT_EXPORT_HEADERS].concat(filas));
   const wb=XLSX.utils.book_new();
   XLSX.utils.book_append_sheet(wb,ws,'Facturacion');
-  XLSX.writeFile(wb,'Facturacion_'+factFechaArchivo()+'.xlsx');
+  XLSX.writeFile(wb,'Facturacion.xlsx');
 }
 
 function exportPDFFacturacion(){
@@ -2027,7 +2027,7 @@ function exportPDFFacturacion(){
   doc.setFontSize(14);
   doc.text('Facturacion - '+factFechaEtiqueta(),14,16);
   doc.autoTable({head:[FACT_EXPORT_HEADERS],body:filas,startY:22,styles:{fontSize:8},headStyles:{fillColor:[30,41,59]}});
-  doc.save('Facturacion_'+factFechaArchivo()+'.pdf');
+  doc.save('Facturacion.pdf');
 }
 
 // -- Exportar Descarte (Excel / PDF): mismo formato exacto de la tabla en
@@ -2059,7 +2059,7 @@ function exportExcelDescarte(){
   const ws=XLSX.utils.aoa_to_sheet([DESC_EXPORT_HEADERS].concat(filas));
   const wb=XLSX.utils.book_new();
   XLSX.utils.book_append_sheet(wb,ws,'Descarte');
-  XLSX.writeFile(wb,'Descarte_'+fechaISO(new Date())+'.xlsx');
+  XLSX.writeFile(wb,'Descarte.xlsx');
 }
 function exportPDFDescarte(){
   const filas=construirFilasExportDescarte(filteredDescarte());
@@ -2068,7 +2068,7 @@ function exportPDFDescarte(){
   doc.setFontSize(14);
   doc.text('Descarte',14,16);
   doc.autoTable({head:[DESC_EXPORT_HEADERS],body:filas,startY:22,styles:{fontSize:7},headStyles:{fillColor:[127,29,29]}});
-  doc.save('Descarte_'+fechaISO(new Date())+'.pdf');
+  doc.save('Descarte.pdf');
 }
 
 // -- DESCARTE: fruta descartada, tomada de la hoja Proceso (columna "Kilos de
