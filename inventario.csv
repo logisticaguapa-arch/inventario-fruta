@@ -192,16 +192,14 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 204978,canastas,2026-10-14,AD1,Piña AD1,0.0 - 1.0,574
 204979,canastas,2026-10-14,ADBABY,Piña ADBABY,1.5 - 2.5,34
 204980,canastas,2026-10-14,AD3,Piña AD3,0.0 - 1.0,458
-204982,canastas,2026-10-14,,,,0
-204983,canastas,2026-10-14,,,,0
-204984,canastas,2026-10-14,,,,0
-204985,canastas,2026-10-14,,,,0
-204986,canastas,2026-10-14,,,,0
-204987,canastas,2026-10-14,,,,0
-204988,canastas,2026-10-14,,,,0
-204989,canastas,2026-10-14,,,,0
-204990,canastas,2026-10-14,,,,0
-204991,canastas,2026-10-14,,,,0
+204982,canastas,2026-10-14,AD1,Piña AD1,1.5 - 2.5,284
+204984,canastas,2026-10-14,AD1,Piña AD1,1.5 - 2.5,302
+204985,canastas,2026-10-14,AD2,Piña AD2,1.5 - 2.5,142
+204986,canastas,2026-10-14,AD1,Piña AD1,0.0 - 1.0,184
+204987,canastas,2026-10-14,AD-PJUG,,3.0 - 4.0,390
+204988,canastas,2026-10-14,ADGUA,Piña ADGUA,1.5 - 2.5,303
+204989,canastas,2026-10-14,PJUG,piña jugos,3.0 - 4.0,207
+204990,canastas,2026-10-14,PJUG,piña jugos,3.0 - 4.0,511
 204992,,,,,,0
 204993,,,,,,0
 204994,,,,,,0
