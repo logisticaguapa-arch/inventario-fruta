@@ -21797,12 +21797,44 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-15,,,local sincelejo,Piña AD3,AD3,451,0,,0,204980,2026-10-14,0.0 - 1.0,3826,78
 2026-10-15,,,local sincelejo,piña special 3ra,PE3,362,0,,0,204955,2026-10-14,0.0 - 1.0,2126,33
 2026-10-15,,,carmen susana hoyos,piña special baby,PEBAB,352,0,,0,204947,2026-10-14,1.5 - 2.5,2126,33
-2026-10-15,,,carmen susana hoyos,piña special baby,PEBAB,399,0,,0,204888,2026-10-14,1.5 - 2.5,2126,46
+2026-10-15,,,carmen susana hoyos,piña special baby,PEBAB,399,249,,0,204888,2026-10-14,1.5 - 2.5,2126,46
 2026-10-15,,,camilo quiñones,piña indstria,PIND,1189,0,,0,205007,2026-10-14,3.0 - 4.0,2126,46
 2026-10-15,,,camilo quiñones,piña indstria,PIND,1177,1004,,93,205001,2026-10-14,3.0 - 4.0,2126,46
 2026-10-15,,,camilo quiñones,piña indstria,PIND,509,0,,0,204886,2026-10-14,1.5 - 2.5,2126,46
 2026-10-15,,,camilo quiñones,piña indstria,PIND,554,0,,0,204957,2026-10-14,1.5 - 2.5,2126,33
-2026-10-15,,,camilo quiñones,piña indstria,PIND,540,27,,0,204879,2026-10-14,1.5 - 2.5,2226,47
+2026-10-15,,,camilo quiñones,piña indstria,PIND,420,147,,120,204879,2026-10-14,1.5 - 2.5,2226,47
+2026-10-15,,,camilo quiñones,AD-piña jugos,AD-PJUG,386,0,,0,204987,2026-10-14,3.0 - 4.0,2326,52
+2026-10-15,,,camilo quiñones,piña jugos,PJUG,501,0,,0,204990,2026-10-14,3.0 - 4.0,2126,46
+2026-10-15,,,camilo quiñones,piña jugos,PJUG,204,0,,0,204989,2026-10-14,3.0 - 4.0,2126,46
+2026-10-15,,,camilo quiñones,AD-piña jugos,AD-PJUG,45,0,,0,204974,2026-10-14,3.0 - 4.0,2626,47
+2026-10-15,,,camilo quiñones,piña jugos,PJUG,14,0,,0,205031,2026-10-15,3.0 - 4.0,,
 2026-10-15,,,local sincelejo,piña special 3ra,PE3,500,0,,3,204896,2026-10-14,1.5 - 2.5,2126,46
 2026-10-15,,,local sincelejo,Piña AD3,AD3,46,0,,0,204976,2026-10-14,1.5 - 2.5,2326,52
 2026-10-15,,,local sincelejo,piña special 3ra,PE3,492,0,,0,204940,2026-10-14,1.5 - 2.5,2126,46
+2026-10-15,,,local sincelejo,piña special 3ra,PE3,245,0,,0,204948,2026-10-14,1.5 - 2.5,2126,33
+2026-10-15,,,local sincelejo,piña special 3ra,PE3,16,0,,0,205023,2026-10-15,1.5 - 2.5,,
+2026-10-15,,,local sincelejo,piña special 1ra,PE1,563,0,,0,204914,2026-10-14,3.0 - 4.0,2126,33
+2026-10-15,,,local sincelejo,piña special 1ra,PE1,551,386,,0,204936,2026-10-14,3.0 - 4.0,2126,46
+2026-10-15,,,local sincelejo,piña special guapita,PEGUA,487,0,,0,204897,2026-10-14,1.5 - 2.5,2126,33
+2026-10-15,,,local sincelejo,piña special guapita,PEGUA,482,0,,0,204934,2026-10-14,1.5 - 2.5,2126,33
+2026-10-15,,,local sincelejo,piña special guapita,PEGUA,408,0,,0,204900,2026-10-14,1.5 - 2.5,2126,33
+2026-10-15,,,local sincelejo,piña special guapita,PEGUA,216,0,,0,204956,2026-10-14,1.5 - 2.5,2126,33
+2026-10-15,,,local sincelejo,piña special guapita,PEGUA,57,250,,0,205039,2026-10-15,1.5 - 2.5,,
+2026-10-15,,,local sincelejo,piña special 2da,PE2,499,0,,0,204902,2026-10-14,3.0 - 4.0,2126,33
+2026-10-15,,,local sincelejo,piña special 2da,PE2,517,484,,0,204885,2026-10-14,3.0 - 4.0,2126,46
+2026-10-15,,,ramiro parada,piña special 2da,PE2,522,0,,0,204751,2026-10-13,3.0 - 4.0,2126,46
+2026-10-15,,,ramiro parada,piña special 2da,PE2,515,0,,0,204755,2026-10-13,3.0 - 4.0,2126,46
+2026-10-15,,,ramiro parada,piña special 2da,PE2,517,0,,0,204811,2026-10-13,3.0 - 4.0,2126,46
+2026-10-15,,,ramiro parada,piña special 2da,PE2,511,0,,0,204759,2026-10-13,3.0 - 4.0,2126,46
+2026-10-15,,,ramiro parada,piña special 2da,PE2,511,0,,0,204782,2026-10-13,3.0 - 4.0,2126,46
+2026-10-15,,,ramiro parada,piña special 2da,PE2,505,0,,0,204740,2026-10-13,3.0 - 4.0,2126,33
+2026-10-15,,,ramiro parada,piña special 2da,PE2,320,0,,0,204880,2026-10-14,3.0 - 4.0,2226,47
+2026-10-15,,,ramiro parada,piña special 2da,PE2,502,291,,7,204930,2026-10-14,3.0 - 4.0,2126,33
+2026-10-15,,,camilo quiñones,piña indstria,PIND,514,0,,0,204931,2026-10-14,1.5 - 2.5,2126,33
+2026-10-15,,,camilo quiñones,piña indstria,PIND,529,0,,0,204929,2026-10-14,1.5 - 2.5,2126,33
+2026-10-15,,,camilo quiñones,piña indstria,PIND,169,0,,25,204960,2026-10-14,1.5 - 2.5,2126,33
+2026-10-15,,,camilo quiñones,piña indstria,PIND,349,0,,0,204907,2026-10-14,1.5 - 2.5,2126,33
+2026-10-15,,,camilo quiñones,piña indstria,PIND,1189,0,,0,205004,2026-10-14,3.0 - 4.0,2126,46
+2026-10-15,,,camilo quiñones,piña indstria,PIND,1131,0,,0,205005,2026-10-14,3.0 - 4.0,2126,46
+2026-10-15,,,camilo quiñones,piña indstria,PIND,1119,0,,74,205003,2026-10-14,3.0 - 4.0,2126,46
+2026-10-15,,,KARINA BORJA,piña special guapita,PEGUA,345,0,,0,205050,2026-10-15,1.5 - 2.5,,
