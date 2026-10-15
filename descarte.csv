@@ -3405,8 +3405,8 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,42,octubre,2026-10-14,2126,46,canastas,40.0,,40.0,40.0,Sobre madura empacadora,PE1
 2026,42,octubre,2026-10-14,2126,46,canastas,8.0,,8.0,8.0,Muestreo,PE2
 2026,42,octubre,2026-10-14,2126,46,29,45.0,,45.0,45.0,Daño por reposo,PE1
-2026,42,octubre,2026-10-14,,,canastas,11.0,,11.0,11.0,Muestreo,PE1
-2026,42,octubre,2026-10-14,,,canastas,10.0,,10.0,10.0,Muestreo,PE1
+2026,42,octubre,2026-10-14,2126,33,canastas,11.0,,11.0,11.0,Muestreo,PE1
+2026,42,octubre,2026-10-14,2126,46,canastas,10.0,,10.0,10.0,Muestreo,PE1
 2026,42,octubre,2026-10-14,2126,46,11,1303.0,,1303.0,1303.0,Sobre madura empacadora,PE1
 2026,42,octubre,2026-10-14,2126,46,103,1274.0,,1274.0,1274.0,Sobre madura empacadora,PE1
 2026,42,octubre,2026-10-14,2126,46,33,1325.0,,1325.0,1325.0,Sobre madura empacadora,PE1
@@ -3415,4 +3415,4 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,42,octubre,2026-10-14,2126,46,157,1310.0,,1310.0,1310.0,Sobre madura empacadora,PE1
 2026,42,octubre,2026-10-14,2126,46,77,1299.0,,1299.0,1299.0,Sobre madura empacadora,PE1
 2026,42,octubre,2026-10-14,2026,33,canastas,140.0,,140.0,140.0,Sobre madura empacadora,PJUG
-2026,42,octubre,2026-10-14,,,canastas,6.0,,6.0,6.0,Muestreo,PE2
+2026,42,octubre,2026-10-14,2126,47,canastas,6.0,,6.0,6.0,Muestreo,PE2
