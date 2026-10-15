@@ -21691,13 +21691,13 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-14,46629,R-19197,andres ruben oquendo,piña special 1ra,PE1,552,0,1800,0,204596,2026-10-12,3.0 - 4.0,2126,46
 2026-10-14,46629,R-19197,andres ruben oquendo,piña special 1ra,PE1,537,0,1800,0,204641,2026-10-12,3.0 - 4.0,2126,33
 2026-10-14,46629,R-19197,andres ruben oquendo,piña special 1ra,PE1,308,19,1800,19,204681,2026-10-12,3.0 - 4.0,2126,46
-2026-10-14,,R-19196,Aldinsen Gonzalez,piña special 2da,PE2,512,0,1700,0,204647,2026-10-12,3.0 - 4.0,2126,33
-2026-10-14,,R-19196,Aldinsen Gonzalez,piña special 2da,PE2,516,0,1700,0,204639,2026-10-12,3.0 - 4.0,2126,33
-2026-10-14,,R-19196,Aldinsen Gonzalez,piña special 2da,PE2,431,0,1700,0,204713,2026-10-12,3.0 - 4.0,2126,46
-2026-10-14,,R-19196,Aldinsen Gonzalez,piña special 2da,PE2,515,0,1700,0,204666,2026-10-12,3.0 - 4.0,2126,46
-2026-10-14,,R-19196,Aldinsen Gonzalez,piña special 2da,PE2,511,0,1700,0,204649,2026-10-12,3.0 - 4.0,2126,33
-2026-10-14,,R-19196,Aldinsen Gonzalez,piña special 2da,PE2,383,0,1700,0,204591,2026-10-12,3.0 - 4.0,2126,46
-2026-10-14,,R-19196,Aldinsen Gonzalez,piña special 2da,PE2,106,26,1700,26,204693,2026-10-12,3.0 - 4.0,2126,46
+2026-10-14,46630,R-19196,Aldinsen Gonzalez,piña special 2da,PE2,512,0,1700,0,204647,2026-10-12,3.0 - 4.0,2126,33
+2026-10-14,46630,R-19196,Aldinsen Gonzalez,piña special 2da,PE2,516,0,1700,0,204639,2026-10-12,3.0 - 4.0,2126,33
+2026-10-14,46630,R-19196,Aldinsen Gonzalez,piña special 2da,PE2,431,0,1700,0,204713,2026-10-12,3.0 - 4.0,2126,46
+2026-10-14,46630,R-19196,Aldinsen Gonzalez,piña special 2da,PE2,515,0,1700,0,204666,2026-10-12,3.0 - 4.0,2126,46
+2026-10-14,46630,R-19196,Aldinsen Gonzalez,piña special 2da,PE2,511,0,1700,0,204649,2026-10-12,3.0 - 4.0,2126,33
+2026-10-14,46630,R-19196,Aldinsen Gonzalez,piña special 2da,PE2,383,0,1700,0,204591,2026-10-12,3.0 - 4.0,2126,46
+2026-10-14,46630,R-19196,Aldinsen Gonzalez,piña special 2da,PE2,106,26,1700,26,204693,2026-10-12,3.0 - 4.0,2126,46
 2026-10-14,,R-19198,ramiro parada,piña special 1ra,PE1,540,0,1800,0,204691,2026-10-12,3.0 - 4.0,2126,46
 2026-10-14,,R-19198,ramiro parada,piña special 1ra,PE1,572,0,1800,0,204592,2026-10-12,3.0 - 4.0,2126,46
 2026-10-14,,R-19198,ramiro parada,piña special 1ra,PE1,553,0,1800,0,204624,2026-10-12,3.0 - 4.0,2126,46
@@ -21726,6 +21726,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-14,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,583,0,,0,204919,2026-10-14,1,,
 2026-10-14,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,529,0,,0,204778,2026-10-13,1,2126,46
 2026-10-14,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,357,0,,0,204820,2026-10-13,1,2126,46
+2026-10-14,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,597,65,,0,204941,2026-10-14,1,,
 2026-10-14,,,descarte,piña special 1ra,PE1,0,0,,1303,204563,2026-10-11,3.0 - 4.0,2126,46
 2026-10-14,,,descarte,piña special 1ra,PE1,0,0,,1274,204564,2026-10-11,3.0 - 4.0,2126,46
 2026-10-14,,,descarte,piña special 1ra,PE1,0,0,,1325,204567,2026-10-11,3.0 - 4.0,2126,46
