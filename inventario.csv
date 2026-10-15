@@ -13,14 +13,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 204705,canastas,2026-10-12,PIND,piña indstria,1.5 - 2.5,318
 204707,canastas,2026-10-12,PIND,piña indstria,1.5 - 2.5,18
 204721,canastas,2026-10-12,PIND,piña indstria,1.5 - 2.5,498
-204723,34,2026-10-12,PE1,piña special 1ra,3.0 - 4.0,1258
-204724,65,2026-10-12,PE1,piña special 1ra,3.0 - 4.0,1518
-204725,66,2026-10-12,PE1,piña special 1ra,3.0 - 4.0,1543
-204727,99,2026-10-12,PE1,piña special 1ra,3.0 - 4.0,1337
-204728,5,2026-10-12,PE1,piña special 1ra,3.0 - 4.0,1534
-204729,72,2026-10-12,PE1,piña special 1ra,3.0 - 4.0,1388
-204730,36,2026-10-12,PE1,piña special 1ra,3.0 - 4.0,1543
-204731,101,2026-10-12,PE1,piña special 1ra,3.0 - 4.0,1109
 204736,canastas,2026-10-13,PIND,piña indstria,1.5 - 2.5,504
 204745,canastas,2026-10-13,PE2,piña special 2da,3.0 - 4.0,62
 204760,canastas,2026-10-13,PE1,piña special 1ra,4,556
@@ -82,12 +74,11 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 204903,canastas,2026-10-14,PEBAB,piña special baby,1.5 - 2.5,161
 204904,canastas,2026-10-14,PE1,piña special 1ra,3.0 - 4.0,152
 204905,canastas,2026-10-14,PE2,piña special 2da,3.0 - 4.0,25
-204906,canastas,2026-10-14,PE2,piña special 2da,4,520
+204906,canastas,2026-10-14,PE2,piña special 2da,4,370
 204909,canastas,2026-10-14,PE1,piña special 1ra,4,554
 204912,canastas,2026-10-14,PE1,piña special 1ra,1.5 - 2.5,557
 204916,canastas,2026-10-14,PE1,piña special 1ra,4,565
 204918,canastas,2026-10-14,PE1,piña special 1ra,3.0 - 4.0,563
-204920,canastas,2026-10-14,PE1,piña special 1ra,3.0 - 4.0,586
 204924,canastas,2026-10-14,PE1,piña special 1ra,3.0 - 4.0,460
 204925,canastas,2026-10-14,PE1,piña special 1ra,4,564
 204932,canastas,2026-10-14,PE1,piña special 1ra,3.0 - 4.0,558
@@ -179,8 +170,8 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 205068,canastas,2026-10-15,PE2,piña special 2da,1.5,404
 205069,canastas,2026-10-15,PE1,piña special 1ra,0.0 - 1.0,502
 205070,canastas,2026-10-15,PE1,piña special 1ra,1,578
-205071,canastas,2026-10-15,PEGUA,piña special guapita,1.5 - 2.5,0
-205072,canastas,2026-10-15,,,,0
+205071,canastas,2026-10-15,PEGUA,piña special guapita,1.5 - 2.5,493
+205072,canastas,2026-10-15,PE1,piña special 1ra,3.0 - 4.0,521
 205073,canastas,2026-10-15,,,,0
 205074,canastas,2026-10-15,,,,0
 205075,canastas,2026-10-15,,,,0
