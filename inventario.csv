@@ -142,7 +142,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 205055,canastas,2026-10-15,PE1,piña special 1ra,4,532
 205057,canastas,2026-10-15,PE2,piña special 2da,1.5 - 2.5,507
 205058,canastas,2026-10-15,PE1,piña special 1ra,1,546
-205059,canastas,2026-10-15,PE2,piña special 2da,0.0 - 1.0,497
 205060,canastas,2026-10-15,PE2,piña special 2da,4,497
 205061,canastas,2026-10-15,PIND,piña indstria,1.5 - 2.5,510
 205062,canastas,2026-10-15,PIND,piña indstria,1.5 - 2.5,474
@@ -169,16 +168,15 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 205084,canastas,2026-10-15,PE1,piña special 1ra,0.0 - 1.0,562
 205085,canastas,2026-10-15,PE1,piña special 1ra,1,588
 205086,canastas,2026-10-15,PE2,piña special 2da,3.0 - 4.0,510
-205087,canastas,2026-10-15,PE2,piña special 2da,0.0 - 1.0,530
 205088,canastas,2026-10-15,PE1,piña special 1ra,3.0 - 4.0,576
 205089,canastas,2026-10-15,PE2,piña special 2da,1.5,409
 205090,canastas,2026-10-15,PE1,piña special 1ra,1,567
 205091,canastas,2026-10-15,PE1,piña special 1ra,1.5 - 2.5,587
 205092,canastas,2026-10-15,PE1,piña special 1ra,0.0 - 1.0,578
-205093,canastas,2026-10-15,,,,0
-205094,canastas,2026-10-15,,,,0
-205095,canastas,2026-10-15,,,,0
-205096,canastas,2026-10-15,,,,0
+205093,canastas,2026-10-15,PIND,piña indstria,1.5 - 2.5,537
+205094,canastas,2026-10-15,PE1,piña special 1ra,1.5 - 2.5,569
+205095,canastas,2026-10-15,PE2,piña special 2da,1.5 - 2.5,521
+205096,canastas,2026-10-15,PE3,piña special 3ra,0.0 - 1.0,509
 205097,canastas,2026-10-15,,,,0
 205098,canastas,2026-10-15,,,,0
 205099,canastas,2026-10-15,,,,0
