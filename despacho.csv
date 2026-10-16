@@ -21935,6 +21935,19 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-16,,,local sincelejo,piña special 3ra,PE3,491,21,,0,205020,2026-10-15,0.0 - 1.0,2226,47
 2026-10-16,,,andres ruben oquendo,piña special 3ra,PE3,503,0,,0,205122,2026-10-15,3.0 - 4.0,2126,33
 2026-10-16,,,andres ruben oquendo,piña special 3ra,PE3,355,142,,0,205160,2026-10-15,3.0 - 4.0,2126,33
+2026-10-16,,,andres ruben oquendo,piña indstria,PIND,956,0,,0,205193,2026-10-15,4,2126,46
+2026-10-16,,,andres ruben oquendo,piña indstria,PIND,165,0,,1045,205000,2026-10-14,3.0 - 4.0,2126,46
+2026-10-16,,,andres ruben oquendo,piña indstria,PIND,50,0,,1098,204997,2026-10-14,3.0 - 4.0,2126,46
+2026-10-16,,,andres ruben oquendo,piña indstria,PIND,432,0,,236,204993,2026-10-14,3.0 - 4.0,2126,46
+2026-10-16,,,andres ruben oquendo,piña indstria,PIND,114,0,,723,204996,2026-10-14,3.0 - 4.0,2126,46
+2026-10-16,,,andres ruben oquendo,piña indstria,PIND,78,0,,700,204999,2026-10-14,3.0 - 4.0,2126,46
+2026-10-16,,,andres ruben oquendo,piña indstria,PIND,587,0,,0,205006,2026-10-14,3.0 - 4.0,2126,46
+2026-10-16,,,andres ruben oquendo,piña indstria,PIND,786,0,,433,204995,2026-10-14,3.0 - 4.0,2126,46
+2026-10-16,,,andres ruben oquendo,piña indstria,PIND,509,0,,0,205106,2026-10-15,4,2226,47
+2026-10-16,,,andres ruben oquendo,piña indstria,PIND,540,0,,0,204877,2026-10-14,4,2226,47
+2026-10-16,,,andres ruben oquendo,AD-piña indstria,AD-PIND,274,0,,0,204982,2026-10-14,1.5 - 2.5,2326,52
+2026-10-16,,,andres ruben oquendo,piña indstria,PIND,492,0,,0,205074,2026-10-15,1.5 - 2.5,2226,47
+2026-10-16,,,andres ruben oquendo,piña indstria,PIND,348,0,,170,205027,2026-10-15,1.5 - 2.5,2226,47
 2026-10-16,,,local sincelejo,piña special 2da,PE2,128,0,,0,205169,2026-10-15,1.5 - 2.5,2126,33
 2026-10-16,,,local sincelejo,piña special 2da,PE2,507,0,,0,205037,2026-10-15,1.5 - 2.5,2226,46
 2026-10-16,,,local sincelejo,piña special 2da,PE2,501,0,,0,205119,2026-10-15,1.5 - 2.5,2226,47
@@ -21942,14 +21955,60 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-16,,,local sincelejo,piña special 1ra,PE1,511,291,,0,205129,2026-10-15,1.5 - 2.5,2226,47
 2026-10-16,,,local sincelejo,piña special 3ra,PE3,360,0,,0,205136,2026-10-15,1.5 - 2.5,2126,33
 2026-10-16,,,local sincelejo,Piña AD3,AD3,13,0,,0,205177,2026-10-15,1.5 - 2.5,2726,51
-2026-10-16,,,local sincelejo,piña special 3ra,PE3,394,0,,0,205045,2026-10-15,0.0 - 1.0,2126,33
+2026-10-16,,,local sincelejo,piña special 3ra,PE3,394,116,,0,205045,2026-10-15,0.0 - 1.0,2126,33
+2026-10-16,,,local sincelejo,piña special baby,PEBAB,451,0,,0,205158,2026-10-15,1.5 - 2.5,2126,33
+2026-10-16,,,local sincelejo,piña special baby,PEBAB,382,0,,0,205124,2026-10-15,1.5 - 2.5,2126,33
+2026-10-16,,,local sincelejo,piña special baby,PEBAB,400,267,,0,205064,2026-10-15,1.5 - 2.5,2126,33
+2026-10-16,,,local sincelejo,piña special baby,PEBAB,154,0,,0,204903,2026-10-14,1.5 - 2.5,2126,33
+2026-10-16,,,local sincelejo,piña special baby,PEBAB,349,0,,0,204958,2026-10-14,1.5 - 2.5,2126,33
+2026-10-16,,,local sincelejo,piña special baby,PEBAB,438,0,,0,204898,2026-10-14,1.5 - 2.5,2126,33
+2026-10-16,,,local sincelejo,piña special baby,PEBAB,24,0,,0,204950,2026-10-14,1.5 - 2.5,2126,33
+2026-10-16,,,local sincelejo,Piña ADBABY,ADBABY,31,33,,0,204979,2026-10-14,1.5 - 2.5,3826,78
+2026-10-16,,,descarte,piña indstria,PIND,0,0,,1214,204865,2026-10-13,3.0 - 4.0,2126,46
 2026-10-16,,,KARINA BORJA,piña special 3ra,PE3,498,0,,0,205075,2026-10-15,1.5 - 2.5,2226,47
 2026-10-16,,,KARINA BORJA,piña special 3ra,PE3,366,136,,0,205166,2026-10-15,1.5 - 2.5,2126,33
 2026-10-16,,,KARINA BORJA,piña special 3ra,PE3,502,0,,0,205100,2026-10-15,0.0 - 1.0,2226,47
 2026-10-16,,,KARINA BORJA,Piña AD3,AD3,125,0,,0,205186,2026-10-15,0.0 - 1.0,2626,53
 2026-10-16,,,KARINA BORJA,piña special 3ra,PE3,480,93,,0,205128,2026-10-15,0.0 - 1.0,2226,47
 2026-10-16,,,KARINA BORJA,piña special guapita,PEGUA,469,331,,0,205131,2026-10-15,1.5 - 2.5,2126,33
-2026-10-16,,,donacion,piña indstria,PIND,1038,0,,50,204873,2026-10-13,3.0 - 4.0,2126,46
-2026-10-16,,,donacion,piña indstria,PIND,1180,0,,30,204872,2026-10-13,3.0 - 4.0,2126,46
-2026-10-16,,,donacion,piña indstria,PIND,1192,0,,0,204863,2026-10-13,3.0 - 4.0,2126,46
-2026-10-16,,,donacion,piña indstria,PIND,1207,0,,0,204807,2026-10-13,3.0 - 4.0,2126,46
+2026-10-16,,R-19224,cortesia,piña indstria,PIND,1038,0,,50,204873,2026-10-13,3.0 - 4.0,2126,46
+2026-10-16,,R-19224,cortesia,piña indstria,PIND,1180,0,,30,204872,2026-10-13,3.0 - 4.0,2126,46
+2026-10-16,,R-19224,cortesia,piña indstria,PIND,1192,0,,0,204863,2026-10-13,3.0 - 4.0,2126,46
+2026-10-16,,R-19224,cortesia,piña indstria,PIND,1207,0,,0,204807,2026-10-13,3.0 - 4.0,2126,46
+2026-10-16,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,563,0,,0,205090,2026-10-15,1,2226,46
+2026-10-16,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,569,0,,0,205070,2026-10-15,1,2226,47
+2026-10-16,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,533,0,,20,205073,2026-10-15,1,2226,47
+2026-10-16,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,586,0,,0,205078,2026-10-15,1,2226,47
+2026-10-16,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,556,0,,0,205067,2026-10-15,1,2226,47
+2026-10-16,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,543,0,,0,205022,2026-10-15,1,2226,46
+2026-10-16,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,580,0,,0,205085,2026-10-15,1,2226,47
+2026-10-16,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,563,0,,0,205038,2026-10-15,1,2226,46
+2026-10-16,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,539,0,,0,205058,2026-10-15,1,2226,47
+2026-10-16,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,530,438,,0,205029,2026-10-15,1,2226,47
+2026-10-16,,,jeronimo martins,piña special 2da,PE2,409,0,,0,205089,2026-10-15,1.5,2226,46
+2026-10-16,,,jeronimo martins,piña special 2da,PE2,398,0,,0,205030,2026-10-15,1.5,2226,47
+2026-10-16,,,jeronimo martins,piña special 2da,PE2,442,0,,18,205083,2026-10-15,1.5,2226,47
+2026-10-16,,,jeronimo martins,piña special 2da,PE2,412,347,,0,205018,2026-10-15,1.5,2226,47
+2026-10-16,,,andres ruben oquendo,piña special 2da,PE2,481,0,,0,205046,2026-10-15,3.0 - 4.0,2126,33
+2026-10-16,,,andres ruben oquendo,piña special 2da,PE2,551,0,,0,205151,2026-10-15,3.0 - 4.0,2226,47
+2026-10-16,,,andres ruben oquendo,piña special 2da,PE2,505,0,,0,205086,2026-10-15,3.0 - 4.0,2226,47
+2026-10-16,,,andres ruben oquendo,piña special 2da,PE2,503,0,,0,205032,2026-10-15,3.0 - 4.0,2226,47
+2026-10-16,,,andres ruben oquendo,piña special 2da,PE2,502,361,,0,205121,2026-10-15,3.0 - 4.0,2226,46
+2026-10-16,,,andres ruben oquendo,piña special 1ra,PE1,541,0,,0,205125,2026-10-15,3.0 - 4.0,2226,47
+2026-10-16,,,andres ruben oquendo,piña special 1ra,PE1,571,0,,0,205101,2026-10-15,3.0 - 4.0,2226,46
+2026-10-16,,,andres ruben oquendo,piña special 1ra,PE1,519,0,,0,205170,2026-10-15,3.0 - 4.0,2126,33
+2026-10-16,,,andres ruben oquendo,piña special 1ra,PE1,469,0,,0,205140,2026-10-15,3.0 - 4.0,2126,33
+2026-10-16,,,andres ruben oquendo,piña special 1ra,PE1,535,78,,0,205054,2026-10-15,3.0 - 4.0,2126,33
+2026-10-16,,,andres ruben oquendo,piña indstria,PIND,465,0,,18,205144,2026-10-15,1.5 - 2.5,2126,33
+2026-10-16,,,andres ruben oquendo,piña indstria,PIND,592,0,,0,205076,2026-10-15,1.5 - 2.5,2226,47
+2026-10-16,,,andres ruben oquendo,piña indstria,PIND,464,0,,0,205062,2026-10-15,1.5 - 2.5,2126,33
+2026-10-16,,,andres ruben oquendo,piña indstria,PIND,532,0,,0,205093,2026-10-15,1.5 - 2.5,2226,46
+2026-10-16,,,andres ruben oquendo,piña indstria,PIND,462,0,,0,205145,2026-10-15,1.5 - 2.5,2126,33
+2026-10-16,,,andres ruben oquendo,piña indstria,PIND,482,0,,0,205120,2026-10-15,1.5 - 2.5,2226,47
+2026-10-16,,,andres ruben oquendo,piña indstria,PIND,466,0,,0,205044,2026-10-15,1.5 - 2.5,2126,33
+2026-10-16,,,andres ruben oquendo,piña indstria,PIND,473,0,,0,205048,2026-10-15,1.5 - 2.5,2126,33
+2026-10-16,,,andres ruben oquendo,piña indstria,PIND,503,0,,0,205061,2026-10-15,1.5 - 2.5,2126,33
+2026-10-16,,,andres ruben oquendo,piña indstria,PIND,500,0,,0,205113,2026-10-15,1.5 - 2.5,2226,47
+2026-10-16,,,andres ruben oquendo,piña indstria,PIND,482,0,,0,205139,2026-10-15,1.5 - 2.5,2126,33
+2026-10-16,,,andres ruben oquendo,piña indstria,PIND,473,0,,0,205137,2026-10-15,1.5 - 2.5,2126,33
+2026-10-16,,,profruts s.a.s.,piña special 1ra,PE1,539,0,,0,205019,2026-10-15,0.0 - 1.0,2226,47
