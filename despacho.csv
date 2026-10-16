@@ -22027,6 +22027,9 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-16,,,profruts s.a.s.,piña special 1ra,PE1,603,0,,0,205025,2026-10-15,0.0 - 1.0,2226,47
 2026-10-16,,,profruts s.a.s.,piña special 1ra,PE1,514,0,,0,205077,2026-10-15,0.0 - 1.0,2226,47
 2026-10-16,,,profruts s.a.s.,piña special 1ra,PE1,576,0,,0,205017,2026-10-15,0.0 - 1.0,2226,47
+2026-10-16,,,profruts s.a.s.,piña special 1ra,PE1,550,0,,0,205084,2026-10-15,0.0 - 1.0,2226,47
+2026-10-16,,,profruts s.a.s.,piña special 1ra,PE1,605,0,,0,205153,2026-10-15,0.0 - 1.0,2226,47
+2026-10-16,,,profruts s.a.s.,piña special 1ra,PE1,564,0,,0,205081,2026-10-15,0.0 - 1.0,2226,46
 2026-10-16,,,Andres Garcia,piña special 2da,PE2,502,0,,6,205133,2026-10-15,3.0 - 4.0,2126,33
 2026-10-16,,,Andres Garcia,piña special 2da,PE2,494,0,,0,205138,2026-10-15,4,2126,33
 2026-10-16,,,Andres Garcia,piña special 2da,PE2,486,0,,0,205060,2026-10-15,4,2126,33
@@ -22036,6 +22039,8 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-16,,,Andres Garcia,piña special 2da,PE2,172,0,,0,205253,2026-10-16,3.0 - 4.0,,
 2026-10-16,,,Andres Garcia,piña special 1ra,PE1,516,0,,12,205130,2026-10-15,4,2226,47
 2026-10-16,,,Andres Garcia,piña special 1ra,PE1,483,0,,0,205088,2026-10-15,3.0 - 4.0,2226,47
+2026-10-16,,,Andres Garcia,piña special 1ra,PE1,570,0,,0,205111,2026-10-15,3.0 - 4.0,2226,47
+2026-10-16,,,Andres Garcia,piña special 1ra,PE1,223,0,,0,205189,2026-10-15,4,2126,46
 2026-10-16,,,descarte,piña indstria,PIND,0,0,,1208,204862,2026-10-13,3.0 - 4.0,2126,46
 2026-10-16,,,descarte,piña indstria,PIND,0,0,,1230,204864,2026-10-13,3.0 - 4.0,2126,46
 2026-10-16,,,descarte,piña indstria,PIND,0,0,,1168,204866,2026-10-13,3.0 - 4.0,2126,46
@@ -22044,3 +22049,22 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-16,,,descarte,piña indstria,PIND,0,0,,1171,204869,2026-10-13,3.0 - 4.0,2126,46
 2026-10-16,,,descarte,piña indstria,PIND,0,0,,1213,204870,2026-10-13,3.0 - 4.0,2126,46
 2026-10-16,,,descarte,piña indstria,PIND,0,0,,1107,204871,2026-10-13,3.0 - 4.0,2126,46
+2026-10-16,,,descarte,piña indstria,PIND,0,0,,917,204788,2026-10-13,3.0 - 4.0,2126,33
+2026-10-16,,,descarte,piña indstria,PIND,0,0,,892,204789,2026-10-13,3.0 - 4.0,2126,33
+2026-10-16,,,descarte,piña indstria,PIND,0,0,,959,204790,2026-10-13,3.0 - 4.0,2126,33
+2026-10-16,,,descarte,piña indstria,PIND,0,0,,924,204791,2026-10-13,3.0 - 4.0,2126,33
+2026-10-16,,,descarte,piña indstria,PIND,0,0,,1307,204792,2026-10-13,3.0 - 4.0,2126,46
+2026-10-16,,,descarte,piña indstria,PIND,0,0,,1189,204793,2026-10-13,3.0 - 4.0,2126,46
+2026-10-16,,,descarte,piña indstria,PIND,0,0,,1173,204794,2026-10-13,3.0 - 4.0,2126,46
+2026-10-16,,,descarte,piña indstria,PIND,0,0,,1198,204795,2026-10-13,3.0 - 4.0,2126,46
+2026-10-16,,,descarte,piña indstria,PIND,0,0,,1205,204796,2026-10-13,3.0 - 4.0,2126,46
+2026-10-16,,,descarte,piña indstria,PIND,0,0,,1183,204797,2026-10-13,3.0 - 4.0,2126,46
+2026-10-16,,,descarte,piña indstria,PIND,0,0,,1239,204798,2026-10-13,3.0 - 4.0,2126,46
+2026-10-16,,,descarte,piña indstria,PIND,0,0,,1168,204799,2026-10-13,3.0 - 4.0,2126,46
+2026-10-16,,,descarte,piña indstria,PIND,0,0,,1162,204800,2026-10-13,3.0 - 4.0,2126,46
+2026-10-16,,,descarte,piña indstria,PIND,0,0,,1184,204801,2026-10-13,3.0 - 4.0,2126,46
+2026-10-16,,,descarte,piña indstria,PIND,0,0,,1150,204802,2026-10-13,3.0 - 4.0,2126,46
+2026-10-16,,,descarte,piña indstria,PIND,0,0,,1211,204803,2026-10-13,3.0 - 4.0,2126,46
+2026-10-16,,,descarte,piña indstria,PIND,0,0,,975,204804,2026-10-13,3.0 - 4.0,2126,33
+2026-10-16,,,descarte,piña indstria,PIND,0,0,,882,204805,2026-10-13,3.0 - 4.0,2126,33
+2026-10-16,,,descarte,piña indstria,PIND,0,0,,1170,204806,2026-10-13,3.0 - 4.0,2126,33
