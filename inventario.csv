@@ -1,7 +1,4 @@
 ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
-204612,canastas,2026-10-12,PIND,piña indstria,1.5 - 2.5,427
-204646,canastas,2026-10-12,PE1,piña special 1ra,4,529
-204670,canastas,2026-10-12,PE2,piña special 2da,4,528
 204707,canastas,2026-10-12,PIND,piña indstria,1.5 - 2.5,18
 204721,canastas,2026-10-12,PIND,piña indstria,1.5 - 2.5,498
 204736,canastas,2026-10-13,PIND,piña indstria,1.5 - 2.5,504
@@ -42,7 +39,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 204843,canastas,2026-10-13,AD-PIND,AD-piña indstria,1.5 - 2.5,579
 204858,canastas,2026-10-13,AD-PIND,AD-piña indstria,1.5 - 2.5,371
 204860,canastas,2026-10-13,AD-PIND,AD-piña indstria,1.5 - 2.5,425
-204861,canastas,2026-10-13,AD-PJUG,,3.0 - 4.0,427
 204862,15,2026-10-13,PIND,piña indstria,3.0 - 4.0,1208
 204863,148,2026-10-13,PIND,piña indstria,3.0 - 4.0,1195
 204864,60,2026-10-13,PIND,piña indstria,3.0 - 4.0,1230
@@ -193,30 +189,30 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 205116,canastas,2026-10-15,PEBAB,piña special baby,1.5 - 2.5,428
 205117,canastas,2026-10-15,PE2,piña special 2da,3.0 - 4.0,518
 205118,canastas,2026-10-15,PIND,piña indstria,1.5 - 2.5,575
-205119,canastas,2026-10-15,,,,0
-205120,canastas,2026-10-15,,,,0
-205121,canastas,2026-10-15,,,,0
+205119,canastas,2026-10-15,PE2,piña special 2da,1.5 - 2.5,525
+205120,canastas,2026-10-15,PIND,piña indstria,1.5 - 2.5,487
+205121,canastas,2026-10-15,PE2,piña special 2da,3.0 - 4.0,506
 205122,canastas,2026-10-15,,,,0
 205123,canastas,2026-10-15,,,,0
-205124,,,,,,0
-205125,,,,,,0
-205126,,,,,,0
-205127,,,,,,0
-205128,,,,,,0
-205129,,,,,,0
-205130,,,,,,0
-205131,,,,,,0
-205132,,,,,,0
-205133,,,,,,0
-205134,,,,,,0
-205135,,,,,,0
-205136,,,,,,0
-205137,,,,,,0
-205138,,,,,,0
-205139,,,,,,0
-205140,,,,,,0
-205141,,,,,,0
-205142,,,,,,0
+205124,canastas,2026-10-15,,,,0
+205125,canastas,2026-10-15,,,,0
+205126,canastas,2026-10-15,,,,0
+205127,canastas,2026-10-15,,,,0
+205128,canastas,2026-10-15,,,,0
+205129,canastas,2026-10-15,,,,0
+205130,canastas,2026-10-15,,,,0
+205131,canastas,2026-10-15,,,,0
+205132,canastas,2026-10-15,,,,0
+205133,canastas,2026-10-15,,,,0
+205134,canastas,2026-10-15,,,,0
+205135,canastas,2026-10-15,,,,0
+205136,canastas,2026-10-15,,,,0
+205137,canastas,2026-10-15,,,,0
+205138,canastas,2026-10-15,,,,0
+205139,canastas,2026-10-15,,,,0
+205140,canastas,2026-10-15,,,,0
+205141,canastas,2026-10-15,,,,0
+205142,canastas,2026-10-15,,,,0
 205143,,,,,,0
 205144,,,,,,0
 205145,,,,,,0
