@@ -22031,7 +22031,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-16,,,profruts s.a.s.,piña special 1ra,PE1,605,0,,0,205153,2026-10-15,0.0 - 1.0,2226,47
 2026-10-16,,,profruts s.a.s.,piña special 1ra,PE1,564,0,,0,205081,2026-10-15,0.0 - 1.0,2226,46
 2026-10-16,,,profruts s.a.s.,piña special 1ra,PE1,557,0,,0,205080,2026-10-15,0.0 - 1.0,2226,46
-2026-10-16,,,profruts s.a.s.,piña special 1ra,PE1,547,0,,0,205034,2026-10-15,0.0 - 1.0,2226,47
+2026-10-16,,,profruts s.a.s.,piña special 1ra,PE1,547,190,,0,205034,2026-10-15,0.0 - 1.0,2226,47
 2026-10-16,,,Andres Garcia,piña special 2da,PE2,502,0,,6,205133,2026-10-15,3.0 - 4.0,2126,33
 2026-10-16,,,Andres Garcia,piña special 2da,PE2,494,0,,0,205138,2026-10-15,4,2126,33
 2026-10-16,,,Andres Garcia,piña special 2da,PE2,486,0,,0,205060,2026-10-15,4,2126,33
@@ -22045,6 +22045,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-16,,,Andres Garcia,piña special 1ra,PE1,223,0,,0,205189,2026-10-15,4,2126,46
 2026-10-16,,,Andres Garcia,piña special 1ra,PE1,252,0,,0,205157,2026-10-15,4,2126,33
 2026-10-16,,,Andres Garcia,piña special 1ra,PE1,520,0,,0,205055,2026-10-15,4,2126,33
+2026-10-16,,,Andres Garcia,piña special 1ra,PE1,480,17,,30,205072,2026-10-15,3.0 - 4.0,2226,47
 2026-10-16,,,descarte,piña indstria,PIND,0,0,,1208,204862,2026-10-13,3.0 - 4.0,2126,46
 2026-10-16,,,descarte,piña indstria,PIND,0,0,,1230,204864,2026-10-13,3.0 - 4.0,2126,46
 2026-10-16,,,descarte,piña indstria,PIND,0,0,,1168,204866,2026-10-13,3.0 - 4.0,2126,46
