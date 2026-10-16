@@ -21971,12 +21971,13 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-16,,,local sincelejo,piña special baby,PEBAB,24,0,,0,204950,2026-10-14,1.5 - 2.5,2126,33
 2026-10-16,,,local sincelejo,Piña ADBABY,ADBABY,31,33,,0,204979,2026-10-14,1.5 - 2.5,3826,78
 2026-10-16,,,descarte,piña indstria,PIND,0,0,,1214,204865,2026-10-13,3.0 - 4.0,2126,46
-2026-10-16,,,KARINA BORJA,piña special 3ra,PE3,498,0,,0,205075,2026-10-15,1.5 - 2.5,2226,47
-2026-10-16,,,KARINA BORJA,piña special 3ra,PE3,366,136,,0,205166,2026-10-15,1.5 - 2.5,2126,33
-2026-10-16,,,KARINA BORJA,piña special 3ra,PE3,502,0,,0,205100,2026-10-15,0.0 - 1.0,2226,47
-2026-10-16,,,KARINA BORJA,Piña AD3,AD3,125,0,,0,205186,2026-10-15,0.0 - 1.0,2626,53
-2026-10-16,,,KARINA BORJA,piña special 3ra,PE3,480,93,,0,205128,2026-10-15,0.0 - 1.0,2226,47
-2026-10-16,,,KARINA BORJA,piña special guapita,PEGUA,469,331,,0,205131,2026-10-15,1.5 - 2.5,2126,33
+2026-10-16,,R-19223,KARINA BORJA,piña special 3ra,PE3,498,0,1000,0,205075,2026-10-15,1.5 - 2.5,2226,47
+2026-10-16,,R-19223,KARINA BORJA,piña special 3ra,PE3,366,136,1000,0,205166,2026-10-15,1.5 - 2.5,2126,33
+2026-10-16,,R-19223,KARINA BORJA,,,0,0,1000,0,,,,,
+2026-10-16,,R-19223,KARINA BORJA,piña special 3ra,PE3,502,0,1000,0,205100,2026-10-15,0.0 - 1.0,2226,47
+2026-10-16,,R-19223,KARINA BORJA,Piña AD3,AD3,125,0,1000,0,205186,2026-10-15,0.0 - 1.0,2626,53
+2026-10-16,,R-19223,KARINA BORJA,piña special 3ra,PE3,480,93,1000,0,205128,2026-10-15,0.0 - 1.0,2226,47
+2026-10-16,,R-19223,KARINA BORJA,piña special guapita,PEGUA,469,331,900,0,205131,2026-10-15,1.5 - 2.5,2126,33
 2026-10-16,,R-19224,cortesia,piña indstria,PIND,1038,0,,50,204873,2026-10-13,3.0 - 4.0,2126,46
 2026-10-16,,R-19224,cortesia,piña indstria,PIND,1180,0,,30,204872,2026-10-13,3.0 - 4.0,2126,46
 2026-10-16,,R-19224,cortesia,piña indstria,PIND,1192,0,,0,204863,2026-10-13,3.0 - 4.0,2126,46
@@ -22023,8 +22024,23 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-16,,,profruts s.a.s.,piña special 1ra,PE1,546,0,,0,205135,2026-10-15,0.0 - 1.0,2126,33
 2026-10-16,,,profruts s.a.s.,piña special 1ra,PE1,550,0,,0,205099,2026-10-15,0.0 - 1.0,2226,47
 2026-10-16,,,profruts s.a.s.,piña special 1ra,PE1,542,0,,0,205112,2026-10-15,0.0 - 1.0,2226,47
+2026-10-16,,,profruts s.a.s.,piña special 1ra,PE1,603,0,,0,205025,2026-10-15,0.0 - 1.0,2226,47
+2026-10-16,,,profruts s.a.s.,piña special 1ra,PE1,514,0,,0,205077,2026-10-15,0.0 - 1.0,2226,47
+2026-10-16,,,profruts s.a.s.,piña special 1ra,PE1,576,0,,0,205017,2026-10-15,0.0 - 1.0,2226,47
 2026-10-16,,,Andres Garcia,piña special 2da,PE2,502,0,,6,205133,2026-10-15,3.0 - 4.0,2126,33
 2026-10-16,,,Andres Garcia,piña special 2da,PE2,494,0,,0,205138,2026-10-15,4,2126,33
 2026-10-16,,,Andres Garcia,piña special 2da,PE2,486,0,,0,205060,2026-10-15,4,2126,33
 2026-10-16,,,Andres Garcia,piña special 2da,PE2,212,0,,0,205168,2026-10-15,4,2126,33
 2026-10-16,,,Andres Garcia,piña special 2da,PE2,141,0,,0,205053,2026-10-15,3.0 - 4.0,2126,33
+2026-10-16,,,Andres Garcia,piña special 2da,PE2,518,0,,0,205198,2026-10-16,3.0 - 4.0,,
+2026-10-16,,,Andres Garcia,piña special 2da,PE2,172,0,,0,205253,2026-10-16,3.0 - 4.0,,
+2026-10-16,,,Andres Garcia,piña special 1ra,PE1,516,0,,12,205130,2026-10-15,4,2226,47
+2026-10-16,,,Andres Garcia,piña special 1ra,PE1,483,0,,0,205088,2026-10-15,3.0 - 4.0,2226,47
+2026-10-16,,,descarte,piña indstria,PIND,0,0,,1208,204862,2026-10-13,3.0 - 4.0,2126,46
+2026-10-16,,,descarte,piña indstria,PIND,0,0,,1230,204864,2026-10-13,3.0 - 4.0,2126,46
+2026-10-16,,,descarte,piña indstria,PIND,0,0,,1168,204866,2026-10-13,3.0 - 4.0,2126,46
+2026-10-16,,,descarte,piña indstria,PIND,0,0,,1164,204867,2026-10-13,3.0 - 4.0,2126,46
+2026-10-16,,,descarte,piña indstria,PIND,0,0,,1182,204868,2026-10-13,3.0 - 4.0,2126,46
+2026-10-16,,,descarte,piña indstria,PIND,0,0,,1171,204869,2026-10-13,3.0 - 4.0,2126,46
+2026-10-16,,,descarte,piña indstria,PIND,0,0,,1213,204870,2026-10-13,3.0 - 4.0,2126,46
+2026-10-16,,,descarte,piña indstria,PIND,0,0,,1107,204871,2026-10-13,3.0 - 4.0,2126,46
