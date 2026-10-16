@@ -243,32 +243,32 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 205171,canastas,2026-10-15,PE3,piña special 3ra,0.0 - 1.0,367
 205172,canastas,2026-10-15,PEGUA,piña special guapita,1.5 - 2.5,484
 205173,canastas,2026-10-15,AD1,Piña AD1,0.0 - 1.0,556
-205174,canastas,2026-10-15,,,,0
-205175,canastas,2026-10-15,,,,0
-205176,canastas,2026-10-15,,,,0
-205177,canastas,2026-10-15,,,,0
-205178,canastas,2026-10-15,,,,0
-205179,canastas,2026-10-15,,,,0
-205180,canastas,2026-10-15,,,,0
-205181,canastas,2026-10-15,,,,0
-205182,canastas,2026-10-15,,,,0
-205183,canastas,2026-10-15,,,,0
-205184,canastas,2026-10-15,,,,0
-205185,canastas,2026-10-15,,,,0
-205186,canastas,2026-10-15,,,,0
-205187,canastas,2026-10-15,,,,0
-205188,canastas,2026-10-15,,,,0
-205189,canastas,2026-10-15,,,,0
-205190,canastas,2026-10-15,,,,0
-205191,canastas,2026-10-15,,,,0
-205192,canastas,2026-10-15,,,,0
-205193,canastas,2026-10-15,,,,0
+205174,canastas,2026-10-15,PEBAB,piña special baby,1.5 - 2.5,344
+205175,canastas,2026-10-15,PE1,piña special 1ra,0.0 - 1.0,609
+205176,canastas,2026-10-15,AD1,Piña AD1,0.0 - 1.0,565
+205177,canastas,2026-10-15,AD3,Piña AD3,1.5 - 2.5,14
+205178,canastas,2026-10-15,AD-PJUG,,3.0 - 4.0,427
+205179,canastas,2026-10-15,ADGUA,Piña ADGUA,1.5 - 2.5,25
+205180,canastas,2026-10-15,AD2,Piña AD2,1.5 - 2.5,42
+205181,canastas,2026-10-15,AD1,Piña AD1,0.0 - 1.0,617
+205182,canastas,2026-10-15,AD2,Piña AD2,0.0 - 1.0,532
+205183,canastas,2026-10-15,AD-PJUG,,3.0 - 4.0,13
+205184,canastas,2026-10-15,AD2,Piña AD2,0.0 - 1.0,245
+205185,canastas,2026-10-15,AD1,Piña AD1,1.5 - 2.5,92
+205186,canastas,2026-10-15,AD3,Piña AD3,0.0 - 1.0,125
+205187,canastas,2026-10-15,AD1,Piña AD1,0.0 - 1.0,299
+205188,canastas,2026-10-15,AD-PIND,AD-piña indstria,1.5 - 2.5,173
+205189,canastas,2026-10-15,PE1,piña special 1ra,4,230
+205190,canastas,2026-10-15,PE1,piña special 1ra,1.5 - 2.5,169
+205191,canastas,2026-10-15,PE1,piña special 1ra,0.0 - 1.0,73
+205192,canastas,2026-10-15,PJUG,piña jugos,3.0 - 4.0,342
+205193,48,2026-10-15,PIND,piña indstria,4,1221
 205194,canastas,2026-10-15,,,,0
-205195,canastas,2026-10-15,,,,0
-205196,canastas,2026-10-15,,,,0
-205197,canastas,2026-10-15,,,,0
-205198,canastas,2026-10-15,,,,0
-205199,canastas,2026-10-15,,,,0
+205195,,,,,,0
+205196,,,,,,0
+205197,,,,,,0
+205198,,,,,,0
+205199,,,,,,0
 205200,,,,,,0
 205201,,,,,,0
 205202,,,,,,0
