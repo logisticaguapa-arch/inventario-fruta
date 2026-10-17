@@ -22085,7 +22085,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-16,,,descarte,AD-piña indstria,AD-PIND,0,0,,579,204843,2026-10-13,1.5 - 2.5,3326,78
 2026-10-16,,,descarte,piña special 2da,PE2,0,0,,198,204827,2026-10-13,3.0 - 4.0,2126,33
 2026-10-16,,,descarte,piña indstria,PIND,0,0,,519,204777,2026-10-13,1.5 - 2.5,2126,46
-2026-10-16,,,descarte,piña jugos,PJUG,-1,0,,408,204874,2026-10-13,3.0 - 4.0,2126,46
+2026-10-16,,,descarte,piña jugos,PJUG,0,0,,407,204874,2026-10-13,3.0 - 4.0,2126,46
 2026-10-16,,,descarte,piña special 1ra,PE1,0,0,,546,204815,2026-10-13,4,2126,46
 2026-10-16,,,descarte,piña indstria,PIND,0,0,,537,204787,2026-10-13,1.5 - 2.5,2126,46
 2026-10-16,,,descarte,piña indstria,PIND,0,0,,504,204736,2026-10-13,1.5 - 2.5,2126,33
