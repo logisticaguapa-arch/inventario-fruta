@@ -3538,5 +3538,27 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,42,octubre,2026-10-17,2126,46,6,1126.0,,1126.0,1126.0,Sobre madura campo,PIND
 2026,42,octubre,2026-10-17,2126,46,137,1126.0,,1126.0,1126.0,Sobre madura campo,PIND
 2026,42,octubre,2026-10-17,2126,46,canastas,177.0,,177.0,177.0,Sobre madura campo,PE2
-2026,42,octubre,2026-10-17,2226,47,canastas,2.0,,2.0,2.0,Muestreo,PE1
 2026,42,octubre,2026-10-17,2226,46,canastas,2.0,,2.0,2.0,Muestreo,PE1
+2026,42,octubre,2026-10-17,2226,47,canastas,1.0,,1.0,1.0,Muestreo,PE2
+2026,42,octubre,2026-10-17,2226,46,canastas,7.0,,7.0,7.0,Muestreo,PE2
+2026,42,octubre,2026-10-17,2226,47,canastas,7.0,,7.0,7.0,Muestreo,PE1
+2026,42,octubre,2026-10-17,2126,33,canastas,5.0,,5.0,5.0,Muestreo,PEBAB
+2026,42,octubre,2026-10-17,2126,33,canastas,5.0,,5.0,5.0,Muestreo,PEGUA
+2026,42,octubre,2026-10-17,2126,33,canastas,4.0,,4.0,4.0,Muestreo,PEBAB
+2026,42,octubre,2026-10-17,2226,47,canastas,15.0,,15.0,15.0,Muestreo,PE1
+2026,42,octubre,2026-10-17,2126,33,canastas,2.0,,2.0,2.0,Muestreo,PEBAB
+2026,42,octubre,2026-10-17,2126,33,canastas,59.0,,59.0,59.0,Golpe Despacho,PE1
+2026,42,octubre,2026-10-17,2226,47,canastas,18.0,,18.0,18.0,Daño por reposo,PE1
+2026,42,octubre,2026-10-17,2226,47,canastas,73.0,,73.0,73.0,Daño por reposo,PE1
+2026,42,octubre,2026-10-17,2126,46,canastas,556.0,,556.0,556.0,Sobre madura campo,PE1
+2026,42,octubre,2026-10-17,2126,33,canastas,560.0,,560.0,560.0,Sobre madura campo,PE1
+2026,42,octubre,2026-10-17,2126,33,canastas,554.0,,554.0,554.0,Sobre madura campo,PE1
+2026,42,octubre,2026-10-17,2126,33,canastas,565.0,,565.0,565.0,Sobre madura campo,PE1
+2026,42,octubre,2026-10-17,2126,33,canastas,564.0,,564.0,564.0,Sobre madura campo,PE1
+2026,42,octubre,2026-10-17,2126,33,canastas,616.0,,616.0,616.0,Sobre madura campo,PE1
+2026,42,octubre,2026-10-17,2126,33,canastas,560.0,,560.0,560.0,Sobre madura campo,PE1
+2026,42,octubre,2026-10-17,2126,33,canastas,221.0,,221.0,221.0,Sobre madura campo,PE3
+2026,42,octubre,2026-10-17,2126,33,canastas,62.0,,62.0,62.0,Sobre madura empacadora,PE2
+2026,42,octubre,2026-10-17,2126,33,canastas,370.0,,370.0,370.0,Sobre madura empacadora,PE2
+2026,42,octubre,2026-10-17,2126,46,canastas,106.0,,106.0,106.0,Sobre madura empacadora,PE2
+2026,42,octubre,2026-10-17,2326,52,canastas,302.0,,302.0,302.0,Enferma,AD1
