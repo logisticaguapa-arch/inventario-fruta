@@ -1,6 +1,5 @@
 ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 205066,canastas,2026-10-15,PE1,piña special 1ra,1.5 - 2.5,568
-205082,canastas,2026-10-15,PE1,piña special 1ra,1.5 - 2.5,96
 205091,canastas,2026-10-15,PE1,piña special 1ra,1.5 - 2.5,296
 205154,canastas,2026-10-15,PE3,piña special 3ra,0.0 - 1.0,257
 205183,canastas,2026-10-15,AD-PJUG,AD-PJUG,3.0 - 4.0,13
@@ -10,7 +9,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 205195,canastas,2026-10-16,PE1,piña special 1ra,1.5 - 2.5,348
 205282,canastas,2026-10-16,PE1,piña special 1ra,1.5 - 2.5,541
 205287,canastas,2026-10-16,PE1,piña special 1ra,1.5 - 2.5,548
-205307,canastas,2026-10-16,AD1,Piña AD1,1.5 - 2.5,38
 205318,canastas,2026-10-16,PJUG,piña jugos,3.0 - 4.0,430
 205321,canastas,2026-10-16,PJUG,piña jugos,3.0 - 4.0,267
 205328,canastas,2026-10-18,PE1,piña special 1ra,3.0 - 4.0,558
@@ -81,9 +79,9 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 205394,canastas,2026-10-18,PEGUA,piña special guapita,1.5 - 2.5,478
 205395,canastas,2026-10-18,PE1,piña special 1ra,1.5 - 2.5,575
 205396,canastas,2026-10-18,PE1,piña special 1ra,1,600
-205397,canastas,2026-10-18,,,,0
-205398,canastas,2026-10-18,,,,0
-205399,canastas,2026-10-18,,,,0
+205397,canastas,2026-10-18,PE2,piña special 2da,1.5,403
+205398,canastas,2026-10-18,PE1,piña special 1ra,3.0 - 4.0,553
+205399,canastas,2026-10-18,PE3,piña special 3ra,3.0 - 4.0,519
 205400,canastas,2026-10-18,,,,0
 205401,canastas,2026-10-18,,,,0
 205402,canastas,2026-10-18,,,,0
@@ -92,23 +90,23 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 205405,canastas,2026-10-18,,,,0
 205406,canastas,2026-10-18,,,,0
 205407,canastas,2026-10-18,,,,0
-205408,,,,,,0
-205409,,,,,,0
-205410,,,,,,0
-205411,,,,,,0
-205412,,,,,,0
-205413,,,,,,0
-205414,,,,,,0
-205415,,,,,,0
-205416,,,,,,0
-205417,,,,,,0
-205418,,,,,,0
-205419,,,,,,0
-205420,,,,,,0
-205421,,,,,,0
-205422,,,,,,0
-205423,,,,,,0
-205424,,,,,,0
+205408,canastas,2026-10-18,,,,0
+205409,canastas,2026-10-18,,,,0
+205410,canastas,2026-10-18,,,,0
+205411,canastas,2026-10-18,,,,0
+205412,canastas,2026-10-18,,,,0
+205413,canastas,2026-10-18,,,,0
+205414,canastas,2026-10-18,,,,0
+205415,canastas,2026-10-18,,,,0
+205416,canastas,2026-10-18,,,,0
+205417,canastas,2026-10-18,,,,0
+205418,canastas,2026-10-18,,,,0
+205419,canastas,2026-10-18,,,,0
+205420,canastas,2026-10-18,,,,0
+205421,canastas,2026-10-18,,,,0
+205422,canastas,2026-10-18,,,,0
+205423,canastas,2026-10-18,,,,0
+205424,canastas,2026-10-18,,,,0
 205425,,,,,,0
 205426,,,,,,0
 205427,,,,,,0
