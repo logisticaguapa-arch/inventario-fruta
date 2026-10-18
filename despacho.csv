@@ -22128,19 +22128,19 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-17,,R-19240,local medellin,piña special 1ra,PE1,581,0,3200,0,205269,2026-10-16,1.5 - 2.5,2226,47
 2026-10-17,,R-19240,local medellin,piña special 1ra,PE1,605,253,3200,0,205196,2026-10-16,1.5 - 2.5,2226,46
 2026-10-17,,R-19240,local medellin,,PE2,0,500,3000,0,,,3,,
-2026-10-17,,R-19241,carmen susana hoyos,piña special baby,PEBAB,334,0,,5,205174,2026-10-15,1.5 - 2.5,2126,33
-2026-10-17,,R-19241,carmen susana hoyos,piña special baby,PEBAB,389,0,,0,205134,2026-10-15,1.5 - 2.5,2126,33
-2026-10-17,,R-19241,carmen susana hoyos,piña special baby,PEBAB,424,38,,0,205132,2026-10-15,1.5 - 2.5,2126,33
-2026-10-17,,R-19241,carmen susana hoyos,piña special baby,PEBAB,421,0,,0,205233,2026-10-16,1.5 - 2.5,2126,33
-2026-10-17,,R-19241,carmen susana hoyos,piña special baby,PEBAB,404,0,,0,205232,2026-10-16,1.5 - 2.5,2126,33
-2026-10-17,,R-19241,carmen susana hoyos,piña special baby,PEBAB,414,0,,0,205247,2026-10-16,1.5 - 2.5,2126,33
-2026-10-17,,R-19241,carmen susana hoyos,piña special baby,PEBAB,434,142,,0,205249,2026-10-16,1.5 - 2.5,2126,33
-2026-10-17,,R-19241,carmen susana hoyos,piña special guapita,PEGUA,558,0,,5,205304,2026-10-16,1.5 - 2.5,2126,33
-2026-10-17,,R-19241,carmen susana hoyos,piña special guapita,PEGUA,499,0,,0,205262,2026-10-16,1.5 - 2.5,2226,47
-2026-10-17,,R-19241,carmen susana hoyos,piña special guapita,PEGUA,458,0,,0,205320,2026-10-16,1.5 - 2.5,2126,33
-2026-10-17,,R-19241,carmen susana hoyos,piña special guapita,PEGUA,479,0,,0,205225,2026-10-16,1.5 - 2.5,2126,33
-2026-10-17,,R-19241,carmen susana hoyos,piña special guapita,PEGUA,478,0,,0,205216,2026-10-16,1.5 - 2.5,2226,47
-2026-10-17,,R-19241,carmen susana hoyos,piña special guapita,PEGUA,480,48,,0,205220,2026-10-16,1.5 - 2.5,2126,33
+2026-10-17,46736,R-19241,carmen susana hoyos,piña special baby,PEBAB,334,0,700,5,205174,2026-10-15,1.5 - 2.5,2126,33
+2026-10-17,46736,R-19241,carmen susana hoyos,piña special baby,PEBAB,389,0,700,0,205134,2026-10-15,1.5 - 2.5,2126,33
+2026-10-17,46736,R-19241,carmen susana hoyos,piña special baby,PEBAB,424,38,700,0,205132,2026-10-15,1.5 - 2.5,2126,33
+2026-10-17,46736,R-19241,carmen susana hoyos,piña special baby,PEBAB,421,0,700,0,205233,2026-10-16,1.5 - 2.5,2126,33
+2026-10-17,46736,R-19241,carmen susana hoyos,piña special baby,PEBAB,404,0,700,0,205232,2026-10-16,1.5 - 2.5,2126,33
+2026-10-17,46736,R-19241,carmen susana hoyos,piña special baby,PEBAB,414,0,700,0,205247,2026-10-16,1.5 - 2.5,2126,33
+2026-10-17,46736,R-19241,carmen susana hoyos,piña special baby,PEBAB,434,142,700,0,205249,2026-10-16,1.5 - 2.5,2126,33
+2026-10-17,46736,R-19241,carmen susana hoyos,piña special guapita,PEGUA,558,0,900,5,205304,2026-10-16,1.5 - 2.5,2126,33
+2026-10-17,46736,R-19241,carmen susana hoyos,piña special guapita,PEGUA,499,0,900,0,205262,2026-10-16,1.5 - 2.5,2226,47
+2026-10-17,46736,R-19241,carmen susana hoyos,piña special guapita,PEGUA,458,0,900,0,205320,2026-10-16,1.5 - 2.5,2126,33
+2026-10-17,46736,R-19241,carmen susana hoyos,piña special guapita,PEGUA,479,0,900,0,205225,2026-10-16,1.5 - 2.5,2126,33
+2026-10-17,46736,R-19241,carmen susana hoyos,piña special guapita,PEGUA,478,0,900,0,205216,2026-10-16,1.5 - 2.5,2226,47
+2026-10-17,46736,R-19241,carmen susana hoyos,piña special guapita,PEGUA,480,48,900,0,205220,2026-10-16,1.5 - 2.5,2126,33
 2026-10-17,,R-19242,cartagena,piña special baby,PEBAB,431,0,1500,0,205259,2026-10-16,1.5 - 2.5,2226,47
 2026-10-17,,R-19242,cartagena,piña special baby,PEBAB,363,0,1500,0,205300,2026-10-16,1.5 - 2.5,2126,33
 2026-10-17,,R-19242,cartagena,piña special baby,PEBAB,451,0,1500,4,205235,2026-10-16,1.5 - 2.5,2126,33
@@ -22259,17 +22259,17 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-17,46729,R-19247,jeronimo martins,piña special 1ra,PE1,409,0,3200,0,205237,2026-10-16,1.5,2126,33
 2026-10-17,46729,R-19247,jeronimo martins,piña special 1ra,PE1,415,0,3200,0,205272,2026-10-16,1.5,2226,47
 2026-10-17,46729,R-19247,jeronimo martins,piña special 1ra,PE1,414,203,3200,0,205260,2026-10-16,1.5,2226,47
-2026-10-17,,,reposicion jeronimo,piña special 1ra,PE1,204,57,,0,205252,2026-10-16,1.5,2226,47
-2026-10-17,,R-19250,claudia andrea varela,piña special 1ra,PE1,576,0,3000,0,205258,2026-10-16,1.5 - 2.5,2226,47
-2026-10-17,,,claudia andrea varela,piña special 1ra,PE1,578,0,3000,0,205205,2026-10-16,1.5 - 2.5,2226,46
-2026-10-17,,,claudia andrea varela,piña special 1ra,PE1,563,0,3000,0,205274,2026-10-16,1.5 - 2.5,2226,47
-2026-10-17,,,claudia andrea varela,piña special 1ra,PE1,555,228,3000,0,205219,2026-10-16,1.5 - 2.5,2226,47
-2026-10-17,,,claudia andrea varela,piña special 1ra,PE1,342,0,2700,0,205299,2026-10-16,3.0 - 4.0,2226,47
-2026-10-17,,,claudia andrea varela,piña special 1ra,PE1,547,0,2700,0,205244,2026-10-16,3.0 - 4.0,2126,33
-2026-10-17,,,claudia andrea varela,piña special 1ra,PE1,568,0,2700,0,205255,2026-10-16,3.0 - 4.0,2226,47
-2026-10-17,,,claudia andrea varela,piña special 1ra,PE1,543,0,2700,0,205224,2026-10-16,3.0 - 4.0,2126,33
-2026-10-17,,,claudia andrea varela,piña special 1ra,PE1,218,0,2700,0,205266,2026-10-16,3.0 - 4.0,2226,47
-2026-10-17,,,claudia andrea varela,piña special 1ra,PE1,568,0,2700,0,205200,2026-10-16,3.0 - 4.0,2226,46
+2026-10-17,,R-19251,reposicion jeronimo,piña special 1ra,PE1,204,57,,0,205252,2026-10-16,1.5,2226,47
+2026-10-17,46735,R-19250,claudia andrea varela,piña special 1ra,PE1,576,0,3000,0,205258,2026-10-16,1.5 - 2.5,2226,47
+2026-10-17,46735,R-19250,claudia andrea varela,piña special 1ra,PE1,578,0,3000,0,205205,2026-10-16,1.5 - 2.5,2226,46
+2026-10-17,46735,R-19250,claudia andrea varela,piña special 1ra,PE1,563,0,3000,0,205274,2026-10-16,1.5 - 2.5,2226,47
+2026-10-17,46735,R-19250,claudia andrea varela,piña special 1ra,PE1,555,228,3000,0,205219,2026-10-16,1.5 - 2.5,2226,47
+2026-10-17,46735,R-19250,claudia andrea varela,piña special 1ra,PE1,342,0,2700,0,205299,2026-10-16,3.0 - 4.0,2226,47
+2026-10-17,46735,R-19250,claudia andrea varela,piña special 1ra,PE1,547,0,2700,0,205244,2026-10-16,3.0 - 4.0,2126,33
+2026-10-17,46735,R-19250,claudia andrea varela,piña special 1ra,PE1,568,0,2700,0,205255,2026-10-16,3.0 - 4.0,2226,47
+2026-10-17,46735,R-19250,claudia andrea varela,piña special 1ra,PE1,543,0,2700,0,205224,2026-10-16,3.0 - 4.0,2126,33
+2026-10-17,46735,R-19250,claudia andrea varela,piña special 1ra,PE1,218,0,2700,0,205266,2026-10-16,3.0 - 4.0,2226,47
+2026-10-17,46735,R-19250,claudia andrea varela,piña special 1ra,PE1,568,0,2700,0,205200,2026-10-16,3.0 - 4.0,2226,46
 2026-10-17,,,descarte,piña special 1ra,PE1,0,0,,556,204760,2026-10-13,4,2126,46
 2026-10-17,,,descarte,piña special 1ra,PE1,0,0,,560,204823,2026-10-13,4,2126,33
 2026-10-17,,,descarte,piña special 1ra,PE1,0,0,,554,204909,2026-10-14,4,2126,33
