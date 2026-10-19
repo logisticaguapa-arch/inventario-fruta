@@ -3043,7 +3043,7 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,40,octubre,2026-10-02,2126,33,canastas,16.0,,16.0,16.0,Muestreo,AD1
 2026,40,octubre,2026-10-02,2526,53,canastas,1.0,,1.0,1.0,Muestreo,AD2
 2026,40,octubre,2026-10-02,2026,45,canastas,18.0,,18.0,18.0,Muestreo,PE1
-2026,40,octubre,2026-10-02,2526,53,canastas,16.0,,16.0,16.0,Daño por reposo,AD-PJUG
+2026,40,octubre,2026-10-02,2526,53,canastas,16.0,,16.0,16.0,Sobre madura campo,AD-PJUG
 2026,40,octubre,2026-10-02,2226,47,canastas,34.0,,34.0,34.0,Muestreo,AD1
 2026,40,octubre,2026-10-02,2126,33,canastas,50.0,,50.0,50.0,Golpe Despacho,AD1
 2026,40,octubre,2026-10-02,2026,33,canastas,61.0,,61.0,61.0,Enferma,PE1
@@ -3079,7 +3079,7 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,41,octubre,2026-10-05,2026,33,canastas,4.0,,4.0,4.0,Muestreo,PE1
 2026,41,octubre,2026-10-05,2026,33,canastas,1.0,,1.0,1.0,Muestreo,PE3
 2026,41,octubre,2026-10-05,2826,35,canastas,8.0,,8.0,8.0,Muestreo,AD-PIND
-2026,41,octubre,2026-10-05,2826,35,canastas,50.0,,50.0,50.0,Daño por reposo,AD-PJUG
+2026,41,octubre,2026-10-05,2826,35,canastas,50.0,,50.0,50.0,Sobre madura campo,AD-PJUG
 2026,41,octubre,2026-10-05,2026,33,canastas,2.0,,2.0,2.0,Muestreo,PEGUA
 2026,41,octubre,2026-10-05,2826,35,canastas,13.0,,13.0,13.0,Muestreo,AD1
 2026,41,octubre,2026-10-05,2026,33,canastas,3.0,,3.0,3.0,Muestreo,PE2
@@ -3106,7 +3106,7 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,41,octubre,2026-10-06,2026,45,canastas,2.0,,2.0,2.0,Muestreo,PEBAB
 2026,41,octubre,2026-10-06,2026,45,canastas,1.0,,1.0,1.0,Muestreo,PE3
 2026,41,octubre,2026-10-06,2026,33,canastas,5.0,,5.0,5.0,Muestreo,PE2
-2026,41,octubre,2026-10-06,2026,45,canastas,30.0,,30.0,30.0,Daño por reposo,PJUG
+2026,41,octubre,2026-10-06,2026,45,canastas,30.0,,30.0,30.0,Sobre madura campo,PJUG
 2026,41,octubre,2026-10-06,2026,45,canastas,3.0,,3.0,3.0,Muestreo,PE2
 2026,41,octubre,2026-10-06,2026,45,canastas,11.0,,11.0,11.0,Muestreo,PE2
 2026,41,octubre,2026-10-07,2026,33,canastas,21.0,,21.0,21.0,Enferma,AL-PE1
@@ -3142,7 +3142,7 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,41,octubre,2026-10-07,2826,34,canastas,21.0,,21.0,21.0,Enferma,ADGUA
 2026,41,octubre,2026-10-07,2026,45,canastas,14.0,,14.0,14.0,Muestreo,PE1
 2026,41,octubre,2026-10-07,2026,45,canastas,61.0,,61.0,61.0,Sobre madura empacadora,PE1
-2026,41,octubre,2026-10-07,2026,33,canastas,8.0,,8.0,8.0,,PEGUA
+2026,41,octubre,2026-10-07,2026,33,canastas,8.0,,8.0,8.0,Muestreo,PEGUA
 2026,41,octubre,2026-10-07,2026,45,canastas,2.0,,2.0,2.0,Muestreo,PE3
 2026,41,octubre,2026-10-07,2026,45,canastas,3.0,,3.0,3.0,Muestreo,PE3
 2026,41,octubre,2026-10-07,2026,45,canastas,3.0,,3.0,3.0,Muestreo,PE2
@@ -3151,9 +3151,9 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,41,octubre,2026-10-08,2826,32,canastas,8.0,,8.0,8.0,Muestreo,AD1
 2026,41,octubre,2026-10-08,2026,33,canastas,1.0,,1.0,1.0,Muestreo,PEGUA
 2026,41,octubre,2026-10-08,2026,45,canastas,8.0,,8.0,8.0,Muestreo,PE2
-2026,41,octubre,2026-10-08,2026,45,canastas,26.0,,26.0,26.0,Daño por reposo,PE2
+2026,41,octubre,2026-10-08,2026,45,canastas,26.0,,26.0,26.0,Sobre madura campo,PE2
 2026,41,octubre,2026-10-08,2026,45,canastas,12.0,,12.0,12.0,Muestreo,PE1
-2026,41,octubre,2026-10-08,2026,45,canastas,20.0,,20.0,20.0,Daño por reposo,PE1
+2026,41,octubre,2026-10-08,2026,45,canastas,20.0,,20.0,20.0,Sobre madura campo,PE1
 2026,41,octubre,2026-10-08,2026,33,canastas,3.0,,3.0,3.0,Muestreo,PE2
 2026,41,octubre,2026-10-08,2026,33,canastas,16.0,,16.0,16.0,Muestreo,PE1
 2026,41,octubre,2026-10-08,2026,45,canastas,1.0,,1.0,1.0,Muestreo,PE2
@@ -3219,24 +3219,24 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,41,octubre,2026-10-10,2026,33,canastas,6.0,,6.0,6.0,Muestreo,PE2
 2026,41,octubre,2026-10-10,2126,46,canastas,3.0,,3.0,3.0,Muestreo,PE1
 2026,41,octubre,2026-10-10,2026,33,canastas,10.0,,10.0,10.0,Muestreo,PE1
-2026,41,octubre,2026-10-10,2026,45,canastas,20.0,,20.0,20.0,Daño por reposo,PE1
+2026,41,octubre,2026-10-10,2026,45,canastas,20.0,,20.0,20.0,Sobre madura campo,PE1
 2026,41,octubre,2026-10-10,2026,45,canastas,5.0,,5.0,5.0,Muestreo,PE3
-2026,41,octubre,2026-10-11,2226,46,canastas,454.0,,454.0,454.0,Daño por reposo,AD-PJUG
-2026,41,octubre,2026-10-11,2226,47,canastas,462.0,,462.0,462.0,Daño por reposo,AD-PJUG
-2026,41,octubre,2026-10-11,3126,32,canastas,514.0,,514.0,514.0,Daño por reposo,AD-PJUG
-2026,41,octubre,2026-10-11,2026,45,canastas,555.0,,555.0,555.0,Daño por reposo,PE1
-2026,41,octubre,2026-10-11,3226,32,canastas,496.0,,496.0,496.0,Daño por reposo,AD-PJUG
-2026,41,octubre,2026-10-11,2026,33,canastas,561.0,,561.0,561.0,Daño por reposo,PJUG
-2026,41,octubre,2026-10-11,3226,32,canastas,451.0,,451.0,451.0,Daño por reposo,AD-PJUG
-2026,41,octubre,2026-10-11,3126,32,canastas,455.0,,455.0,455.0,Daño por reposo,AD-PJUG
-2026,41,octubre,2026-10-11,2226,46,canastas,143.0,,143.0,143.0,Daño por reposo,AD-PJUG
-2026,41,octubre,2026-10-11,2026,45,canastas,509.0,,509.0,509.0,Daño por reposo,PE2
-2026,41,octubre,2026-10-11,2026,45,canastas,516.0,,516.0,516.0,Daño por reposo,PE2
-2026,41,octubre,2026-10-11,2026,45,canastas,562.0,,562.0,562.0,Daño por reposo,PE1
-2026,41,octubre,2026-10-11,2026,45,canastas,559.0,,559.0,559.0,Daño por reposo,PE1
-2026,41,octubre,2026-10-11,2026,45,canastas,604.0,,604.0,604.0,Daño por reposo,PE1
-2026,41,octubre,2026-10-11,2026,45,canastas,565.0,,565.0,565.0,Daño por reposo,PE1
-2026,41,octubre,2026-10-11,2026,33,canastas,548.0,,548.0,548.0,Daño por reposo,PE1
+2026,41,octubre,2026-10-11,2226,46,canastas,454.0,,454.0,454.0,Sobre madura campo,AD-PJUG
+2026,41,octubre,2026-10-11,2226,47,canastas,462.0,,462.0,462.0,Sobre madura campo,AD-PJUG
+2026,41,octubre,2026-10-11,3126,32,canastas,514.0,,514.0,514.0,Sobre madura campo,AD-PJUG
+2026,41,octubre,2026-10-11,2026,45,canastas,555.0,,555.0,555.0,Sobre madura campo,PE1
+2026,41,octubre,2026-10-11,3226,32,canastas,496.0,,496.0,496.0,Sobre madura campo,AD-PJUG
+2026,41,octubre,2026-10-11,2026,33,canastas,561.0,,561.0,561.0,Sobre madura campo,PJUG
+2026,41,octubre,2026-10-11,3226,32,canastas,451.0,,451.0,451.0,Sobre madura campo,AD-PJUG
+2026,41,octubre,2026-10-11,3126,32,canastas,455.0,,455.0,455.0,Sobre madura campo,AD-PJUG
+2026,41,octubre,2026-10-11,2226,46,canastas,143.0,,143.0,143.0,Sobre madura campo,AD-PJUG
+2026,41,octubre,2026-10-11,2026,45,canastas,509.0,,509.0,509.0,Sobre madura campo,PE2
+2026,41,octubre,2026-10-11,2026,45,canastas,516.0,,516.0,516.0,Sobre madura campo,PE2
+2026,41,octubre,2026-10-11,2026,45,canastas,562.0,,562.0,562.0,Sobre madura campo,PE1
+2026,41,octubre,2026-10-11,2026,45,canastas,559.0,,559.0,559.0,Sobre madura campo,PE1
+2026,41,octubre,2026-10-11,2026,45,canastas,604.0,,604.0,604.0,Sobre madura campo,PE1
+2026,41,octubre,2026-10-11,2026,45,canastas,565.0,,565.0,565.0,Sobre madura campo,PE1
+2026,41,octubre,2026-10-11,2026,33,canastas,548.0,,548.0,548.0,Sobre madura campo,PE1
 2026,42,octubre,2026-10-12,2126,46,canastas,6.0,,6.0,6.0,Muestreo,PE1
 2026,42,octubre,2026-10-12,2126,46,canastas,5.0,,5.0,5.0,Muestreo,PE2
 2026,42,octubre,2026-10-12,2026,33,canastas,9.0,,9.0,9.0,Muestreo,PE1
@@ -3255,52 +3255,52 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,42,octubre,2026-10-12,2126,46,canastas,3.0,,3.0,3.0,Muestreo,PE3
 2026,42,octubre,2026-10-12,2126,46,canastas,2.0,,2.0,2.0,Muestreo,PE3
 2026,42,octubre,2026-10-12,2026,33,canastas,1.0,,1.0,1.0,Muestreo,PEBAB
-2026,42,octubre,2026-10-12,2026,45,canastas,183.0,,183.0,183.0,Daño por reposo,PE1
-2026,42,octubre,2026-10-12,2026,45,canastas,59.0,,59.0,59.0,Daño por reposo,PE2
-2026,42,octubre,2026-10-12,2026,45,canastas,550.0,,550.0,550.0,Daño por reposo,PE1
-2026,42,octubre,2026-10-12,2026,45,canastas,566.0,,566.0,566.0,Daño por reposo,PE1
-2026,42,octubre,2026-10-12,2026,45,canastas,58.0,,58.0,58.0,Daño por reposo,PE1
-2026,42,octubre,2026-10-12,2026,45,canastas,582.0,,582.0,582.0,Daño por reposo,PE1
-2026,42,octubre,2026-10-12,2026,33,canastas,391.0,,391.0,391.0,Daño por reposo,PE1
-2026,42,octubre,2026-10-12,2026,33,canastas,508.0,,508.0,508.0,Daño por reposo,PE2
+2026,42,octubre,2026-10-12,2026,45,canastas,183.0,,183.0,183.0,Sobre madura campo,PE1
+2026,42,octubre,2026-10-12,2026,45,canastas,59.0,,59.0,59.0,Sobre madura campo,PE2
+2026,42,octubre,2026-10-12,2026,45,canastas,550.0,,550.0,550.0,Sobre madura campo,PE1
+2026,42,octubre,2026-10-12,2026,45,canastas,566.0,,566.0,566.0,Sobre madura campo,PE1
+2026,42,octubre,2026-10-12,2026,45,canastas,58.0,,58.0,58.0,Sobre madura campo,PE1
+2026,42,octubre,2026-10-12,2026,45,canastas,582.0,,582.0,582.0,Sobre madura campo,PE1
+2026,42,octubre,2026-10-12,2026,33,canastas,391.0,,391.0,391.0,Sobre madura campo,PE1
+2026,42,octubre,2026-10-12,2026,33,canastas,508.0,,508.0,508.0,Sobre madura campo,PE2
 2026,42,octubre,2026-10-12,3226,77,canastas,15.0,,15.0,15.0,Muestreo,AD1
 2026,42,octubre,2026-10-12,2126,46,canastas,10.0,,10.0,10.0,Muestreo,PE1
 2026,42,octubre,2026-10-12,2126,46,canastas,14.0,,14.0,14.0,Muestreo,PE2
-2026,42,octubre,2026-10-12,2126,46,canastas,150.0,,150.0,150.0,Daño por reposo,PE2
+2026,42,octubre,2026-10-12,2126,46,canastas,150.0,,150.0,150.0,Sobre madura campo,PE2
 2026,42,octubre,2026-10-12,3426,74,canastas,113.0,,113.0,113.0,Daño por reposo,AD1
 2026,42,octubre,2026-10-12,2026,33,canastas,16.0,,16.0,16.0,Muestreo,PE1
-2026,42,octubre,2026-10-12,2126,46,109,1271.0,,1271.0,1271.0,Daño por reposo,PE1
-2026,42,octubre,2026-10-12,2126,46,88,1496.0,,1496.0,1496.0,Daño por reposo,PE1
-2026,42,octubre,2026-10-12,2126,46,10,1418.0,,1418.0,1418.0,Daño por reposo,PE1
-2026,42,octubre,2026-10-12,2126,46,canastas,575.0,,575.0,575.0,Daño por reposo,PE1
+2026,42,octubre,2026-10-12,2126,46,109,1271.0,,1271.0,1271.0,Sobre madura campo,PE1
+2026,42,octubre,2026-10-12,2126,46,88,1496.0,,1496.0,1496.0,Sobre madura campo,PE1
+2026,42,octubre,2026-10-12,2126,46,10,1418.0,,1418.0,1418.0,Sobre madura campo,PE1
+2026,42,octubre,2026-10-12,2126,46,canastas,575.0,,575.0,575.0,Sobre madura campo,PE1
 2026,42,octubre,2026-10-12,2026,33,canastas,517.0,,517.0,517.0,Sobre madura campo,PE1
-2026,42,octubre,2026-10-12,2126,46,63,150.0,,150.0,150.0,Daño por reposo,PE1
-2026,42,octubre,2026-10-12,2126,46,canastas,26.0,,26.0,26.0,Daño por reposo,PE1
-2026,42,octubre,2026-10-12,2126,46,canastas,180.0,,180.0,180.0,Daño por reposo,PE1
-2026,42,octubre,2026-10-12,2526,77,canastas,455.0,,455.0,455.0,Daño por reposo,AD-PJUG
+2026,42,octubre,2026-10-12,2126,46,63,150.0,,150.0,150.0,Sobre madura campo,PE1
+2026,42,octubre,2026-10-12,2126,46,canastas,26.0,,26.0,26.0,Sobre madura campo,PE1
+2026,42,octubre,2026-10-12,2126,46,canastas,180.0,,180.0,180.0,Sobre madura campo,PE1
+2026,42,octubre,2026-10-12,2526,77,canastas,455.0,,455.0,455.0,Sobre madura campo,AD-PJUG
 2026,42,octubre,2026-10-13,2026,45,canastas,312.0,,312.0,312.0,Sobre madura campo,PE2
 2026,42,octubre,2026-10-13,2126,46,canastas,508.0,,508.0,508.0,Sobre madura campo,PIND
 2026,42,octubre,2026-10-13,2126,46,canastas,523.0,,523.0,523.0,Sobre madura campo,PIND
 2026,42,octubre,2026-10-13,2026,33,canastas,72.0,,72.0,72.0,Sobre madura campo,PE1
 2026,42,octubre,2026-10-13,2226,46,canastas,221.0,,221.0,221.0,Daño por reposo,AD-PIND
 2026,42,octubre,2026-10-13,2126,46,canastas,96.0,,96.0,96.0,Sobre madura campo,PE1
-2026,42,octubre,2026-10-13,2026,33,canastas,567.0,,567.0,567.0,Daño por reposo,PE1
-2026,42,octubre,2026-10-13,2026,33,canastas,551.0,,551.0,551.0,Daño por reposo,PE1
-2026,42,octubre,2026-10-13,2026,45,canastas,478.0,,478.0,478.0,Daño por reposo,PE1
-2026,42,octubre,2026-10-13,2026,45,canastas,504.0,,504.0,504.0,Daño por reposo,PE2
-2026,42,octubre,2026-10-13,2026,45,canastas,570.0,,570.0,570.0,Daño por reposo,PE1
-2026,42,octubre,2026-10-13,2026,45,canastas,566.0,,566.0,566.0,Daño por reposo,PE1
-2026,42,octubre,2026-10-13,2026,45,canastas,564.0,,564.0,564.0,Daño por reposo,PE1
-2026,42,octubre,2026-10-13,2026,45,canastas,530.0,,530.0,530.0,Daño por reposo,PE2
-2026,42,octubre,2026-10-13,2026,45,canastas,582.0,,582.0,582.0,Daño por reposo,PE1
-2026,42,octubre,2026-10-13,2026,45,canastas,473.0,,473.0,473.0,Daño por reposo,PE1
-2026,42,octubre,2026-10-13,2026,33,canastas,518.0,,518.0,518.0,Daño por reposo,PE2
-2026,42,octubre,2026-10-13,2026,45,canastas,533.0,,533.0,533.0,Daño por reposo,PE2
-2026,42,octubre,2026-10-13,2026,33,canastas,555.0,,555.0,555.0,Daño por reposo,PE1
-2026,42,octubre,2026-10-13,2026,33,canastas,481.0,,481.0,481.0,Daño por reposo,PE2
-2026,42,octubre,2026-10-13,2026,45,canastas,462.0,,462.0,462.0,Daño por reposo,PE2
+2026,42,octubre,2026-10-13,2026,33,canastas,567.0,,567.0,567.0,Sobre madura campo,PE1
+2026,42,octubre,2026-10-13,2026,33,canastas,551.0,,551.0,551.0,Sobre madura campo,PE1
+2026,42,octubre,2026-10-13,2026,45,canastas,478.0,,478.0,478.0,Sobre madura campo,PE1
+2026,42,octubre,2026-10-13,2026,45,canastas,504.0,,504.0,504.0,Sobre madura campo,PE2
+2026,42,octubre,2026-10-13,2026,45,canastas,570.0,,570.0,570.0,Sobre madura campo,PE1
+2026,42,octubre,2026-10-13,2026,45,canastas,566.0,,566.0,566.0,Sobre madura campo,PE1
+2026,42,octubre,2026-10-13,2026,45,canastas,564.0,,564.0,564.0,Sobre madura campo,PE1
+2026,42,octubre,2026-10-13,2026,45,canastas,530.0,,530.0,530.0,Sobre madura campo,PE2
+2026,42,octubre,2026-10-13,2026,45,canastas,582.0,,582.0,582.0,Sobre madura campo,PE1
+2026,42,octubre,2026-10-13,2026,45,canastas,473.0,,473.0,473.0,Sobre madura campo,PE1
+2026,42,octubre,2026-10-13,2026,33,canastas,518.0,,518.0,518.0,Sobre madura campo,PE2
+2026,42,octubre,2026-10-13,2026,45,canastas,533.0,,533.0,533.0,Sobre madura campo,PE2
+2026,42,octubre,2026-10-13,2026,33,canastas,555.0,,555.0,555.0,Sobre madura campo,PE1
+2026,42,octubre,2026-10-13,2026,33,canastas,481.0,,481.0,481.0,Sobre madura campo,PE2
+2026,42,octubre,2026-10-13,2026,45,canastas,462.0,,462.0,462.0,Sobre madura campo,PE2
 2026,42,octubre,2026-10-13,2026,33,canastas,141.0,,141.0,141.0,Sobre madura campo,PE1
-2026,42,octubre,2026-10-13,2026,45,canastas,242.0,,242.0,242.0,Daño por reposo,PE1
+2026,42,octubre,2026-10-13,2026,45,canastas,242.0,,242.0,242.0,Sobre madura campo,PE1
 2026,42,octubre,2026-10-13,2026,33,canastas,562.0,,562.0,562.0,Sobre madura campo,PE1
 2026,42,octubre,2026-10-13,2026,45,canastas,540.0,,540.0,540.0,Sobre madura campo,PE1
 2026,42,octubre,2026-10-13,2026,33,canastas,524.0,,524.0,524.0,Sobre madura campo,PE2
@@ -3346,22 +3346,22 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,42,octubre,2026-10-13,2026,33,canastas,498.0,,498.0,498.0,Sobre madura campo,PIND
 2026,42,octubre,2026-10-13,2026,45,canastas,578.0,,578.0,578.0,Sobre madura campo,PE1
 2026,42,octubre,2026-10-13,2026,45,canastas,560.0,,560.0,560.0,Sobre madura campo,PE1
-2026,42,octubre,2026-10-13,2026,45,canastas,579.0,,579.0,579.0,Daño por reposo,PE1
-2026,42,octubre,2026-10-13,2026,45,canastas,578.0,,578.0,578.0,Daño por reposo,PE1
+2026,42,octubre,2026-10-13,2026,45,canastas,579.0,,579.0,579.0,Sobre madura campo,PE1
+2026,42,octubre,2026-10-13,2026,45,canastas,578.0,,578.0,578.0,Sobre madura campo,PE1
 2026,42,octubre,2026-10-13,2126,46,canastas,184.0,,184.0,184.0,Daño por reposo,PIND
-2026,42,octubre,2026-10-13,2026,45,canastas,499.0,,499.0,499.0,Daño por reposo,PE1
-2026,42,octubre,2026-10-13,2026,45,canastas,577.0,,577.0,577.0,Daño por reposo,PE1
-2026,42,octubre,2026-10-13,2026,45,canastas,494.0,,494.0,494.0,Daño por reposo,PE1
+2026,42,octubre,2026-10-13,2026,45,canastas,499.0,,499.0,499.0,Sobre madura campo,PE1
+2026,42,octubre,2026-10-13,2026,45,canastas,577.0,,577.0,577.0,Sobre madura campo,PE1
+2026,42,octubre,2026-10-13,2026,45,canastas,494.0,,494.0,494.0,Sobre madura campo,PE1
 2026,42,octubre,2026-10-13,2126,46,canastas,281.0,,281.0,281.0,Daño por reposo,PIND
-2026,42,octubre,2026-10-13,2026,33,canastas,525.0,,525.0,525.0,Daño por reposo,PE1
+2026,42,octubre,2026-10-13,2026,33,canastas,525.0,,525.0,525.0,Sobre madura campo,PE1
 2026,42,octubre,2026-10-13,2026,33,canastas,494.0,,494.0,494.0,Daño por reposo,PIND
-2026,42,octubre,2026-10-13,2026,33,canastas,114.0,,114.0,114.0,Daño por reposo,PE1
-2026,42,octubre,2026-10-13,2026,45,canastas,566.0,,566.0,566.0,Daño por reposo,PE1
-2026,42,octubre,2026-10-13,2026,45,canastas,475.0,,475.0,475.0,Daño por reposo,PE1
+2026,42,octubre,2026-10-13,2026,33,canastas,114.0,,114.0,114.0,Sobre madura campo,PE1
+2026,42,octubre,2026-10-13,2026,45,canastas,566.0,,566.0,566.0,Sobre madura campo,PE1
+2026,42,octubre,2026-10-13,2026,45,canastas,475.0,,475.0,475.0,Sobre madura campo,PE1
 2026,42,octubre,2026-10-13,2126,33,canastas,6.0,,6.0,6.0,Muestreo,PE3
 2026,42,octubre,2026-10-13,2126,46,canastas,9.0,,9.0,9.0,Muestreo,PE2
 2026,42,octubre,2026-10-13,2126,46,canastas,33.0,,33.0,33.0,Enferma,PE2
-2026,42,octubre,2026-10-13,2126,46,122,213.0,,213.0,213.0,Daño por reposo,PE1
+2026,42,octubre,2026-10-13,2126,46,122,213.0,,213.0,213.0,Sobre madura campo,PE1
 2026,42,octubre,2026-10-13,2126,46,116,11.0,,11.0,11.0,Muestreo,PE1
 2026,42,octubre,2026-10-13,2126,46,canastas,6.0,,6.0,6.0,Enferma,PIND
 2026,42,octubre,2026-10-13,2126,33,canastas,4.0,,4.0,4.0,Muestreo,PE2
@@ -3373,21 +3373,21 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,42,octubre,2026-10-13,2126,46,canastas,8.0,,8.0,8.0,Muestreo,PEGUA
 2026,42,octubre,2026-10-13,2126,33,canastas,11.0,,11.0,11.0,Muestreo,PE1
 2026,42,octubre,2026-10-13,2126,46,canastas,6.0,,6.0,6.0,Muestreo,PE2
-2026,42,octubre,2026-10-13,2026,33,142,230.0,,230.0,230.0,Daño por reposo,PE2
-2026,42,octubre,2026-10-13,2026,33,24,204.0,,204.0,204.0,Daño por reposo,PE1
-2026,42,octubre,2026-10-13,2026,33,42,1486.0,,1486.0,1486.0,Daño por reposo,PE2
-2026,42,octubre,2026-10-13,2126,46,137,1171.0,,1171.0,1171.0,Daño por reposo,PE2
-2026,42,octubre,2026-10-13,2026,33,14,325.0,,325.0,325.0,Daño por reposo,PE2
-2026,42,octubre,2026-10-13,2126,46,94,539.0,,539.0,539.0,Daño por reposo,PE1
+2026,42,octubre,2026-10-13,2026,33,142,230.0,,230.0,230.0,Sobre madura campo,PE2
+2026,42,octubre,2026-10-13,2026,33,24,204.0,,204.0,204.0,Sobre madura campo,PE1
+2026,42,octubre,2026-10-13,2026,33,42,1486.0,,1486.0,1486.0,Sobre madura campo,PE2
+2026,42,octubre,2026-10-13,2126,46,137,1171.0,,1171.0,1171.0,Sobre madura campo,PE2
+2026,42,octubre,2026-10-13,2026,33,14,325.0,,325.0,325.0,Sobre madura campo,PE2
+2026,42,octubre,2026-10-13,2126,46,94,539.0,,539.0,539.0,Sobre madura campo,PE1
 2026,42,octubre,2026-10-13,2126,46,26,10.0,,10.0,10.0,Muestreo,PE1
-2026,42,octubre,2026-10-13,2126,46,canastas,12.0,,12.0,12.0,Daño por reposo,PE3
+2026,42,octubre,2026-10-13,2126,46,canastas,12.0,,12.0,12.0,Sobre madura campo,PE3
 2026,42,octubre,2026-10-13,2126,33,canastas,455.0,,455.0,455.0,Daño por reposo,PIND
-2026,42,octubre,2026-10-13,2126,46,canastas,200.0,,200.0,200.0,Daño por reposo,PJUG
-2026,42,octubre,2026-10-13,2126,46,canastas,100.0,,100.0,100.0,Daño por reposo,PE1
-2026,42,octubre,2026-10-13,2126,46,83,40.0,,40.0,40.0,Daño por reposo,PE2
-2026,42,octubre,2026-10-13,2326,52,canastas,535.0,,535.0,535.0,Daño por reposo,AD-PJUG
-2026,42,octubre,2026-10-13,2126,46,canastas,468.0,,468.0,468.0,Daño por reposo,PJUG
-2026,42,octubre,2026-10-13,2326,77,canastas,148.0,,148.0,148.0,Daño por reposo,AD-PJUG
+2026,42,octubre,2026-10-13,2126,46,canastas,200.0,,200.0,200.0,Sobre madura campo,PJUG
+2026,42,octubre,2026-10-13,2126,46,canastas,100.0,,100.0,100.0,Sobre madura campo,PE1
+2026,42,octubre,2026-10-13,2126,46,83,40.0,,40.0,40.0,Sobre madura campo,PE2
+2026,42,octubre,2026-10-13,2326,52,canastas,535.0,,535.0,535.0,Sobre madura campo,AD-PJUG
+2026,42,octubre,2026-10-13,2126,46,canastas,468.0,,468.0,468.0,Sobre madura campo,PJUG
+2026,42,octubre,2026-10-13,2326,77,canastas,148.0,,148.0,148.0,Sobre madura campo,AD-PJUG
 2026,42,octubre,2026-10-14,2126,46,canastas,5.0,,5.0,5.0,Muestreo,PE2
 2026,42,octubre,2026-10-14,2126,46,canastas,12.0,,12.0,12.0,Muestreo,PE2
 2026,42,octubre,2026-10-14,2126,33,canastas,19.0,,19.0,19.0,Muestreo,PE1
@@ -3404,7 +3404,7 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,42,octubre,2026-10-14,2126,46,canastas,26.0,,26.0,26.0,Sobre madura empacadora,PE2
 2026,42,octubre,2026-10-14,2126,46,canastas,40.0,,40.0,40.0,Sobre madura empacadora,PE1
 2026,42,octubre,2026-10-14,2126,46,canastas,8.0,,8.0,8.0,Muestreo,PE2
-2026,42,octubre,2026-10-14,2126,46,29,45.0,,45.0,45.0,Daño por reposo,PE1
+2026,42,octubre,2026-10-14,2126,46,29,45.0,,45.0,45.0,Sobre madura campo,PE1
 2026,42,octubre,2026-10-14,2126,33,canastas,11.0,,11.0,11.0,Muestreo,PE1
 2026,42,octubre,2026-10-14,2126,46,canastas,10.0,,10.0,10.0,Muestreo,PE1
 2026,42,octubre,2026-10-14,2126,46,11,1303.0,,1303.0,1303.0,Sobre madura campo,PE1
@@ -3422,14 +3422,14 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,42,octubre,2026-10-15,2126,46,canastas,18.0,,18.0,18.0,Muestreo,PE1
 2026,42,octubre,2026-10-15,2126,46,canastas,24.0,,24.0,24.0,Enferma,PE1
 2026,42,octubre,2026-10-15,2126,46,canastas,345.0,,345.0,345.0,Sobre madura campo,PE1
-2026,42,octubre,2026-10-15,2126,46,48,199.0,,199.0,199.0,Daño por reposo,PE1
+2026,42,octubre,2026-10-15,2126,46,48,199.0,,199.0,199.0,Sobre madura campo,PE1
 2026,42,octubre,2026-10-15,2226,47,canastas,16.0,,16.0,16.0,Muestreo,PE1
 2026,42,octubre,2026-10-15,2126,33,canastas,3.0,,3.0,3.0,Muestreo,PE3
 2026,42,octubre,2026-10-15,2126,33,canastas,6.0,,6.0,6.0,Muestreo,PE1
 2026,42,octubre,2026-10-15,2126,46,canastas,2.0,,2.0,2.0,Muestreo,PEBAB
 2026,42,octubre,2026-10-15,2326,52,canastas,3.0,,3.0,3.0,Muestreo,ADGUA
 2026,42,octubre,2026-10-15,2126,33,canastas,5.0,,5.0,5.0,Muestreo,PE2
-2026,42,octubre,2026-10-15,2126,46,67,93.0,,93.0,93.0,Daño por reposo,PIND
+2026,42,octubre,2026-10-15,2126,46,67,93.0,,93.0,93.0,Sobre madura campo,PIND
 2026,42,octubre,2026-10-15,2226,47,canastas,120.0,,120.0,120.0,Sobre madura empacadora,PIND
 2026,42,octubre,2026-10-15,2126,46,canastas,3.0,,3.0,3.0,Muestreo,PE3
 2026,42,octubre,2026-10-15,2126,33,canastas,7.0,,7.0,7.0,Sobre madura empacadora,PE2
@@ -3475,8 +3475,8 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,42,octubre,2026-10-16,2226,47,canastas,170.0,,170.0,170.0,Golpe Despacho,PIND
 2026,42,octubre,2026-10-16,2226,47,canastas,150.0,,150.0,150.0,Golpe Despacho,PIND
 2026,42,octubre,2026-10-16,2126,46,146,1214.0,,1214.0,1214.0,Sobre madura campo,PIND
-2026,42,octubre,2026-10-16,2126,46,102,50.0,,50.0,50.0,Daño por reposo,PIND
-2026,42,octubre,2026-10-16,2126,46,79,30.0,,30.0,30.0,Daño por reposo,PIND
+2026,42,octubre,2026-10-16,2126,46,102,50.0,,50.0,50.0,Sobre madura campo,PIND
+2026,42,octubre,2026-10-16,2126,46,79,30.0,,30.0,30.0,Sobre madura campo,PIND
 2026,42,octubre,2026-10-16,2226,47,canastas,20.0,,20.0,20.0,Muestreo,PE1
 2026,42,octubre,2026-10-16,2226,47,canastas,18.0,,18.0,18.0,Muestreo,PE2
 2026,42,octubre,2026-10-16,2126,33,canastas,18.0,,18.0,18.0,Muestreo,PIND
@@ -3484,14 +3484,14 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,42,octubre,2026-10-16,2226,46,canastas,20.0,,20.0,20.0,Muestreo,PE1
 2026,42,octubre,2026-10-16,2126,33,canastas,6.0,,6.0,6.0,Muestreo,PE2
 2026,42,octubre,2026-10-16,2226,47,canastas,12.0,,12.0,12.0,Muestreo,PE1
-2026,42,octubre,2026-10-16,2226,47,canastas,30.0,,30.0,30.0,Daño por reposo,PE1
+2026,42,octubre,2026-10-16,2226,47,canastas,30.0,,30.0,30.0,Sobre madura campo,PE1
 2026,42,octubre,2026-10-16,2126,46,15,1208.0,,1208.0,1208.0,Sobre madura campo,PIND
 2026,42,octubre,2026-10-16,2126,46,60,1230.0,,1230.0,1230.0,Sobre madura campo,PIND
 2026,42,octubre,2026-10-16,2126,46,116,1168.0,,1168.0,1168.0,Sobre madura campo,PIND
 2026,42,octubre,2026-10-16,2126,46,13,1164.0,,1164.0,1164.0,Sobre madura campo,PIND
 2026,42,octubre,2026-10-16,2126,46,64,1182.0,,1182.0,1182.0,Sobre madura campo,PIND
 2026,42,octubre,2026-10-16,2126,46,149,1171.0,,1171.0,1171.0,Sobre madura campo,PIND
-2026,42,octubre,2026-10-16,2126,46,80,1213.0,,1213.0,1213.0,,PIND
+2026,42,octubre,2026-10-16,2126,46,80,1213.0,,1213.0,1213.0,Sobre madura campo,PIND
 2026,42,octubre,2026-10-16,2126,46,123,1107.0,,1107.0,1107.0,Sobre madura campo,PIND
 2026,42,octubre,2026-10-16,2126,33,117,917.0,,917.0,917.0,Sobre madura campo,PIND
 2026,42,octubre,2026-10-16,2126,33,95,892.0,,892.0,892.0,Sobre madura campo,PIND
@@ -3548,10 +3548,10 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,42,octubre,2026-10-17,2226,47,canastas,15.0,,15.0,15.0,Muestreo,PE1
 2026,42,octubre,2026-10-17,2126,33,canastas,2.0,,2.0,2.0,Muestreo,PEBAB
 2026,42,octubre,2026-10-17,2126,33,canastas,59.0,,59.0,59.0,Golpe Despacho,PE1
-2026,42,octubre,2026-10-17,2226,47,canastas,18.0,,18.0,18.0,Daño por reposo,PE1
-2026,42,octubre,2026-10-17,2226,46,canastas,10.0,,10.0,10.0,Daño por reposo,PE1
-2026,42,octubre,2026-10-17,2226,47,canastas,73.0,,73.0,73.0,Daño por reposo,PE1
-2026,42,octubre,2026-10-17,2126,33,canastas,53.0,,53.0,53.0,,PIND
+2026,42,octubre,2026-10-17,2226,47,canastas,18.0,,18.0,18.0,Sobre madura campo,PE1
+2026,42,octubre,2026-10-17,2226,46,canastas,10.0,,10.0,10.0,Sobre madura campo,PE1
+2026,42,octubre,2026-10-17,2226,47,canastas,73.0,,73.0,73.0,Sobre madura campo,PE1
+2026,42,octubre,2026-10-17,2126,33,canastas,53.0,,53.0,53.0,Enferma,PIND
 2026,42,octubre,2026-10-17,2126,46,canastas,556.0,,556.0,556.0,Sobre madura campo,PE1
 2026,42,octubre,2026-10-17,2126,33,canastas,560.0,,560.0,560.0,Sobre madura campo,PE1
 2026,42,octubre,2026-10-17,2126,33,canastas,554.0,,554.0,554.0,Sobre madura campo,PE1
@@ -3568,4 +3568,4 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,42,octubre,2026-10-18,2126,46,canastas,342.0,,342.0,342.0,Sobre madura campo,PJUG
 2026,42,octubre,2026-10-18,2226,47,canastas,257.0,,257.0,257.0,Daño animal,PE3
 2026,42,octubre,2026-10-18,2126,33,canastas,430.0,,430.0,430.0,Sobre madura campo,PJUG
-2026,42,octubre,2026-10-18,2626,53,canastas,13.0,,13.0,13.0,Daño por reposo,AD-PJUG
+2026,42,octubre,2026-10-18,2626,53,canastas,13.0,,13.0,13.0,Sobre madura campo,AD-PJUG
