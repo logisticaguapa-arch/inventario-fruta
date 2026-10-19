@@ -22413,7 +22413,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-19,,,camilo quiñones,piña special 3ra,PE3,64,0,,0,205476,2026-10-18,3.0 - 4.0,2226,47
 2026-10-19,,,camilo quiñones,piña special 2da,PE2,496,0,,0,205345,2026-10-18,3.0 - 4.0,2226,46
 2026-10-19,,,camilo quiñones,piña special 2da,PE2,513,0,,5,205357,2026-10-18,3.0 - 4.0,2226,46
-2026-10-19,,,camilo quiñones,piña special 2da,PE2,506,0,,0,205367,2026-10-18,3.0 - 4.0,2226,47
+2026-10-19,,,camilo quiñones,piña special 2da,PE2,491,0,,15,205367,2026-10-18,3.0 - 4.0,2226,47
 2026-10-19,,,camilo quiñones,piña special 1ra,PE1,543,0,,0,205465,2026-10-18,3.0 - 4.0,2226,46
 2026-10-19,,,camilo quiñones,piña special 1ra,PE1,542,415,,6,205398,2026-10-18,3.0 - 4.0,2226,47
 2026-10-19,,,camilo quiñones,piña indstria,PIND,535,0,,9,205482,2026-10-18,1.5 - 2.5,2226,47
@@ -22437,6 +22437,8 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-19,,,Alimentos S.A.S,piña indstria,PIND,377,0,,0,205506,2026-10-18,1.5 - 2.5,2226,46
 2026-10-19,,,Alimentos S.A.S,piña indstria,PIND,432,0,,0,205351,2026-10-18,1.5 - 2.5,2226,46
 2026-10-19,,,Alimentos S.A.S,piña indstria,PIND,464,0,,0,205391,2026-10-18,1.5 - 2.5,2226,47
+2026-10-19,,,Alimentos S.A.S,piña indstria,PIND,445,0,,0,205381,2026-10-18,1.5 - 2.5,2226,47
+2026-10-19,,,Alimentos S.A.S,AD-piña indstria,AD-PIND,205,0,,0,205518,2026-10-18,1.5 - 2.5,3826,83
 2026-10-19,,,Alimentos S.A.S,piña special 1ra,PE1,545,0,,0,205373,2026-10-18,3.0 - 4.0,2226,47
 2026-10-19,,,Alimentos S.A.S,piña special 1ra,PE1,548,0,,0,205365,2026-10-18,3.0 - 4.0,2226,47
 2026-10-19,,,Alimentos S.A.S,piña special 1ra,PE1,525,0,,0,205362,2026-10-18,3.0 - 4.0,2226,46
@@ -22445,6 +22447,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-19,,,Alimentos S.A.S,piña special 1ra,PE1,545,0,,0,205387,2026-10-18,3.0 - 4.0,2226,47
 2026-10-19,,,Alimentos S.A.S,piña special 1ra,PE1,537,0,,0,205442,2026-10-18,3.0 - 4.0,2226,46
 2026-10-19,,,Alimentos S.A.S,piña special 1ra,PE1,545,0,,0,205456,2026-10-18,3.0 - 4.0,2226,46
+2026-10-19,,,Alimentos S.A.S,piña special 1ra,PE1,338,0,,0,205503,2026-10-18,3.0 - 4.0,2226,46
 2026-10-19,,,jeronimo martins,piña special 2da,PE2,467,0,,0,205486,2026-10-18,1.5,2226,46
 2026-10-19,,,jeronimo martins,piña special 2da,PE2,414,0,,0,205432,2026-10-18,1.5,2226,46
 2026-10-19,,,jeronimo martins,piña special 1ra,PE1,401,0,,0,205448,2026-10-18,1.5,2226,46
