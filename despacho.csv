@@ -22233,7 +22233,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-17,46734,R-19248,andres ruben oquendo,piña special 1ra,PE1,621,0,2500,0,205286,2026-10-16,3.0 - 4.0,2226,47
 2026-10-17,46734,R-19248,andres ruben oquendo,piña special 1ra,PE1,560,0,2500,0,205215,2026-10-16,3.0 - 4.0,2226,47
 2026-10-17,46734,R-19248,andres ruben oquendo,piña special 1ra,PE1,562,0,2500,10,205194,2026-10-16,3.0 - 4.0,2226,46
-2026-10-17,46734,R-19248,andres ruben oquendo,piña special 1ra,PE1,536,0,2500,73,205208,2026-10-16,3.0 - 4.0,2226,47
+2026-10-17,46734,R-19248,andres ruben oquendo,piña special 1ra,PE1,546,0,2500,63,205208,2026-10-16,3.0 - 4.0,2226,47
 2026-10-17,46734,R-19248,andres ruben oquendo,piña special 1ra,PE1,358,0,2500,0,205291,2026-10-16,4,2226,46
 2026-10-17,46734,R-19248,andres ruben oquendo,piña special 1ra,PE1,520,32,2500,0,205242,2026-10-16,4,2126,33
 2026-10-17,46733,R-19249,Aldinsen Gonzalez,AD-piña indstria,AD-PIND,562,0,1500,0,204838,2026-10-13,1.5 - 2.5,3726,78
@@ -22368,7 +22368,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-19,,R-19261,local sincelejo,piña special 2da,PE2,516,484,1000,3,205460,2026-10-18,3.0 - 4.0,2226,46
 2026-10-19,,R-19261,local sincelejo,piña special 3ra,PE3,518,482,2200,3,205488,2026-10-18,1.5 - 2.5,2226,46
 2026-10-19,,R-19261,local sincelejo,piña special guapita,PEGUA,471,0,1000,4,205394,2026-10-18,1.5 - 2.5,2226,47
-2026-10-19,,R-19261,local sincelejo,piña special guapita,PEGUA,448,66,1000,15,205366,2026-10-18,1.5 - 2.5,2226,47
+2026-10-19,,R-19261,local sincelejo,piña special guapita,PEGUA,463,66,1000,0,205366,2026-10-18,1.5 - 2.5,2226,47
 2026-10-19,,R-19261,local sincelejo,,PE1,0,500,2800,0,,,2,,
 2026-10-19,46760,R-19262,andres ruben oquendo,piña special 3ra,PE3,500,0,1100,3,205354,2026-10-18,3.0 - 4.0,2226,46
 2026-10-19,46760,R-19262,andres ruben oquendo,piña special 3ra,PE3,358,142,1100,0,205497,2026-10-18,3.0 - 4.0,2226,46
@@ -22476,3 +22476,37 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-19,46766,R-19272,jeronimo martins,piña special 2da,PE2,398,0,3100,0,205441,2026-10-18,1.5,2226,46
 2026-10-19,46766,R-19272,jeronimo martins,piña special 2da,PE2,412,0,3100,0,205470,2026-10-18,1.5,2226,46
 2026-10-19,46766,R-19272,jeronimo martins,piña special 2da,PE2,373,301,3100,0,205493,2026-10-18,1.5,2226,47
+2026-10-20,,,local apartado,piña special 1ra,PE1,658,0,,0,205671,2026-10-19,0.0 - 1.0,2226,47
+2026-10-20,,,local apartado,Piña AD1,AD1,564,378,,6,205695,2026-10-19,0.0 - 1.0,2826,34
+2026-10-20,,,local apartado,piña special guapita,PEGUA,475,0,,2,205617,2026-10-19,1.5 - 2.5,2226,33
+2026-10-20,,,local apartado,piña special guapita,PEGUA,480,45,,0,205634,2026-10-19,1.5 - 2.5,2226,46
+2026-10-20,,,local apartado,piña special 2da,PE2,456,204,,2,205666,2026-10-19,0.0 - 1.0,2226,47
+2026-10-20,,,local medellin,piña special 2da,PE2,521,0,,5,205649,2026-10-19,1.5 - 2.5,2226,46
+2026-10-20,,,local medellin,piña special 2da,PE2,504,475,,0,205674,2026-10-19,1.5 - 2.5,2326,52
+2026-10-20,,,local medellin,piña special 1ra,PE1,565,0,,10,205635,2026-10-19,3.0 - 4.0,2226,46
+2026-10-20,,,local medellin,piña special 1ra,PE1,550,0,,0,205567,2026-10-19,3.0 - 4.0,2226,47
+2026-10-20,,,local medellin,piña special 1ra,PE1,542,0,,0,205603,2026-10-19,3.0 - 4.0,2226,33
+2026-10-20,,,local medellin,piña special 1ra,PE1,587,256,,0,205654,2026-10-19,3.0 - 4.0,2226,46
+2026-10-20,,,local medellin,piña special 3ra,PE3,543,0,,0,205669,2026-10-19,3.0 - 4.0,2226,47
+2026-10-20,,,local medellin,piña special 3ra,PE3,489,268,,3,205574,2026-10-19,3.0 - 4.0,2226,33
+2026-10-20,,,local medellin,piña special 1ra,PE1,564,0,,0,205655,2026-10-19,1.5 - 2.5,2226,46
+2026-10-20,,,local medellin,piña special 1ra,PE1,590,0,,8,205632,2026-10-19,1.5 - 2.5,2226,46
+2026-10-20,,,local medellin,piña special 1ra,PE1,570,276,,0,205629,2026-10-19,1.5 - 2.5,2226,46
+2026-10-20,,,claudia andrea varela,piña special 1ra,PE1,578,0,,0,205568,2026-10-19,1.5 - 2.5,2226,33
+2026-10-20,,,claudia andrea varela,piña special 1ra,PE1,568,0,,0,205643,2026-10-19,1.5 - 2.5,2226,46
+2026-10-20,,,claudia andrea varela,piña special 1ra,PE1,547,0,,16,205528,2026-10-19,1.5 - 2.5,2226,47
+2026-10-20,,,claudia andrea varela,piña special 1ra,PE1,569,0,,0,205677,2026-10-19,1.5 - 2.5,2226,46
+2026-10-20,,,claudia andrea varela,piña special 1ra,PE1,571,0,,0,205555,2026-10-19,1.5 - 2.5,2226,47
+2026-10-20,,,claudia andrea varela,piña special 1ra,PE1,585,0,,0,205549,2026-10-19,1.5 - 2.5,2226,46
+2026-10-20,,,claudia andrea varela,piña special 1ra,PE1,582,0,,0,205545,2026-10-19,1.5 - 2.5,2226,46
+2026-10-20,,,claudia andrea varela,piña special 1ra,PE1,549,0,,0,205637,2026-10-19,3.0 - 4.0,2226,46
+2026-10-20,,,claudia andrea varela,piña special 1ra,PE1,535,0,,12,205611,2026-10-19,3.0 - 4.0,2226,33
+2026-10-20,,,claudia andrea varela,piña special 1ra,PE1,544,0,,0,205570,2026-10-19,3.0 - 4.0,2226,33
+2026-10-20,,,claudia andrea varela,piña special 1ra,PE1,581,0,,0,205531,2026-10-19,3.0 - 4.0,2226,46
+2026-10-20,,,claudia andrea varela,piña special 1ra,PE1,574,217,,0,205561,2026-10-19,3.0 - 4.0,2226,46
+2026-10-20,,,local sincelejo,piña special 2da,PE2,302,0,,0,205667,2026-10-19,1.5 - 2.5,2226,47
+2026-10-20,,,local sincelejo,Piña AD2,AD2,15,0,,0,205690,2026-10-19,1.5 - 2.5,2826,34
+2026-10-20,,,local sincelejo,piña special 2da,PE2,519,0,,0,205551,2026-10-19,1.5 - 2.5,2226,46
+2026-10-20,,,local sincelejo,piña special 2da,PE2,42,224,,0,205529,2026-10-19,1.5 - 2.5,2226,46
+2026-10-20,,,local sincelejo,piña special 2da,PE2,135,0,,0,205449,2026-10-18,1.5,2226,46
+2026-10-20,,,local sincelejo,piña special 1ra,PE1,590,0,,0,205382,2026-10-18,1,2226,47
