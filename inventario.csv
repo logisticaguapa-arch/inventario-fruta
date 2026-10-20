@@ -16,7 +16,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 205534,canastas,2026-10-19,PE1,piña special 1ra,0.0 - 1.0,575
 205535,canastas,2026-10-19,PE1,piña special 1ra,3.0 - 4.0,582
 205537,canastas,2026-10-19,PE1,piña special 1ra,1.5 - 2.5,578
-205538,canastas,2026-10-19,PEGUA,piña special guapita,1.5 - 2.5,473
 205539,canastas,2026-10-19,PEGUA,piña special guapita,1.5 - 2.5,521
 205541,canastas,2026-10-19,PE1,piña special 1ra,3.0 - 4.0,583
 205546,canastas,2026-10-19,PE2,piña special 2da,1.5,93
@@ -104,35 +103,35 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 205720,canastas,2026-10-20,PE2,piña special 2da,1.5,417
 205721,canastas,2026-10-20,PE1,piña special 1ra,1.5 - 2.5,486
 205722,canastas,2026-10-20,PIND,piña indstria,1.5 - 2.5,496
-205723,canastas,2026-10-20,,,,0
-205724,canastas,2026-10-20,,,,0
-205725,canastas,2026-10-20,,,,0
-205726,canastas,2026-10-20,,,,0
-205727,canastas,2026-10-20,,,,0
-205728,canastas,2026-10-20,,,,0
-205729,canastas,2026-10-20,,,,0
-205730,,,,,,0
-205731,,,,,,0
-205732,,,,,,0
-205733,,,,,,0
-205734,,,,,,0
-205735,,,,,,0
-205736,,,,,,0
-205737,,,,,,0
-205738,,,,,,0
-205739,,,,,,0
-205740,,,,,,0
-205741,,,,,,0
-205742,,,,,,0
-205743,,,,,,0
-205744,,,,,,0
-205745,,,,,,0
-205746,,,,,,0
-205747,,,,,,0
-205748,,,,,,0
-205749,,,,,,0
-205750,,,,,,0
-205751,,,,,,0
+205723,canastas,2026-10-20,PE2,piña special 2da,1.5,413
+205724,canastas,2026-10-20,PE1,piña special 1ra,0.0 - 1.0,581
+205725,canastas,2026-10-20,PE3,piña special 3ra,1.5 - 2.5,518
+205726,canastas,2026-10-20,PE1,piña special 1ra,0.0 - 1.0,597
+205727,canastas,2026-10-20,PE1,piña special 1ra,3.0 - 4.0,555
+205728,canastas,2026-10-20,PE1,piña special 1ra,1.5 - 2.5,514
+205729,canastas,2026-10-20,PE1,piña special 1ra,1.5,408
+205730,canastas,2026-10-20,PE2,piña special 2da,0.0 - 1.0,516
+205731,canastas,2026-10-20,,,,0
+205732,canastas,2026-10-20,,,,0
+205733,canastas,2026-10-20,,,,0
+205734,canastas,2026-10-20,,,,0
+205735,canastas,2026-10-20,,,,0
+205736,canastas,2026-10-20,,,,0
+205737,canastas,2026-10-20,,,,0
+205738,canastas,2026-10-20,,,,0
+205739,canastas,2026-10-20,,,,0
+205740,canastas,2026-10-20,,,,0
+205741,canastas,2026-10-20,,,,0
+205742,canastas,2026-10-20,,,,0
+205743,canastas,2026-10-20,,,,0
+205744,canastas,2026-10-20,,,,0
+205745,canastas,2026-10-20,,,,0
+205746,canastas,2026-10-20,,,,0
+205747,canastas,2026-10-20,,,,0
+205748,canastas,2026-10-20,,,,0
+205749,canastas,2026-10-20,,,,0
+205750,canastas,2026-10-20,,,,0
+205751,canastas,2026-10-20,,,,0
 205752,,,,,,0
 205753,,,,,,0
 205754,,,,,,0
