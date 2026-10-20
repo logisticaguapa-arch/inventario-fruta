@@ -1443,7 +1443,7 @@ function exportExcelProcesado(){
   const ws=XLSX.utils.aoa_to_sheet([PROC_EXPORT_HEADERS].concat(filas));
   const wb=XLSX.utils.book_new();
   XLSX.utils.book_append_sheet(wb,ws,'Seguimiento grupos');
-  XLSX.writeFile(wb,'SeguimientoGrupos.xlsx');
+  guardarXLSX(wb,'SeguimientoGrupos.xlsx');
 }
 
 // -- SEGUIMIENTO GRUPOS: la misma informacion del descargable de Inventario procesado
@@ -1875,14 +1875,47 @@ function filasACSV(headers, filas){
   filas.forEach(function(r){ lineas.push(r.map(csvEscape).join(',')); });
   return lineas.join('\r\n');
 }
-function descargarCSV(nombreArchivo, contenido){
-  // ﻿ (BOM UTF-8) al inicio para que Excel reconozca bien las tildes/ñ al abrir el csv
-  const blob=new Blob(['﻿'+contenido], {type:'text/csv;charset=utf-8;'});
+// -- Guardar archivo con "Guardar como": en Chrome/Edge abre la ventana para
+// elegir carpeta y nombre, y si el archivo ya existe Windows pregunta si se
+// quiere REEMPLAZAR (asi no se llena la carpeta de "archivo (1)", "(2)"...).
+// Si el navegador no lo soporta, o si hay un error, cae a la descarga normal. --
+const TIPOS_ARCHIVO={
+  xlsx:{description:'Excel',accept:{'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet':['.xlsx']}},
+  pdf:{description:'PDF',accept:{'application/pdf':['.pdf']}},
+  csv:{description:'CSV',accept:{'text/csv':['.csv']}}
+};
+function descargaNormal(blob,nombre){
   const url=URL.createObjectURL(blob);
   const a=document.createElement('a');
-  a.href=url; a.download=nombreArchivo;
+  a.href=url; a.download=nombre;
   document.body.appendChild(a); a.click(); document.body.removeChild(a);
-  URL.revokeObjectURL(url);
+  setTimeout(function(){URL.revokeObjectURL(url);},1000);
+}
+async function guardarBlob(blob,nombre){
+  const ext=nombre.split('.').pop().toLowerCase();
+  if(typeof window.showSaveFilePicker==='function' && TIPOS_ARCHIVO[ext]){
+    try{
+      const h=await window.showSaveFilePicker({suggestedName:nombre,id:'inventario-guapa',startIn:'downloads',types:[TIPOS_ARCHIVO[ext]]});
+      const w=await h.createWritable();
+      await w.write(blob); await w.close();
+      return;
+    }catch(e){
+      if(e&&e.name==='AbortError') return;   // el usuario cancelo: no descargar nada
+      // cualquier otro error: seguir a la descarga normal
+    }
+  }
+  descargaNormal(blob,nombre);
+}
+function guardarXLSX(wb,nombre){
+  const data=XLSX.write(wb,{bookType:'xlsx',type:'array'});
+  return guardarBlob(new Blob([data],{type:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'}),nombre);
+}
+function guardarPDF(doc,nombre){
+  return guardarBlob(doc.output('blob'),nombre);
+}
+function descargarCSV(nombreArchivo, contenido){
+  // ﻿ (BOM UTF-8) al inicio para que Excel reconozca bien las tildes/ñ al abrir el csv
+  return guardarBlob(new Blob(['﻿'+contenido], {type:'text/csv;charset=utf-8;'}), nombreArchivo);
 }
 
 const INGRESADO_EXPORT_HEADERS=['ID','Fecha Proceso','Calibre','Categoria','Grado','Peso Neto','Lote','GF'];
@@ -1968,7 +2001,7 @@ function exportExcelProcesadoDiario(){
   const ws=XLSX.utils.aoa_to_sheet([headers].concat(filas));
   const wb=XLSX.utils.book_new();
   XLSX.utils.book_append_sheet(wb,ws,'Procesado dia a dia');
-  XLSX.writeFile(wb,'ProcesadoDiaADia.xlsx');
+  guardarXLSX(wb,'ProcesadoDiaADia.xlsx');
 }
 
 function exportExcelCumplimientoGrado(){
@@ -2007,7 +2040,7 @@ function exportExcelCumplimientoGrado(){
   const ws=XLSX.utils.aoa_to_sheet([headers].concat(filas));
   const wb=XLSX.utils.book_new();
   XLSX.utils.book_append_sheet(wb,ws,'Cumplimiento grado');
-  XLSX.writeFile(wb,'CumplimientoGrado.xlsx');
+  guardarXLSX(wb,'CumplimientoGrado.xlsx');
 }
 
 function exportExcelFacturacion(){
@@ -2017,7 +2050,7 @@ function exportExcelFacturacion(){
   const ws=XLSX.utils.aoa_to_sheet([FACT_EXPORT_HEADERS].concat(filas));
   const wb=XLSX.utils.book_new();
   XLSX.utils.book_append_sheet(wb,ws,'Facturacion');
-  XLSX.writeFile(wb,'Facturacion.xlsx');
+  guardarXLSX(wb,'Facturacion.xlsx');
 }
 
 function exportPDFFacturacion(){
@@ -2028,7 +2061,7 @@ function exportPDFFacturacion(){
   doc.setFontSize(14);
   doc.text('Facturacion - '+factFechaEtiqueta(),14,16);
   doc.autoTable({head:[FACT_EXPORT_HEADERS],body:filas,startY:22,styles:{fontSize:8},headStyles:{fillColor:[30,41,59]}});
-  doc.save('Facturacion.pdf');
+  guardarPDF(doc,'Facturacion.pdf');
 }
 
 // -- Exportar Descarte (Excel / PDF): mismo formato exacto de la tabla en
@@ -2060,7 +2093,7 @@ function exportExcelDescarte(){
   const ws=XLSX.utils.aoa_to_sheet([DESC_EXPORT_HEADERS].concat(filas));
   const wb=XLSX.utils.book_new();
   XLSX.utils.book_append_sheet(wb,ws,'Descarte');
-  XLSX.writeFile(wb,'Descarte.xlsx');
+  guardarXLSX(wb,'Descarte.xlsx');
 }
 function exportPDFDescarte(){
   const filas=construirFilasExportDescarte(filteredDescarte());
@@ -2069,7 +2102,7 @@ function exportPDFDescarte(){
   doc.setFontSize(14);
   doc.text('Descarte',14,16);
   doc.autoTable({head:[DESC_EXPORT_HEADERS],body:filas,startY:22,styles:{fontSize:7},headStyles:{fillColor:[127,29,29]}});
-  doc.save('Descarte.pdf');
+  guardarPDF(doc,'Descarte.pdf');
 }
 
 // -- DESCARTE: fruta descartada, tomada de la hoja Proceso (columna "Kilos de
