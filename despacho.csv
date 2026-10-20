@@ -22565,7 +22565,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-20,,,camilo quiñones,piña special 2da,PE2,334,0,,7,205676,2026-10-19,3.0 - 4.0,2326,52
 2026-10-20,,,camilo quiñones,piña jugos,PJUG,408,0,,25,205698,2026-10-19,3.0 - 4.0,2226,47
 2026-10-20,,,camilo quiñones,AD-piña jugos,AD-PJUG,68,0,,0,205692,2026-10-19,3.0 - 4.0,2826,34
-2026-10-20,,,camilo quiñones,piña jugos,PJUG,534,0,,0,205521,2026-10-18,3.0 - 4.0,2226,46
+2026-10-20,,,camilo quiñones,piña jugos,PJUG,334,0,,200,205521,2026-10-18,3.0 - 4.0,2226,46
 2026-10-20,,,Aldinsen Gonzalez,piña indstria,PIND,510,0,,0,205542,2026-10-19,1.5 - 2.5,2226,46
 2026-10-20,,,Aldinsen Gonzalez,AD-piña indstria,AD-PIND,545,0,,0,205694,2026-10-19,1.5 - 2.5,2826,34
 2026-10-20,,,Aldinsen Gonzalez,piña indstria,PIND,484,0,,0,205610,2026-10-19,1.5 - 2.5,2226,33
@@ -22575,4 +22575,20 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-20,,,Aldinsen Gonzalez,piña indstria,PIND,500,0,,0,205572,2026-10-19,1.5 - 2.5,2226,33
 2026-10-20,,,Aldinsen Gonzalez,piña indstria,PIND,543,0,,0,205554,2026-10-19,1.5 - 2.5,2226,47
 2026-10-20,,,Aldinsen Gonzalez,piña indstria,PIND,521,0,,0,205588,2026-10-19,1.5 - 2.5,2226,33
+2026-10-20,,,Aldinsen Gonzalez,piña indstria,PIND,280,270,,200,205593,2026-10-19,1.5 - 2.5,2226,33
 2026-10-20,,,descarte,piña jugos,PJUG,0,0,,376,205508,2026-10-18,3.0 - 4.0,2226,46
+2026-10-20,,,Afrucol S.A.S.,piña indstria,PIND,523,0,,0,205633,2026-10-19,1.5 - 2.5,2226,46
+2026-10-20,,,Afrucol S.A.S.,piña indstria,PIND,529,0,,0,205658,2026-10-19,1.5 - 2.5,2226,47
+2026-10-20,,,Afrucol S.A.S.,piña indstria,PIND,497,0,,0,205582,2026-10-19,1.5 - 2.5,2226,33
+2026-10-20,,,Afrucol S.A.S.,piña indstria,PIND,493,0,,15,205623,2026-10-19,1.5 - 2.5,2226,33
+2026-10-20,,,Afrucol S.A.S.,piña indstria,PIND,94,0,,0,205678,2026-10-19,1.5 - 2.5,2226,46
+2026-10-20,,,Afrucol S.A.S.,piña indstria,PIND,158,0,,60,205662,2026-10-19,1.5 - 2.5,2226,47
+2026-10-20,,,Afrucol S.A.S.,piña indstria,PIND,454,0,,0,205708,2026-10-20,1.5 - 2.5,,
+2026-10-20,,,Afrucol S.A.S.,piña indstria,PIND,252,0,,0,205713,2026-10-20,1.5 - 2.5,,
+2026-10-20,,,local sincelejo,piña special 2da,PE2,234,0,,0,205657,2026-10-19,0.0 - 1.0,2226,47
+2026-10-20,,,local sincelejo,piña special 2da,PE2,268,0,,2,205687,2026-10-19,0.0 - 1.0,2226,47
+2026-10-20,,,local sincelejo,piña special 2da,PE2,6,0,,0,205597,2026-10-19,0.0 - 1.0,2226,33
+2026-10-20,,,local sincelejo,Piña AD2,AD2,64,0,,0,205693,2026-10-19,0.0 - 1.0,2826,34
+2026-10-20,,,local sincelejo,piña special 1ra,PE1,372,0,,0,205514,2026-10-18,0.0 - 1.0,2226,47
+2026-10-20,,,local sincelejo,piña special 1ra,PE1,39,0,,0,205491,2026-10-18,0.0 - 1.0,2226,46
+2026-10-20,,,local sincelejo,piña special 1ra,PE1,45,0,,0,205439,2026-10-18,0.0 - 1.0,2226,46
