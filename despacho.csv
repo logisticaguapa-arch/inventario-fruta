@@ -22589,8 +22589,8 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-20,46776,R-19286,Afrucol S.A.S.,piña indstria,PIND,493,0,1600,15,205623,2026-10-19,1.5 - 2.5,2226,33
 2026-10-20,46776,R-19286,Afrucol S.A.S.,piña indstria,PIND,94,0,1600,0,205678,2026-10-19,1.5 - 2.5,2226,46
 2026-10-20,46776,R-19286,Afrucol S.A.S.,piña indstria,PIND,158,0,1600,60,205662,2026-10-19,1.5 - 2.5,2226,47
-2026-10-20,46776,R-19286,Afrucol S.A.S.,piña indstria,PIND,454,0,1600,0,205708,2026-10-20,1.5 - 2.5,,
-2026-10-20,46776,R-19286,Afrucol S.A.S.,piña indstria,PIND,252,0,1600,0,205713,2026-10-20,1.5 - 2.5,,
+2026-10-20,46776,R-19286,Afrucol S.A.S.,piña indstria,PIND,454,0,1600,0,205708,2026-10-20,1.5 - 2.5,2226,46
+2026-10-20,46776,R-19286,Afrucol S.A.S.,piña indstria,PIND,252,0,1600,0,205713,2026-10-20,1.5 - 2.5,2226,46
 2026-10-20,,R-19287,local sincelejo,piña special 2da,PE2,234,0,3000,0,205657,2026-10-19,0.0 - 1.0,2226,47
 2026-10-20,,R-19287,local sincelejo,piña special 2da,PE2,268,0,3000,2,205687,2026-10-19,0.0 - 1.0,2226,47
 2026-10-20,,R-19287,local sincelejo,piña special 2da,PE2,6,0,3000,0,205597,2026-10-19,0.0 - 1.0,2226,33
@@ -22604,8 +22604,8 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-20,,R-19287,local sincelejo,piña special guapita,PEGUA,171,0,2200,0,205688,2026-10-19,1.5 - 2.5,2226,47
 2026-10-20,,R-19287,local sincelejo,piña special guapita,PEGUA,298,0,2200,0,205573,2026-10-19,1.5 - 2.5,2226,33
 2026-10-20,,R-19287,local sincelejo,piña special guapita,PEGUA,154,0,2200,0,205604,2026-10-19,1.5 - 2.5,2226,33
-2026-10-20,,R-19287,local sincelejo,piña special guapita,PEGUA,502,0,2200,0,205735,2026-10-20,1.5 - 2.5,,
-2026-10-20,,R-19287,local sincelejo,piña special guapita,PEGUA,22,0,2200,0,205736,2026-10-20,1.5 - 2.5,,
+2026-10-20,,R-19287,local sincelejo,piña special guapita,PEGUA,502,0,2200,0,205735,2026-10-20,1.5 - 2.5,2326,52
+2026-10-20,,R-19287,local sincelejo,piña special guapita,PEGUA,22,0,2200,0,205736,2026-10-20,1.5 - 2.5,2326,52
 2026-10-20,,R-19287,local sincelejo,piña special baby,PEBAB,390,0,1500,0,205599,2026-10-19,1.5 - 2.5,2226,33
 2026-10-20,,R-19287,local sincelejo,piña special baby,PEBAB,424,0,1500,0,205580,2026-10-19,1.5 - 2.5,2226,33
 2026-10-20,,R-19287,local sincelejo,piña special baby,PEBAB,410,0,1500,0,205583,2026-10-19,1.5 - 2.5,2226,33
@@ -22618,6 +22618,6 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-20,,R-19287,local sincelejo,piña special 3ra,PE3,363,0,2700,0,205515,2026-10-18,1.5 - 2.5,2226,47
 2026-10-20,,R-19287,local sincelejo,piña special 3ra,PE3,456,0,2700,0,205356,2026-10-18,1.5 - 2.5,2226,46
 2026-10-20,,R-19287,local sincelejo,piña special 3ra,PE3,30,0,2700,0,205466,2026-10-18,1.5 - 2.5,2226,46
-2026-10-20,,R-19287,local sincelejo,piña special 3ra,PE3,490,0,2700,0,205740,2026-10-20,0.0 - 1.0,,
+2026-10-20,,R-19287,local sincelejo,piña special 3ra,PE3,490,0,2700,0,205740,2026-10-20,0.0 - 1.0,2326,52
 2026-10-20,,R-19287,local sincelejo,piña special 3ra,PE3,0,0,2700,24,205403,2026-10-18,1.5 - 2.5,2226,47
-2026-10-20,,R-19287,local sincelejo,piña special 3ra,PE3,510,0,2700,0,205749,2026-10-20,0.0 - 1.0,,
+2026-10-20,,R-19287,local sincelejo,piña special 3ra,PE3,510,0,2700,0,205749,2026-10-20,0.0 - 1.0,2326,52
