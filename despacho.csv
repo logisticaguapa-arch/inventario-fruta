@@ -22694,6 +22694,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-21,,,local sincelejo,piña special 3ra,PE3,471,0,,0,205867,2026-10-20,1.5 - 2.5,2226,33
 2026-10-21,,,local sincelejo,piña special 3ra,PE3,489,0,,0,205789,2026-10-20,1.5 - 2.5,2326,52
 2026-10-21,,,local sincelejo,piña special 3ra,PE3,495,0,,3,205838,2026-10-20,0.0 - 1.0,2326,32
+2026-10-21,,,local sincelejo,piña special 3ra,PE3,490,15,,0,205831,2026-10-20,0.0 - 1.0,2326,32
 2026-10-21,,,andres ruben oquendo,piña special 2da,PE2,492,508,,0,205827,2026-10-20,3.0 - 4.0,2326,32
 2026-10-21,,,andres ruben oquendo,piña special 1ra,PE1,563,0,,0,205759,2026-10-20,3.0 - 4.0,2326,52
 2026-10-21,,,andres ruben oquendo,piña special 1ra,PE1,552,0,,0,205699,2026-10-20,3.0 - 4.0,2226,46
@@ -22701,6 +22702,16 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-21,,,andres ruben oquendo,piña special 1ra,PE1,579,0,,0,205558,2026-10-19,3.0 - 4.0,2226,46
 2026-10-21,,,andres ruben oquendo,piña special 1ra,PE1,581,0,,0,205775,2026-10-20,3.0 - 4.0,2226,46
 2026-10-21,,,andres ruben oquendo,piña special 1ra,PE1,559,0,,0,205709,2026-10-20,3.0 - 4.0,2226,46
-2026-10-21,,,andres ruben oquendo,piña special 1ra,PE1,569,0,,0,205765,2026-10-20,3.0 - 4.0,2326,52
+2026-10-21,,,andres ruben oquendo,piña special 1ra,PE1,559,59,,10,205765,2026-10-20,3.0 - 4.0,2326,52
 2026-10-21,,,local medellin,piña special 2da,PE2,510,0,,0,205805,2026-10-20,1.5 - 2.5,2326,52
 2026-10-21,,,local medellin,piña special 2da,PE2,504,0,,0,205796,2026-10-20,1.5 - 2.5,2326,52
+2026-10-21,,,local medellin,piña special 2da,PE2,522,0,,0,205841,2026-10-20,1.5 - 2.5,2326,32
+2026-10-21,,,local medellin,piña special 2da,PE2,353,0,,0,205853,2026-10-20,1.5 - 2.5,2226,33
+2026-10-21,,,local medellin,piña special 2da,PE2,63,0,,0,205860,2026-10-20,1.5 - 2.5,2226,33
+2026-10-21,,,local medellin,Piña AD2,AD2,21,0,,0,205881,2026-10-20,1.5 - 2.5,2926,34
+2026-10-21,,,local medellin,piña special 1ra,PE1,439,61,,2,205869,2026-10-20,0.0 - 1.0,2226,33
+2026-10-21,,,local medellin,piña special 2da,PE2,496,0,,3,205850,2026-10-20,0.0 - 1.0,2226,33
+2026-10-21,,,local medellin,piña special 2da,PE2,512,0,,0,205730,2026-10-20,0.0 - 1.0,2326,52
+2026-10-21,,,local medellin,piña special 1ra,PE1,569,0,,10,205524,2026-10-19,1.5 - 2.5,2226,47
+2026-10-21,,,local medellin,piña special 1ra,PE1,558,0,,0,205613,2026-10-19,1.5 - 2.5,2226,33
+2026-10-21,,,local medellin,piña special 1ra,PE1,593,0,,0,205652,2026-10-19,1.5 - 2.5,2226,46
