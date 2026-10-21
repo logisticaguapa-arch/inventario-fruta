@@ -22728,6 +22728,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-21,,,Aldinsen Gonzalez,piña indstria,PIND,486,0,,0,205798,2026-10-20,1.5 - 2.5,2326,52
 2026-10-21,,,Aldinsen Gonzalez,piña indstria,PIND,505,170,,20,205811,2026-10-20,1.5 - 2.5,2326,32
 2026-10-21,,,Aldinsen Gonzalez,piña jugos,PJUG,220,0,,0,205892,2026-10-20,3.0 - 4.0,2326,52
+2026-10-21,,,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,211,0,,10,205888,2026-10-20,3.0 - 4.0,2826,34
 2026-10-21,,,carmen susana hoyos,piña special guapita,PEGUA,480,0,,0,205792,2026-10-20,1.5 - 2.5,2326,52
 2026-10-21,,,carmen susana hoyos,piña special guapita,PEGUA,512,0,,0,205763,2026-10-20,1.5 - 2.5,2326,52
 2026-10-21,,,carmen susana hoyos,piña special guapita,PEGUA,477,0,,3,205712,2026-10-20,1.5 - 2.5,2226,46
@@ -22740,6 +22741,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-21,,,carmen susana hoyos,piña special 2da,PE2,504,0,,0,205785,2026-10-20,0.0 - 1.0,2326,51
 2026-10-21,,,carmen susana hoyos,Piña AD2,AD2,24,0,,0,205884,2026-10-20,0.0 - 1.0,2826,34
 2026-10-21,,,carmen susana hoyos,piña special 2da,PE2,55,0,,0,205924,2026-10-21,0.0 - 1.0,,
+2026-10-21,,,carmen susana hoyos,piña special 3ra,PE3,393,0,,1,205877,2026-10-20,0.0 - 1.0,2226,33
 2026-10-21,,,andres ruben oquendo,piña special 1ra,PE1,580,0,,0,205664,2026-10-19,3.0 - 4.0,2226,47
 2026-10-21,,,andres ruben oquendo,piña special 1ra,PE1,555,0,,12,205630,2026-10-19,3.0 - 4.0,2226,46
 2026-10-21,,,andres ruben oquendo,piña special 1ra,PE1,570,0,,0,205523,2026-10-19,3.0 - 4.0,2226,47
@@ -22747,3 +22749,5 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-21,,,andres ruben oquendo,piña special 1ra,PE1,564,0,,0,205535,2026-10-19,3.0 - 4.0,2226,46
 2026-10-21,,,andres ruben oquendo,piña special 1ra,PE1,567,0,,0,205525,2026-10-19,3.0 - 4.0,2226,47
 2026-10-21,,,andres ruben oquendo,piña special 1ra,PE1,571,0,,0,205550,2026-10-19,3.0 - 4.0,2226,46
+2026-10-21,,,andres ruben oquendo,piña special 1ra,PE1,532,0,,0,205575,2026-10-19,3.0 - 4.0,2226,33
+2026-10-21,,,andres ruben oquendo,piña special 1ra,PE1,497,0,,50,205590,2026-10-19,3.0 - 4.0,2226,33
