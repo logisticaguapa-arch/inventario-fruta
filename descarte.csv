@@ -3659,3 +3659,9 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,43,octubre,2026-10-21,2226,46,canastas,10.0,,10.0,10.0,,PE1
 2026,43,octubre,2026-10-22,2326,32,canastas,1.0,,1.0,1.0,Muestreo,PEBAB
 2026,43,octubre,2026-10-22,2226,33,canastas,8.0,,8.0,8.0,Muestreo,PE1
+2026,43,octubre,2026-10-22,2326,51,canastas,5.0,,5.0,5.0,Muestreo,PE2
+2026,43,octubre,2026-10-22,2326,52,canastas,12.0,,12.0,12.0,Muestreo,PE1
+2026,43,octubre,2026-10-22,2226,33,canastas,2.0,,2.0,2.0,Muestreo,PE3
+2026,43,octubre,2026-10-22,2326,52,canastas,12.0,,12.0,12.0,Muestreo,PE2
+2026,43,octubre,2026-10-22,2226,46,canastas,8.0,,8.0,8.0,Muestreo,PE1
+2026,43,octubre,2026-10-22,2326,32,canastas,4.0,,4.0,4.0,Muestreo,PEGUA
