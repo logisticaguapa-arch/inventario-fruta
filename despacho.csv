@@ -22794,7 +22794,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-21,46829,R-19309,jeronimo martins,piña special 1ra,PE1,402,0,3100,0,205754,2026-10-20,1.5,2326,52
 2026-10-21,46829,R-19309,jeronimo martins,piña special 1ra,PE1,414,269,3100,0,205776,2026-10-20,1.5,2226,46
 2026-10-21,46830,R-19310,venta empleados,piña special 1ra,PE1,163,0,2200,0,206082,2026-10-21,1.5 - 2.5,2326,52
-2026-10-22,,,descarte,AL-PEGUA,AL-PEGUA,22,0,,0,206084,2026-10-22,1.5 - 2.5,2326,51
+2026-10-22,,,descarte,AL-PEGUA,AL-PEGUA,0,0,,22,206084,2026-10-22,1.5 - 2.5,2326,51
 2026-10-22,,R-19312,local apartado,,PEGUA,0,500,2200,0,,,2,,
 2026-10-22,,R-19312,local apartado,,PE3,0,220,2400,0,,,2,,
 2026-10-22,,R-19312,local apartado,,PE2,0,290,3000,0,,,1,,
@@ -22979,3 +22979,13 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-22,,R-19325,local medellin,piña special 1ra,PE1,592,408,3200,0,205963,2026-10-21,1.5 - 2.5,2326,51
 2026-10-22,46859,R-19327,hugo miguel jimenez,piña special 1ra,PE1,584,416,2400,0,205936,2026-10-21,0.0 - 1.0,2326,52
 2026-10-22,46859,R-19327,hugo miguel jimenez,piña special baby,PEBAB,491,9,700,0,206047,2026-10-21,1.5 - 2.5,2326,32
+2026-10-22,,,descarte,piña special 1ra,PE1,0,0,,553,205553,2026-10-19,4,2226,47
+2026-10-22,,,descarte,piña special 1ra,PE1,0,0,,532,205579,2026-10-19,4,2226,33
+2026-10-22,,,descarte,piña special 1ra,PE1,0,0,,534,205589,2026-10-19,4,2226,33
+2026-10-22,,,descarte,piña special 2da,PE2,0,0,,525,205609,2026-10-19,4,2226,33
+2026-10-22,,,descarte,piña special 2da,PE2,0,0,,505,205614,2026-10-19,4,2226,33
+2026-10-22,,,descarte,piña special 1ra,PE1,0,0,,550,205618,2026-10-19,4,2226,33
+2026-10-22,,,descarte,piña special 1ra,PE1,0,0,,554,205641,2026-10-19,4,2226,46
+2026-10-22,,,descarte,piña special 2da,PE2,0,0,,412,205670,2026-10-19,4,2226,47
+2026-10-22,,,descarte,piña special 2da,PE2,0,0,,423,205683,2026-10-19,4,2226,46
+2026-10-22,,,descarte,piña special 3ra,PE3,0,0,,64,205865,2026-10-20,4,2226,33
