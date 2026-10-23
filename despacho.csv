@@ -23003,6 +23003,9 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-23,,,local sincelejo,piña special guapita,PEGUA,484,0,,0,205909,2026-10-21,1.5 - 2.5,2326,52
 2026-10-23,,,local sincelejo,piña special guapita,PEGUA,179,30,,0,206001,2026-10-21,1.5 - 2.5,2226,33
 2026-10-23,,,local sincelejo,piña special 1ra,PE1,547,453,,4,206003,2026-10-21,1.5 - 2.5,2226,33
+2026-10-23,,,descarte,piña special 2da,PE2,0,0,,100,205866,2026-10-20,4,2226,33
+2026-10-23,,,descarte,piña special 1ra,PE1,0,0,,220,205861,2026-10-20,4,2226,33
+2026-10-23,,,descarte,piña special 2da,PE2,0,0,,93,205546,2026-10-19,1.5,2226,46
 2026-10-23,,,dario alberto,piña special 2da,PE2,512,0,,4,206175,2026-10-22,3.0 - 4.0,2326,52
 2026-10-23,,,dario alberto,piña special 2da,PE2,514,0,,0,206199,2026-10-22,3.0 - 4.0,2326,32
 2026-10-23,,,dario alberto,piña special 2da,PE2,520,0,,0,206159,2026-10-22,3.0 - 4.0,2326,52
@@ -23019,9 +23022,9 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-23,,,Andres Garcia,piña special 1ra,PE1,247,190,,0,206226,2026-10-22,3.0 - 4.0,2326,32
 2026-10-23,,,jeronimo martins,piña special 2da,PE2,467,0,,0,206131,2026-10-22,1.5,2326,52
 2026-10-23,,,jeronimo martins,piña special 2da,PE2,389,0,,12,206115,2026-10-22,1.5,2326,51
-2026-10-23,,,jeronimo martins,piña special 2da,PE2,408,0,,0,206097,2026-10-22,1.5,2326,51
+2026-10-23,,,jeronimo martins,piña special 2da,PE2,408,295,,0,206097,2026-10-22,1.5,2326,51
 2026-10-23,,,jeronimo martins,piña special 2da,PE2,273,93,,0,206156,2026-10-22,1.5,2326,52
-2026-10-23,,,jeronimo martins,piña special 2da,PE2,406,0,,0,206136,2026-10-22,1.5,2326,52
+2026-10-23,,,reposicion jeronimo,piña special 2da,PE2,111,0,,0,206136,2026-10-22,1.5,2326,52
 2026-10-23,,,local medellin,piña special 2da,PE2,515,485,,0,206111,2026-10-22,1.5 - 2.5,2326,51
 2026-10-23,,,local medellin,Piña AD2,AD2,548,0,,0,206081,2026-10-21,0.0 - 1.0,2626,77
 2026-10-23,,,local medellin,piña special 2da,PE2,70,0,,0,206266,2026-10-23,0.0 - 1.0,,
@@ -23029,3 +23032,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-23,,,local medellin,piña special 1ra,PE1,556,0,,8,206096,2026-10-22,3.0 - 4.0,2326,51
 2026-10-23,,,local medellin,piña special 1ra,PE1,538,0,,0,206190,2026-10-22,3.0 - 4.0,2326,32
 2026-10-23,,,local medellin,piña special 1ra,PE1,553,353,,0,206141,2026-10-22,3.0 - 4.0,2326,52
+2026-10-23,,,local medellin,piña special 3ra,PE3,313,0,,0,206219,2026-10-22,3.0 - 4.0,2226,33
+2026-10-23,,,local medellin,piña special 3ra,PE3,485,184,,0,206162,2026-10-22,3.0 - 4.0,2326,52
+2026-10-23,,,ramiro parada,Piña AD3,AD3,135,46,,0,206242,2026-10-22,0.0 - 1.0,2526,77
+2026-10-23,,,descarte,piña special 2da,PE2,0,0,,126,205628,2026-10-19,1.5 - 2.5,2226,46
