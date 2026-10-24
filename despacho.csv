@@ -23032,7 +23032,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-23,,R-19343,reposicion jeronimo,piña special 2da,PE2,111,0,,0,206136,2026-10-22,1.5,2326,52
 2026-10-23,,R-19334,local medellin,piña special 2da,PE2,515,485,3000,0,206111,2026-10-22,1.5 - 2.5,2326,51
 2026-10-23,,R-19334,local medellin,Piña AD2,AD2,548,0,3000,0,206081,2026-10-21,0.0 - 1.0,2626,77
-2026-10-23,,R-19334,local medellin,piña special 2da,PE2,70,0,3000,0,206266,2026-10-23,0.0 - 1.0,,
+2026-10-23,,R-19334,local medellin,piña special 2da,PE2,70,0,3000,0,206266,2026-10-23,0.0 - 1.0,2326,51
 2026-10-23,,R-19334,local medellin,piña special 2da,PE2,493,389,3000,3,206152,2026-10-22,0.0 - 1.0,2326,52
 2026-10-23,,R-19334,local medellin,piña special 1ra,PE1,556,0,3200,8,206096,2026-10-22,3.0 - 4.0,2326,51
 2026-10-23,,R-19334,local medellin,piña special 1ra,PE1,538,0,3200,0,206190,2026-10-22,3.0 - 4.0,2326,32
@@ -23069,7 +23069,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-23,46882,R-19337,camilo quiñones,piña special 2da,PE2,397,0,2600,0,206220,2026-10-22,1.5 - 2.5,2226,33
 2026-10-23,46882,R-19337,camilo quiñones,Piña AD2,AD2,45,0,2600,0,206237,2026-10-22,1.5 - 2.5,2426,47
 2026-10-23,46882,R-19337,camilo quiñones,piña special 2da,PE2,19,0,2600,0,206160,2026-10-22,1.5 - 2.5,2326,52
-2026-10-23,46882,R-19337,camilo quiñones,piña special 2da,PE2,42,0,2600,0,206302,2026-10-23,1.5 - 2.5,,
+2026-10-23,46882,R-19337,camilo quiñones,piña special 2da,PE2,42,0,2600,0,206302,2026-10-23,1.5 - 2.5,2326,51
 2026-10-23,46882,R-19337,camilo quiñones,piña special 1ra,PE1,532,0,2500,6,205997,2026-10-21,3.0 - 4.0,2326,52
 2026-10-23,46882,R-19337,camilo quiñones,piña special 1ra,PE1,566,402,2500,30,205940,2026-10-21,3.0 - 4.0,2326,52
 2026-10-23,46882,R-19337,camilo quiñones,piña special 3ra,PE3,503,0,1000,0,205927,2026-10-21,1.5 - 2.5,2326,52
@@ -23108,15 +23108,15 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-23,46887,R-19342,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,559,0,3000,0,206098,2026-10-22,1,2326,51
 2026-10-23,46887,R-19342,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,546,0,3000,20,206165,2026-10-22,1,2326,51
 2026-10-23,46887,R-19342,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,549,0,3000,0,206106,2026-10-22,1,2326,51
-2026-10-23,46887,R-19342,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,584,0,3000,0,206284,2026-10-23,1,,
-2026-10-23,46887,R-19342,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,560,0,3000,0,206328,2026-10-23,1,,
-2026-10-23,46887,R-19342,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,586,0,3000,0,206310,2026-10-23,1,,
+2026-10-23,46887,R-19342,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,584,0,3000,0,206284,2026-10-23,1,2326,51
+2026-10-23,46887,R-19342,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,560,0,3000,0,206328,2026-10-23,1,2326,51
+2026-10-23,46887,R-19342,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,586,0,3000,0,206310,2026-10-23,1,2326,51
 2026-10-23,46887,R-19342,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,580,0,3000,0,206144,2026-10-22,1,2326,52
-2026-10-23,46887,R-19342,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,585,0,3000,0,206294,2026-10-23,1,,
-2026-10-23,46887,R-19342,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,567,0,3000,0,206273,2026-10-23,1,,
-2026-10-23,46887,R-19342,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,554,0,3000,0,206354,2026-10-23,1,,
-2026-10-23,46887,R-19342,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,566,453,3000,0,206364,2026-10-23,1,,
-2026-10-23,,R-19340,reposicion éxito medellin,piña special 1ra,PE1,120,0,,0,206372,2026-10-23,1,,
+2026-10-23,46887,R-19342,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,585,0,3000,0,206294,2026-10-23,1,2326,51
+2026-10-23,46887,R-19342,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,567,0,3000,0,206273,2026-10-23,1,2326,51
+2026-10-23,46887,R-19342,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,554,0,3000,0,206354,2026-10-23,1,2326,32
+2026-10-23,46887,R-19342,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,566,453,3000,0,206364,2026-10-23,1,2326,32
+2026-10-23,,R-19340,reposicion éxito medellin,piña special 1ra,PE1,120,0,,0,206372,2026-10-23,1,2326,32
 2026-10-23,46889,R-19341,Alimentos S.A.S,piña special 1ra,PE1,571,0,1500,0,205946,2026-10-21,1.5 - 2.5,2326,51
 2026-10-23,46889,R-19341,Alimentos S.A.S,piña special 1ra,PE1,495,0,1500,0,205937,2026-10-21,1.5 - 2.5,2326,52
 2026-10-23,46889,R-19341,Alimentos S.A.S,piña special 1ra,PE1,587,0,1500,0,205897,2026-10-21,1.5 - 2.5,2326,52
@@ -23141,27 +23141,31 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-23,46889,R-19341,Alimentos S.A.S,piña special baby,PEBAB,213,0,1500,0,206215,2026-10-22,1.5 - 2.5,2326,32
 2026-10-23,46889,R-19341,Alimentos S.A.S,piña special baby,PEBAB,401,0,1500,0,206186,2026-10-22,1.5 - 2.5,2326,32
 2026-10-23,46889,R-19341,Alimentos S.A.S,piña special baby,PEBAB,418,0,1500,0,206193,2026-10-22,1.5 - 2.5,2326,32
-2026-10-23,46889,R-19341,Alimentos S.A.S,piña special baby,PEBAB,24,0,1500,0,206376,2026-10-23,1.5 - 2.5,,
-2026-10-23,,,Alimentos S.A.S,piña special baby,PEBAB,434,0,,0,206037,2026-10-21,1.5 - 2.5,2326,32
-2026-10-23,,,Alimentos S.A.S,piña special baby,PEBAB,433,0,,0,206021,2026-10-21,1.5 - 2.5,2326,32
-2026-10-23,,,Alimentos S.A.S,piña special baby,PEBAB,443,0,,0,206010,2026-10-21,1.5 - 2.5,2226,33
-2026-10-23,,,Alimentos S.A.S,piña special baby,PEBAB,95,0,,0,205974,2026-10-21,1.5 - 2.5,2326,51
-2026-10-23,,,Alimentos S.A.S,piña special baby,PEBAB,52,0,,0,206049,2026-10-21,1.5 - 2.5,2326,32
-2026-10-23,,,Alimentos S.A.S,piña special baby,PEBAB,26,0,,0,206363,2026-10-23,1.5 - 2.5,,
-2026-10-23,,,Alimentos S.A.S,piña special guapita,PEGUA,470,0,,0,206189,2026-10-22,1.5 - 2.5,2326,32
-2026-10-23,,,Alimentos S.A.S,piña special guapita,PEGUA,479,0,,0,206161,2026-10-22,1.5 - 2.5,2326,52
-2026-10-23,,,Alimentos S.A.S,piña special guapita,PEGUA,497,0,,0,206102,2026-10-22,1.5 - 2.5,2326,51
-2026-10-23,,,Alimentos S.A.S,piña special guapita,PEGUA,499,0,,0,206150,2026-10-22,1.5 - 2.5,2326,52
-2026-10-23,,,Alimentos S.A.S,piña special guapita,PEGUA,459,0,,0,206205,2026-10-22,1.5 - 2.5,2326,32
-2026-10-23,,,Alimentos S.A.S,piña special guapita,PEGUA,505,0,,0,206133,2026-10-22,1.5 - 2.5,2326,52
-2026-10-23,,,Alimentos S.A.S,piña special guapita,PEGUA,491,0,,0,206132,2026-10-22,1.5 - 2.5,2326,52
-2026-10-23,,,Alimentos S.A.S,piña special guapita,PEGUA,366,0,,0,206217,2026-10-22,1.5 - 2.5,2226,33
-2026-10-23,,,Alimentos S.A.S,Piña ADGUA,ADGUA,28,0,,0,206239,2026-10-22,1.5 - 2.5,2426,47
-2026-10-23,,,Alimentos S.A.S,piña special guapita,PEGUA,473,0,,0,206181,2026-10-22,1.5 - 2.5,2326,51
-2026-10-23,,,Alimentos S.A.S,piña special guapita,PEGUA,59,0,,0,206173,2026-10-22,1.5 - 2.5,2326,52
-2026-10-23,,,Alimentos S.A.S,piña special guapita,PEGUA,93,0,,0,206196,2026-10-22,1.5 - 2.5,2326,32
-2026-10-23,,,Alimentos S.A.S,piña special guapita,PEGUA,522,0,,0,206212,2026-10-22,1.5 - 2.5,2326,32
-2026-10-23,,,Alimentos S.A.S,piña special guapita,PEGUA,114,0,,0,206388,2026-10-23,1.5 - 2.5,,
-2026-10-23,,,Alimentos S.A.S,piña indstria,PIND,494,0,,0,206148,2026-10-22,1.5 - 2.5,2326,52
-2026-10-23,,,Alimentos S.A.S,piña indstria,PIND,518,0,,0,206125,2026-10-22,1.5 - 2.5,2326,52
-2026-10-23,,,Alimentos S.A.S,piña indstria,PIND,391,0,,0,206202,2026-10-22,1.5 - 2.5,2326,32
+2026-10-23,46889,R-19341,Alimentos S.A.S,piña special baby,PEBAB,24,0,1500,0,206376,2026-10-23,1.5 - 2.5,2326,51
+2026-10-23,46891,R-19344,Alimentos S.A.S,piña special baby,PEBAB,434,0,1500,0,206037,2026-10-21,1.5 - 2.5,2326,32
+2026-10-23,46891,R-19344,Alimentos S.A.S,piña special baby,PEBAB,433,0,1500,0,206021,2026-10-21,1.5 - 2.5,2326,32
+2026-10-23,46891,R-19344,Alimentos S.A.S,piña special baby,PEBAB,443,0,1500,0,206010,2026-10-21,1.5 - 2.5,2226,33
+2026-10-23,46891,R-19344,Alimentos S.A.S,piña special baby,PEBAB,95,0,1500,0,205974,2026-10-21,1.5 - 2.5,2326,51
+2026-10-23,46891,R-19344,Alimentos S.A.S,piña special baby,PEBAB,52,0,1500,0,206049,2026-10-21,1.5 - 2.5,2326,32
+2026-10-23,46891,R-19344,Alimentos S.A.S,piña special baby,PEBAB,26,0,1500,0,206363,2026-10-23,1.5 - 2.5,2326,32
+2026-10-23,46891,R-19344,Alimentos S.A.S,piña special guapita,PEGUA,470,0,1500,0,206189,2026-10-22,1.5 - 2.5,2326,32
+2026-10-23,46891,R-19344,Alimentos S.A.S,piña special guapita,PEGUA,479,0,1500,0,206161,2026-10-22,1.5 - 2.5,2326,52
+2026-10-23,46891,R-19344,Alimentos S.A.S,piña special guapita,PEGUA,497,0,1500,0,206102,2026-10-22,1.5 - 2.5,2326,51
+2026-10-23,46891,R-19344,Alimentos S.A.S,piña special guapita,PEGUA,499,0,1500,0,206150,2026-10-22,1.5 - 2.5,2326,52
+2026-10-23,46891,R-19344,Alimentos S.A.S,piña special guapita,PEGUA,459,0,1500,0,206205,2026-10-22,1.5 - 2.5,2326,32
+2026-10-23,46891,R-19344,Alimentos S.A.S,piña special guapita,PEGUA,505,0,1500,0,206133,2026-10-22,1.5 - 2.5,2326,52
+2026-10-23,46891,R-19344,Alimentos S.A.S,piña special guapita,PEGUA,491,0,1500,0,206132,2026-10-22,1.5 - 2.5,2326,52
+2026-10-23,46891,R-19344,Alimentos S.A.S,piña special guapita,PEGUA,366,0,1500,0,206217,2026-10-22,1.5 - 2.5,2226,33
+2026-10-23,46891,R-19344,Alimentos S.A.S,Piña ADGUA,ADGUA,28,0,1500,0,206239,2026-10-22,1.5 - 2.5,2426,47
+2026-10-23,46891,R-19344,Alimentos S.A.S,piña special guapita,PEGUA,473,0,1500,0,206181,2026-10-22,1.5 - 2.5,2326,51
+2026-10-23,46891,R-19344,Alimentos S.A.S,piña special guapita,PEGUA,59,0,1500,0,206173,2026-10-22,1.5 - 2.5,2326,52
+2026-10-23,46891,R-19344,Alimentos S.A.S,piña special guapita,PEGUA,93,0,1500,0,206196,2026-10-22,1.5 - 2.5,2326,32
+2026-10-23,46891,R-19344,Alimentos S.A.S,piña special guapita,PEGUA,522,0,1500,0,206212,2026-10-22,1.5 - 2.5,2326,32
+2026-10-23,46891,R-19344,Alimentos S.A.S,piña special guapita,PEGUA,114,0,1500,0,206388,2026-10-23,1.5 - 2.5,2326,51
+2026-10-23,46891,R-19344,Alimentos S.A.S,piña indstria,PIND,494,0,1500,0,206148,2026-10-22,1.5 - 2.5,2326,52
+2026-10-23,46891,R-19344,Alimentos S.A.S,piña indstria,PIND,518,0,1500,0,206125,2026-10-22,1.5 - 2.5,2326,52
+2026-10-23,46891,R-19344,Alimentos S.A.S,piña indstria,PIND,391,0,1500,0,206202,2026-10-22,1.5 - 2.5,2326,32
+2026-10-23,46891,R-19344,Alimentos S.A.S,piña indstria,PIND,476,0,1500,0,206108,2026-10-22,1.5 - 2.5,2326,51
+2026-10-23,46891,R-19344,Alimentos S.A.S,piña indstria,PIND,466,0,1500,0,206182,2026-10-22,1.5 - 2.5,2326,51
+2026-10-23,46891,R-19344,Alimentos S.A.S,piña indstria,PIND,483,274,1500,27,206403,2026-10-23,1.5 - 2.5,2326,51
+2026-10-23,46892,R-19345,venta empleados,piña special 1ra,PE1,253,0,2200,0,206442,2026-10-23,1.5 - 2.5,2526,46
