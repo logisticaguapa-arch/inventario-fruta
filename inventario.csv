@@ -245,22 +245,40 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 206588,canastas,2026-10-25,PE3,piña special 3ra,4,136
 206589,canastas,2026-10-25,PE1,piña special 1ra,4,517
 206590,canastas,2026-10-25,PEGUA,piña special guapita,1.5 - 2.5,348
-206591,canastas,2026-10-25,,,,0
-206592,canastas,2026-10-25,,,,0
-206593,canastas,2026-10-25,,,,0
-206594,canastas,2026-10-25,,,,0
-206595,canastas,2026-10-25,,,,0
-206596,canastas,2026-10-25,,,,0
-206597,canastas,2026-10-25,,,,0
-206598,canastas,2026-10-25,,,,0
-206599,canastas,2026-10-25,,,,0
-206600,canastas,2026-10-25,,,,0
-206601,canastas,2026-10-25,,,,0
-206602,canastas,2026-10-25,,,,0
-206603,canastas,2026-10-25,,,,0
-206604,canastas,2026-10-25,,,,0
-206605,canastas,2026-10-25,,,,0
-206606,canastas,2026-10-25,,,,0
-206607,canastas,2026-10-25,,,,0
+206591,canastas,2026-10-25,PE3,piña special 3ra,3.0 - 4.0,476
+206592,canastas,2026-10-25,PE3,piña special 3ra,3.0 - 4.0,204
+206593,canastas,2026-10-25,PE1,piña special 1ra,1.5 - 2.5,352
+206594,canastas,2026-10-25,PE1,piña special 1ra,0.0 - 1.0,599
+206595,canastas,2026-10-25,PE2,piña special 2da,1.5 - 2.5,535
+206596,canastas,2026-10-25,PE1,piña special 1ra,3.0 - 4.0,308
+206597,canastas,2026-10-25,AD-PJUG,,3.0 - 4.0,231
+206598,canastas,2026-10-25,AD-PIND,AD-piña indstria,1.5 - 2.5,96
+206599,canastas,2026-10-25,AD1,Piña AD1,1,528
+206600,canastas,2026-10-25,AD1,Piña AD1,0.0 - 1.0,530
+206601,canastas,2026-10-25,AD2,Piña AD2,0.0 - 1.0,205
+206602,canastas,2026-10-25,AD2,Piña AD2,1.5,60
+206603,canastas,2026-10-25,AD-PJUG,,3.0 - 4.0,29
+206604,canastas,2026-10-25,PIND,piña indstria,1.5 - 2.5,521
+206605,canastas,2026-10-25,PE2,piña special 2da,4,527
+206606,canastas,2026-10-25,AD-PIND,AD-piña indstria,1.5 - 2.5,350
+206607,canastas,2026-10-25,PE3,piña special 3ra,0.0 - 1.0,271
 206608,canastas,2026-10-25,,,,0
 206609,canastas,2026-10-25,,,,0
+206610,canastas,2026-10-25,,,,0
+206611,canastas,2026-10-25,,,,0
+206612,canastas,2026-10-25,,,,0
+206613,canastas,2026-10-25,,,,0
+206614,canastas,2026-10-25,,,,0
+206615,canastas,2026-10-25,,,,0
+206616,canastas,2026-10-25,,,,0
+206617,canastas,2026-10-25,,,,0
+206618,canastas,2026-10-25,,,,0
+206619,canastas,2026-10-25,,,,0
+206620,canastas,2026-10-25,,,,0
+206621,canastas,2026-10-25,,,,0
+206622,canastas,2026-10-25,,,,0
+206623,canastas,2026-10-25,,,,0
+206624,canastas,2026-10-25,,,,0
+206625,canastas,2026-10-25,,,,0
+206626,canastas,2026-10-25,,,,0
+206627,canastas,2026-10-25,,,,0
