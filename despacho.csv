@@ -23344,10 +23344,10 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-25,,,descarte,piña special 1ra,PE1,0,0,,49,206041,2026-10-21,3.0 - 4.0,2326,32
 2026-10-25,,,descarte,piña special 1ra,PE1,0,0,,160,206086,2026-10-22,3.0 - 4.0,2326,51
 2026-10-25,,,descarte,piña jugos,PJUG,-10,0,,529,206441,2026-10-23,3.0 - 4.0,2526,46
-2026-10-25,,R-19364,jeronimo martins,piña special 2da,PE2,407,0,3800,0,206486,2026-10-25,1.5,,
-2026-10-25,,R-19364,jeronimo martins,piña special 2da,PE2,415,0,3800,0,206511,2026-10-25,1.5,,
-2026-10-25,,R-19364,jeronimo martins,piña special 2da,PE2,411,0,3800,0,206508,2026-10-25,1.5,,
-2026-10-25,,R-19364,jeronimo martins,,PE1,0,87,3800,0,,,1.5,,
+2026-10-25,46929,R-19364,jeronimo martins,piña special 2da,PE2,407,0,3800,0,206486,2026-10-25,1.5,,
+2026-10-25,46929,R-19364,jeronimo martins,piña special 2da,PE2,415,0,3800,0,206511,2026-10-25,1.5,,
+2026-10-25,46929,R-19364,jeronimo martins,piña special 2da,PE2,411,0,3800,0,206508,2026-10-25,1.5,,
+2026-10-25,46929,R-19364,jeronimo martins,,PE1,0,87,3800,0,,,1.5,,
 2026-10-25,,R-19365,jeronimo martins,piña special 2da,PE2,414,0,3100,0,206534,2026-10-25,1.5,,
 2026-10-25,,R-19365,jeronimo martins,piña special 1ra,PE1,413,0,3100,0,206512,2026-10-25,1.5,,
 2026-10-25,,R-19365,jeronimo martins,piña special 1ra,PE1,414,299,3100,0,206527,2026-10-25,1.5,,
