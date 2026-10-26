@@ -3799,3 +3799,5 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,44,octubre,2026-10-26,2326,52,canastas,8.0,,8.0,8.0,Enferma,PEGUA
 2026,44,octubre,2026-10-26,2326,52,canastas,42.0,,42.0,42.0,Golpe empacadora,PE3
 2026,44,octubre,2026-10-26,2326,51,canastas,51.0,,51.0,51.0,Daño por reposo,PE2
+2026,44,octubre,2026-10-26,2326,52,106,250.0,,250.0,250.0,Daño por reposo,PE1
+2026,44,octubre,2026-10-26,2526,77,29,32.0,,32.0,32.0,Daño por reposo,AD1
