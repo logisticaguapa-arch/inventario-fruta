@@ -23379,7 +23379,14 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-26,,,cartagena,piña special 1ra,PE1,542,301,,0,206538,2026-10-25,0.0 - 1.0,2426,32
 2026-10-26,,,cartagena,piña special 2da,PE2,500,0,,0,206543,2026-10-25,0.0 - 1.0,2426,32
 2026-10-26,,,cartagena,piña special 2da,PE2,500,0,,3,206518,2026-10-25,0.0 - 1.0,2426,32
+2026-10-26,,,cartagena,piña special baby,PEBAB,419,0,,2,206547,2026-10-25,1.5 - 2.5,2426,47
+2026-10-26,,,cartagena,piña special baby,PEBAB,433,0,,0,206504,2026-10-25,1.5 - 2.5,2326,52
+2026-10-26,,,cartagena,piña special baby,PEBAB,422,0,,0,206498,2026-10-25,1.5 - 2.5,2326,52
+2026-10-26,,,cartagena,piña special baby,PEBAB,427,0,,0,206472,2026-10-25,1.5 - 2.5,2326,52
+2026-10-26,,,cartagena,piña special baby,PEBAB,424,33,,0,206466,2026-10-25,1.5 - 2.5,2326,52
 2026-10-26,,,cartagena,piña special guapita,PEGUA,483,0,,0,206454,2026-10-25,1.5 - 2.5,2326,52
+2026-10-26,,,cartagena,piña special guapita,PEGUA,560,0,,0,206587,2026-10-25,1.5 - 2.5,2326,51
+2026-10-26,,,cartagena,piña special guapita,PEGUA,469,330,,0,206501,2026-10-25,1.5 - 2.5,2326,52
 2026-10-26,,,local sincelejo,piña special 2da,PE2,486,0,,0,206595,2026-10-25,1.5 - 2.5,2326,51
 2026-10-26,,,local sincelejo,piña special 2da,PE2,508,0,,0,206532,2026-10-25,1.5 - 2.5,2426,32
 2026-10-26,,,local sincelejo,piña special 2da,PE2,6,0,,0,206627,2026-10-26,1.5 - 2.5,,
@@ -23392,6 +23399,9 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-26,,,local sincelejo,piña special guapita,PEGUA,469,0,,0,206537,2026-10-25,1.5 - 2.5,2426,32
 2026-10-26,,,local sincelejo,piña special guapita,PEGUA,474,0,,0,206456,2026-10-25,1.5 - 2.5,2326,52
 2026-10-26,,,local sincelejo,piña special guapita,PEGUA,473,135,,0,206470,2026-10-25,1.5 - 2.5,2326,52
-2026-10-26,,,local sincelejo,piña special baby,PEBAB,419,0,,2,206547,2026-10-25,1.5 - 2.5,2426,47
-2026-10-26,,,local sincelejo,piña special baby,PEBAB,433,0,,0,206504,2026-10-25,1.5 - 2.5,2326,52
-2026-10-26,,,local sincelejo,piña special baby,PEBAB,422,0,,0,206498,2026-10-25,1.5 - 2.5,2326,52
+2026-10-26,,,local sincelejo,piña special baby,PEBAB,428,0,,0,206513,2026-10-25,1.5 - 2.5,2426,32
+2026-10-26,,,local sincelejo,piña special baby,PEBAB,441,0,,0,206529,2026-10-25,1.5 - 2.5,2426,32
+2026-10-26,,,local sincelejo,piña special baby,PEBAB,451,0,,0,206522,2026-10-25,1.5 - 2.5,2426,32
+2026-10-26,,,local sincelejo,piña special baby,PEBAB,449,0,,0,206616,2026-10-25,1.5 - 2.5,2326,52
+2026-10-26,,,local sincelejo,piña special baby,PEBAB,430,0,,0,206489,2026-10-25,1.5 - 2.5,2326,52
+2026-10-26,,,local sincelejo,piña special baby,PEBAB,269,0,,0,206615,2026-10-25,1.5 - 2.5,2326,52
