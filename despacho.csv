@@ -23576,17 +23576,13 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-27,,R-19388,cartagena,piña special baby,PEBAB,510,0,,0,206659,2026-10-26,1.5 - 2.5,2426,47
 2026-10-27,,R-19388,cartagena,piña special baby,PEBAB,406,0,,0,206685,2026-10-26,1.5 - 2.5,2426,32
 2026-10-27,,R-19388,cartagena,piña special baby,PEBAB,457,5,,0,206751,2026-10-26,1.5 - 2.5,2426,32
-2026-10-27,,,descarte,piña indstria,PIND,0,0,,490,206076,2026-10-21,1.5 - 2.5,2226,33
-2026-10-27,,,descarte,AD-piña indstria,AD-PIND,0,0,,1341,206080,2026-10-21,1.5 - 2.5,2626,77
-2026-10-27,,,descarte,AD-piña indstria,AD-PIND,0,0,,1378,206079,2026-10-21,1.5 - 2.5,2626,77
-2026-10-27,,,descarte,AD-piña indstria,AD-PIND,0,0,,1454,206078,2026-10-21,1.5 - 2.5,2626,77
 2026-10-27,,R-19392,carmen susana hoyos,piña special guapita,PEGUA,482,0,,6,206726,2026-10-26,1.5 - 2.5,2426,47
 2026-10-27,,R-19392,carmen susana hoyos,piña special guapita,PEGUA,499,0,,0,206694,2026-10-26,1.5 - 2.5,2426,32
 2026-10-27,,R-19392,carmen susana hoyos,piña special guapita,PEGUA,429,0,,0,206770,2026-10-26,1.5 - 2.5,2426,32
 2026-10-27,,R-19392,carmen susana hoyos,piña special guapita,PEGUA,576,0,,0,206653,2026-10-26,1.5 - 2.5,2426,47
 2026-10-27,,R-19392,carmen susana hoyos,piña special guapita,PEGUA,572,442,,0,206637,2026-10-26,1.5 - 2.5,2426,47
 2026-10-27,,R-19392,carmen susana hoyos,piña special baby,PEBAB,464,0,,0,206771,2026-10-26,1.5 - 2.5,2426,32
-2026-10-27,,R-19392,carmen susana hoyos,piña special baby,PEBAB,50,0,,0,206801,2026-10-27,1.5 - 2.5,,
+2026-10-27,,R-19392,carmen susana hoyos,piña special baby,PEBAB,50,0,,0,206801,2026-10-27,1.5 - 2.5,2426,47
 2026-10-27,,R-19392,carmen susana hoyos,piña special baby,PEBAB,495,0,,6,206716,2026-10-26,1.5 - 2.5,2426,47
 2026-10-27,,R-19392,carmen susana hoyos,piña special baby,PEBAB,516,0,,0,206732,2026-10-26,1.5 - 2.5,2426,52
 2026-10-27,,R-19392,carmen susana hoyos,piña special baby,PEBAB,473,0,,0,206675,2026-10-26,1.5 - 2.5,2426,32
@@ -23651,4 +23647,34 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-27,,,profruts s.a.s.,piña special 1ra,PE1,648,0,,0,206648,2026-10-26,0.0 - 1.0,2426,47
 2026-10-27,,,profruts s.a.s.,piña special 1ra,PE1,628,0,,0,206660,2026-10-26,0.0 - 1.0,2426,47
 2026-10-27,,,profruts s.a.s.,piña special 1ra,PE1,629,0,,0,206677,2026-10-26,0.0 - 1.0,2426,32
+2026-10-27,,,profruts s.a.s.,piña special 1ra,PE1,570,0,,0,206763,2026-10-26,0.0 - 1.0,2426,32
+2026-10-27,,,profruts s.a.s.,piña special 1ra,PE1,682,28,,0,206649,2026-10-26,0.0 - 1.0,2426,47
 2026-10-27,,,camilo quiñones,piña indstria,PIND,584,0,,0,205907,2026-10-21,1.5 - 2.5,2326,52
+2026-10-27,,,camilo quiñones,piña indstria,PIND,577,0,,0,205896,2026-10-21,1.5 - 2.5,2326,52
+2026-10-27,,,camilo quiñones,piña indstria,PIND,599,0,,0,205926,2026-10-21,1.5 - 2.5,2326,52
+2026-10-27,,,camilo quiñones,piña indstria,PIND,589,0,,0,205901,2026-10-21,1.5 - 2.5,2326,52
+2026-10-27,,,camilo quiñones,piña indstria,PIND,580,0,,0,205910,2026-10-21,1.5 - 2.5,2326,52
+2026-10-27,,,camilo quiñones,piña indstria,PIND,580,0,,0,205975,2026-10-21,1.5 - 2.5,2326,51
+2026-10-27,,,camilo quiñones,piña indstria,PIND,589,0,,0,205934,2026-10-21,1.5 - 2.5,2326,52
+2026-10-27,,,camilo quiñones,piña indstria,PIND,580,0,,0,205916,2026-10-21,1.5 - 2.5,2326,52
+2026-10-27,,,camilo quiñones,piña indstria,PIND,587,0,,0,205952,2026-10-21,1.5 - 2.5,2326,51
+2026-10-27,,,camilo quiñones,piña indstria,PIND,453,282,,108,205955,2026-10-21,1.5 - 2.5,2326,51
+2026-10-27,,,descarte,Piña AD1,AD1,0,0,,1546,206263,2026-10-22,0.0 - 1.0,2626,77
+2026-10-27,,,descarte,piña indstria,PIND,0,0,,490,206076,2026-10-21,1.5 - 2.5,2226,33
+2026-10-27,,,descarte,AD-piña indstria,AD-PIND,0,0,,1341,206080,2026-10-21,1.5 - 2.5,2626,77
+2026-10-27,,,descarte,AD-piña indstria,AD-PIND,0,0,,1378,206079,2026-10-21,1.5 - 2.5,2626,77
+2026-10-27,,,descarte,AD-piña indstria,AD-PIND,0,0,,1454,206078,2026-10-21,1.5 - 2.5,2626,77
+2026-10-27,,,descarte,Piña AD1,AD1,0,0,,1412,206257,2026-10-22,0.0 - 1.0,2526,77
+2026-10-27,,,descarte,Piña AD1,AD1,0,0,,99,206264,2026-10-22,0.0 - 1.0,2526,77
+2026-10-27,,,descarte,piña indstria,PIND,0,0,,1329,206075,2026-10-21,1.5 - 2.5,2226,33
+2026-10-27,,,jeronimo martins,piña special 1ra,PE1,413,0,,0,206745,2026-10-26,1.5,2426,52
+2026-10-27,,,jeronimo martins,piña special 2da,PE2,409,0,,0,206748,2026-10-26,1.5,2426,52
+2026-10-27,,,jeronimo martins,piña special 1ra,PE1,401,0,,0,206713,2026-10-26,1.5,2426,47
+2026-10-27,,,jeronimo martins,piña special 1ra,PE1,350,0,,0,206761,2026-10-26,1.5,2426,32
+2026-10-27,,,jeronimo martins,piña special 2da,PE2,235,0,,0,206764,2026-10-26,1.5,2426,32
+2026-10-27,,,ramiro parada,piña special 1ra,PE1,97,0,,0,206426,2026-10-23,0.0 - 1.0,2326,51
+2026-10-27,,,ramiro parada,piña special 1ra,PE1,533,0,,0,206286,2026-10-23,3.0 - 4.0,2326,51
+2026-10-27,,,ramiro parada,piña special 1ra,PE1,549,0,,0,206275,2026-10-23,0.0 - 1.0,2326,51
+2026-10-27,,,ramiro parada,piña indstria,PIND,179,0,,0,205932,2026-10-21,1.5 - 2.5,2326,52
+2026-10-27,,,ramiro parada,AD-piña indstria,AD-PIND,126,0,,0,206064,2026-10-21,1.5 - 2.5,3426,77
+2026-10-27,,,ramiro parada,piña indstria,PIND,39,0,,0,205966,2026-10-21,1.5 - 2.5,2326,51

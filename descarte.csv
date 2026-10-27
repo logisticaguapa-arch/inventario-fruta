@@ -3821,10 +3821,6 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,44,octubre,2026-10-27,2426,32,canastas,2.0,,2.0,2.0,Muestreo,PE3
 2026,44,octubre,2026-10-27,2426,32,canastas,10.0,,10.0,10.0,Muestreo,PE1
 2026,44,octubre,2026-10-27,2326,52,canastas,6.0,,6.0,6.0,Muestreo,PE1
-2026,44,octubre,2026-10-27,2226,33,110,490.0,,490.0,490.0,Sobre madura campo,PIND
-2026,44,octubre,2026-10-27,2626,77,94,1341.0,,1341.0,1341.0,Enferma,AD-PIND
-2026,44,octubre,2026-10-27,2626,77,30,1378.0,,1378.0,1378.0,Enferma,AD-PIND
-2026,44,octubre,2026-10-27,2626,77,72,1454.0,,1454.0,1454.0,Enferma,AD-PIND
 2026,44,octubre,2026-10-27,2426,47,canastas,6.0,,6.0,6.0,Muestreo,PEGUA
 2026,44,octubre,2026-10-27,2426,47,canastas,6.0,,6.0,6.0,Muestreo,PEBAB
 2026,44,octubre,2026-10-27,2826,32,canastas,2.0,,2.0,2.0,Muestreo,AD1
@@ -3835,3 +3831,12 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,44,octubre,2026-10-27,2326,51,canastas,422.0,,422.0,422.0,Daño por reposo,PE1
 2026,44,octubre,2026-10-27,2326,52,canastas,76.0,,76.0,76.0,Daño por reposo,PE1
 2026,44,octubre,2026-10-27,2426,47,canastas,16.0,,16.0,16.0,Muestreo,PE1
+2026,44,octubre,2026-10-27,2326,51,canastas,108.0,,108.0,108.0,Daño por reposo,PIND
+2026,44,octubre,2026-10-27,2626,77,122,1546.0,,1546.0,1546.0,Enferma,AD1
+2026,44,octubre,2026-10-27,2226,33,110,490.0,,490.0,490.0,Sobre madura campo,PIND
+2026,44,octubre,2026-10-27,2626,77,94,1341.0,,1341.0,1341.0,Enferma,AD-PIND
+2026,44,octubre,2026-10-27,2626,77,30,1378.0,,1378.0,1378.0,Enferma,AD-PIND
+2026,44,octubre,2026-10-27,2626,77,72,1454.0,,1454.0,1454.0,Enferma,AD-PIND
+2026,44,octubre,2026-10-27,2526,77,16,1412.0,,1412.0,1412.0,Enferma,AD1
+2026,44,octubre,2026-10-27,2526,77,36,99.0,,99.0,99.0,Enferma,AD1
+2026,44,octubre,2026-10-27,2226,33,158,1329.0,,1329.0,1329.0,Enferma,PIND
