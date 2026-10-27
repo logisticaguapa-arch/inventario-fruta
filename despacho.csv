@@ -23549,7 +23549,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-27,,R-19387,local apartado,piña special 1ra,PE1,574,0,,3,206521,2026-10-25,0.0 - 1.0,2426,32
 2026-10-27,,R-19387,local apartado,piña special 1ra,PE1,568,58,,0,206533,2026-10-25,0.0 - 1.0,2426,32
 2026-10-27,,R-19387,local apartado,piña special 1ra,PE1,137,43,,0,206465,2026-10-25,1.5 - 2.5,2326,52
-2026-10-27,,R-19387,local apartado,AD-piña indstria,AD-PIND,174,26,,0,206793,2026-10-26,1.5 - 2.5,,
+2026-10-27,,R-19387,local apartado,AD-piña indstria,AD-PIND,174,26,,0,206793,2026-10-26,1.5 - 2.5,2826,32
 2026-10-27,,R-19389,local medellin,piña special 2da,PE2,500,0,,1,206754,2026-10-26,1.5 - 2.5,2426,32
 2026-10-27,,R-19389,local medellin,piña special 2da,PE2,591,0,,5,206631,2026-10-26,0.0 - 1.0,2426,47
 2026-10-27,,R-19389,local medellin,piña special 2da,PE2,601,0,,0,206661,2026-10-26,0.0 - 1.0,2426,47
@@ -23564,8 +23564,8 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-27,,R-19389,local medellin,piña special 1ra,PE1,484,26,,0,206783,2026-10-26,3.0 - 4.0,2426,32
 2026-10-27,,R-19389,local medellin,piña special 2da,PE2,505,95,,0,206781,2026-10-26,3.0 - 4.0,2426,32
 2026-10-27,,R-19389,local medellin,piña special 3ra,PE3,567,433,,2,206784,2026-10-26,3.0 - 4.0,2426,32
-2026-10-27,,R-19388,cartagena,Piña AD1,AD1,574,0,,0,206775,2026-10-26,0.0 - 1.0,,
-2026-10-27,,R-19388,cartagena,Piña AD1,AD1,575,0,,0,206785,2026-10-26,0.0 - 1.0,,
+2026-10-27,,R-19388,cartagena,Piña AD1,AD1,574,0,,0,206775,2026-10-26,0.0 - 1.0,2526,32
+2026-10-27,,R-19388,cartagena,Piña AD1,AD1,575,0,,0,206785,2026-10-26,0.0 - 1.0,3225,77
 2026-10-27,,R-19388,cartagena,piña special 1ra,PE1,564,44,,0,206758,2026-10-26,0.0 - 1.0,2426,32
 2026-10-27,,R-19388,cartagena,piña special 1ra,PE1,527,0,,10,206519,2026-10-25,0.0 - 1.0,2426,32
 2026-10-27,,R-19388,cartagena,piña special 1ra,PE1,581,0,,6,206506,2026-10-25,0.0 - 1.0,2326,52
@@ -23627,4 +23627,28 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-27,,R-19391,KARINA BORJA,piña special 3ra,PE3,45,409,,0,206672,2026-10-26,0.0 - 1.0,2426,47
 2026-10-27,,,andres ruben oquendo,piña special 1ra,PE1,588,0,,16,206567,2026-10-25,3.0 - 4.0,2326,52
 2026-10-27,,,andres ruben oquendo,piña special 1ra,PE1,559,0,,0,206582,2026-10-25,3.0 - 4.0,2326,51
+2026-10-27,,,andres ruben oquendo,piña special 1ra,PE1,514,0,,0,206491,2026-10-25,3.0 - 4.0,2326,52
+2026-10-27,,,andres ruben oquendo,piña special 1ra,PE1,535,0,,0,206488,2026-10-25,3.0 - 4.0,2326,52
+2026-10-27,,,andres ruben oquendo,piña special 1ra,PE1,586,0,,0,206546,2026-10-25,3.0 - 4.0,2426,47
+2026-10-27,,,andres ruben oquendo,piña special 1ra,PE1,585,0,,0,206554,2026-10-25,3.0 - 4.0,2426,47
+2026-10-27,,,andres ruben oquendo,piña special 1ra,PE1,569,0,,0,206557,2026-10-25,3.0 - 4.0,2426,47
+2026-10-27,,,andres ruben oquendo,piña special 1ra,PE1,532,0,,0,206551,2026-10-25,3.0 - 4.0,2426,47
+2026-10-27,,,andres ruben oquendo,piña special 1ra,PE1,589,0,,0,206569,2026-10-25,3.0 - 4.0,2326,52
+2026-10-27,,,andres ruben oquendo,piña special 1ra,PE1,191,0,,422,206579,2026-10-25,3.0 - 4.0,2326,51
+2026-10-27,,,andres ruben oquendo,piña special 1ra,PE1,463,0,,76,206499,2026-10-25,3.0 - 4.0,2326,52
+2026-10-27,,,andres ruben oquendo,piña special 1ra,PE1,289,0,,0,206596,2026-10-25,3.0 - 4.0,2326,51
 2026-10-27,,,profruts s.a.s.,piña special 1ra,PE1,671,0,,0,206665,2026-10-26,0.0 - 1.0,2426,47
+2026-10-27,,,profruts s.a.s.,piña special 1ra,PE1,672,0,,16,206646,2026-10-26,0.0 - 1.0,2426,47
+2026-10-27,,,profruts s.a.s.,Piña AD1,AD1,539,0,,0,206768,2026-10-26,0.0 - 1.0,,
+2026-10-27,,,profruts s.a.s.,piña special 1ra,PE1,683,0,,0,206656,2026-10-26,0.0 - 1.0,2426,47
+2026-10-27,,,profruts s.a.s.,piña special 1ra,PE1,588,0,,0,206711,2026-10-26,0.0 - 1.0,2426,47
+2026-10-27,,,profruts s.a.s.,piña special 1ra,PE1,571,0,,0,206728,2026-10-26,0.0 - 1.0,2426,47
+2026-10-27,,,profruts s.a.s.,piña special 1ra,PE1,706,0,,0,206644,2026-10-26,0.0 - 1.0,2426,47
+2026-10-27,,,profruts s.a.s.,piña special 1ra,PE1,661,0,,0,206629,2026-10-26,0.0 - 1.0,2426,47
+2026-10-27,,,profruts s.a.s.,piña special 1ra,PE1,571,0,,0,206691,2026-10-26,0.0 - 1.0,2426,32
+2026-10-27,,,profruts s.a.s.,piña special 1ra,PE1,546,0,,0,206708,2026-10-26,0.0 - 1.0,2426,47
+2026-10-27,,,profruts s.a.s.,piña special 1ra,PE1,607,0,,0,206641,2026-10-26,0.0 - 1.0,2426,47
+2026-10-27,,,profruts s.a.s.,piña special 1ra,PE1,648,0,,0,206648,2026-10-26,0.0 - 1.0,2426,47
+2026-10-27,,,profruts s.a.s.,piña special 1ra,PE1,628,0,,0,206660,2026-10-26,0.0 - 1.0,2426,47
+2026-10-27,,,profruts s.a.s.,piña special 1ra,PE1,629,0,,0,206677,2026-10-26,0.0 - 1.0,2426,32
+2026-10-27,,,camilo quiñones,piña indstria,PIND,584,0,,0,205907,2026-10-21,1.5 - 2.5,2326,52
