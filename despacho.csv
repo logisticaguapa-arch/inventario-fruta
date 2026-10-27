@@ -23488,7 +23488,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-26,46953,R-19381,Afrucol S.A.S.,piña special 1ra,PE1,18,0,2300,0,206230,2026-10-22,1.5 - 2.5,2326,32
 2026-10-26,46953,R-19381,Afrucol S.A.S.,piña special 1ra,PE1,558,267,2300,0,206497,2026-10-25,1.5 - 2.5,2326,52
 2026-10-26,46946,R-19380,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,582,0,3000,0,206515,2026-10-25,1,2426,32
-2026-10-26,46946,R-19380,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,478,0,3000,80,206540,2026-10-25,1,2426,32
+2026-10-26,46946,R-19380,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,558,0,3000,0,206540,2026-10-25,1,2426,32
 2026-10-26,46946,R-19380,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,573,0,3000,0,206531,2026-10-25,1,2426,32
 2026-10-26,46946,R-19380,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,581,0,3000,0,206576,2026-10-25,1,2326,51
 2026-10-26,46946,R-19380,Almacenes Éxito S.A. - Medellin,Piña AD1,AD1,524,0,3000,0,206599,2026-10-25,1,2826,32
@@ -23544,121 +23544,122 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-26,,R-19385,fundacion saciar,piña special 1ra,PE1,38,0,,0,206158,2026-10-22,3.0 - 4.0,2326,52
 2026-10-26,,R-19385,fundacion saciar,piña special 1ra,PE1,316,0,,250,206292,2026-10-23,3.0 - 4.0,2326,51
 2026-10-26,,,descarte,piña special 1ra,PE1,0,0,,572,206146,2026-10-22,3.0 - 4.0,2326,52
-2026-10-27,,R-19387,local apartado,piña special guapita,PEGUA,496,204,,1,206740,2026-10-26,1.5 - 2.5,2426,52
-2026-10-27,,R-19387,local apartado,piña special 2da,PE2,505,95,,2,206671,2026-10-26,0.0 - 1.0,2426,47
-2026-10-27,,R-19387,local apartado,piña special 1ra,PE1,574,0,,3,206521,2026-10-25,0.0 - 1.0,2426,32
-2026-10-27,,R-19387,local apartado,piña special 1ra,PE1,568,58,,0,206533,2026-10-25,0.0 - 1.0,2426,32
-2026-10-27,,R-19387,local apartado,piña special 1ra,PE1,137,43,,0,206465,2026-10-25,1.5 - 2.5,2326,52
-2026-10-27,,R-19387,local apartado,AD-piña indstria,AD-PIND,174,26,,0,206793,2026-10-26,1.5 - 2.5,2826,32
-2026-10-27,,R-19389,local medellin,piña special 2da,PE2,500,0,,1,206754,2026-10-26,1.5 - 2.5,2426,32
-2026-10-27,,R-19389,local medellin,piña special 2da,PE2,591,0,,5,206631,2026-10-26,0.0 - 1.0,2426,47
-2026-10-27,,R-19389,local medellin,piña special 2da,PE2,601,0,,0,206661,2026-10-26,0.0 - 1.0,2426,47
-2026-10-27,,R-19389,local medellin,piña special 2da,PE2,240,68,,0,206798,2026-10-26,0.0 - 1.0,2426,32
-2026-10-27,,R-19389,local medellin,piña special 1ra,PE1,545,455,,4,206698,2026-10-26,1.5 - 2.5,2426,32
-2026-10-27,,R-19389,local medellin,Piña AD1,AD1,108,0,,0,206612,2026-10-25,1.5 - 2.5,2826,32
-2026-10-27,,R-19389,local medellin,piña special 1ra,PE1,557,0,,0,206737,2026-10-26,3.0 - 4.0,2426,52
-2026-10-27,,R-19389,local medellin,piña special 1ra,PE1,540,0,,0,206734,2026-10-26,3.0 - 4.0,2426,52
-2026-10-27,,R-19389,local medellin,piña special 1ra,PE1,562,0,,10,206742,2026-10-26,3.0 - 4.0,2426,52
-2026-10-27,,R-19389,local medellin,piña special 1ra,PE1,540,0,,0,206750,2026-10-26,3.0 - 4.0,2426,52
-2026-10-27,,R-19389,local medellin,piña special 1ra,PE1,560,0,,0,206689,2026-10-26,3.0 - 4.0,2426,32
-2026-10-27,,R-19389,local medellin,piña special 1ra,PE1,484,26,,0,206783,2026-10-26,3.0 - 4.0,2426,32
-2026-10-27,,R-19389,local medellin,piña special 2da,PE2,505,95,,0,206781,2026-10-26,3.0 - 4.0,2426,32
-2026-10-27,,R-19389,local medellin,piña special 3ra,PE3,567,433,,2,206784,2026-10-26,3.0 - 4.0,2426,32
-2026-10-27,,R-19388,cartagena,Piña AD1,AD1,574,0,,0,206775,2026-10-26,0.0 - 1.0,2526,32
-2026-10-27,,R-19388,cartagena,Piña AD1,AD1,575,0,,0,206785,2026-10-26,0.0 - 1.0,3225,77
-2026-10-27,,R-19388,cartagena,piña special 1ra,PE1,564,44,,0,206758,2026-10-26,0.0 - 1.0,2426,32
-2026-10-27,,R-19388,cartagena,piña special 1ra,PE1,527,0,,10,206519,2026-10-25,0.0 - 1.0,2426,32
-2026-10-27,,R-19388,cartagena,piña special 1ra,PE1,581,0,,6,206506,2026-10-25,0.0 - 1.0,2326,52
-2026-10-27,,R-19388,cartagena,piña special 1ra,PE1,319,0,,0,206617,2026-10-25,0.0 - 1.0,2326,52
-2026-10-27,,R-19388,cartagena,Piña AD1,AD1,464,74,,0,206609,2026-10-25,0.0 - 1.0,2826,32
-2026-10-27,,R-19388,cartagena,piña special baby,PEBAB,476,0,,0,206668,2026-10-26,1.5 - 2.5,2426,47
-2026-10-27,,R-19388,cartagena,piña special baby,PEBAB,430,0,,0,206696,2026-10-26,1.5 - 2.5,2426,32
-2026-10-27,,R-19388,cartagena,piña special baby,PEBAB,510,0,,0,206659,2026-10-26,1.5 - 2.5,2426,47
-2026-10-27,,R-19388,cartagena,piña special baby,PEBAB,406,0,,0,206685,2026-10-26,1.5 - 2.5,2426,32
-2026-10-27,,R-19388,cartagena,piña special baby,PEBAB,457,5,,0,206751,2026-10-26,1.5 - 2.5,2426,32
-2026-10-27,,R-19392,carmen susana hoyos,piña special guapita,PEGUA,482,0,,6,206726,2026-10-26,1.5 - 2.5,2426,47
-2026-10-27,,R-19392,carmen susana hoyos,piña special guapita,PEGUA,499,0,,0,206694,2026-10-26,1.5 - 2.5,2426,32
-2026-10-27,,R-19392,carmen susana hoyos,piña special guapita,PEGUA,429,0,,0,206770,2026-10-26,1.5 - 2.5,2426,32
-2026-10-27,,R-19392,carmen susana hoyos,piña special guapita,PEGUA,576,0,,0,206653,2026-10-26,1.5 - 2.5,2426,47
-2026-10-27,,R-19392,carmen susana hoyos,piña special guapita,PEGUA,572,442,,0,206637,2026-10-26,1.5 - 2.5,2426,47
-2026-10-27,,R-19392,carmen susana hoyos,piña special baby,PEBAB,464,0,,0,206771,2026-10-26,1.5 - 2.5,2426,32
-2026-10-27,,R-19392,carmen susana hoyos,piña special baby,PEBAB,50,0,,0,206801,2026-10-27,1.5 - 2.5,2426,47
-2026-10-27,,R-19392,carmen susana hoyos,piña special baby,PEBAB,495,0,,6,206716,2026-10-26,1.5 - 2.5,2426,47
-2026-10-27,,R-19392,carmen susana hoyos,piña special baby,PEBAB,516,0,,0,206732,2026-10-26,1.5 - 2.5,2426,52
-2026-10-27,,R-19392,carmen susana hoyos,piña special baby,PEBAB,473,0,,0,206675,2026-10-26,1.5 - 2.5,2426,32
-2026-10-27,,R-19392,carmen susana hoyos,piña special baby,PEBAB,459,0,,0,206727,2026-10-26,1.5 - 2.5,2426,47
-2026-10-27,,R-19392,carmen susana hoyos,piña special baby,PEBAB,438,0,,0,206755,2026-10-26,1.5 - 2.5,2426,32
-2026-10-27,,R-19392,carmen susana hoyos,piña special baby,PEBAB,105,0,,0,206778,2026-10-26,1.5 - 2.5,2426,32
-2026-10-27,,R-19390,local sincelejo,Piña AD1,AD1,95,0,,2,206600,2026-10-25,0.0 - 1.0,2826,32
-2026-10-27,,R-19390,local sincelejo,piña special 1ra,PE1,526,77,,0,206510,2026-10-25,0.0 - 1.0,2426,32
-2026-10-27,,R-19390,local sincelejo,piña special 2da,PE2,501,0,,0,206684,2026-10-26,0.0 - 1.0,2426,32
-2026-10-27,,R-19390,local sincelejo,piña special 2da,PE2,499,0,,0,206692,2026-10-26,0.0 - 1.0,2426,32
-2026-10-27,,R-19390,local sincelejo,piña special 3ra,PE3,560,0,,4,206654,2026-10-26,0.0 - 1.0,2426,47
-2026-10-27,,R-19390,local sincelejo,piña special 3ra,PE3,475,0,,0,206701,2026-10-26,0.0 - 1.0,2426,32
-2026-10-27,,R-19390,local sincelejo,piña special 3ra,PE3,478,0,,0,206688,2026-10-26,0.0 - 1.0,2426,32
-2026-10-27,,R-19390,local sincelejo,piña special 3ra,PE3,497,0,,0,206743,2026-10-26,0.0 - 1.0,2426,52
-2026-10-27,,R-19390,local sincelejo,piña special 3ra,PE3,533,457,,0,206773,2026-10-26,0.0 - 1.0,2426,32
-2026-10-27,,R-19390,local sincelejo,piña special guapita,PEGUA,485,0,,0,206722,2026-10-26,1.5 - 2.5,2426,47
-2026-10-27,,R-19390,local sincelejo,piña special guapita,PEGUA,473,0,,0,206736,2026-10-26,1.5 - 2.5,2426,52
-2026-10-27,,R-19390,local sincelejo,piña special guapita,PEGUA,481,0,,4,206720,2026-10-26,1.5 - 2.5,2426,47
-2026-10-27,,R-19390,local sincelejo,piña special guapita,PEGUA,475,0,,0,206733,2026-10-26,1.5 - 2.5,2426,52
-2026-10-27,,R-19390,local sincelejo,piña special guapita,PEGUA,86,0,,0,206774,2026-10-26,1.5 - 2.5,2426,32
-2026-10-27,,R-19393,andres ruben oquendo,piña special 2da,PE2,503,0,,9,206580,2026-10-25,3.0 - 4.0,2326,51
-2026-10-27,,R-19393,andres ruben oquendo,piña special 2da,PE2,517,0,,0,206558,2026-10-25,3.0 - 4.0,2326,52
-2026-10-27,,R-19393,andres ruben oquendo,piña special 2da,PE2,509,0,,0,206544,2026-10-25,3.0 - 4.0,2426,32
-2026-10-27,,R-19393,andres ruben oquendo,piña special 2da,PE2,504,0,,0,206459,2026-10-25,3.0 - 4.0,2326,52
-2026-10-27,,R-19393,andres ruben oquendo,piña special 2da,PE2,503,0,,0,206455,2026-10-25,3.0 - 4.0,2326,52
-2026-10-27,,R-19393,andres ruben oquendo,piña special 2da,PE2,502,0,,0,206464,2026-10-25,3.0 - 4.0,2326,52
-2026-10-27,,R-19393,andres ruben oquendo,piña special 2da,PE2,502,0,,0,206468,2026-10-25,3.0 - 4.0,2326,52
-2026-10-27,,R-19393,andres ruben oquendo,piña special 2da,PE2,507,0,,0,206473,2026-10-25,3.0 - 4.0,2326,52
-2026-10-27,,R-19393,andres ruben oquendo,piña special 2da,PE2,514,0,,0,206452,2026-10-25,3.0 - 4.0,2326,52
-2026-10-27,,R-19393,andres ruben oquendo,piña special 2da,PE2,502,0,,0,206480,2026-10-25,3.0 - 4.0,2326,52
-2026-10-27,,R-19393,andres ruben oquendo,piña special 2da,PE2,316,0,,0,206584,2026-10-25,3.0 - 4.0,2326,51
-2026-10-27,,R-19393,andres ruben oquendo,piña special 2da,PE2,507,0,,0,206574,2026-10-25,3.0 - 4.0,2326,51
-2026-10-27,,R-19393,andres ruben oquendo,piña special 2da,PE2,271,132,,0,206490,2026-10-25,3.0 - 4.0,2326,52
-2026-10-27,,R-19391,KARINA BORJA,,PE3,0,500,,0,,,1,,
-2026-10-27,,R-19391,KARINA BORJA,piña special 3ra,PE3,480,0,,0,206741,2026-10-26,1.5 - 2.5,2426,52
-2026-10-27,,R-19391,KARINA BORJA,piña special 3ra,PE3,276,0,,0,206769,2026-10-26,1.5 - 2.5,2426,32
-2026-10-27,,R-19391,KARINA BORJA,piña special 3ra,PE3,580,0,,0,206719,2026-10-26,1.5 - 2.5,2426,47
-2026-10-27,,R-19391,KARINA BORJA,piña special 3ra,PE3,45,409,,0,206672,2026-10-26,0.0 - 1.0,2426,47
-2026-10-27,,,andres ruben oquendo,piña special 1ra,PE1,588,0,,16,206567,2026-10-25,3.0 - 4.0,2326,52
-2026-10-27,,,andres ruben oquendo,piña special 1ra,PE1,559,0,,0,206582,2026-10-25,3.0 - 4.0,2326,51
-2026-10-27,,,andres ruben oquendo,piña special 1ra,PE1,514,0,,0,206491,2026-10-25,3.0 - 4.0,2326,52
-2026-10-27,,,andres ruben oquendo,piña special 1ra,PE1,535,0,,0,206488,2026-10-25,3.0 - 4.0,2326,52
-2026-10-27,,,andres ruben oquendo,piña special 1ra,PE1,586,0,,0,206546,2026-10-25,3.0 - 4.0,2426,47
-2026-10-27,,,andres ruben oquendo,piña special 1ra,PE1,585,0,,0,206554,2026-10-25,3.0 - 4.0,2426,47
-2026-10-27,,,andres ruben oquendo,piña special 1ra,PE1,569,0,,0,206557,2026-10-25,3.0 - 4.0,2426,47
-2026-10-27,,,andres ruben oquendo,piña special 1ra,PE1,532,0,,0,206551,2026-10-25,3.0 - 4.0,2426,47
-2026-10-27,,,andres ruben oquendo,piña special 1ra,PE1,589,0,,0,206569,2026-10-25,3.0 - 4.0,2326,52
-2026-10-27,,,andres ruben oquendo,piña special 1ra,PE1,191,0,,422,206579,2026-10-25,3.0 - 4.0,2326,51
-2026-10-27,,,andres ruben oquendo,piña special 1ra,PE1,463,0,,76,206499,2026-10-25,3.0 - 4.0,2326,52
-2026-10-27,,,andres ruben oquendo,piña special 1ra,PE1,289,0,,0,206596,2026-10-25,3.0 - 4.0,2326,51
-2026-10-27,,,profruts s.a.s.,piña special 1ra,PE1,671,0,,0,206665,2026-10-26,0.0 - 1.0,2426,47
-2026-10-27,,,profruts s.a.s.,piña special 1ra,PE1,672,0,,16,206646,2026-10-26,0.0 - 1.0,2426,47
-2026-10-27,,,profruts s.a.s.,Piña AD1,AD1,539,0,,0,206768,2026-10-26,0.0 - 1.0,,
-2026-10-27,,,profruts s.a.s.,piña special 1ra,PE1,683,0,,0,206656,2026-10-26,0.0 - 1.0,2426,47
-2026-10-27,,,profruts s.a.s.,piña special 1ra,PE1,588,0,,0,206711,2026-10-26,0.0 - 1.0,2426,47
-2026-10-27,,,profruts s.a.s.,piña special 1ra,PE1,571,0,,0,206728,2026-10-26,0.0 - 1.0,2426,47
-2026-10-27,,,profruts s.a.s.,piña special 1ra,PE1,706,0,,0,206644,2026-10-26,0.0 - 1.0,2426,47
-2026-10-27,,,profruts s.a.s.,piña special 1ra,PE1,661,0,,0,206629,2026-10-26,0.0 - 1.0,2426,47
-2026-10-27,,,profruts s.a.s.,piña special 1ra,PE1,571,0,,0,206691,2026-10-26,0.0 - 1.0,2426,32
-2026-10-27,,,profruts s.a.s.,piña special 1ra,PE1,546,0,,0,206708,2026-10-26,0.0 - 1.0,2426,47
-2026-10-27,,,profruts s.a.s.,piña special 1ra,PE1,607,0,,0,206641,2026-10-26,0.0 - 1.0,2426,47
-2026-10-27,,,profruts s.a.s.,piña special 1ra,PE1,648,0,,0,206648,2026-10-26,0.0 - 1.0,2426,47
-2026-10-27,,,profruts s.a.s.,piña special 1ra,PE1,628,0,,0,206660,2026-10-26,0.0 - 1.0,2426,47
-2026-10-27,,,profruts s.a.s.,piña special 1ra,PE1,629,0,,0,206677,2026-10-26,0.0 - 1.0,2426,32
-2026-10-27,,,profruts s.a.s.,piña special 1ra,PE1,570,0,,0,206763,2026-10-26,0.0 - 1.0,2426,32
-2026-10-27,,,profruts s.a.s.,piña special 1ra,PE1,682,28,,0,206649,2026-10-26,0.0 - 1.0,2426,47
-2026-10-27,,,camilo quiñones,piña indstria,PIND,584,0,,0,205907,2026-10-21,1.5 - 2.5,2326,52
-2026-10-27,,,camilo quiñones,piña indstria,PIND,577,0,,0,205896,2026-10-21,1.5 - 2.5,2326,52
-2026-10-27,,,camilo quiñones,piña indstria,PIND,599,0,,0,205926,2026-10-21,1.5 - 2.5,2326,52
-2026-10-27,,,camilo quiñones,piña indstria,PIND,589,0,,0,205901,2026-10-21,1.5 - 2.5,2326,52
-2026-10-27,,,camilo quiñones,piña indstria,PIND,580,0,,0,205910,2026-10-21,1.5 - 2.5,2326,52
-2026-10-27,,,camilo quiñones,piña indstria,PIND,580,0,,0,205975,2026-10-21,1.5 - 2.5,2326,51
-2026-10-27,,,camilo quiñones,piña indstria,PIND,589,0,,0,205934,2026-10-21,1.5 - 2.5,2326,52
-2026-10-27,,,camilo quiñones,piña indstria,PIND,580,0,,0,205916,2026-10-21,1.5 - 2.5,2326,52
-2026-10-27,,,camilo quiñones,piña indstria,PIND,587,0,,0,205952,2026-10-21,1.5 - 2.5,2326,51
-2026-10-27,,,camilo quiñones,piña indstria,PIND,453,282,,108,205955,2026-10-21,1.5 - 2.5,2326,51
+2026-10-27,,R-19387,local apartado,piña special guapita,PEGUA,496,204,2200,1,206740,2026-10-26,1.5 - 2.5,2426,52
+2026-10-27,,R-19387,local apartado,piña special 2da,PE2,505,95,3000,2,206671,2026-10-26,0.0 - 1.0,2426,47
+2026-10-27,,R-19387,local apartado,piña special 1ra,PE1,574,0,3200,3,206521,2026-10-25,0.0 - 1.0,2426,32
+2026-10-27,,R-19387,local apartado,piña special 1ra,PE1,568,58,3200,0,206533,2026-10-25,0.0 - 1.0,2426,32
+2026-10-27,,R-19387,local apartado,piña special 1ra,PE1,137,43,3200,0,206465,2026-10-25,1.5 - 2.5,2326,52
+2026-10-27,,R-19387,local apartado,AD-piña indstria,AD-PIND,174,26,2000,0,206793,2026-10-26,1.5 - 2.5,2826,32
+2026-10-27,,R-19389,local medellin,piña special 2da,PE2,500,0,3000,1,206754,2026-10-26,1.5 - 2.5,2426,32
+2026-10-27,,R-19389,local medellin,piña special 2da,PE2,591,0,3000,5,206631,2026-10-26,0.0 - 1.0,2426,47
+2026-10-27,,R-19389,local medellin,piña special 2da,PE2,601,0,3000,0,206661,2026-10-26,0.0 - 1.0,2426,47
+2026-10-27,,R-19389,local medellin,piña special 2da,PE2,240,68,3000,0,206798,2026-10-26,0.0 - 1.0,2426,32
+2026-10-27,,R-19389,local medellin,piña special 1ra,PE1,545,455,3200,4,206698,2026-10-26,1.5 - 2.5,2426,32
+2026-10-27,,R-19389,local medellin,Piña AD1,AD1,108,0,3200,0,206612,2026-10-25,1.5 - 2.5,2826,32
+2026-10-27,,R-19389,local medellin,piña special 1ra,PE1,557,0,3200,0,206737,2026-10-26,3.0 - 4.0,2426,52
+2026-10-27,,R-19389,local medellin,piña special 1ra,PE1,540,0,3200,0,206734,2026-10-26,3.0 - 4.0,2426,52
+2026-10-27,,R-19389,local medellin,piña special 1ra,PE1,562,0,3200,10,206742,2026-10-26,3.0 - 4.0,2426,52
+2026-10-27,,R-19389,local medellin,piña special 1ra,PE1,540,0,3200,0,206750,2026-10-26,3.0 - 4.0,2426,52
+2026-10-27,,R-19389,local medellin,piña special 1ra,PE1,560,0,3200,0,206689,2026-10-26,3.0 - 4.0,2426,32
+2026-10-27,,R-19389,local medellin,piña special 1ra,PE1,484,26,3200,0,206783,2026-10-26,3.0 - 4.0,2426,32
+2026-10-27,,R-19389,local medellin,piña special 2da,PE2,505,95,3000,0,206781,2026-10-26,3.0 - 4.0,2426,32
+2026-10-27,,R-19389,local medellin,piña special 3ra,PE3,567,433,2800,2,206784,2026-10-26,3.0 - 4.0,2426,32
+2026-10-27,,R-19388,cartagena,Piña AD1,AD1,574,0,3200,0,206775,2026-10-26,0.0 - 1.0,2526,32
+2026-10-27,,R-19388,cartagena,Piña AD1,AD1,575,0,3200,0,206785,2026-10-26,0.0 - 1.0,3225,77
+2026-10-27,,R-19388,cartagena,piña special 1ra,PE1,564,44,3200,0,206758,2026-10-26,0.0 - 1.0,2426,32
+2026-10-27,,R-19388,cartagena,piña special 1ra,PE1,527,0,3200,10,206519,2026-10-25,0.0 - 1.0,2426,32
+2026-10-27,,R-19388,cartagena,piña special 1ra,PE1,581,0,3200,6,206506,2026-10-25,0.0 - 1.0,2326,52
+2026-10-27,,R-19388,cartagena,piña special 1ra,PE1,319,0,3200,0,206617,2026-10-25,0.0 - 1.0,2326,52
+2026-10-27,,R-19388,cartagena,Piña AD1,AD1,464,74,3200,0,206609,2026-10-25,0.0 - 1.0,2826,32
+2026-10-27,,R-19388,cartagena,piña special baby,PEBAB,476,0,1500,0,206668,2026-10-26,1.5 - 2.5,2426,47
+2026-10-27,,R-19388,cartagena,piña special baby,PEBAB,430,0,1500,0,206696,2026-10-26,1.5 - 2.5,2426,32
+2026-10-27,,R-19388,cartagena,piña special baby,PEBAB,510,0,1500,0,206659,2026-10-26,1.5 - 2.5,2426,47
+2026-10-27,,R-19388,cartagena,piña special baby,PEBAB,406,0,1500,0,206685,2026-10-26,1.5 - 2.5,2426,32
+2026-10-27,,R-19388,cartagena,piña special baby,PEBAB,457,5,1500,0,206751,2026-10-26,1.5 - 2.5,2426,32
+2026-10-27,46969,R-19392,carmen susana hoyos,piña special guapita,PEGUA,482,0,900,6,206726,2026-10-26,1.5 - 2.5,2426,47
+2026-10-27,46969,R-19392,carmen susana hoyos,piña special guapita,PEGUA,499,0,900,0,206694,2026-10-26,1.5 - 2.5,2426,32
+2026-10-27,46969,R-19392,carmen susana hoyos,piña special guapita,PEGUA,429,0,900,0,206770,2026-10-26,1.5 - 2.5,2426,32
+2026-10-27,46969,R-19392,carmen susana hoyos,piña special guapita,PEGUA,576,0,900,0,206653,2026-10-26,1.5 - 2.5,2426,47
+2026-10-27,46969,R-19392,carmen susana hoyos,piña special guapita,PEGUA,572,442,900,0,206637,2026-10-26,1.5 - 2.5,2426,47
+2026-10-27,46969,R-19392,carmen susana hoyos,piña special baby,PEBAB,464,0,700,0,206771,2026-10-26,1.5 - 2.5,2426,32
+2026-10-27,46969,R-19392,carmen susana hoyos,piña special baby,PEBAB,50,0,700,0,206801,2026-10-27,1.5 - 2.5,2426,47
+2026-10-27,46969,R-19392,carmen susana hoyos,piña special baby,PEBAB,495,0,700,6,206716,2026-10-26,1.5 - 2.5,2426,47
+2026-10-27,46969,R-19392,carmen susana hoyos,piña special baby,PEBAB,516,0,700,0,206732,2026-10-26,1.5 - 2.5,2426,52
+2026-10-27,46969,R-19392,carmen susana hoyos,piña special baby,PEBAB,473,0,700,0,206675,2026-10-26,1.5 - 2.5,2426,32
+2026-10-27,46969,R-19392,carmen susana hoyos,piña special baby,PEBAB,459,0,700,0,206727,2026-10-26,1.5 - 2.5,2426,47
+2026-10-27,46969,R-19392,carmen susana hoyos,piña special baby,PEBAB,438,0,700,0,206755,2026-10-26,1.5 - 2.5,2426,32
+2026-10-27,46969,R-19392,carmen susana hoyos,piña special baby,PEBAB,105,0,700,0,206778,2026-10-26,1.5 - 2.5,2426,32
+2026-10-27,,R-19390,local sincelejo,Piña AD1,AD1,95,0,2800,2,206600,2026-10-25,0.0 - 1.0,2826,32
+2026-10-27,,R-19390,local sincelejo,piña special 1ra,PE1,526,77,2800,0,206510,2026-10-25,0.0 - 1.0,2426,32
+2026-10-27,,R-19390,local sincelejo,piña special 2da,PE2,501,0,2600,0,206684,2026-10-26,0.0 - 1.0,2426,32
+2026-10-27,,R-19390,local sincelejo,piña special 2da,PE2,499,0,2600,0,206692,2026-10-26,0.0 - 1.0,2426,32
+2026-10-27,,R-19390,local sincelejo,piña special 3ra,PE3,560,0,2200,4,206654,2026-10-26,0.0 - 1.0,2426,47
+2026-10-27,,R-19390,local sincelejo,piña special 3ra,PE3,475,0,2200,0,206701,2026-10-26,0.0 - 1.0,2426,32
+2026-10-27,,R-19390,local sincelejo,piña special 3ra,PE3,478,0,2200,0,206688,2026-10-26,0.0 - 1.0,2426,32
+2026-10-27,,R-19390,local sincelejo,piña special 3ra,PE3,497,0,2200,0,206743,2026-10-26,0.0 - 1.0,2426,52
+2026-10-27,,R-19390,local sincelejo,piña special 3ra,PE3,533,457,2200,0,206773,2026-10-26,0.0 - 1.0,2426,32
+2026-10-27,,R-19390,local sincelejo,piña special guapita,PEGUA,485,0,1700,0,206722,2026-10-26,1.5 - 2.5,2426,47
+2026-10-27,,R-19390,local sincelejo,piña special guapita,PEGUA,473,0,1700,0,206736,2026-10-26,1.5 - 2.5,2426,52
+2026-10-27,,R-19390,local sincelejo,piña special guapita,PEGUA,481,0,1700,4,206720,2026-10-26,1.5 - 2.5,2426,47
+2026-10-27,,R-19390,local sincelejo,piña special guapita,PEGUA,475,0,1700,0,206733,2026-10-26,1.5 - 2.5,2426,52
+2026-10-27,,R-19390,local sincelejo,piña special guapita,PEGUA,86,0,1700,0,206774,2026-10-26,1.5 - 2.5,2426,32
+2026-10-27,,R-19393,andres ruben oquendo,piña special 2da,PE2,503,0,1800,9,206580,2026-10-25,3.0 - 4.0,2326,51
+2026-10-27,,R-19393,andres ruben oquendo,piña special 2da,PE2,517,0,1800,0,206558,2026-10-25,3.0 - 4.0,2326,52
+2026-10-27,,R-19393,andres ruben oquendo,piña special 2da,PE2,509,0,1800,0,206544,2026-10-25,3.0 - 4.0,2426,32
+2026-10-27,,R-19393,andres ruben oquendo,piña special 2da,PE2,504,0,1800,0,206459,2026-10-25,3.0 - 4.0,2326,52
+2026-10-27,,R-19393,andres ruben oquendo,piña special 2da,PE2,503,0,1800,0,206455,2026-10-25,3.0 - 4.0,2326,52
+2026-10-27,,R-19393,andres ruben oquendo,piña special 2da,PE2,502,0,1800,0,206464,2026-10-25,3.0 - 4.0,2326,52
+2026-10-27,,R-19393,andres ruben oquendo,piña special 2da,PE2,502,0,1800,0,206468,2026-10-25,3.0 - 4.0,2326,52
+2026-10-27,,R-19393,andres ruben oquendo,piña special 2da,PE2,507,0,1800,0,206473,2026-10-25,3.0 - 4.0,2326,52
+2026-10-27,,R-19393,andres ruben oquendo,piña special 2da,PE2,514,0,1800,0,206452,2026-10-25,3.0 - 4.0,2326,52
+2026-10-27,,R-19393,andres ruben oquendo,piña special 2da,PE2,502,0,1800,0,206480,2026-10-25,3.0 - 4.0,2326,52
+2026-10-27,,R-19393,andres ruben oquendo,piña special 2da,PE2,316,0,1800,0,206584,2026-10-25,3.0 - 4.0,2326,51
+2026-10-27,,R-19393,andres ruben oquendo,piña special 2da,PE2,507,0,1800,0,206574,2026-10-25,3.0 - 4.0,2326,51
+2026-10-27,,R-19393,andres ruben oquendo,piña special 2da,PE2,271,132,1800,0,206490,2026-10-25,3.0 - 4.0,2326,52
+2026-10-27,,R-19391,KARINA BORJA,,PE3,0,500,1000,0,,,1,,
+2026-10-27,,R-19391,KARINA BORJA,piña special 3ra,PE3,480,0,1000,0,206741,2026-10-26,1.5 - 2.5,2426,52
+2026-10-27,,R-19391,KARINA BORJA,piña special 3ra,PE3,276,0,1000,0,206769,2026-10-26,1.5 - 2.5,2426,32
+2026-10-27,,R-19391,KARINA BORJA,piña special 3ra,PE3,580,0,1000,0,206719,2026-10-26,1.5 - 2.5,2426,47
+2026-10-27,,R-19391,KARINA BORJA,piña special 3ra,PE3,45,409,1000,0,206672,2026-10-26,0.0 - 1.0,2426,47
+2026-10-27,,R-19394,KARINA BORJA,,PE1,0,600,2700,0,,,1,,
+2026-10-27,,R-19395,andres ruben oquendo,piña special 1ra,PE1,588,0,2000,16,206567,2026-10-25,3.0 - 4.0,2326,52
+2026-10-27,,R-19395,andres ruben oquendo,piña special 1ra,PE1,559,0,2000,0,206582,2026-10-25,3.0 - 4.0,2326,51
+2026-10-27,,R-19395,andres ruben oquendo,piña special 1ra,PE1,514,0,2000,0,206491,2026-10-25,3.0 - 4.0,2326,52
+2026-10-27,,R-19395,andres ruben oquendo,piña special 1ra,PE1,535,0,2000,0,206488,2026-10-25,3.0 - 4.0,2326,52
+2026-10-27,,R-19395,andres ruben oquendo,piña special 1ra,PE1,586,0,2000,0,206546,2026-10-25,3.0 - 4.0,2426,47
+2026-10-27,,R-19395,andres ruben oquendo,piña special 1ra,PE1,585,0,2000,0,206554,2026-10-25,3.0 - 4.0,2426,47
+2026-10-27,,R-19395,andres ruben oquendo,piña special 1ra,PE1,569,0,2000,0,206557,2026-10-25,3.0 - 4.0,2426,47
+2026-10-27,,R-19395,andres ruben oquendo,piña special 1ra,PE1,532,0,2000,0,206551,2026-10-25,3.0 - 4.0,2426,47
+2026-10-27,,R-19395,andres ruben oquendo,piña special 1ra,PE1,589,0,2000,0,206569,2026-10-25,3.0 - 4.0,2326,52
+2026-10-27,,R-19395,andres ruben oquendo,piña special 1ra,PE1,191,0,2000,422,206579,2026-10-25,3.0 - 4.0,2326,51
+2026-10-27,,R-19395,andres ruben oquendo,piña special 1ra,PE1,463,0,2000,76,206499,2026-10-25,3.0 - 4.0,2326,52
+2026-10-27,,R-19395,andres ruben oquendo,piña special 1ra,PE1,289,0,2000,0,206596,2026-10-25,3.0 - 4.0,2326,51
+2026-10-27,,R-19396,profruts s.a.s.,piña special 1ra,PE1,671,0,2700,0,206665,2026-10-26,0.0 - 1.0,2426,47
+2026-10-27,,R-19396,profruts s.a.s.,piña special 1ra,PE1,672,0,2700,16,206646,2026-10-26,0.0 - 1.0,2426,47
+2026-10-27,,R-19396,profruts s.a.s.,Piña AD1,AD1,539,0,2700,0,206768,2026-10-26,0.0 - 1.0,,
+2026-10-27,,R-19396,profruts s.a.s.,piña special 1ra,PE1,683,0,2700,0,206656,2026-10-26,0.0 - 1.0,2426,47
+2026-10-27,,R-19396,profruts s.a.s.,piña special 1ra,PE1,588,0,2700,0,206711,2026-10-26,0.0 - 1.0,2426,47
+2026-10-27,,R-19396,profruts s.a.s.,piña special 1ra,PE1,571,0,2700,0,206728,2026-10-26,0.0 - 1.0,2426,47
+2026-10-27,,R-19396,profruts s.a.s.,piña special 1ra,PE1,706,0,2700,0,206644,2026-10-26,0.0 - 1.0,2426,47
+2026-10-27,,R-19396,profruts s.a.s.,piña special 1ra,PE1,661,0,2700,0,206629,2026-10-26,0.0 - 1.0,2426,47
+2026-10-27,,R-19396,profruts s.a.s.,piña special 1ra,PE1,571,0,2700,0,206691,2026-10-26,0.0 - 1.0,2426,32
+2026-10-27,,R-19396,profruts s.a.s.,piña special 1ra,PE1,546,0,2700,0,206708,2026-10-26,0.0 - 1.0,2426,47
+2026-10-27,,R-19396,profruts s.a.s.,piña special 1ra,PE1,607,0,2700,0,206641,2026-10-26,0.0 - 1.0,2426,47
+2026-10-27,,R-19396,profruts s.a.s.,piña special 1ra,PE1,648,0,2700,0,206648,2026-10-26,0.0 - 1.0,2426,47
+2026-10-27,,R-19396,profruts s.a.s.,piña special 1ra,PE1,628,0,2700,0,206660,2026-10-26,0.0 - 1.0,2426,47
+2026-10-27,,R-19396,profruts s.a.s.,piña special 1ra,PE1,629,0,2700,0,206677,2026-10-26,0.0 - 1.0,2426,32
+2026-10-27,,R-19396,profruts s.a.s.,piña special 1ra,PE1,570,0,2700,0,206763,2026-10-26,0.0 - 1.0,2426,32
+2026-10-27,,R-19396,profruts s.a.s.,piña special 1ra,PE1,682,28,2700,0,206649,2026-10-26,0.0 - 1.0,2426,47
+2026-10-27,,R-19397,camilo quiñones,piña indstria,PIND,584,0,1600,0,205907,2026-10-21,1.5 - 2.5,2326,52
+2026-10-27,,R-19397,camilo quiñones,piña indstria,PIND,577,0,1600,0,205896,2026-10-21,1.5 - 2.5,2326,52
+2026-10-27,,R-19397,camilo quiñones,piña indstria,PIND,599,0,1600,0,205926,2026-10-21,1.5 - 2.5,2326,52
+2026-10-27,,R-19397,camilo quiñones,piña indstria,PIND,589,0,1600,0,205901,2026-10-21,1.5 - 2.5,2326,52
+2026-10-27,,R-19397,camilo quiñones,piña indstria,PIND,580,0,1600,0,205910,2026-10-21,1.5 - 2.5,2326,52
+2026-10-27,,R-19397,camilo quiñones,piña indstria,PIND,580,0,1600,0,205975,2026-10-21,1.5 - 2.5,2326,51
+2026-10-27,,R-19397,camilo quiñones,piña indstria,PIND,589,0,1600,0,205934,2026-10-21,1.5 - 2.5,2326,52
+2026-10-27,,R-19397,camilo quiñones,piña indstria,PIND,580,0,1600,0,205916,2026-10-21,1.5 - 2.5,2326,52
+2026-10-27,,R-19397,camilo quiñones,piña indstria,PIND,587,0,1600,0,205952,2026-10-21,1.5 - 2.5,2326,51
+2026-10-27,,R-19397,camilo quiñones,piña indstria,PIND,453,282,1600,108,205955,2026-10-21,1.5 - 2.5,2326,51
 2026-10-27,,,descarte,Piña AD1,AD1,0,0,,1546,206263,2026-10-22,0.0 - 1.0,2626,77
 2026-10-27,,,descarte,piña indstria,PIND,0,0,,490,206076,2026-10-21,1.5 - 2.5,2226,33
 2026-10-27,,,descarte,AD-piña indstria,AD-PIND,0,0,,1341,206080,2026-10-21,1.5 - 2.5,2626,77
@@ -23667,14 +23668,23 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-27,,,descarte,Piña AD1,AD1,0,0,,1412,206257,2026-10-22,0.0 - 1.0,2526,77
 2026-10-27,,,descarte,Piña AD1,AD1,0,0,,99,206264,2026-10-22,0.0 - 1.0,2526,77
 2026-10-27,,,descarte,piña indstria,PIND,0,0,,1329,206075,2026-10-21,1.5 - 2.5,2226,33
+2026-10-27,,,descarte,piña jugos,PJUG,0,0,,1357,206626,2026-10-25,3.0 - 4.0,2326,52
 2026-10-27,,,jeronimo martins,piña special 1ra,PE1,413,0,,0,206745,2026-10-26,1.5,2426,52
 2026-10-27,,,jeronimo martins,piña special 2da,PE2,409,0,,0,206748,2026-10-26,1.5,2426,52
 2026-10-27,,,jeronimo martins,piña special 1ra,PE1,401,0,,0,206713,2026-10-26,1.5,2426,47
 2026-10-27,,,jeronimo martins,piña special 1ra,PE1,350,0,,0,206761,2026-10-26,1.5,2426,32
 2026-10-27,,,jeronimo martins,piña special 2da,PE2,235,0,,0,206764,2026-10-26,1.5,2426,32
-2026-10-27,,,ramiro parada,piña special 1ra,PE1,97,0,,0,206426,2026-10-23,0.0 - 1.0,2326,51
-2026-10-27,,,ramiro parada,piña special 1ra,PE1,533,0,,0,206286,2026-10-23,3.0 - 4.0,2326,51
-2026-10-27,,,ramiro parada,piña special 1ra,PE1,549,0,,0,206275,2026-10-23,0.0 - 1.0,2326,51
-2026-10-27,,,ramiro parada,piña indstria,PIND,179,0,,0,205932,2026-10-21,1.5 - 2.5,2326,52
-2026-10-27,,,ramiro parada,AD-piña indstria,AD-PIND,126,0,,0,206064,2026-10-21,1.5 - 2.5,3426,77
-2026-10-27,,,ramiro parada,piña indstria,PIND,39,0,,0,205966,2026-10-21,1.5 - 2.5,2326,51
+2026-10-27,,,jeronimo martins,piña special 2da,PE2,386,0,,0,206767,2026-10-26,1.5,2426,32
+2026-10-27,,R-19398,ramiro parada,piña special 1ra,PE1,97,0,,0,206426,2026-10-23,0.0 - 1.0,2326,51
+2026-10-27,,R-19398,ramiro parada,piña special 1ra,PE1,533,0,,0,206286,2026-10-23,3.0 - 4.0,2326,51
+2026-10-27,,R-19398,ramiro parada,piña special 1ra,PE1,549,47,,0,206275,2026-10-23,0.0 - 1.0,2326,51
+2026-10-27,,R-19398,ramiro parada,piña indstria,PIND,229,0,,0,205987,2026-10-21,1.5 - 2.5,2326,52
+2026-10-27,,R-19398,ramiro parada,piña indstria,PIND,255,0,,0,205948,2026-10-21,1.5 - 2.5,2326,51
+2026-10-27,,R-19398,ramiro parada,piña indstria,PIND,179,0,,0,205932,2026-10-21,1.5 - 2.5,2326,52
+2026-10-27,,R-19398,ramiro parada,AD-piña indstria,AD-PIND,72,0,,54,206064,2026-10-21,1.5 - 2.5,3426,77
+2026-10-27,,R-19398,ramiro parada,piña indstria,PIND,39,0,,0,205966,2026-10-21,1.5 - 2.5,2326,51
+2026-10-27,,R-19398,ramiro parada,piña special 3ra,PE3,451,0,,0,206797,2026-10-26,4,2426,32
+2026-10-27,,R-19398,ramiro parada,piña special 3ra,PE3,481,0,,0,206457,2026-10-25,3.0 - 4.0,2326,52
+2026-10-27,,R-19398,ramiro parada,piña special 3ra,PE3,506,0,,0,206485,2026-10-25,4,2326,52
+2026-10-27,,R-19398,ramiro parada,piña special 3ra,PE3,59,0,,26,206588,2026-10-25,4,2326,51
+2026-10-27,,R-19398,ramiro parada,piña special 3ra,PE3,26,206,,125,206549,2026-10-25,4,2426,47
