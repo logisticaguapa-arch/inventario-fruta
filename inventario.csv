@@ -255,19 +255,19 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 206785,canastas,2026-10-26,AD1,Piña AD1,0.0 - 1.0,578
 206786,canastas,2026-10-26,PE2,piña special 2da,4,89
 206787,canastas,2026-10-26,AD3,Piña AD3,0.0 - 1.0,26
-206788,canastas,2026-10-26,AD2,Piña AD2,0.0 - 1.0,201
+206788,canastas,2026-10-26,PE2,piña special 2da,0.0 - 1.0,201
 206789,canastas,2026-10-26,AD1,Piña AD1,0.0 - 1.0,449
-206790,canastas,2026-10-26,AD-PJUG,,3.0 - 4.0,429
+206790,canastas,2026-10-26,PJUG,piña jugos,3.0 - 4.0,429
 206791,canastas,2026-10-26,AD1,Piña AD1,1.5 - 2.5,219
 206792,canastas,2026-10-26,PE2,piña special 2da,3.0 - 4.0,674
 206793,canastas,2026-10-26,AD-PIND,AD-piña indstria,1.5 - 2.5,176
 206794,canastas,2026-10-26,PE1,piña special 1ra,0.0 - 1.0,152
 206795,canastas,2026-10-26,PE3,piña special 3ra,3.0 - 4.0,470
 206796,canastas,2026-10-26,PE1,piña special 1ra,4,152
-206797,canastas,2026-10-26,,,,0
-206798,canastas,2026-10-26,,,,0
-206799,canastas,2026-10-26,,,,0
-206800,canastas,2026-10-26,,,,0
+206797,canastas,2026-10-26,PE3,piña special 3ra,4,463
+206798,canastas,2026-10-26,PE2,piña special 2da,0.0 - 1.0,338
+206799,117,2026-10-26,PJUG,piña jugos,3.0 - 4.0,675
+206800,128,2026-10-26,PIND,piña indstria,1.5 - 2.5,1355
 206801,canastas,2026-10-26,,,,0
 206802,canastas,2026-10-26,,,,0
 206803,canastas,2026-10-26,,,,0
