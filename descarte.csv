@@ -3814,3 +3814,12 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,44,octubre,2026-10-27,2426,52,canastas,1.0,,1.0,1.0,Muestreo,PEGUA
 2026,44,octubre,2026-10-27,2426,47,canastas,2.0,,2.0,2.0,Muestreo,PE2
 2026,44,octubre,2026-10-27,2426,32,canastas,3.0,,3.0,3.0,Muestreo,PE1
+2026,44,octubre,2026-10-27,2426,32,canastas,1.0,,1.0,1.0,,PE2
+2026,44,octubre,2026-10-27,2426,47,canastas,5.0,,5.0,5.0,Muestreo,PE2
+2026,44,octubre,2026-10-27,2426,32,canastas,4.0,,4.0,4.0,Muestreo,PE1
+2026,44,octubre,2026-10-27,2426,52,canastas,10.0,,10.0,10.0,Muestreo,PE1
+2026,44,octubre,2026-10-27,2426,32,canastas,2.0,,2.0,2.0,Muestreo,PE3
+2026,44,octubre,2026-10-27,2426,32,canastas,10.0,,10.0,10.0,Muestreo,PE1
+2026,44,octubre,2026-10-27,2326,52,canastas,6.0,,6.0,6.0,Muestreo,PE1
+2026,44,octubre,2026-10-27,2226,33,110,490.0,,490.0,490.0,Sobre madura campo,PIND
+2026,44,octubre,2026-10-27,2626,77,94,1341.0,,1341.0,1341.0,Enferma,AD-PIND
