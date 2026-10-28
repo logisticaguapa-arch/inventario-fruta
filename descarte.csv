@@ -3844,8 +3844,18 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,44,octubre,2026-10-27,2326,51,canastas,26.0,,26.0,26.0,Golpe empacadora,PE3
 2026,44,octubre,2026-10-27,2426,47,canastas,125.0,,125.0,125.0,Golpe empacadora,PE3
 2026,44,octubre,2026-10-28,2526,32,canastas,2.0,,2.0,2.0,Muestreo,AD2
+2026,44,octubre,2026-10-28,2426,47,130,1369.0,,1369.0,1369.0,Enferma,AD1
 2026,44,octubre,2026-10-28,2426,47,canastas,11.0,,11.0,11.0,Muestreo,PE1
 2026,44,octubre,2026-10-28,2426,47,canastas,6.0,,6.0,6.0,Muestreo,PE2
 2026,44,octubre,2026-10-28,2426,47,canastas,4.0,,4.0,4.0,Muestreo,PE1
 2026,44,octubre,2026-10-28,2426,47,canastas,7.0,,7.0,7.0,Muestreo,PE2
 2026,44,octubre,2026-10-28,2426,52,canastas,106.0,,106.0,106.0,Enferma,PE1
+2026,44,octubre,2026-10-28,2426,47,canastas,6.0,,6.0,6.0,Muestreo,PE1
+2026,44,octubre,2026-10-28,2426,46,canastas,50.0,,50.0,50.0,Sobre madura campo,PE1
+2026,44,octubre,2026-10-28,2426,46,canastas,3.0,,3.0,3.0,Muestreo,PE3
+2026,44,octubre,2026-10-28,2426,47,canastas,6.0,,6.0,6.0,Muestreo,PE2
+2026,44,octubre,2026-10-28,2426,32,canastas,2.0,,2.0,2.0,Muestreo,PE3
+2026,44,octubre,2026-10-28,2426,47,canastas,2.0,,2.0,2.0,Muestreo,PEGUA
+2026,44,octubre,2026-10-28,2426,32,canastas,2.0,,2.0,2.0,Muestreo,PE1
+2026,44,octubre,2026-10-28,2426,32,canastas,4.0,,4.0,4.0,Muestreo,PE3
+2026,44,octubre,2026-10-28,2426,47,canastas,4.0,,4.0,4.0,Muestreo,PEGUA
