@@ -23789,6 +23789,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-28,,,camilo quiñones,AD-piña indstria,AD-PIND,94,0,,0,206598,2026-10-25,1.5 - 2.5,2826,32
 2026-10-28,,,camilo quiñones,piña indstria,PIND,61,0,,200,206577,2026-10-25,1.5 - 2.5,2326,51
 2026-10-28,,,camilo quiñones,piña indstria,PIND,479,0,,0,206749,2026-10-26,1.5 - 2.5,2426,52
+2026-10-28,,,camilo quiñones,piña indstria,PIND,1169,0,,120,206625,2026-10-25,1.5 - 2.5,2426,32
 2026-10-28,,,hugo miguel jimenez,piña special guapita,PEGUA,487,13,,0,206832,2026-10-27,1.5 - 2.5,2426,47
 2026-10-28,,,hugo miguel jimenez,piña special 3ra,PE3,570,230,,0,206919,2026-10-27,1.5 - 2.5,2426,47
 2026-10-28,,,hugo miguel jimenez,piña special 1ra,PE1,637,0,,0,206836,2026-10-27,1.5 - 2.5,2426,47
@@ -23799,3 +23800,8 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-28,,,KARINA BORJA,piña special 3ra,PE3,575,0,,0,206893,2026-10-27,0.0 - 1.0,2426,32
 2026-10-28,,,KARINA BORJA,piña special 3ra,PE3,562,0,,0,206809,2026-10-27,0.0 - 1.0,2426,47
 2026-10-28,,,KARINA BORJA,piña special 3ra,PE3,322,0,,0,206837,2026-10-27,0.0 - 1.0,2426,47
+2026-10-28,,,KARINA BORJA,Piña AD3,AD3,23,0,,0,206960,2026-10-27,0.0 - 1.0,3226,77
+2026-10-28,,,KARINA BORJA,piña special 3ra,PE3,336,0,,0,206938,2026-10-27,1.5 - 2.5,2426,46
+2026-10-28,,,KARINA BORJA,piña special 3ra,PE3,348,316,,0,206840,2026-10-27,1.5 - 2.5,2426,46
+2026-10-28,,,jeronimo martins,piña special 2da,PE2,409,0,,0,206818,2026-10-27,1.5,2426,47
+2026-10-28,,,jeronimo martins,piña special 2da,PE2,471,0,,0,206814,2026-10-27,1.5,2426,47
