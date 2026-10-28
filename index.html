@@ -70,6 +70,11 @@ header h1 span{color:#64748b;font-size:.8rem;font-weight:400;margin-left:8px}
 .fecha-toggle{cursor:pointer;width:14px;display:inline-block;color:#64748b;font-size:.7rem;user-select:none;flex-shrink:0}
 .fecha-hijos{padding-left:15px;border-left:1px dashed #e2e8f0;margin-left:7px}
 .fecha-hijos-dias label{font-weight:600;padding:7px 9px}
+.fecha4{display:flex;gap:14px;align-items:flex-end;flex-wrap:wrap}
+.fecha4-item{display:flex;flex-direction:column;gap:4px}
+.fecha4-lbl{font-size:.72rem;font-weight:800;color:#94a3b8;text-transform:uppercase;letter-spacing:.04em;padding-left:2px}
+.fecha4 .msel-btn{min-width:140px;padding:11px 14px;border-radius:12px;font-size:1rem;font-weight:800;color:#0f172a}
+.fecha4 .msel-label{max-width:150px}
 .cliente-esp-badge{display:inline-block;background:#7c3aed;color:#fff;font-size:.62rem;font-weight:800;padding:1px 7px;border-radius:10px;margin-left:6px;vertical-align:middle;letter-spacing:.3px}
 
 /* ── Selector de fecha (Facturacion) ── */
@@ -844,67 +849,87 @@ function fillMsel(id,items){
 // (estilo Power BI): marcar un Año, un Mes o una Semana marca de una vez todos
 // los dias que contiene; los dias individuales se pueden seguir marcando sueltos.
 function buildFechaMsel(id,fechas){
+  // -- Filtro de fecha en 4 desplegables (Año / Mes / Semana / Fecha exacta), en cascada.
+  // Cada uno es multi-seleccion; vacio = "Todos". filtros[key] sigue siendo la lista de
+  // dias resultante (vacia = sin filtro), asi el resto de la app no cambia. --
   const def=MSEL_DEF[id];
-  const panel=document.getElementById(id+'-panel');
-  panel.dataset.values=JSON.stringify(fechas);
-  if(!fechas.length){panel.innerHTML='<div class="msel-empty">Sin opciones</div>';return;}
-  const conHoras = id==='selFec';
-  const porAnio={};
-  fechas.forEach(function(f){
-    const y=anioDe(f), m=mesDe(f), wk=String(isoWeekInfo(f).week).padStart(2,'0');
-    if(!porAnio[y]) porAnio[y]={};
-    if(!porAnio[y][m]) porAnio[y][m]={};
-    if(!porAnio[y][m][wk]) porAnio[y][m][wk]=[];
-    porAnio[y][m][wk].push(f);
+  const el=document.getElementById(id);
+  FDAYS[id]=fechas.slice().sort();
+  FST[id]={A:[],M:[],S:[],D:(filtros[def.key]||[]).filter(function(f){return f!=='__ninguno__';})};
+  el.className='fecha4';
+  el.innerHTML='';
+  [['A','Año','Todos'],['M','Mes','Todos'],['S','Semana','Todas'],['D','Fecha exacta','Todas']].forEach(function(l){
+    const w=document.createElement('div'); w.className='fecha4-item';
+    w.innerHTML='<div class="fecha4-lbl">'+l[1]+'</div><div class="msel" id="'+id+'-'+l[0]+'">'
+      +'<button type="button" class="msel-btn" onclick="toggleMsel(\''+id+'-'+l[0]+'\')"><span class="msel-label">'+l[2]+'</span><span class="msel-arrow">▾</span></button>'
+      +'<div class="msel-panel" id="'+id+'-'+l[0]+'-panel"></div></div>';
+    el.appendChild(w);
   });
-  const anios=Object.keys(porAnio).sort().reverse();
-
-  let html='<input type="text" class="msel-search" placeholder="Buscar y Enter para marcar..." oninput="filterMsel(\''+id+'\',this.value)" onclick="event.stopPropagation()" onkeydown="if(event.key===\'Enter\'){event.preventDefault();aceptarBusquedaMsel(\''+id+'\');}">';
-  html+='<div class="msel-actions">';
-  html+='<button type="button" class="msel-btn-todos" onclick="selectAllMsel(\''+id+'\')">Seleccionar todos</button>';
-  html+='<button type="button" onclick="clearMsel(\''+id+'\')">Ninguno</button>';
-  html+='</div>';
-  html+='<div class="msel-opciones">';
-  anios.forEach(function(y){
-    const meses=Object.keys(porAnio[y]).sort().reverse();
-    const diasAnio=meses.reduce(function(a,m){return a.concat(Object.values(porAnio[y][m]).reduce(function(a2,arr){return a2.concat(arr);},[]));},[]);
-    html+='<div class="fecha-node fecha-nivel-anio" data-dias="'+diasAnio.join(',')+'">';
-    html+='<span class="fecha-toggle" onclick="toggleFechaNode(this)">▸</span>';
-    html+='<label><input type="checkbox" onchange="onFechaGroupChange(\''+id+'\',this)"><span>'+y+'</span></label>';
-    html+='</div>';
-    html+='<div class="fecha-hijos" style="display:none">';
-    meses.forEach(function(m){
-      const semanas=Object.keys(porAnio[y][m]).sort().reverse();
-      const diasMes=semanas.reduce(function(a,wk){return a.concat(porAnio[y][m][wk]);},[]);
-      html+='<div class="fecha-node fecha-nivel-mes" data-dias="'+diasMes.join(',')+'">';
-      html+='<span class="fecha-toggle" onclick="toggleFechaNode(this)">▸</span>';
-      html+='<label><input type="checkbox" onchange="onFechaGroupChange(\''+id+'\',this)"><span>'+(MES_NOMBRES[parseInt(m,10)]||m)+'</span></label>';
-      html+='</div>';
-      html+='<div class="fecha-hijos" style="display:none">';
-      semanas.forEach(function(wk){
-        const dias=porAnio[y][m][wk].slice().sort();
-        const rango=fmtF(dias[0])+' - '+fmtF(dias[dias.length-1]);
-        html+='<div class="fecha-node fecha-nivel-semana" data-dias="'+dias.join(',')+'">';
-        html+='<span class="fecha-toggle" onclick="toggleFechaNode(this)">▸</span>';
-        html+='<label><input type="checkbox" onchange="onFechaGroupChange(\''+id+'\',this)"><span>Semana '+wk+' · '+rango+'</span></label>';
-        html+='</div>';
-        html+='<div class="fecha-hijos fecha-hijos-dias" style="display:none">';
-        dias.slice().reverse().forEach(function(f){
-          const checked=filtros[def.key].includes(f)?'checked':'';
-          const lbl=fmtF(f)+(conHoras?(' — '+horasLabel(horasDesdeGrupo(f, ALL.filter(function(r){return r.Fecha===f;})))):'');
-          const txt=lbl.toLowerCase().replace(/"/g,'&quot;');
-          html+='<label data-txt="'+txt+'"><input type="checkbox" value="'+f+'" '+checked+' onchange="onMselChange(\''+id+'\',this)">'+lbl+'</label>';
-        });
-        html+='</div>';
-      });
-      html+='</div>';
-    });
-    html+='</div>';
+  fecha4Redraw(id);
+}
+const FDAYS={}, FST={};
+function fecha4Opts(id){
+  const st=FST[id], dias=FDAYS[id];
+  const okA=function(f){return !st.A.length||st.A.indexOf(anioDe(f))!==-1;};
+  const okM=function(f){return !st.M.length||st.M.indexOf(mesDe(f))!==-1;};
+  const okS=function(f){return !st.S.length||st.S.indexOf(String(isoWeekInfo(f).week).padStart(2,'0'))!==-1;};
+  const uniq=function(arr){return Array.from(new Set(arr));};
+  const A=uniq(dias.map(anioDe)).sort().reverse();
+  const M=uniq(dias.filter(okA).map(mesDe)).sort();
+  const S=uniq(dias.filter(okA).filter(okM).map(function(f){return String(isoWeekInfo(f).week).padStart(2,'0');})).sort();
+  const D=dias.filter(okA).filter(okM).filter(okS);
+  return {A:A,M:M,S:S,D:D,okA:okA,okM:okM,okS:okS};
+}
+function fecha4Calc(id){
+  const st=FST[id], key=MSEL_DEF[id].key, o=fecha4Opts(id);
+  if(!st.A.length&&!st.M.length&&!st.S.length&&!st.D.length){ filtros[key]=[]; return; }
+  const dias=o.D.filter(function(f){return !st.D.length||st.D.indexOf(f)!==-1;});
+  filtros[key]=dias.length?dias:['__ninguno__'];
+}
+function fecha4Redraw(id){
+  const st=FST[id];
+  let o=fecha4Opts(id);
+  // quitar selecciones que ya no estan disponibles por un cambio en un nivel anterior
+  st.M=st.M.filter(function(v){return o.M.indexOf(v)!==-1;});
+  o=fecha4Opts(id);
+  st.S=st.S.filter(function(v){return o.S.indexOf(v)!==-1;});
+  o=fecha4Opts(id);
+  st.D=st.D.filter(function(v){return o.D.indexOf(v)!==-1;});
+  fecha4Calc(id);
+  const conHoras=id==='selFec';
+  const lvls={
+    A:o.A.map(function(y){return {v:y,l:y};}),
+    M:o.M.map(function(m){return {v:m,l:MES_NOMBRES[parseInt(m,10)]||m};}),
+    S:o.S.map(function(w){return {v:w,l:'Semana '+w};}),
+    D:o.D.map(function(f){return {v:f,l:fmtF(f)+(conHoras?(' — '+horasLabel(horasDesdeGrupo(f,ALL.filter(function(r){return r.Fecha===f;})))):'')};})
+  };
+  const vacio={A:'Todos',M:'Todos',S:'Todas',D:'Todas'};
+  ['A','M','S','D'].forEach(function(L){
+    const sub=id+'-'+L, panel=document.getElementById(sub+'-panel');
+    if(!panel) return;
+    const sel=st[L], items=lvls[L];
+    let h='<input type="text" class="msel-search" placeholder="Buscar..." oninput="fecha4Buscar(\''+sub+'\',this.value)" onclick="event.stopPropagation()">';
+    h+='<div class="msel-actions"><button type="button" onclick="fecha4Limpiar(\''+id+'\',\''+L+'\')">Todos</button></div><div class="msel-opciones">';
+    h+=items.map(function(it){
+      return '<label data-txt="'+String(it.l).toLowerCase().replace(/"/g,'&quot;')+'"><input type="checkbox" value="'+it.v+'" '+(sel.indexOf(it.v)!==-1?'checked':'')+' onchange="fecha4Cambio(\''+id+'\',\''+L+'\',this)">'+it.l+'</label>';
+    }).join('');
+    h+='</div>';
+    const scroll=panel.scrollTop;
+    panel.innerHTML=h; panel.scrollTop=scroll;
+    const lab=document.querySelector('#'+sub+' .msel-label');
+    lab.textContent = sel.length===0?vacio[L]:(sel.length===1?(items.find(function(i){return i.v===sel[0];})||{l:sel[0]}).l:sel.length+' seleccionados');
   });
-  html+='</div>';
-  panel.innerHTML=html;
-  updateMselBtn(id);
-  syncFechaTreeChecks(id);
+}
+function fecha4Cambio(id,L,cb){
+  const arr=FST[id][L];
+  if(cb.checked){ if(arr.indexOf(cb.value)===-1) arr.push(cb.value); }
+  else FST[id][L]=arr.filter(function(v){return v!==cb.value;});
+  fecha4Redraw(id); render();
+}
+function fecha4Limpiar(id,L){ FST[id][L]=[]; fecha4Redraw(id); render(); }
+function fecha4Buscar(sub,t){
+  t=String(t||'').trim().toLowerCase();
+  document.querySelectorAll('#'+sub+'-panel label[data-txt]').forEach(function(l){ l.style.display=(!t||l.dataset.txt.indexOf(t)!==-1)?'':'none'; });
 }
 function toggleFechaNode(toggleEl){
   const hijos=toggleEl.closest('.fecha-node').nextElementSibling;
@@ -1035,6 +1060,7 @@ function clearMsel(id){
   render();
 }
 function updateMselBtn(id){
+  if(FECHA_TREE_IDS.indexOf(id)!==-1) return;
   const def=MSEL_DEF[id];
   const n=filtros[def.key].length;
   document.querySelector('#'+id+' .msel-label').textContent = n===0?def.placeholder:(n+' seleccionados');
@@ -1127,6 +1153,7 @@ function resetSeguimiento(){
   render();
 }
 function fillMselKeep(id){
+  if(FECHA_TREE_IDS.indexOf(id)!==-1){ FST[id]={A:[],M:[],S:[],D:(filtros[MSEL_DEF[id].key]||[]).slice()}; fecha4Redraw(id); return; }
   // Vuelve a pintar el panel actual (checkboxes) sin recalcular las opciones
   document.querySelectorAll('#'+id+'-panel input[type=checkbox]').forEach(function(cb){cb.checked=false;});
   updateMselBtn(id);
