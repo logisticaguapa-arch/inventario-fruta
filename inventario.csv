@@ -71,13 +71,12 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 206690,canastas,2026-10-26,PE1,piña special 1ra,0.0 - 1.0,563
 206693,canastas,2026-10-26,PE2,piña special 2da,0.0 - 1.0,517
 206697,canastas,2026-10-26,PE3,piña special 3ra,0.0 - 1.0,588
-206699,canastas,2026-10-26,PE2,piña special 2da,1.5 - 2.5,599
+206699,canastas,2026-10-26,PE2,piña special 2da,1.5 - 2.5,539
 206702,canastas,2026-10-26,PIND,piña indstria,1.5 - 2.5,523
 206703,canastas,2026-10-26,PE1,piña special 1ra,1.5 - 2.5,545
-206704,canastas,2026-10-26,PE1,piña special 1ra,0.0 - 1.0,566
 206705,canastas,2026-10-26,PE2,piña special 2da,0.0 - 1.0,503
 206706,canastas,2026-10-26,PIND,piña indstria,1.5 - 2.5,481
-206707,canastas,2026-10-26,PE1,piña special 1ra,0.0 - 1.0,474
+206707,canastas,2026-10-26,PE1,piña special 1ra,0.0 - 1.0,426
 206710,canastas,2026-10-26,PE1,piña special 1ra,1.5 - 2.5,573
 206712,canastas,2026-10-26,PEGUA,piña special guapita,1.5 - 2.5,510
 206714,canastas,2026-10-26,PE2,piña special 2da,0.0 - 1.0,504
@@ -103,12 +102,11 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 206756,canastas,2026-10-26,PE3,piña special 3ra,0.0 - 1.0,45
 206757,canastas,2026-10-26,PIND,piña indstria,1.5 - 2.5,497
 206759,canastas,2026-10-26,PE2,piña special 2da,1.5 - 2.5,74
-206760,canastas,2026-10-26,PE2,piña special 2da,0.0 - 1.0,517
+206760,canastas,2026-10-26,PE2,piña special 2da,0.0 - 1.0,132
 206762,canastas,2026-10-26,PE3,piña special 3ra,0.0 - 1.0,198
 206765,canastas,2026-10-26,PE1,piña special 1ra,1.5 - 2.5,574
 206766,canastas,2026-10-26,PIND,piña indstria,1.5 - 2.5,170
 206772,canastas,2026-10-26,PIND,piña indstria,1.5 - 2.5,365
-206776,canastas,2026-10-26,AD2,Piña AD2,0.0 - 1.0,406
 206777,canastas,2026-10-26,AD-PIND,AD-piña indstria,1.5 - 2.5,499
 206779,canastas,2026-10-26,PE3,piña special 3ra,3.0 - 4.0,262
 206780,canastas,2026-10-26,AD1,Piña AD1,1.5 - 2.5,420
@@ -186,10 +184,10 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 206860,canastas,2026-10-27,PE1,piña special 1ra,0.0 - 1.0,552
 206861,canastas,2026-10-27,PEBAB,piña special baby,1.5 - 2.5,485
 206862,canastas,2026-10-27,PEGUA,piña special guapita,1.5 - 2.5,572
-206863,canastas,2026-10-27,PE1,piña special 1ra,0.0 - 1.0,585
+206863,canastas,2026-10-27,PIND,piña indstria,1.5 - 2.5,585
 206864,canastas,2026-10-27,PE2,piña special 2da,1.5,418
 206865,canastas,2026-10-27,PE3,piña special 3ra,0.0 - 1.0,586
-206866,canastas,2026-10-27,PEGUA,piña special guapita,1.5 - 2.5,497
+206866,canastas,2026-10-27,PEGUA,piña special guapita,1.5 - 2.5,97
 206867,canastas,2026-10-27,PE2,piña special 2da,0.0 - 1.0,506
 206868,canastas,2026-10-27,PE1,piña special 1ra,0.0 - 1.0,654
 206869,canastas,2026-10-27,PE2,piña special 2da,0.0 - 1.0,634
@@ -296,18 +294,50 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 206971,131,2026-10-27,AD1,Piña AD1,1.5 - 2.5,889
 206972,95,2026-10-27,AD-PJUG,,3.0 - 4.0,1030
 206973,116,2026-10-27,PJUG,piña jugos,3.0 - 4.0,815
-206974,canastas,2026-10-27,,,,0
-206975,canastas,2026-10-27,,,,0
-206976,canastas,2026-10-27,,,,0
-206977,canastas,2026-10-27,,,,0
-206978,canastas,2026-10-27,,,,0
-206979,canastas,2026-10-27,,,,0
-206980,canastas,2026-10-27,,,,0
-206981,canastas,2026-10-27,,,,0
-206982,canastas,2026-10-27,,,,0
-206983,canastas,2026-10-27,,,,0
-206984,canastas,2026-10-27,,,,0
-206985,canastas,2026-10-27,,,,0
-206986,canastas,2026-10-27,,,,0
-206987,canastas,2026-10-27,,,,0
-206988,canastas,2026-10-27,,,,0
+206976,canastas,2026-10-28,,,,0
+206977,canastas,2026-10-28,,,,0
+206978,canastas,2026-10-28,,,,0
+206979,canastas,2026-10-28,,,,0
+206980,canastas,2026-10-28,,,,0
+206981,canastas,2026-10-28,,,,0
+206982,canastas,2026-10-28,,,,0
+206983,canastas,2026-10-28,,,,0
+206984,canastas,2026-10-28,,,,0
+206985,canastas,2026-10-28,,,,0
+206986,canastas,2026-10-28,,,,0
+206987,canastas,2026-10-28,,,,0
+206988,canastas,2026-10-28,,,,0
+206989,,2026-10-28,,,,0
+206990,,2026-10-28,,,,0
+206991,,2026-10-28,,,,0
+206992,,2026-10-28,,,,0
+206993,,2026-10-28,,,,0
+206994,,2026-10-28,,,,0
+206995,,2026-10-28,,,,0
+206996,,2026-10-28,,,,0
+206997,,2026-10-28,,,,0
+206998,,2026-10-28,,,,0
+206999,,2026-10-28,,,,0
+207000,,2026-10-28,,,,0
+207001,,2026-10-28,,,,0
+207002,,2026-10-28,,,,0
+207003,,2026-10-28,,,,0
+207004,,2026-10-28,,,,0
+207005,,2026-10-28,,,,0
+207006,,2026-10-28,,,,0
+207007,,2026-10-28,,,,0
+207008,,2026-10-28,,,,0
+207009,,2026-10-28,,,,0
+207010,,2026-10-28,,,,0
+207011,,2026-10-28,,,,0
+207012,,2026-10-28,,,,0
+207013,,2026-10-28,,,,0
+207014,,2026-10-28,,,,0
+207015,,2026-10-28,,,,0
+207016,,2026-10-28,,,,0
+207017,,2026-10-28,,,,0
+207018,,2026-10-28,,,,0
+207019,,2026-10-28,,,,0
+207020,,2026-10-28,,,,0
+207021,,2026-10-28,,,,0
+207022,,2026-10-28,,,,0
