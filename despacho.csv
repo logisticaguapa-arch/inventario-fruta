@@ -23743,24 +23743,24 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-28,,R-19407,local sincelejo,piña special 3ra,PE3,582,0,2400,4,206865,2026-10-27,0.0 - 1.0,2426,32
 2026-10-28,,R-19407,local sincelejo,piña special 3ra,PE3,597,0,2400,0,206878,2026-10-27,0.0 - 1.0,2426,32
 2026-10-28,,R-19407,local sincelejo,piña special 3ra,PE3,563,258,2400,0,206955,2026-10-27,0.0 - 1.0,2426,46
-2026-10-28,,R-19407,local sincelejo,piña special 1ra,PE1,649,0,,0,206635,2026-10-26,0.0 - 1.0,2426,47
-2026-10-28,,R-19407,local sincelejo,piña special 1ra,PE1,583,0,,0,206715,2026-10-26,0.0 - 1.0,2426,47
-2026-10-28,,R-19407,local sincelejo,piña special 1ra,PE1,557,211,,0,206690,2026-10-26,0.0 - 1.0,2426,32
-2026-10-28,,R-19407,local sincelejo,piña special guapita,PEGUA,266,0,,0,206686,2026-10-26,1.5 - 2.5,2426,32
-2026-10-28,,R-19407,local sincelejo,piña special guapita,PEGUA,502,0,,0,206712,2026-10-26,1.5 - 2.5,2426,47
-2026-10-28,,R-19407,local sincelejo,piña special guapita,PEGUA,51,0,,0,206718,2026-10-26,1.5 - 2.5,2426,47
-2026-10-28,,R-19407,local sincelejo,piña special guapita,PEGUA,488,0,,0,206680,2026-10-26,1.5 - 2.5,2426,32
-2026-10-28,,R-19407,local sincelejo,piña special guapita,PEGUA,497,46,,0,206753,2026-10-26,1.5 - 2.5,2426,32
-2026-10-28,,R-19407,local sincelejo,piña special guapita,PEGUA,546,0,,0,206884,2026-10-27,1.5 - 2.5,2426,32
-2026-10-28,,R-19407,local sincelejo,piña special guapita,PEGUA,582,22,,4,206820,2026-10-27,1.5 - 2.5,2426,47
-2026-10-28,,R19408,frutysabor,piña special guapita,PEGUA,565,0,,0,206917,2026-10-27,1.5 - 2.5,2426,47
-2026-10-28,,R19408,frutysabor,piña special guapita,PEGUA,552,0,,0,206874,2026-10-27,1.5 - 2.5,2426,32
-2026-10-28,,R19408,frutysabor,piña special guapita,PEGUA,538,0,,0,206904,2026-10-27,1.5 - 2.5,2426,32
-2026-10-28,,R19408,frutysabor,piña special guapita,PEGUA,569,0,,0,206862,2026-10-27,1.5 - 2.5,2426,32
-2026-10-28,,R19408,frutysabor,piña special guapita,PEGUA,553,0,,0,206839,2026-10-27,1.5 - 2.5,2426,46
-2026-10-28,,R19408,frutysabor,piña special guapita,PEGUA,585,0,,0,206846,2026-10-27,1.5 - 2.5,2426,46
-2026-10-28,,R19408,frutysabor,piña special guapita,PEGUA,553,0,,0,206889,2026-10-27,1.5 - 2.5,2426,32
-2026-10-28,,R19408,frutysabor,piña special guapita,PEGUA,571,514,,0,206932,2026-10-27,1.5 - 2.5,2426,46
+2026-10-28,,R-19407,local sincelejo,piña special 1ra,PE1,649,0,3000,0,206635,2026-10-26,0.0 - 1.0,2426,47
+2026-10-28,,R-19407,local sincelejo,piña special 1ra,PE1,583,0,3000,0,206715,2026-10-26,0.0 - 1.0,2426,47
+2026-10-28,,R-19407,local sincelejo,piña special 1ra,PE1,557,211,3000,0,206690,2026-10-26,0.0 - 1.0,2426,32
+2026-10-28,,R-19407,local sincelejo,piña special guapita,PEGUA,266,0,2000,0,206686,2026-10-26,1.5 - 2.5,2426,32
+2026-10-28,,R-19407,local sincelejo,piña special guapita,PEGUA,502,0,2000,0,206712,2026-10-26,1.5 - 2.5,2426,47
+2026-10-28,,R-19407,local sincelejo,piña special guapita,PEGUA,51,0,2000,0,206718,2026-10-26,1.5 - 2.5,2426,47
+2026-10-28,,R-19407,local sincelejo,piña special guapita,PEGUA,488,0,2000,0,206680,2026-10-26,1.5 - 2.5,2426,32
+2026-10-28,,R-19407,local sincelejo,piña special guapita,PEGUA,497,46,2000,0,206753,2026-10-26,1.5 - 2.5,2426,32
+2026-10-28,,R-19407,local sincelejo,piña special guapita,PEGUA,546,0,2000,0,206884,2026-10-27,1.5 - 2.5,2426,32
+2026-10-28,,R-19407,local sincelejo,piña special guapita,PEGUA,582,22,2000,4,206820,2026-10-27,1.5 - 2.5,2426,47
+2026-10-28,,R19408,frutysabor,piña special guapita,PEGUA,565,0,1300,0,206917,2026-10-27,1.5 - 2.5,2426,47
+2026-10-28,,R19408,frutysabor,piña special guapita,PEGUA,552,0,1300,0,206874,2026-10-27,1.5 - 2.5,2426,32
+2026-10-28,,R19408,frutysabor,piña special guapita,PEGUA,538,0,1300,0,206904,2026-10-27,1.5 - 2.5,2426,32
+2026-10-28,,R19408,frutysabor,piña special guapita,PEGUA,569,0,1300,0,206862,2026-10-27,1.5 - 2.5,2426,32
+2026-10-28,,R19408,frutysabor,piña special guapita,PEGUA,553,0,1300,0,206839,2026-10-27,1.5 - 2.5,2426,46
+2026-10-28,,R19408,frutysabor,piña special guapita,PEGUA,585,0,1300,0,206846,2026-10-27,1.5 - 2.5,2426,46
+2026-10-28,,R19408,frutysabor,piña special guapita,PEGUA,553,0,1300,0,206889,2026-10-27,1.5 - 2.5,2426,32
+2026-10-28,,R19408,frutysabor,piña special guapita,PEGUA,571,514,1300,0,206932,2026-10-27,1.5 - 2.5,2426,46
 2026-10-28,,,carmen susana hoyos,piña special 3ra,PE3,583,0,,0,206848,2026-10-27,0.0 - 1.0,2426,46
 2026-10-28,,,carmen susana hoyos,piña special guapita,PEGUA,435,0,,0,206806,2026-10-27,1.5 - 2.5,2426,47
 2026-10-28,,,carmen susana hoyos,piña special guapita,PEGUA,384,0,,0,206946,2026-10-27,1.5 - 2.5,2426,46
@@ -23816,3 +23816,6 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-28,,,juan pablo cogollo,piña special baby,PEBAB,447,0,,0,206902,2026-10-27,1.5 - 2.5,2426,32
 2026-10-28,,,juan pablo cogollo,piña special baby,PEBAB,473,0,,0,206861,2026-10-27,1.5 - 2.5,2426,32
 2026-10-28,,,juan pablo cogollo,piña special baby,PEBAB,434,0,,0,206921,2026-10-27,1.5 - 2.5,2426,47
+2026-10-28,,,fundacion saciar,piña special 1ra,PE1,1423,0,,0,206623,2026-10-25,3.0 - 4.0,2326,52
+2026-10-28,,,fundacion saciar,piña special 1ra,PE1,1499,0,,0,206622,2026-10-25,3.0 - 4.0,2326,52
+2026-10-28,,,fundacion saciar,piña special 1ra,PE1,1439,0,,0,206621,2026-10-25,3.0 - 4.0,2326,52
