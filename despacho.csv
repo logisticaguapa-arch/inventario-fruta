@@ -23849,16 +23849,17 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-28,,R-19419,fundacion saciar,piña special 1ra,PE1,606,0,,0,206581,2026-10-25,3.0 - 4.0,2326,51
 2026-10-28,,R-19419,fundacion saciar,piña special 1ra,PE1,590,0,,0,206571,2026-10-25,3.0 - 4.0,2326,51
 2026-10-28,47007,R-19420,venta empleados,piña special 1ra,PE1,291,0,2200,0,207074,2026-10-28,1.5 - 2.5,2426,32
-2026-10-29,,,local apartado,piña special guapita,PEGUA,492,0,,3,207005,2026-10-28,1.5 - 2.5,2426,46
-2026-10-29,,,local apartado,piña special guapita,PEGUA,581,0,,0,207032,2026-10-28,1.5 - 2.5,2426,46
-2026-10-29,,,local apartado,piña special guapita,PEGUA,578,169,,0,207049,2026-10-28,1.5 - 2.5,2426,46
-2026-10-29,,,local apartado,piña special 2da,PE2,129,0,,4,206915,2026-10-27,0.0 - 1.0,2426,47
-2026-10-29,,,local apartado,Piña AD2,AD2,196,0,,0,206967,2026-10-27,0.0 - 1.0,2826,77
-2026-10-29,,,local apartado,piña special 2da,PE2,337,118,,0,206943,2026-10-27,0.0 - 1.0,2426,46
-2026-10-29,,,local apartado,piña special 1ra,PE1,649,0,,6,206892,2026-10-27,0.0 - 1.0,2426,32
-2026-10-29,,,local apartado,piña special 1ra,PE1,652,39,,0,206890,2026-10-27,0.0 - 1.0,2426,32
-2026-10-29,,,local apartado,AL-PE1,AL-PE1,34,0,,0,207137,2026-10-29,0.0 - 1.0,,
-2026-10-29,,,local apartado,piña special 1ra,PE1,105,55,,0,206849,2026-10-27,1.5 - 2.5,2426,46
+2026-10-29,,R-19421,local apartado,piña special guapita,PEGUA,492,0,2200,3,207005,2026-10-28,1.5 - 2.5,2426,46
+2026-10-29,,R-19421,local apartado,piña special guapita,PEGUA,581,0,2200,0,207032,2026-10-28,1.5 - 2.5,2426,46
+2026-10-29,,R-19421,local apartado,piña special guapita,PEGUA,578,169,2200,0,207049,2026-10-28,1.5 - 2.5,2426,46
+2026-10-29,,R-19421,local apartado,piña special 2da,PE2,129,0,3000,4,206915,2026-10-27,0.0 - 1.0,2426,47
+2026-10-29,,R-19421,local apartado,Piña AD2,AD2,196,0,3000,0,206967,2026-10-27,0.0 - 1.0,2826,77
+2026-10-29,,R-19421,local apartado,piña special 2da,PE2,337,118,3000,0,206943,2026-10-27,0.0 - 1.0,2426,46
+2026-10-29,,R-19421,local apartado,piña special 1ra,PE1,649,0,3200,6,206892,2026-10-27,0.0 - 1.0,2426,32
+2026-10-29,,R-19421,local apartado,piña special 1ra,PE1,652,39,3200,0,206890,2026-10-27,0.0 - 1.0,2426,32
+2026-10-29,,R-19421,local apartado,AL-PE1,AL-PE1,34,0,3200,0,207137,2026-10-29,0.0 - 1.0,,
+2026-10-29,,R-19421,local apartado,piña special 1ra,PE1,105,55,3200,0,206849,2026-10-27,1.5 - 2.5,2426,46
+2026-10-29,,R-19421,local apartado,,PE2,0,150,3000,0,,,2,,
 2026-10-29,,,descarte,AL-PEGUA,AL-PEGUA,17,0,,0,207136,2026-10-29,1.5 - 2.5,,
 2026-10-29,,,local sincelejo,piña special 1ra,PE1,555,445,,4,206875,2026-10-27,1.5 - 2.5,2426,32
 2026-10-29,,,local sincelejo,piña special 2da,PE2,564,436,,3,206911,2026-10-27,1.5 - 2.5,2426,47
@@ -23946,4 +23947,5 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-29,,,carmen susana hoyos,piña special baby,PEBAB,488,0,,0,207040,2026-10-28,1.5 - 2.5,2426,47
 2026-10-29,,,carmen susana hoyos,piña special baby,PEBAB,469,0,,0,207068,2026-10-28,1.5 - 2.5,2426,32
 2026-10-29,,,carmen susana hoyos,piña special baby,PEBAB,481,0,,0,207002,2026-10-28,1.5 - 2.5,2426,46
+2026-10-29,,,carmen susana hoyos,piña special baby,PEBAB,492,0,,0,207058,2026-10-28,1.5 - 2.5,2426,46
 2026-10-29,,,cortesia,piña special 1ra,PE1,16,0,,0,207146,2026-10-29,1.5 - 2.5,,
