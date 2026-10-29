@@ -23725,24 +23725,24 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-28,,R-19405,local medellin,piña special 3ra,PE3,440,0,2800,0,206954,2026-10-27,3.0 - 4.0,2426,46
 2026-10-28,,R-19405,local medellin,piña special 3ra,PE3,395,0,2800,0,206936,2026-10-27,3.0 - 4.0,2426,46
 2026-10-28,,R-19405,local medellin,piña special 3ra,PE3,84,0,2800,0,206929,2026-10-27,3.0 - 4.0,2426,47
-2026-10-28,,R-19406,local sincelejo,piña special 2da,PE2,589,0,,6,206908,2026-10-27,0.0 - 1.0,2426,47
-2026-10-28,,R-19406,local sincelejo,piña special 2da,PE2,628,0,,0,206869,2026-10-27,0.0 - 1.0,2426,32
-2026-10-28,,R-19406,local sincelejo,piña special 2da,PE2,502,0,,0,206867,2026-10-27,0.0 - 1.0,2426,32
-2026-10-28,,R-19406,local sincelejo,Piña AD2,AD2,281,0,,0,206958,2026-10-27,0.0 - 1.0,2626,77
-2026-10-28,,R-19406,local sincelejo,piña special 3ra,PE3,565,435,,2,206697,2026-10-26,0.0 - 1.0,2426,32
-2026-10-28,,R-19406,local sincelejo,,PEBAB,0,300,,0,,,2,,
-2026-10-28,,R-19406,local sincelejo,piña special guapita,PEGUA,571,129,,2,206666,2026-10-26,1.5 - 2.5,2426,47
-2026-10-28,,R-19406,local sincelejo,,PE1,0,500,,0,,,2,,
-2026-10-28,,R-19406,local sincelejo,piña special 3ra,PE3,138,0,,0,206639,2026-10-26,0.0 - 1.0,2426,47
-2026-10-28,,R-19406,local sincelejo,piña special 3ra,PE3,193,0,,0,206762,2026-10-26,0.0 - 1.0,2426,32
-2026-10-28,,R-19406,local sincelejo,piña special 3ra,PE3,162,0,,0,206630,2026-10-26,0.0 - 1.0,2426,47
-2026-10-28,,R-19406,local sincelejo,piña special 3ra,PE3,44,0,,0,206756,2026-10-26,0.0 - 1.0,2426,32
-2026-10-28,,R-19406,local sincelejo,Piña AD3,AD3,25,55,,0,206787,2026-10-26,0.0 - 1.0,2826,32
-2026-10-28,,R-19406,local sincelejo,piña special 2da,PE2,493,7,,0,206805,2026-10-27,0.0 - 1.0,2426,47
-2026-10-28,,R-19406,local sincelejo,piña special 1ra,PE1,531,469,,2,206682,2026-10-26,0.0 - 1.0,2426,32
-2026-10-28,,R-19407,local sincelejo,piña special 3ra,PE3,582,0,,4,206865,2026-10-27,0.0 - 1.0,2426,32
-2026-10-28,,R-19407,local sincelejo,piña special 3ra,PE3,597,0,,0,206878,2026-10-27,0.0 - 1.0,2426,32
-2026-10-28,,R-19407,local sincelejo,piña special 3ra,PE3,563,258,,0,206955,2026-10-27,0.0 - 1.0,2426,46
+2026-10-28,,R-19406,local sincelejo,piña special 2da,PE2,589,0,2800,6,206908,2026-10-27,0.0 - 1.0,2426,47
+2026-10-28,,R-19406,local sincelejo,piña special 2da,PE2,628,0,2800,0,206869,2026-10-27,0.0 - 1.0,2426,32
+2026-10-28,,R-19406,local sincelejo,piña special 2da,PE2,502,0,2800,0,206867,2026-10-27,0.0 - 1.0,2426,32
+2026-10-28,,R-19406,local sincelejo,Piña AD2,AD2,281,0,2800,0,206958,2026-10-27,0.0 - 1.0,2626,77
+2026-10-28,,R-19406,local sincelejo,piña special 3ra,PE3,565,435,2400,2,206697,2026-10-26,0.0 - 1.0,2426,32
+2026-10-28,,R-19406,local sincelejo,,PEBAB,0,300,1800,0,,,2,,
+2026-10-28,,R-19406,local sincelejo,piña special guapita,PEGUA,571,129,2000,2,206666,2026-10-26,1.5 - 2.5,2426,47
+2026-10-28,,R-19406,local sincelejo,,PE1,0,500,3000,0,,,2,,
+2026-10-28,,R-19406,local sincelejo,piña special 3ra,PE3,138,0,2400,0,206639,2026-10-26,0.0 - 1.0,2426,47
+2026-10-28,,R-19406,local sincelejo,piña special 3ra,PE3,193,0,2400,0,206762,2026-10-26,0.0 - 1.0,2426,32
+2026-10-28,,R-19406,local sincelejo,piña special 3ra,PE3,162,0,2400,0,206630,2026-10-26,0.0 - 1.0,2426,47
+2026-10-28,,R-19406,local sincelejo,piña special 3ra,PE3,44,0,2400,0,206756,2026-10-26,0.0 - 1.0,2426,32
+2026-10-28,,R-19406,local sincelejo,Piña AD3,AD3,25,55,2400,0,206787,2026-10-26,0.0 - 1.0,2826,32
+2026-10-28,,R-19406,local sincelejo,piña special 2da,PE2,493,7,2800,0,206805,2026-10-27,0.0 - 1.0,2426,47
+2026-10-28,,R-19406,local sincelejo,piña special 1ra,PE1,531,469,3000,2,206682,2026-10-26,0.0 - 1.0,2426,32
+2026-10-28,,R-19407,local sincelejo,piña special 3ra,PE3,582,0,2400,4,206865,2026-10-27,0.0 - 1.0,2426,32
+2026-10-28,,R-19407,local sincelejo,piña special 3ra,PE3,597,0,2400,0,206878,2026-10-27,0.0 - 1.0,2426,32
+2026-10-28,,R-19407,local sincelejo,piña special 3ra,PE3,563,258,2400,0,206955,2026-10-27,0.0 - 1.0,2426,46
 2026-10-28,,R-19407,local sincelejo,piña special 1ra,PE1,649,0,,0,206635,2026-10-26,0.0 - 1.0,2426,47
 2026-10-28,,R-19407,local sincelejo,piña special 1ra,PE1,583,0,,0,206715,2026-10-26,0.0 - 1.0,2426,47
 2026-10-28,,R-19407,local sincelejo,piña special 1ra,PE1,557,211,,0,206690,2026-10-26,0.0 - 1.0,2426,32
