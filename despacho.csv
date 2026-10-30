@@ -23871,10 +23871,10 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-29,,R-19422,local sincelejo,piña special guapita,PEGUA,568,0,2200,0,207042,2026-10-28,1.5 - 2.5,2426,47
 2026-10-29,,R-19422,local sincelejo,piña special guapita,PEGUA,584,0,2200,0,207075,2026-10-28,1.5 - 2.5,2426,32
 2026-10-29,,R-19422,local sincelejo,piña special guapita,PEGUA,569,304,2200,0,207007,2026-10-28,1.5 - 2.5,2426,46
-2026-10-29,,R-19425,jeronimo martins,piña special 2da,PE2,413,0,3100,0,207035,2026-10-28,1.5,2426,46
-2026-10-29,,R-19425,jeronimo martins,piña special 2da,PE2,409,0,3100,0,207006,2026-10-28,1.5,2426,46
-2026-10-29,,R-19425,jeronimo martins,piña special 2da,PE2,412,366,3100,0,206983,2026-10-28,1.5,2426,46
-2026-10-29,,R-19425,jeronimo martins,,PE1,0,325,3100,0,,,1.5,,
+2026-10-29,47029,R-19425,jeronimo martins,piña special 2da,PE2,413,0,3100,0,207035,2026-10-28,1.5,2426,46
+2026-10-29,47029,R-19425,jeronimo martins,piña special 2da,PE2,409,0,3100,0,207006,2026-10-28,1.5,2426,46
+2026-10-29,47029,R-19425,jeronimo martins,piña special 2da,PE2,412,366,3100,0,206983,2026-10-28,1.5,2426,46
+2026-10-29,47029,R-19425,jeronimo martins,,PE1,0,325,3100,0,,,1.5,,
 2026-10-29,,,reposicion jeronimo,piña special 1ra,PE1,133,0,,0,207010,2026-10-28,1.5,2426,46
 2026-10-29,,R-19423,local medellin,piña special 1ra,PE1,632,168,3200,4,206811,2026-10-27,1.5 - 2.5,2426,47
 2026-10-29,,R-19423,local medellin,piña special 1ra,PE1,610,0,3200,9,206918,2026-10-27,3.0 - 4.0,2426,47
@@ -23914,16 +23914,16 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-29,,R-19427,local sincelejo,piña special guapita,PEGUA,488,0,2200,0,206988,2026-10-28,1.5 - 2.5,2426,46
 2026-10-29,,R-19427,local sincelejo,piña special guapita,PEGUA,245,287,2200,0,207091,2026-10-28,1.5 - 2.5,2426,46
 2026-10-29,,,descarte,AD-piña jugos,AD-PJUG,0,0,,231,206597,2026-10-25,3.0 - 4.0,2826,32
-2026-10-29,,R-19428,dario alberto,piña special 2da,PE2,72,35,2300,0,206759,2026-10-26,1.5 - 2.5,2426,32
-2026-10-29,,R-19428,dario alberto,piña special 2da,PE2,456,0,2300,0,206940,2026-10-27,1.5 - 2.5,2426,46
-2026-10-29,,R-19428,dario alberto,piña special 2da,PE2,586,0,2300,0,206922,2026-10-27,1.5 - 2.5,2426,47
-2026-10-29,,R-19428,dario alberto,piña special 2da,PE2,119,0,2300,0,206933,2026-10-27,1.5 - 2.5,2426,46
-2026-10-29,,R-19428,dario alberto,piña special 2da,PE2,150,89,2300,0,206813,2026-10-27,1.5 - 2.5,2426,47
-2026-10-29,,R-19428,dario alberto,piña special 1ra,PE1,226,0,2500,0,206662,2026-10-26,1.5 - 2.5,2426,47
-2026-10-29,,R-19428,dario alberto,piña special 1ra,PE1,564,0,2500,0,206724,2026-10-26,1.5 - 2.5,2426,47
-2026-10-29,,R-19428,dario alberto,piña special 1ra,PE1,551,0,2500,0,206678,2026-10-26,1.5 - 2.5,2426,32
-2026-10-29,,R-19428,dario alberto,Piña AD1,AD1,370,410,2500,35,206780,2026-10-26,1.5 - 2.5,2826,32
-2026-10-29,,R-19428,dario alberto,,PE1,0,400,2500,0,,,2,,
+2026-10-29,47030,R-19428,dario alberto,piña special 2da,PE2,72,35,2300,0,206759,2026-10-26,1.5 - 2.5,2426,32
+2026-10-29,47030,R-19428,dario alberto,piña special 2da,PE2,456,0,2300,0,206940,2026-10-27,1.5 - 2.5,2426,46
+2026-10-29,47030,R-19428,dario alberto,piña special 2da,PE2,586,0,2300,0,206922,2026-10-27,1.5 - 2.5,2426,47
+2026-10-29,47030,R-19428,dario alberto,piña special 2da,PE2,119,0,2300,0,206933,2026-10-27,1.5 - 2.5,2426,46
+2026-10-29,47030,R-19428,dario alberto,piña special 2da,PE2,150,89,2300,0,206813,2026-10-27,1.5 - 2.5,2426,47
+2026-10-29,47030,R-19428,dario alberto,piña special 1ra,PE1,226,0,2500,0,206662,2026-10-26,1.5 - 2.5,2426,47
+2026-10-29,47030,R-19428,dario alberto,piña special 1ra,PE1,564,0,2500,0,206724,2026-10-26,1.5 - 2.5,2426,47
+2026-10-29,47030,R-19428,dario alberto,piña special 1ra,PE1,551,0,2500,0,206678,2026-10-26,1.5 - 2.5,2426,32
+2026-10-29,47030,R-19428,dario alberto,Piña AD1,AD1,370,410,2500,35,206780,2026-10-26,1.5 - 2.5,2826,32
+2026-10-29,47030,R-19428,dario alberto,,PE1,0,400,2500,0,,,2,,
 2026-10-29,,R-19429,camilo quiñones,piña indstria,PIND,585,0,1200,0,206863,2026-10-27,1.5 - 2.5,2426,32
 2026-10-29,,R-19429,camilo quiñones,piña indstria,PIND,482,0,1200,0,206815,2026-10-27,1.5 - 2.5,2426,47
 2026-10-29,,R-19429,camilo quiñones,piña indstria,PIND,453,0,1200,0,206870,2026-10-27,1.5 - 2.5,2426,32
@@ -23980,6 +23980,9 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-29,,,fundacion saciar,piña special 1ra,PE1,530,0,,0,206565,2026-10-25,3.0 - 4.0,2326,52
 2026-10-29,,,fundacion saciar,piña special 1ra,PE1,522,0,,0,206729,2026-10-26,4,2426,52
 2026-10-29,,,fundacion saciar,piña special 1ra,PE1,528,0,,0,206739,2026-10-26,4,2426,52
+2026-10-29,,,fundacion saciar,piña special 2da,PE2,449,0,,30,206735,2026-10-26,4,2426,52
+2026-10-29,,,fundacion saciar,piña special 2da,PE2,477,0,,0,206723,2026-10-26,4,2426,47
+2026-10-29,,,fundacion saciar,piña special 2da,PE2,84,0,,0,206786,2026-10-26,4,2426,32
 2026-10-29,,,descarte,piña jugos,PJUG,0,0,,675,206799,2026-10-26,3.0 - 4.0,2326,52
 2026-10-29,,,descarte,piña special 1ra,PE1,0,0,,126,206311,2026-10-23,3.0 - 4.0,2326,51
 2026-10-29,,,descarte,piña special 1ra,PE1,0,0,,572,206281,2026-10-23,3.0 - 4.0,2326,51
