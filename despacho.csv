@@ -23875,7 +23875,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-29,47029,R-19425,jeronimo martins,piña special 2da,PE2,409,0,3100,0,207006,2026-10-28,1.5,2426,46
 2026-10-29,47029,R-19425,jeronimo martins,piña special 2da,PE2,412,366,3100,0,206983,2026-10-28,1.5,2426,46
 2026-10-29,47029,R-19425,jeronimo martins,,PE1,0,325,3100,0,,,1.5,,
-2026-10-29,,,reposicion jeronimo,piña special 1ra,PE1,133,0,,0,207010,2026-10-28,1.5,2426,46
+2026-10-29,,R-19436,reposicion jeronimo,piña special 1ra,PE1,133,0,,0,207010,2026-10-28,1.5,2426,46
 2026-10-29,,R-19423,local medellin,piña special 1ra,PE1,632,168,3200,4,206811,2026-10-27,1.5 - 2.5,2426,47
 2026-10-29,,R-19423,local medellin,piña special 1ra,PE1,610,0,3200,9,206918,2026-10-27,3.0 - 4.0,2426,47
 2026-10-29,,R-19423,local medellin,piña special 1ra,PE1,623,0,3200,0,206851,2026-10-27,3.0 - 4.0,2426,47
@@ -23960,9 +23960,10 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-29,47034,R-19434,carmen susana hoyos,piña special baby,PEBAB,469,113,700,0,207064,2026-10-28,1.5 - 2.5,2426,32
 2026-10-29,47034,R-19434,carmen susana hoyos,piña special guapita,PEGUA,834,266,800,0,207114,2026-10-28,1.5 - 2.5,2426,32
 2026-10-29,,R-19435,cortesia,piña special 1ra,PE1,16,0,,0,207146,2026-10-29,1.5 - 2.5,2426,46
-2026-10-29,,R-19430,jeronimo martins,piña special 2da,PE2,418,0,3800,0,207023,2026-10-28,1.5,2426,46
-2026-10-29,,R-19430,jeronimo martins,piña special 2da,PE2,402,0,3800,13,207048,2026-10-28,1.5,2426,46
-2026-10-29,,R-19430,jeronimo martins,piña special 2da,PE2,415,85,3800,0,206990,2026-10-28,1.5,2426,46
+2026-10-29,47041,R-19430,jeronimo martins,piña special 2da,PE2,418,0,3800,0,207023,2026-10-28,1.5,2426,46
+2026-10-29,47041,R-19430,jeronimo martins,piña special 2da,PE2,402,0,3800,13,207048,2026-10-28,1.5,2426,46
+2026-10-29,47041,R-19430,jeronimo martins,piña special 2da,PE2,415,85,3800,0,206990,2026-10-28,1.5,2426,46
+2026-10-29,,R-19436,reposicion jeronimo,,,0,130,,0,,,,,
 2026-10-29,47028,R-19433,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,639,0,3000,11,206817,2026-10-27,1,2426,47
 2026-10-29,47028,R-19433,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,620,0,3000,0,206824,2026-10-27,1,2426,47
 2026-10-29,47028,R-19433,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,526,0,3000,0,206803,2026-10-27,1,2426,47
