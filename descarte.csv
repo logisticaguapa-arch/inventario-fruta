@@ -3899,7 +3899,11 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,44,octubre,2026-10-29,2426,46,canastas,4.0,,4.0,4.0,Muestreo,PEBAB
 2026,44,octubre,2026-10-29,2426,46,canastas,13.0,,13.0,13.0,Muestreo,PE2
 2026,44,octubre,2026-10-29,2426,47,canastas,11.0,,11.0,11.0,Muestreo,PE1
-2026,44,octubre,2026-10-29,2326,52,canastas,120.0,,120.0,120.0,Golpe empacadora,PE1
+2026,44,octubre,2026-10-29,2326,52,canastas,559.0,,559.0,559.0,Golpe empacadora,PE1
+2026,44,octubre,2026-10-29,2326,52,canastas,519.0,,519.0,519.0,Daño por reposo,PE1
+2026,44,octubre,2026-10-29,2326,51,canastas,525.0,,525.0,525.0,Daño por reposo,PE1
+2026,44,octubre,2026-10-29,2326,52,canastas,548.0,,548.0,548.0,Daño por reposo,PE1
+2026,44,octubre,2026-10-29,2326,52,canastas,118.0,,118.0,118.0,,PE1
 2026,44,octubre,2026-10-29,2426,52,canastas,30.0,,30.0,30.0,Daño por reposo,PE2
 2026,44,octubre,2026-10-29,2326,52,117,675.0,,675.0,675.0,Sobre madura campo,PJUG
 2026,44,octubre,2026-10-29,2326,51,canastas,126.0,,126.0,126.0,Daño por reposo,PE1
@@ -3907,3 +3911,6 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,44,octubre,2026-10-29,2426,32,canastas,152.0,,152.0,152.0,Daño por reposo,PE1
 2026,44,octubre,2026-10-29,2426,47,116,815.0,,815.0,815.0,Daño por reposo,PJUG
 2026,44,octubre,2026-10-29,3226,77,95,1030.0,,1030.0,1030.0,Daño por reposo,AD-PJUG
+2026,44,octubre,2026-10-29,2326,51,canastas,549.0,,549.0,549.0,Daño por reposo,PE1
+2026,44,octubre,2026-10-29,2326,52,canastas,594.0,,594.0,594.0,Daño por reposo,PE1
+2026,44,octubre,2026-10-29,2426,52,canastas,518.0,,518.0,518.0,Daño por reposo,PIND
