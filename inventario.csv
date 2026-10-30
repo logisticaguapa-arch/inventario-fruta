@@ -279,15 +279,15 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 207248,canastas,2026-10-29,AD1,Piña AD1,0.0 - 1.0,551
 207249,canastas,2026-10-29,PE3,piña special 3ra,3.0 - 4.0,476
 207250,canastas,2026-10-29,PIND,piña indstria,1.5 - 2.5,377
-207251,canastas,2026-10-29,PE2,piña special 2da,1.5 - 2.5,616
+207251,canastas,2026-10-29,PE2,piña special 2da,0.0 - 1.0,616
 207252,canastas,2026-10-29,AD1,Piña AD1,0.0 - 1.0,602
-207253,canastas,2026-10-29,,,,0
-207254,canastas,2026-10-29,,,,0
-207255,canastas,2026-10-29,,,,0
-207256,canastas,2026-10-29,,,,0
-207257,canastas,2026-10-29,,,,0
-207258,canastas,2026-10-29,,,,0
-207259,canastas,2026-10-29,,,,0
+207253,canastas,2026-10-29,AD1,Piña AD1,0,547
+207254,canastas,2026-10-29,AD-PIND,AD-piña indstria,1.5 - 2.5,573
+207255,canastas,2026-10-29,AD1,Piña AD1,1,565
+207256,canastas,2026-10-29,PE1,piña special 1ra,3.0 - 4.0,578
+207257,canastas,2026-10-29,PEGUA,piña special guapita,1.5 - 2.5,364
+207258,canastas,2026-10-29,PE3,piña special 3ra,1.5 - 2.5,561
+207259,canastas,2026-10-29,AD2,Piña AD2,1.5,420
 207260,canastas,2026-10-29,,,,0
 207261,canastas,2026-10-29,,,,0
 207262,canastas,2026-10-29,,,,0
