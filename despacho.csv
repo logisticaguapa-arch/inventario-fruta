@@ -24061,21 +24061,21 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-30,,R-19444,local sincelejo,piña special 3ra,PE3,507,77,2400,0,206999,2026-10-28,0.0 - 1.0,2426,46
 2026-10-30,,R-19444,local sincelejo,piña special 3ra,PE3,589,0,2400,4,207171,2026-10-29,0.0 - 1.0,2426,46
 2026-10-30,,R-19444,local sincelejo,piña special 3ra,PE3,503,308,2400,0,207207,2026-10-29,0.0 - 1.0,2426,32
-2026-10-30,,R-19444,local sincelejo,,PE1,0,1000,,0,,,1,,
-2026-10-30,,R-19444,local sincelejo,piña special guapita,PEGUA,577,0,,0,207182,2026-10-29,1.5 - 2.5,2426,46
-2026-10-30,,R-19444,local sincelejo,piña special guapita,PEGUA,540,0,,4,207204,2026-10-29,1.5 - 2.5,2426,32
-2026-10-30,,R-19444,local sincelejo,piña special guapita,PEGUA,566,317,,0,207145,2026-10-29,1.5 - 2.5,2426,46
-2026-10-30,,,andres ruben oquendo,piña special 1ra,PE1,625,0,,0,206852,2026-10-27,0.0 - 1.0,2426,47
-2026-10-30,,,andres ruben oquendo,piña special 1ra,PE1,627,0,,0,206845,2026-10-27,0.0 - 1.0,2426,46
-2026-10-30,,,andres ruben oquendo,piña special 1ra,PE1,616,0,,0,206812,2026-10-27,0.0 - 1.0,2426,47
-2026-10-30,,,andres ruben oquendo,piña special 1ra,PE1,648,0,,0,206886,2026-10-27,0.0 - 1.0,2426,32
-2026-10-30,,,andres ruben oquendo,Piña AD1,AD1,331,153,,0,206964,2026-10-27,0.0 - 1.0,2726,77
-2026-10-30,,,andres ruben oquendo,piña special 2da,PE2,584,0,,0,206871,2026-10-27,3.0 - 4.0,2426,32
-2026-10-30,,,andres ruben oquendo,piña special 2da,PE2,259,0,,200,206945,2026-10-27,3.0 - 4.0,2426,46
-2026-10-30,,,andres ruben oquendo,piña special 2da,PE2,585,0,,0,206914,2026-10-27,3.0 - 4.0,2426,47
-2026-10-30,,,andres ruben oquendo,piña special 2da,PE2,474,0,,107,206925,2026-10-27,3.0 - 4.0,2426,47
-2026-10-30,,,andres ruben oquendo,piña special 2da,PE2,49,0,,0,207102,2026-10-28,3.0 - 4.0,2426,46
-2026-10-30,,,andres ruben oquendo,piña special 2da,PE2,111,211,,0,207100,2026-10-28,3.0 - 4.0,2426,46
+2026-10-30,,R-19444,local sincelejo,,PE1,0,1000,3000,0,,,1,,
+2026-10-30,,R-19444,local sincelejo,piña special guapita,PEGUA,577,0,2000,0,207182,2026-10-29,1.5 - 2.5,2426,46
+2026-10-30,,R-19444,local sincelejo,piña special guapita,PEGUA,540,0,2000,4,207204,2026-10-29,1.5 - 2.5,2426,32
+2026-10-30,,R-19444,local sincelejo,piña special guapita,PEGUA,566,317,2000,0,207145,2026-10-29,1.5 - 2.5,2426,46
+2026-10-30,,R-19447,andres ruben oquendo,piña special 1ra,PE1,625,0,,0,206852,2026-10-27,0.0 - 1.0,2426,47
+2026-10-30,,R-19447,andres ruben oquendo,piña special 1ra,PE1,627,0,,0,206845,2026-10-27,0.0 - 1.0,2426,46
+2026-10-30,,R-19447,andres ruben oquendo,piña special 1ra,PE1,616,0,,0,206812,2026-10-27,0.0 - 1.0,2426,47
+2026-10-30,,R-19447,andres ruben oquendo,piña special 1ra,PE1,648,0,,0,206886,2026-10-27,0.0 - 1.0,2426,32
+2026-10-30,,R-19447,andres ruben oquendo,Piña AD1,AD1,331,153,,0,206964,2026-10-27,0.0 - 1.0,2726,77
+2026-10-30,,R-19447,andres ruben oquendo,piña special 2da,PE2,584,0,,0,206871,2026-10-27,3.0 - 4.0,2426,32
+2026-10-30,,R-19447,andres ruben oquendo,piña special 2da,PE2,259,0,,200,206945,2026-10-27,3.0 - 4.0,2426,46
+2026-10-30,,R-19447,andres ruben oquendo,piña special 2da,PE2,585,0,,0,206914,2026-10-27,3.0 - 4.0,2426,47
+2026-10-30,,R-19447,andres ruben oquendo,piña special 2da,PE2,474,0,,107,206925,2026-10-27,3.0 - 4.0,2426,47
+2026-10-30,,R-19447,andres ruben oquendo,piña special 2da,PE2,49,0,,0,207102,2026-10-28,3.0 - 4.0,2426,46
+2026-10-30,,R-19447,andres ruben oquendo,piña special 2da,PE2,111,211,,0,207100,2026-10-28,3.0 - 4.0,2426,46
 2026-10-30,,,camilo quiñones,piña indstria,PIND,492,0,,0,207071,2026-10-28,1.5 - 2.5,2426,32
 2026-10-30,,,camilo quiñones,piña indstria,PIND,445,0,,0,207001,2026-10-28,1.5 - 2.5,2426,46
 2026-10-30,,,camilo quiñones,piña indstria,PIND,563,500,,0,207070,2026-10-28,1.5 - 2.5,2426,32
@@ -24131,6 +24131,9 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-30,,,Andres Garcia,piña indstria,PIND,578,0,,0,207026,2026-10-28,1.5 - 2.5,2426,46
 2026-10-30,,,Andres Garcia,AD-piña indstria,AD-PIND,387,0,,0,207273,2026-10-29,1.5 - 2.5,3526,78
 2026-10-30,,,Andres Garcia,piña indstria,PIND,373,0,,0,207250,2026-10-29,1.5 - 2.5,2426,32
+2026-10-30,,,Andres Garcia,piña indstria,PIND,498,0,,0,207224,2026-10-29,1.5 - 2.5,2426,32
+2026-10-30,,,Andres Garcia,AD-piña indstria,AD-PIND,453,0,,0,207272,2026-10-29,1.5 - 2.5,3726,78
 2026-10-30,,,hugo miguel jimenez,piña special 1ra,PE1,408,0,,0,207111,2026-10-28,0.0 - 1.0,2426,46
 2026-10-30,,,hugo miguel jimenez,piña special 1ra,PE1,282,110,,0,207016,2026-10-28,0.0 - 1.0,2426,46
-2026-10-30,,,hugo miguel jimenez,piña special 3ra,PE3,586,0,,0,207172,2026-10-29,1.5 - 2.5,2426,46
+2026-10-30,,,hugo miguel jimenez,piña special 3ra,PE3,586,414,,0,207172,2026-10-29,1.5 - 2.5,2426,46
+2026-10-30,,,hugo miguel jimenez,piña special guapita,PEGUA,555,45,,0,207167,2026-10-29,1.5 - 2.5,2426,46
