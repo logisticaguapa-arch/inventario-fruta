@@ -24253,4 +24253,37 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-31,,,cartagena,Piña AD1,AD1,688,0,,0,207386,2026-10-30,0.0 - 1.0,3026,78
 2026-10-31,,,cartagena,piña special 1ra,PE1,255,0,,15,207360,2026-10-30,0.0 - 1.0,2426,46
 2026-10-31,,,cartagena,piña special 1ra,PE1,616,0,,0,207298,2026-10-30,1,2426,46
-2026-10-31,,,local medellin,piña special 1ra,PE1,661,0,,0,207170,2026-10-29,1.5 - 2.5,2426,46
+2026-10-31,,,cartagena,piña special 1ra,PE1,50,0,,0,207375,2026-10-30,0.0 - 1.0,2426,32
+2026-10-31,,,cartagena,piña special 1ra,PE1,455,350,,0,207390,2026-10-30,1,2426,32
+2026-10-31,,,cartagena,piña special 2da,PE2,583,0,,0,207374,2026-10-30,0.0 - 1.0,2426,32
+2026-10-31,,,cartagena,piña special 2da,PE2,312,0,,0,207358,2026-10-30,0.0 - 1.0,2426,46
+2026-10-31,,,cartagena,Piña AD2,AD2,66,0,,0,207401,2026-10-30,0.0 - 1.0,3026,78
+2026-10-31,,,cartagena,piña special 2da,PE2,292,0,,0,207387,2026-10-30,0.0 - 1.0,2426,32
+2026-10-31,,,cartagena,Piña AD2,AD2,91,0,,0,207399,2026-10-30,0.0 - 1.0,3126,78
+2026-10-31,,,local medellin,piña special 1ra,PE1,649,0,,0,207170,2026-10-29,1.5 - 2.5,2426,46
+2026-10-31,,,local medellin,piña special 1ra,PE1,632,0,,7,207157,2026-10-29,1.5 - 2.5,2426,46
+2026-10-31,,,local medellin,piña special 1ra,PE1,631,388,,0,207221,2026-10-29,1.5 - 2.5,2426,32
+2026-10-31,,,local medellin,piña special 1ra,PE1,530,0,,6,207359,2026-10-30,3.0 - 4.0,2426,46
+2026-10-31,,,local medellin,piña special 1ra,PE1,596,374,,5,207311,2026-10-30,3.0 - 4.0,2426,46
+2026-10-31,,,local medellin,piña special 3ra,PE3,487,0,,4,207382,2026-10-30,3.0 - 4.0,2426,32
+2026-10-31,,,local medellin,piña special 3ra,PE3,584,0,,0,207335,2026-10-30,3.0 - 4.0,2426,32
+2026-10-31,,,local medellin,piña special 3ra,PE3,585,344,,0,207300,2026-10-30,3.0 - 4.0,2426,46
+2026-10-31,,,cartagena,piña special baby,PEBAB,408,0,,0,207229,2026-10-29,1.5 - 2.5,2426,32
+2026-10-31,,,cartagena,piña special baby,PEBAB,473,0,,6,207220,2026-10-29,1.5 - 2.5,2426,32
+2026-10-31,,,cartagena,piña special baby,PEBAB,495,0,,0,207215,2026-10-29,1.5 - 2.5,2426,32
+2026-10-31,,,cartagena,piña special baby,PEBAB,392,0,,0,207144,2026-10-29,1.5 - 2.5,2426,46
+2026-10-31,,,cartagena,piña special baby,PEBAB,499,0,,0,207193,2026-10-29,1.5 - 2.5,2426,46
+2026-10-31,,,cartagena,piña special baby,PEBAB,447,0,,0,207237,2026-10-29,1.5 - 2.5,2426,32
+2026-10-31,,,cartagena,piña special baby,PEBAB,506,0,,0,207205,2026-10-29,1.5 - 2.5,2426,32
+2026-10-31,,,cartagena,piña special baby,PEBAB,484,0,,0,207202,2026-10-29,1.5 - 2.5,2426,32
+2026-10-31,,,cartagena,piña special baby,PEBAB,493,0,,0,207176,2026-10-29,1.5 - 2.5,2426,46
+2026-10-31,,,cartagena,piña special baby,PEBAB,508,0,,0,207162,2026-10-29,1.5 - 2.5,2426,46
+2026-10-31,,,cartagena,piña special baby,PEBAB,472,0,,0,207211,2026-10-29,1.5 - 2.5,2426,32
+2026-10-31,,,cartagena,piña special baby,PEBAB,490,0,,0,207347,2026-10-30,1.5 - 2.5,2426,32
+2026-10-31,,,cartagena,piña special baby,PEBAB,136,0,,2,207324,2026-10-30,1.5 - 2.5,2426,46
+2026-10-31,,,jeronimo martins,piña special 2da,PE2,319,0,,0,207241,2026-10-29,1.5,2426,32
+2026-10-31,,,jeronimo martins,piña special 2da,PE2,223,0,,0,207228,2026-10-29,1.5,2426,32
+2026-10-31,,,jeronimo martins,Piña AD2,AD2,50,0,,0,207269,2026-10-29,1.5,3626,79
+2026-10-31,,,jeronimo martins,piña special 2da,PE2,409,0,,0,207308,2026-10-30,1.5,2426,46
+2026-10-31,,,jeronimo martins,piña special 2da,PE2,399,0,,0,207412,2026-10-30,1.5,2426,32
+2026-10-31,,,jeronimo martins,piña special 2da,PE2,405,0,,0,207351,2026-10-30,1.5,2426,32
