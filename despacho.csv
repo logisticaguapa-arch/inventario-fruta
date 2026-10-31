@@ -24006,10 +24006,10 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-30,,R-19438,local apartado,,PE2,0,90,3000,0,,,2,,
 2026-10-30,,R-19438,local apartado,piña special guapita,PEGUA,285,135,2200,1,207080,2026-10-28,1.5 - 2.5,2426,32
 2026-10-30,,R-19438,local apartado,AL-PEGUA,AL-PEGUA,354,0,2200,0,207290,2026-10-30,1.5 - 2.5,,
-2026-10-30,,R-19439,reposicion éxito barranquilla,,PE1,0,60,3200,0,,,1,,
-2026-10-30,,R-19440,Almacenes Éxito S.A. - Barranquilla,Piña AD1,AD1,719,0,3200,8,207271,2026-10-29,1,3726,78
-2026-10-30,,R-19440,Almacenes Éxito S.A. - Barranquilla,piña special 1ra,PE1,639,402,3200,0,207188,2026-10-29,1,2426,46
-2026-10-30,,R-19440,Almacenes Éxito S.A. - Barranquilla,Piña AD1,AD1,541,79,3200,2,207253,2026-10-29,0,2626,47
+2026-10-30,,R-19439,reposicion éxito barranquilla,,PE1,0,60,,0,,,1,,
+2026-10-30,47042,R-19440,Almacenes Éxito S.A. - Barranquilla,Piña AD1,AD1,719,0,3200,8,207271,2026-10-29,1,3726,78
+2026-10-30,47042,R-19440,Almacenes Éxito S.A. - Barranquilla,piña special 1ra,PE1,639,402,3200,0,207188,2026-10-29,1,2426,46
+2026-10-30,47042,R-19440,Almacenes Éxito S.A. - Barranquilla,Piña AD1,AD1,541,79,3200,2,207253,2026-10-29,0,2626,47
 2026-10-30,,R-19442,local medellin,piña special 2da,PE2,501,99,,0,207011,2026-10-28,1.5 - 2.5,2426,46
 2026-10-30,,R-19442,local medellin,piña special 2da,PE2,574,0,,6,207196,2026-10-29,0.0 - 1.0,2426,32
 2026-10-30,,R-19442,local medellin,piña special 2da,PE2,613,0,,0,207251,2026-10-29,0.0 - 1.0,2426,32
