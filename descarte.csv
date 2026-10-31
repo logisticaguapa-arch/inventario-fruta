@@ -3948,3 +3948,7 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,44,octubre,2026-10-30,2426,47,64,1073.0,,1073.0,1073.0,Daño por reposo,PJUG
 2026,44,octubre,2026-10-30,3126,78,1,616.0,,616.0,616.0,Daño por reposo,AD-PJUG
 2026,44,octubre,2026-10-30,3426,77,109,1383.0,,1383.0,1383.0,Daño por reposo,AD-PJUG
+2026,44,octubre,2026-10-31,2426,46,124,310.0,,310.0,310.0,Sobre madura campo,AD-PJUG
+2026,44,octubre,2026-10-31,2426,32,canastas,2.0,,2.0,2.0,Muestreo,PEBAB
+2026,44,octubre,2026-10-31,,,canastas,4.0,,4.0,4.0,,PE1
+2026,44,octubre,2026-10-31,2426,32,canastas,2.0,,2.0,2.0,Muestreo,PEGUA
