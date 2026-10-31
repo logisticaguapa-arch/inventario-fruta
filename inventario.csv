@@ -52,7 +52,7 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 207085,canastas,2026-10-28,PE2,piña special 2da,1.5 - 2.5,658
 207098,canastas,2026-10-28,PE2,piña special 2da,1.5 - 2.5,521
 207099,canastas,2026-10-28,PE2,piña special 2da,3.0 - 4.0,171
-207107,canastas,2026-10-28,AD-PIND,AD-piña indstria,1.5 - 2.5,302
+207107,canastas,2026-10-28,AD-PIND,AD-piña indstria,1.5 - 2.5,205
 207108,153,2026-10-28,PE1,piña special 1ra,1.5 - 2.5,1354
 207109,112,2026-10-28,PE1,piña special 1ra,1.5 - 2.5,1408
 207110,78,2026-10-28,PE1,piña special 1ra,1.5 - 2.5,1631
@@ -262,7 +262,7 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 207368,canastas,2026-10-30,PE2,piña special 2da,1.5,137
 207369,canastas,2026-10-30,PE1,piña special 1ra,1,477
 207370,canastas,2026-10-30,PEBAB,piña special baby,1.5 - 2.5,497
-207371,canastas,2026-10-30,PE1,piña special 1ra,0.0 - 1.0,549
+207371,canastas,2026-10-30,PE1,piña special 1ra,0,549
 207372,canastas,2026-10-30,PE1,piña special 1ra,3.0 - 4.0,675
 207373,canastas,2026-10-30,PE2,piña special 2da,1.5 - 2.5,623
 207374,canastas,2026-10-30,PE2,piña special 2da,0.0 - 1.0,588
@@ -282,13 +282,13 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 207388,canastas,2026-10-30,AD1,Piña AD1,0,544
 207389,canastas,2026-10-30,PE1,piña special 1ra,3.0 - 4.0,554
 207390,canastas,2026-10-30,PE1,piña special 1ra,1,593
-207391,canastas,2026-10-30,,,,0
-207392,canastas,2026-10-30,,,,0
-207393,canastas,2026-10-30,,,,0
-207394,canastas,2026-10-30,,,,0
-207395,canastas,2026-10-30,,,,0
-207396,canastas,2026-10-30,,,,0
-207397,canastas,2026-10-30,,,,0
+207391,canastas,2026-10-30,AD1,Piña AD1,0.0 - 1.0,677
+207392,canastas,2026-10-30,PE2,piña special 2da,1.5,471
+207393,canastas,2026-10-30,PEGUA,piña special guapita,1.5 - 2.5,507
+207394,canastas,2026-10-30,AD2,Piña AD2,1.5,190
+207395,canastas,2026-10-30,AD2,Piña AD2,1.5 - 2.5,91
+207396,canastas,2026-10-30,AD3,Piña AD3,1.5 - 2.5,27
+207397,canastas,2026-10-30,AD1,Piña AD1,1.5 - 2.5,342
 207398,canastas,2026-10-30,,,,0
 207399,canastas,2026-10-30,,,,0
 207400,canastas,2026-10-30,,,,0
