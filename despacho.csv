@@ -24285,16 +24285,18 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-31,,R-19471,cartagena,piña special baby,PEBAB,472,0,1700,0,207211,2026-10-29,1.5 - 2.5,2426,32
 2026-10-31,,R-19471,cartagena,piña special baby,PEBAB,490,0,1700,0,207347,2026-10-30,1.5 - 2.5,2426,32
 2026-10-31,,R-19471,cartagena,piña special baby,PEBAB,136,0,1700,2,207324,2026-10-30,1.5 - 2.5,2426,46
-2026-10-31,,R-19472,jeronimo martins,piña special 2da,PE2,319,65,3100,0,207241,2026-10-29,1.5,2426,32
-2026-10-31,,R-19472,jeronimo martins,Piña AD2,AD2,50,0,3100,0,207269,2026-10-29,1.5,3626,79
-2026-10-31,,R-19472,jeronimo martins,piña special 2da,PE2,409,0,3100,0,207308,2026-10-30,1.5,2426,46
-2026-10-31,,R-19472,jeronimo martins,piña special 2da,PE2,399,0,3100,0,207412,2026-10-30,1.5,2426,32
-2026-10-31,,R-19472,jeronimo martins,piña special 2da,PE2,405,0,3100,0,207351,2026-10-30,1.5,2426,32
-2026-10-31,,R-19472,jeronimo martins,piña special 2da,PE2,471,0,3100,0,207392,2026-10-30,1.5,2426,32
-2026-10-31,,R-19472,jeronimo martins,piña special 2da,PE2,279,0,3100,0,207413,2026-10-30,1.5,2426,32
-2026-10-31,,R-19472,jeronimo martins,Piña AD2,AD2,190,0,3100,0,207394,2026-10-30,1.5,3026,78
-2026-10-31,,R-19472,jeronimo martins,piña special 2da,PE2,215,0,3100,0,207379,2026-10-30,1.5,2426,32
-2026-10-31,,R-19472,reposicion jeronimo,piña special 2da,PE2,120,158,3100,0,207368,2026-10-30,1.5,2426,46
+2026-10-31,47105,R-19472,jeronimo martins,piña special 2da,PE2,319,65,3100,0,207241,2026-10-29,1.5,2426,32
+2026-10-31,47105,R-19472,jeronimo martins,Piña AD2,AD2,50,0,3100,0,207269,2026-10-29,1.5,3626,79
+2026-10-31,47105,R-19472,jeronimo martins,piña special 2da,PE2,409,0,3100,0,207308,2026-10-30,1.5,2426,46
+2026-10-31,47105,R-19472,jeronimo martins,piña special 2da,PE2,399,0,3100,0,207412,2026-10-30,1.5,2426,32
+2026-10-31,47105,R-19472,jeronimo martins,piña special 2da,PE2,405,0,3100,0,207351,2026-10-30,1.5,2426,32
+2026-10-31,47105,R-19472,jeronimo martins,piña special 2da,PE2,471,0,3100,0,207392,2026-10-30,1.5,2426,32
+2026-10-31,47105,R-19472,jeronimo martins,piña special 2da,PE2,279,0,3100,0,207413,2026-10-30,1.5,2426,32
+2026-10-31,47105,R-19472,jeronimo martins,Piña AD2,AD2,190,0,3100,0,207394,2026-10-30,1.5,3026,78
+2026-10-31,47105,R-19472,jeronimo martins,piña special 2da,PE2,215,0,3100,0,207379,2026-10-30,1.5,2426,32
+2026-10-31,47105,R-19472,jeronimo martins,piña special 2da,PE2,120,158,3100,0,207368,2026-10-30,1.5,2426,46
+2026-10-31,,R-19473,reposicion jeronimo,,PE2,0,199,,0,,,1.5,,
+2026-10-31,,R-19473,reposicion jeronimo,,PE2,0,17,,0,,,1.5,,
 2026-10-31,,,descarte,piña special 1ra,PE1,0,0,,411,206948,2026-10-27,4,2426,46
 2026-10-31,,,descarte,piña special 2da,PE2,0,0,,75,206927,2026-10-27,4,2426,47
 2026-10-31,,,descarte,piña special 1ra,PE1,0,0,,248,206819,2026-10-27,3.0 - 4.0,2426,47

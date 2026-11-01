@@ -104,7 +104,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 207301,canastas,2026-10-30,PE1,piña special 1ra,3.0 - 4.0,610
 207302,canastas,2026-10-30,PE2,piña special 2da,3.0 - 4.0,603
 207303,canastas,2026-10-30,PEGUA,piña special guapita,1.5 - 2.5,565
-207305,canastas,2026-10-30,PE2,piña special 2da,3.0 - 4.0,597
 207309,canastas,2026-10-30,PIND,piña indstria,1.5 - 2.5,596
 207312,canastas,2026-10-30,PEGUA,piña special guapita,1.5 - 2.5,562
 207317,canastas,2026-10-30,PIND,piña indstria,1.5 - 2.5,588
@@ -113,7 +112,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 207321,canastas,2026-10-30,PIND,piña indstria,1.5 - 2.5,497
 207326,canastas,2026-10-30,PE1,piña special 1ra,1,207
 207327,canastas,2026-10-30,PIND,piña indstria,1.5 - 2.5,606
-207329,canastas,2026-10-30,PE1,piña special 1ra,1.5 - 2.5,551
 207336,canastas,2026-10-30,PE1,piña special 1ra,1.5 - 2.5,554
 207338,canastas,2026-10-30,PE2,piña special 2da,3.0 - 4.0,399
 207340,canastas,2026-10-30,PIND,piña indstria,1.5 - 2.5,498
@@ -125,7 +123,7 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 207346,canastas,2026-10-30,PE1,piña special 1ra,1.5 - 2.5,550
 207348,canastas,2026-10-30,PE2,piña special 2da,3.0 - 4.0,487
 207349,canastas,2026-10-30,PE1,piña special 1ra,3.0 - 4.0,179
-207350,canastas,2026-10-30,PE1,piña special 1ra,0.0 - 1.0,625
+207350,canastas,2026-10-30,PE1,piña special 1ra,0.0 - 1.0,466
 207352,canastas,2026-10-30,PIND,piña indstria,1.5 - 2.5,484
 207355,canastas,2026-10-30,PE1,piña special 1ra,1.5 - 2.5,531
 207356,canastas,2026-10-30,PEGUA,piña special guapita,1.5 - 2.5,565
@@ -145,3 +143,12 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 207389,canastas,2026-10-30,PE1,piña special 1ra,3.0 - 4.0,554
 207396,canastas,2026-10-30,AD3,Piña AD3,1.5 - 2.5,27
 207397,canastas,2026-10-30,AD1,Piña AD1,1.5 - 2.5,342
+207398,canastas,2026-10-30,AD-PJUG,AD-PJUG,3.0 - 4.0,486
+207402,canastas,2026-10-30,AD-PIND,AD-piña indstria,1.5 - 2.5,414
+207409,canastas,2026-10-30,PE3,piña special 3ra,1.5 - 2.5,581
+207411,canastas,2026-10-30,PJUG,piña jugos,3.0 - 4.0,231
+207414,canastas,2026-10-30,PE2,piña special 2da,1.5,82
+207415,17,2026-10-30,PE1,piña special 1ra,3.0 - 4.0,1531
+207416,133,2026-10-30,PE1,piña special 1ra,3.0 - 4.0,1230
+207417,canastas,2026-10-30,PE1,piña special 1ra,0.0 - 1.0,384
+207423,canastas,2026-10-30,,,,0
