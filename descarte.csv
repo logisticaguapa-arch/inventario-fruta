@@ -3982,3 +3982,7 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,44,octubre,2026-10-31,2426,32,canastas,42.0,,42.0,42.0,Sobre madura campo,PE1
 2026,44,noviembre,2026-11-01,2526,77,81,130.0,,130.0,130.0,Daño por reposo,AD1
 2026,44,noviembre,2026-11-01,2426,47,canastas,55.0,,55.0,55.0,Daño por reposo,PE1
+2026,44,noviembre,2026-11-01,2626,77,canastas,80.0,,80.0,80.0,Daño por reposo,AD1
+2026,44,noviembre,2026-11-01,3326,78,80,660.0,,660.0,660.0,Daño por reposo,AD1
+2026,44,noviembre,2026-11-01,2426,32,canastas,231.0,,231.0,231.0,Daño por reposo,PJUG
+2026,44,noviembre,2026-11-01,3126,78,canastas,486.0,,486.0,486.0,Daño por reposo,AD-PJUG
