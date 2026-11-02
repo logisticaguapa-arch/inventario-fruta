@@ -3986,3 +3986,12 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,44,noviembre,2026-11-01,3326,78,80,660.0,,660.0,660.0,Daño por reposo,AD1
 2026,44,noviembre,2026-11-01,2426,32,canastas,231.0,,231.0,231.0,Daño por reposo,PJUG
 2026,44,noviembre,2026-11-01,3126,78,canastas,486.0,,486.0,486.0,Daño por reposo,AD-PJUG
+2026,45,noviembre,2026-11-02,2426,32,canastas,16.0,,16.0,16.0,Muestreo,PE2
+2026,45,noviembre,2026-11-02,2426,32,canastas,195.0,,195.0,195.0,Daño por reposo,PE1
+2026,45,noviembre,2026-11-02,2426,46,canastas,81.0,,81.0,81.0,Daño por reposo,PE1
+2026,45,noviembre,2026-11-02,2426,32,canastas,45.0,,45.0,45.0,Daño por reposo,PE1
+2026,45,noviembre,2026-11-02,2426,46,114,730.0,,730.0,730.0,Daño por reposo,PE1
+2026,45,noviembre,2026-11-02,2426,32,canastas,8.0,,8.0,8.0,Muestreo,PE1
+2026,45,noviembre,2026-11-02,2526,77,canastas,6.0,,6.0,6.0,Muestreo,PE1
+2026,45,noviembre,2026-11-02,3426,52,canastas,1.0,,1.0,1.0,Muestreo,AD2
+2026,45,noviembre,2026-11-02,2426,46,canastas,4.0,,4.0,4.0,Muestreo,PEGUA
