@@ -24424,16 +24424,16 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-02,47117,R-19484,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,521,288,3000,0,207465,2026-11-01,1,2526,53
 2026-11-02,47117,R-19484,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,543,57,3100,0,207473,2026-11-01,0,2526,53
 2026-11-02,,R-19483,reposicion éxito medellin,,PE1,0,80,,0,,,1,,
-2026-11-02,,,ramiro parada,piña special guapita,PEGUA,512,0,,0,207303,2026-10-30,1.5 - 2.5,2426,46
-2026-11-02,,,ramiro parada,piña special guapita,PEGUA,465,0,,0,207577,2026-11-01,1.5 - 2.5,2526,77
-2026-11-02,,,ramiro parada,piña special guapita,PEGUA,557,0,,2,207459,2026-11-01,1.5 - 2.5,2526,53
-2026-11-02,,,ramiro parada,piña special guapita,PEGUA,470,0,,0,207452,2026-11-01,1.5 - 2.5,2526,53
-2026-11-02,,,ramiro parada,piña special guapita,PEGUA,464,140,,0,207461,2026-11-01,1.5 - 2.5,2526,53
-2026-11-02,,,ramiro parada,piña special 3ra,PE3,493,0,,0,207438,2026-11-01,1.5 - 2.5,2426,47
-2026-11-02,,,ramiro parada,piña special 3ra,PE3,540,0,,0,207258,2026-10-29,1.5 - 2.5,2426,32
-2026-11-02,,,ramiro parada,piña special 3ra,PE3,97,0,,0,207222,2026-10-29,1.5 - 2.5,2426,32
-2026-11-02,,,ramiro parada,piña special 3ra,PE3,183,0,,0,207194,2026-10-29,1.5 - 2.5,2426,46
-2026-11-02,,,ramiro parada,piña special 3ra,PE3,114,0,,77,207234,2026-10-29,1.5 - 2.5,2426,32
+2026-11-02,,R-19486,ramiro parada,piña special guapita,PEGUA,512,0,,0,207303,2026-10-30,1.5 - 2.5,2426,46
+2026-11-02,,R-19486,ramiro parada,piña special guapita,PEGUA,465,0,,0,207577,2026-11-01,1.5 - 2.5,2526,77
+2026-11-02,,R-19486,ramiro parada,piña special guapita,PEGUA,557,0,,2,207459,2026-11-01,1.5 - 2.5,2526,53
+2026-11-02,,R-19486,ramiro parada,piña special guapita,PEGUA,470,0,,0,207452,2026-11-01,1.5 - 2.5,2526,53
+2026-11-02,,R-19486,ramiro parada,piña special guapita,PEGUA,464,140,,0,207461,2026-11-01,1.5 - 2.5,2526,53
+2026-11-02,,R-19486,ramiro parada,piña special 3ra,PE3,493,0,,0,207438,2026-11-01,1.5 - 2.5,2426,47
+2026-11-02,,R-19486,ramiro parada,piña special 3ra,PE3,540,0,,0,207258,2026-10-29,1.5 - 2.5,2426,32
+2026-11-02,,R-19486,ramiro parada,piña special 3ra,PE3,97,0,,0,207222,2026-10-29,1.5 - 2.5,2426,32
+2026-11-02,,R-19486,ramiro parada,piña special 3ra,PE3,183,0,,0,207194,2026-10-29,1.5 - 2.5,2426,46
+2026-11-02,,R-19486,ramiro parada,piña special 3ra,PE3,114,0,,77,207234,2026-10-29,1.5 - 2.5,2426,32
 2026-11-02,,R-19485,local medellin,,PE1,0,500,,0,,,1,,
 2026-11-02,,R-19485,local medellin,piña special 2da,PE2,452,48,,0,207586,2026-11-01,1.5 - 2.5,2526,77
 2026-11-02,,R-19485,local medellin,piña special 2da,PE2,504,0,,0,207521,2026-11-01,0.0 - 1.0,2526,53
@@ -24458,7 +24458,15 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-02,,,camilo quiñones,piña special 3ra,PE3,492,73,,0,207529,2026-11-01,0.0 - 1.0,2526,53
 2026-11-02,,,camilo quiñones,piña indstria,PIND,568,0,,0,207365,2026-10-30,1.5 - 2.5,2426,46
 2026-11-02,,,camilo quiñones,piña indstria,PIND,575,0,,0,207309,2026-10-30,1.5 - 2.5,2426,46
+2026-11-02,,,camilo quiñones,piña indstria,PIND,323,0,,0,207381,2026-10-30,1.5 - 2.5,2426,32
+2026-11-02,,,camilo quiñones,AD-piña indstria,AD-PIND,398,0,,0,207402,2026-10-30,1.5 - 2.5,5526,78
+2026-11-02,,,camilo quiñones,piña indstria,PIND,585,0,,0,207327,2026-10-30,1.5 - 2.5,2426,46
 2026-11-02,,,local sincelejo,piña special 3ra,PE3,481,0,,0,207429,2026-11-01,0.0 - 1.0,2426,47
 2026-11-02,,,local sincelejo,piña special 3ra,PE3,493,26,,0,207493,2026-11-01,0.0 - 1.0,2426,32
 2026-11-02,,,local sincelejo,piña special 3ra,PE3,490,0,,0,207540,2026-11-01,0.0 - 1.0,2526,53
 2026-11-02,,,local sincelejo,piña special 3ra,PE3,489,21,,0,207442,2026-11-01,0.0 - 1.0,2526,53
+2026-11-02,,,local sincelejo,piña special 2da,PE2,509,0,,0,207467,2026-11-01,0.0 - 1.0,2526,53
+2026-11-02,,,local sincelejo,piña special 2da,PE2,493,0,,0,207530,2026-11-01,0.0 - 1.0,2526,53
+2026-11-02,,,local sincelejo,piña special 3ra,PE3,476,0,,0,207557,2026-11-01,0.0 - 1.0,2526,77
+2026-11-02,,,local sincelejo,piña special 3ra,PE3,352,0,,0,207460,2026-11-01,0.0 - 1.0,2526,53
+2026-11-02,,,local sincelejo,piña special 1ra,PE1,551,0,,0,207494,2026-11-01,0.0 - 1.0,2426,32
