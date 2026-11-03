@@ -24503,18 +24503,18 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-02,47119,R-19489,jeronimo martins,piña special 2da,PE2,411,0,3200,0,207505,2026-11-01,1.5,2426,32
 2026-11-02,47119,R-19489,jeronimo martins,piña special 2da,PE2,427,0,3200,0,207523,2026-11-01,1.5,2526,53
 2026-11-02,47119,R-19489,jeronimo martins,piña special 2da,PE2,413,218,3200,0,207434,2026-11-01,1.5,2426,47
-2026-11-02,,,reposicion jeronimo,piña special 2da,PE2,207,70,,0,207560,2026-11-01,1.5,2526,77
-2026-11-02,,,jeronimo martins,piña special 2da,PE2,347,0,,0,207570,2026-11-01,1.5,2526,77
-2026-11-02,,,jeronimo martins,piña special 2da,PE2,409,0,,0,207581,2026-11-01,1.5,2526,77
-2026-11-02,,,jeronimo martins,piña special 2da,PE2,354,0,,0,207534,2026-11-01,1.5,2526,53
-2026-11-02,,,jeronimo martins,piña special 2da,PE2,413,0,,0,207541,2026-11-01,1.5,2526,77
-2026-11-02,,,jeronimo martins,piña special 2da,PE2,416,0,,0,207551,2026-11-01,1.5,2526,77
-2026-11-02,,,jeronimo martins,piña special 2da,PE2,398,0,,0,207563,2026-11-01,1.5,2526,77
-2026-11-02,,,jeronimo martins,piña special 2da,PE2,417,0,,0,207480,2026-11-01,1.5,2426,32
-2026-11-02,,,jeronimo martins,piña special 2da,PE2,410,0,,0,207668,2026-11-02,1.5,2526,53
-2026-11-02,,,jeronimo martins,piña special 2da,PE2,410,0,,0,207675,2026-11-02,1.5,2526,53
-2026-11-02,,,jeronimo martins,piña special 2da,PE2,413,0,,0,207655,2026-11-02,1.5,2526,53
-2026-11-02,,,jeronimo martins,piña special 2da,PE2,126,0,,0,207688,2026-11-02,1.5,,
+2026-11-02,,R-19495,reposicion jeronimo,piña special 2da,PE2,207,0,,0,207560,2026-11-01,1.5,2526,77
+2026-11-02,,R-19495,reposicion jeronimo,piña special 2da,PE2,137,0,,0,207655,2026-11-02,1.5,2526,53
+2026-11-02,,R-19495,reposicion jeronimo,piña special 2da,PE2,126,70,,0,207688,2026-11-02,1.5,2526,53
+2026-11-02,47127,R-19494,jeronimo martins,piña special 2da,PE2,347,0,3100,0,207570,2026-11-01,1.5,2526,77
+2026-11-02,47127,R-19494,jeronimo martins,piña special 2da,PE2,409,0,3100,0,207581,2026-11-01,1.5,2526,77
+2026-11-02,47127,R-19494,jeronimo martins,piña special 2da,PE2,354,0,3100,0,207534,2026-11-01,1.5,2526,53
+2026-11-02,47127,R-19494,jeronimo martins,piña special 2da,PE2,413,0,3100,0,207541,2026-11-01,1.5,2526,77
+2026-11-02,47127,R-19494,jeronimo martins,piña special 2da,PE2,416,0,3100,0,207551,2026-11-01,1.5,2526,77
+2026-11-02,47127,R-19494,jeronimo martins,piña special 2da,PE2,398,0,3100,0,207563,2026-11-01,1.5,2526,77
+2026-11-02,47127,R-19494,jeronimo martins,piña special 2da,PE2,417,0,3100,0,207480,2026-11-01,1.5,2426,32
+2026-11-02,47127,R-19494,jeronimo martins,piña special 2da,PE2,410,0,3100,0,207668,2026-11-02,1.5,2526,53
+2026-11-02,47127,R-19494,jeronimo martins,piña special 2da,PE2,410,276,3100,0,207675,2026-11-02,1.5,2526,53
 2026-11-02,,,descarte,piña special 1ra,PE1,0,0,,621,207174,2026-10-29,3.0 - 4.0,2426,46
 2026-11-02,,,descarte,piña special 1ra,PE1,0,0,,642,207159,2026-10-29,3.0 - 4.0,2426,46
 2026-11-02,,,descarte,piña special 1ra,PE1,0,0,,553,207218,2026-10-29,3.0 - 4.0,2426,32
