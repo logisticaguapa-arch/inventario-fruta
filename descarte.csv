@@ -4031,4 +4031,8 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,45,noviembre,2026-11-02,2426,46,canastas,604.0,,604.0,604.0,Daño por reposo,PIND
 2026,45,noviembre,2026-11-02,2626,47,canastas,573.0,,573.0,573.0,Daño por reposo,AD-PIND
 2026,45,noviembre,2026-11-02,3426,78,canastas,205.0,,205.0,205.0,Daño por reposo,AD-PIND
+2026,45,noviembre,2026-11-03,2426,46,canastas,400.0,,400.0,400.0,Sobre madura empacadora,PE2
 2026,45,noviembre,2026-11-03,2526,77,canastas,90.0,,90.0,90.0,Enferma,PE2
+2026,45,noviembre,2026-11-03,2526,77,109,20.0,,20.0,20.0,Muestreo,PE1
+2026,45,noviembre,2026-11-03,2426,32,canastas,17.0,,17.0,17.0,Enferma,PE1
+2026,45,noviembre,2026-11-03,2526,53,canastas,3.0,,3.0,3.0,Muestreo,PEGUA
