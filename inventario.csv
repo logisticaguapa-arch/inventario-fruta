@@ -4,7 +4,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 207377,canastas,2026-10-30,PE3,piña special 3ra,1.5 - 2.5,260
 207396,canastas,2026-10-30,AD3,Piña AD3,1.5 - 2.5,27
 207423,canastas,2026-11-01,PE1,piña special 1ra,3.0 - 4.0,570
-207424,canastas,2026-11-01,PE2,piña special 2da,3.0 - 4.0,37
 207426,canastas,2026-11-01,PEGUA,piña special guapita,1.5 - 2.5,107
 207432,canastas,2026-11-01,PEGUA,piña special guapita,1.5 - 2.5,488
 207439,canastas,2026-11-01,PE1,piña special 1ra,3.0 - 4.0,571
@@ -16,10 +15,8 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 207464,canastas,2026-11-01,PE3,piña special 3ra,3.0 - 4.0,491
 207468,canastas,2026-11-01,PE1,piña special 1ra,0.0 - 1.0,634
 207469,canastas,2026-11-01,PE1,piña special 1ra,0.0 - 1.0,593
-207471,canastas,2026-11-01,PE1,piña special 1ra,1.5 - 2.5,560
 207476,canastas,2026-11-01,PE1,piña special 1ra,3.0 - 4.0,554
 207488,canastas,2026-11-01,PE1,piña special 1ra,1.5 - 2.5,234
-207490,canastas,2026-11-01,PE2,piña special 2da,3.0 - 4.0,523
 207492,canastas,2026-11-01,PEGUA,piña special guapita,1.5 - 2.5,569
 207496,canastas,2026-11-01,PE1,piña special 1ra,0.0 - 1.0,635
 207497,canastas,2026-11-01,PE1,piña special 1ra,0.0 - 1.0,582
@@ -34,12 +31,11 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 207531,canastas,2026-11-01,PE1,piña special 1ra,1.5 - 2.5,67
 207532,canastas,2026-11-01,PE1,piña special 1ra,1.5 - 2.5,565
 207535,canastas,2026-11-01,PE1,piña special 1ra,0.0 - 1.0,564
-207543,canastas,2026-11-01,PE1,piña special 1ra,1.5 - 2.5,572
 207544,canastas,2026-11-01,PE1,piña special 1ra,0.0 - 1.0,65
 207548,canastas,2026-11-01,PE1,piña special 1ra,3.0 - 4.0,577
 207550,canastas,2026-11-01,PE3,piña special 3ra,1.5 - 2.5,486
 207552,canastas,2026-11-01,PE1,piña special 1ra,0.0 - 1.0,601
-207555,canastas,2026-11-01,PE1,piña special 1ra,1.5 - 2.5,586
+207555,canastas,2026-11-01,PE1,piña special 1ra,1.5 - 2.5,239
 207558,canastas,2026-11-01,PE1,piña special 1ra,1.5 - 2.5,583
 207561,canastas,2026-11-01,PE1,piña special 1ra,3.0 - 4.0,77
 207565,canastas,2026-11-01,PE1,piña special 1ra,1.5 - 2.5,44
@@ -48,7 +44,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 207576,canastas,2026-11-01,PE3,piña special 3ra,1.5 - 2.5,282
 207583,canastas,2026-11-01,PE1,piña special 1ra,0.0 - 1.0,40
 207585,canastas,2026-11-01,PE3,piña special 3ra,1.5 - 2.5,100
-207591,canastas,2026-11-01,AD2,Piña AD2,3.0 - 4.0,129
 207596,canastas,2026-11-01,AD-PJUG,AD-PJUG,3.0 - 4.0,222
 207597,canastas,2026-11-01,PE1,piña special 1ra,0.0 - 1.0,334
 207598,canastas,2026-11-01,ADGUA,Piña ADGUA,1.5 - 2.5,60
@@ -122,7 +117,7 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 207699,canastas,2026-11-02,PE1,piña special 1ra,0.0 - 1.0,554
 207700,canastas,2026-11-02,PE2,piña special 2da,1.5,411
 207701,canastas,2026-11-02,PE1,piña special 1ra,0.0 - 1.0,695
-207703,canastas,2026-11-02,PE2,piña special 2da,3.0 - 4.0,98
+207703,canastas,2026-11-02,PE2,piña special 2da,3.0 - 4.0,64
 207704,canastas,2026-11-02,PE1,piña special 1ra,1.5 - 2.5,702
 207706,canastas,2026-11-02,PE1,piña special 1ra,1.5,413
 207708,canastas,2026-11-02,PEGUA,piña special guapita,1.5 - 2.5,569
@@ -180,13 +175,12 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 207775,canastas,2026-11-03,PE2,piña special 2da,1.5,408
 207776,canastas,2026-11-03,PE1,piña special 1ra,0.0 - 1.0,557
 207777,canastas,2026-11-03,PE2,piña special 2da,1.5,409
-207779,canastas,2026-11-03,,,,0
-207780,canastas,2026-11-03,,,,0
-207781,canastas,2026-11-03,,,,0
-207782,canastas,2026-11-03,,,,0
-207783,canastas,2026-11-03,,,,0
-207784,canastas,2026-11-03,,,,0
-207785,canastas,2026-11-03,,,,0
+207779,canastas,2026-11-03,PE1,piña special 1ra,1,535
+207780,canastas,2026-11-03,PE1,piña special 1ra,1.5 - 2.5,565
+207781,canastas,2026-11-03,PE1,piña special 1ra,0.0 - 1.0,551
+207783,canastas,2026-11-03,PE2,piña special 2da,3.0 - 4.0,506
+207784,canastas,2026-11-03,PE2,piña special 2da,1.5,409
+207785,canastas,2026-11-03,PE3,piña special 3ra,0.0 - 1.0,487
 207786,canastas,2026-11-03,,,,0
 207787,canastas,2026-11-03,,,,0
 207788,canastas,2026-11-03,,,,0
