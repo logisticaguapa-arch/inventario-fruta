@@ -24166,7 +24166,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-30,47067,R-19455,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,549,0,3100,0,207371,2026-10-30,0,2426,46
 2026-10-30,,R-19454,reposicion éxito medellin,,PE1,0,130,,0,,,1,,
 2026-10-30,,R-19454,reposicion éxito medellin,,PE1,0,70,,0,,,1,,
-2026-10-30,47077,R-19458,venta empleados,piña special 1ra,PE1,251,0,2200,0,207420,2026-10-30,1.5 - 2.5,2426,46
+2026-10-30,47077,R-19458,venta empleados,Piña AD1,AD1,251,0,2200,0,207420,2026-10-30,1.5 - 2.5,3526,78
 2026-10-31,,R-19459,local apartado,AL-PEGUA,AL-PEGUA,118,0,2200,0,207421,2026-10-31,1.5 - 2.5,2426,47
 2026-10-31,,R-19459,local apartado,piña special guapita,PEGUA,537,63,2200,0,207223,2026-10-29,1.5 - 2.5,2426,32
 2026-10-31,,R-19459,local apartado,Piña AD1,AD1,316,0,3200,0,207274,2026-10-29,0.0 - 1.0,3326,78
@@ -24182,7 +24182,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-31,,R-19460,local sincelejo,piña special 3ra,PE3,497,0,2400,0,207319,2026-10-30,0.0 - 1.0,2426,46
 2026-10-31,,R-19460,local sincelejo,piña special 3ra,PE3,497,512,2400,0,207380,2026-10-30,0.0 - 1.0,2426,32
 2026-10-31,,R-19460,local sincelejo,piña special 1ra,PE1,540,0,3000,4,207418,2026-10-30,0.0 - 1.0,2426,46
-2026-10-31,,R-19460,local sincelejo,piña special 1ra,PE1,546,71,3000,0,207419,2026-10-30,0.0 - 1.0,2426,46
+2026-10-31,,R-19460,local sincelejo,Piña AD1,AD1,546,71,3000,0,207419,2026-10-30,0.0 - 1.0,3526,78
 2026-10-31,,R-19460,local sincelejo,piña special 2da,PE2,586,6,2800,0,207168,2026-10-29,1.5 - 2.5,2426,46
 2026-10-31,,R-19460,local sincelejo,piña special guapita,PEGUA,567,433,2000,2,207245,2026-10-29,1.5 - 2.5,2426,32
 2026-10-31,47101,R-19461,dario alberto,piña special 2da,PE2,576,0,2300,0,207059,2026-10-28,1.5 - 2.5,2426,46
@@ -24249,10 +24249,10 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-10-31,47104,R-19467,KARINA BORJA,piña special 3ra,PE3,491,0,1000,0,207296,2026-10-30,1.5 - 2.5,2426,46
 2026-10-31,47104,R-19467,KARINA BORJA,piña special 3ra,PE3,485,0,1000,0,207313,2026-10-30,1.5 - 2.5,2426,46
 2026-10-31,47104,R-19467,KARINA BORJA,piña special 3ra,PE3,490,5,1000,0,207353,2026-10-30,1.5 - 2.5,2426,32
-2026-10-31,,R-19470,cartagena,Piña AD1,AD1,432,0,3200,0,207404,2026-10-30,0.0 - 1.0,5526,78
+2026-10-31,,R-19470,cartagena,Piña AD1,AD1,432,0,3200,0,207404,2026-10-30,0.0 - 1.0,3526,78
 2026-10-31,,R-19470,cartagena,Piña AD1,AD1,672,0,3200,0,207391,2026-10-30,0.0 - 1.0,3026,78
 2026-10-31,,R-19470,cartagena,piña special 1ra,PE1,615,0,3200,0,207325,2026-10-30,0.0 - 1.0,2426,46
-2026-10-31,,R-19470,cartagena,Piña AD1,AD1,492,0,3200,0,207407,2026-10-30,0.0 - 1.0,5526,78
+2026-10-31,,R-19470,cartagena,Piña AD1,AD1,492,0,3200,0,207407,2026-10-30,0.0 - 1.0,3526,78
 2026-10-31,,R-19470,cartagena,Piña AD1,AD1,688,0,3200,0,207386,2026-10-30,0.0 - 1.0,3026,78
 2026-10-31,,R-19470,cartagena,piña special 1ra,PE1,255,0,3200,15,207360,2026-10-30,0.0 - 1.0,2426,46
 2026-10-31,,R-19470,cartagena,piña special 1ra,PE1,616,0,3200,0,207298,2026-10-30,1,2426,46
@@ -24386,7 +24386,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-02,,R-19482,local medellin,piña special 1ra,PE1,585,0,3200,0,207546,2026-11-01,1.5 - 2.5,2526,77
 2026-11-02,,R-19482,local medellin,piña special 1ra,PE1,573,0,3200,6,207564,2026-11-01,1.5 - 2.5,2526,77
 2026-11-02,,R-19482,local medellin,piña special 1ra,PE1,592,0,3200,0,207569,2026-11-01,1.5 - 2.5,2526,77
-2026-11-02,,R-19482,local medellin,Piña AD1,AD1,257,325,3200,0,207594,2026-11-01,1.5 - 2.5,2726,53
+2026-11-02,,R-19482,local medellin,piña special 1ra,PE1,257,325,3200,0,207594,2026-11-01,1.5 - 2.5,2526,53
 2026-11-02,,R-19482,local medellin,piña special 1ra,PE1,554,0,3200,0,207499,2026-11-01,3.0 - 4.0,2426,32
 2026-11-02,,R-19482,local medellin,piña special 1ra,PE1,567,0,3200,0,207588,2026-11-01,3.0 - 4.0,2526,77
 2026-11-02,,R-19482,local medellin,piña special 1ra,PE1,534,0,3200,0,207520,2026-11-01,3.0 - 4.0,2526,53
@@ -24459,7 +24459,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-02,47122,R-19493,camilo quiñones,piña indstria,PIND,568,0,1200,0,207365,2026-10-30,1.5 - 2.5,2426,46
 2026-11-02,47122,R-19493,camilo quiñones,piña indstria,PIND,575,0,1200,0,207309,2026-10-30,1.5 - 2.5,2426,46
 2026-11-02,47122,R-19493,camilo quiñones,piña indstria,PIND,323,0,1200,0,207381,2026-10-30,1.5 - 2.5,2426,32
-2026-11-02,47122,R-19493,camilo quiñones,AD-piña indstria,AD-PIND,398,0,1200,0,207402,2026-10-30,1.5 - 2.5,5526,78
+2026-11-02,47122,R-19493,camilo quiñones,AD-piña indstria,AD-PIND,398,0,1200,0,207402,2026-10-30,1.5 - 2.5,3526,78
 2026-11-02,47122,R-19493,camilo quiñones,piña indstria,PIND,585,0,1200,0,207327,2026-10-30,1.5 - 2.5,2426,46
 2026-11-02,47122,R-19493,camilo quiñones,piña indstria,PIND,484,0,1200,0,207352,2026-10-30,1.5 - 2.5,2426,32
 2026-11-02,47122,R-19493,camilo quiñones,piña indstria,PIND,571,0,1200,0,207317,2026-10-30,1.5 - 2.5,2426,46
@@ -24549,3 +24549,6 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-03,,,DREAN FOOD CARIBE,piña special 2da,PE2,570,0,,0,207363,2026-10-30,3.0 - 4.0,2426,46
 2026-11-03,,,DREAN FOOD CARIBE,piña special 2da,PE2,589,0,,0,207302,2026-10-30,3.0 - 4.0,2426,46
 2026-11-03,,,DREAN FOOD CARIBE,piña special 2da,PE2,586,0,,0,207345,2026-10-30,3.0 - 4.0,2426,32
+2026-11-03,,,DREAN FOOD CARIBE,piña special 2da,PE2,533,0,,0,207384,2026-10-30,3.0 - 4.0,2426,32
+2026-11-03,,,DREAN FOOD CARIBE,piña special 2da,PE2,396,0,,0,207338,2026-10-30,3.0 - 4.0,2426,32
+2026-11-03,,,DREAN FOOD CARIBE,piña special 2da,PE2,487,0,,0,207348,2026-10-30,3.0 - 4.0,2426,32

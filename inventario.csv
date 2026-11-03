@@ -5,15 +5,12 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 207318,canastas,2026-10-30,PE3,piña special 3ra,3.0 - 4.0,250
 207326,canastas,2026-10-30,PE1,piña special 1ra,1,207
 207336,canastas,2026-10-30,PE1,piña special 1ra,1.5 - 2.5,554
-207338,canastas,2026-10-30,PE2,piña special 2da,3.0 - 4.0,399
 207346,canastas,2026-10-30,PE1,piña special 1ra,1.5 - 2.5,550
-207348,canastas,2026-10-30,PE2,piña special 2da,3.0 - 4.0,487
 207350,canastas,2026-10-30,PE1,piña special 1ra,0.0 - 1.0,466
 207355,canastas,2026-10-30,PE1,piña special 1ra,1.5 - 2.5,531
 207362,canastas,2026-10-30,PE3,piña special 3ra,3.0 - 4.0,586
 207364,canastas,2026-10-30,PE1,piña special 1ra,1.5 - 2.5,546
 207377,canastas,2026-10-30,PE3,piña special 3ra,1.5 - 2.5,260
-207384,canastas,2026-10-30,PE2,piña special 2da,3.0 - 4.0,553
 207396,canastas,2026-10-30,AD3,Piña AD3,1.5 - 2.5,27
 207397,canastas,2026-10-30,AD1,Piña AD1,1.5 - 2.5,342
 207417,canastas,2026-10-30,PE1,piña special 1ra,0.0 - 1.0,384
@@ -71,7 +68,7 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 207532,canastas,2026-11-01,PE1,piña special 1ra,1.5 - 2.5,565
 207535,canastas,2026-11-01,PE1,piña special 1ra,0.0 - 1.0,564
 207536,canastas,2026-11-01,PE1,piña special 1ra,0.0 - 1.0,622
-207537,canastas,2026-11-01,PE1,piña special 1ra,1.5 - 2.5,574
+207537,canastas,2026-11-01,PE1,piña special 1ra,1.5 - 2.5,432
 207538,canastas,2026-11-01,PEGUA,piña special guapita,1.5 - 2.5,588
 207543,canastas,2026-11-01,PE1,piña special 1ra,1.5 - 2.5,572
 207544,canastas,2026-11-01,PE1,piña special 1ra,0.0 - 1.0,65
@@ -98,7 +95,7 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 207591,canastas,2026-11-01,AD2,Piña AD2,3.0 - 4.0,129
 207592,canastas,2026-11-01,AD3,Piña AD3,0.0 - 1.0,137
 207596,canastas,2026-11-01,AD-PJUG,AD-PJUG,3.0 - 4.0,222
-207597,canastas,2026-11-01,AD1,Piña AD1,0.0 - 1.0,334
+207597,canastas,2026-11-01,PE1,piña special 1ra,0.0 - 1.0,334
 207598,canastas,2026-11-01,ADGUA,Piña ADGUA,1.5 - 2.5,60
 207599,canastas,2026-11-01,PE1,piña special 1ra,3.0 - 4.0,203
 207601,canastas,2026-11-01,PE1,piña special 1ra,4,162
