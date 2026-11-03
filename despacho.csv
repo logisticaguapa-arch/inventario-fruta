@@ -24452,7 +24452,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-02,47121,R-19487,Andres Garcia,piña indstria,PIND,511,0,1500,0,207556,2026-11-01,1.5 - 2.5,2526,77
 2026-11-02,47121,R-19487,Andres Garcia,piña indstria,PIND,484,0,1500,0,207509,2026-11-01,1.5 - 2.5,2426,32
 2026-11-02,47121,R-19487,Andres Garcia,AD-piña indstria,AD-PIND,135,0,1500,90,207600,2026-11-01,1.5 - 2.5,2726,53
-2026-11-02,47121,R-19487,Andres Garcia,piña indstria,PIND,182,0,1500,0,207629,2026-11-02,1.5 - 2.5,,
+2026-11-02,47121,R-19487,Andres Garcia,piña indstria,PIND,182,0,1500,0,207629,2026-11-02,1.5 - 2.5,2526,53
 2026-11-02,47122,R-19493,camilo quiñones,piña special 3ra,PE3,470,0,1000,0,207475,2026-11-01,0.0 - 1.0,2526,53
 2026-11-02,47122,R-19493,camilo quiñones,piña special 3ra,PE3,465,0,1000,0,207574,2026-11-01,0.0 - 1.0,2526,77
 2026-11-02,47122,R-19493,camilo quiñones,piña special 3ra,PE3,492,73,1000,0,207529,2026-11-01,0.0 - 1.0,2526,53
@@ -24511,9 +24511,9 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-02,,,jeronimo martins,piña special 2da,PE2,416,0,,0,207551,2026-11-01,1.5,2526,77
 2026-11-02,,,jeronimo martins,piña special 2da,PE2,398,0,,0,207563,2026-11-01,1.5,2526,77
 2026-11-02,,,jeronimo martins,piña special 2da,PE2,417,0,,0,207480,2026-11-01,1.5,2426,32
-2026-11-02,,,jeronimo martins,piña special 2da,PE2,410,0,,0,207668,2026-11-02,1.5,,
-2026-11-02,,,jeronimo martins,piña special 2da,PE2,410,0,,0,207675,2026-11-02,1.5,,
-2026-11-02,,,jeronimo martins,piña special 2da,PE2,413,0,,0,207655,2026-11-02,1.5,,
+2026-11-02,,,jeronimo martins,piña special 2da,PE2,410,0,,0,207668,2026-11-02,1.5,2526,53
+2026-11-02,,,jeronimo martins,piña special 2da,PE2,410,0,,0,207675,2026-11-02,1.5,2526,53
+2026-11-02,,,jeronimo martins,piña special 2da,PE2,413,0,,0,207655,2026-11-02,1.5,2526,53
 2026-11-02,,,jeronimo martins,piña special 2da,PE2,126,0,,0,207688,2026-11-02,1.5,,
 2026-11-02,,,descarte,piña special 1ra,PE1,0,0,,621,207174,2026-10-29,3.0 - 4.0,2426,46
 2026-11-02,,,descarte,piña special 1ra,PE1,0,0,,642,207159,2026-10-29,3.0 - 4.0,2426,46
@@ -24522,3 +24522,21 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-02,,,descarte,piña special 1ra,PE1,0,0,,542,207141,2026-10-29,3.0 - 4.0,2426,46
 2026-11-02,,,descarte,piña special 2da,PE2,0,0,,297,207206,2026-10-29,3.0 - 4.0,2426,32
 2026-11-02,,,descarte,Piña AD1,AD1,0,0,,74,207276,2026-10-29,1.5 - 2.5,3326,78
+2026-11-02,,,descarte,piña special 2da,PE2,0,0,,597,207226,2026-10-29,3.0 - 4.0,2426,32
+2026-11-02,,,descarte,piña special 1ra,PE1,0,0,,548,207190,2026-10-29,3.0 - 4.0,2426,46
+2026-11-02,,,descarte,piña special 1ra,PE1,0,0,,578,207256,2026-10-29,3.0 - 4.0,2426,32
+2026-11-02,,,descarte,piña special 2da,PE2,0,0,,593,207156,2026-10-29,3.0 - 4.0,2426,46
+2026-11-02,,,descarte,piña special 1ra,PE1,0,0,,1129,207283,2026-10-29,3.0 - 4.0,2426,46
+2026-11-02,,,descarte,piña special 1ra,PE1,0,0,,1348,207279,2026-10-29,3.0 - 4.0,2426,46
+2026-11-02,,,descarte,piña special 1ra,PE1,0,0,,1332,207280,2026-10-29,3.0 - 4.0,2426,46
+2026-11-02,,,descarte,piña indstria,PIND,0,0,,497,207203,2026-10-29,1.5 - 2.5,2426,32
+2026-11-02,,,descarte,piña indstria,PIND,0,0,,600,207149,2026-10-29,1.5 - 2.5,2426,46
+2026-11-02,,,descarte,piña indstria,PIND,0,0,,517,207200,2026-10-29,1.5 - 2.5,2426,32
+2026-11-02,,,descarte,piña indstria,PIND,0,0,,324,207261,2026-10-29,1.5 - 2.5,2426,32
+2026-11-02,,,descarte,piña indstria,PIND,0,0,,427,207243,2026-10-29,1.5 - 2.5,2426,32
+2026-11-02,,,descarte,piña indstria,PIND,0,0,,334,207238,2026-10-29,1.5 - 2.5,2426,32
+2026-11-02,,,descarte,piña indstria,PIND,0,0,,585,207216,2026-10-29,1.5 - 2.5,2426,32
+2026-11-02,,,descarte,piña indstria,PIND,0,0,,552,207178,2026-10-29,1.5 - 2.5,2426,46
+2026-11-02,,,descarte,piña indstria,PIND,0,0,,604,207155,2026-10-29,1.5 - 2.5,2426,46
+2026-11-02,,,descarte,AD-piña indstria,AD-PIND,0,0,,573,207254,2026-10-29,1.5 - 2.5,2626,47
+2026-11-02,,,descarte,AD-piña indstria,AD-PIND,0,0,,205,207107,2026-10-28,1.5 - 2.5,3426,78
