@@ -24545,6 +24545,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-03,,,local apartado,piña special 2da,PE2,231,3,,0,207489,2026-11-01,0.0 - 1.0,2426,32
 2026-11-03,,,local apartado,piña special guapita,PEGUA,579,0,,0,207720,2026-11-02,1.5 - 2.5,2526,77
 2026-11-03,,,local apartado,piña special guapita,PEGUA,569,62,,0,207679,2026-11-02,1.5 - 2.5,2526,53
+2026-11-03,,,descarte,piña special 1ra,PE1,0,0,,162,207601,2026-11-01,4,2426,32
 2026-11-03,,,DREAN FOOD CARIBE,piña special 2da,PE2,82,0,,0,207414,2026-10-30,1.5,2426,32
 2026-11-03,,,DREAN FOOD CARIBE,piña special 2da,PE2,570,0,,0,207363,2026-10-30,3.0 - 4.0,2426,46
 2026-11-03,,,DREAN FOOD CARIBE,piña special 2da,PE2,189,0,,400,207302,2026-10-30,3.0 - 4.0,2426,46
@@ -24558,13 +24559,17 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-03,,,DREAN FOOD CARIBE,piña special 1ra,PE1,373,0,,0,207417,2026-10-30,0.0 - 1.0,2426,46
 2026-11-03,,,DREAN FOOD CARIBE,piña special 1ra,PE1,457,0,,0,207350,2026-10-30,0.0 - 1.0,2426,32
 2026-11-03,,,DREAN FOOD CARIBE,piña special 1ra,PE1,155,0,,0,207482,2026-11-01,0,2426,32
+2026-11-03,,,DREAN FOOD CARIBE,piña special 1ra,PE1,195,0,,0,207326,2026-10-30,1,2426,46
 2026-11-03,,,DREAN FOOD CARIBE,piña special 1ra,PE1,546,0,,0,207425,2026-11-01,1,2426,47
 2026-11-03,,,DREAN FOOD CARIBE,piña special 1ra,PE1,158,0,,0,207436,2026-11-01,1,2426,47
-2026-11-03,,,DREAN FOOD CARIBE,piña special 1ra,PE1,516,0,,0,207355,2026-10-30,1.5 - 2.5,2426,32
+2026-11-03,,,DREAN FOOD CARIBE,piña special 1ra,PE1,125,0,,0,207502,2026-11-01,0.0 - 1.0,2426,32
+2026-11-03,,,DREAN FOOD CARIBE,piña special 1ra,PE1,104,0,,0,207486,2026-11-01,0.0 - 1.0,2426,32
+2026-11-03,,,DREAN FOOD CARIBE,piña special 1ra,PE1,309,0,,207,207355,2026-10-30,1.5 - 2.5,2426,32
 2026-11-03,,,DREAN FOOD CARIBE,piña special 1ra,PE1,533,0,,0,207364,2026-10-30,1.5 - 2.5,2426,46
 2026-11-03,,,DREAN FOOD CARIBE,piña special 1ra,PE1,526,0,,0,207295,2026-10-30,1.5 - 2.5,2426,46
 2026-11-03,,,DREAN FOOD CARIBE,piña special 1ra,PE1,535,0,,0,207346,2026-10-30,1.5 - 2.5,2426,32
 2026-11-03,,,DREAN FOOD CARIBE,Piña AD1,AD1,333,0,,0,207397,2026-10-30,1.5 - 2.5,3126,78
+2026-11-03,,,DREAN FOOD CARIBE,piña special 1ra,PE1,501,0,,35,207336,2026-10-30,1.5 - 2.5,2426,32
 2026-11-03,,,DREAN FOOD CARIBE,piña special 1ra,PE1,1372,0,,0,207744,2026-11-02,0.0 - 1.0,2526,53
 2026-11-03,,,DREAN FOOD CARIBE,piña special 1ra,PE1,1427,0,,0,207610,2026-11-01,0.0 - 1.0,2526,77
 2026-11-03,,,DREAN FOOD CARIBE,piña special 1ra,PE1,1355,0,,0,207607,2026-11-01,0.0 - 1.0,2526,77
@@ -24584,3 +24589,36 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-03,,,local sincelejo,piña special 3ra,PE3,613,0,,0,207673,2026-11-02,0.0 - 1.0,2526,53
 2026-11-03,,,local sincelejo,piña special 3ra,PE3,481,306,,0,207623,2026-11-02,0.0 - 1.0,2526,53
 2026-11-03,,,local sincelejo,piña special 3ra,PE3,481,0,,0,207495,2026-11-01,0.0 - 1.0,2426,32
+2026-11-03,,,local sincelejo,piña special 3ra,PE3,491,0,,0,207511,2026-11-01,0.0 - 1.0,2526,53
+2026-11-03,,,local sincelejo,piña special 3ra,PE3,492,0,,0,207433,2026-11-01,0.0 - 1.0,2426,47
+2026-11-03,,,local sincelejo,Piña AD3,AD3,137,0,,0,207592,2026-11-01,0.0 - 1.0,2726,53
+2026-11-03,,,local sincelejo,piña special 3ra,PE3,12,0,,0,207737,2026-11-02,0.0 - 1.0,2526,77
+2026-11-03,,,cartagena,piña special baby,PEBAB,430,0,,3,207656,2026-11-02,1.5 - 2.5,2526,53
+2026-11-03,,,cartagena,piña special baby,PEBAB,444,0,,0,207695,2026-11-02,1.5 - 2.5,2526,53
+2026-11-03,,,cartagena,piña special baby,PEBAB,497,0,,0,207692,2026-11-02,1.5 - 2.5,2526,53
+2026-11-03,,,cartagena,piña special baby,PEBAB,257,0,,0,207731,2026-11-02,1.5 - 2.5,2526,77
+2026-11-03,,,cartagena,piña special baby,PEBAB,447,0,,0,207522,2026-11-01,1.5 - 2.5,2526,53
+2026-11-03,,,cartagena,piña special baby,PEBAB,359,0,,0,207575,2026-11-01,1.5 - 2.5,2526,77
+2026-11-03,,,cartagena,piña special 1ra,PE1,625,0,,20,207562,2026-11-01,0.0 - 1.0,2526,77
+2026-11-03,,,cartagena,piña special 1ra,PE1,532,0,,0,207455,2026-11-01,0.0 - 1.0,2526,53
+2026-11-03,,,cartagena,piña special 1ra,PE1,564,0,,0,207479,2026-11-01,0.0 - 1.0,2426,32
+2026-11-03,,,cartagena,piña special 1ra,PE1,639,0,,0,207518,2026-11-01,0.0 - 1.0,2526,53
+2026-11-03,,,cartagena,piña special 1ra,PE1,641,0,,9,207512,2026-11-01,0.0 - 1.0,2526,53
+2026-11-03,,,cartagena,piña special 1ra,PE1,639,360,,0,207526,2026-11-01,0.0 - 1.0,2526,53
+2026-11-03,,,cartagena,piña special 2da,PE2,602,0,,0,207715,2026-11-02,0.0 - 1.0,2526,77
+2026-11-03,,,cartagena,piña special 2da,PE2,577,0,,0,207686,2026-11-02,0.0 - 1.0,2526,53
+2026-11-03,,,cartagena,piña special 2da,PE2,591,0,,0,207702,2026-11-02,0.0 - 1.0,2526,53
+2026-11-03,,,cartagena,piña special 2da,PE2,4,216,,0,207727,2026-11-02,0.0 - 1.0,2526,77
+2026-11-03,,,local medellin,piña special 1ra,PE1,419,0,,4,207537,2026-11-01,1.5 - 2.5,2526,53
+2026-11-03,,,local medellin,piña special 1ra,PE1,585,496,,7,207559,2026-11-01,1.5 - 2.5,2526,77
+2026-11-03,,,local medellin,piña special 1ra,PE1,629,0,,6,207661,2026-11-02,3.0 - 4.0,2526,53
+2026-11-03,,,local medellin,piña special 1ra,PE1,563,308,,0,207626,2026-11-02,3.0 - 4.0,2526,53
+2026-11-03,,,local medellin,piña special 3ra,PE3,579,0,,0,207659,2026-11-02,1.5 - 2.5,2526,53
+2026-11-03,,,local medellin,piña special 3ra,PE3,497,424,,0,207650,2026-11-02,1.5 - 2.5,2526,53
+2026-11-03,,,local medellin,piña special 3ra,PE3,585,0,,0,207739,2026-11-02,3.0 - 4.0,2526,77
+2026-11-03,,,COMERCIALIZADORA DE PIÑAS AR SAS,piña special 2da,PE2,497,0,,0,207632,2026-11-02,0.0 - 1.0,2526,53
+2026-11-03,,,COMERCIALIZADORA DE PIÑAS AR SAS,piña special 2da,PE2,460,0,,0,207723,2026-11-02,0.0 - 1.0,2526,77
+2026-11-03,,,COMERCIALIZADORA DE PIÑAS AR SAS,piña special 2da,PE2,601,0,,0,207717,2026-11-02,0.0 - 1.0,2526,77
+2026-11-03,,,COMERCIALIZADORA DE PIÑAS AR SAS,piña special 2da,PE2,577,0,,0,207670,2026-11-02,0.0 - 1.0,2526,53
+2026-11-03,,,COMERCIALIZADORA DE PIÑAS AR SAS,piña special 2da,PE2,505,0,,0,207649,2026-11-02,0.0 - 1.0,2526,53
+2026-11-03,,,COMERCIALIZADORA DE PIÑAS AR SAS,piña special 2da,PE2,283,0,,0,207618,2026-11-02,0.0 - 1.0,2526,53
