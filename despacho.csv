@@ -24768,9 +24768,21 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-04,,,ramiro parada,piña special 3ra,PE3,154,0,,0,207550,2026-11-01,1.5 - 2.5,2526,77
 2026-11-04,,,ramiro parada,piña special 3ra,PE3,94,26,,0,207585,2026-11-01,1.5 - 2.5,2526,77
 2026-11-04,,,ramiro parada,piña special 2da,PE2,467,0,,0,207738,2026-11-02,3.0 - 4.0,2526,77
-2026-11-04,,,ramiro parada,piña special 2da,PE2,594,0,,0,207660,2026-11-02,3.0 - 4.0,2526,53
+2026-11-04,,,ramiro parada,piña special 2da,PE2,594,43,,0,207660,2026-11-02,3.0 - 4.0,2526,53
 2026-11-04,,,ramiro parada,piña special 1ra,PE1,662,0,,0,207680,2026-11-02,3.0 - 4.0,2526,53
+2026-11-04,,,ramiro parada,piña special 1ra,PE1,549,0,,0,207730,2026-11-02,3.0 - 4.0,2526,77
+2026-11-04,,,ramiro parada,piña special 1ra,PE1,498,0,,0,207734,2026-11-02,3.0 - 4.0,2526,77
+2026-11-04,,,ramiro parada,piña special 1ra,PE1,234,67,,32,207641,2026-11-02,3.0 - 4.0,2526,53
 2026-11-04,,,hugo miguel jimenez,piña special guapita,PEGUA,471,0,,0,207768,2026-11-03,1.5 - 2.5,2526,53
 2026-11-04,,,hugo miguel jimenez,piña special guapita,PEGUA,107,0,,0,207794,2026-11-03,1.5 - 2.5,2526,53
 2026-11-04,,,hugo miguel jimenez,piña special guapita,PEGUA,47,0,,0,207909,2026-11-03,1.5 - 2.5,2526,77
 2026-11-04,,,hugo miguel jimenez,piña special guapita,PEGUA,175,0,,0,207930,2026-11-04,1.5 - 2.5,,
+2026-11-04,,,hugo miguel jimenez,piña special 3ra,PE3,227,0,,0,207726,2026-11-02,0.0 - 1.0,2526,77
+2026-11-04,,,local medellin,piña special 2da,PE2,499,0,,0,207826,2026-11-03,0.0 - 1.0,2526,53
+2026-11-04,,,local medellin,piña special 2da,PE2,86,0,,0,207857,2026-11-03,0.0 - 1.0,2526,53
+2026-11-04,,,local medellin,piña special 2da,PE2,46,0,,0,207897,2026-11-03,0.0 - 1.0,2526,77
+2026-11-04,,,local medellin,piña special 2da,PE2,494,0,,0,207926,2026-11-04,0.0 - 1.0,,
+2026-11-04,,,local medellin,Piña AD2,AD2,313,0,,0,207900,2026-11-03,0.0 - 1.0,3926,83
+2026-11-04,,,local medellin,piña special 2da,PE2,524,0,,0,207941,2026-11-04,0.0 - 1.0,,
+2026-11-04,,,local medellin,piña special 1ra,PE1,661,0,,0,207672,2026-11-02,1.5 - 2.5,2526,53
+2026-11-04,,,local medellin,piña special 1ra,PE1,655,184,,0,207662,2026-11-02,1.5 - 2.5,2526,53
