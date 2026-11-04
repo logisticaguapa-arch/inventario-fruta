@@ -256,9 +256,9 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 207892,canastas,2026-11-03,AD3,Piña AD3,1.5 - 2.5,101
 207893,canastas,2026-11-03,PE3,piña special 3ra,3.0 - 4.0,437
 207894,canastas,2026-11-03,PE3,piña special 3ra,0.0 - 1.0,550
-207895,canastas,2026-11-03,AD2,Piña AD2,1.5 - 2.5,69
+207895,canastas,2026-11-03,PE2,piña special 2da,1.5 - 2.5,69
 207896,canastas,2026-11-03,PEGUA,piña special guapita,1.5 - 2.5,561
-207897,canastas,2026-11-03,AD2,Piña AD2,0.0 - 1.0,47
+207897,canastas,2026-11-03,PE2,piña special 2da,0.0 - 1.0,47
 207898,canastas,2026-11-03,PE2,piña special 2da,1.5 - 2.5,630
 207899,canastas,2026-11-03,PE1,piña special 1ra,0.0 - 1.0,648
 207900,canastas,2026-11-03,AD2,Piña AD2,0.0 - 1.0,474
@@ -270,7 +270,23 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 207906,canastas,2026-11-03,AD-PIND,AD-piña indstria,1.5 - 2.5,126
 207907,canastas,2026-11-03,PE1,piña special 1ra,0.0 - 1.0,529
 207908,canastas,2026-11-03,PE2,piña special 2da,3.0 - 4.0,514
-207909,canastas,2026-11-03,ADGUA,Piña ADGUA,1.5 - 2.5,47
+207909,canastas,2026-11-03,PEGUA,piña special guapita,1.5 - 2.5,47
 207910,canastas,2026-11-03,PE1,piña special 1ra,4,55
-207911,canastas,2026-11-03,,,,0
-207912,canastas,2026-11-03,,,,0
+207911,canastas,2026-11-03,PJUG,piña jugos,3.0 - 4.0,224
+207912,30,2026-11-03,PE1,piña special 1ra,0.0 - 1.0,1597
+207913,88,2026-11-03,PE1,piña special 1ra,0.0 - 1.0,1423
+207914,63,2026-11-03,PE1,piña special 1ra,0.0 - 1.0,1544
+207915,17,2026-11-03,PE1,piña special 1ra,1.5 - 2.5,1565
+207916,15,2026-11-03,PE1,piña special 1ra,0.0 - 1.0,1477
+207917,36,2026-11-03,PE1,piña special 1ra,0.0 - 1.0,1508
+207918,5,2026-11-03,PE1,piña special 1ra,1.5 - 2.5,1601
+207919,43,2026-11-03,AD1,Piña AD1,0.0 - 1.0,887
+207920,10,2026-11-03,AD-PJUG,AD-PJUG,3.0 - 4.0,407
+207921,canastas,2026-11-03,,,,0
+207922,canastas,2026-11-03,,,,0
+207923,canastas,2026-11-03,,,,0
+207924,canastas,2026-11-03,,,,0
+207925,canastas,2026-11-03,,,,0
+207926,canastas,2026-11-03,,,,0
+207927,canastas,2026-11-03,,,,0
+207928,canastas,2026-11-03,,,,0
