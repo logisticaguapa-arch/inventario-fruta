@@ -4031,7 +4031,6 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,45,noviembre,2026-11-02,2426,46,canastas,604.0,,604.0,604.0,Daño por reposo,PIND
 2026,45,noviembre,2026-11-02,2626,47,canastas,573.0,,573.0,573.0,Daño por reposo,AD-PIND
 2026,45,noviembre,2026-11-02,3426,78,canastas,205.0,,205.0,205.0,Daño por reposo,AD-PIND
-2026,45,noviembre,2026-11-03,2426,32,canastas,162.0,,162.0,162.0,Sobre madura campo,PE1
 2026,45,noviembre,2026-11-03,2426,46,canastas,400.0,,400.0,400.0,Sobre madura empacadora,PE2
 2026,45,noviembre,2026-11-03,2526,77,canastas,90.0,,90.0,90.0,Enferma,PE2
 2026,45,noviembre,2026-11-03,2426,32,canastas,207.0,,207.0,207.0,Enferma,PE1
@@ -4045,3 +4044,9 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,45,noviembre,2026-11-03,2526,53,canastas,4.0,,4.0,4.0,Muestreo,PE1
 2026,45,noviembre,2026-11-03,2526,77,canastas,7.0,,7.0,7.0,Enferma,PE1
 2026,45,noviembre,2026-11-03,2526,53,canastas,6.0,,6.0,6.0,Muestreo,PE1
+2026,45,noviembre,2026-11-03,2526,53,canastas,56.0,,56.0,56.0,Golpe empacadora,PE2
+2026,45,noviembre,2026-11-03,2426,32,canastas,162.0,,162.0,162.0,Sobre madura campo,PE1
+2026,45,noviembre,2026-11-03,2426,46,canastas,586.0,,586.0,586.0,Daño por reposo,PE3
+2026,45,noviembre,2026-11-03,2426,46,canastas,250.0,,250.0,250.0,Daño por reposo,PE3
+2026,45,noviembre,2026-11-03,2726,53,canastas,222.0,,222.0,222.0,Sobre madura campo,AD-PJUG
+2026,45,noviembre,2026-11-03,2426,32,4,321.0,,321.0,321.0,Sobre madura campo,PJUG
