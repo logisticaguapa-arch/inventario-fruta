@@ -4050,3 +4050,7 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,45,noviembre,2026-11-03,2426,46,canastas,250.0,,250.0,250.0,Daño por reposo,PE3
 2026,45,noviembre,2026-11-03,2726,53,canastas,222.0,,222.0,222.0,Sobre madura campo,AD-PJUG
 2026,45,noviembre,2026-11-03,2426,32,4,321.0,,321.0,321.0,Sobre madura campo,PJUG
+2026,45,noviembre,2026-11-04,2526,77,canastas,8.0,,8.0,8.0,Muestreo,PE1
+2026,45,noviembre,2026-11-04,2526,53,canastas,18.0,,18.0,18.0,Muestreo,PE1
+2026,45,noviembre,2026-11-04,2526,77,canastas,17.0,,17.0,17.0,Muestreo,PE1
+2026,45,noviembre,2026-11-04,2526,53,canastas,2.0,,2.0,2.0,Muestreo,PEGUA
