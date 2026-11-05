@@ -4078,3 +4078,6 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,45,noviembre,2026-11-05,2526,77,canastas,24.0,,24.0,24.0,Enferma,PE1
 2026,45,noviembre,2026-11-05,2526,53,canastas,11.0,,11.0,11.0,Muestreo,PE2
 2026,45,noviembre,2026-11-05,2626,77,canastas,30.0,,30.0,30.0,Golpe empacadora,AD-PIND
+2026,45,noviembre,2026-11-05,2626,77,canastas,50.0,,50.0,50.0,Golpe empacadora,AD-PJUG
+2026,45,noviembre,2026-11-05,2526,53,canastas,50.0,,50.0,50.0,Daño por reposo,PE1
+2026,45,noviembre,2026-11-05,2526,53,canastas,8.0,,8.0,8.0,Golpe empacadora,PEGUA

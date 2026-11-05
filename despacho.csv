@@ -24924,9 +24924,12 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-05,,,KARINA BORJA,piña special 3ra,PE3,478,0,,0,207799,2026-11-03,0.0 - 1.0,2526,53
 2026-11-05,,,KARINA BORJA,piña special 3ra,PE3,431,0,,0,207854,2026-11-03,0.0 - 1.0,2526,53
 2026-11-05,,,KARINA BORJA,piña special 3ra,PE3,475,0,,0,207785,2026-11-03,0.0 - 1.0,2526,53
+2026-11-05,,,KARINA BORJA,piña special 3ra,PE3,66,0,,0,208072,2026-11-05,0.0 - 1.0,,
 2026-11-05,,,KARINA BORJA,piña special 3ra,PE3,501,0,,0,207962,2026-11-04,1.5 - 2.5,2526,53
 2026-11-05,,,KARINA BORJA,piña special 3ra,PE3,483,0,,0,208011,2026-11-04,1.5 - 2.5,2526,53
 2026-11-05,,,KARINA BORJA,piña special 3ra,PE3,480,0,,0,207985,2026-11-04,1.5 - 2.5,2526,77
+2026-11-05,,,KARINA BORJA,piña special 3ra,PE3,32,0,,0,207950,2026-11-04,1.5 - 2.5,2526,53
+2026-11-05,,,KARINA BORJA,piña special 3ra,PE3,60,0,,0,208075,2026-11-05,1.5 - 2.5,,
 2026-11-05,,,Aldinsen Gonzalez,piña indstria,PIND,527,0,,0,207878,2026-11-03,1.5 - 2.5,2526,77
 2026-11-05,,,Aldinsen Gonzalez,piña indstria,PIND,510,0,,0,207864,2026-11-03,1.5 - 2.5,2526,53
 2026-11-05,,,Aldinsen Gonzalez,piña indstria,PIND,537,0,,0,207993,2026-11-04,1.5 - 2.5,2526,77
@@ -24935,9 +24938,18 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-05,,,Aldinsen Gonzalez,AD-piña indstria,AD-PIND,325,0,,0,208023,2026-11-04,1.5 - 2.5,2626,77
 2026-11-05,,,Aldinsen Gonzalez,piña indstria,PIND,492,0,,0,207972,2026-11-04,1.5 - 2.5,2526,53
 2026-11-05,,,Aldinsen Gonzalez,AD-piña indstria,AD-PIND,101,0,,30,208033,2026-11-04,1.5 - 2.5,2626,77
+2026-11-05,,,Aldinsen Gonzalez,piña indstria,PIND,217,0,,0,208007,2026-11-04,1.5 - 2.5,2526,77
 2026-11-05,,,Aldinsen Gonzalez,piña jugos,PJUG,334,0,,0,208038,2026-11-04,3.0 - 4.0,2526,53
-2026-11-05,,,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,209,0,,0,208037,2026-11-04,3.0 - 4.0,2626,77
+2026-11-05,,,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,159,0,,50,208037,2026-11-04,3.0 - 4.0,2626,77
 2026-11-05,,,ramiro parada,piña special 1ra,PE1,670,0,,0,207678,2026-11-02,1.5 - 2.5,2526,53
 2026-11-05,,,ramiro parada,piña special 1ra,PE1,564,0,,0,207642,2026-11-02,1.5 - 2.5,2526,53
 2026-11-05,,,ramiro parada,piña special 1ra,PE1,535,0,,0,207625,2026-11-02,1.5 - 2.5,2526,53
-2026-11-05,,,ramiro parada,piña special 1ra,PE1,692,0,,0,207697,2026-11-02,1.5 - 2.5,2526,53
+2026-11-05,,,ramiro parada,piña special 1ra,PE1,642,589,,50,207697,2026-11-02,1.5 - 2.5,2526,53
+2026-11-05,,,carmen susana hoyos,piña special guapita,PEGUA,216,0,,0,207652,2026-11-02,1.5 - 2.5,2526,53
+2026-11-05,,,carmen susana hoyos,piña special guapita,PEGUA,475,0,,0,207619,2026-11-02,1.5 - 2.5,2526,53
+2026-11-05,,,carmen susana hoyos,piña special guapita,PEGUA,480,0,,0,208005,2026-11-04,1.5 - 2.5,2526,77
+2026-11-05,,,carmen susana hoyos,piña special guapita,PEGUA,492,0,,8,207927,2026-11-04,1.5 - 2.5,2526,53
+2026-11-05,,,Afrucol S.A.S.,piña special 1ra,PE1,535,0,,0,207647,2026-11-02,1.5 - 2.5,2526,53
+2026-11-05,,,Afrucol S.A.S.,piña special 1ra,PE1,571,0,,0,207617,2026-11-02,1.5 - 2.5,2526,53
+2026-11-05,,,Afrucol S.A.S.,piña special 1ra,PE1,554,0,,0,207628,2026-11-02,1.5 - 2.5,2526,53
+2026-11-05,,,Afrucol S.A.S.,piña special 1ra,PE1,541,0,,0,207622,2026-11-02,1.5 - 2.5,2526,53
