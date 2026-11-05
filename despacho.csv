@@ -24773,14 +24773,16 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-04,,,ramiro parada,piña special 1ra,PE1,549,0,,0,207730,2026-11-02,3.0 - 4.0,2526,77
 2026-11-04,,,ramiro parada,piña special 1ra,PE1,498,0,,0,207734,2026-11-02,3.0 - 4.0,2526,77
 2026-11-04,,,ramiro parada,piña special 1ra,PE1,234,67,,32,207641,2026-11-02,3.0 - 4.0,2526,53
-2026-11-04,,,hugo miguel jimenez,piña special guapita,PEGUA,471,0,,0,207768,2026-11-03,1.5 - 2.5,2526,53
-2026-11-04,,,hugo miguel jimenez,piña special guapita,PEGUA,107,0,,0,207794,2026-11-03,1.5 - 2.5,2526,53
-2026-11-04,,,hugo miguel jimenez,piña special guapita,PEGUA,47,0,,0,207909,2026-11-03,1.5 - 2.5,2526,77
-2026-11-04,,,hugo miguel jimenez,piña special guapita,PEGUA,175,0,,0,207930,2026-11-04,1.5 - 2.5,,
-2026-11-04,,,hugo miguel jimenez,piña special 3ra,PE3,227,0,,0,207726,2026-11-02,0.0 - 1.0,2526,77
-2026-11-04,,,hugo miguel jimenez,piña special 3ra,PE3,602,0,,0,207712,2026-11-02,0.0 - 1.0,2526,77
-2026-11-04,,,hugo miguel jimenez,piña special 3ra,PE3,42,0,,0,207643,2026-11-02,0.0 - 1.0,2526,53
-2026-11-04,,,hugo miguel jimenez,Piña AD3,AD3,43,8,,0,207892,2026-11-03,0.0 - 1.0,3926,83
+2026-11-04,,R-19525,hugo miguel jimenez,piña special guapita,PEGUA,471,0,,0,207768,2026-11-03,1.5 - 2.5,2526,53
+2026-11-04,,R-19525,hugo miguel jimenez,piña special guapita,PEGUA,107,0,,0,207794,2026-11-03,1.5 - 2.5,2526,53
+2026-11-04,,R-19525,hugo miguel jimenez,piña special guapita,PEGUA,47,0,,0,207909,2026-11-03,1.5 - 2.5,2526,77
+2026-11-04,,R-19525,hugo miguel jimenez,piña special guapita,PEGUA,175,0,,0,207930,2026-11-04,1.5 - 2.5,,
+2026-11-04,,R-19525,hugo miguel jimenez,,PE1,0,400,,0,,,1,,
+2026-11-04,,R-19525,hugo miguel jimenez,,PE3,0,278,,0,,,2,,
+2026-11-04,,R-19525,hugo miguel jimenez,piña special 3ra,PE3,227,0,,0,207726,2026-11-02,0.0 - 1.0,2526,77
+2026-11-04,,R-19525,hugo miguel jimenez,piña special 3ra,PE3,602,0,,0,207712,2026-11-02,0.0 - 1.0,2526,77
+2026-11-04,,R-19525,hugo miguel jimenez,piña special 3ra,PE3,42,0,,0,207643,2026-11-02,0.0 - 1.0,2526,53
+2026-11-04,,R-19525,hugo miguel jimenez,Piña AD3,AD3,43,8,,0,207892,2026-11-03,0.0 - 1.0,3926,83
 2026-11-04,,,local medellin,piña special 2da,PE2,499,0,,0,207826,2026-11-03,0.0 - 1.0,2526,53
 2026-11-04,,,local medellin,piña special 2da,PE2,86,0,,0,207857,2026-11-03,0.0 - 1.0,2526,53
 2026-11-04,,,local medellin,piña special 2da,PE2,46,0,,0,207897,2026-11-03,0.0 - 1.0,2526,77
@@ -24812,9 +24814,34 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-04,,,Afrucol S.A.S.,piña special 1ra,PE1,537,0,,0,207508,2026-11-01,1.5 - 2.5,2426,32
 2026-11-04,,,Afrucol S.A.S.,piña special 1ra,PE1,546,0,,0,207517,2026-11-01,1.5 - 2.5,2526,53
 2026-11-04,,,Afrucol S.A.S.,piña special 1ra,PE1,568,0,,0,207558,2026-11-01,1.5 - 2.5,2526,77
+2026-11-04,,,Afrucol S.A.S.,piña special 1ra,PE1,39,0,,0,207565,2026-11-01,1.5 - 2.5,2526,77
+2026-11-04,,,Afrucol S.A.S.,piña special 1ra,PE1,418,0,,130,207532,2026-11-01,1.5 - 2.5,2526,53
+2026-11-04,,,Afrucol S.A.S.,piña special 1ra,PE1,55,356,,0,207531,2026-11-01,1.5 - 2.5,2526,53
 2026-11-04,,,jeronimo martins,piña special 2da,PE2,416,0,,0,207809,2026-11-03,1.5,2526,53
 2026-11-04,,,jeronimo martins,piña special 2da,PE2,407,0,,0,207790,2026-11-03,1.5,2526,53
 2026-11-04,,,jeronimo martins,piña special 2da,PE2,409,0,,0,207852,2026-11-03,1.5,2526,53
 2026-11-04,,,jeronimo martins,piña special 2da,PE2,414,0,,0,207825,2026-11-03,1.5,2526,53
 2026-11-04,,,jeronimo martins,piña special 2da,PE2,415,0,,0,207847,2026-11-03,1.5,2526,53
 2026-11-04,,,jeronimo martins,piña special 2da,PE2,399,0,,11,207766,2026-11-03,1.5,2526,53
+2026-11-04,,,jeronimo martins,piña special 2da,PE2,416,204,,0,207759,2026-11-03,1.5,2526,53
+2026-11-04,,,reposicion jeronimo,piña special 2da,PE2,203,0,,0,207795,2026-11-03,1.5,2526,53
+2026-11-04,,,donacion,piña special 1ra,PE1,551,0,,0,207453,2026-11-01,3.0 - 4.0,2526,53
+2026-11-04,,,donacion,piña special 1ra,PE1,547,0,,0,207447,2026-11-01,3.0 - 4.0,2526,53
+2026-11-04,,,donacion,piña special 1ra,PE1,199,0,,0,207599,2026-11-01,3.0 - 4.0,2426,32
+2026-11-04,,,donacion,piña special 1ra,PE1,561,0,,0,207423,2026-11-01,3.0 - 4.0,2426,47
+2026-11-04,,,donacion,piña special 1ra,PE1,560,0,,0,207439,2026-11-01,3.0 - 4.0,2426,47
+2026-11-04,,,donacion,piña special 1ra,PE1,66,0,,0,207561,2026-11-01,3.0 - 4.0,2526,77
+2026-11-04,,,donacion,piña special 1ra,PE1,539,0,,0,207476,2026-11-01,3.0 - 4.0,2426,32
+2026-11-04,,,donacion,piña special 1ra,PE1,537,0,,0,207462,2026-11-01,3.0 - 4.0,2526,53
+2026-11-04,,,donacion,piña special 1ra,PE1,398,0,,158,207548,2026-11-01,3.0 - 4.0,2526,77
+2026-11-04,,,donacion,piña special 1ra,PE1,119,0,,0,207725,2026-11-02,4,2526,77
+2026-11-04,,,jeronimo martins,piña special 2da,PE2,412,0,,0,207849,2026-11-03,1.5,2526,53
+2026-11-04,,,jeronimo martins,piña special 2da,PE2,406,0,,0,207796,2026-11-03,1.5,2526,53
+2026-11-04,,,jeronimo martins,piña special 2da,PE2,409,0,,0,207784,2026-11-03,1.5,2526,53
+2026-11-04,,,jeronimo martins,piña special 2da,PE2,409,0,,0,207777,2026-11-03,1.5,2526,53
+2026-11-04,,,jeronimo martins,piña special 2da,PE2,403,0,,0,207756,2026-11-03,1.5,2526,53
+2026-11-04,,,jeronimo martins,piña special 2da,PE2,408,0,,0,207775,2026-11-03,1.5,2526,53
+2026-11-04,,,jeronimo martins,piña special 2da,PE2,404,0,,0,207823,2026-11-03,1.5,2526,53
+2026-11-04,,,jeronimo martins,piña special 2da,PE2,412,0,,0,207830,2026-11-03,1.5,2526,53
+2026-11-04,,,jeronimo martins,piña special 2da,PE2,415,0,,0,207810,2026-11-03,1.5,2526,53
+2026-11-04,,,descarte,piña special 2da,PE2,0,0,,26,207721,2026-11-02,4,2526,77
