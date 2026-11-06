@@ -72,7 +72,7 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 208045,107,2026-11-04,AD1,Piña AD1,0.0 - 1.0,1289
 208046,115,2026-11-04,AD1,Piña AD1,0.0 - 1.0,1064
 208050,canastas,2026-11-05,PE1,piña special 1ra,1.5 - 2.5,598
-208052,canastas,2026-11-05,PE1,piña special 1ra,1,613
+208052,canastas,2026-11-05,PE1,piña special 1ra,1,190
 208053,canastas,2026-11-05,PE1,piña special 1ra,1.5 - 2.5,588
 208055,canastas,2026-11-05,PE2,piña special 2da,1.5 - 2.5,516
 208056,canastas,2026-11-05,PE2,piña special 2da,0.0 - 1.0,513
@@ -89,7 +89,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 208079,canastas,2026-11-05,PE1,piña special 1ra,3.0 - 4.0,566
 208080,canastas,2026-11-05,PE2,piña special 2da,1.5 - 2.5,514
 208082,canastas,2026-11-05,PIND,piña indstria,1.5 - 2.5,90
-208083,canastas,2026-11-05,PE1,piña special 1ra,1,582
 208084,canastas,2026-11-05,PE2,piña special 2da,0.0 - 1.0,37
 208085,canastas,2026-11-05,PE1,piña special 1ra,1.5 - 2.5,561
 208090,canastas,2026-11-05,PE2,piña special 2da,1.5 - 2.5,283
@@ -107,7 +106,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 208115,canastas,2026-11-05,PE1,piña special 1ra,1.5 - 2.5,590
 208122,canastas,2026-11-05,PE1,piña special 1ra,1.5 - 2.5,543
 208124,canastas,2026-11-05,PE1,piña special 1ra,1.5 - 2.5,574
-208126,canastas,2026-11-05,PE1,piña special 1ra,0,562
 208127,canastas,2026-11-05,PE1,piña special 1ra,1.5 - 2.5,595
 208128,canastas,2026-11-05,PE1,piña special 1ra,1.5 - 2.5,593
 208129,canastas,2026-11-05,PE2,piña special 2da,1.5 - 2.5,514
@@ -141,8 +139,8 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 208182,canastas,2026-11-06,PE1,piña special 1ra,1.5 - 2.5,597
 208183,canastas,2026-11-06,PE1,piña special 1ra,1.5 - 2.5,622
 208184,canastas,2026-11-06,PE1,piña special 1ra,0.0 - 1.0,639
-208185,canastas,2026-11-06,,,,0
-208186,canastas,2026-11-06,,,,0
+208185,canastas,2026-11-06,PE2,piña special 2da,1.5,412
+208186,canastas,2026-11-06,PE1,piña special 1ra,1.5 - 2.5,585
 208187,canastas,2026-11-06,,,,0
 208188,canastas,2026-11-06,,,,0
 208189,canastas,2026-11-06,,,,0
