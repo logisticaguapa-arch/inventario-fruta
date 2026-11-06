@@ -25090,7 +25090,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-06,,,camilo quiñones,piña indstria,PIND,462,438,,37,208135,2026-11-05,1.5 - 2.5,2526,77
 2026-11-06,,,camilo quiñones,piña special 1ra,PE1,1503,0,,35,207747,2026-11-02,0.0 - 1.0,2526,53
 2026-11-06,,,camilo quiñones,piña special 1ra,PE1,1497,0,,29,207745,2026-11-02,0.0 - 1.0,2526,53
-2026-11-06,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,561,0,,18,208130,2026-11-05,1,2526,77
+2026-11-06,,R-19562,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,561,0,,18,208130,2026-11-05,1,2526,77
 2026-11-06,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,624,0,,0,208068,2026-11-05,1,2526,77
 2026-11-06,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,557,0,,0,208093,2026-11-05,1,2526,53
 2026-11-06,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,588,0,,0,208111,2026-11-05,1,2526,77
@@ -25105,6 +25105,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-06,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,555,0,,0,208108,2026-11-05,0,2526,77
 2026-11-06,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,553,0,,0,208126,2026-11-05,0,2526,77
 2026-11-06,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,146,162,,0,208104,2026-11-05,0,2526,77
+2026-11-06,,R-19561,reposicion éxito medellin,,PE1,0,150,,0,,,1,,
 2026-11-06,,,descarte,piña special 1ra,PE1,0,0,,55,207910,2026-11-03,4,2526,77
 2026-11-06,,,descarte,piña jugos,PJUG,0,0,,40,207740,2026-11-02,3.0 - 4.0,2526,77
 2026-11-06,,,Aldinsen Gonzalez,piña special 1ra,PE1,1042,0,,0,207752,2026-11-02,0.0 - 1.0,2526,77
