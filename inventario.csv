@@ -6,11 +6,7 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 207701,canastas,2026-11-02,PE1,piña special 1ra,0.0 - 1.0,195
 207743,95,2026-11-02,PE1,piña special 1ra,0.0 - 1.0,1347
 207748,22,2026-11-02,PE1,piña special 1ra,0.0 - 1.0,1352
-207749,24,2026-11-02,PE1,piña special 1ra,0.0 - 1.0,1550
-207750,40,2026-11-02,PE1,piña special 1ra,0.0 - 1.0,1363
 207751,64,2026-11-02,PE1,piña special 1ra,0.0 - 1.0,1333
-207752,13,2026-11-02,PE1,piña special 1ra,0.0 - 1.0,1083
-207753,36,2026-11-02,PE1,piña special 1ra,0.0 - 1.0,1317
 207763,canastas,2026-11-03,PE1,piña special 1ra,0.0 - 1.0,558
 207767,canastas,2026-11-03,PE1,piña special 1ra,1.5 - 2.5,550
 207781,canastas,2026-11-03,PE1,piña special 1ra,0.0 - 1.0,551
@@ -130,7 +126,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 208174,canastas,2026-11-05,AD1,Piña AD1,1.5 - 2.5,350
 208175,canastas,2026-11-05,AD-PIND,AD-piña indstria,1.5 - 2.5,181
 208176,canastas,2026-11-05,PJUG,piña jugos,3.0 - 4.0,213
-208177,109,2026-11-05,PIND,piña indstria,1.5 - 2.5,1352
 208178,canastas,2026-11-06,PE1,piña special 1ra,1.5 - 2.5,590
 208179,canastas,2026-11-06,PE1,piña special 1ra,0.0 - 1.0,634
 208180,canastas,2026-11-06,PE1,piña special 1ra,3.0 - 4.0,528
@@ -151,11 +146,11 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 208195,canastas,2026-11-06,PE1,piña special 1ra,3.0 - 4.0,566
 208196,canastas,2026-11-06,PE3,piña special 3ra,0.0 - 1.0,503
 208197,canastas,2026-11-06,PE1,piña special 1ra,0.0 - 1.0,631
-208198,canastas,2026-11-06,,,,0
-208199,canastas,2026-11-06,,,,0
-208200,canastas,2026-11-06,,,,0
-208201,canastas,2026-11-06,,,,0
-208202,canastas,2026-11-06,,,,0
+208198,canastas,2026-11-06,PE1,piña special 1ra,1.5 - 2.5,584
+208199,canastas,2026-11-06,PIND,piña indstria,1.5 - 2.5,517
+208200,canastas,2026-11-06,PE1,piña special 1ra,1.5 - 2.5,551
+208201,canastas,2026-11-06,PE1,piña special 1ra,3.0 - 4.0,594
+208202,canastas,2026-11-06,PE1,piña special 1ra,1.5 - 2.5,598
 208203,canastas,2026-11-06,,,,0
 208204,canastas,2026-11-06,,,,0
 208205,canastas,2026-11-06,,,,0
