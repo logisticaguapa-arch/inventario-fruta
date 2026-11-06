@@ -25003,3 +25003,60 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-06,,,local apartado,piña indstria,PIND,505,95,,0,208106,2026-11-05,1.5 - 2.5,2526,77
 2026-11-06,,,local sincelejo,Piña AD1,AD1,615,0,,6,208165,2026-11-05,0.0 - 1.0,2626,77
 2026-11-06,,,local sincelejo,piña special 1ra,PE1,542,343,,0,208087,2026-11-05,0.0 - 1.0,2526,53
+2026-11-06,,,local sincelejo,piña special 2da,PE2,419,0,,0,208009,2026-11-04,0.0 - 1.0,2526,53
+2026-11-06,,,local sincelejo,piña special 2da,PE2,38,23,,0,207992,2026-11-04,0.0 - 1.0,2526,77
+2026-11-06,,,local sincelejo,piña special 2da,PE2,340,0,,2,208001,2026-11-04,0.0 - 1.0,2526,77
+2026-11-06,,,local sincelejo,piña special 2da,PE2,500,0,,0,207983,2026-11-04,0.0 - 1.0,2526,77
+2026-11-06,,,local sincelejo,Piña AD2,AD2,131,29,,0,208032,2026-11-04,0.0 - 1.0,2626,77
+2026-11-06,,,local sincelejo,piña special 3ra,PE3,132,24,,0,208172,2026-11-05,1.5 - 2.5,2526,53
+2026-11-06,,,local sincelejo,piña special 3ra,PE3,469,0,,0,208145,2026-11-05,3.0 - 4.0,2526,77
+2026-11-06,,,local sincelejo,Piña AD3,AD3,6,0,,0,208163,2026-11-05,3.0 - 4.0,3826,35
+2026-11-06,,,local sincelejo,piña special 1ra,PE1,571,0,,0,208125,2026-11-05,0.0 - 1.0,2526,77
+2026-11-06,,,local sincelejo,Piña AD1,AD1,568,0,,0,208157,2026-11-05,0.0 - 1.0,2626,77
+2026-11-06,,,local sincelejo,Piña AD1,AD1,536,325,,0,208156,2026-11-05,0.0 - 1.0,2626,77
+2026-11-06,,,local sincelejo,piña special guapita,PEGUA,475,0,,0,208099,2026-11-05,1.5 - 2.5,2526,53
+2026-11-06,,,local sincelejo,Piña ADGUA,ADGUA,542,0,,0,208151,2026-11-05,1.5 - 2.5,2626,77
+2026-11-06,,,local sincelejo,piña special guapita,PEGUA,481,2,,2,208095,2026-11-05,1.5 - 2.5,2526,53
+2026-11-06,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,580,0,,0,208105,2026-11-05,1,2526,77
+2026-11-06,,,Almacenes Éxito S.A. - Medellin,Piña AD1,AD1,656,0,,0,208152,2026-11-05,1,2626,77
+2026-11-06,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,616,148,,0,208051,2026-11-05,1,2526,77
+2026-11-06,,,local medellin,Piña AD2,AD2,521,0,,2,208153,2026-11-05,0.0 - 1.0,2626,77
+2026-11-06,,,local medellin,piña special 2da,PE2,502,0,,0,208114,2026-11-05,0.0 - 1.0,2526,77
+2026-11-06,,,local medellin,piña special 2da,PE2,462,15,,0,208134,2026-11-05,0.0 - 1.0,2526,77
+2026-11-06,,,local medellin,piña special 1ra,PE1,532,0,,12,207937,2026-11-04,1.5 - 2.5,2526,53
+2026-11-06,,,local medellin,piña special 1ra,PE1,565,0,,0,207957,2026-11-04,1.5 - 2.5,2526,53
+2026-11-06,,,local medellin,piña special 1ra,PE1,557,0,,0,207990,2026-11-04,1.5 - 2.5,2526,77
+2026-11-06,,,local medellin,piña special 1ra,PE1,525,0,,0,207970,2026-11-04,1.5 - 2.5,2526,53
+2026-11-06,,,local medellin,Piña AD1,AD1,602,0,,0,208016,2026-11-04,1.5 - 2.5,2626,77
+2026-11-06,,,local medellin,piña special 1ra,PE1,289,0,,0,208012,2026-11-04,1.5 - 2.5,2526,53
+2026-11-06,,,local medellin,piña special 1ra,PE1,78,252,,0,207966,2026-11-04,1.5 - 2.5,2526,53
+2026-11-06,,,local medellin,piña special 1ra,PE1,502,0,,6,208118,2026-11-05,3.0 - 4.0,2526,77
+2026-11-06,,,local medellin,piña special 1ra,PE1,464,534,,0,208131,2026-11-05,3.0 - 4.0,2526,77
+2026-11-06,,,local medellin,piña special 2da,PE2,500,0,,0,208132,2026-11-05,3.0 - 4.0,2526,77
+2026-11-06,,,KARINA BORJA,piña special 3ra,PE3,489,0,,2,208116,2026-11-05,0.0 - 1.0,2526,77
+2026-11-06,,,KARINA BORJA,piña special 3ra,PE3,277,0,,0,208140,2026-11-05,0.0 - 1.0,2526,77
+2026-11-06,,,KARINA BORJA,piña special 3ra,PE3,9,0,,0,208081,2026-11-05,0.0 - 1.0,2526,77
+2026-11-06,,,KARINA BORJA,Piña AD3,AD3,210,0,,0,208166,2026-11-05,0.0 - 1.0,2626,77
+2026-11-06,,,KARINA BORJA,piña special 3ra,PE3,457,0,,0,208141,2026-11-05,1.5 - 2.5,2526,77
+2026-11-06,,,KARINA BORJA,piña special 3ra,PE3,490,0,,2,208086,2026-11-05,1.5 - 2.5,2526,53
+2026-11-06,,,KARINA BORJA,Piña AD3,AD3,37,0,,0,208164,2026-11-05,1.5 - 2.5,3826,35
+2026-11-06,,,KARINA BORJA,Piña AD3,AD3,31,0,,0,208024,2026-11-04,1.5 - 2.5,2626,77
+2026-11-06,,,local sincelejo,piña special 2da,PE2,514,0,,0,207984,2026-11-04,1.5 - 2.5,2526,77
+2026-11-06,,,local sincelejo,Piña AD2,AD2,98,0,,2,208034,2026-11-04,1.5 - 2.5,2626,77
+2026-11-06,,,local sincelejo,piña special 2da,PE2,43,0,,0,207995,2026-11-04,1.5 - 2.5,2526,77
+2026-11-06,,,local sincelejo,piña special 2da,PE2,241,22,,0,208008,2026-11-04,1.5 - 2.5,2526,77
+2026-11-06,,,local sincelejo,piña special 1ra,PE1,553,0,,6,208103,2026-11-05,0.0 - 1.0,2526,77
+2026-11-06,,,local sincelejo,piña special 1ra,PE1,567,540,,0,208074,2026-11-05,0.0 - 1.0,2526,77
+2026-11-06,,,local sincelejo,piña special guapita,PEGUA,11,0,,0,207938,2026-11-04,1.5 - 2.5,2526,53
+2026-11-06,,,local sincelejo,piña special guapita,PEGUA,162,0,,0,208002,2026-11-04,1.5 - 2.5,2526,77
+2026-11-06,,,local sincelejo,piña special guapita,PEGUA,519,0,,0,207968,2026-11-04,1.5 - 2.5,2526,53
+2026-11-06,,,local sincelejo,piña special guapita,PEGUA,388,0,,0,208146,2026-11-05,1.5 - 2.5,2526,53
+2026-11-06,,,local sincelejo,piña special guapita,PEGUA,506,0,,0,208067,2026-11-05,1.5 - 2.5,2526,77
+2026-11-06,,,local sincelejo,Piña ADGUA,ADGUA,127,0,,0,208170,2026-11-05,1.5 - 2.5,2626,77
+2026-11-06,,,Almacenes Éxito S.A. - Barranquilla,piña special 1ra,PE1,593,0,,18,208071,2026-11-05,1,2526,77
+2026-11-06,,,Almacenes Éxito S.A. - Barranquilla,piña special 1ra,PE1,595,0,,0,208117,2026-11-05,1,2526,77
+2026-11-06,,,Almacenes Éxito S.A. - Barranquilla,piña special 1ra,PE1,633,0,,0,208057,2026-11-05,1,2526,77
+2026-11-06,,,Almacenes Éxito S.A. - Barranquilla,piña special 1ra,PE1,439,0,,0,208049,2026-11-05,1,2526,77
+2026-11-06,,,Almacenes Éxito S.A. - Barranquilla,piña special 1ra,PE1,616,334,,0,208073,2026-11-05,1,2526,77
+2026-11-06,,,Almacenes Éxito S.A. - Barranquilla,piña special 1ra,PE1,545,0,,0,208096,2026-11-05,0,2526,53
+2026-11-06,,,Almacenes Éxito S.A. - Barranquilla,Piña AD1,AD1,528,412,,0,208158,2026-11-05,0,2626,77
