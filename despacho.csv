@@ -25050,9 +25050,15 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-06,,,local sincelejo,piña special guapita,PEGUA,11,0,,0,207938,2026-11-04,1.5 - 2.5,2526,53
 2026-11-06,,,local sincelejo,piña special guapita,PEGUA,162,0,,0,208002,2026-11-04,1.5 - 2.5,2526,77
 2026-11-06,,,local sincelejo,piña special guapita,PEGUA,519,0,,0,207968,2026-11-04,1.5 - 2.5,2526,53
+2026-11-06,,,local sincelejo,Piña ADGUA,ADGUA,58,0,,0,208025,2026-11-04,1.5 - 2.5,2626,77
 2026-11-06,,,local sincelejo,piña special guapita,PEGUA,388,0,,0,208146,2026-11-05,1.5 - 2.5,2526,53
 2026-11-06,,,local sincelejo,piña special guapita,PEGUA,506,0,,0,208067,2026-11-05,1.5 - 2.5,2526,77
 2026-11-06,,,local sincelejo,Piña ADGUA,ADGUA,127,0,,0,208170,2026-11-05,1.5 - 2.5,2626,77
+2026-11-06,,,local sincelejo,piña special guapita,PEGUA,93,0,,0,208123,2026-11-05,1.5 - 2.5,2526,77
+2026-11-06,,,local sincelejo,piña special baby,PEBAB,464,0,,0,208098,2026-11-05,1.5 - 2.5,2526,53
+2026-11-06,,,local sincelejo,Piña ADBABY,ADBABY,9,0,,0,208030,2026-11-04,1.5 - 2.5,2626,77
+2026-11-06,,,local sincelejo,piña special baby,PEBAB,446,0,,0,208110,2026-11-05,1.5 - 2.5,2526,77
+2026-11-06,,,local sincelejo,piña special baby,PEBAB,88,0,,0,208137,2026-11-05,1.5 - 2.5,2526,77
 2026-11-06,,,Almacenes Éxito S.A. - Barranquilla,piña special 1ra,PE1,593,0,,18,208071,2026-11-05,1,2526,77
 2026-11-06,,,Almacenes Éxito S.A. - Barranquilla,piña special 1ra,PE1,595,0,,0,208117,2026-11-05,1,2526,77
 2026-11-06,,,Almacenes Éxito S.A. - Barranquilla,piña special 1ra,PE1,633,0,,0,208057,2026-11-05,1,2526,77
@@ -25060,3 +25066,27 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-06,,,Almacenes Éxito S.A. - Barranquilla,piña special 1ra,PE1,616,334,,0,208073,2026-11-05,1,2526,77
 2026-11-06,,,Almacenes Éxito S.A. - Barranquilla,piña special 1ra,PE1,545,0,,0,208096,2026-11-05,0,2526,53
 2026-11-06,,,Almacenes Éxito S.A. - Barranquilla,Piña AD1,AD1,528,412,,0,208158,2026-11-05,0,2626,77
+2026-11-06,,,cartagena,piña special 1ra,PE1,547,0,,6,207953,2026-11-04,0.0 - 1.0,2526,53
+2026-11-06,,,cartagena,piña special 1ra,PE1,573,0,,0,207965,2026-11-04,0.0 - 1.0,2526,53
+2026-11-06,,,cartagena,Piña AD1,AD1,581,99,,0,208017,2026-11-04,0.0 - 1.0,2626,77
+2026-11-06,,,cartagena,piña special 2da,PE2,519,481,,0,208069,2026-11-05,0.0 - 1.0,2526,77
+2026-11-06,,,ramiro parada,piña special 2da,PE2,228,0,,80,207733,2026-11-02,1.5 - 2.5,2526,77
+2026-11-06,,,ramiro parada,piña special 2da,PE2,498,0,,0,207634,2026-11-02,1.5 - 2.5,2526,53
+2026-11-06,,,ramiro parada,piña special 2da,PE2,95,0,,48,207853,2026-11-03,1.5,2526,53
+2026-11-06,,,ramiro parada,piña special 2da,PE2,189,0,,0,207797,2026-11-03,1.5 - 2.5,2526,53
+2026-11-06,,,ramiro parada,piña special 2da,PE2,484,0,,0,207841,2026-11-03,1.5 - 2.5,2526,53
+2026-11-06,,,ramiro parada,piña special 2da,PE2,17,0,,0,207895,2026-11-03,1.5 - 2.5,2526,77
+2026-11-06,,,ramiro parada,piña special 2da,PE2,116,0,,0,207870,2026-11-03,1.5 - 2.5,2526,53
+2026-11-06,,,ramiro parada,piña special 2da,PE2,489,0,,0,207862,2026-11-03,1.5 - 2.5,2526,53
+2026-11-06,,,ramiro parada,piña special 2da,PE2,110,0,,0,207898,2026-11-03,1.5 - 2.5,2526,77
+2026-11-06,,,ramiro parada,piña special 2da,PE2,460,0,,0,207814,2026-11-03,1.5 - 2.5,2526,53
+2026-11-06,,,ramiro parada,piña special 2da,PE2,527,214,,0,207879,2026-11-03,1.5 - 2.5,2526,77
+2026-11-06,,,ramiro parada,piña special 1ra,PE1,83,0,,0,207805,2026-11-03,0,2526,53
+2026-11-06,,,ramiro parada,piña special 1ra,PE1,163,0,,0,207793,2026-11-03,0,2526,53
+2026-11-06,,,ramiro parada,piña special 1ra,PE1,110,23,,0,207836,2026-11-03,0,2526,53
+2026-11-06,,,ramiro parada,piña special 1ra,PE1,185,0,,38,207868,2026-11-03,0.0 - 1.0,2526,53
+2026-11-06,,,camilo quiñones,piña special 2da,PE2,498,0,,0,208089,2026-11-05,3.0 - 4.0,2526,53
+2026-11-06,,,camilo quiñones,piña special 2da,PE2,502,0,,0,208076,2026-11-05,3.0 - 4.0,2526,77
+2026-11-06,,,camilo quiñones,piña indstria,PIND,462,438,,37,208135,2026-11-05,1.5 - 2.5,2526,77
+2026-11-06,,,camilo quiñones,piña special 1ra,PE1,1503,0,,35,207747,2026-11-02,0.0 - 1.0,2526,53
+2026-11-06,,,camilo quiñones,piña special 1ra,PE1,1497,0,,29,207745,2026-11-02,0.0 - 1.0,2526,53
