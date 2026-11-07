@@ -269,14 +269,35 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 208319,canastas,2026-11-06,AD2,Piña AD2,1.5,438
 208320,canastas,2026-11-06,AD-PIND,AD-piña indstria,1.5 - 2.5,561
 208321,canastas,2026-11-06,AD1,Piña AD1,0.0 - 1.0,612
-208322,canastas,2026-11-06,,,,0
-208323,canastas,2026-11-06,,,,0
-208324,canastas,2026-11-06,,,,0
-208325,canastas,2026-11-06,,,,0
-208326,canastas,2026-11-06,,,,0
-208327,canastas,2026-11-06,,,,0
-208328,canastas,2026-11-06,,,,0
-208329,canastas,2026-11-06,,,,0
-208330,canastas,2026-11-06,,,,0
-208331,canastas,2026-11-06,,,,0
-208332,canastas,2026-11-06,,,,0
+208322,canastas,2026-11-06,AD-PIND,AD-piña indstria,1.5 - 2.5,476
+208323,canastas,2026-11-06,AD1,Piña AD1,0.0 - 1.0,588
+208324,canastas,2026-11-06,AD2,Piña AD2,0.0 - 1.0,611
+208325,canastas,2026-11-06,AD1,Piña AD1,1.5,286
+208326,canastas,2026-11-06,AD3,Piña AD3,3.0 - 4.0,21
+208327,canastas,2026-11-06,AD1,Piña AD1,0.0 - 1.0,517
+208328,canastas,2026-11-06,AD2,Piña AD2,1.5 - 2.5,18
+208329,canastas,2026-11-06,AD2,Piña AD2,1.5,231
+208330,canastas,2026-11-06,AD3,Piña AD3,0.0 - 1.0,404
+208331,canastas,2026-11-06,AD-PJUG,,3.0 - 4.0,377
+208332,canastas,2026-11-06,AD2,Piña AD2,1.5 - 2.5,248
+208333,canastas,2026-11-06,AD2,Piña AD2,3.0 - 4.0,174
+208334,canastas,2026-11-06,AD1,Piña AD1,3.0 - 4.0,638
+208335,canastas,2026-11-06,ADBABY,Piña ADBABY,1.5 - 2.5,17
+208336,canastas,2026-11-06,AD2,Piña AD2,0.0 - 1.0,264
+208337,canastas,2026-11-06,AD-PIND,AD-piña indstria,1.5 - 2.5,544
+208338,canastas,2026-11-06,AD-PJUG,,3.0 - 4.0,241
+208339,canastas,2026-11-06,AD1,Piña AD1,3.0 - 4.0,230
+208340,canastas,2026-11-06,AD-PIND,AD-piña indstria,1.5 - 2.5,262
+208341,canastas,2026-11-06,AD1,Piña AD1,1.5 - 2.5,363
+208342,canastas,2026-11-06,ADGUA,Piña ADGUA,1.5 - 2.5,120
+208343,canastas,2026-11-06,AD1,Piña AD1,0.0 - 1.0,327
+208344,canastas,2026-11-06,PJUG,piña jugos,3.0 - 4.0,389
+208345,20,2026-11-06,AD1,Piña AD1,0.0 - 1.0,1369
+208346,124,2026-11-06,AD1,Piña AD1,0.0 - 1.0,680
+208347,82,2026-11-06,AD1,Piña AD1,1.5 - 2.5,1609
+208348,78,2026-11-06,AD1,Piña AD1,0.0 - 1.0,1368
+208349,canastas,2026-11-06,,,,0
+208350,canastas,2026-11-06,,,,0
+208351,canastas,2026-11-06,,,,0
+208352,canastas,2026-11-06,,,,0
+208353,canastas,2026-11-06,,,,0
