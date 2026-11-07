@@ -4115,6 +4115,13 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,45,noviembre,2026-11-07,2526,53,canastas,49.0,,49.0,49.0,Daño por reposo,PE1
 2026,45,noviembre,2026-11-07,2526,77,17,160.0,,160.0,160.0,Enferma,PE1
 2026,45,noviembre,2026-11-07,2626,77,canastas,185.0,,185.0,185.0,Enferma,AD1
-2026,45,noviembre,2026-11-07,2526,53,109,9.0,,9.0,9.0,Sobre madura campo,PIND
+2026,45,noviembre,2026-11-07,2526,53,109,15.0,,15.0,15.0,Sobre madura campo,PIND
 2026,45,noviembre,2026-11-07,2526,77,canastas,6.0,,6.0,6.0,Enferma,PIND
 2026,45,noviembre,2026-11-07,2826,32,canastas,55.0,,55.0,55.0,Enferma,AD-PIND
+2026,45,noviembre,2026-11-07,2526,77,30,94.0,,94.0,94.0,,PE1
+2026,45,noviembre,2026-11-07,2526,53,canastas,48.0,,48.0,48.0,Enferma,PE1
+2026,45,noviembre,2026-11-07,2526,77,canastas,95.0,,95.0,95.0,Sobre madura empacadora,PE1
+2026,45,noviembre,2026-11-07,2526,77,canastas,86.0,,86.0,86.0,Enferma,PIND
+2026,45,noviembre,2026-11-07,3926,83,43,140.0,,140.0,140.0,Enferma,AD1
+2026,45,noviembre,2026-11-07,2526,77,canastas,43.0,,43.0,43.0,Sobre madura empacadora,PE2
+2026,45,noviembre,2026-11-07,2526,53,canastas,66.0,,66.0,66.0,,PE1
