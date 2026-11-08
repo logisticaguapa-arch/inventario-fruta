@@ -1,6 +1,4 @@
 ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
-207743,95,2026-11-02,PE1,piña special 1ra,0.0 - 1.0,923
-208046,115,2026-11-04,AD1,Piña AD1,0.0 - 1.0,1064
 208063,canastas,2026-11-05,PE1,piña special 1ra,3.0 - 4.0,588
 208064,canastas,2026-11-05,PE1,piña special 1ra,3.0 - 4.0,58
 208070,canastas,2026-11-05,PE1,piña special 1ra,1.5 - 2.5,455
@@ -97,10 +95,9 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 208341,canastas,2026-11-06,AD1,Piña AD1,1.5 - 2.5,291
 208343,canastas,2026-11-06,AD1,Piña AD1,0.0 - 1.0,327
 208344,canastas,2026-11-06,PJUG,piña jugos,3.0 - 4.0,389
-208345,20,2026-11-06,AD1,Piña AD1,0.0 - 1.0,1369
+208345,20,2026-11-06,AD1,Piña AD1,0.0 - 1.0,571
 208346,124,2026-11-06,AD1,Piña AD1,0.0 - 1.0,680
 208347,82,2026-11-06,AD1,Piña AD1,1.5 - 2.5,1609
-208348,78,2026-11-06,AD1,Piña AD1,0.0 - 1.0,1368
 208349,canastas,2026-11-06,,,,0
 208350,canastas,2026-11-06,,,,0
 208351,canastas,2026-11-06,,,,0
