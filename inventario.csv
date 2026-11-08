@@ -1,55 +1,25 @@
 ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
-207743,95,2026-11-02,PE1,piña special 1ra,0.0 - 1.0,1347
-207751,64,2026-11-02,PE1,piña special 1ra,0.0 - 1.0,646
-207881,canastas,2026-11-03,PE1,piña special 1ra,0.0 - 1.0,120
-207913,88,2026-11-03,PE1,piña special 1ra,0.0 - 1.0,1353
-207914,63,2026-11-03,PE1,piña special 1ra,0.0 - 1.0,1544
-207916,15,2026-11-03,PE1,piña special 1ra,0.0 - 1.0,477
-207917,36,2026-11-03,PE1,piña special 1ra,0.0 - 1.0,1100
+207743,95,2026-11-02,PE1,piña special 1ra,0.0 - 1.0,923
 207922,canastas,2026-11-04,PE1,piña special 1ra,0.0 - 1.0,549
-207933,canastas,2026-11-04,PE1,piña special 1ra,0.0 - 1.0,548
-207942,canastas,2026-11-04,PE1,piña special 1ra,1.5 - 2.5,580
 207943,canastas,2026-11-04,PE1,piña special 1ra,0.0 - 1.0,29
 207946,canastas,2026-11-04,PE1,piña special 1ra,0.0 - 1.0,528
 207969,canastas,2026-11-04,PE1,piña special 1ra,0.0 - 1.0,106
-207971,canastas,2026-11-04,PE1,piña special 1ra,0.0 - 1.0,559
-207973,canastas,2026-11-04,PE1,piña special 1ra,0.0 - 1.0,510
-207974,canastas,2026-11-04,PE1,piña special 1ra,0.0 - 1.0,534
-207978,canastas,2026-11-04,PE1,piña special 1ra,0.0 - 1.0,575
 207994,canastas,2026-11-04,PE1,piña special 1ra,0.0 - 1.0,566
-207997,canastas,2026-11-04,PE1,piña special 1ra,1.5 - 2.5,68
 207999,canastas,2026-11-04,PE1,piña special 1ra,0.0 - 1.0,577
-208014,canastas,2026-11-04,AD1,Piña AD1,0.0 - 1.0,604
-208020,canastas,2026-11-04,AD1,Piña AD1,1.5 - 2.5,60
 208021,canastas,2026-11-04,AD1,Piña AD1,0.0 - 1.0,117
 208028,canastas,2026-11-04,AD1,Piña AD1,0.0 - 1.0,338
-208039,90,2026-11-04,PE1,piña special 1ra,1.5 - 2.5,1228
-208040,71,2026-11-04,PE1,piña special 1ra,0.0 - 1.0,1566
-208041,21,2026-11-04,PE1,piña special 1ra,1.5 - 2.5,1376
-208042,55,2026-11-04,PE1,piña special 1ra,1.5 - 2.5,628
-208043,112,2026-11-04,PE1,piña special 1ra,0.0 - 1.0,1366
-208044,123,2026-11-04,AD1,Piña AD1,0.0 - 1.0,1315
-208045,107,2026-11-04,AD1,Piña AD1,0.0 - 1.0,1289
 208046,115,2026-11-04,AD1,Piña AD1,0.0 - 1.0,1064
-208056,canastas,2026-11-05,PE2,piña special 2da,0.0 - 1.0,513
 208063,canastas,2026-11-05,PE1,piña special 1ra,3.0 - 4.0,588
 208064,canastas,2026-11-05,PE1,piña special 1ra,3.0 - 4.0,58
-208070,canastas,2026-11-05,PE1,piña special 1ra,1.5 - 2.5,567
+208070,canastas,2026-11-05,PE1,piña special 1ra,1.5 - 2.5,455
 208079,canastas,2026-11-05,PE1,piña special 1ra,3.0 - 4.0,566
-208084,canastas,2026-11-05,PE2,piña special 2da,0.0 - 1.0,37
 208090,canastas,2026-11-05,PE2,piña special 2da,1.5 - 2.5,52
-208092,canastas,2026-11-05,PE1,piña special 1ra,1.5 - 2.5,551
 208094,canastas,2026-11-05,PE1,piña special 1ra,3.0 - 4.0,556
 208097,canastas,2026-11-05,PE1,piña special 1ra,3.0 - 4.0,553
-208100,canastas,2026-11-05,PE2,piña special 2da,0.0 - 1.0,511
-208109,canastas,2026-11-05,PE1,piña special 1ra,1.5 - 2.5,79
 208133,canastas,2026-11-05,PE1,piña special 1ra,3.0 - 4.0,572
-208142,canastas,2026-11-05,PE1,piña special 1ra,4,35
 208144,canastas,2026-11-05,PE1,piña special 1ra,3.0 - 4.0,260
-208149,canastas,2026-11-05,AD2,Piña AD2,0.0 - 1.0,231
 208169,canastas,2026-11-05,AD1,Piña AD1,3.0 - 4.0,558
 208173,canastas,2026-11-05,AD-PJUG,AD-PJUG,3.0 - 4.0,259
-208174,canastas,2026-11-05,AD1,Piña AD1,1.5 - 2.5,165
 208176,canastas,2026-11-05,PJUG,piña jugos,3.0 - 4.0,213
 208179,canastas,2026-11-06,PE1,piña special 1ra,0.0 - 1.0,634
 208181,canastas,2026-11-06,PE1,piña special 1ra,1.5 - 2.5,598
@@ -64,7 +34,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 208190,canastas,2026-11-06,PE1,piña special 1ra,0.0 - 1.0,612
 208193,canastas,2026-11-06,PE1,piña special 1ra,1.5 - 2.5,582
 208195,canastas,2026-11-06,PE1,piña special 1ra,3.0 - 4.0,193
-208196,canastas,2026-11-06,PE3,piña special 3ra,0.0 - 1.0,503
 208198,canastas,2026-11-06,PE1,piña special 1ra,1.5 - 2.5,584
 208200,canastas,2026-11-06,PE1,piña special 1ra,1.5 - 2.5,551
 208201,canastas,2026-11-06,PE1,piña special 1ra,3.0 - 4.0,594
@@ -85,14 +54,12 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 208225,canastas,2026-11-06,PE1,piña special 1ra,1.5 - 2.5,569
 208227,canastas,2026-11-06,PE1,piña special 1ra,0.0 - 1.0,590
 208228,canastas,2026-11-06,PE1,piña special 1ra,1.5 - 2.5,571
-208229,canastas,2026-11-06,PE2,piña special 2da,1.5 - 2.5,99
 208234,canastas,2026-11-06,PE1,piña special 1ra,3.0 - 4.0,523
 208241,canastas,2026-11-06,PE1,piña special 1ra,0.0 - 1.0,21
 208245,canastas,2026-11-06,PE1,piña special 1ra,3.0 - 4.0,553
 208246,canastas,2026-11-06,PE1,piña special 1ra,1.5 - 2.5,516
 208247,canastas,2026-11-06,PEBAB,piña special baby,1.5 - 2.5,418
-208249,canastas,2026-11-06,PEBAB,piña special baby,1.5 - 2.5,441
-208250,canastas,2026-11-06,PE2,piña special 2da,0.0 - 1.0,508
+208249,canastas,2026-11-06,PEBAB,piña special baby,1.5 - 2.5,307
 208251,canastas,2026-11-06,PE1,piña special 1ra,1.5 - 2.5,604
 208252,canastas,2026-11-06,PE1,piña special 1ra,1.5 - 2.5,542
 208253,canastas,2026-11-06,PE1,piña special 1ra,0.0 - 1.0,639
@@ -102,7 +69,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 208264,canastas,2026-11-06,PE1,piña special 1ra,3.0 - 4.0,573
 208265,canastas,2026-11-06,PE1,piña special 1ra,1.5 - 2.5,521
 208266,canastas,2026-11-06,PE1,piña special 1ra,3.0 - 4.0,585
-208267,canastas,2026-11-06,PE2,piña special 2da,1.5 - 2.5,68
 208268,canastas,2026-11-06,PE1,piña special 1ra,3.0 - 4.0,575
 208269,canastas,2026-11-06,PE1,piña special 1ra,1.5 - 2.5,545
 208270,canastas,2026-11-06,PE1,piña special 1ra,1.5 - 2.5,619
@@ -116,30 +82,24 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 208288,canastas,2026-11-06,PE1,piña special 1ra,3.0 - 4.0,595
 208290,canastas,2026-11-06,PE1,piña special 1ra,1.5 - 2.5,606
 208291,canastas,2026-11-06,PE1,piña special 1ra,1.5 - 2.5,551
-208293,canastas,2026-11-06,PE2,piña special 2da,1.5 - 2.5,508
+208293,canastas,2026-11-06,PE2,piña special 2da,1.5 - 2.5,501
 208294,canastas,2026-11-06,PE1,piña special 1ra,1.5,116
 208296,canastas,2026-11-06,PE1,piña special 1ra,1.5 - 2.5,504
 208297,canastas,2026-11-06,PE2,piña special 2da,1.5,144
 208298,canastas,2026-11-06,PE1,piña special 1ra,0.0 - 1.0,556
 208299,canastas,2026-11-06,PE1,piña special 1ra,3.0 - 4.0,585
 208305,canastas,2026-11-06,PE1,piña special 1ra,4,44
-208308,canastas,2026-11-06,PE3,piña special 3ra,0.0 - 1.0,102
 208309,canastas,2026-11-06,PE1,piña special 1ra,1.5 - 2.5,691
-208310,canastas,2026-11-06,PE2,piña special 2da,0.0 - 1.0,303
 208314,canastas,2026-11-06,PEBAB,piña special baby,1.5 - 2.5,414
 208317,canastas,2026-11-06,PE1,piña special 1ra,3.0 - 4.0,251
 208318,canastas,2026-11-06,PE1,piña special 1ra,0.0 - 1.0,296
 208321,canastas,2026-11-06,AD1,Piña AD1,0.0 - 1.0,612
 208323,canastas,2026-11-06,AD1,Piña AD1,0.0 - 1.0,588
-208324,canastas,2026-11-06,AD2,Piña AD2,0.0 - 1.0,611
 208325,canastas,2026-11-06,AD1,Piña AD1,1.5,101
 208328,canastas,2026-11-06,AD2,Piña AD2,1.5 - 2.5,18
 208331,canastas,2026-11-06,AD-PJUG,,3.0 - 4.0,377
-208332,canastas,2026-11-06,AD2,Piña AD2,1.5 - 2.5,248
 208333,canastas,2026-11-06,AD2,Piña AD2,3.0 - 4.0,55
 208334,canastas,2026-11-06,AD1,Piña AD1,3.0 - 4.0,638
-208335,canastas,2026-11-06,ADBABY,Piña ADBABY,1.5 - 2.5,17
-208336,canastas,2026-11-06,AD2,Piña AD2,0.0 - 1.0,182
 208338,canastas,2026-11-06,AD-PJUG,,3.0 - 4.0,241
 208339,canastas,2026-11-06,AD1,Piña AD1,3.0 - 4.0,230
 208341,canastas,2026-11-06,AD1,Piña AD1,1.5 - 2.5,291
