@@ -174,12 +174,10 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 208530,16,2026-11-08,PE1,piña special 1ra,0.0 - 1.0,1515
 208532,canastas,2026-11-09,PE1,piña special 1ra,0.0 - 1.0,597
 208533,canastas,2026-11-09,PE1,piña special 1ra,1.5 - 2.5,589
-208534,canastas,2026-11-09,PE1,piña special 1ra,1,591
 208535,canastas,2026-11-09,PE2,piña special 2da,0.0 - 1.0,517
 208536,canastas,2026-11-09,PE1,piña special 1ra,1.5 - 2.5,607
 208537,canastas,2026-11-09,PE1,piña special 1ra,0.0 - 1.0,573
 208538,canastas,2026-11-09,PE2,piña special 2da,0.0 - 1.0,518
-208539,canastas,2026-11-09,PE1,piña special 1ra,1,590
 208540,canastas,2026-11-09,PE1,piña special 1ra,1.5 - 2.5,604
 208541,canastas,2026-11-09,PE1,piña special 1ra,0.0 - 1.0,563
 208542,canastas,2026-11-09,PE3,piña special 3ra,0.0 - 1.0,507
@@ -188,7 +186,7 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 208545,canastas,2026-11-09,PE1,piña special 1ra,0.0 - 1.0,586
 208546,canastas,2026-11-09,PE1,piña special 1ra,1.5 - 2.5,595
 208547,canastas,2026-11-09,PE1,piña special 1ra,0.0 - 1.0,565
-208548,canastas,2026-11-09,PE1,piña special 1ra,1,578
+208548,canastas,2026-11-09,PE1,piña special 1ra,1,190
 208549,canastas,2026-11-09,PE3,piña special 3ra,1.5 - 2.5,521
 208550,canastas,2026-11-09,PE1,piña special 1ra,3.0 - 4.0,599
 208551,canastas,2026-11-09,PE2,piña special 2da,0.0 - 1.0,520
@@ -223,10 +221,10 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 208581,canastas,2026-11-09,PE3,piña special 3ra,0.0 - 1.0,424
 208582,canastas,2026-11-09,PE2,piña special 2da,1.5,419
 208583,canastas,2026-11-09,PE2,piña special 2da,1.5,411
-208584,canastas,2026-11-09,PE1,piña special 1ra,3.0 - 4.0,550
-208585,canastas,2026-11-09,,,,0
-208586,canastas,2026-11-09,,,,0
-208587,canastas,2026-11-09,,,,0
+208584,canastas,2026-11-09,PIND,piña indstria,1.5 - 2.5,550
+208585,canastas,2026-11-09,PE2,piña special 2da,1.5 - 2.5,531
+208586,canastas,2026-11-09,PE1,piña special 1ra,1.5 - 2.5,600
+208587,canastas,2026-11-09,PEGUA,piña special guapita,1.5 - 2.5,511
 208588,canastas,2026-11-09,,,,0
 208589,canastas,2026-11-09,,,,0
 208590,canastas,2026-11-09,,,,0
