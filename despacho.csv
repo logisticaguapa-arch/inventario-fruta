@@ -25436,16 +25436,16 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-09,,R-19600,camilo quiñones,piña indstria,PIND,534,397,1400,0,208383,2026-11-08,1.5 - 2.5,2526,77
 2026-11-09,,R-19600,camilo quiñones,piña jugos,PJUG,238,0,1200,16,208522,2026-11-08,3.0 - 4.0,2526,77
 2026-11-09,,R-19600,camilo quiñones,AD-piña jugos,AD-PJUG,390,0,1200,366,208531,2026-11-08,3.0 - 4.0,3126,32
-2026-11-09,,R-19599,ramiro parada,piña special 2da,PE2,486,0,,0,208293,2026-11-06,1.5 - 2.5,2526,77
-2026-11-09,,R-19599,ramiro parada,piña special 2da,PE2,140,0,,0,208297,2026-11-06,1.5,2526,77
-2026-11-09,,R-19599,ramiro parada,piña special 2da,PE2,403,0,,0,208185,2026-11-06,1.5,2526,77
-2026-11-09,,R-19599,ramiro parada,piña special 2da,PE2,46,0,,0,208567,2026-11-09,1.5 - 2.5,,
-2026-11-09,,R-19599,ramiro parada,piña special 1ra,PE1,529,0,,0,208281,2026-11-06,1.5 - 2.5,2526,77
-2026-11-09,,R-19599,ramiro parada,piña special 1ra,PE1,487,0,,0,208296,2026-11-06,1.5 - 2.5,2526,77
-2026-11-09,,R-19599,ramiro parada,piña special 1ra,PE1,438,0,,0,208070,2026-11-05,1.5 - 2.5,2526,77
-2026-11-09,,R-19599,ramiro parada,piña special 1ra,PE1,538,0,,0,208291,2026-11-06,1.5 - 2.5,2526,77
-2026-11-09,,R-19599,ramiro parada,piña special 1ra,PE1,402,0,,135,208269,2026-11-06,1.5 - 2.5,2526,77
-2026-11-09,,R-19599,ramiro parada,piña special 1ra,PE1,606,0,,44,208309,2026-11-06,1.5 - 2.5,2526,77
+2026-11-09,,R-19599,ramiro parada,piña special 2da,PE2,486,0,2000,0,208293,2026-11-06,1.5 - 2.5,2526,77
+2026-11-09,,R-19599,ramiro parada,piña special 2da,PE2,140,0,2000,0,208297,2026-11-06,1.5,2526,77
+2026-11-09,,R-19599,ramiro parada,piña special 2da,PE2,403,0,2000,0,208185,2026-11-06,1.5,2526,77
+2026-11-09,,R-19599,ramiro parada,piña special 2da,PE2,46,0,2000,0,208567,2026-11-09,1.5 - 2.5,,
+2026-11-09,,R-19599,ramiro parada,piña special 1ra,PE1,529,0,2200,0,208281,2026-11-06,1.5 - 2.5,2526,77
+2026-11-09,,R-19599,ramiro parada,piña special 1ra,PE1,487,0,2200,0,208296,2026-11-06,1.5 - 2.5,2526,77
+2026-11-09,,R-19599,ramiro parada,piña special 1ra,PE1,438,0,2200,0,208070,2026-11-05,1.5 - 2.5,2526,77
+2026-11-09,,R-19599,ramiro parada,piña special 1ra,PE1,538,0,2200,0,208291,2026-11-06,1.5 - 2.5,2526,77
+2026-11-09,,R-19599,ramiro parada,piña special 1ra,PE1,402,0,2200,135,208269,2026-11-06,1.5 - 2.5,2526,77
+2026-11-09,,R-19599,ramiro parada,piña special 1ra,PE1,606,0,2200,44,208309,2026-11-06,1.5 - 2.5,2526,77
 2026-11-09,47305,R-19602,Almacenes Éxito S.A. - Barranquilla,piña special 1ra,PE1,572,0,3300,18,208539,2026-11-09,1,,
 2026-11-09,47305,R-19602,Almacenes Éxito S.A. - Barranquilla,piña special 1ra,PE1,591,337,3300,0,208534,2026-11-09,1,,
 2026-11-09,47305,R-19602,Almacenes Éxito S.A. - Barranquilla,piña special 1ra,PE1,532,0,3400,0,208557,2026-11-09,0,,
