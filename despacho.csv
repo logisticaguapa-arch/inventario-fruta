@@ -25406,9 +25406,9 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-09,47308,R-19596,dario alberto,piña special 1ra,PE1,581,0,2300,0,208182,2026-11-06,1.5 - 2.5,2526,77
 2026-11-09,47308,R-19596,dario alberto,piña special 1ra,PE1,567,0,2300,0,208193,2026-11-06,1.5 - 2.5,2526,77
 2026-11-09,47308,R-19596,dario alberto,piña special 1ra,PE1,510,342,2300,75,208181,2026-11-06,1.5 - 2.5,2526,77
-2026-11-09,,R-19595,KARINA BORJA,piña special 3ra,PE3,523,0,1000,0,208482,2026-11-08,0.0 - 1.0,2626,77
-2026-11-09,,R-19595,KARINA BORJA,piña special 3ra,PE3,520,0,1000,0,208442,2026-11-08,0.0 - 1.0,2626,77
-2026-11-09,,R-19595,KARINA BORJA,piña special 3ra,PE3,509,448,1000,0,208394,2026-11-08,0.0 - 1.0,2626,77
+2026-11-09,47309,R-19595,KARINA BORJA,piña special 3ra,PE3,523,0,1000,0,208482,2026-11-08,0.0 - 1.0,2626,77
+2026-11-09,47309,R-19595,KARINA BORJA,piña special 3ra,PE3,520,0,1000,0,208442,2026-11-08,0.0 - 1.0,2626,77
+2026-11-09,47309,R-19595,KARINA BORJA,piña special 3ra,PE3,509,448,1000,0,208394,2026-11-08,0.0 - 1.0,2626,77
 2026-11-09,,R-29597,local medellin,piña special 1ra,PE1,575,0,3200,0,208415,2026-11-08,1.5 - 2.5,2626,77
 2026-11-09,,R-29597,local medellin,piña special 1ra,PE1,583,342,3200,0,208462,2026-11-08,1.5 - 2.5,2626,77
 2026-11-09,,R-29597,local medellin,piña special 1ra,PE1,585,0,3200,0,208371,2026-11-08,3.0 - 4.0,2526,77
@@ -25469,3 +25469,5 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-09,,,Aldinsen Gonzalez,piña indstria,PIND,77,0,,0,208485,2026-11-08,1.5 - 2.5,2626,77
 2026-11-09,,,Aldinsen Gonzalez,piña indstria,PIND,488,0,,0,208428,2026-11-08,1.5 - 2.5,2626,77
 2026-11-09,,,Aldinsen Gonzalez,piña indstria,PIND,126,0,,0,208407,2026-11-08,1.5 - 2.5,2626,77
+2026-11-09,,,Aldinsen Gonzalez,piña indstria,PIND,81,0,,0,208502,2026-11-08,1.5 - 2.5,2626,77
+2026-11-09,,,Aldinsen Gonzalez,piña indstria,PIND,509,0,,0,208473,2026-11-08,1.5 - 2.5,2626,77
