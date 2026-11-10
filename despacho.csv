@@ -25576,6 +25576,12 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-10,,,COMERCIALIZADORA DE PIÑAS AR SAS,piña special 2da,PE2,210,0,,0,208731,2026-11-10,0.0 - 1.0,,
 2026-11-10,,,COMERCIALIZADORA DE PIÑAS AR SAS,piña special 1ra,PE1,564,0,,0,208400,2026-11-08,0.0 - 1.0,2626,77
 2026-11-10,,,COMERCIALIZADORA DE PIÑAS AR SAS,piña special 1ra,PE1,410,526,,0,208501,2026-11-08,0.0 - 1.0,2626,77
+2026-11-10,,,COMERCIALIZADORA DE PIÑAS AR SAS,piña special 1ra,PE1,584,0,,0,208658,2026-11-09,1.5 - 2.5,2626,77
+2026-11-10,,,COMERCIALIZADORA DE PIÑAS AR SAS,piña special 1ra,PE1,568,0,,0,208597,2026-11-09,1.5 - 2.5,2626,77
+2026-11-10,,,COMERCIALIZADORA DE PIÑAS AR SAS,piña special 1ra,PE1,556,0,,0,208635,2026-11-09,1.5 - 2.5,2626,47
+2026-11-10,,,COMERCIALIZADORA DE PIÑAS AR SAS,piña special 1ra,PE1,557,0,,0,208625,2026-11-09,1.5 - 2.5,2626,77
+2026-11-10,,,COMERCIALIZADORA DE PIÑAS AR SAS,piña special 1ra,PE1,578,157,,0,208544,2026-11-09,1.5 - 2.5,2626,77
+2026-11-10,,,COMERCIALIZADORA DE PIÑAS AR SAS,piña special 1ra,PE1,581,419,,9,208550,2026-11-09,3.0 - 4.0,2626,77
 2026-11-10,,,descarte,piña special 1ra,PE1,0,0,,588,208063,2026-11-05,3.0 - 4.0,2526,77
 2026-11-10,,,descarte,piña special 1ra,PE1,0,0,,58,208064,2026-11-05,3.0 - 4.0,2526,77
 2026-11-10,,,descarte,piña special 1ra,PE1,0,0,,566,208079,2026-11-05,3.0 - 4.0,2526,77
@@ -25588,3 +25594,21 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-10,,,descarte,AD-piña jugos,AD-PJUG,0,0,,259,208173,2026-11-05,3.0 - 4.0,2626,77
 2026-11-10,,,descarte,piña jugos,PJUG,0,0,,213,208176,2026-11-05,3.0 - 4.0,2526,53
 2026-11-10,,,elkin dario cardona,piña special 2da,PE2,508,492,,6,208549,2026-11-09,1.5 - 2.5,2626,77
+2026-11-10,,,elkin dario cardona,piña special 1ra,PE1,598,0,,0,208540,2026-11-09,1.5 - 2.5,2626,77
+2026-11-10,,,elkin dario cardona,piña special 1ra,PE1,604,0,,0,208662,2026-11-09,1.5 - 2.5,2626,77
+2026-11-10,,,elkin dario cardona,piña special 1ra,PE1,588,0,,0,208546,2026-11-09,1.5 - 2.5,2626,77
+2026-11-10,,,elkin dario cardona,piña special 1ra,PE1,563,0,,0,208570,2026-11-09,1.5 - 2.5,2626,77
+2026-11-10,,,elkin dario cardona,piña special 1ra,PE1,577,0,,0,208533,2026-11-09,1.5 - 2.5,2626,77
+2026-11-10,,,elkin dario cardona,piña special 1ra,PE1,506,0,,0,208572,2026-11-09,1.5 - 2.5,2626,77
+2026-11-10,,,elkin dario cardona,piña special 1ra,PE1,588,0,,0,208552,2026-11-09,1.5 - 2.5,2626,77
+2026-11-10,,,elkin dario cardona,piña special 1ra,PE1,512,0,,0,208606,2026-11-09,1.5 - 2.5,2626,77
+2026-11-10,,,elkin dario cardona,piña special 1ra,PE1,582,0,,0,208603,2026-11-09,1.5 - 2.5,2626,77
+2026-11-10,,,elkin dario cardona,piña special 1ra,PE1,600,282,,0,208577,2026-11-09,1.5 - 2.5,2626,77
+2026-11-10,,,Aldinsen Gonzalez,piña indstria,PIND,485,0,,0,208633,2026-11-09,1.5 - 2.5,2626,47
+2026-11-10,,,Aldinsen Gonzalez,piña indstria,PIND,535,0,,0,208661,2026-11-09,1.5 - 2.5,2626,77
+2026-11-10,,,Aldinsen Gonzalez,piña indstria,PIND,510,0,,0,208564,2026-11-09,1.5 - 2.5,2626,77
+2026-11-10,,,Aldinsen Gonzalez,piña indstria,PIND,556,0,,0,208543,2026-11-09,1.5 - 2.5,2626,77
+2026-11-10,,,Aldinsen Gonzalez,piña indstria,PIND,554,0,,0,208622,2026-11-09,1.5 - 2.5,2626,77
+2026-11-10,,,Aldinsen Gonzalez,piña indstria,PIND,557,0,,0,208594,2026-11-09,1.5 - 2.5,2626,77
+2026-11-10,,,Aldinsen Gonzalez,piña indstria,PIND,543,0,,0,208584,2026-11-09,1.5 - 2.5,2626,47
+2026-11-10,,,Aldinsen Gonzalez,piña indstria,PIND,522,0,,0,208634,2026-11-09,1.5 - 2.5,2626,47
