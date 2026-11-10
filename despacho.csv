@@ -25398,14 +25398,14 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-09,,R-19594,local sincelejo,piña special guapita,PEGUA,505,0,2000,0,208378,2026-11-08,1.5 - 2.5,2526,77
 2026-11-09,,R-19594,local sincelejo,piña special 2da,PE2,517,0,2800,0,208425,2026-11-08,1.5 - 2.5,2626,77
 2026-11-09,,R-19594,local sincelejo,piña special 2da,PE2,532,476,2800,0,208363,2026-11-08,1.5 - 2.5,2526,77
-2026-11-09,,R-19596,dario alberto,piña special 1ra,PE1,573,0,2100,0,208217,2026-11-06,0.0 - 1.0,2526,77
-2026-11-09,,R-19596,dario alberto,piña special 1ra,PE1,621,0,2100,0,208179,2026-11-06,0.0 - 1.0,2526,77
-2026-11-09,,R-19596,dario alberto,piña special 1ra,PE1,589,0,2100,0,208184,2026-11-06,0.0 - 1.0,2526,77
-2026-11-09,,R-19596,dario alberto,piña special 1ra,PE1,607,0,2100,0,208216,2026-11-06,0.0 - 1.0,2526,77
-2026-11-09,,R-19596,dario alberto,piña special 1ra,PE1,475,135,2100,97,208227,2026-11-06,0.0 - 1.0,2526,77
-2026-11-09,,R-19596,dario alberto,piña special 1ra,PE1,581,0,2300,0,208182,2026-11-06,1.5 - 2.5,2526,77
-2026-11-09,,R-19596,dario alberto,piña special 1ra,PE1,567,0,2300,0,208193,2026-11-06,1.5 - 2.5,2526,77
-2026-11-09,,R-19596,dario alberto,piña special 1ra,PE1,510,342,2300,75,208181,2026-11-06,1.5 - 2.5,2526,77
+2026-11-09,47308,R-19596,dario alberto,piña special 1ra,PE1,573,0,2100,0,208217,2026-11-06,0.0 - 1.0,2526,77
+2026-11-09,47308,R-19596,dario alberto,piña special 1ra,PE1,621,0,2100,0,208179,2026-11-06,0.0 - 1.0,2526,77
+2026-11-09,47308,R-19596,dario alberto,piña special 1ra,PE1,589,0,2100,0,208184,2026-11-06,0.0 - 1.0,2526,77
+2026-11-09,47308,R-19596,dario alberto,piña special 1ra,PE1,607,0,2100,0,208216,2026-11-06,0.0 - 1.0,2526,77
+2026-11-09,47308,R-19596,dario alberto,piña special 1ra,PE1,475,135,2100,97,208227,2026-11-06,0.0 - 1.0,2526,77
+2026-11-09,47308,R-19596,dario alberto,piña special 1ra,PE1,581,0,2300,0,208182,2026-11-06,1.5 - 2.5,2526,77
+2026-11-09,47308,R-19596,dario alberto,piña special 1ra,PE1,567,0,2300,0,208193,2026-11-06,1.5 - 2.5,2526,77
+2026-11-09,47308,R-19596,dario alberto,piña special 1ra,PE1,510,342,2300,75,208181,2026-11-06,1.5 - 2.5,2526,77
 2026-11-09,,R-19595,KARINA BORJA,piña special 3ra,PE3,523,0,1000,0,208482,2026-11-08,0.0 - 1.0,2626,77
 2026-11-09,,R-19595,KARINA BORJA,piña special 3ra,PE3,520,0,1000,0,208442,2026-11-08,0.0 - 1.0,2626,77
 2026-11-09,,R-19595,KARINA BORJA,piña special 3ra,PE3,509,448,1000,0,208394,2026-11-08,0.0 - 1.0,2626,77
@@ -25467,3 +25467,5 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-09,,,Aldinsen Gonzalez,AD-piña indstria,AD-PIND,514,0,,0,208521,2026-11-08,1.5 - 2.5,3126,32
 2026-11-09,,,Aldinsen Gonzalez,piña indstria,PIND,484,0,,0,208426,2026-11-08,1.5 - 2.5,2626,77
 2026-11-09,,,Aldinsen Gonzalez,piña indstria,PIND,77,0,,0,208485,2026-11-08,1.5 - 2.5,2626,77
+2026-11-09,,,Aldinsen Gonzalez,piña indstria,PIND,488,0,,0,208428,2026-11-08,1.5 - 2.5,2626,77
+2026-11-09,,,Aldinsen Gonzalez,piña indstria,PIND,126,0,,0,208407,2026-11-08,1.5 - 2.5,2626,77
