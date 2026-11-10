@@ -50,11 +50,9 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 208354,canastas,2026-11-08,PE1,piña special 1ra,1.5 - 2.5,601
 208355,canastas,2026-11-08,PE1,piña special 1ra,3.0 - 4.0,204
 208356,canastas,2026-11-08,PE1,piña special 1ra,0.0 - 1.0,445
-208357,canastas,2026-11-08,PE1,piña special 1ra,3.0 - 4.0,581
 208358,canastas,2026-11-08,PE1,piña special 1ra,1,598
-208359,canastas,2026-11-08,PE2,piña special 2da,3.0 - 4.0,549
 208361,canastas,2026-11-08,PE1,piña special 1ra,3.0 - 4.0,601
-208364,canastas,2026-11-08,PE1,piña special 1ra,3.0 - 4.0,599
+208364,canastas,2026-11-08,PE1,piña special 1ra,3.0 - 4.0,168
 208365,canastas,2026-11-08,PE1,piña special 1ra,1.5 - 2.5,95
 208367,canastas,2026-11-08,PE2,piña special 2da,3.0 - 4.0,547
 208374,canastas,2026-11-08,PE1,piña special 1ra,0.0 - 1.0,565
@@ -86,7 +84,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 208459,canastas,2026-11-08,PE1,piña special 1ra,0.0 - 1.0,87
 208461,canastas,2026-11-08,PE1,piña special 1ra,0.0 - 1.0,562
 208466,canastas,2026-11-08,PE2,piña special 2da,1.5,48
-208469,canastas,2026-11-08,PE2,piña special 2da,3.0 - 4.0,516
 208474,canastas,2026-11-08,PE1,piña special 1ra,1.5 - 2.5,58
 208479,canastas,2026-11-08,PE1,piña special 1ra,0.0 - 1.0,60
 208480,canastas,2026-11-08,PE1,piña special 1ra,1.5 - 2.5,238
@@ -97,7 +94,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 208494,canastas,2026-11-08,PE2,piña special 2da,0.0 - 1.0,35
 208503,canastas,2026-11-08,PE2,piña special 2da,0.0 - 1.0,472
 208505,canastas,2026-11-08,PE1,piña special 1ra,1.5 - 2.5,274
-208506,canastas,2026-11-08,PE2,piña special 2da,1.5 - 2.5,328
 208507,canastas,2026-11-08,PE2,piña special 2da,3.0 - 4.0,275
 208508,canastas,2026-11-08,PE1,piña special 1ra,3.0 - 4.0,188
 208511,canastas,2026-11-08,PE1,piña special 1ra,3.0 - 4.0,342
@@ -120,18 +116,14 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 208560,canastas,2026-11-09,PE1,piña special 1ra,0.0 - 1.0,552
 208568,canastas,2026-11-09,PE2,piña special 2da,1.5 - 2.5,519
 208571,canastas,2026-11-09,PE1,piña special 1ra,0.0 - 1.0,475
-208575,canastas,2026-11-09,PE1,piña special 1ra,1.5,412
 208576,canastas,2026-11-09,PE1,piña special 1ra,3.0 - 4.0,581
 208579,canastas,2026-11-09,PE2,piña special 2da,0.0 - 1.0,522
 208580,canastas,2026-11-09,PE1,piña special 1ra,0.0 - 1.0,588
-208582,canastas,2026-11-09,PE2,piña special 2da,1.5,419
-208583,canastas,2026-11-09,PE2,piña special 2da,1.5,411
 208585,canastas,2026-11-09,PE2,piña special 2da,1.5 - 2.5,531
 208586,canastas,2026-11-09,PE1,piña special 1ra,1.5 - 2.5,600
 208589,canastas,2026-11-09,PE2,piña special 2da,3.0 - 4.0,521
 208591,canastas,2026-11-09,PE1,piña special 1ra,0.0 - 1.0,586
 208592,canastas,2026-11-09,PE1,piña special 1ra,1.5 - 2.5,593
-208598,canastas,2026-11-09,PE2,piña special 2da,1.5,421
 208600,canastas,2026-11-09,PE3,piña special 3ra,0.0 - 1.0,504
 208602,canastas,2026-11-09,PE1,piña special 1ra,3.0 - 4.0,577
 208604,canastas,2026-11-09,PE1,piña special 1ra,0.0 - 1.0,478
@@ -238,14 +230,14 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 208761,canastas,2026-11-10,PE1,piña special 1ra,3.0 - 4.0,566
 208762,canastas,2026-11-10,PE2,piña special 2da,3.0 - 4.0,529
 208763,canastas,2026-11-10,PE2,piña special 2da,1.5,424
-208764,canastas,2026-11-10,,,,0
-208765,canastas,2026-11-10,,,,0
-208766,canastas,2026-11-10,,,,0
-208767,canastas,2026-11-10,,,,0
-208768,canastas,2026-11-10,,,,0
-208769,canastas,2026-11-10,,,,0
-208770,canastas,2026-11-10,,,,0
-208771,canastas,2026-11-10,,,,0
+208764,canastas,2026-11-10,PE1,piña special 1ra,1.5 - 2.5,572
+208765,canastas,2026-11-10,PE1,piña special 1ra,1,544
+208766,canastas,2026-11-10,PE2,piña special 2da,1.5,420
+208767,canastas,2026-11-10,PE1,piña special 1ra,0.0 - 1.0,602
+208768,canastas,2026-11-10,PIND,piña indstria,1.5 - 2.5,513
+208769,canastas,2026-11-10,PE3,piña special 3ra,3.0 - 4.0,502
+208770,canastas,2026-11-10,PEGUA,piña special guapita,1.5 - 2.5,540
+208771,canastas,2026-11-10,PE3,piña special 3ra,1.5 - 2.5,505
 208772,canastas,2026-11-10,,,,0
 208773,canastas,2026-11-10,,,,0
 208774,canastas,2026-11-10,,,,0
