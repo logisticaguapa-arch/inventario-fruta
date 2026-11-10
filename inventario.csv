@@ -297,9 +297,16 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 208688,canastas,2026-11-09,AD2,Piña AD2,1.5 - 2.5,137
 208689,canastas,2026-11-09,AD-PJUG,,3.0 - 4.0,453
 208690,canastas,2026-11-09,AD1,Piña AD1,0.0 - 1.0,557
-208691,canastas,2026-11-09,,,,0
-208692,canastas,2026-11-09,,,,0
-208693,canastas,2026-11-09,,,,0
-208694,canastas,2026-11-09,,,,0
-208695,canastas,2026-11-09,,,,0
-208696,canastas,2026-11-09,,,,0
+208691,canastas,2026-11-09,AD3,Piña AD3,1.5 - 2.5,10
+208692,canastas,2026-11-09,AD2,Piña AD2,0.0 - 1.0,463
+208693,canastas,2026-11-09,AD1,Piña AD1,1.5 - 2.5,680
+208694,canastas,2026-11-09,AD3,Piña AD3,0.0 - 1.0,312
+208695,canastas,2026-11-09,AD-PIND,AD-piña indstria,1.5 - 2.5,477
+208696,canastas,2026-11-09,AD-PJUG,,3.0 - 4.0,593
+208697,canastas,2026-11-09,AD1,Piña AD1,0.0 - 1.0,459
+208698,canastas,2026-11-09,AD-PIND,AD-piña indstria,1.5 - 2.5,238
+208699,canastas,2026-11-09,PEGUA,piña special guapita,1.5 - 2.5,508
+208700,canastas,2026-11-09,PIND,piña indstria,1.5 - 2.5,162
+208701,canastas,2026-11-09,AD1,Piña AD1,0.0 - 1.0,457
+208702,canastas,2026-11-09,PE1,piña special 1ra,4,216
+208703,canastas,2026-11-09,AD-PJUG,,3.0 - 4.0,350
