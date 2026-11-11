@@ -25537,7 +25537,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-10,47323,R-19611,jeronimo martins,piña special 2da,PE2,417,0,3100,0,208618,2026-11-09,1.5,2626,77
 2026-11-10,47323,R-19611,jeronimo martins,piña special 2da,PE2,417,0,3100,0,208646,2026-11-09,1.5,2626,77
 2026-11-10,47323,R-19611,jeronimo martins,piña special 2da,PE2,404,276,3100,0,208562,2026-11-09,1.5,2626,77
-2026-11-10,,,reposicion jeronimo,piña special 1ra,PE1,135,0,,0,208605,2026-11-09,1.5,2626,77
+2026-11-10,,R-19627,reposicion jeronimo,piña special 1ra,PE1,135,0,,0,208605,2026-11-09,1.5,2626,77
 2026-11-10,47324,R-19616,Del cultivo L.F. sas,piña special 1ra,PE1,578,0,2300,0,208452,2026-11-08,0.0 - 1.0,2626,77
 2026-11-10,47324,R-19616,Del cultivo L.F. sas,piña special 1ra,PE1,531,0,2300,0,208379,2026-11-08,0.0 - 1.0,2526,77
 2026-11-10,47324,R-19616,Del cultivo L.F. sas,piña special 1ra,PE1,602,89,2300,0,208465,2026-11-08,0.0 - 1.0,2626,77
@@ -25618,7 +25618,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-10,47329,R-19622,jeronimo martins,piña special 1ra,PE1,356,0,3800,56,208575,2026-11-09,1.5,2626,77
 2026-11-10,47329,R-19622,jeronimo martins,piña special 2da,PE2,411,0,3800,0,208583,2026-11-09,1.5,2626,77
 2026-11-10,47329,R-19622,jeronimo martins,piña special 2da,PE2,408,310,3800,13,208598,2026-11-09,1.5,2626,77
-2026-11-10,,,jeronimo martins,piña special 2da,PE2,109,0,,0,208582,2026-11-09,1.5,2626,77
+2026-11-10,,R-19627,reposicion jeronimo,piña special 2da,PE2,109,0,,0,208582,2026-11-09,1.5,2626,77
 2026-11-10,47330,R-19621,camilo quiñones,piña special 2da,PE2,504,0,2100,0,208469,2026-11-08,3.0 - 4.0,2626,77
 2026-11-10,47330,R-19621,camilo quiñones,piña special 2da,PE2,496,0,2100,41,208359,2026-11-08,3.0 - 4.0,2626,77
 2026-11-10,47330,R-19621,camilo quiñones,piña special 1ra,PE1,527,473,2300,42,208357,2026-11-08,3.0 - 4.0,2626,77
