@@ -264,9 +264,9 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 208855,canastas,2026-11-10,AD1,Piña AD1,0.0 - 1.0,552
 208856,canastas,2026-11-10,AD1,Piña AD1,0.0 - 1.0,599
 208857,canastas,2026-11-10,AD1,Piña AD1,0.0 - 1.0,563
-208858,canastas,2026-11-10,,,,495
-208859,canastas,2026-11-10,,,,584
-208860,canastas,2026-11-10,,,,0
+208858,canastas,2026-11-10,AD-PIND,AD-piña indstria,1.5 - 2.5,597
+208859,canastas,2026-11-10,AD-PJUG,,3.0 - 4.0,584
+208860,canastas,2026-11-10,AD2,Piña AD2,0.0 - 1.0,623
 208861,canastas,2026-11-10,,,,0
 208862,canastas,2026-11-10,,,,0
 208863,canastas,2026-11-10,,,,0
