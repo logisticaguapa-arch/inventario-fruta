@@ -25605,16 +25605,16 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-10,,R-19619,elkin dario cardona,piña special 1ra,PE1,512,0,2900,0,208606,2026-11-09,1.5 - 2.5,2626,77
 2026-11-10,,R-19619,elkin dario cardona,piña special 1ra,PE1,582,0,2900,0,208603,2026-11-09,1.5 - 2.5,2626,77
 2026-11-10,,R-19619,elkin dario cardona,piña special 1ra,PE1,600,282,2900,0,208577,2026-11-09,1.5 - 2.5,2626,77
-2026-11-10,,,Aldinsen Gonzalez,piña indstria,PIND,485,0,,0,208633,2026-11-09,1.5 - 2.5,2626,47
-2026-11-10,,,Aldinsen Gonzalez,piña indstria,PIND,535,0,,0,208661,2026-11-09,1.5 - 2.5,2626,77
-2026-11-10,,,Aldinsen Gonzalez,piña indstria,PIND,510,0,,0,208564,2026-11-09,1.5 - 2.5,2626,77
-2026-11-10,,,Aldinsen Gonzalez,piña indstria,PIND,556,0,,0,208543,2026-11-09,1.5 - 2.5,2626,77
-2026-11-10,,,Aldinsen Gonzalez,piña indstria,PIND,554,0,,0,208622,2026-11-09,1.5 - 2.5,2626,77
-2026-11-10,,,Aldinsen Gonzalez,piña indstria,PIND,557,0,,0,208594,2026-11-09,1.5 - 2.5,2626,77
-2026-11-10,,,Aldinsen Gonzalez,piña indstria,PIND,543,0,,0,208584,2026-11-09,1.5 - 2.5,2626,47
-2026-11-10,,,Aldinsen Gonzalez,piña indstria,PIND,522,0,,0,208634,2026-11-09,1.5 - 2.5,2626,47
-2026-11-10,,,Aldinsen Gonzalez,piña indstria,PIND,536,202,,0,208566,2026-11-09,1.5 - 2.5,2626,77
-2026-11-10,,,Aldinsen Gonzalez,piña special 1ra,PE1,604,396,,0,208504,2026-11-08,3.0 - 4.0,2626,77
+2026-11-10,,R-19620,Aldinsen Gonzalez,piña indstria,PIND,485,0,,0,208633,2026-11-09,1.5 - 2.5,2626,47
+2026-11-10,,R-19620,Aldinsen Gonzalez,piña indstria,PIND,535,0,,0,208661,2026-11-09,1.5 - 2.5,2626,77
+2026-11-10,,R-19620,Aldinsen Gonzalez,piña indstria,PIND,510,0,,0,208564,2026-11-09,1.5 - 2.5,2626,77
+2026-11-10,,R-19620,Aldinsen Gonzalez,piña indstria,PIND,556,0,,0,208543,2026-11-09,1.5 - 2.5,2626,77
+2026-11-10,,R-19620,Aldinsen Gonzalez,piña indstria,PIND,554,0,,0,208622,2026-11-09,1.5 - 2.5,2626,77
+2026-11-10,,R-19620,Aldinsen Gonzalez,piña indstria,PIND,557,0,,0,208594,2026-11-09,1.5 - 2.5,2626,77
+2026-11-10,,R-19620,Aldinsen Gonzalez,piña indstria,PIND,543,0,,0,208584,2026-11-09,1.5 - 2.5,2626,47
+2026-11-10,,R-19620,Aldinsen Gonzalez,piña indstria,PIND,522,0,,0,208634,2026-11-09,1.5 - 2.5,2626,47
+2026-11-10,,R-19620,Aldinsen Gonzalez,piña indstria,PIND,536,202,,0,208566,2026-11-09,1.5 - 2.5,2626,77
+2026-11-10,,R-19620,Aldinsen Gonzalez,piña special 1ra,PE1,604,396,,0,208504,2026-11-08,3.0 - 4.0,2626,77
 2026-11-10,,,jeronimo martins,piña special 1ra,PE1,356,0,,56,208575,2026-11-09,1.5,2626,77
 2026-11-10,,,jeronimo martins,piña special 2da,PE2,411,0,,0,208583,2026-11-09,1.5,2626,77
 2026-11-10,,,jeronimo martins,piña special 2da,PE2,408,310,,13,208598,2026-11-09,1.5,2626,77
@@ -25665,4 +25665,6 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-10,,,ramiro parada,piña special 2da,PE2,405,0,,0,208381,2026-11-08,1.5,2526,77
 2026-11-10,,,ramiro parada,piña special 2da,PE2,397,0,,0,208432,2026-11-08,1.5,2626,77
 2026-11-10,,,ramiro parada,piña special 2da,PE2,0,0,,28,208397,2026-11-08,1.5 - 2.5,2626,77
-2026-11-10,,,ramiro parada,piña special 2da,PE2,55,0,,0,208585,2026-11-09,1.5 - 2.5,2626,47
+2026-11-10,,,ramiro parada,piña special 2da,PE2,55,14,,0,208585,2026-11-09,1.5 - 2.5,2626,47
+2026-11-10,,,ramiro parada,piña special 2da,PE2,267,0,,0,208507,2026-11-08,3.0 - 4.0,2626,77
+2026-11-10,,,ramiro parada,piña special 2da,PE2,532,0,,0,208367,2026-11-08,3.0 - 4.0,2526,77
