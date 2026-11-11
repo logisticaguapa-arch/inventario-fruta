@@ -25633,22 +25633,22 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-10,,R-19623,local sincelejo,Piña AD2,AD2,49,0,2800,0,208515,2026-11-08,1.5 - 2.5,3326,32
 2026-11-10,,R-19623,local sincelejo,piña special 2da,PE2,48,0,2800,0,208466,2026-11-08,1.5,2626,77
 2026-11-10,,R-19623,local sincelejo,piña special 2da,PE2,463,47,2800,0,208503,2026-11-08,0.0 - 1.0,2626,77
-2026-11-10,,R-19623,local sincelejo,piña special 1ra,PE1,439,0,,0,208455,2026-11-08,0.0 - 1.0,2626,77
-2026-11-10,,R-19623,local sincelejo,piña special 1ra,PE1,557,4,,0,208437,2026-11-08,0.0 - 1.0,2626,77
-2026-11-10,,R-19623,local sincelejo,piña special 2da,PE2,515,0,,0,208568,2026-11-09,1.5 - 2.5,2626,77
-2026-11-10,,R-19623,local sincelejo,piña special 2da,PE2,523,462,,3,208612,2026-11-09,1.5 - 2.5,2626,77
-2026-11-10,,R-19623,local sincelejo,piña special 3ra,PE3,501,0,,3,208771,2026-11-10,1.5 - 2.5,,
-2026-11-10,,R-19623,local sincelejo,piña special 3ra,PE3,206,0,,0,208673,2026-11-09,1.5 - 2.5,2626,77
-2026-11-10,,R-19623,local sincelejo,piña special 3ra,PE3,33,0,,0,208772,2026-11-10,1.5 - 2.5,,
-2026-11-10,,R-19623,local sincelejo,piña special 3ra,PE3,500,0,,0,208542,2026-11-09,0.0 - 1.0,2626,77
-2026-11-10,,R-19623,local sincelejo,piña special 3ra,PE3,499,0,,0,208600,2026-11-09,0.0 - 1.0,2626,77
-2026-11-10,,R-19623,local sincelejo,piña special 3ra,PE3,482,0,,0,208653,2026-11-09,0.0 - 1.0,2626,77
-2026-11-10,,R-19623,local sincelejo,piña special 3ra,PE3,425,0,,0,208677,2026-11-09,0.0 - 1.0,2626,77
-2026-11-10,,R-19623,local sincelejo,Piña AD3,AD3,214,0,,0,208694,2026-11-09,0.0 - 1.0,2826,77
-2026-11-10,,R-19623,local sincelejo,piña special 3ra,PE3,49,0,,0,208782,2026-11-10,0.0 - 1.0,,
-2026-11-10,,R-19623,local sincelejo,piña special 1ra,PE1,549,0,,0,208451,2026-11-08,0.0 - 1.0,2626,77
-2026-11-10,,R-19623,local sincelejo,piña special 1ra,PE1,573,0,,0,208443,2026-11-08,0.0 - 1.0,2626,77
-2026-11-10,,R-19623,local sincelejo,piña special 1ra,PE1,443,435,,0,208356,2026-11-08,0.0 - 1.0,2626,77
+2026-11-10,,R-19623,local sincelejo,piña special 1ra,PE1,439,0,3000,0,208455,2026-11-08,0.0 - 1.0,2626,77
+2026-11-10,,R-19623,local sincelejo,piña special 1ra,PE1,557,4,3000,0,208437,2026-11-08,0.0 - 1.0,2626,77
+2026-11-10,,R-19623,local sincelejo,piña special 2da,PE2,515,0,2800,0,208568,2026-11-09,1.5 - 2.5,2626,77
+2026-11-10,,R-19623,local sincelejo,piña special 2da,PE2,523,462,2800,3,208612,2026-11-09,1.5 - 2.5,2626,77
+2026-11-10,,R-19623,local sincelejo,piña special 3ra,PE3,501,0,2400,3,208771,2026-11-10,1.5 - 2.5,,
+2026-11-10,,R-19623,local sincelejo,piña special 3ra,PE3,206,0,2400,0,208673,2026-11-09,1.5 - 2.5,2626,77
+2026-11-10,,R-19623,local sincelejo,piña special 3ra,PE3,33,0,2400,0,208772,2026-11-10,1.5 - 2.5,,
+2026-11-10,,R-19623,local sincelejo,piña special 3ra,PE3,500,0,2400,0,208542,2026-11-09,0.0 - 1.0,2626,77
+2026-11-10,,R-19623,local sincelejo,piña special 3ra,PE3,499,0,2400,0,208600,2026-11-09,0.0 - 1.0,2626,77
+2026-11-10,,R-19623,local sincelejo,piña special 3ra,PE3,482,0,2400,0,208653,2026-11-09,0.0 - 1.0,2626,77
+2026-11-10,,R-19623,local sincelejo,piña special 3ra,PE3,425,0,2400,0,208677,2026-11-09,0.0 - 1.0,2626,77
+2026-11-10,,R-19623,local sincelejo,Piña AD3,AD3,214,0,2400,0,208694,2026-11-09,0.0 - 1.0,2826,77
+2026-11-10,,R-19623,local sincelejo,piña special 3ra,PE3,49,0,2400,0,208782,2026-11-10,0.0 - 1.0,,
+2026-11-10,,R-19623,local sincelejo,piña special 1ra,PE1,549,0,3000,0,208451,2026-11-08,0.0 - 1.0,2626,77
+2026-11-10,,R-19623,local sincelejo,piña special 1ra,PE1,573,0,3000,0,208443,2026-11-08,0.0 - 1.0,2626,77
+2026-11-10,,R-19623,local sincelejo,piña special 1ra,PE1,443,435,3000,0,208356,2026-11-08,0.0 - 1.0,2626,77
 2026-11-10,,,DRYCOL,piña special 1ra,PE1,611,0,,0,208751,2026-11-10,0.0 - 1.0,,
 2026-11-10,,,DRYCOL,piña special 1ra,PE1,561,0,,0,208723,2026-11-10,0.0 - 1.0,,
 2026-11-10,,,DRYCOL,piña special 1ra,PE1,606,0,,0,208735,2026-11-10,0.0 - 1.0,,
@@ -25669,3 +25669,4 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-10,,,ramiro parada,piña special 2da,PE2,267,0,,0,208507,2026-11-08,3.0 - 4.0,2626,77
 2026-11-10,,,ramiro parada,piña special 2da,PE2,532,0,,0,208367,2026-11-08,3.0 - 4.0,2526,77
 2026-11-10,,,ramiro parada,piña special 2da,PE2,29,0,,0,208419,2026-11-08,3.0 - 4.0,2626,77
+2026-11-10,,,ramiro parada,piña special 2da,PE2,201,0,,43,208674,2026-11-09,3.0 - 4.0,2626,77
