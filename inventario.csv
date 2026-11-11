@@ -2,7 +2,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 208187,canastas,2026-11-06,PE1,piña special 1ra,3.0 - 4.0,509
 208190,canastas,2026-11-06,PE1,piña special 1ra,0.0 - 1.0,612
 208195,canastas,2026-11-06,PE1,piña special 1ra,3.0 - 4.0,193
-208198,canastas,2026-11-06,PE1,piña special 1ra,1.5 - 2.5,584
 208201,canastas,2026-11-06,PE1,piña special 1ra,3.0 - 4.0,594
 208203,canastas,2026-11-06,PE1,piña special 1ra,0.0 - 1.0,68
 208208,canastas,2026-11-06,PE1,piña special 1ra,1.5 - 2.5,567
@@ -17,7 +16,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 208264,canastas,2026-11-06,PE1,piña special 1ra,3.0 - 4.0,573
 208266,canastas,2026-11-06,PE1,piña special 1ra,3.0 - 4.0,585
 208268,canastas,2026-11-06,PE1,piña special 1ra,3.0 - 4.0,575
-208273,canastas,2026-11-06,PE1,piña special 1ra,1.5 - 2.5,142
 208275,canastas,2026-11-06,PE1,piña special 1ra,0.0 - 1.0,638
 208279,canastas,2026-11-06,PE1,piña special 1ra,3.0 - 4.0,580
 208288,canastas,2026-11-06,PE1,piña special 1ra,3.0 - 4.0,595
@@ -40,10 +38,8 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 208344,canastas,2026-11-06,PJUG,piña jugos,3.0 - 4.0,389
 208345,20,2026-11-06,AD1,Piña AD1,0.0 - 1.0,571
 208346,124,2026-11-06,AD1,Piña AD1,0.0 - 1.0,680
-208347,82,2026-11-06,AD1,Piña AD1,1.5 - 2.5,1609
 208349,canastas,2026-11-08,PE1,piña special 1ra,1.5 - 2.5,605
 208350,canastas,2026-11-08,PE1,piña special 1ra,1.5 - 2.5,577
-208351,canastas,2026-11-08,PE1,piña special 1ra,1.5 - 2.5,600
 208352,canastas,2026-11-08,PE1,piña special 1ra,0,235
 208354,canastas,2026-11-08,PE1,piña special 1ra,1.5 - 2.5,601
 208355,canastas,2026-11-08,PE1,piña special 1ra,3.0 - 4.0,204
@@ -268,8 +264,8 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 208855,canastas,2026-11-10,AD1,Piña AD1,0.0 - 1.0,552
 208856,canastas,2026-11-10,AD1,Piña AD1,0.0 - 1.0,599
 208857,canastas,2026-11-10,AD1,Piña AD1,0.0 - 1.0,563
-208858,canastas,2026-11-10,,,,0
-208859,canastas,2026-11-10,,,,0
+208858,canastas,2026-11-10,,,,495
+208859,canastas,2026-11-10,,,,584
 208860,canastas,2026-11-10,,,,0
 208861,canastas,2026-11-10,,,,0
 208862,canastas,2026-11-10,,,,0
