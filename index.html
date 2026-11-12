@@ -210,8 +210,9 @@ table.ftable .ftotal-row td{color:#052e16!important}
 .desc-ind-card{background:#fff;border:1px solid #e2e8f0;border-left:5px solid #94a3b8;border-radius:10px;padding:12px 14px;box-shadow:0 1px 4px rgba(0,0,0,0.06)}
 .desc-ind-title{font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.04em;color:#334155;margin-bottom:6px;white-space:normal}
 .desc-ind-num{font-size:1.3rem;font-weight:800;color:#0f172a;line-height:1.1}
-.desc-ind-sub{font-size:.72rem;color:#64748b;margin:2px 0 8px;font-weight:600}
-.desc-ind-bar{height:6px;border-radius:3px;background:#e2e8f0;overflow:hidden}
+.desc-ind-sub{font-size:.85rem;color:#334155;margin:4px 0 8px;font-weight:700}
+.desc-ind-pct{font-size:1.25rem;font-weight:800;color:#0f172a}
+.desc-ind-bar{height:8px;border-radius:4px;background:#cbd5e1;overflow:hidden}
 .desc-ind-fill{height:100%;border-radius:3px}
 .desc-cosecha-badge{display:inline-block;padding:2px 9px;border-radius:20px;font-size:.68rem;font-weight:800;white-space:nowrap}
 .desc-cosecha-flor{background:#fce7f3;color:#9d174d}
@@ -2159,7 +2160,7 @@ function renderDescarte(data){
     html+='<div class="desc-ind-card" style="border-left-color:'+color+'">';
     html+='<div class="desc-ind-title">'+ind.motivo+'</div>';
     html+='<div class="desc-ind-num">'+Math.round(ind.kg).toLocaleString('es-CO')+' kg</div>';
-    html+='<div class="desc-ind-sub">'+ind.n+' registros &middot; '+pct.toFixed(1).replace('.',',')+'%</div>';
+    html+='<div class="desc-ind-sub">'+ind.n+' registros &middot; <span class="desc-ind-pct">'+pct.toFixed(1).replace('.',',')+'%</span></div>';
     html+='<div class="desc-ind-bar"><div class="desc-ind-fill" style="width:'+pct.toFixed(1)+'%;background:'+color+'"></div></div>';
     html+='</div>';
   });
