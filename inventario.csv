@@ -36,7 +36,7 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 208716,canastas,2026-11-10,PE1,piña special 1ra,0.0 - 1.0,591
 208719,canastas,2026-11-10,PE1,piña special 1ra,1.5 - 2.5,122
 208722,canastas,2026-11-10,PE1,piña special 1ra,3.0 - 4.0,114
-208724,canastas,2026-11-10,PE2,piña special 2da,1.5,425
+208724,canastas,2026-11-10,PE2,piña special 2da,1.5,156
 208730,canastas,2026-11-10,PE1,piña special 1ra,1.5 - 2.5,594
 208732,canastas,2026-11-10,PE1,piña special 1ra,1.5 - 2.5,587
 208734,canastas,2026-11-10,PE1,piña special 1ra,0,126
@@ -242,10 +242,26 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 209019,canastas,2026-11-11,AD2,Piña AD2,0.0 - 1.0,515
 209020,canastas,2026-11-11,AD1,Piña AD1,0.0 - 1.0,546
 209021,canastas,2026-11-11,AD3,Piña AD3,0.0 - 1.0,530
-209022,canastas,2026-11-11,,,,0
-209023,canastas,2026-11-11,,,,0
-209024,canastas,2026-11-11,,,,0
-209025,canastas,2026-11-11,,,,0
-209026,canastas,2026-11-11,,,,0
-209027,canastas,2026-11-11,,,,0
-209028,canastas,2026-11-11,,,,0
+209022,canastas,2026-11-11,AD2,Piña AD2,0.0 - 1.0,527
+209023,canastas,2026-11-11,AD-PIND,AD-piña indstria,1.5 - 2.5,511
+209024,canastas,2026-11-11,AD1,Piña AD1,0.0 - 1.0,551
+209025,canastas,2026-11-11,AD1,Piña AD1,0.0 - 1.0,562
+209026,canastas,2026-11-11,AD-PJUG,,3.0 - 4.0,509
+209027,canastas,2026-11-11,AD-PJUG,,3.0 - 4.0,523
+209028,canastas,2026-11-11,AD-PJUG,,3.0 - 4.0,521
+209029,canastas,2026-11-11,AD1,Piña AD1,0.0 - 1.0,577
+209030,canastas,2026-11-11,AD2,Piña AD2,0.0 - 1.0,519
+209031,canastas,2026-11-11,AD3,Piña AD3,1.5 - 2.5,84
+209032,canastas,2026-11-11,AD-PIND,AD-piña indstria,1.5 - 2.5,401
+209033,canastas,2026-11-11,AD2,Piña AD2,1.5 - 2.5,223
+209034,canastas,2026-11-11,ADBABY,Piña ADBABY,1.5 - 2.5,78
+209035,canastas,2026-11-11,AD1,Piña AD1,0.0 - 1.0,525
+209036,canastas,2026-11-11,,,,0
+209037,canastas,2026-11-11,,,,0
+209038,canastas,2026-11-11,,,,0
+209039,canastas,2026-11-11,,,,0
+209040,canastas,2026-11-11,,,,0
+209041,canastas,2026-11-11,,,,0
+209042,canastas,2026-11-11,,,,0
+209043,canastas,2026-11-11,,,,0
+209044,canastas,2026-11-11,,,,0
