@@ -25811,13 +25811,13 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-11,,R-19640,camilo quiñones,piña special 1ra,PE1,561,0,2300,0,208602,2026-11-09,3.0 - 4.0,2626,77
 2026-11-11,,R-19640,camilo quiñones,piña special 1ra,PE1,188,0,2300,45,208645,2026-11-09,3.0 - 4.0,2626,77
 2026-11-11,,R-19640,camilo quiñones,piña special 1ra,PE1,148,139,2300,0,208619,2026-11-09,3.0 - 4.0,2626,77
-2026-11-11,,R-19640,camilo quiñones,piña special 2da,PE2,512,0,,3,208589,2026-11-09,3.0 - 4.0,2626,77
-2026-11-11,,R-19640,camilo quiñones,piña special 2da,PE2,517,0,,0,208670,2026-11-09,3.0 - 4.0,2626,77
-2026-11-11,,R-19640,camilo quiñones,piña special 2da,PE2,34,0,,0,208762,2026-11-10,3.0 - 4.0,2626,77
-2026-11-11,,R-19640,camilo quiñones,AD-piña jugos,AD-PJUG,528,0,,0,208841,2026-11-10,3.0 - 4.0,3226,77
-2026-11-11,,R-19640,camilo quiñones,piña jugos,PJUG,573,0,,0,208887,2026-11-10,3.0 - 4.0,2626,77
-2026-11-11,,R-19640,camilo quiñones,AD-piña jugos,AD-PJUG,305,0,,221,208849,2026-11-10,3.0 - 4.0,3526,78
-2026-11-11,,R-19640,camilo quiñones,AD-piña jugos,AD-PJUG,537,57,,42,208859,2026-11-10,3.0 - 4.0,2726,32
+2026-11-11,,R-19640,camilo quiñones,piña special 2da,PE2,512,0,2100,3,208589,2026-11-09,3.0 - 4.0,2626,77
+2026-11-11,,R-19640,camilo quiñones,piña special 2da,PE2,517,0,2100,0,208670,2026-11-09,3.0 - 4.0,2626,77
+2026-11-11,,R-19640,camilo quiñones,piña special 2da,PE2,34,0,2100,0,208762,2026-11-10,3.0 - 4.0,2626,77
+2026-11-11,,R-19640,camilo quiñones,AD-piña jugos,AD-PJUG,528,0,1200,0,208841,2026-11-10,3.0 - 4.0,3226,77
+2026-11-11,,R-19640,camilo quiñones,piña jugos,PJUG,573,0,1200,0,208887,2026-11-10,3.0 - 4.0,2626,77
+2026-11-11,,R-19640,camilo quiñones,AD-piña jugos,AD-PJUG,305,0,1200,221,208849,2026-11-10,3.0 - 4.0,3526,78
+2026-11-11,,R-19640,camilo quiñones,AD-piña jugos,AD-PJUG,537,57,1200,42,208859,2026-11-10,3.0 - 4.0,2726,32
 2026-11-11,47360,R-19642,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,553,0,3000,0,208721,2026-11-10,1,2626,77
 2026-11-11,47360,R-19642,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,559,0,3000,0,208742,2026-11-10,1,2626,77
 2026-11-11,47360,R-19642,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,562,0,3000,0,208738,2026-11-10,1,2626,77
