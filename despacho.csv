@@ -25801,16 +25801,16 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-11,,,descarte,piña special 1ra,PE1,0,0,,530,208220,2026-11-06,3.0 - 4.0,2526,77
 2026-11-11,,,descarte,piña special 1ra,PE1,0,0,,509,208187,2026-11-06,3.0 - 4.0,2526,77
 2026-11-11,,,descarte,piña special 1ra,PE1,0,0,,594,208201,2026-11-06,3.0 - 4.0,2526,77
-2026-11-11,,R-19640,camilo quiñones,AD-piña indstria,AD-PIND,260,0,,0,208695,2026-11-09,1.5 - 2.5,2826,77
-2026-11-11,,R-19640,camilo quiñones,piña indstria,PIND,158,0,,0,208700,2026-11-09,1.5 - 2.5,2626,77
-2026-11-11,,R-19640,camilo quiñones,piña indstria,PIND,529,0,,0,208610,2026-11-09,1.5 - 2.5,2626,77
-2026-11-11,,R-19640,camilo quiñones,AD-piña indstria,AD-PIND,233,0,,0,208698,2026-11-09,1.5 - 2.5,3726,77
-2026-11-11,,R-19640,camilo quiñones,piña indstria,PIND,34,0,,0,208717,2026-11-10,1.5 - 2.5,2626,77
-2026-11-11,,R-19640,camilo quiñones,piña special 1ra,PE1,498,0,,0,208576,2026-11-09,3.0 - 4.0,2626,77
-2026-11-11,,R-19640,camilo quiñones,piña special 1ra,PE1,563,0,,0,208671,2026-11-09,3.0 - 4.0,2626,77
-2026-11-11,,R-19640,camilo quiñones,piña special 1ra,PE1,561,0,,0,208602,2026-11-09,3.0 - 4.0,2626,77
-2026-11-11,,R-19640,camilo quiñones,piña special 1ra,PE1,188,0,,45,208645,2026-11-09,3.0 - 4.0,2626,77
-2026-11-11,,R-19640,camilo quiñones,piña special 1ra,PE1,148,139,,0,208619,2026-11-09,3.0 - 4.0,2626,77
+2026-11-11,,R-19640,camilo quiñones,AD-piña indstria,AD-PIND,260,0,1400,0,208695,2026-11-09,1.5 - 2.5,2826,77
+2026-11-11,,R-19640,camilo quiñones,piña indstria,PIND,158,0,1400,0,208700,2026-11-09,1.5 - 2.5,2626,77
+2026-11-11,,R-19640,camilo quiñones,piña indstria,PIND,529,0,1400,0,208610,2026-11-09,1.5 - 2.5,2626,77
+2026-11-11,,R-19640,camilo quiñones,AD-piña indstria,AD-PIND,233,0,1400,0,208698,2026-11-09,1.5 - 2.5,3726,77
+2026-11-11,,R-19640,camilo quiñones,piña indstria,PIND,34,0,1400,0,208717,2026-11-10,1.5 - 2.5,2626,77
+2026-11-11,,R-19640,camilo quiñones,piña special 1ra,PE1,498,0,2300,0,208576,2026-11-09,3.0 - 4.0,2626,77
+2026-11-11,,R-19640,camilo quiñones,piña special 1ra,PE1,563,0,2300,0,208671,2026-11-09,3.0 - 4.0,2626,77
+2026-11-11,,R-19640,camilo quiñones,piña special 1ra,PE1,561,0,2300,0,208602,2026-11-09,3.0 - 4.0,2626,77
+2026-11-11,,R-19640,camilo quiñones,piña special 1ra,PE1,188,0,2300,45,208645,2026-11-09,3.0 - 4.0,2626,77
+2026-11-11,,R-19640,camilo quiñones,piña special 1ra,PE1,148,139,2300,0,208619,2026-11-09,3.0 - 4.0,2626,77
 2026-11-11,,R-19640,camilo quiñones,piña special 2da,PE2,512,0,,3,208589,2026-11-09,3.0 - 4.0,2626,77
 2026-11-11,,R-19640,camilo quiñones,piña special 2da,PE2,517,0,,0,208670,2026-11-09,3.0 - 4.0,2626,77
 2026-11-11,,R-19640,camilo quiñones,piña special 2da,PE2,34,0,,0,208762,2026-11-10,3.0 - 4.0,2626,77
@@ -25859,6 +25859,10 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-11,,,carmen susana hoyos,piña special 3ra,PE3,478,0,,0,208809,2026-11-10,0.0 - 1.0,2626,77
 2026-11-11,,,carmen susana hoyos,piña special 3ra,PE3,487,35,,0,208712,2026-11-10,0.0 - 1.0,2626,77
 2026-11-11,,,carmen susana hoyos,piña special 2da,PE2,207,0,,0,208657,2026-11-09,1.5 - 2.5,2626,77
+2026-11-11,,,carmen susana hoyos,Piña AD2,AD2,44,0,,0,208688,2026-11-09,1.5 - 2.5,2826,77
+2026-11-11,,,carmen susana hoyos,piña special 2da,PE2,371,0,,0,208640,2026-11-09,1.5 - 2.5,2626,77
+2026-11-11,,,carmen susana hoyos,piña special 2da,PE2,273,405,,0,208666,2026-11-09,1.5 - 2.5,2626,77
+2026-11-11,,,carmen susana hoyos,piña special guapita,PEGUA,497,0,,0,208710,2026-11-10,1.5 - 2.5,2626,77
 2026-11-11,,,jeronimo martins,piña special 2da,PE2,419,0,,0,208789,2026-11-10,1.5,2626,77
 2026-11-11,,,jeronimo martins,piña special 2da,PE2,414,0,,13,208720,2026-11-10,1.5,2626,77
 2026-11-11,,,jeronimo martins,piña special 2da,PE2,420,0,,0,208766,2026-11-10,1.5,2626,47
@@ -25866,4 +25870,4 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-11,,,jeronimo martins,piña special 2da,PE2,427,91,,0,208706,2026-11-10,1.5,2626,77
 2026-11-11,,,jeronimo martins,piña special 2da,PE2,326,0,,0,208776,2026-11-10,1.5,2626,47
 2026-11-11,,,jeronimo martins,piña special 2da,PE2,424,350,,0,208763,2026-11-10,1.5,2626,77
-2026-11-11,,,jeronimo martins,piña special 2da,PE2,75,0,,0,208750,2026-11-10,1.5,2626,77
+2026-11-11,,,reposicion jeronimo,piña special 2da,PE2,75,0,,0,208750,2026-11-10,1.5,2626,77
