@@ -25879,6 +25879,8 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-12,,,local apartado,piña special 1ra,PE1,580,0,,0,208920,2026-11-11,0.0 - 1.0,2626,77
 2026-11-12,,,local apartado,Piña AD1,AD1,562,0,,0,209025,2026-11-11,0.0 - 1.0,2726,32
 2026-11-12,,,local apartado,Piña AD1,AD1,550,408,,7,209039,2026-11-11,0.0 - 1.0,3326,78
+2026-11-12,,,descarte,piña special 2da,PE2,0,0,,58,208664,2026-11-09,4,2626,77
+2026-11-12,,,descarte,piña special 1ra,PE1,0,0,,216,208702,2026-11-09,4,2626,77
 2026-11-12,,,descarte,piña special 1ra,PE1,0,0,,580,208279,2026-11-06,3.0 - 4.0,2526,77
 2026-11-12,,,descarte,piña special 1ra,PE1,0,0,,68,208203,2026-11-06,0.0 - 1.0,2526,77
 2026-11-12,,,descarte,piña jugos,PJUG,0,0,,389,208344,2026-11-06,3.0 - 4.0,2626,77
@@ -25886,3 +25888,56 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-12,,,local medellin,piña special 3ra,PE3,530,0,,0,208965,2026-11-11,3.0 - 4.0,2626,77
 2026-11-12,,,local medellin,Piña AD2,AD2,524,149,,5,209014,2026-11-11,0.0 - 1.0,3526,78
 2026-11-12,,,local medellin,Piña AD2,AD2,517,310,,0,209030,2026-11-11,0.0 - 1.0,2726,77
+2026-11-12,,,local medellin,piña special 1ra,PE1,564,0,,11,208775,2026-11-10,1.5 - 2.5,2626,47
+2026-11-12,,,local medellin,piña special 1ra,PE1,582,0,,0,208730,2026-11-10,1.5 - 2.5,2626,77
+2026-11-12,,,local medellin,piña special 1ra,PE1,589,91,,0,208784,2026-11-10,1.5 - 2.5,2626,47
+2026-11-12,,,local medellin,piña special 1ra,PE1,509,143,,66,208755,2026-11-10,1.5 - 2.5,2626,77
+2026-11-12,,,local medellin,piña special 1ra,PE1,452,629,,80,208948,2026-11-11,3.0 - 4.0,2626,77
+2026-11-12,,,elkin jaramillo,piña special 1ra,PE1,562,0,,14,208938,2026-11-11,1.5 - 2.5,2626,77
+2026-11-12,,,elkin jaramillo,Piña AD1,AD1,534,0,,0,209041,2026-11-11,1.5 - 2.5,3326,78
+2026-11-12,,,elkin jaramillo,piña special 1ra,PE1,592,0,,0,208906,2026-11-11,1.5 - 2.5,2626,77
+2026-11-12,,,elkin jaramillo,piña special 1ra,PE1,657,0,,0,209000,2026-11-11,1.5 - 2.5,2626,77
+2026-11-12,,,elkin jaramillo,piña special 1ra,PE1,610,0,,0,208910,2026-11-11,1.5 - 2.5,2626,77
+2026-11-12,,,elkin jaramillo,piña special 1ra,PE1,594,0,,0,208971,2026-11-11,1.5 - 2.5,2626,77
+2026-11-12,,,elkin jaramillo,piña special 1ra,PE1,592,0,,0,208946,2026-11-11,1.5 - 2.5,2626,77
+2026-11-12,,,elkin jaramillo,piña special 1ra,PE1,597,0,,0,208903,2026-11-11,1.5 - 2.5,2626,77
+2026-11-12,,,elkin jaramillo,piña special 1ra,PE1,533,0,,0,208969,2026-11-11,1.5 - 2.5,2626,77
+2026-11-12,,,elkin jaramillo,piña special 1ra,PE1,180,49,,0,208992,2026-11-11,1.5 - 2.5,2626,77
+2026-11-12,,,rubiela castro,piña special 1ra,PE1,588,0,,7,208991,2026-11-11,0.0 - 1.0,2626,77
+2026-11-12,,,rubiela castro,piña special 1ra,PE1,596,0,,0,208989,2026-11-11,0.0 - 1.0,2626,77
+2026-11-12,,,rubiela castro,piña special 1ra,PE1,581,0,,0,208967,2026-11-11,0.0 - 1.0,2626,77
+2026-11-12,,,rubiela castro,piña special 1ra,PE1,560,0,,0,208913,2026-11-11,0.0 - 1.0,2626,77
+2026-11-12,,,rubiela castro,piña special 1ra,PE1,590,0,,0,208904,2026-11-11,0.0 - 1.0,2626,77
+2026-11-12,,,rubiela castro,piña special 1ra,PE1,573,0,,0,208933,2026-11-11,0.0 - 1.0,2626,77
+2026-11-12,,,rubiela castro,Piña AD1,AD1,555,0,,0,209016,2026-11-11,0.0 - 1.0,3126,78
+2026-11-12,,,rubiela castro,piña special 1ra,PE1,591,366,,0,208899,2026-11-11,0.0 - 1.0,2626,77
+2026-11-12,,,rubiela castro,piña special 2da,PE2,524,0,,6,208931,2026-11-11,0.0 - 1.0,2626,77
+2026-11-12,,,rubiela castro,piña special 2da,PE2,519,0,,0,208925,2026-11-11,0.0 - 1.0,2626,77
+2026-11-12,,,rubiela castro,piña special 2da,PE2,517,440,,0,208891,2026-11-11,0.0 - 1.0,2626,47
+2026-11-12,,,Aldinsen Gonzalez,piña indstria,PIND,291,0,,0,208777,2026-11-10,1.5 - 2.5,2626,47
+2026-11-12,,,Aldinsen Gonzalez,AD-piña indstria,AD-PIND,17,0,,0,208865,2026-11-10,1.5 - 2.5,2726,32
+2026-11-12,,,Aldinsen Gonzalez,AD-piña indstria,AD-PIND,83,0,,0,208879,2026-11-10,1.5 - 2.5,3126,78
+2026-11-12,,,Aldinsen Gonzalez,piña indstria,PIND,468,0,,0,208839,2026-11-10,1.5 - 2.5,2626,77
+2026-11-12,,,Aldinsen Gonzalez,piña indstria,PIND,138,38,,0,208833,2026-11-10,1.5 - 2.5,2626,77
+2026-11-12,,,Aldinsen Gonzalez,piña special 1ra,PE1,445,0,,0,208396,2026-11-08,1,2626,77
+2026-11-12,,,Aldinsen Gonzalez,piña special 1ra,PE1,582,0,,0,208358,2026-11-08,1,2626,77
+2026-11-12,,,Aldinsen Gonzalez,piña special 2da,PE2,515,85,,2,208774,2026-11-10,3.0 - 4.0,2626,47
+2026-11-12,,,Aldinsen Gonzalez,piña special 2da,PE2,249,0,,0,208838,2026-11-10,1.5,2626,77
+2026-11-12,,,Aldinsen Gonzalez,piña special 2da,PE2,156,0,,0,208724,2026-11-10,1.5,2626,77
+2026-11-12,,,local sincelejo,piña special guapita,PEGUA,497,503,,2,208976,2026-11-11,1.5 - 2.5,2626,77
+2026-11-12,,,local sincelejo,piña special 2da,PE2,517,483,,3,208758,2026-11-10,1.5 - 2.5,2626,77
+2026-11-12,,,local sincelejo,piña special 3ra,PE3,522,478,,0,208970,2026-11-11,1.5 - 2.5,2626,77
+2026-11-12,,,local sincelejo,piña special guapita,PEGUA,466,0,,0,208966,2026-11-11,1.5 - 2.5,2626,77
+2026-11-12,,,local sincelejo,piña special guapita,PEGUA,509,25,,0,208943,2026-11-11,1.5 - 2.5,2626,77
+2026-11-12,,,local sincelejo,Piña ADBABY,ADBABY,155,0,,0,208867,2026-11-10,1.5 - 2.5,2726,32
+2026-11-12,,,local sincelejo,piña special baby,PEBAB,451,0,,0,208939,2026-11-11,1.5 - 2.5,2626,77
+2026-11-12,,,local sincelejo,Piña ADBABY,ADBABY,77,0,,0,209034,2026-11-11,1.5 - 2.5,2726,32
+2026-11-12,,,local sincelejo,piña special baby,PEBAB,383,0,,0,209006,2026-11-11,1.5 - 2.5,2626,77
+2026-11-12,,,elkin dario cardona,piña special 2da,PE2,537,463,,0,208926,2026-11-11,1.5 - 2.5,2626,77
+2026-11-12,,,elkin dario cardona,piña special 1ra,PE1,578,0,,0,208897,2026-11-11,1.5 - 2.5,2626,47
+2026-11-12,,,elkin dario cardona,piña special 1ra,PE1,574,0,,0,208961,2026-11-11,1.5 - 2.5,2626,77
+2026-11-12,,,elkin dario cardona,piña special 1ra,PE1,586,0,,0,208893,2026-11-11,1.5 - 2.5,2626,47
+2026-11-12,,,elkin dario cardona,piña special 1ra,PE1,422,0,,0,208996,2026-11-11,1.5 - 2.5,2626,77
+2026-11-12,,,elkin dario cardona,piña special 1ra,PE1,544,0,,0,208918,2026-11-11,1.5 - 2.5,2626,77
+2026-11-12,,,elkin dario cardona,Piña AD1,AD1,521,0,,0,209015,2026-11-11,1.5 - 2.5,3526,78
+2026-11-12,,,elkin dario cardona,piña special 1ra,PE1,564,0,,0,208951,2026-11-11,1.5 - 2.5,2626,77
