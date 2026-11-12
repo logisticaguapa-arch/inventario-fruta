@@ -25779,7 +25779,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-11,47365,R-19634,dario alberto,piña special 1ra,PE1,218,0,2300,0,208556,2026-11-09,1.5 - 2.5,2626,77
 2026-11-11,47365,R-19634,dario alberto,piña special 1ra,PE1,357,0,2300,0,208665,2026-11-09,1.5 - 2.5,2626,77
 2026-11-11,47365,R-19634,dario alberto,piña special 1ra,PE1,592,0,2300,0,208586,2026-11-09,1.5 - 2.5,2626,47
-2026-11-11,47365,R-19634,dario alberto,piña special 2da,PE2,24,0,2300,0,208659,2026-11-09,1.5 - 2.5,2626,77
+2026-11-11,47365,R-19634,dario alberto,piña special 1ra,PE1,24,0,2300,0,208659,2026-11-09,1.5 - 2.5,2626,77
 2026-11-11,47365,R-19634,dario alberto,piña special 1ra,PE1,98,0,2300,0,208672,2026-11-09,1.5 - 2.5,2626,77
 2026-11-11,47365,R-19634,dario alberto,piña special 1ra,PE1,129,0,2300,16,208621,2026-11-09,1.5 - 2.5,2626,77
 2026-11-11,,,descarte,Piña AD2,AD2,0,0,,18,208328,2026-11-06,1.5 - 2.5,2826,77
@@ -25875,7 +25875,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-11,47370,R-19646,jeronimo martins,piña special 2da,PE2,326,0,3200,0,208776,2026-11-10,1.5,2626,47
 2026-11-11,47370,R-19646,jeronimo martins,piña special 2da,PE2,424,350,3200,0,208763,2026-11-10,1.5,2626,77
 2026-11-11,,R-19649,reposicion jeronimo,piña special 2da,PE2,75,269,,0,208750,2026-11-10,1.5,2626,77
-2026-11-11,46371,R-19650,venta empleados,piña special 1ra,PE1,267,0,2200,0,209046,2026-11-11,1.5 - 2.5,2626,77
+2026-11-11,47371,R-19650,venta empleados,piña special 1ra,PE1,267,0,2200,0,209046,2026-11-11,1.5 - 2.5,2626,77
 2026-11-12,,,local apartado,piña special 1ra,PE1,580,0,,0,208920,2026-11-11,0.0 - 1.0,2626,77
 2026-11-12,,,local apartado,Piña AD1,AD1,562,0,,0,209025,2026-11-11,0.0 - 1.0,2726,32
 2026-11-12,,,local apartado,Piña AD1,AD1,550,408,,7,209039,2026-11-11,0.0 - 1.0,3326,78
@@ -25994,3 +25994,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-12,,,local sincelejo,piña special 3ra,PE3,521,0,,0,208957,2026-11-11,0.0 - 1.0,2626,77
 2026-11-12,,,local sincelejo,Piña ADGUA,ADGUA,283,0,,0,208884,2026-11-10,1.5 - 2.5,3126,78
 2026-11-12,,,local sincelejo,piña special guapita,PEGUA,27,0,,0,208740,2026-11-10,1.5 - 2.5,2626,77
+2026-11-12,,,local sincelejo,piña special guapita,PEGUA,354,0,,0,209005,2026-11-11,1.5 - 2.5,2626,77
+2026-11-12,,,local sincelejo,piña special guapita,PEGUA,513,0,,0,208921,2026-11-11,1.5 - 2.5,2626,77
+2026-11-12,,,local sincelejo,piña special 1ra,PE1,53,0,,0,208479,2026-11-08,0.0 - 1.0,2626,77
+2026-11-12,,,local sincelejo,piña special 2da,PE2,74,0,,0,208828,2026-11-10,4,2626,77
