@@ -276,22 +276,38 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 209173,canastas,2026-11-12,PE2,piña special 2da,1.5,431
 209174,canastas,2026-11-12,AD1,Piña AD1,0.0 - 1.0,600
 209175,canastas,2026-11-12,PE1,piña special 1ra,0,566
-209176,canastas,2026-11-12,,,,0
-209177,canastas,2026-11-12,,,,0
-209178,canastas,2026-11-12,,,,0
-209179,canastas,2026-11-12,,,,0
-209180,canastas,2026-11-12,,,,0
-209181,canastas,2026-11-12,,,,0
-209182,canastas,2026-11-12,,,,0
-209183,canastas,2026-11-12,,,,0
-209184,canastas,2026-11-12,,,,0
-209185,canastas,2026-11-12,,,,0
-209186,canastas,2026-11-12,,,,0
-209187,canastas,2026-11-12,,,,0
-209188,canastas,2026-11-12,,,,0
-209189,canastas,2026-11-12,,,,0
-209190,canastas,2026-11-12,,,,0
-209191,canastas,2026-11-12,,,,0
-209192,canastas,2026-11-12,,,,0
-209193,canastas,2026-11-12,,,,0
-209194,canastas,2026-11-12,,,,0
+209176,canastas,2026-11-12,PIND,piña indstria,1.5 - 2.5,427
+209177,canastas,2026-11-12,PIND,piña indstria,1.5 - 2.5,280
+209178,canastas,2026-11-12,AD1,Piña AD1,0.0 - 1.0,583
+209179,canastas,2026-11-12,AD1,Piña AD1,0.0 - 1.0,583
+209180,canastas,2026-11-12,AD1,Piña AD1,1,592
+209181,canastas,2026-11-12,AD1,Piña AD1,0.0 - 1.0,620
+209182,canastas,2026-11-12,AD2,Piña AD2,0.0 - 1.0,513
+209183,canastas,2026-11-12,AD-PIND,AD-piña indstria,1.5 - 2.5,490
+209184,canastas,2026-11-12,AD-PJUG,,3.0 - 4.0,534
+209185,canastas,2026-11-12,AD1,Piña AD1,0.0 - 1.0,577
+209186,canastas,2026-11-12,PEGUA,piña special guapita,1.5 - 2.5,175
+209187,canastas,2026-11-12,AD-PIND,AD-piña indstria,1.5 - 2.5,454
+209188,canastas,2026-11-12,AD2,Piña AD2,0.0 - 1.0,520
+209189,canastas,2026-11-12,AD2,Piña AD2,1.5 - 2.5,514
+209190,canastas,2026-11-12,AD1,Piña AD1,1.5 - 2.5,539
+209191,canastas,2026-11-12,AD-PJUG,,3.0 - 4.0,545
+209192,canastas,2026-11-12,AD2,Piña AD2,1.5 - 2.5,416
+209193,canastas,2026-11-12,AD-PJUG,,3.0 - 4.0,518
+209194,canastas,2026-11-12,AD3,Piña AD3,1.5 - 2.5,515
+209195,canastas,2026-11-12,AD1,Piña AD1,1.5 - 2.5,564
+209196,canastas,2026-11-12,ADBABY,Piña ADBABY,1.5 - 2.5,101
+209197,canastas,2026-11-12,AD-PJUG,,3.0 - 4.0,399
+209198,canastas,2026-11-12,,,,0
+209199,canastas,2026-11-12,,,,0
+209200,canastas,2026-11-12,,,,0
+209201,canastas,2026-11-12,,,,0
+209202,canastas,2026-11-12,,,,0
+209203,canastas,2026-11-12,,,,0
+209204,canastas,2026-11-12,,,,0
+209205,canastas,2026-11-12,,,,0
+209206,canastas,2026-11-12,,,,0
+209207,canastas,2026-11-12,,,,0
+209208,canastas,2026-11-12,,,,0
+209209,canastas,2026-11-12,,,,0
+209210,canastas,2026-11-12,,,,0

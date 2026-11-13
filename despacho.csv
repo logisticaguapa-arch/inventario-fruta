@@ -25867,11 +25867,11 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-11,47369,R-19647,carmen susana hoyos,piña special guapita,PEGUA,70,0,800,0,208805,2026-11-10,1.5 - 2.5,2626,77
 2026-11-11,47369,R-19647,carmen susana hoyos,piña special guapita,PEGUA,151,0,800,40,208882,2026-11-10,1.5 - 2.5,2626,77
 2026-11-11,47369,R-19647,carmen susana hoyos,,PE1,0,500,3200,0,,,1,,
-2026-11-11,,R-19645,jeronimo martins,piña special 2da,PE2,419,0,3200,0,208789,2026-11-10,1.5,2626,77
-2026-11-11,,R-19645,jeronimo martins,piña special 2da,PE2,414,0,3200,13,208720,2026-11-10,1.5,2626,77
-2026-11-11,,R-19645,jeronimo martins,piña special 2da,PE2,420,0,3200,0,208766,2026-11-10,1.5,2626,47
-2026-11-11,,R-19645,jeronimo martins,piña special 2da,PE2,429,0,3200,0,208737,2026-11-10,1.5,2626,77
-2026-11-11,,R-19645,jeronimo martins,piña special 2da,PE2,427,91,3200,0,208706,2026-11-10,1.5,2626,77
+2026-11-11,47393,R-19645,jeronimo martins,piña special 2da,PE2,419,0,3200,0,208789,2026-11-10,1.5,2626,77
+2026-11-11,47393,R-19645,jeronimo martins,piña special 2da,PE2,414,0,3200,13,208720,2026-11-10,1.5,2626,77
+2026-11-11,47393,R-19645,jeronimo martins,piña special 2da,PE2,420,0,3200,0,208766,2026-11-10,1.5,2626,47
+2026-11-11,47393,R-19645,jeronimo martins,piña special 2da,PE2,429,0,3200,0,208737,2026-11-10,1.5,2626,77
+2026-11-11,47393,R-19645,jeronimo martins,piña special 2da,PE2,427,91,3200,0,208706,2026-11-10,1.5,2626,77
 2026-11-11,47370,R-19646,jeronimo martins,piña special 2da,PE2,326,0,3200,0,208776,2026-11-10,1.5,2626,47
 2026-11-11,47370,R-19646,jeronimo martins,piña special 2da,PE2,424,350,3200,0,208763,2026-11-10,1.5,2626,77
 2026-11-11,,R-19649,reposicion jeronimo,piña special 2da,PE2,75,269,,0,208750,2026-11-10,1.5,2626,77
@@ -25988,6 +25988,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-12,47391,R-19661,jeronimo martins,piña special 2da,PE2,420,0,3800,0,208922,2026-11-11,1.5,2626,77
 2026-11-12,47391,R-19661,jeronimo martins,piña special 2da,PE2,415,0,3800,0,208934,2026-11-11,1.5,2626,77
 2026-11-12,47391,R-19661,jeronimo martins,piña special 2da,PE2,340,200,3800,0,209085,2026-11-12,1.5,2626,77
+2026-11-12,,R-19663,reposicion jeronimo,,PE2,0,115,,0,,,2,,
 2026-11-12,,R-19662,local sincelejo,piña special 1ra,PE1,562,0,3000,0,208817,2026-11-10,0.0 - 1.0,2626,77
 2026-11-12,,R-19662,local sincelejo,Piña AD1,AD1,532,0,3000,11,208855,2026-11-10,0.0 - 1.0,3126,78
 2026-11-12,,R-19662,local sincelejo,Piña AD1,AD1,581,0,3000,0,208847,2026-11-10,0.0 - 1.0,3226,78
