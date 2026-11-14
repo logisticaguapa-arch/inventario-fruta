@@ -26138,6 +26138,9 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-13,,,andres ruben oquendo,piña special 1ra,PE1,324,0,,220,208374,2026-11-08,0.0 - 1.0,2526,77
 2026-11-13,,,andres ruben oquendo,Piña AD1,AD1,542,0,,0,208857,2026-11-10,0.0 - 1.0,3326,78
 2026-11-13,,,andres ruben oquendo,Piña AD1,AD1,587,0,,0,208842,2026-11-10,0.0 - 1.0,3226,78
+2026-11-13,,,andres ruben oquendo,Piña AD1,AD1,361,0,,75,208843,2026-11-10,0.0 - 1.0,3226,78
+2026-11-13,,,andres ruben oquendo,piña special 1ra,PE1,564,0,,0,208745,2026-11-10,3.0 - 4.0,2626,77
+2026-11-13,,,andres ruben oquendo,piña special 1ra,PE1,539,0,,0,208760,2026-11-10,3.0 - 4.0,2626,77
 2026-11-13,,,Afrucol S.A.S.,piña special 1ra,PE1,566,0,,0,208641,2026-11-09,1.5 - 2.5,2626,77
 2026-11-13,,,Afrucol S.A.S.,Piña AD1,AD1,655,0,,0,208693,2026-11-09,1.5 - 2.5,3426,77
 2026-11-13,,,Afrucol S.A.S.,piña special 1ra,PE1,585,0,,0,208536,2026-11-09,1.5 - 2.5,2626,77
@@ -26147,4 +26150,5 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-13,,,Afrucol S.A.S.,piña special 1ra,PE1,132,0,,90,208753,2026-11-10,1.5 - 2.5,2626,77
 2026-11-13,,,Afrucol S.A.S.,piña special 1ra,PE1,61,52,,0,208732,2026-11-10,1.5 - 2.5,2626,77
 2026-11-13,,,dario alberto,piña special 1ra,PE1,548,452,,0,208936,2026-11-11,0.0 - 1.0,2626,77
-2026-11-13,,,dario alberto,piña special 1ra,PE1,562,0,,0,209114,2026-11-12,1.5 - 2.5,2626,77
+2026-11-13,,,dario alberto,piña special 1ra,PE1,562,438,,0,209114,2026-11-12,1.5 - 2.5,2626,77
+2026-11-13,,,dario alberto,piña special 1ra,PE1,585,415,,0,209104,2026-11-12,3.0 - 4.0,2626,77
