@@ -6,7 +6,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 208630,canastas,2026-11-09,PE2,piña special 2da,3.0 - 4.0,31
 208713,canastas,2026-11-10,PE2,piña special 2da,1.5 - 2.5,550
 208716,canastas,2026-11-10,PE1,piña special 1ra,0.0 - 1.0,591
-208722,canastas,2026-11-10,PE1,piña special 1ra,3.0 - 4.0,114
 208741,canastas,2026-11-10,PE2,piña special 2da,1.5 - 2.5,28
 208756,canastas,2026-11-10,PE1,piña special 1ra,0.0 - 1.0,589
 208773,canastas,2026-11-10,PE2,piña special 2da,1.5 - 2.5,528
@@ -28,7 +27,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 208862,canastas,2026-11-10,AD2,Piña AD2,1.5 - 2.5,270
 208863,canastas,2026-11-10,AD1,Piña AD1,0.0 - 1.0,364
 208871,canastas,2026-11-10,PE2,piña special 2da,1.5 - 2.5,90
-208872,canastas,2026-11-10,PE1,piña special 1ra,3.0 - 4.0,19
 208885,canastas,2026-11-10,AD1,Piña AD1,0.0 - 1.0,95
 208886,canastas,2026-11-10,PE1,piña special 1ra,1.5 - 2.5,99
 208889,canastas,2026-11-11,PE1,piña special 1ra,0.0 - 1.0,97
@@ -149,7 +147,7 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 209158,canastas,2026-11-12,PE2,piña special 2da,1.5 - 2.5,402
 209159,canastas,2026-11-12,PE1,piña special 1ra,1.5 - 2.5,430
 209160,canastas,2026-11-12,PE1,piña special 1ra,1.5 - 2.5,111
-209162,canastas,2026-11-12,PE3,piña special 3ra,1.5 - 2.5,527
+209162,canastas,2026-11-12,PE3,piña special 3ra,1.5 - 2.5,487
 209165,canastas,2026-11-12,PEBAB,piña special baby,1.5 - 2.5,264
 209167,canastas,2026-11-12,PE2,piña special 2da,1.5 - 2.5,574
 209168,canastas,2026-11-12,PE3,piña special 3ra,1.5 - 2.5,415
@@ -260,8 +258,8 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 209300,canastas,2026-11-13,PEGUA,piña special guapita,1.5 - 2.5,502
 209301,canastas,2026-11-13,PE2,piña special 2da,1.5,393
 209302,canastas,2026-11-13,PIND,piña indstria,1.5 - 2.5,503
-209303,canastas,2026-11-13,,,,0
-209304,canastas,2026-11-13,,,,0
+209303,canastas,2026-11-13,PE1,piña special 1ra,3.0 - 4.0,587
+209304,canastas,2026-11-13,PE2,piña special 2da,1.5,415
 209305,canastas,2026-11-13,,,,0
 209306,canastas,2026-11-13,,,,0
 209307,canastas,2026-11-13,,,,0

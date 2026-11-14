@@ -26144,6 +26144,8 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-13,,,andres ruben oquendo,piña special 1ra,PE1,552,0,,0,208794,2026-11-10,3.0 - 4.0,2626,77
 2026-11-13,,,andres ruben oquendo,piña special 1ra,PE1,135,0,,0,208801,2026-11-10,3.0 - 4.0,2626,77
 2026-11-13,,,andres ruben oquendo,piña special 1ra,PE1,114,0,,0,208734,2026-11-10,0,2626,77
+2026-11-13,,,andres ruben oquendo,piña special 1ra,PE1,16,0,,0,208872,2026-11-10,3.0 - 4.0,2626,77
+,,,,piña special 1ra,PE1,112,0,,0,208722,2026-11-10,3.0 - 4.0,2626,77
 2026-11-13,,,Afrucol S.A.S.,piña special 1ra,PE1,566,0,,0,208641,2026-11-09,1.5 - 2.5,2626,77
 2026-11-13,,,Afrucol S.A.S.,Piña AD1,AD1,655,0,,0,208693,2026-11-09,1.5 - 2.5,3426,77
 2026-11-13,,,Afrucol S.A.S.,piña special 1ra,PE1,585,0,,0,208536,2026-11-09,1.5 - 2.5,2626,77
@@ -26156,4 +26158,4 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-13,,,dario alberto,piña special 1ra,PE1,562,438,,0,209114,2026-11-12,1.5 - 2.5,2626,77
 2026-11-13,,,dario alberto,piña special 1ra,PE1,585,415,,0,209104,2026-11-12,3.0 - 4.0,2626,77
 2026-11-13,,,KARINA BORJA,piña special 3ra,PE3,477,0,,0,209097,2026-11-12,1.5 - 2.5,2626,77
-2026-11-13,,,KARINA BORJA,piña special 3ra,PE3,483,0,,0,209253,2026-11-13,1.5 - 2.5,,
+2026-11-13,,,KARINA BORJA,piña special 3ra,PE3,483,40,,0,209253,2026-11-13,1.5 - 2.5,,
