@@ -26121,12 +26121,12 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-13,,R-19674,carmen susana hoyos,piña special guapita,PEGUA,510,0,800,0,209247,2026-11-13,1.5 - 2.5,,
 2026-11-13,,R-19674,carmen susana hoyos,piña special guapita,PEGUA,400,0,800,0,209132,2026-11-12,1.5 - 2.5,2626,47
 2026-11-13,,R-19674,carmen susana hoyos,piña special guapita,PEGUA,118,0,800,0,209251,2026-11-13,1.5 - 2.5,,
-2026-11-13,,R-19675,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,1260,0,,200,209217,2026-11-12,3.0 - 4.0,3526,78
-2026-11-13,,R-19675,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,512,0,,0,209193,2026-11-12,3.0 - 4.0,3726,78
-2026-11-13,,R-19675,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,569,0,,0,209171,2026-11-12,3.0 - 4.0,3326,78
-2026-11-13,,R-19675,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,528,0,,0,209184,2026-11-12,3.0 - 4.0,3026,78
-2026-11-13,,R-19675,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,131,0,,47,209200,2026-11-12,3.0 - 4.0,2726,32
-2026-11-13,,,ramiro parada,piña special 1ra,PE1,1435,0,,0,208530,2026-11-08,0.0 - 1.0,2626,77
+2026-11-13,,R-19675,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,1260,0,1300,200,209217,2026-11-12,3.0 - 4.0,3526,78
+2026-11-13,,R-19675,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,512,0,1300,0,209193,2026-11-12,3.0 - 4.0,3726,78
+2026-11-13,,R-19675,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,569,0,1300,0,209171,2026-11-12,3.0 - 4.0,3326,78
+2026-11-13,,R-19675,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,528,0,1300,0,209184,2026-11-12,3.0 - 4.0,3026,78
+2026-11-13,,R-19675,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,131,0,1300,47,209200,2026-11-12,3.0 - 4.0,2726,32
+2026-11-13,,R-19676,ramiro parada,piña special 1ra,PE1,1435,0,,0,208530,2026-11-08,0.0 - 1.0,2626,77
 2026-11-13,,,ramiro parada,piña special 1ra,PE1,1373,192,,0,208529,2026-11-08,0.0 - 1.0,2626,77
 2026-11-13,,,andres ruben oquendo,piña special 1ra,PE1,330,0,,10,208440,2026-11-08,0.0 - 1.0,2626,77
 2026-11-13,,,andres ruben oquendo,piña special 1ra,PE1,532,0,,50,208435,2026-11-08,0.0 - 1.0,2626,77
@@ -26136,6 +26136,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-13,,,andres ruben oquendo,piña special 1ra,PE1,79,0,,0,208459,2026-11-08,0.0 - 1.0,2626,77
 2026-11-13,,,andres ruben oquendo,piña special 1ra,PE1,37,0,,0,208479,2026-11-08,0.0 - 1.0,2626,77
 2026-11-13,,,andres ruben oquendo,piña special 1ra,PE1,324,0,,220,208374,2026-11-08,0.0 - 1.0,2526,77
+2026-11-13,,,andres ruben oquendo,Piña AD1,AD1,542,0,,0,208857,2026-11-10,0.0 - 1.0,3326,78
 2026-11-13,,,Afrucol S.A.S.,piña special 1ra,PE1,566,0,,0,208641,2026-11-09,1.5 - 2.5,2626,77
 2026-11-13,,,Afrucol S.A.S.,Piña AD1,AD1,655,0,,0,208693,2026-11-09,1.5 - 2.5,3426,77
 2026-11-13,,,Afrucol S.A.S.,piña special 1ra,PE1,585,0,,0,208536,2026-11-09,1.5 - 2.5,2626,77
@@ -26143,4 +26144,5 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-13,,,Afrucol S.A.S.,Piña AD1,AD1,263,0,,0,208878,2026-11-10,1.5 - 2.5,3126,78
 2026-11-13,,,Afrucol S.A.S.,piña special 1ra,PE1,107,0,,0,208719,2026-11-10,1.5 - 2.5,2626,77
 2026-11-13,,,Afrucol S.A.S.,piña special 1ra,PE1,132,0,,90,208753,2026-11-10,1.5 - 2.5,2626,77
-2026-11-13,,,Afrucol S.A.S.,piña special 1ra,PE1,61,0,,0,208732,2026-11-10,1.5 - 2.5,2626,77
+2026-11-13,,,Afrucol S.A.S.,piña special 1ra,PE1,61,52,,0,208732,2026-11-10,1.5 - 2.5,2626,77
+2026-11-13,,,dario alberto,piña special 1ra,PE1,548,452,,0,208936,2026-11-11,0.0 - 1.0,2626,77
