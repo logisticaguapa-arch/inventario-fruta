@@ -26194,36 +26194,37 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-13,47425,R-19685,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,544,456,3100,0,209127,2026-11-12,0,2626,47
 2026-11-13,,R-19682,reposicion éxito medellin,,PE1,0,100,,0,,,1,,
 2026-11-13,47438,R-19688,venta empleados,Piña AD1,AD1,286,0,2200,0,209365,2026-11-13,1.5 - 2.5,3626,79
-2026-11-14,,,local medellin,piña special 2da,PE2,459,0,,0,209137,2026-11-12,1.5 - 2.5,2626,77
-2026-11-14,,,local medellin,piña special 2da,PE2,503,0,,0,209157,2026-11-12,1.5 - 2.5,2626,77
-2026-11-14,,,local medellin,piña special 2da,PE2,509,0,,0,209118,2026-11-12,1.5 - 2.5,2626,77
-2026-11-14,,,local medellin,piña special 2da,PE2,503,134,,0,209128,2026-11-12,1.5 - 2.5,2626,47
-2026-11-14,,,local medellin,piña special 2da,PE2,481,411,,9,209121,2026-11-12,1.5 - 2.5,2626,77
-2026-11-14,,,local medellin,piña special 1ra,PE1,547,402,,6,209125,2026-11-12,1.5 - 2.5,2626,47
-2026-11-14,,,local medellin,piña special 1ra,PE1,581,170,,0,209073,2026-11-12,1.5 - 2.5,2626,77
-2026-11-14,,,local medellin,piña special 1ra,PE1,437,510,,130,209225,2026-11-13,3.0 - 4.0,2626,47
-2026-11-14,,,local medellin,piña special 1ra,PE1,467,86,,0,209349,2026-11-13,3.0 - 4.0,2626,47
-2026-11-14,,,local medellin,Piña AD3,AD3,169,0,,0,209207,2026-11-12,1.5 - 2.5,3126,78
-2026-11-14,,,local medellin,piña special 3ra,PE3,410,0,,0,209168,2026-11-12,1.5 - 2.5,2626,77
-2026-11-14,,,local medellin,piña special 3ra,PE3,179,0,,0,209162,2026-11-12,1.5 - 2.5,2626,77
-2026-11-14,,,local medellin,piña special 3ra,PE3,214,28,,0,209211,2026-11-12,1.5 - 2.5,2626,77
-2026-11-14,,,local medellin,piña special 3ra,PE3,496,0,,0,209352,2026-11-13,3.0 - 4.0,2626,47
-2026-11-14,,,local medellin,piña special 3ra,PE3,474,160,,16,209270,2026-11-13,1.5 - 2.5,2626,77
-2026-11-14,,,local sincelejo,Piña AD3,AD3,475,308,,4,209194,2026-11-12,1.5 - 2.5,2726,32
-2026-11-14,,,local sincelejo,piña special 3ra,PE3,504,0,,2,209355,2026-11-13,1.5 - 2.5,2626,47
-2026-11-14,,,local sincelejo,piña special 3ra,PE3,522,174,,0,209286,2026-11-13,1.5 - 2.5,2626,47
-2026-11-14,,,local sincelejo,piña special guapita,PEGUA,488,0,,0,209233,2026-11-13,1.5 - 2.5,2626,77
-2026-11-14,,,local sincelejo,piña special guapita,PEGUA,511,0,,0,209255,2026-11-13,1.5 - 2.5,2626,77
-2026-11-14,,,local sincelejo,piña special guapita,PEGUA,503,0,,4,209265,2026-11-13,1.5 - 2.5,2626,47
-2026-11-14,,,local sincelejo,piña special guapita,PEGUA,483,15,,0,209331,2026-11-13,1.5 - 2.5,2626,47
-2026-11-14,,,local sincelejo,piña special baby,PEBAB,445,0,,4,209143,2026-11-12,1.5 - 2.5,2626,47
-2026-11-14,,,local sincelejo,Piña ADBABY,ADBABY,99,0,,0,209196,2026-11-12,1.5 - 2.5,2726,32
-2026-11-14,,,local sincelejo,piña special baby,PEBAB,240,0,,0,209165,2026-11-12,1.5 - 2.5,2626,77
-2026-11-14,,,local sincelejo,piña special baby,PEBAB,446,0,,0,209091,2026-11-12,1.5 - 2.5,2626,77
-2026-11-14,,,local sincelejo,piña special baby,PEBAB,58,44,,0,209202,2026-11-12,1.5 - 2.5,2626,77
-2026-11-14,,,local sincelejo,piña special baby,PEBAB,445,0,,0,209264,2026-11-13,1.5 - 2.5,2626,47
-2026-11-14,,,local sincelejo,piña special baby,PEBAB,453,0,,0,209310,2026-11-13,1.5 - 2.5,2626,77
-2026-11-14,,,local sincelejo,piña special baby,PEBAB,207,95,,0,209351,2026-11-13,1.5 - 2.5,2626,47
+2026-11-14,,R-19691,local medellin,piña special 2da,PE2,459,0,,0,209137,2026-11-12,1.5 - 2.5,2626,77
+2026-11-14,,R-19691,local medellin,piña special 2da,PE2,503,0,,0,209157,2026-11-12,1.5 - 2.5,2626,77
+2026-11-14,,R-19691,local medellin,piña special 2da,PE2,509,0,,0,209118,2026-11-12,1.5 - 2.5,2626,77
+2026-11-14,,R-19691,local medellin,piña special 2da,PE2,503,134,,0,209128,2026-11-12,1.5 - 2.5,2626,47
+2026-11-14,,R-19691,local medellin,piña special 2da,PE2,481,411,,9,209121,2026-11-12,1.5 - 2.5,2626,77
+2026-11-14,,R-19691,local medellin,piña special 1ra,PE1,547,402,,6,209125,2026-11-12,1.5 - 2.5,2626,47
+2026-11-14,,R-19691,local medellin,piña special 1ra,PE1,581,170,,0,209073,2026-11-12,1.5 - 2.5,2626,77
+2026-11-14,,R-19691,local medellin,piña special 1ra,PE1,437,510,,130,209225,2026-11-13,3.0 - 4.0,2626,47
+2026-11-14,,R-19691,local medellin,piña special 1ra,PE1,467,86,,0,209349,2026-11-13,3.0 - 4.0,2626,47
+2026-11-14,,R-19691,local medellin,,PE2,0,200,,0,,,3,,
+2026-11-14,,R-19691,local medellin,Piña AD3,AD3,169,0,,0,209207,2026-11-12,1.5 - 2.5,3126,78
+2026-11-14,,R-19691,local medellin,piña special 3ra,PE3,410,0,,0,209168,2026-11-12,1.5 - 2.5,2626,77
+2026-11-14,,R-19691,local medellin,piña special 3ra,PE3,179,0,,0,209162,2026-11-12,1.5 - 2.5,2626,77
+2026-11-14,,R-19691,local medellin,piña special 3ra,PE3,214,28,,0,209211,2026-11-12,1.5 - 2.5,2626,77
+2026-11-14,,R-19691,local medellin,piña special 3ra,PE3,496,0,,0,209352,2026-11-13,3.0 - 4.0,2626,47
+2026-11-14,,R-19691,local medellin,piña special 3ra,PE3,474,160,,16,209270,2026-11-13,1.5 - 2.5,2626,77
+2026-11-14,,R-19689,local sincelejo,Piña AD3,AD3,475,308,,4,209194,2026-11-12,1.5 - 2.5,2726,32
+2026-11-14,,R-19689,local sincelejo,piña special 3ra,PE3,504,0,,2,209355,2026-11-13,1.5 - 2.5,2626,47
+2026-11-14,,R-19689,local sincelejo,piña special 3ra,PE3,522,174,,0,209286,2026-11-13,1.5 - 2.5,2626,47
+2026-11-14,,R-19689,local sincelejo,piña special guapita,PEGUA,488,0,,0,209233,2026-11-13,1.5 - 2.5,2626,77
+2026-11-14,,R-19689,local sincelejo,piña special guapita,PEGUA,511,0,,0,209255,2026-11-13,1.5 - 2.5,2626,77
+2026-11-14,,R-19689,local sincelejo,piña special guapita,PEGUA,503,0,,4,209265,2026-11-13,1.5 - 2.5,2626,47
+2026-11-14,,R-19689,local sincelejo,piña special guapita,PEGUA,483,15,,0,209331,2026-11-13,1.5 - 2.5,2626,47
+2026-11-14,,R-19689,local sincelejo,piña special baby,PEBAB,445,0,,4,209143,2026-11-12,1.5 - 2.5,2626,47
+2026-11-14,,R-19689,local sincelejo,Piña ADBABY,ADBABY,99,0,,0,209196,2026-11-12,1.5 - 2.5,2726,32
+2026-11-14,,R-19689,local sincelejo,piña special baby,PEBAB,240,0,,0,209165,2026-11-12,1.5 - 2.5,2626,77
+2026-11-14,,R-19689,local sincelejo,piña special baby,PEBAB,446,0,,0,209091,2026-11-12,1.5 - 2.5,2626,77
+2026-11-14,,R-19689,local sincelejo,piña special baby,PEBAB,58,44,,0,209202,2026-11-12,1.5 - 2.5,2626,77
+2026-11-14,,R-19689,local sincelejo,piña special baby,PEBAB,445,0,,0,209264,2026-11-13,1.5 - 2.5,2626,47
+2026-11-14,,R-19689,local sincelejo,piña special baby,PEBAB,453,0,,0,209310,2026-11-13,1.5 - 2.5,2626,77
+2026-11-14,,R-19689,local sincelejo,piña special baby,PEBAB,207,95,,0,209351,2026-11-13,1.5 - 2.5,2626,47
 2026-11-14,,R-19690,cartagena,Piña AD1,AD1,567,0,,18,209360,2026-11-13,0.0 - 1.0,3626,79
 2026-11-14,,R-19690,cartagena,piña special 1ra,PE1,538,0,,0,209339,2026-11-13,0.0 - 1.0,2626,47
 2026-11-14,,R-19690,cartagena,piña special 1ra,PE1,532,0,,0,209309,2026-11-13,0.0 - 1.0,2626,77
