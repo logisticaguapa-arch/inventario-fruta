@@ -4307,3 +4307,10 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,46,noviembre,2026-11-14,3626,79,canastas,18.0,,18.0,18.0,Muestreo,AD1
 2026,46,noviembre,2026-11-14,2626,77,canastas,57.0,,57.0,57.0,Enferma,PE1
 2026,46,noviembre,2026-11-14,3026,78,canastas,47.0,,47.0,47.0,Enferma,AD-PIND
+2026,46,noviembre,2026-11-14,2626,77,canastas,84.0,,84.0,84.0,Enferma,PE2
+2026,46,noviembre,2026-11-14,2626,47,canastas,31.0,,31.0,31.0,Enferma,PE2
+2026,46,noviembre,2026-11-14,2626,77,canastas,78.0,,78.0,78.0,Enferma,PE2
+2026,46,noviembre,2026-11-14,2626,77,canastas,363.0,,363.0,363.0,Daño por reposo,PE1
+2026,46,noviembre,2026-11-14,2626,77,canastas,138.0,,138.0,138.0,Enferma,PIND
+2026,46,noviembre,2026-11-14,2626,47,canastas,128.0,,128.0,128.0,Enferma,PE1
+2026,46,noviembre,2026-11-14,2726,32,canastas,309.0,,309.0,309.0,Enferma,AD1
