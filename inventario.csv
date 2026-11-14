@@ -29,7 +29,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 208836,canastas,2026-11-10,PE2,piña special 2da,1.5 - 2.5,285
 208837,canastas,2026-11-10,PE1,piña special 1ra,4,363
 208840,canastas,2026-11-10,AD1,Piña AD1,0.0 - 1.0,587
-208842,canastas,2026-11-10,AD1,Piña AD1,0.0 - 1.0,605
 208843,canastas,2026-11-10,AD1,Piña AD1,0.0 - 1.0,451
 208848,canastas,2026-11-10,AD1,Piña AD1,0.0 - 1.0,105
 208862,canastas,2026-11-10,AD2,Piña AD2,1.5 - 2.5,270
@@ -124,7 +123,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 209107,canastas,2026-11-12,PE1,piña special 1ra,1.5 - 2.5,574
 209109,canastas,2026-11-12,PE1,piña special 1ra,1.5 - 2.5,596
 209112,canastas,2026-11-12,PE1,piña special 1ra,1.5 - 2.5,575
-209114,canastas,2026-11-12,PE1,piña special 1ra,1.5 - 2.5,576
 209116,canastas,2026-11-12,PE2,piña special 2da,1.5 - 2.5,531
 209117,canastas,2026-11-12,PE1,piña special 1ra,1,572
 209118,canastas,2026-11-12,PE2,piña special 2da,1.5 - 2.5,518
@@ -257,10 +255,26 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 209286,canastas,2026-11-13,PE3,piña special 3ra,1.5 - 2.5,527
 209287,canastas,2026-11-13,PE2,piña special 2da,1.5 - 2.5,528
 209288,canastas,2026-11-13,PE3,piña special 3ra,1.5 - 2.5,513
-209289,canastas,2026-11-13,PE1,piña special 1ra,1.5 - 2.5,-91
-209290,canastas,2026-11-13,,,,0
-209291,canastas,2026-11-13,,,,0
+209289,canastas,2026-11-13,PE1,piña special 1ra,1.5 - 2.5,607
+209290,canastas,2026-11-13,PE1,piña special 1ra,1.5 - 2.5,621
+209291,canastas,2026-11-13,PE1,piña special 1ra,1.5 - 2.5,576
 209292,canastas,2026-11-13,,,,0
 209293,canastas,2026-11-13,,,,0
 209294,canastas,2026-11-13,,,,0
 209295,canastas,2026-11-13,,,,0
+209296,canastas,2026-11-13,,,,0
+209297,canastas,2026-11-13,,,,0
+209298,canastas,2026-11-13,,,,0
+209299,canastas,2026-11-13,,,,0
+209300,canastas,2026-11-13,,,,0
+209301,canastas,2026-11-13,,,,0
+209302,canastas,2026-11-13,,,,0
+209303,canastas,2026-11-13,,,,0
+209304,canastas,2026-11-13,,,,0
+209305,canastas,2026-11-13,,,,0
+209306,canastas,2026-11-13,,,,0
+209307,canastas,2026-11-13,,,,0
+209308,canastas,2026-11-13,,,,0
+209309,canastas,2026-11-13,,,,0
+209310,canastas,2026-11-13,,,,0
+209311,canastas,2026-11-13,,,,0
