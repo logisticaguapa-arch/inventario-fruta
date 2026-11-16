@@ -37,13 +37,12 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 209433,canastas,2026-11-15,PE1,piña special 1ra,0,71
 209437,canastas,2026-11-15,PE3,piña special 3ra,1.5 - 2.5,30
 209458,canastas,2026-11-15,PE1,piña special 1ra,0.0 - 1.0,40
-209460,canastas,2026-11-15,PE1,piña special 1ra,0.0 - 1.0,522
+209460,canastas,2026-11-15,PE1,piña special 1ra,1.5 - 2.5,131
 209466,canastas,2026-11-15,PEBAB,piña special baby,1.5 - 2.5,396
 209469,canastas,2026-11-15,PE3,piña special 3ra,1.5 - 2.5,505
 209471,canastas,2026-11-15,PE1,piña special 1ra,1.5 - 2.5,527
 209472,canastas,2026-11-15,PE1,piña special 1ra,0,136
 209473,canastas,2026-11-15,PEBAB,piña special baby,1.5 - 2.5,434
-209474,canastas,2026-11-15,PE1,piña special 1ra,0.0 - 1.0,473
 209481,canastas,2026-11-15,PE1,piña special 1ra,0.0 - 1.0,534
 209482,canastas,2026-11-15,PE3,piña special 3ra,1.5 - 2.5,507
 209490,canastas,2026-11-15,PE3,piña special 3ra,1.5 - 2.5,506
@@ -90,7 +89,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 209583,canastas,2026-11-16,PIND,piña indstria,1.5 - 2.5,453
 209584,canastas,2026-11-16,PE3,piña special 3ra,1.5 - 2.5,501
 209585,canastas,2026-11-16,PE1,piña special 1ra,1.5 - 2.5,572
-209586,canastas,2026-11-16,PE2,piña special 2da,1.5 - 2.5,513
 209587,canastas,2026-11-16,PEBAB,piña special baby,1.5 - 2.5,430
 209590,canastas,2026-11-16,PE3,piña special 3ra,1.5 - 2.5,495
 209591,canastas,2026-11-16,PEGUA,piña special guapita,1.5 - 2.5,559
@@ -103,10 +101,10 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 209604,canastas,2026-11-16,PE3,piña special 3ra,1.5 - 2.5,492
 209605,canastas,2026-11-16,PE2,piña special 2da,1.5 - 2.5,512
 209607,canastas,2026-11-16,PE2,piña special 2da,1.5,420
-209609,canastas,2026-11-16,,,,0
-209610,canastas,2026-11-16,,,,0
-209611,canastas,2026-11-16,,,,0
-209612,canastas,2026-11-16,,,,0
+209609,canastas,2026-11-16,PE2,piña special 2da,1.5,417
+209610,canastas,2026-11-16,PE2,piña special 2da,1.5,405
+209611,canastas,2026-11-16,PE2,piña special 2da,1.5,413
+209612,canastas,2026-11-16,PEGUA,piña special guapita,1.5 - 2.5,507
 209613,canastas,2026-11-16,,,,0
 209614,canastas,2026-11-16,,,,0
 209615,canastas,2026-11-16,,,,0
