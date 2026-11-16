@@ -26591,8 +26591,8 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-16,,,jeronimo martins,piña special 2da,PE2,408,0,,0,209543,2026-11-16,1.5,,
 2026-11-16,,,jeronimo martins,piña special 2da,PE2,412,0,,0,209563,2026-11-16,1.5,,
 2026-11-16,,,jeronimo martins,piña special 2da,PE2,410,0,,0,209574,2026-11-16,1.5,,
-2026-11-16,,,jeronimo martins,piña special 2da,PE2,412,0,,0,209561,2026-11-16,1.5,,
-2026-11-16,,,jeronimo martins,piña special 2da,PE2,412,0,,0,209555,2026-11-16,1.5,,
+2026-11-16,,,jeronimo martins,piña special 2da,PE2,412,408,,0,209561,2026-11-16,1.5,,
+2026-11-16,,,jeronimo martins,piña special 2da,PE2,4,0,,0,209555,2026-11-16,1.5,,
 2026-11-16,,,jeronimo martins,piña special 2da,PE2,412,0,,0,209542,2026-11-16,1.5,,
 2026-11-16,,,jeronimo martins,piña special 2da,PE2,411,0,,0,209588,2026-11-16,1.5,,
 2026-11-16,,,jeronimo martins,piña special 2da,PE2,418,0,,0,209560,2026-11-16,1.5,,
@@ -26600,6 +26600,25 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-16,,,jeronimo martins,piña special 1ra,PE1,409,0,,0,209551,2026-11-16,1.5,,
 2026-11-16,,,jeronimo martins,piña special 1ra,PE1,406,0,,0,209571,2026-11-16,1.5,,
 2026-11-16,,,jeronimo martins,piña special 1ra,PE1,431,0,,0,209576,2026-11-16,1.5,,
-2026-11-16,,,jeronimo martins,piña special 1ra,PE1,404,0,,0,209548,2026-11-16,1.5,,
-2026-11-16,,,jeronimo martins,piña special 1ra,PE1,404,0,,0,209547,2026-11-16,1.5,,
-2026-11-16,,,jeronimo martins,piña special 1ra,PE1,412,0,,0,209544,2026-11-16,1.5,,
+2026-11-16,,,jeronimo martins,piña special 1ra,PE1,404,322,,0,209548,2026-11-16,1.5,,
+2026-11-16,,,reposicion jeronimo,piña special 1ra,PE1,82,0,,0,209547,2026-11-16,1.5,,
+2026-11-16,,,reposicion jeronimo,piña special 1ra,PE1,412,0,,0,209544,2026-11-16,1.5,,
+2026-11-16,,,jeronimo martins,piña special 2da,PE2,414,0,,0,209595,2026-11-16,1.5,,
+2026-11-16,,,jeronimo martins,piña special 2da,PE2,413,0,,0,209593,2026-11-16,1.5,,
+2026-11-16,,,jeronimo martins,piña special 2da,PE2,406,0,,0,209536,2026-11-16,1.5,,
+2026-11-16,,,jeronimo martins,piña special 2da,PE2,407,0,,0,209539,2026-11-16,1.5,,
+2026-11-16,,,jeronimo martins,piña special 2da,PE2,410,0,,0,209589,2026-11-16,1.5,,
+2026-11-16,,,jeronimo martins,piña special 2da,PE2,404,0,,0,209550,2026-11-16,1.5,,
+2026-11-16,,,jeronimo martins,piña special 2da,PE2,405,0,,0,209601,2026-11-16,1.5,,
+2026-11-16,,,jeronimo martins,piña special 1ra,PE1,389,0,,0,209592,2026-11-16,1.5,,
+2026-11-16,,,jeronimo martins,piña special 1ra,PE1,409,0,,0,209602,2026-11-16,1.5,,
+2026-11-16,,,jeronimo martins,piña special 1ra,PE1,413,0,,0,209559,2026-11-16,1.5,,
+2026-11-16,,,jeronimo martins,piña special 1ra,PE1,423,0,,0,209606,2026-11-16,1.5,,
+2026-11-16,,,jeronimo martins,piña special 1ra,PE1,406,0,,0,209562,2026-11-16,1.5,,
+2026-11-16,,,local sincelejo,piña special 2da,PE2,561,0,,0,209506,2026-11-15,1.5 - 2.5,2726,53
+2026-11-16,,,local sincelejo,piña special 2da,PE2,491,0,,0,209464,2026-11-15,1.5 - 2.5,2726,53
+2026-11-16,,,local sincelejo,piña special 2da,PE2,25,0,,0,209516,2026-11-15,1.5 - 2.5,2726,53
+2026-11-16,,,local sincelejo,Piña AD2,AD2,311,0,,0,209525,2026-11-15,1.5 - 2.5,4126,81
+2026-11-16,,,local sincelejo,piña special 2da,PE2,112,0,,0,209608,2026-11-16,1.5 - 2.5,,
+2026-11-16,,,local sincelejo,piña special 1ra,PE1,561,0,,0,209394,2026-11-15,1.5 - 2.5,2726,51
+2026-11-16,,,local sincelejo,piña special 1ra,PE1,548,0,,0,209465,2026-11-15,1.5 - 2.5,2726,51
