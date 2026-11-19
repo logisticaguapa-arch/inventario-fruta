@@ -26558,14 +26558,14 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-16,47471,R-19722,ramiro parada,AD-piña indstria,AD-PIND,53,0,1500,0,209519,2026-11-15,1.5 - 2.5,4026,82
 2026-11-16,47471,R-19722,ramiro parada,piña indstria,PIND,342,0,1500,0,209533,2026-11-15,1.5 - 2.5,2726,53
 2026-11-16,47471,R-19722,ramiro parada,piña indstria,PIND,108,0,1500,0,209577,2026-11-16,1.5 - 2.5,2726,32
-2026-11-16,47472,R-19719,andres ruben oquendo,piña special 3ra,PE3,486,0,1000,0,209502,2026-11-15,1.5 - 2.5,2726,53
-2026-11-16,47472,R-19719,andres ruben oquendo,piña special 3ra,PE3,497,0,1000,0,209497,2026-11-15,1.5 - 2.5,2726,32
-2026-11-16,47472,R-19719,andres ruben oquendo,piña special 3ra,PE3,495,122,1000,0,209463,2026-11-15,1.5 - 2.5,2726,53
-2026-11-16,47472,R-19719,andres ruben oquendo,piña special 1ra,PE1,569,0,2800,0,209457,2026-11-15,1.5 - 2.5,2726,51
-2026-11-16,47472,R-19719,andres ruben oquendo,Piña AD1,AD1,509,0,2800,0,209524,2026-11-15,1.5 - 2.5,4126,81
-2026-11-16,47472,R-19719,andres ruben oquendo,piña special 1ra,PE1,520,0,2800,0,209512,2026-11-15,1.5 - 2.5,2726,53
-2026-11-16,47472,R-19719,andres ruben oquendo,piña special 1ra,PE1,581,0,2800,0,209530,2026-11-15,1.5 - 2.5,2726,53
-2026-11-16,47472,R-19719,andres ruben oquendo,piña special 1ra,PE1,564,257,2800,0,209487,2026-11-15,1.5 - 2.5,2726,53
+2026-11-16,47538,R-19719,andres ruben oquendo,piña special 3ra,PE3,486,0,1000,0,209502,2026-11-15,1.5 - 2.5,2726,53
+2026-11-16,47538,R-19719,andres ruben oquendo,piña special 3ra,PE3,497,0,1000,0,209497,2026-11-15,1.5 - 2.5,2726,32
+2026-11-16,47538,R-19719,andres ruben oquendo,piña special 3ra,PE3,495,122,1000,0,209463,2026-11-15,1.5 - 2.5,2726,53
+2026-11-16,47538,R-19719,andres ruben oquendo,piña special 1ra,PE1,569,0,2800,0,209457,2026-11-15,1.5 - 2.5,2726,51
+2026-11-16,47538,R-19719,andres ruben oquendo,Piña AD1,AD1,509,0,2800,0,209524,2026-11-15,1.5 - 2.5,4126,81
+2026-11-16,47538,R-19719,andres ruben oquendo,piña special 1ra,PE1,520,0,2800,0,209512,2026-11-15,1.5 - 2.5,2726,53
+2026-11-16,47538,R-19719,andres ruben oquendo,piña special 1ra,PE1,581,0,2800,0,209530,2026-11-15,1.5 - 2.5,2726,53
+2026-11-16,47538,R-19719,andres ruben oquendo,piña special 1ra,PE1,564,257,2800,0,209487,2026-11-15,1.5 - 2.5,2726,53
 2026-11-16,47473,R-19721,COMERCIALIZADORA DE PIÑAS AR SAS,piña special 2da,PE2,504,0,2500,0,209404,2026-11-15,1.5 - 2.5,2626,47
 2026-11-16,47473,R-19721,COMERCIALIZADORA DE PIÑAS AR SAS,piña special 2da,PE2,497,0,2500,0,209444,2026-11-15,1.5 - 2.5,2726,32
 2026-11-16,47473,R-19721,COMERCIALIZADORA DE PIÑAS AR SAS,piña special 2da,PE2,498,0,2500,0,209494,2026-11-15,1.5 - 2.5,2726,32
@@ -27028,6 +27028,10 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-19,,,Aldinsen Gonzalez,piña indstria,PIND,476,0,,0,209916,2026-11-18,1.5 - 2.5,2726,32
 2026-11-19,,,Aldinsen Gonzalez,piña indstria,PIND,459,0,,0,209859,2026-11-18,1.5 - 2.5,2726,32
 2026-11-19,,,Aldinsen Gonzalez,piña indstria,PIND,490,0,,0,209855,2026-11-18,1.5 - 2.5,2726,32
+2026-11-19,,,Aldinsen Gonzalez,piña indstria,PIND,460,0,,0,209862,2026-11-18,1.5 - 2.5,2726,32
+2026-11-19,,,Aldinsen Gonzalez,piña indstria,PIND,478,0,,0,209958,2026-11-18,1.5 - 2.5,2726,32
+2026-11-19,,,Aldinsen Gonzalez,piña indstria,PIND,154,0,,0,209818,2026-11-18,1.5 - 2.5,2726,53
+2026-11-19,,,Aldinsen Gonzalez,piña indstria,PIND,461,0,,0,209841,2026-11-18,1.5 - 2.5,2726,53
 2026-11-19,,,cartagena,piña special 1ra,PE1,557,0,,0,209844,2026-11-18,0.0 - 1.0,2726,53
 2026-11-19,,,cartagena,piña special 1ra,PE1,574,0,,0,209905,2026-11-18,0.0 - 1.0,2726,53
 2026-11-19,,,cartagena,piña special 1ra,PE1,552,0,,0,209935,2026-11-18,0.0 - 1.0,2726,53
@@ -27037,3 +27041,4 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-19,,,cartagena,piña special 1ra,PE1,567,0,,0,209900,2026-11-18,1.5 - 2.5,2726,53
 2026-11-19,,,cartagena,piña special 1ra,PE1,597,0,,0,209906,2026-11-18,1.5 - 2.5,2726,53
 2026-11-19,,,cartagena,piña special 1ra,PE1,553,283,,0,209941,2026-11-18,1.5 - 2.5,2726,53
+2026-11-19,,,Aldinsen Gonzalez,piña special 2da,PE2,500,0,,0,209867,2026-11-18,1.5 - 2.5,2726,32
