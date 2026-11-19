@@ -119,7 +119,7 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 210044,canastas,2026-11-19,PE1,piña special 1ra,1.5 - 2.5,562
 210045,canastas,2026-11-19,PE2,piña special 2da,1.5 - 2.5,515
 210046,canastas,2026-11-19,PIND,piña indstria,1.5 - 2.5,472
-210047,canastas,2026-11-19,,,,0
+210047,canastas,2026-11-19,PE1,piña special 1ra,0,529
 210048,canastas,2026-11-19,,,,0
 210049,canastas,2026-11-19,,,,0
 210050,canastas,2026-11-19,,,,0
