@@ -27032,6 +27032,14 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-19,,,Aldinsen Gonzalez,piña indstria,PIND,478,0,,0,209958,2026-11-18,1.5 - 2.5,2726,32
 2026-11-19,,,Aldinsen Gonzalez,piña indstria,PIND,154,0,,0,209818,2026-11-18,1.5 - 2.5,2726,53
 2026-11-19,,,Aldinsen Gonzalez,piña indstria,PIND,461,0,,0,209841,2026-11-18,1.5 - 2.5,2726,53
+2026-11-19,,,Aldinsen Gonzalez,AD-piña indstria,AD-PIND,257,0,,0,209987,2026-11-18,1.5 - 2.5,2926,55
+2026-11-19,,,Aldinsen Gonzalez,piña indstria,PIND,462,0,,11,209890,2026-11-18,1.5 - 2.5,2726,53
+2026-11-19,,,Aldinsen Gonzalez,piña indstria,PIND,56,0,,0,210034,2026-11-19,1.5 - 2.5,,
+2026-11-19,,,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,459,0,,0,209975,2026-11-18,3.0 - 4.0,2926,55
+2026-11-19,,,Aldinsen Gonzalez,piña jugos,PJUG,229,0,,0,209796,2026-11-17,3.0 - 4.0,2726,53
+2026-11-19,,,Aldinsen Gonzalez,piña jugos,PJUG,401,0,,0,209779,2026-11-17,3.0 - 4.0,2726,32
+2026-11-19,,,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,237,0,,0,209994,2026-11-18,3.0 - 4.0,2926,55
+2026-11-19,,,Aldinsen Gonzalez,piña jugos,PJUG,69,0,,120,209997,2026-11-18,3.0 - 4.0,2726,53
 2026-11-19,,,cartagena,piña special 1ra,PE1,557,0,,0,209844,2026-11-18,0.0 - 1.0,2726,53
 2026-11-19,,,cartagena,piña special 1ra,PE1,574,0,,0,209905,2026-11-18,0.0 - 1.0,2726,53
 2026-11-19,,,cartagena,piña special 1ra,PE1,552,0,,0,209935,2026-11-18,0.0 - 1.0,2726,53
@@ -27041,4 +27049,8 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-19,,,cartagena,piña special 1ra,PE1,567,0,,0,209900,2026-11-18,1.5 - 2.5,2726,53
 2026-11-19,,,cartagena,piña special 1ra,PE1,597,0,,0,209906,2026-11-18,1.5 - 2.5,2726,53
 2026-11-19,,,cartagena,piña special 1ra,PE1,553,283,,0,209941,2026-11-18,1.5 - 2.5,2726,53
-2026-11-19,,,Aldinsen Gonzalez,piña special 2da,PE2,500,0,,0,209867,2026-11-18,1.5 - 2.5,2726,32
+2026-11-19,,,Andres Garcia,piña special 2da,PE2,500,0,,0,209867,2026-11-18,1.5 - 2.5,2726,32
+2026-11-19,,,Andres Garcia,piña special 2da,PE2,509,0,,4,209940,2026-11-18,1.5 - 2.5,2726,53
+2026-11-19,,,Andres Garcia,piña special 2da,PE2,507,0,,0,209825,2026-11-18,1.5 - 2.5,2726,53
+2026-11-19,,,Andres Garcia,piña special 2da,PE2,34,450,,0,209925,2026-11-18,1.5,2726,32
+2026-11-19,,,Andres Garcia,piña special 1ra,PE1,551,449,,4,209860,2026-11-18,1.5 - 2.5,2726,32
