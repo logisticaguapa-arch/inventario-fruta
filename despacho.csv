@@ -27172,57 +27172,63 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-20,,R-19785,juan pablo cogollo,piña special baby,PEBAB,215,0,700,0,209915,2026-11-18,1.5 - 2.5,2726,53
 2026-11-20,,R-19785,juan pablo cogollo,piña special baby,PEBAB,92,0,700,0,209944,2026-11-18,1.5 - 2.5,2726,53
 2026-11-20,,R-19785,juan pablo cogollo,piña special baby,PEBAB,426,88,700,0,209913,2026-11-18,1.5 - 2.5,2726,53
-2026-11-20,,R-19786,Aldinsen Gonzalez,piña indstria,PIND,491,0,,0,210058,2026-11-19,1.5 - 2.5,2726,32
-2026-11-20,,R-19786,Aldinsen Gonzalez,piña indstria,PIND,496,0,,0,210078,2026-11-19,1.5 - 2.5,2726,32
-2026-11-20,,R-19786,Aldinsen Gonzalez,piña indstria,PIND,432,0,,0,210060,2026-11-19,1.5 - 2.5,2726,32
-2026-11-20,,R-19786,Aldinsen Gonzalez,piña indstria,PIND,469,0,,0,210020,2026-11-19,1.5 - 2.5,2726,32
-2026-11-20,,R-19786,Aldinsen Gonzalez,piña indstria,PIND,465,0,,0,210149,2026-11-19,1.5 - 2.5,2726,32
-2026-11-20,,R-19786,Aldinsen Gonzalez,piña indstria,PIND,458,0,,0,210110,2026-11-19,1.5 - 2.5,2726,32
-2026-11-20,,R-19786,Aldinsen Gonzalez,piña indstria,PIND,473,0,,0,210113,2026-11-19,1.5 - 2.5,2726,51
-2026-11-20,,R-19786,Aldinsen Gonzalez,piña indstria,PIND,466,0,,0,210046,2026-11-19,1.5 - 2.5,2726,53
-2026-11-20,,R-19786,Aldinsen Gonzalez,AD-piña indstria,AD-PIND,194,56,,0,210162,2026-11-19,1.5 - 2.5,3826,83
-2026-11-20,,R-19786,Aldinsen Gonzalez,piña indstria,PIND,108,0,,0,210151,2026-11-19,1.5 - 2.5,2726,32
-2026-11-20,,R-19786,Aldinsen Gonzalez,piña indstria,PIND,510,0,,0,210142,2026-11-19,1.5 - 2.5,2726,32
-2026-11-20,,R-19786,Aldinsen Gonzalez,piña indstria,PIND,132,0,,0,210148,2026-11-19,1.5 - 2.5,2726,32
-2026-11-20,,R-19786,Aldinsen Gonzalez,piña indstria,PIND,462,85,,0,210019,2026-11-19,1.5 - 2.5,2726,32
-2026-11-20,,R-19786,Aldinsen Gonzalez,piña jugos,PJUG,393,0,,0,210165,2026-11-19,3.0 - 4.0,2726,32
-2026-11-20,,R-19786,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,307,0,,47,210163,2026-11-19,3.0 - 4.0,4326,83
-2026-11-20,,,camilo quiñones,piña special guapita,PEGUA,502,0,,0,210076,2026-11-19,1.5 - 2.5,2726,32
-2026-11-20,,,camilo quiñones,piña special guapita,PEGUA,500,0,,0,210025,2026-11-19,1.5 - 2.5,2726,32
-2026-11-20,,,camilo quiñones,piña special guapita,PEGUA,489,9,,0,210032,2026-11-19,1.5 - 2.5,2726,53
-2026-11-20,,,camilo quiñones,piña special 3ra,PE3,144,0,,0,210101,2026-11-19,3.0 - 4.0,2726,32
-2026-11-20,,,camilo quiñones,piña special 3ra,PE3,364,0,,0,210139,2026-11-19,3.0 - 4.0,2726,53
-2026-11-20,,,camilo quiñones,piña special 3ra,PE3,30,0,,0,210168,2026-11-20,3.0 - 4.0,,
-2026-11-20,,,camilo quiñones,piña special 2da,PE2,503,0,,0,210107,2026-11-19,3.0 - 4.0,2726,32
-2026-11-20,,,camilo quiñones,piña special 2da,PE2,504,0,,0,210042,2026-11-19,3.0 - 4.0,2726,53
-2026-11-20,,,camilo quiñones,piña special 2da,PE2,504,0,,0,210098,2026-11-19,3.0 - 4.0,2726,32
-2026-11-20,,,camilo quiñones,piña special 2da,PE2,427,0,,0,210138,2026-11-19,3.0 - 4.0,2726,53
-2026-11-20,,,camilo quiñones,piña special 2da,PE2,28,0,,0,210177,2026-11-20,3.0 - 4.0,,
-2026-11-20,,,camilo quiñones,piña special 1ra,PE1,563,0,,0,210136,2026-11-19,3.0 - 4.0,2726,53
-2026-11-20,,,camilo quiñones,piña special 1ra,PE1,532,0,,10,210061,2026-11-19,3.0 - 4.0,2726,51
-2026-11-20,,,camilo quiñones,piña special 1ra,PE1,460,0,,21,210064,2026-11-19,3.0 - 4.0,2726,51
-2026-11-20,,,camilo quiñones,piña special 1ra,PE1,558,0,,0,210075,2026-11-19,3.0 - 4.0,2726,32
-2026-11-20,,,camilo quiñones,piña special 1ra,PE1,345,0,,0,210186,2026-11-20,3.0 - 4.0,,
+2026-11-20,,R-19786,Aldinsen Gonzalez,piña indstria,PIND,491,0,1500,0,210058,2026-11-19,1.5 - 2.5,2726,32
+2026-11-20,,R-19786,Aldinsen Gonzalez,piña indstria,PIND,496,0,1500,0,210078,2026-11-19,1.5 - 2.5,2726,32
+2026-11-20,,R-19786,Aldinsen Gonzalez,piña indstria,PIND,432,0,1500,0,210060,2026-11-19,1.5 - 2.5,2726,32
+2026-11-20,,R-19786,Aldinsen Gonzalez,piña indstria,PIND,469,0,1500,0,210020,2026-11-19,1.5 - 2.5,2726,32
+2026-11-20,,R-19786,Aldinsen Gonzalez,piña indstria,PIND,465,0,1500,0,210149,2026-11-19,1.5 - 2.5,2726,32
+2026-11-20,,R-19786,Aldinsen Gonzalez,piña indstria,PIND,458,0,1500,0,210110,2026-11-19,1.5 - 2.5,2726,32
+2026-11-20,,R-19786,Aldinsen Gonzalez,piña indstria,PIND,473,0,1500,0,210113,2026-11-19,1.5 - 2.5,2726,51
+2026-11-20,,R-19786,Aldinsen Gonzalez,piña indstria,PIND,466,0,1500,0,210046,2026-11-19,1.5 - 2.5,2726,53
+2026-11-20,,R-19786,Aldinsen Gonzalez,AD-piña indstria,AD-PIND,194,56,1500,0,210162,2026-11-19,1.5 - 2.5,3826,83
+2026-11-20,,R-19786,Aldinsen Gonzalez,piña indstria,PIND,108,0,1500,0,210151,2026-11-19,1.5 - 2.5,2726,32
+2026-11-20,,R-19786,Aldinsen Gonzalez,piña indstria,PIND,510,0,1500,0,210142,2026-11-19,1.5 - 2.5,2726,32
+2026-11-20,,R-19786,Aldinsen Gonzalez,piña indstria,PIND,132,0,1500,0,210148,2026-11-19,1.5 - 2.5,2726,32
+2026-11-20,,R-19786,Aldinsen Gonzalez,piña indstria,PIND,462,85,1500,0,210019,2026-11-19,1.5 - 2.5,2726,32
+2026-11-20,,R-19786,Aldinsen Gonzalez,piña jugos,PJUG,393,0,1300,0,210165,2026-11-19,3.0 - 4.0,2726,32
+2026-11-20,,R-19786,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,307,0,1300,47,210163,2026-11-19,3.0 - 4.0,4326,83
+2026-11-20,,R-19787,camilo quiñones,piña special guapita,PEGUA,502,0,800,0,210076,2026-11-19,1.5 - 2.5,2726,32
+2026-11-20,,R-19787,camilo quiñones,piña special guapita,PEGUA,500,0,800,0,210025,2026-11-19,1.5 - 2.5,2726,32
+2026-11-20,,R-19787,camilo quiñones,piña special guapita,PEGUA,489,9,800,0,210032,2026-11-19,1.5 - 2.5,2726,53
+2026-11-20,,R-19787,camilo quiñones,piña special 3ra,PE3,144,0,900,0,210101,2026-11-19,3.0 - 4.0,2726,32
+2026-11-20,,R-19787,camilo quiñones,piña special 3ra,PE3,364,0,900,0,210139,2026-11-19,3.0 - 4.0,2726,53
+2026-11-20,,R-19787,camilo quiñones,piña special 3ra,PE3,30,0,900,0,210168,2026-11-20,3.0 - 4.0,,
+2026-11-20,,R-19787,camilo quiñones,piña special 2da,PE2,503,0,2400,0,210107,2026-11-19,3.0 - 4.0,2726,32
+2026-11-20,,R-19787,camilo quiñones,piña special 2da,PE2,504,0,2400,0,210042,2026-11-19,3.0 - 4.0,2726,53
+2026-11-20,,R-19787,camilo quiñones,piña special 2da,PE2,504,0,2400,0,210098,2026-11-19,3.0 - 4.0,2726,32
+2026-11-20,,R-19787,camilo quiñones,piña special 2da,PE2,427,0,2400,0,210138,2026-11-19,3.0 - 4.0,2726,53
+2026-11-20,,R-19787,camilo quiñones,piña special 2da,PE2,28,0,2400,0,210177,2026-11-20,3.0 - 4.0,,
+2026-11-20,,R-19787,camilo quiñones,piña special 1ra,PE1,563,0,2600,0,210136,2026-11-19,3.0 - 4.0,2726,53
+2026-11-20,,R-19787,camilo quiñones,piña special 1ra,PE1,532,0,2600,10,210061,2026-11-19,3.0 - 4.0,2726,51
+2026-11-20,,R-19787,camilo quiñones,piña special 1ra,PE1,460,0,2600,21,210064,2026-11-19,3.0 - 4.0,2726,51
+2026-11-20,,R-19787,camilo quiñones,piña special 1ra,PE1,558,0,2600,0,210075,2026-11-19,3.0 - 4.0,2726,32
+2026-11-20,,R-19787,camilo quiñones,piña special 1ra,PE1,345,0,2600,0,210186,2026-11-20,3.0 - 4.0,,
 2026-11-20,,,descarte,piña special 1ra,PE1,0,0,,111,209878,2026-11-18,3.0 - 4.0,2726,32
-2026-11-20,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,556,0,,0,210072,2026-11-19,1,2726,51
-2026-11-20,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,554,0,,0,210008,2026-11-19,1,2726,53
-2026-11-20,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,534,0,,0,210116,2026-11-19,1,2726,32
-2026-11-20,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,549,0,,0,210048,2026-11-19,1,2726,53
-2026-11-20,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,549,0,,0,210175,2026-11-20,1,,
-2026-11-20,,,Almacenes Éxito S.A. - Medellin,Piña AD1,AD1,420,0,,0,210157,2026-11-19,1,3226,32
-2026-11-20,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,552,0,,0,210065,2026-11-19,1,2726,51
-2026-11-20,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,552,0,,0,210190,2026-11-20,1,,
-2026-11-20,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,554,0,,0,210182,2026-11-20,1,,
-2026-11-20,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,261,0,,0,210131,2026-11-19,1,2726,53
-2026-11-20,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,555,0,,0,210167,2026-11-20,1,,
-2026-11-20,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,224,0,,0,210004,2026-11-19,1,2726,53
-2026-11-20,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,544,96,,0,210091,2026-11-19,1,2726,32
-2026-11-20,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,536,0,,0,210011,2026-11-19,0,2726,53
-2026-11-20,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,520,0,,0,210047,2026-11-19,0,2726,53
-2026-11-20,,,Almacenes Éxito S.A. - Medellin,Piña AD1,AD1,68,0,,0,210159,2026-11-19,0,3226,32
-2026-11-20,,R-19788,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,468,208,,0,210132,2026-11-19,0,2726,53
+2026-11-20,47581,R-19789,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,556,0,3000,0,210072,2026-11-19,1,2726,51
+2026-11-20,47581,R-19789,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,554,0,3000,0,210008,2026-11-19,1,2726,53
+2026-11-20,47581,R-19789,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,534,0,3000,0,210116,2026-11-19,1,2726,32
+2026-11-20,47581,R-19789,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,549,0,3000,0,210048,2026-11-19,1,2726,53
+2026-11-20,47581,R-19789,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,549,0,3000,0,210175,2026-11-20,1,,
+2026-11-20,47581,R-19789,Almacenes Éxito S.A. - Medellin,Piña AD1,AD1,420,0,3000,0,210157,2026-11-19,1,3226,32
+2026-11-20,47581,R-19789,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,552,0,3000,0,210065,2026-11-19,1,2726,51
+2026-11-20,47581,R-19789,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,552,0,3000,0,210190,2026-11-20,1,,
+2026-11-20,47581,R-19789,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,554,0,3000,0,210182,2026-11-20,1,,
+2026-11-20,47581,R-19789,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,261,0,3000,0,210131,2026-11-19,1,2726,53
+2026-11-20,47581,R-19789,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,555,0,3000,0,210167,2026-11-20,1,,
+2026-11-20,47581,R-19789,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,224,0,3000,0,210004,2026-11-19,1,2726,53
+2026-11-20,47581,R-19789,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,544,96,3000,0,210091,2026-11-19,1,2726,32
+2026-11-20,47581,R-19789,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,536,0,3100,0,210011,2026-11-19,0,2726,53
+2026-11-20,47581,R-19789,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,520,0,3100,0,210047,2026-11-19,0,2726,53
+2026-11-20,47581,R-19789,Almacenes Éxito S.A. - Medellin,Piña AD1,AD1,68,0,3100,0,210159,2026-11-19,0,3226,32
+2026-11-20,47581,R-19789,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,468,208,3100,0,210132,2026-11-19,0,2726,53
+2026-11-20,,R-19788,reposicion éxito medellin,,PE1,0,100,,0,,,1,,
 2026-11-20,,,ramiro parada,piña special guapita,PEGUA,476,0,,0,209962,2026-11-18,1.5 - 2.5,2726,32
 2026-11-20,,,ramiro parada,piña special guapita,PEGUA,468,0,,0,209836,2026-11-18,1.5 - 2.5,2726,53
 2026-11-20,,,ramiro parada,piña special guapita,PEGUA,216,0,,0,209863,2026-11-18,1.5 - 2.5,2726,32
 2026-11-20,,,ramiro parada,Piña ADGUA,ADGUA,260,80,,0,209995,2026-11-18,1.5 - 2.5,2926,55
 2026-11-20,,,ramiro parada,piña special 3ra,PE3,522,0,,0,210016,2026-11-19,1.5 - 2.5,2726,53
+2026-11-20,,,ramiro parada,piña special 3ra,PE3,478,0,,0,210035,2026-11-19,1.5 - 2.5,2726,53
+2026-11-20,,,ramiro parada,piña special 2da,PE2,510,0,,0,209883,2026-11-18,3.0 - 4.0,2726,53
+2026-11-20,,,ramiro parada,piña special 2da,PE2,534,0,,0,209951,2026-11-18,3.0 - 4.0,2726,53
+2026-11-20,,,ramiro parada,piña special 2da,PE2,230,0,,0,209966,2026-11-18,3.0 - 4.0,2726,53
+2026-11-20,,,ramiro parada,piña special 2da,PE2,48,0,,0,210203,2026-11-20,3.0 - 4.0,,
