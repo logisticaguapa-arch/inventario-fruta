@@ -21,7 +21,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 210015,canastas,2026-11-19,PE2,piña special 2da,0.0 - 1.0,500
 210016,canastas,2026-11-19,PE3,piña special 3ra,1.5 - 2.5,528
 210017,canastas,2026-11-19,PE1,piña special 1ra,1.5 - 2.5,569
-210019,canastas,2026-11-19,PIND,piña indstria,1.5 - 2.5,471
 210021,canastas,2026-11-19,PEBAB,piña special baby,1.5 - 2.5,445
 210022,canastas,2026-11-19,PEBAB,piña special baby,1.5 - 2.5,419
 210026,canastas,2026-11-19,PE1,piña special 1ra,1.5 - 2.5,536
@@ -45,7 +44,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 210056,canastas,2026-11-19,PEBAB,piña special baby,1.5 - 2.5,440
 210057,canastas,2026-11-19,PE1,piña special 1ra,1.5 - 2.5,556
 210059,canastas,2026-11-19,PEGUA,piña special guapita,1.5 - 2.5,504
-210061,canastas,2026-11-19,PE1,piña special 1ra,3.0 - 4.0,551
 210062,canastas,2026-11-19,PE2,piña special 2da,0.0 - 1.0,502
 210064,canastas,2026-11-19,PE1,piña special 1ra,3.0 - 4.0,490
 210065,canastas,2026-11-19,PE1,piña special 1ra,1,560
@@ -94,7 +92,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 210132,canastas,2026-11-19,PE1,piña special 1ra,0,474
 210134,canastas,2026-11-19,PE1,piña special 1ra,1.5 - 2.5,495
 210135,canastas,2026-11-19,PE2,piña special 2da,1.5 - 2.5,472
-210136,canastas,2026-11-19,PE1,piña special 1ra,3.0 - 4.0,571
 210137,canastas,2026-11-19,PEBAB,piña special baby,1.5 - 2.5,207
 210140,canastas,2026-11-19,PE1,piña special 1ra,1.5 - 2.5,209
 210141,canastas,2026-11-19,PE2,piña special 2da,0.0 - 1.0,206
@@ -123,8 +120,8 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 210174,canastas,2026-11-20,PE3,piña special 3ra,0.0 - 1.0,554
 210175,canastas,2026-11-20,PE1,piña special 1ra,1,551
 210176,canastas,2026-11-20,PEGUA,piña special guapita,1.5 - 2.5,496
-210178,canastas,2026-11-20,,,,0
-210179,canastas,2026-11-20,,,,0
+210178,canastas,2026-11-20,PE3,piña special 3ra,0.0 - 1.0,493
+210179,canastas,2026-11-20,PE2,piña special 2da,0.0 - 1.0,508
 210180,canastas,2026-11-20,,,,0
 210181,canastas,2026-11-20,,,,0
 210182,canastas,2026-11-20,,,,0
