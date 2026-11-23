@@ -27646,17 +27646,18 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-23,,,Andres Garcia,piña jugos,PJUG,538,0,,11,210551,2026-11-22,3.0 - 4.0,2826,77
 2026-11-23,,,Andres Garcia,AD-piña jugos,AD-PJUG,154,0,,0,210544,2026-11-22,3.0 - 4.0,3526,78
 2026-11-23,,,Andres Garcia,piña jugos,PJUG,91,0,,0,210613,2026-11-23,1.5 - 2.5,,
-2026-11-23,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,557,0,,0,210422,2026-11-22,1,2726,32
-2026-11-23,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,548,0,,0,210438,2026-11-22,1,2826,77
-2026-11-23,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,545,0,,0,210387,2026-11-22,1,2726,32
-2026-11-23,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,534,0,,0,210465,2026-11-22,1,2826,77
-2026-11-23,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,570,0,,0,210394,2026-11-22,1,2726,32
-2026-11-23,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,539,0,,0,210410,2026-11-22,1,2826,77
-2026-11-23,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,256,0,,18,210445,2026-11-22,1,2726,32
-2026-11-23,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,86,365,,0,210506,2026-11-22,1,2726,32
-2026-11-23,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,571,0,,0,210395,2026-11-22,0,2826,77
-2026-11-23,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,178,0,,0,210415,2026-11-22,0,2726,32
-2026-11-23,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,547,504,,0,210383,2026-11-22,0,2726,32
+2026-11-23,,R-19826,reposicion éxito medellin,,pe1,0,90,,0,,,1,,
+2026-11-23,47633,R-19827,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,557,0,3000,0,210422,2026-11-22,1,2726,32
+2026-11-23,47633,R-19827,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,548,0,3000,0,210438,2026-11-22,1,2826,77
+2026-11-23,47633,R-19827,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,545,0,3000,0,210387,2026-11-22,1,2726,32
+2026-11-23,47633,R-19827,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,534,0,3000,0,210465,2026-11-22,1,2826,77
+2026-11-23,47633,R-19827,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,570,0,3000,0,210394,2026-11-22,1,2726,32
+2026-11-23,47633,R-19827,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,539,0,3000,0,210410,2026-11-22,1,2826,77
+2026-11-23,47633,R-19827,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,256,0,3000,18,210445,2026-11-22,1,2726,32
+2026-11-23,47633,R-19827,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,86,365,3000,0,210506,2026-11-22,1,2726,32
+2026-11-23,47633,R-19827,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,571,0,3100,0,210395,2026-11-22,0,2826,77
+2026-11-23,47633,R-19827,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,178,0,3100,0,210415,2026-11-22,0,2726,32
+2026-11-23,47633,R-19827,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,547,504,3100,0,210383,2026-11-22,0,2726,32
 2026-11-23,,,DREAN FOOD CARIBE,piña special 3ra,PE3,82,0,,0,210486,2026-11-22,0.0 - 1.0,2826,77
 2026-11-23,,,DREAN FOOD CARIBE,piña special 3ra,PE3,140,0,,0,210524,2026-11-22,0.0 - 1.0,2826,77
 2026-11-23,,,DREAN FOOD CARIBE,piña special 3ra,PE3,114,0,,0,210406,2026-11-22,0.0 - 1.0,2826,77
