@@ -27591,10 +27591,12 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-23,,,local medellin,piña special 1ra,PE1,733,0,,6,210513,2026-11-22,3.0 - 4.0,2826,77
 2026-11-23,,,local medellin,piña special 1ra,PE1,536,0,,0,210464,2026-11-22,3.0 - 4.0,2826,77
 2026-11-23,,,local medellin,piña special 1ra,PE1,547,0,,0,210437,2026-11-22,3.0 - 4.0,2826,77
+2026-11-23,,,local medellin,piña special 2da,PE2,12,0,,0,210577,2026-11-23,3.0 - 4.0,,
 2026-11-23,,,local medellin,piña special 2da,PE2,488,200,,4,210479,2026-11-22,3.0 - 4.0,2726,32
 2026-11-23,,,local medellin,piña special 3ra,PE3,500,0,,2,210448,2026-11-22,3.0 - 4.0,2726,32
 2026-11-23,,,local medellin,piña special 3ra,PE3,505,0,,0,210522,2026-11-22,3.0 - 4.0,2826,77
 2026-11-23,,,local medellin,piña special 3ra,PE3,162,0,,0,210520,2026-11-22,3.0 - 4.0,2826,77
+2026-11-23,,,local medellin,piña special 2da,PE2,500,0,,2,210433,2026-11-22,1.5 - 2.5,2826,77
 2026-11-23,,,Almacenes Éxito S.A. - Barranquilla,piña special 1ra,PE1,557,0,,11,210367,2026-11-22,1,2826,77
 2026-11-23,,,Almacenes Éxito S.A. - Barranquilla,piña special 1ra,PE1,565,0,,0,210495,2026-11-22,1,2826,77
 2026-11-23,,,Almacenes Éxito S.A. - Barranquilla,piña special 1ra,PE1,554,0,,0,210482,2026-11-22,1,2826,77
@@ -27608,4 +27610,4 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-23,,,KARINA BORJA,piña special 3ra,PE3,511,0,,3,210421,2026-11-22,0.0 - 1.0,2726,32
 2026-11-23,,,KARINA BORJA,piña special 3ra,PE3,507,393,,0,210473,2026-11-22,0.0 - 1.0,2726,32
 2026-11-23,,,dario alberto,piña special 1ra,PE1,578,0,,0,210457,2026-11-22,0.0 - 1.0,2826,77
-2026-11-23,,,dario alberto,piña special 1ra,PE1,561,261,,0,210455,2026-11-22,0.0 - 1.0,2826,77
+2026-11-23,,,dario alberto,piña special 1ra,PE1,561,0,,0,210455,2026-11-22,0.0 - 1.0,2826,77
