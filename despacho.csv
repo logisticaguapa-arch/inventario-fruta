@@ -26973,8 +26973,8 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-19,,R-19763,local apartado,,PE2,0,150,3000,0,,,2,,
 2026-11-19,,R-19763,local apartado,piña indstria,PIND,410,190,2000,0,209946,2026-11-18,1.5 - 2.5,2726,53
 2026-11-19,,R-19763,local apartado,piña special 1ra,PE1,567,33,3200,0,209856,2026-11-18,0.0 - 1.0,2726,32
-2026-11-19,47546,R-19763,jeronimo martins,piña special 1ra,PE1,469,0,3800,0,209911,2026-11-18,1.5,2726,53
-2026-11-19,47546,R-19763,jeronimo martins,piña special 2da,PE2,300,386,3800,14,209923,2026-11-18,1.5,2726,32
+2026-11-19,47546,R-19764,jeronimo martins,piña special 1ra,PE1,469,0,3800,0,209911,2026-11-18,1.5,2726,53
+2026-11-19,47546,R-19764,jeronimo martins,piña special 2da,PE2,300,386,3800,14,209923,2026-11-18,1.5,2726,32
 2026-11-19,,R-19777,reposicion jeronimo,,PE2,0,101,,0,,,1.5,,
 2026-11-19,,R-19765,local sincelejo,piña special 2da,PE2,500,0,2800,0,209912,2026-11-18,0.0 - 1.0,2726,53
 2026-11-19,,R-19765,local sincelejo,piña special 1ra,PE1,572,0,3000,0,209894,2026-11-18,0.0 - 1.0,2726,53
@@ -27577,3 +27577,13 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-22,,R-19817,DREAN FOOD CARIBE,piña special 1ra,PE1,559,0,1300,0,210491,2026-11-22,0.0 - 1.0,2826,77
 2026-11-22,,R-19817,DREAN FOOD CARIBE,piña special 1ra,PE1,566,0,1300,0,210487,2026-11-22,0.0 - 1.0,2826,77
 2026-11-22,,R-19817,DREAN FOOD CARIBE,piña special 1ra,PE1,579,0,1300,0,210498,2026-11-22,0.0 - 1.0,2826,77
+2026-11-23,,,local medellin,piña special 2da,PE2,532,0,,0,210485,2026-11-22,0.0 - 1.0,2826,77
+2026-11-23,,,local medellin,piña special 2da,PE2,524,444,,0,210500,2026-11-22,0.0 - 1.0,2826,77
+2026-11-23,,,local medellin,piña special 1ra,PE1,578,0,,8,210450,2026-11-22,1.5 - 2.5,2726,32
+2026-11-23,,,local medellin,piña special 1ra,PE1,584,0,,0,210505,2026-11-22,1.5 - 2.5,2726,32
+2026-11-23,,,local medellin,piña special 1ra,PE1,551,0,,0,210499,2026-11-22,1.5 - 2.5,2826,77
+2026-11-23,,,local medellin,piña special 1ra,PE1,566,0,,0,210488,2026-11-22,1.5 - 2.5,2826,77
+2026-11-23,,,local medellin,piña special 1ra,PE1,23,0,,0,210552,2026-11-23,1.5 - 2.5,,
+2026-11-23,,,local medellin,piña special 1ra,PE1,565,0,,0,210468,2026-11-22,1.5 - 2.5,2726,32
+2026-11-23,,,local medellin,Piña AD1,AD1,550,0,,0,210546,2026-11-22,1.5 - 2.5,3126,78
+2026-11-23,,,local medellin,piña special 1ra,PE1,578,5,,0,210427,2026-11-22,1.5 - 2.5,2826,77
