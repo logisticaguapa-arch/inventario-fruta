@@ -27577,13 +27577,35 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-22,,R-19817,DREAN FOOD CARIBE,piña special 1ra,PE1,559,0,1300,0,210491,2026-11-22,0.0 - 1.0,2826,77
 2026-11-22,,R-19817,DREAN FOOD CARIBE,piña special 1ra,PE1,566,0,1300,0,210487,2026-11-22,0.0 - 1.0,2826,77
 2026-11-22,,R-19817,DREAN FOOD CARIBE,piña special 1ra,PE1,579,0,1300,0,210498,2026-11-22,0.0 - 1.0,2826,77
-2026-11-23,,,local medellin,piña special 2da,PE2,532,0,,0,210485,2026-11-22,0.0 - 1.0,2826,77
-2026-11-23,,,local medellin,piña special 2da,PE2,524,444,,0,210500,2026-11-22,0.0 - 1.0,2826,77
-2026-11-23,,,local medellin,piña special 1ra,PE1,578,0,,8,210450,2026-11-22,1.5 - 2.5,2726,32
-2026-11-23,,,local medellin,piña special 1ra,PE1,584,0,,0,210505,2026-11-22,1.5 - 2.5,2726,32
-2026-11-23,,,local medellin,piña special 1ra,PE1,551,0,,0,210499,2026-11-22,1.5 - 2.5,2826,77
-2026-11-23,,,local medellin,piña special 1ra,PE1,566,0,,0,210488,2026-11-22,1.5 - 2.5,2826,77
-2026-11-23,,,local medellin,piña special 1ra,PE1,23,0,,0,210552,2026-11-23,1.5 - 2.5,,
-2026-11-23,,,local medellin,piña special 1ra,PE1,565,0,,0,210468,2026-11-22,1.5 - 2.5,2726,32
-2026-11-23,,,local medellin,Piña AD1,AD1,550,0,,0,210546,2026-11-22,1.5 - 2.5,3126,78
-2026-11-23,,,local medellin,piña special 1ra,PE1,578,5,,0,210427,2026-11-22,1.5 - 2.5,2826,77
+2026-11-23,,R-19819,local medellin,piña special 2da,PE2,532,0,,0,210485,2026-11-22,0.0 - 1.0,2826,77
+2026-11-23,,R-19819,local medellin,piña special 2da,PE2,524,444,,0,210500,2026-11-22,0.0 - 1.0,2826,77
+2026-11-23,,R-19819,local medellin,piña special 1ra,PE1,578,0,,8,210450,2026-11-22,1.5 - 2.5,2726,32
+2026-11-23,,R-19819,local medellin,piña special 1ra,PE1,584,0,,0,210505,2026-11-22,1.5 - 2.5,2726,32
+2026-11-23,,R-19819,local medellin,piña special 1ra,PE1,551,0,,0,210499,2026-11-22,1.5 - 2.5,2826,77
+2026-11-23,,R-19819,local medellin,piña special 1ra,PE1,566,0,,0,210488,2026-11-22,1.5 - 2.5,2826,77
+2026-11-23,,R-19819,local medellin,piña special 1ra,PE1,23,0,,0,210552,2026-11-23,1.5 - 2.5,,
+2026-11-23,,R-19819,local medellin,piña special 1ra,PE1,565,0,,0,210468,2026-11-22,1.5 - 2.5,2726,32
+2026-11-23,,R-19819,local medellin,Piña AD1,AD1,550,0,,0,210546,2026-11-22,1.5 - 2.5,3126,78
+2026-11-23,,R-19819,local medellin,piña special 1ra,PE1,555,28,,23,210427,2026-11-22,1.5 - 2.5,2826,77
+2026-11-23,,,local medellin,piña special 1ra,PE1,571,229,,4,210403,2026-11-22,1.5 - 2.5,2826,77
+2026-11-23,,,local medellin,piña special 1ra,PE1,733,0,,6,210513,2026-11-22,3.0 - 4.0,2826,77
+2026-11-23,,,local medellin,piña special 1ra,PE1,536,0,,0,210464,2026-11-22,3.0 - 4.0,2826,77
+2026-11-23,,,local medellin,piña special 1ra,PE1,547,0,,0,210437,2026-11-22,3.0 - 4.0,2826,77
+2026-11-23,,,local medellin,piña special 2da,PE2,488,200,,4,210479,2026-11-22,3.0 - 4.0,2726,32
+2026-11-23,,,local medellin,piña special 3ra,PE3,500,0,,2,210448,2026-11-22,3.0 - 4.0,2726,32
+2026-11-23,,,local medellin,piña special 3ra,PE3,505,0,,0,210522,2026-11-22,3.0 - 4.0,2826,77
+2026-11-23,,,local medellin,piña special 3ra,PE3,162,0,,0,210520,2026-11-22,3.0 - 4.0,2826,77
+2026-11-23,,,Almacenes Éxito S.A. - Barranquilla,piña special 1ra,PE1,557,0,,11,210367,2026-11-22,1,2826,77
+2026-11-23,,,Almacenes Éxito S.A. - Barranquilla,piña special 1ra,PE1,565,0,,0,210495,2026-11-22,1,2826,77
+2026-11-23,,,Almacenes Éxito S.A. - Barranquilla,piña special 1ra,PE1,554,0,,0,210482,2026-11-22,1,2826,77
+2026-11-23,,,Almacenes Éxito S.A. - Barranquilla,piña special 1ra,PE1,563,0,,0,210375,2026-11-22,1,2826,77
+2026-11-23,,,Almacenes Éxito S.A. - Barranquilla,piña special 1ra,PE1,560,0,,0,210474,2026-11-22,1,2726,32
+2026-11-23,,,Almacenes Éxito S.A. - Barranquilla,piña special 1ra,PE1,568,23,,0,210476,2026-11-22,0,2726,32
+2026-11-23,,,Almacenes Éxito S.A. - Barranquilla,piña special 1ra,PE1,604,71,,0,210370,2026-11-22,0,2826,77
+2026-11-23,,,cartagena,Piña AD1,AD1,529,0,,10,210526,2026-11-22,0.0 - 1.0,2926,34
+2026-11-23,,,cartagena,piña special 1ra,PE1,549,0,,0,210509,2026-11-22,0.0 - 1.0,2726,32
+2026-11-23,,,cartagena,piña special 1ra,PE1,607,315,,0,210449,2026-11-22,0.0 - 1.0,2726,32
+2026-11-23,,,KARINA BORJA,piña special 3ra,PE3,511,0,,3,210421,2026-11-22,0.0 - 1.0,2726,32
+2026-11-23,,,KARINA BORJA,piña special 3ra,PE3,507,393,,0,210473,2026-11-22,0.0 - 1.0,2726,32
+2026-11-23,,,dario alberto,piña special 1ra,PE1,578,0,,0,210457,2026-11-22,0.0 - 1.0,2826,77
+2026-11-23,,,dario alberto,piña special 1ra,PE1,561,261,,0,210455,2026-11-22,0.0 - 1.0,2826,77

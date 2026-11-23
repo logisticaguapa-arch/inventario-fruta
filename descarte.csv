@@ -4425,3 +4425,11 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,47,noviembre,2026-11-21,2726,32,canastas,12.0,,12.0,12.0,Sobre madura campo,PIND
 2026,47,noviembre,2026-11-21,2726,53,canastas,55.0,,55.0,55.0,Sobre madura campo,PE1
 2026,48,noviembre,2026-11-23,2726,32,canastas,8.0,,8.0,8.0,Muestreo,PE1
+2026,48,noviembre,2026-11-23,2826,77,canastas,23.0,,23.0,23.0,Enferma,PE1
+2026,48,noviembre,2026-11-23,2826,77,canastas,4.0,,4.0,4.0,Muestreo,PE1
+2026,48,noviembre,2026-11-23,2826,77,canastas,6.0,,6.0,6.0,,PE1
+2026,48,noviembre,2026-11-23,2726,32,canastas,4.0,,4.0,4.0,Muestreo,PE2
+2026,48,noviembre,2026-11-23,2726,32,canastas,2.0,,2.0,2.0,Muestreo,PE3
+2026,48,noviembre,2026-11-23,2826,77,canastas,11.0,,11.0,11.0,Muestreo,PE1
+2026,48,noviembre,2026-11-23,2926,34,canastas,10.0,,10.0,10.0,,AD1
+2026,48,noviembre,2026-11-23,2726,32,canastas,3.0,,3.0,3.0,Muestreo,PE3
