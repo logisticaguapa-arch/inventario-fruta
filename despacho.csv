@@ -27711,8 +27711,9 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-23,,R-19831,DREAN FOOD CARIBE,piña special 1ra,PE1,531,0,1300,0,210490,2026-11-22,0,2826,77
 2026-11-23,,R-19831,DREAN FOOD CARIBE,piña indstria,PIND,248,0,1300,0,210515,2026-11-22,1.5 - 2.5,2826,77
 2026-11-23,,R-19831,DREAN FOOD CARIBE,AD-piña indstria,AD-PIND,428,62,1300,6,210537,2026-11-22,1.5 - 2.5,3426,34
-2026-11-23,,,juan pablo cogollo,piña special 1ra,PE1,569,0,,0,210446,2026-11-22,0.0 - 1.0,2726,32
-2026-11-23,,,juan pablo cogollo,piña special 1ra,PE1,582,49,,0,210401,2026-11-22,0.0 - 1.0,2826,77
+2026-11-23,,R-19830,juan pablo cogollo,piña special 1ra,PE1,569,0,2700,0,210446,2026-11-22,0.0 - 1.0,2726,32
+2026-11-23,,R-19830,juan pablo cogollo,piña special 1ra,PE1,582,49,2700,0,210401,2026-11-22,0.0 - 1.0,2826,77
+2026-11-23,,R-19830,juan pablo cogollo,,PE2,0,300,2500,0,,,1,,
 2026-11-23,,,jeronimo martins,piña special 2da,PE2,406,0,,0,210417,2026-11-22,1.5,2726,32
 2026-11-23,,,jeronimo martins,piña special 2da,PE2,403,0,,0,210463,2026-11-22,1.5,2826,77
 2026-11-23,,,jeronimo martins,piña special 2da,PE2,407,0,,0,210380,2026-11-22,1.5,2726,51
