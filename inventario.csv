@@ -8,7 +8,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 210712,canastas,2026-11-24,PEGUA,piña special guapita,1.5 - 2.5,484
 210715,canastas,2026-11-24,PE1,piña special 1ra,1.5 - 2.5,536
 210717,canastas,2026-11-24,PE1,piña special 1ra,1,521
-210718,canastas,2026-11-24,PE2,piña special 2da,0.0 - 1.0,484
 210720,canastas,2026-11-24,PIND,piña indstria,1.5 - 2.5,511
 210721,canastas,2026-11-24,PE1,piña special 1ra,3.0 - 4.0,524
 210722,canastas,2026-11-24,PE1,piña special 1ra,1.5 - 2.5,546
@@ -30,7 +29,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 210753,canastas,2026-11-24,PE1,piña special 1ra,1.5 - 2.5,564
 210754,canastas,2026-11-24,PE3,piña special 3ra,3.0 - 4.0,502
 210756,canastas,2026-11-24,PIND,piña indstria,1.5 - 2.5,499
-210758,canastas,2026-11-24,PE3,piña special 3ra,0.0 - 1.0,482
 210760,canastas,2026-11-24,PE2,piña special 2da,1.5 - 2.5,412
 210762,canastas,2026-11-24,PE2,piña special 2da,1.5 - 2.5,521
 210763,canastas,2026-11-24,PE2,piña special 2da,1.5 - 2.5,507
@@ -40,7 +38,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 210774,canastas,2026-11-24,PE1,piña special 1ra,1.5 - 2.5,535
 210775,canastas,2026-11-24,PEBAB,piña special baby,1.5 - 2.5,441
 210777,canastas,2026-11-24,PE3,piña special 3ra,1.5 - 2.5,500
-210778,canastas,2026-11-24,PE3,piña special 3ra,0.0 - 1.0,487
 210779,canastas,2026-11-24,PE1,piña special 1ra,3.0 - 4.0,545
 210781,canastas,2026-11-24,PE3,piña special 3ra,0.0 - 1.0,492
 210782,canastas,2026-11-24,PIND,piña indstria,1.5 - 2.5,505
@@ -48,11 +45,10 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 210784,canastas,2026-11-24,PE1,piña special 1ra,1,512
 210785,canastas,2026-11-24,PEGUA,piña special guapita,1.5 - 2.5,502
 210786,canastas,2026-11-24,PE1,piña special 1ra,0.0 - 1.0,563
-210787,canastas,2026-11-24,,,,0
-210788,canastas,2026-11-24,,,,0
-210789,canastas,2026-11-24,,,,0
-210790,canastas,2026-11-24,,,,0
-210791,canastas,2026-11-24,,,,0
+210787,canastas,2026-11-24,PEBAB,piña special baby,1.5 - 2.5,450
+210789,canastas,2026-11-24,PIND,piña indstria,1.5 - 2.5,501
+210790,canastas,2026-11-24,PE1,piña special 1ra,1.5 - 2.5,537
+210791,canastas,2026-11-24,PE3,piña special 3ra,1.5 - 2.5,503
 210792,canastas,2026-11-24,,,,0
 210793,canastas,2026-11-24,,,,0
 210794,canastas,2026-11-24,,,,0
