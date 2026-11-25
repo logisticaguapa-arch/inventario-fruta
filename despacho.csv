@@ -27986,13 +27986,45 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-25,,,local medellin,piña special 1ra,PE1,513,0,,0,210823,2026-11-24,3.0 - 4.0,2826,32
 2026-11-25,,,local medellin,piña special 1ra,PE1,540,0,,0,210779,2026-11-24,3.0 - 4.0,2826,32
 2026-11-25,,,local medellin,piña special 1ra,PE1,535,0,,0,210797,2026-11-24,3.0 - 4.0,2826,77
-2026-11-25,,,local medellin,piña special 1ra,PE1,44,},,13,210897,2026-11-24,3.0 - 4.0,2826,32
+2026-11-25,,,local medellin,piña special 1ra,PE1,44,0,,13,210897,2026-11-24,3.0 - 4.0,2826,32
 2026-11-25,,,local medellin,piña special 1ra,PE1,67,0,,0,210915,2026-11-25,3.0 - 4.0,,
 2026-11-25,,,local medellin,piña special 3ra,PE3,74,0,,4,210903,2026-11-24,3.0 - 4.0,2826,32
 2026-11-25,,,local medellin,piña special 3ra,PE3,391,0,,0,210862,2026-11-24,3.0 - 4.0,2826,32
 2026-11-25,,,local medellin,piña special 3ra,PE3,496,0,,0,210810,2026-11-24,3.0 - 4.0,2826,32
-,,,,piña special 3ra,PE3,497,0,,0,210754,2026-11-24,3.0 - 4.0,2826,77
-,,,,piña special 3ra,PE3,488,0,,0,210871,2026-11-24,3.0 - 4.0,2826,32
-2026-11-25,,,Almacenes Éxito S.A. - Barranquilla,piña special 1ra,PE1,504,0,,9,210735,2026-11-24,1,2826,32
-2026-11-25,,,Almacenes Éxito S.A. - Barranquilla,piña special 1ra,PE1,533,133,,0,210796,2026-11-24,1,2826,77
-2026-11-25,,,Almacenes Éxito S.A. - Barranquilla,piña special 1ra,PE1,526,254,,0,210793,2026-11-24,0,2826,77
+2026-11-25,,,local medellin,piña special 3ra,PE3,497,0,,0,210754,2026-11-24,3.0 - 4.0,2826,77
+2026-11-25,,,local medellin,piña special 3ra,PE3,488,0,,0,210871,2026-11-24,3.0 - 4.0,2826,32
+2026-11-25,,,local medellin,piña special 3ra,PE3,25,0,,0,210918,2026-11-25,3.0 - 4.0,,
+2026-11-25,46765,R-19860,Almacenes Éxito S.A. - Barranquilla,piña special 1ra,PE1,504,0,3300,9,210735,2026-11-24,1,2826,32
+2026-11-25,46765,R-19860,Almacenes Éxito S.A. - Barranquilla,piña special 1ra,PE1,533,133,3300,0,210796,2026-11-24,1,2826,77
+2026-11-25,46765,R-19860,Almacenes Éxito S.A. - Barranquilla,piña special 1ra,PE1,526,254,3400,0,210793,2026-11-24,0,2826,77
+2026-11-25,,,cartagena,Piña AD1,AD1,579,0,,8,210874,2026-11-24,0.0 - 1.0,3726,78
+2026-11-25,,,cartagena,piña special 1ra,PE1,520,0,,0,210845,2026-11-24,0.0 - 1.0,2826,32
+2026-11-25,,,cartagena,piña special 1ra,PE1,453,448,,0,210843,2026-11-24,0.0 - 1.0,2826,32
+2026-11-25,,,dario alberto,Piña AD2,AD2,352,0,,0,210883,2026-11-24,0.0 - 1.0,3626,79
+2026-11-25,,,dario alberto,piña special 2da,PE2,201,0,,0,210878,2026-11-24,0.0 - 1.0,2826,32
+2026-11-25,,,dario alberto,piña special 2da,PE2,47,0,,0,210917,2026-11-25,0.0 - 1.0,,
+2026-11-25,,,dario alberto,piña special 1ra,PE1,547,0,,0,210807,2026-11-24,1.5 - 2.5,2826,32
+2026-11-25,,,dario alberto,piña special 1ra,PE1,516,0,,0,210830,2026-11-24,1.5 - 2.5,2826,32
+2026-11-25,,,dario alberto,piña special 1ra,PE1,519,0,,0,210783,2026-11-24,1.5 - 2.5,2826,32
+2026-11-25,,,dario alberto,piña special 1ra,PE1,511,307,,0,210813,2026-11-24,1.5 - 2.5,2826,32
+2026-11-25,,,local sincelejo,piña special 1ra,PE1,517,0,,9,210809,2026-11-24,0.0 - 1.0,2826,32
+2026-11-25,,,local sincelejo,Piña AD1,AD1,247,0,,0,210905,2026-11-24,0.0 - 1.0,3526,78
+2026-11-25,,,local sincelejo,piña special 1ra,PE1,102,0,,0,210818,2026-11-24,0.0 - 1.0,2826,32
+2026-11-25,,,local sincelejo,Piña AD1,AD1,120,14,,0,210869,2026-11-24,0.0 - 1.0,3526,78
+2026-11-25,,,local sincelejo,piña special 1ra,PE1,523,0,,0,210792,2026-11-24,0.0 - 1.0,2826,77
+2026-11-25,,,local sincelejo,Piña AD1,AD1,577,0,,0,210875,2026-11-24,0.0 - 1.0,3726,78
+2026-11-25,,,local sincelejo,Piña AD1,AD1,75,0,,0,210877,2026-11-24,0.0 - 1.0,3026,78
+2026-11-25,,,local sincelejo,Piña AD1,AD1,169,0,,0,210904,2026-11-24,0.0 - 1.0,3526,78
+2026-11-25,,,local sincelejo,piña special 1ra,PE1,560,0,,0,210786,2026-11-24,0.0 - 1.0,2826,32
+2026-11-25,,,local sincelejo,Piña AD1,AD1,43,0,,0,210865,2026-11-24,0.0 - 1.0,3126,78
+2026-11-25,,,local sincelejo,Piña AD1,AD1,66,0,,0,210882,2026-11-24,0.0 - 1.0,3626,79
+2026-11-25,,,DREAN FOOD CARIBE,piña special 1ra,PE1,549,0,,0,210753,2026-11-24,1.5 - 2.5,2826,77
+2026-11-25,,,DREAN FOOD CARIBE,piña special 1ra,PE1,555,0,,0,210739,2026-11-24,1.5 - 2.5,2826,32
+2026-11-25,,,DREAN FOOD CARIBE,piña special 1ra,PE1,540,0,,0,210730,2026-11-24,1.5 - 2.5,2826,32
+2026-11-25,,,DREAN FOOD CARIBE,piña special 1ra,PE1,525,0,,0,210770,2026-11-24,1.5 - 2.5,2826,34
+2026-11-25,,,DREAN FOOD CARIBE,Piña AD1,AD1,590,0,,0,210876,2026-11-24,1.5 - 2.5,3026,78
+2026-11-25,,,DREAN FOOD CARIBE,Piña AD1,AD1,493,0,,0,210893,2026-11-24,1.5 - 2.5,3526,78
+2026-11-25,,,DREAN FOOD CARIBE,piña special 1ra,PE1,462,0,,0,210850,2026-11-24,1.5 - 2.5,2826,32
+2026-11-25,,,DREAN FOOD CARIBE,piña special 1ra,PE1,509,0,,0,210824,2026-11-24,1.5 - 2.5,2826,32
+2026-11-25,,,DREAN FOOD CARIBE,piña special 1ra,PE1,582,0,,0,210795,2026-11-24,1.5 - 2.5,2826,77
+2026-11-25,,,DREAN FOOD CARIBE,piña special 1ra,PE1,221,0,,0,210901,2026-11-24,1.5 - 2.5,2826,32
