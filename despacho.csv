@@ -28082,6 +28082,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-25,,,Almacenes Éxito S.A. - Medellin,Piña AD1,AD1,322,0,,0,210880,2026-11-24,1,3526,78
 2026-11-25,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,550,0,,0,210750,2026-11-24,1,2826,77
 2026-11-25,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,291,0,,0,210838,2026-11-24,1,2826,32
+2026-11-25,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,528,0,,0,211006,2026-11-25,1,,
 2026-11-25,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,431,0,,0,210747,2026-11-24,0,2826,77
 2026-11-25,,,Almacenes Éxito S.A. - Medellin,Piña AD1,AD1,532,0,,0,210867,2026-11-24,0,3726,77
 2026-11-25,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,199,0,,0,210910,2026-11-24,0,2826,32
@@ -28090,6 +28091,5 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-25,,,jeronimo martins,piña special 2da,PE2,406,285,,0,210987,2026-11-25,1.5,,
 2026-11-25,,,jeronimo martins,piña special 2da,PE2,120,0,,0,210964,2026-11-25,1.5,,
 2026-11-25,,,jeronimo martins,piña special 2da,PE2,408,0,,0,210982,2026-11-25,1.5,,
-2026-11-25,,,jeronimo martins,piña special 2da,PE2,408,0,,0,210934,2026-11-25,1.5,,
-2026-11-25,,,jeronimo martins,piña special 2da,PE2,279,0,,0,210873,2026-11-24,1.5,2826,32
-2026-11-25,,,jeronimo martins,piña special 2da,PE2,405,0,,0,210933,2026-11-25,1.5,,
+2026-11-25,,,jeronimo martins,piña special 2da,PE2,408,164,,0,210934,2026-11-25,1.5,,
+2026-11-25,,,jeronimo martins,piña special 2da,PE2,115,0,,0,210873,2026-11-24,1.5,2826,32
