@@ -27849,7 +27849,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-24,47654,R-19847,jeronimo martins,piña special 2da,PE2,305,0,3800,0,210674,2026-11-23,1.5,2826,77
 2026-11-24,47654,R-19847,jeronimo martins,piña special 2da,PE2,412,0,3800,0,210716,2026-11-24,1.5,2826,32
 2026-11-24,47654,R-19847,jeronimo martins,piña special 2da,PE2,104,92,3800,0,210738,2026-11-24,1.5,2826,32
-2026-11-24,,,reposicion jeronimo,piña special 2da,PE2,110,0,,0,210707,2026-11-23,1.5,2826,77
+2026-11-24,,R-19854,reposicion jeronimo,piña special 2da,PE2,110,0,,0,210707,2026-11-23,1.5,2826,77
 2026-11-24,,R-19848,local sincelejo,piña special 2da,PE2,512,488,3200,3,210604,2026-11-23,0.0 - 1.0,2826,77
 2026-11-24,,R-19848,local sincelejo,piña special 2da,PE2,586,0,3200,0,210678,2026-11-23,1.5 - 2.5,2826,77
 2026-11-24,,R-19848,local sincelejo,Piña AD2,AD2,14,0,3200,3,210688,2026-11-23,1.5 - 2.5,2926,34
@@ -27936,10 +27936,10 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-24,,R-19853,DREAN FOOD CARIBE,piña special guapita,PEGUA,460,0,1300,0,210812,2026-11-24,1.5 - 2.5,,
 2026-11-24,,R-19853,DREAN FOOD CARIBE,piña special guapita,PEGUA,470,0,1300,0,210825,2026-11-24,1.5 - 2.5,,
 2026-11-24,,R-19853,DREAN FOOD CARIBE,piña special guapita,PEGUA,497,209,1300,0,210827,2026-11-24,1.5 - 2.5,,
-2026-11-24,,R-19851,jeronimo martins,piña special 2da,PE2,402,0,3100,0,210737,2026-11-24,1.5,2826,32
-2026-11-24,,R-19851,jeronimo martins,piña special 2da,PE2,409,0,3100,0,210811,2026-11-24,1.5,,
-2026-11-24,,R-19851,jeronimo martins,piña special 2da,PE2,412,0,3100,0,210760,2026-11-24,1.5,2826,32
-2026-11-24,,R-19851,jeronimo martins,piña special 2da,PE2,401,0,3100,0,210794,2026-11-24,1.5,2826,32
-2026-11-24,,R-19851,jeronimo martins,piña special 2da,PE2,400,0,3100,0,210826,2026-11-24,1.5,,
-2026-11-24,,R-19851,jeronimo martins,,PE1,0,286,3100,0,,,1.5,,
-2026-11-24,,,jeronimo martins,piña special 1ra,PE1,117,0,,0,210833,2026-11-24,1.5,,
+2026-11-24,47655,R-19851,jeronimo martins,piña special 2da,PE2,402,0,3100,0,210737,2026-11-24,1.5,2826,32
+2026-11-24,47655,R-19851,jeronimo martins,piña special 2da,PE2,409,0,3100,0,210811,2026-11-24,1.5,,
+2026-11-24,47655,R-19851,jeronimo martins,piña special 2da,PE2,412,0,3100,0,210760,2026-11-24,1.5,2826,32
+2026-11-24,47655,R-19851,jeronimo martins,piña special 2da,PE2,401,0,3100,0,210794,2026-11-24,1.5,2826,32
+2026-11-24,47655,R-19851,jeronimo martins,piña special 2da,PE2,400,0,3100,0,210826,2026-11-24,1.5,,
+2026-11-24,47655,R-19851,jeronimo martins,,PE1,0,286,3100,0,,,1.5,,
+2026-11-24,,R-19854,jeronimo martins,piña special 1ra,PE1,117,0,,0,210833,2026-11-24,1.5,,
