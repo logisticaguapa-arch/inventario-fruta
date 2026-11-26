@@ -161,13 +161,12 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 211085,canastas,2026-11-25,PEBAB,piña special baby,1.5 - 2.5,431
 211086,canastas,2026-11-25,AD2,Piña AD2,1.5,290
 211087,canastas,2026-11-25,AD1,Piña AD1,0.0 - 1.0,563
-211088,canastas,2026-11-25,,,,0
-211089,canastas,2026-11-25,,,,0
-211090,canastas,2026-11-25,,,,0
-211091,canastas,2026-11-25,,,,0
-211092,canastas,2026-11-25,,,,0
-211093,canastas,2026-11-25,,,,0
-211094,canastas,2026-11-25,,,,0
+211088,canastas,2026-11-25,AD-PIND,AD-piña indstria,1.5 - 2.5,403
+211089,canastas,2026-11-25,PEBAB,piña special baby,1.5 - 2.5,213
+211090,canastas,2026-11-25,PE1,piña special 1ra,0.0 - 1.0,266
+211091,canastas,2026-11-25,AD-PJUG,,3.0 - 4.0,261
+211092,canastas,2026-11-25,AD-PJUG,,3.0 - 4.0,633
+211093,canastas,2026-11-25,PJUG,piña jugos,3.0 - 4.0,115
 211095,canastas,2026-11-25,,,,0
 211096,canastas,2026-11-25,,,,0
 211097,canastas,2026-11-25,,,,0
