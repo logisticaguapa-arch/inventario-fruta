@@ -20,7 +20,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 210969,canastas,2026-11-25,PIND,piña indstria,1.5 - 2.5,453
 210971,canastas,2026-11-25,PE1,piña special 1ra,1.5 - 2.5,83
 210973,canastas,2026-11-25,PIND,piña indstria,1.5 - 2.5,476
-210974,canastas,2026-11-25,PEBAB,piña special baby,1.5 - 2.5,440
 210975,canastas,2026-11-25,PIND,piña indstria,1.5 - 2.5,449
 210977,canastas,2026-11-25,PE1,piña special 1ra,1.5 - 2.5,530
 210979,canastas,2026-11-25,PEGUA,piña special guapita,1.5 - 2.5,48
@@ -37,10 +36,9 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 211001,canastas,2026-11-25,PEBAB,piña special baby,1.5 - 2.5,418
 211004,canastas,2026-11-25,PIND,piña indstria,1.5 - 2.5,457
 211010,canastas,2026-11-25,PEBAB,piña special baby,1.5 - 2.5,449
-211011,canastas,2026-11-25,PEBAB,piña special baby,1.5 - 2.5,427
+211011,canastas,2026-11-25,PEBAB,piña special baby,1.5 - 2.5,206
 211014,canastas,2026-11-25,PIND,piña indstria,1.5 - 2.5,489
 211018,canastas,2026-11-25,PE3,piña special 3ra,1.5 - 2.5,507
-211020,canastas,2026-11-25,PEBAB,piña special baby,1.5 - 2.5,433
 211022,canastas,2026-11-25,PE1,piña special 1ra,1,21
 211024,canastas,2026-11-25,PE2,piña special 2da,3.0 - 4.0,499
 211027,canastas,2026-11-25,PIND,piña indstria,1.5 - 2.5,437
@@ -105,12 +103,12 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 211129,canastas,2026-11-26,PE2,piña special 2da,1.5 - 2.5,513
 211130,canastas,2026-11-26,PEGUA,piña special guapita,1.5 - 2.5,450
 211131,canastas,2026-11-26,PE1,piña special 1ra,1.5 - 2.5,549
-211132,canastas,2026-11-26,,,,0
-211133,canastas,2026-11-26,,,,0
-211134,canastas,2026-11-26,,,,0
-211135,canastas,2026-11-26,,,,0
-211136,canastas,2026-11-26,,,,0
-211137,canastas,2026-11-26,,,,0
+211132,canastas,2026-11-26,PE2,piña special 2da,1.5 - 2.5,470
+211133,canastas,2026-11-26,PEGUA,piña special guapita,1.5 - 2.5,478
+211134,canastas,2026-11-26,PEBAB,piña special baby,1.5 - 2.5,460
+211135,canastas,2026-11-26,PE1,piña special 1ra,1,536
+211136,canastas,2026-11-26,PIND,piña indstria,1.5 - 2.5,477
+211137,canastas,2026-11-26,PEGUA,piña special guapita,1.5 - 2.5,497
 211138,canastas,2026-11-26,,,,0
 211139,canastas,2026-11-26,,,,0
 211140,canastas,2026-11-26,,,,0
