@@ -7,7 +7,7 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 210937,canastas,2026-11-25,PEBAB,piña special baby,1.5 - 2.5,433
 210939,canastas,2026-11-25,PE3,piña special 3ra,1.5 - 2.5,421
 210949,canastas,2026-11-25,PEBAB,piña special baby,1.5 - 2.5,423
-210957,canastas,2026-11-25,PE2,piña special 2da,3.0 - 4.0,481
+210957,canastas,2026-11-25,PE2,piña special 2da,3.0 - 4.0,465
 210958,canastas,2026-11-25,PIND,piña indstria,1.5 - 2.5,478
 210960,canastas,2026-11-25,PEBAB,piña special baby,1.5 - 2.5,432
 210965,canastas,2026-11-25,PEBAB,piña special baby,1.5 - 2.5,416
@@ -18,7 +18,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 210977,canastas,2026-11-25,PE1,piña special 1ra,1.5 - 2.5,530
 210979,canastas,2026-11-25,PEGUA,piña special guapita,1.5 - 2.5,48
 210984,canastas,2026-11-25,PEBAB,piña special baby,1.5 - 2.5,441
-210988,canastas,2026-11-25,PE2,piña special 2da,3.0 - 4.0,480
 210991,canastas,2026-11-25,PIND,piña indstria,1.5 - 2.5,375
 210993,canastas,2026-11-25,PEGUA,piña special guapita,1.5 - 2.5,42
 210999,canastas,2026-11-25,PEBAB,piña special baby,1.5 - 2.5,419
@@ -114,12 +113,12 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 211152,canastas,2026-11-26,PEBAB,piña special baby,1.5 - 2.5,437
 211153,canastas,2026-11-26,PEGUA,piña special guapita,1.5 - 2.5,476
 211154,canastas,2026-11-26,PE2,piña special 2da,1.5,372
-211155,canastas,2026-11-26,,,,0
-211156,canastas,2026-11-26,,,,0
-211157,canastas,2026-11-26,,,,0
-211158,canastas,2026-11-26,,,,0
-211159,canastas,2026-11-26,,,,0
-211160,canastas,2026-11-26,,,,0
+211155,canastas,2026-11-26,PE3,piña special 3ra,1.5 - 2.5,504
+211156,canastas,2026-11-26,PE3,piña special 3ra,0.0 - 1.0,484
+211157,canastas,2026-11-26,PIND,piña indstria,1.5 - 2.5,462
+211158,canastas,2026-11-26,PEGUA,piña special guapita,1.5 - 2.5,483
+211159,canastas,2026-11-26,PE1,piña special 1ra,1.5 - 2.5,542
+211160,canastas,2026-11-26,PEBAB,piña special baby,1.5 - 2.5,413
 211161,canastas,2026-11-26,,,,0
 211162,canastas,2026-11-26,,,,0
 211163,canastas,2026-11-26,,,,0
