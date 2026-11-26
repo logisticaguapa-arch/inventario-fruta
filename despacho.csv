@@ -28100,40 +28100,43 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-25,,,descarte,AD-piña jugos,AD-PJUG,0,0,,104,210704,2026-11-23,3.0 - 4.0,2926,34
 2026-11-25,,,descarte,AD-piña jugos,AD-PJUG,0,0,,158,210699,2026-11-23,3.0 - 4.0,2926,34
 2026-11-25,47688,R-19874,venta empleados,piña special 1ra,PE1,187,0,2200,0,211094,2026-11-25,1.5 - 2.5,2826,34
-2026-11-26,,,local apartado,AL-PEGUA,AL-PEGUA,148,300,,0,211095,2026-11-26,1.5 - 2.5,,
-2026-11-26,,,local apartado,Piña AD1,AD1,555,0,,5,211087,2026-11-25,0.0 - 1.0,3726,78
-2026-11-26,,,local apartado,piña special 1ra,PE1,531,0,,0,211044,2026-11-25,0.0 - 1.0,2826,34
-2026-11-26,,,local apartado,piña special 1ra,PE1,528,76,,0,211017,2026-11-25,0.0 - 1.0,2826,34
-2026-11-26,,,Aldinsen Gonzalez,piña indstria,PIND,465,227,,0,211052,2026-11-25,1.5 - 2.5,2826,34
-2026-11-26,,,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,541,0,,0,210889,2026-11-24,3.0 - 4.0,3726,79
-2026-11-26,,,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,370,0,,0,210890,2026-11-24,3.0 - 4.0,3526,78
-2026-11-26,,,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,531,0,,0,210872,2026-11-24,3.0 - 4.0,2926,78
-2026-11-26,,,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,520,0,,0,210856,2026-11-24,3.0 - 4.0,3326,78
-2026-11-26,,,Aldinsen Gonzalez,piña jugos,PJUG,125,0,,180,210911,2026-11-24,3.0 - 4.0,2826,32
-2026-11-26,,,local medellin,piña special 1ra,PE1,527,0,,0,210946,2026-11-25,1.5 - 2.5,2826,34
-2026-11-26,,,local medellin,piña special 1ra,PE1,556,0,,3,211057,2026-11-25,1.5 - 2.5,2826,34
-2026-11-26,,,local medellin,piña special 1ra,PE1,529,115,,0,211005,2026-11-25,1.5 - 2.5,2826,32
-2026-11-26,,,local medellin,piña special 1ra,PE1,521,0,,0,211025,2026-11-25,3.0 - 4.0,2826,34
-2026-11-26,,,local medellin,piña special 1ra,PE1,476,0,,34,210947,2026-11-25,3.0 - 4.0,2826,34
-2026-11-26,,,local medellin,piña special 1ra,PE1,338,0,,7,211063,2026-11-25,3.0 - 4.0,2826,34
-2026-11-26,,,local medellin,piña special 3ra,PE3,482,218,,0,210736,2026-11-24,1.5 - 2.5,2826,32
-2026-11-26,,,local medellin,piña special 3ra,PE3,507,0,,0,211039,2026-11-25,3.0 - 4.0,2826,34
-2026-11-26,,,local medellin,piña special 3ra,PE3,498,0,,0,211015,2026-11-25,3.0 - 4.0,2826,32
-2026-11-26,,,local medellin,piña special 3ra,PE3,509,0,,0,210951,2026-11-25,3.0 - 4.0,2826,34
-2026-11-26,,,local medellin,piña special 3ra,PE3,298,0,,0,211080,2026-11-25,3.0 - 4.0,2826,34
-2026-11-26,,,rubiela castro,piña special 1ra,PE1,526,0,,11,210990,2026-11-25,0.0 - 1.0,2826,34
-2026-11-26,,,rubiela castro,piña special 1ra,PE1,519,0,,0,210970,2026-11-25,0.0 - 1.0,2826,34
-2026-11-26,,,rubiela castro,Piña AD1,AD1,576,0,,0,211077,2026-11-25,0.0 - 1.0,3726,79
-2026-11-26,,,rubiela castro,Piña AD1,AD1,602,0,,0,211073,2026-11-25,0.0 - 1.0,3426,77
-2026-11-26,,,rubiela castro,Piña AD1,AD1,578,0,,0,211069,2026-11-25,0.0 - 1.0,3226,77
-2026-11-26,,,rubiela castro,Piña AD1,AD1,600,0,,0,211067,2026-11-25,0.0 - 1.0,3226,77
-2026-11-26,,,rubiela castro,Piña AD1,AD1,573,0,,0,211064,2026-11-25,0.0 - 1.0,3226,77
-2026-11-26,,,rubiela castro,Piña AD1,AD1,598,0,,0,211060,2026-11-25,0.0 - 1.0,3226,77
-2026-11-26,,,rubiela castro,Piña AD1,AD1,428,0,,0,211059,2026-11-25,0.0 - 1.0,3226,77
-2026-11-26,,,rubiela castro,piña special 1ra,PE1,218,57,,0,211066,2026-11-25,0.0 - 1.0,2826,34
-2026-11-26,,,rubiela castro,piña special 2da,PE2,495,0,,0,210976,2026-11-25,0.0 - 1.0,2826,34
-2026-11-26,,,rubiela castro,piña special 2da,PE2,503,0,,0,210941,2026-11-25,0.0 - 1.0,2826,34
-2026-11-26,,,rubiela castro,piña special 2da,PE2,514,213,,0,211008,2026-11-25,0.0 - 1.0,2826,34
+2026-11-26,,R-19875,local apartado,AL-PEGUA,AL-PEGUA,148,300,2200,0,211095,2026-11-26,1.5 - 2.5,,
+2026-11-26,,R-19875,local apartado,,AD2,0,250,3000,0,,,1,,
+2026-11-26,,R-19875,local apartado,,PE2,0,170,3000,0,,,2,,
+2026-11-26,,R-19875,local apartado,Piña AD1,AD1,555,0,3200,5,211087,2026-11-25,0.0 - 1.0,3726,78
+2026-11-26,,R-19875,local apartado,piña special 1ra,PE1,531,0,3200,0,211044,2026-11-25,0.0 - 1.0,2826,34
+2026-11-26,,R-19875,local apartado,piña special 1ra,PE1,528,76,3200,0,211017,2026-11-25,0.0 - 1.0,2826,34
+2026-11-26,,R-19875,local apartado,,PE1,0,270,3200,0,,,2,,
+2026-11-26,,R-19876,Aldinsen Gonzalez,piña indstria,PIND,465,227,1500,0,211052,2026-11-25,1.5 - 2.5,2826,34
+2026-11-26,,R-19876,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,541,0,1300,0,210889,2026-11-24,3.0 - 4.0,3726,79
+2026-11-26,,R-19876,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,370,0,1300,0,210890,2026-11-24,3.0 - 4.0,3526,78
+2026-11-26,,R-19876,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,531,0,1300,0,210872,2026-11-24,3.0 - 4.0,2926,78
+2026-11-26,,R-19876,Aldinsen Gonzalez,AD-piña jugos,AD-PJUG,520,0,1300,0,210856,2026-11-24,3.0 - 4.0,3326,78
+2026-11-26,,R-19876,Aldinsen Gonzalez,piña jugos,PJUG,125,0,1300,180,210911,2026-11-24,3.0 - 4.0,2826,32
+2026-11-26,,R-19877,local medellin,piña special 1ra,PE1,527,0,3000,0,210946,2026-11-25,1.5 - 2.5,2826,34
+2026-11-26,,R-19877,local medellin,piña special 1ra,PE1,556,0,3000,3,211057,2026-11-25,1.5 - 2.5,2826,34
+2026-11-26,,R-19877,local medellin,piña special 1ra,PE1,529,115,3000,0,211005,2026-11-25,1.5 - 2.5,2826,32
+2026-11-26,,R-19877,local medellin,piña special 1ra,PE1,521,0,3000,0,211025,2026-11-25,3.0 - 4.0,2826,34
+2026-11-26,,R-19877,local medellin,piña special 1ra,PE1,476,0,3000,34,210947,2026-11-25,3.0 - 4.0,2826,34
+2026-11-26,,R-19877,local medellin,piña special 1ra,PE1,338,0,3000,7,211063,2026-11-25,3.0 - 4.0,2826,34
+2026-11-26,,R-19877,local medellin,piña special 3ra,PE3,482,218,2600,0,210736,2026-11-24,1.5 - 2.5,2826,32
+2026-11-26,,R-19877,local medellin,piña special 3ra,PE3,507,0,2600,0,211039,2026-11-25,3.0 - 4.0,2826,34
+2026-11-26,,R-19877,local medellin,piña special 3ra,PE3,498,0,2600,0,211015,2026-11-25,3.0 - 4.0,2826,32
+2026-11-26,,R-19877,local medellin,piña special 3ra,PE3,509,0,2600,0,210951,2026-11-25,3.0 - 4.0,2826,34
+2026-11-26,,R-19877,local medellin,piña special 3ra,PE3,298,0,2600,0,211080,2026-11-25,3.0 - 4.0,2826,34
+2026-11-26,,R-19879,rubiela castro,piña special 1ra,PE1,526,0,2400,11,210990,2026-11-25,0.0 - 1.0,2826,34
+2026-11-26,,R-19879,rubiela castro,piña special 1ra,PE1,519,0,2400,0,210970,2026-11-25,0.0 - 1.0,2826,34
+2026-11-26,,R-19879,rubiela castro,Piña AD1,AD1,576,0,2400,0,211077,2026-11-25,0.0 - 1.0,3726,79
+2026-11-26,,R-19879,rubiela castro,Piña AD1,AD1,602,0,2400,0,211073,2026-11-25,0.0 - 1.0,3426,77
+2026-11-26,,R-19879,rubiela castro,Piña AD1,AD1,578,0,2400,0,211069,2026-11-25,0.0 - 1.0,3226,77
+2026-11-26,,R-19879,rubiela castro,Piña AD1,AD1,600,0,2400,0,211067,2026-11-25,0.0 - 1.0,3226,77
+2026-11-26,,R-19879,rubiela castro,Piña AD1,AD1,573,0,2400,0,211064,2026-11-25,0.0 - 1.0,3226,77
+2026-11-26,,R-19879,rubiela castro,Piña AD1,AD1,598,0,2400,0,211060,2026-11-25,0.0 - 1.0,3226,77
+2026-11-26,,R-19879,rubiela castro,Piña AD1,AD1,428,0,2400,0,211059,2026-11-25,0.0 - 1.0,3226,77
+2026-11-26,,R-19879,rubiela castro,piña special 1ra,PE1,218,57,2400,0,211066,2026-11-25,0.0 - 1.0,2826,34
+2026-11-26,,R-19879,rubiela castro,piña special 2da,PE2,495,0,2200,0,210976,2026-11-25,0.0 - 1.0,2826,34
+2026-11-26,,R-19879,rubiela castro,piña special 2da,PE2,503,0,2200,0,210941,2026-11-25,0.0 - 1.0,2826,34
+2026-11-26,,R-19879,rubiela castro,piña special 2da,PE2,514,213,2200,0,211008,2026-11-25,0.0 - 1.0,2826,34
 2026-11-26,,,local sincelejo,piña special 3ra,PE3,397,0,,4,210879,2026-11-24,1.5 - 2.5,2826,32
 2026-11-26,,,local sincelejo,piña special 3ra,PE3,488,0,,0,210820,2026-11-24,1.5 - 2.5,2826,32
 2026-11-26,,,local sincelejo,piña special 3ra,PE3,491,0,,0,210842,2026-11-24,1.5 - 2.5,2826,32
@@ -28213,3 +28216,9 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-26,,,juan pablo cogollo,piña special baby,PEBAB,440,122,,0,210996,2026-11-25,1.5 - 2.5,2826,34
 2026-11-26,,,juan pablo cogollo,piña special 2da,PE2,512,0,,0,210995,2026-11-25,3.0 - 4.0,2826,34
 2026-11-26,,,juan pablo cogollo,piña special 2da,PE2,472,16,,0,210988,2026-11-25,3.0 - 4.0,2826,34
+2026-11-26,,,jeronimo martins,piña special 2da,PE2,394,0,,0,211140,2026-11-26,1.5,,
+2026-11-26,,,jeronimo martins,piña special 2da,PE2,401,0,,0,211154,2026-11-26,1.5,,
+2026-11-26,,,jeronimo martins,piña special 2da,PE2,373,0,,0,211126,2026-11-26,1.5,,
+2026-11-26,,,jeronimo martins,piña special 2da,PE2,395,0,,0,211115,2026-11-26,1.5,,
+2026-11-26,,,jeronimo martins,piña special 2da,PE2,394,0,,0,211127,2026-11-26,1.5,,
+2026-11-26,,,jeronimo martins,piña special 2da,PE2,399,0,,0,211102,2026-11-26,1.5,,
