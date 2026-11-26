@@ -27998,9 +27998,9 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-25,,R-19859,local medellin,piña special 3ra,PE3,497,0,2600,0,210754,2026-11-24,3.0 - 4.0,2826,77
 2026-11-25,,R-19859,local medellin,piña special 3ra,PE3,488,0,2600,0,210871,2026-11-24,3.0 - 4.0,2826,32
 2026-11-25,,R-19859,local medellin,piña special 3ra,PE3,25,0,2600,0,210918,2026-11-25,3.0 - 4.0,,
-2026-11-25,46765,R-19860,Almacenes Éxito S.A. - Barranquilla,piña special 1ra,PE1,504,0,3300,9,210735,2026-11-24,1,2826,32
-2026-11-25,46765,R-19860,Almacenes Éxito S.A. - Barranquilla,piña special 1ra,PE1,533,133,3300,0,210796,2026-11-24,1,2826,77
-2026-11-25,46765,R-19860,Almacenes Éxito S.A. - Barranquilla,piña special 1ra,PE1,526,254,3400,0,210793,2026-11-24,0,2826,77
+2026-11-25,47665,R-19860,Almacenes Éxito S.A. - Barranquilla,piña special 1ra,PE1,504,0,3300,9,210735,2026-11-24,1,2826,32
+2026-11-25,47665,R-19860,Almacenes Éxito S.A. - Barranquilla,piña special 1ra,PE1,533,133,3300,0,210796,2026-11-24,1,2826,77
+2026-11-25,47665,R-19860,Almacenes Éxito S.A. - Barranquilla,piña special 1ra,PE1,526,254,3400,0,210793,2026-11-24,0,2826,77
 2026-11-25,,R-19858,reposicion éxito barranquilla,,PE1,0,50,3200,0,,,1,,
 2026-11-25,,R-19861,cartagena,Piña AD1,AD1,579,0,3200,8,210874,2026-11-24,0.0 - 1.0,3726,78
 2026-11-25,,R-19861,cartagena,piña special 1ra,PE1,520,0,3200,0,210845,2026-11-24,0.0 - 1.0,2826,32
@@ -28088,13 +28088,13 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-25,47684,R-19872,Almacenes Éxito S.A. - Medellin,Piña AD1,AD1,532,0,3100,0,210867,2026-11-24,0,3726,77
 2026-11-25,47684,R-19872,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,199,0,3100,0,210910,2026-11-24,0,2826,32
 2026-11-25,47684,R-19872,Almacenes Éxito S.A. - Medellin,Piña AD1,AD1,371,0,3100,0,210881,2026-11-24,0,3526,78
-2026-11-25,,R-18970,reposicion éxito medellin,,PE1,0,100,,0,,,1,,
+2026-11-25,,R-19870,reposicion éxito medellin,,PE1,0,100,,0,,,1,,
 2026-11-25,47686,R-19868,jeronimo martins,piña special 2da,PE2,409,0,3200,0,210992,2026-11-25,1.5,,
 2026-11-25,47686,R-19868,jeronimo martins,piña special 2da,PE2,406,285,3200,0,210987,2026-11-25,1.5,,
 2026-11-25,47687,R-19869,jeronimo martins,piña special 2da,PE2,120,0,3200,0,210964,2026-11-25,1.5,,
 2026-11-25,47687,R-19869,jeronimo martins,piña special 2da,PE2,408,0,3200,0,210982,2026-11-25,1.5,,
 2026-11-25,47687,R-19869,jeronimo martins,piña special 2da,PE2,408,164,3200,0,210934,2026-11-25,1.5,,
-2026-11-25,,,jeronimo martins,piña special 2da,PE2,115,25,,0,210873,2026-11-24,1.5,2826,32
+2026-11-25,,R-19873,reposicion jeronimo,piña special 2da,PE2,115,25,,0,210873,2026-11-24,1.5,2826,32
 2026-11-25,,,descarte,piña jugos,PJUG,0,0,,124,210708,2026-11-23,3.0 - 4.0,2826,77
 2026-11-25,,,descarte,AD-piña jugos,AD-PJUG,0,0,,173,210695,2026-11-23,3.0 - 4.0,2926,34
 2026-11-25,,,descarte,AD-piña jugos,AD-PJUG,0,0,,104,210704,2026-11-23,3.0 - 4.0,2926,34
