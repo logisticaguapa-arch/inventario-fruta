@@ -34,7 +34,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 211038,canastas,2026-11-25,PIND,piña indstria,1.5 - 2.5,482
 211045,canastas,2026-11-25,PEBAB,piña special baby,1.5 - 2.5,31
 211046,canastas,2026-11-25,PIND,piña indstria,1.5 - 2.5,446
-211047,canastas,2026-11-25,PE2,piña special 2da,1.5,161
 211048,canastas,2026-11-25,PE2,piña special 2da,3.0 - 4.0,640
 211049,canastas,2026-11-25,PE1,piña special 1ra,0.0 - 1.0,199
 211050,canastas,2026-11-25,PIND,piña indstria,1.5 - 2.5,443
@@ -152,14 +151,30 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 211197,canastas,2026-11-26,PEGUA,piña special guapita,1.5 - 2.5,477
 211198,canastas,2026-11-26,PE1,piña special 1ra,3.0 - 4.0,502
 211199,canastas,2026-11-26,PEBAB,piña special baby,1.5 - 2.5,433
-211200,canastas,2026-11-26,,,,0
-211201,canastas,2026-11-26,,,,0
-211202,canastas,2026-11-26,,,,0
-211203,canastas,2026-11-26,,,,0
-211204,canastas,2026-11-26,,,,0
-211205,canastas,2026-11-26,,,,0
-211206,canastas,2026-11-26,,,,0
-211207,canastas,2026-11-26,,,,0
-211208,canastas,2026-11-26,,,,0
-211209,canastas,2026-11-26,,,,0
-211210,canastas,2026-11-26,,,,0
+211200,canastas,2026-11-26,PE1,piña special 1ra,1,531
+211201,canastas,2026-11-26,PE1,piña special 1ra,1.5 - 2.5,547
+211202,canastas,2026-11-26,PE1,piña special 1ra,0.0 - 1.0,525
+211204,canastas,2026-11-26,PE1,piña special 1ra,0.0 - 1.0,539
+211205,canastas,2026-11-26,PIND,piña indstria,1.5 - 2.5,463
+211206,canastas,2026-11-26,PE2,piña special 2da,3.0 - 4.0,516
+211207,canastas,2026-11-26,PE3,piña special 3ra,0.0 - 1.0,482
+211208,canastas,2026-11-26,PEBAB,piña special baby,1.5 - 2.5,429
+211209,canastas,2026-11-26,PIND,piña indstria,1.5 - 2.5,465
+211210,canastas,2026-11-26,PE3,piña special 3ra,1.5 - 2.5,497
+211211,canastas,2026-11-26,,,,0
+211212,canastas,2026-11-26,,,,0
+211213,canastas,2026-11-26,,,,0
+211214,canastas,2026-11-26,,,,0
+211215,canastas,2026-11-26,,,,0
+211216,canastas,2026-11-26,,,,0
+211217,canastas,2026-11-26,,,,0
+211218,canastas,2026-11-26,,,,0
+211219,canastas,2026-11-26,,,,0
+211220,canastas,2026-11-26,,,,0
+211221,canastas,2026-11-26,,,,0
+211222,canastas,2026-11-26,,,,0
+211223,canastas,2026-11-26,,,,0
+211224,canastas,2026-11-26,,,,0
+211225,canastas,2026-11-26,,,,0
+211226,canastas,2026-11-26,,,,0
+211227,canastas,2026-11-26,,,,0
