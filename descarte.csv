@@ -4258,7 +4258,7 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,46,noviembre,2026-11-12,2626,77,canastas,7.0,,7.0,7.0,Muestreo,PE1
 2026,46,noviembre,2026-11-12,2626,77,canastas,6.0,,6.0,6.0,Muestreo,PE2
 2026,46,noviembre,2026-11-12,2626,47,canastas,2.0,,2.0,2.0,Muestreo,PE2
-2026,46,noviembre,2026-11-12,2626,77,canastas,2.0,,2.0,2.0,,PEGUA
+2026,46,noviembre,2026-11-12,2626,77,canastas,2.0,,2.0,2.0,Muestreo,PEGUA
 2026,46,noviembre,2026-11-12,2626,77,canastas,3.0,,3.0,3.0,Muestreo,PE2
 2026,46,noviembre,2026-11-12,2626,77,canastas,17.0,,17.0,17.0,Daño por reposo,PIND
 2026,46,noviembre,2026-11-12,2726,32,canastas,100.0,,100.0,100.0,Daño por reposo,AD-PJUG
@@ -4266,7 +4266,7 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,46,noviembre,2026-11-12,3326,78,canastas,40.0,,40.0,40.0,Daño por reposo,AD-PIND
 2026,46,noviembre,2026-11-12,2826,77,canastas,101.0,,101.0,101.0,Daño por reposo,AD1
 2026,46,noviembre,2026-11-12,2526,77,canastas,116.0,,116.0,116.0,Daño por reposo,PE1
-2026,46,noviembre,2026-11-12,3126,78,canastas,11.0,,11.0,11.0,,AD1
+2026,46,noviembre,2026-11-12,3126,78,canastas,11.0,,11.0,11.0,Muestreo,AD1
 2026,46,noviembre,2026-11-13,3326,78,canastas,3.0,,3.0,3.0,Muestreo,AD2
 2026,46,noviembre,2026-11-13,2626,77,canastas,1.0,,1.0,1.0,Muestreo,PEGUA
 2026,46,noviembre,2026-11-13,2726,32,canastas,18.0,,18.0,18.0,Muestreo,AD1
@@ -4279,9 +4279,9 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,46,noviembre,2026-11-13,2626,77,canastas,27.0,,27.0,27.0,Daño por reposo,PE1
 2026,46,noviembre,2026-11-13,2626,77,canastas,15.0,,15.0,15.0,Muestreo,PE1
 2026,46,noviembre,2026-11-13,2626,77,canastas,15.0,,15.0,15.0,Muestreo,PE1
-2026,46,noviembre,2026-11-13,2626,77,canastas,31.0,,31.0,31.0,,PE1
+2026,46,noviembre,2026-11-13,2626,77,canastas,31.0,,31.0,31.0,Sobre madura campo,PE1
 2026,46,noviembre,2026-11-13,2626,77,canastas,29.0,,29.0,29.0,Golpe empacadora,PIND
-2026,46,noviembre,2026-11-13,2626,77,canastas,33.0,,33.0,33.0,,PE1
+2026,46,noviembre,2026-11-13,2626,77,canastas,33.0,,33.0,33.0,Sobre madura campo,PE1
 2026,46,noviembre,2026-11-13,2626,77,11,1351.0,,1351.0,1351.0,Enferma,PE1
 2026,46,noviembre,2026-11-13,2526,77,258,1377.0,,1377.0,1377.0,Enferma,PE1
 2026,46,noviembre,2026-11-13,2526,77,90,1419.0,,1419.0,1419.0,Enferma,PE1
@@ -4479,7 +4479,7 @@ Anio,Semana,Mes,Fecha,Grupo,Lote,Bin,Bruto,Tara,Neto,DescarteKg,Motivo,Calidad
 2026,48,noviembre,2026-11-26,2826,32,canastas,180.0,,180.0,180.0,Daño por reposo,PJUG
 2026,48,noviembre,2026-11-26,2826,34,canastas,3.0,,3.0,3.0,Muestreo,PE1
 2026,48,noviembre,2026-11-26,2826,34,canastas,34.0,,34.0,34.0,Golpe empacadora,PE1
-2026,48,noviembre,2026-11-26,2826,34,canastas,7.0,,7.0,7.0,,PE1
+2026,48,noviembre,2026-11-26,2826,34,canastas,7.0,,7.0,7.0,Muestreo,PE1
 2026,48,noviembre,2026-11-26,2826,34,canastas,11.0,,11.0,11.0,Muestreo,PE1
 2026,48,noviembre,2026-11-26,2826,32,canastas,4.0,,4.0,4.0,Muestreo,PE3
 2026,48,noviembre,2026-11-26,2826,34,canastas,5.0,,5.0,5.0,Muestreo,PEGUA
