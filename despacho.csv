@@ -28100,7 +28100,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-25,,,descarte,AD-piña jugos,AD-PJUG,0,0,,104,210704,2026-11-23,3.0 - 4.0,2926,34
 2026-11-25,,,descarte,AD-piña jugos,AD-PJUG,0,0,,158,210699,2026-11-23,3.0 - 4.0,2926,34
 2026-11-25,47688,R-19874,venta empleados,piña special 1ra,PE1,187,0,2200,0,211094,2026-11-25,1.5 - 2.5,2826,34
-2026-11-26,,R-19875,local apartado,AL-PEGUA,AL-PEGUA,148,300,2200,0,211095,2026-11-26,1.5 - 2.5,,
+2026-11-26,,R-19875,local apartado,AL-PEGUA,AL-PEGUA,148,300,2200,0,211095,2026-11-26,1.5 - 2.5,2826,34
 2026-11-26,,R-19875,local apartado,,AD2,0,250,3000,0,,,1,,
 2026-11-26,,R-19875,local apartado,,PE2,0,170,3000,0,,,2,,
 2026-11-26,,R-19875,local apartado,Piña AD1,AD1,555,0,3200,5,211087,2026-11-25,0.0 - 1.0,3726,78
@@ -28149,7 +28149,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-26,,R-19880,local sincelejo,piña special guapita,PEGUA,471,0,2400,0,210994,2026-11-25,1.5 - 2.5,2826,34
 2026-11-26,,R-19880,local sincelejo,piña special guapita,PEGUA,558,0,2400,0,211070,2026-11-25,1.5 - 2.5,2826,34
 2026-11-26,,R-19880,local sincelejo,piña special guapita,PEGUA,475,0,2400,0,211042,2026-11-25,1.5 - 2.5,2826,34
-2026-11-26,,R-19880,local sincelejo,piña special guapita,PEGUA,17,0,2400,0,211096,2026-11-26,1.5 - 2.5,,
+2026-11-26,,R-19880,local sincelejo,piña special guapita,PEGUA,17,0,2400,0,211096,2026-11-26,1.5 - 2.5,2826,34
 2026-11-26,,R-19880,local sincelejo,piña special baby,PEBAB,398,0,1700,3,211023,2026-11-25,1.5 - 2.5,2826,34
 2026-11-26,,R-19880,local sincelejo,piña special baby,PEBAB,422,0,1700,0,211012,2026-11-25,1.5 - 2.5,2826,34
 2026-11-26,,R-19880,local sincelejo,piña special baby,PEBAB,417,0,1700,0,211035,2026-11-25,1.5 - 2.5,2826,34
@@ -28198,7 +28198,7 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-26,47722,R-19884,frutysabor,piña special guapita,PEGUA,505,0,1200,0,210967,2026-11-25,1.5 - 2.5,2826,34
 2026-11-26,47722,R-19884,frutysabor,piña special guapita,PEGUA,481,0,1200,0,211016,2026-11-25,1.5 - 2.5,2826,34
 2026-11-26,47722,R-19884,frutysabor,piña special guapita,PEGUA,470,168,1200,0,211007,2026-11-25,1.5 - 2.5,2826,34
-2026-11-26,47723,R-19885,Afrucol S.A.S.,piña special guapita,PEGUA,475,0,1100,0,211103,2026-11-26,1.5 - 2.5,,
+2026-11-26,47723,R-19885,Afrucol S.A.S.,piña special guapita,PEGUA,475,0,1100,0,211103,2026-11-26,1.5 - 2.5,2826,34
 2026-11-26,47723,R-19885,Afrucol S.A.S.,piña special guapita,PEGUA,475,0,1100,0,210921,2026-11-25,1.5 - 2.5,2826,34
 2026-11-26,47723,R-19885,Afrucol S.A.S.,piña special guapita,PEGUA,491,153,1100,5,210942,2026-11-25,1.5 - 2.5,2826,34
 2026-11-26,47723,R-19885,Afrucol S.A.S.,piña special baby,PEBAB,418,0,800,0,210985,2026-11-25,1.5 - 2.5,2826,34
@@ -28217,13 +28217,13 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-26,47724,R-19886,juan pablo cogollo,piña special baby,PEBAB,440,122,1000,0,210996,2026-11-25,1.5 - 2.5,2826,34
 2026-11-26,47724,R-19886,juan pablo cogollo,piña special 2da,PE2,512,0,2400,0,210995,2026-11-25,3.0 - 4.0,2826,34
 2026-11-26,47724,R-19886,juan pablo cogollo,piña special 2da,PE2,472,16,2400,0,210988,2026-11-25,3.0 - 4.0,2826,34
-2026-11-26,47725,R-19887,jeronimo martins,piña special 2da,PE2,394,0,3100,0,211140,2026-11-26,1.5,,
-2026-11-26,47725,R-19887,jeronimo martins,piña special 2da,PE2,401,0,3100,0,211154,2026-11-26,1.5,,
-2026-11-26,47725,R-19887,jeronimo martins,piña special 2da,PE2,405,0,3100,0,211126,2026-11-26,1.5,,
-2026-11-26,47725,R-19887,jeronimo martins,piña special 2da,PE2,395,0,3100,0,211115,2026-11-26,1.5,,
-2026-11-26,47725,R-19887,jeronimo martins,piña special 2da,PE2,394,0,3100,0,211127,2026-11-26,1.5,,
-2026-11-26,47725,R-19887,jeronimo martins,piña special 2da,PE2,399,0,3100,0,211102,2026-11-26,1.5,,
-2026-11-26,47725,R-19887,jeronimo martins,piña special 2da,PE2,416,0,3100,0,211211,2026-11-26,1.5,,
+2026-11-26,47725,R-19887,jeronimo martins,piña special 2da,PE2,394,0,3100,0,211140,2026-11-26,1.5,2826,32
+2026-11-26,47725,R-19887,jeronimo martins,piña special 2da,PE2,401,0,3100,0,211154,2026-11-26,1.5,2826,32
+2026-11-26,47725,R-19887,jeronimo martins,piña special 2da,PE2,405,0,3100,0,211126,2026-11-26,1.5,2826,32
+2026-11-26,47725,R-19887,jeronimo martins,piña special 2da,PE2,395,0,3100,0,211115,2026-11-26,1.5,2826,34
+2026-11-26,47725,R-19887,jeronimo martins,piña special 2da,PE2,394,0,3100,0,211127,2026-11-26,1.5,2826,32
+2026-11-26,47725,R-19887,jeronimo martins,piña special 2da,PE2,399,0,3100,0,211102,2026-11-26,1.5,2826,32
+2026-11-26,47725,R-19887,jeronimo martins,piña special 2da,PE2,416,0,3100,0,211211,2026-11-26,1.5,2826,34
 2026-11-26,47725,R-19887,jeronimo martins,piña special 2da,PE2,161,0,3100,0,211047,2026-11-25,1.5,2826,34
 2026-11-26,47725,R-19887,jeronimo martins,,PE1,0,115,3100,0,,,1.5,,
-2026-11-26,,R-19888,reposicion jeronimo,piña special 1ra,PE1,123,0,,0,211203,2026-11-26,1.5,,
+2026-11-26,,R-19888,reposicion jeronimo,piña special 1ra,PE1,123,0,,0,211203,2026-11-26,1.5,2826,34
