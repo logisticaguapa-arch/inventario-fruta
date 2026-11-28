@@ -177,7 +177,7 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 211323,canastas,2026-11-27,PEBAB,piña special baby,1.5 - 2.5,405
 211324,canastas,2026-11-27,PEGUA,piña special guapita,1.5 - 2.5,488
 211325,canastas,2026-11-27,PIND,piña indstria,1.5 - 2.5,473
-211326,canastas,2026-11-27,PEGUA,piña special guapita,1.5 - 2.5,495
+211326,canastas,2026-11-27,PEGUA,piña special guapita,1.5 - 2.5,266
 211327,canastas,2026-11-27,PE3,piña special 3ra,0.0 - 1.0,490
 211328,canastas,2026-11-27,PEGUA,piña special guapita,1.5 - 2.5,507
 211330,canastas,2026-11-27,PE2,piña special 2da,1.5 - 2.5,506
@@ -246,7 +246,6 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 211400,canastas,2026-11-27,PE1,piña special 1ra,3.0 - 4.0,542
 211401,canastas,2026-11-27,PEBAB,piña special baby,1.5 - 2.5,406
 211402,canastas,2026-11-27,PIND,piña indstria,1.5 - 2.5,472
-211403,canastas,2026-11-27,PE1,piña special 1ra,0.0 - 1.0,550
 211404,canastas,2026-11-27,PE3,piña special 3ra,3.0 - 4.0,487
 211405,canastas,2026-11-27,PE3,piña special 3ra,1.5 - 2.5,510
 211406,canastas,2026-11-27,PE2,piña special 2da,1.5,405
@@ -264,13 +263,11 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 211418,canastas,2026-11-27,PE2,piña special 2da,3.0 - 4.0,496
 211419,canastas,2026-11-27,PE3,piña special 3ra,3.0 - 4.0,489
 211420,canastas,2026-11-27,PEBAB,piña special baby,1.5 - 2.5,440
-211421,canastas,2026-11-27,PE1,piña special 1ra,0.0 - 1.0,539
 211422,canastas,2026-11-27,PE2,piña special 2da,3.0 - 4.0,489
 211423,canastas,2026-11-27,PE1,piña special 1ra,1.5 - 2.5,542
 211424,canastas,2026-11-27,PEBAB,piña special baby,1.5 - 2.5,396
 211425,canastas,2026-11-27,PEGUA,piña special guapita,1.5 - 2.5,504
 211426,canastas,2026-11-27,PE1,piña special 1ra,3.0 - 4.0,537
-211427,canastas,2026-11-27,PE1,piña special 1ra,0.0 - 1.0,538
 211428,canastas,2026-11-27,PIND,piña indstria,1.5 - 2.5,470
 211429,canastas,2026-11-27,PE2,piña special 2da,3.0 - 4.0,498
 211430,canastas,2026-11-27,PIND,piña indstria,1.5 - 2.5,434
@@ -285,10 +282,9 @@ ID,Bin,Fecha,Calidad,Nombre,Calibre,KgDisponibles
 211439,canastas,2026-11-27,PE2,piña special 2da,3.0 - 4.0,510
 211440,canastas,2026-11-27,PE3,piña special 3ra,1.5 - 2.5,495
 211441,canastas,2026-11-27,PE2,piña special 2da,1.5,409
-211442,canastas,2026-11-27,PEGUA,piña special guapita,1.5 - 2.5,541
 211443,canastas,2026-11-27,PE2,piña special 2da,1.5 - 2.5,436
 211444,canastas,2026-11-27,PE1,piña special 1ra,3.0 - 4.0,477
-211445,canastas,2026-11-27,PE2,piña special 2da,0.0 - 1.0,478
+211445,canastas,2026-11-27,PE2,piña special 2da,0.0 - 1.0,68
 211446,canastas,2026-11-27,AD1,Piña AD1,0.0 - 1.0,495
 211447,canastas,2026-11-27,AD2,Piña AD2,1.5,266
 211448,canastas,2026-11-27,PEGUA,piña special guapita,1.5 - 2.5,498
