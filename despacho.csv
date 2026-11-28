@@ -28252,25 +28252,26 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-27,,R-19891,local medellin,piña special 3ra,PE3,497,0,2600,0,211018,2026-11-25,1.5 - 2.5,2826,34
 2026-11-27,,R-19891,local medellin,piña special 3ra,PE3,222,0,2600,0,211055,2026-11-25,1.5 - 2.5,2826,34
 2026-11-27,,R-19891,local medellin,piña special 3ra,PE3,492,74,2600,0,211056,2026-11-25,1.5 - 2.5,2826,34
-2026-11-27,,R-19892,camilo quiñones,piña indstria,PIND,457,0,,0,211157,2026-11-26,1.5 - 2.5,2826,32
-2026-11-27,,R-19892,camilo quiñones,piña indstria,PIND,468,0,,0,210973,2026-11-25,1.5 - 2.5,2826,34
-2026-11-27,,R-19892,camilo quiñones,piña indstria,PIND,443,0,,0,210969,2026-11-25,1.5 - 2.5,2826,34
-2026-11-27,,R-19892,camilo quiñones,piña indstria,PIND,369,0,,0,210991,2026-11-25,1.5 - 2.5,2826,34
-2026-11-27,,R-19892,camilo quiñones,piña indstria,PIND,439,0,,0,210975,2026-11-25,1.5 - 2.5,2826,34
-2026-11-27,,R-19892,camilo quiñones,piña indstria,PIND,468,0,,0,210958,2026-11-25,1.5 - 2.5,2826,32
-2026-11-27,,R-19892,camilo quiñones,piña indstria,PIND,401,0,,0,211254,2026-11-26,1.5 - 2.5,2826,34
-2026-11-27,,R-19892,camilo quiñones,piña indstria,PIND,427,0,,0,211027,2026-11-25,1.5 - 2.5,2826,34
-2026-11-27,,R-19892,camilo quiñones,piña indstria,PIND,435,0,,0,211046,2026-11-25,1.5 - 2.5,2826,34
-2026-11-27,,R-19892,camilo quiñones,piña indstria,PIND,434,0,,0,211050,2026-11-25,1.5 - 2.5,2826,34
-2026-11-27,,R-19892,camilo quiñones,piña indstria,PIND,290,73,,0,211121,2026-11-26,1.5 - 2.5,2826,32
-2026-11-27,,R-19892,camilo quiñones,piña special 3ra,PE3,485,0,,0,211166,2026-11-26,3.0 - 4.0,2826,32
-2026-11-27,,R-19892,camilo quiñones,piña special 3ra,PE3,493,0,,0,211144,2026-11-26,3.0 - 4.0,2826,32
-2026-11-27,,R-19892,camilo quiñones,piña special 3ra,PE3,488,0,,5,211219,2026-11-26,3.0 - 4.0,2826,34
-2026-11-27,,R-19892,camilo quiñones,piña special 3ra,PE3,249,0,,0,211272,2026-11-26,3.0 - 4.0,2826,34
-2026-11-27,,R-19892,camilo quiñones,piña special 3ra,PE3,285,0,,13,211265,2026-11-26,3.0 - 4.0,2826,34
-2026-11-27,47745,,Almacenes Éxito S.A. - Barranquilla,piña special 1ra,PE1,525,195,,7,211135,2026-11-26,1,2826,32
-2026-11-27,47745,,Almacenes Éxito S.A. - Barranquilla,Piña AD1,AD1,319,0,,0,211300,2026-11-26,0,3226,77
-2026-11-27,47745,,Almacenes Éxito S.A. - Barranquilla,piña special 1ra,PE1,510,146,,0,211261,2026-11-26,0,2826,34
+2026-11-27,,R-19892,camilo quiñones,piña indstria,PIND,457,0,1400,0,211157,2026-11-26,1.5 - 2.5,2826,32
+2026-11-27,,R-19892,camilo quiñones,piña indstria,PIND,468,0,1400,0,210973,2026-11-25,1.5 - 2.5,2826,34
+2026-11-27,,R-19892,camilo quiñones,piña indstria,PIND,443,0,1400,0,210969,2026-11-25,1.5 - 2.5,2826,34
+2026-11-27,,R-19892,camilo quiñones,piña indstria,PIND,369,0,1400,0,210991,2026-11-25,1.5 - 2.5,2826,34
+2026-11-27,,R-19892,camilo quiñones,piña indstria,PIND,439,0,1400,0,210975,2026-11-25,1.5 - 2.5,2826,34
+2026-11-27,,R-19892,camilo quiñones,piña indstria,PIND,468,0,1400,0,210958,2026-11-25,1.5 - 2.5,2826,32
+2026-11-27,,R-19892,camilo quiñones,piña indstria,PIND,401,0,1400,0,211254,2026-11-26,1.5 - 2.5,2826,34
+2026-11-27,,R-19892,camilo quiñones,piña indstria,PIND,427,0,1400,0,211027,2026-11-25,1.5 - 2.5,2826,34
+2026-11-27,,R-19892,camilo quiñones,piña indstria,PIND,435,0,1400,0,211046,2026-11-25,1.5 - 2.5,2826,34
+2026-11-27,,R-19892,camilo quiñones,piña indstria,PIND,434,0,1400,0,211050,2026-11-25,1.5 - 2.5,2826,34
+2026-11-27,,R-19892,camilo quiñones,piña indstria,PIND,290,73,1400,0,211121,2026-11-26,1.5 - 2.5,2826,32
+2026-11-27,,R-19892,camilo quiñones,piña special 3ra,PE3,485,0,900,0,211166,2026-11-26,3.0 - 4.0,2826,32
+2026-11-27,,R-19892,camilo quiñones,piña special 3ra,PE3,493,0,900,0,211144,2026-11-26,3.0 - 4.0,2826,32
+2026-11-27,,R-19892,camilo quiñones,piña special 3ra,PE3,488,0,900,5,211219,2026-11-26,3.0 - 4.0,2826,34
+2026-11-27,,R-19892,camilo quiñones,piña special 3ra,PE3,249,0,900,0,211272,2026-11-26,3.0 - 4.0,2826,34
+2026-11-27,,R-19892,camilo quiñones,piña special 3ra,PE3,285,0,900,13,211265,2026-11-26,3.0 - 4.0,2826,34
+2026-11-27,,R-19894,reposicion éxito barranquilla,,PE1,0,40,,0,,,1,,
+2026-11-27,47745,R-19893,Almacenes Éxito S.A. - Barranquilla,piña special 1ra,PE1,525,195,3300,7,211135,2026-11-26,1,2826,32
+2026-11-27,47745,R-19893,Almacenes Éxito S.A. - Barranquilla,Piña AD1,AD1,319,0,3300,0,211300,2026-11-26,0,3226,77
+2026-11-27,47745,R-19893,Almacenes Éxito S.A. - Barranquilla,piña special 1ra,PE1,510,146,3400,0,211261,2026-11-26,0,2826,34
 2026-11-27,,,cartagena,piña special 1ra,PE1,523,0,,0,211123,2026-11-26,0.0 - 1.0,2826,32
 2026-11-27,,,cartagena,piña special 1ra,PE1,535,0,,0,211204,2026-11-26,0.0 - 1.0,2826,34
 2026-11-27,,,cartagena,piña special 1ra,PE1,405,0,,0,211250,2026-11-26,0.0 - 1.0,2826,34
