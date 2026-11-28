@@ -28272,50 +28272,59 @@ FechaDespacho,Factura,Remision,Cliente,Categoria,Calibre,KilosFinal,ReposicionKi
 2026-11-27,47745,R-19893,Almacenes Éxito S.A. - Barranquilla,piña special 1ra,PE1,525,195,3300,7,211135,2026-11-26,1,2826,32
 2026-11-27,47745,R-19893,Almacenes Éxito S.A. - Barranquilla,Piña AD1,AD1,319,0,3300,0,211300,2026-11-26,0,3226,77
 2026-11-27,47745,R-19893,Almacenes Éxito S.A. - Barranquilla,piña special 1ra,PE1,510,146,3400,0,211261,2026-11-26,0,2826,34
-2026-11-27,,,cartagena,piña special 1ra,PE1,523,0,,0,211123,2026-11-26,0.0 - 1.0,2826,32
-2026-11-27,,,cartagena,piña special 1ra,PE1,535,0,,0,211204,2026-11-26,0.0 - 1.0,2826,34
-2026-11-27,,,cartagena,piña special 1ra,PE1,405,0,,0,211250,2026-11-26,0.0 - 1.0,2826,34
-2026-11-27,,,cartagena,Piña AD1,AD1,37,0,,0,211285,2026-11-26,0.0 - 1.0,3426,77
-2026-11-27,,,Aldinsen Gonzalez,piña special baby,PEBAB,423,0,,0,211085,2026-11-25,1.5 - 2.5,2826,34
-2026-11-27,,,Aldinsen Gonzalez,piña special baby,PEBAB,452,0,,0,211083,2026-11-25,1.5 - 2.5,2826,34
-2026-11-27,,,Aldinsen Gonzalez,piña special baby,PEBAB,451,0,,0,211029,2026-11-25,1.5 - 2.5,2826,34
-2026-11-27,,,Aldinsen Gonzalez,piña special baby,PEBAB,412,0,,0,211001,2026-11-25,1.5 - 2.5,2826,32
-2026-11-27,,,Aldinsen Gonzalez,piña special baby,PEBAB,411,0,,0,210999,2026-11-25,1.5 - 2.5,2826,32
-2026-11-27,,,Aldinsen Gonzalez,piña special baby,PEBAB,441,0,,0,211010,2026-11-25,1.5 - 2.5,2826,34
-2026-11-27,,,Aldinsen Gonzalez,piña special baby,PEBAB,410,0,,0,210965,2026-11-25,1.5 - 2.5,2826,32
-2026-11-27,,,Aldinsen Gonzalez,piña special baby,PEBAB,426,0,,0,210960,2026-11-25,1.5 - 2.5,2826,32
-2026-11-27,,,Aldinsen Gonzalez,piña special baby,PEBAB,212,0,,0,211089,2026-11-25,1.5 - 2.5,2826,34
-2026-11-27,,,Aldinsen Gonzalez,piña special baby,PEBAB,26,0,,0,211045,2026-11-25,1.5 - 2.5,2826,34
-2026-11-27,,,Aldinsen Gonzalez,piña special baby,PEBAB,77,0,,0,211011,2026-11-25,1.5 - 2.5,2826,34
-2026-11-27,,,Aldinsen Gonzalez,piña special baby,PEBAB,412,0,,0,210949,2026-11-25,1.5 - 2.5,2826,34
-2026-11-27,,,Aldinsen Gonzalez,piña special baby,PEBAB,440,0,,0,210926,2026-11-25,1.5 - 2.5,2826,34
-2026-11-27,,,Aldinsen Gonzalez,piña special baby,PEBAB,410,0,,7,210937,2026-11-25,1.5 - 2.5,2826,34
-2026-11-27,,,Aldinsen Gonzalez,piña special baby,PEBAB,427,0,,0,210984,2026-11-25,1.5 - 2.5,2826,34
-2026-11-27,,,Aldinsen Gonzalez,piña special baby,PEBAB,461,109,,0,211164,2026-11-26,1.5 - 2.5,2826,32
-2026-11-27,,,Aldinsen Gonzalez,piña special baby,PEBAB,422,0,,0,211110,2026-11-26,1.5 - 2.5,2826,34
-2026-11-27,,,Aldinsen Gonzalez,piña special baby,PEBAB,421,0,,0,211188,2026-11-26,1.5 - 2.5,2826,34
-2026-11-27,,,Aldinsen Gonzalez,piña special baby,PEBAB,358,0,,0,211256,2026-11-26,1.5 - 2.5,2826,34
-2026-11-27,,,Aldinsen Gonzalez,piña special baby,PEBAB,429,0,,0,211243,2026-11-26,1.5 - 2.5,2826,34
-2026-11-27,,,Aldinsen Gonzalez,piña special baby,PEBAB,422,0,,0,211208,2026-11-26,1.5 - 2.5,2826,34
-2026-11-27,,,Aldinsen Gonzalez,piña special baby,PEBAB,412,0,,0,211193,2026-11-26,1.5 - 2.5,2826,34
-2026-11-27,,,Aldinsen Gonzalez,piña special baby,PEBAB,433,0,,0,211199,2026-11-26,1.5 - 2.5,2826,34
-2026-11-27,,,Aldinsen Gonzalez,piña special baby,PEBAB,428,0,,0,211229,2026-11-26,1.5 - 2.5,2826,34
-2026-11-27,,,Aldinsen Gonzalez,piña special baby,PEBAB,427,0,,0,211212,2026-11-26,1.5 - 2.5,2826,34
-2026-11-27,,,Aldinsen Gonzalez,piña special baby,PEBAB,410,0,,0,211264,2026-11-26,1.5 - 2.5,2826,34
-2026-11-27,,,Aldinsen Gonzalez,piña special baby,PEBAB,415,0,,0,211216,2026-11-26,1.5 - 2.5,2826,34
-2026-11-27,,,Aldinsen Gonzalez,piña special baby,PEBAB,440,0,,0,211185,2026-11-26,1.5 - 2.5,2826,32
-2026-11-27,,,Aldinsen Gonzalez,piña special baby,PEBAB,417,0,,0,211177,2026-11-26,1.5 - 2.5,2826,32
-2026-11-27,,,Aldinsen Gonzalez,piña special baby,PEBAB,415,151,,0,211161,2026-11-26,1.5 - 2.5,2826,32
-2026-11-27,,,KARINA BORJA,piña special 3ra,PE3,480,0,,0,211195,2026-11-26,1.5 - 2.5,2826,34
-2026-11-27,,,KARINA BORJA,piña special 3ra,PE3,485,0,,6,211173,2026-11-26,1.5 - 2.5,2826,32
-2026-11-27,,,KARINA BORJA,piña special 3ra,PE3,491,0,,0,211163,2026-11-26,1.5 - 2.5,2826,32
-2026-11-27,,,KARINA BORJA,piña special 3ra,PE3,486,0,,0,211138,2026-11-26,1.5 - 2.5,2826,32
-2026-11-27,,,KARINA BORJA,piña special 3ra,PE3,486,0,,0,211114,2026-11-26,1.5 - 2.5,2826,34
-2026-11-27,,,KARINA BORJA,piña special 3ra,PE3,496,76,,0,211155,2026-11-26,1.5 - 2.5,2826,32
-2026-11-27,,,Aldinsen Gonzalez,piña special baby,PEBAB,425,0,,0,211152,2026-11-26,1.5 - 2.5,2826,32
-2026-11-27,,,Aldinsen Gonzalez,piña special baby,PEBAB,445,130,,0,211134,2026-11-26,1.5 - 2.5,2826,34
-2026-11-27,,,Aldinsen Gonzalez,piña special baby,PEBAB,162,0,,0,211160,2026-11-26,1.5 - 2.5,2826,32
-2026-11-27,,,Aldinsen Gonzalez,piña special baby,PEBAB,431,0,,0,211143,2026-11-26,1.5 - 2.5,2826,32
-2026-11-27,,,Aldinsen Gonzalez,piña special baby,PEBAB,407,0,,8,211118,2026-11-26,1.5 - 2.5,2826,34
-2026-11-27,,,carmen susana hoyos,piña special 1ra,PE1,492,0,,0,211225,2026-11-26,0.0 - 1.0,2826,34
-2026-11-27,,,carmen susana hoyos,Piña AD1,AD1,585,423,,0,211276,2026-11-26,0.0 - 1.0,3126,77
+2026-11-27,,R-19895,cartagena,,PE1,0,500,3200,0,,,1,,
+2026-11-27,,R-19895,cartagena,piña special 1ra,PE1,523,0,3200,0,211123,2026-11-26,0.0 - 1.0,2826,32
+2026-11-27,,R-19895,cartagena,piña special 1ra,PE1,535,0,3200,0,211204,2026-11-26,0.0 - 1.0,2826,34
+2026-11-27,,R-19895,cartagena,piña special 1ra,PE1,405,0,3200,0,211250,2026-11-26,0.0 - 1.0,2826,34
+2026-11-27,,R-19895,cartagena,Piña AD1,AD1,37,0,3200,0,211285,2026-11-26,0.0 - 1.0,3426,77
+2026-11-27,,R-19898,Aldinsen Gonzalez,piña special baby,PEBAB,423,0,700,0,211085,2026-11-25,1.5 - 2.5,2826,34
+2026-11-27,,R-19898,Aldinsen Gonzalez,piña special baby,PEBAB,452,0,700,0,211083,2026-11-25,1.5 - 2.5,2826,34
+2026-11-27,,R-19898,Aldinsen Gonzalez,piña special baby,PEBAB,451,0,700,0,211029,2026-11-25,1.5 - 2.5,2826,34
+2026-11-27,,R-19898,Aldinsen Gonzalez,piña special baby,PEBAB,412,0,700,0,211001,2026-11-25,1.5 - 2.5,2826,32
+2026-11-27,,R-19898,Aldinsen Gonzalez,piña special baby,PEBAB,411,0,700,0,210999,2026-11-25,1.5 - 2.5,2826,32
+2026-11-27,,R-19898,Aldinsen Gonzalez,piña special baby,PEBAB,441,0,700,0,211010,2026-11-25,1.5 - 2.5,2826,34
+2026-11-27,,R-19898,Aldinsen Gonzalez,piña special baby,PEBAB,410,0,700,0,210965,2026-11-25,1.5 - 2.5,2826,32
+2026-11-27,,R-19898,Aldinsen Gonzalez,piña special baby,PEBAB,426,0,700,0,210960,2026-11-25,1.5 - 2.5,2826,32
+2026-11-27,,R-19898,Aldinsen Gonzalez,piña special baby,PEBAB,212,0,700,0,211089,2026-11-25,1.5 - 2.5,2826,34
+2026-11-27,,R-19898,Aldinsen Gonzalez,piña special baby,PEBAB,26,0,700,0,211045,2026-11-25,1.5 - 2.5,2826,34
+2026-11-27,,R-19898,Aldinsen Gonzalez,piña special baby,PEBAB,77,0,700,0,211011,2026-11-25,1.5 - 2.5,2826,34
+2026-11-27,,R-19898,Aldinsen Gonzalez,piña special baby,PEBAB,412,0,700,0,210949,2026-11-25,1.5 - 2.5,2826,34
+2026-11-27,,R-19898,Aldinsen Gonzalez,piña special baby,PEBAB,440,0,700,0,210926,2026-11-25,1.5 - 2.5,2826,34
+2026-11-27,,R-19898,Aldinsen Gonzalez,piña special baby,PEBAB,410,0,700,7,210937,2026-11-25,1.5 - 2.5,2826,34
+2026-11-27,,R-19898,Aldinsen Gonzalez,piña special baby,PEBAB,427,0,700,0,210984,2026-11-25,1.5 - 2.5,2826,34
+2026-11-27,,R-19898,Aldinsen Gonzalez,piña special baby,PEBAB,461,109,700,0,211164,2026-11-26,1.5 - 2.5,2826,32
+2026-11-27,,R-19900,Aldinsen Gonzalez,piña special baby,PEBAB,422,0,700,0,211110,2026-11-26,1.5 - 2.5,2826,34
+2026-11-27,,R-19900,Aldinsen Gonzalez,piña special baby,PEBAB,421,0,700,0,211188,2026-11-26,1.5 - 2.5,2826,34
+2026-11-27,,R-19900,Aldinsen Gonzalez,piña special baby,PEBAB,358,0,700,0,211256,2026-11-26,1.5 - 2.5,2826,34
+2026-11-27,,R-19900,Aldinsen Gonzalez,piña special baby,PEBAB,429,0,700,0,211243,2026-11-26,1.5 - 2.5,2826,34
+2026-11-27,,R-19900,Aldinsen Gonzalez,piña special baby,PEBAB,422,0,700,0,211208,2026-11-26,1.5 - 2.5,2826,34
+2026-11-27,,R-19900,Aldinsen Gonzalez,piña special baby,PEBAB,412,0,700,0,211193,2026-11-26,1.5 - 2.5,2826,34
+2026-11-27,,R-19900,Aldinsen Gonzalez,piña special baby,PEBAB,433,0,700,0,211199,2026-11-26,1.5 - 2.5,2826,34
+2026-11-27,,R-19900,Aldinsen Gonzalez,piña special baby,PEBAB,428,0,700,0,211229,2026-11-26,1.5 - 2.5,2826,34
+2026-11-27,,R-19900,Aldinsen Gonzalez,piña special baby,PEBAB,427,0,700,0,211212,2026-11-26,1.5 - 2.5,2826,34
+2026-11-27,,R-19900,Aldinsen Gonzalez,piña special baby,PEBAB,410,0,700,0,211264,2026-11-26,1.5 - 2.5,2826,34
+2026-11-27,,R-19900,Aldinsen Gonzalez,piña special baby,PEBAB,415,0,700,0,211216,2026-11-26,1.5 - 2.5,2826,34
+2026-11-27,,R-19900,Aldinsen Gonzalez,piña special baby,PEBAB,440,0,700,0,211185,2026-11-26,1.5 - 2.5,2826,32
+2026-11-27,,R-19900,Aldinsen Gonzalez,piña special baby,PEBAB,417,0,700,0,211177,2026-11-26,1.5 - 2.5,2826,32
+2026-11-27,,R-19900,Aldinsen Gonzalez,piña special baby,PEBAB,415,151,700,0,211161,2026-11-26,1.5 - 2.5,2826,32
+2026-11-27,,R-19899,KARINA BORJA,piña special 3ra,PE3,480,0,900,0,211195,2026-11-26,1.5 - 2.5,2826,34
+2026-11-27,,R-19899,KARINA BORJA,piña special 3ra,PE3,485,0,900,6,211173,2026-11-26,1.5 - 2.5,2826,32
+2026-11-27,,R-19899,KARINA BORJA,piña special 3ra,PE3,491,0,900,0,211163,2026-11-26,1.5 - 2.5,2826,32
+2026-11-27,,R-19899,KARINA BORJA,piña special 3ra,PE3,486,0,900,0,211138,2026-11-26,1.5 - 2.5,2826,32
+2026-11-27,,R-19899,KARINA BORJA,piña special 3ra,PE3,486,0,900,0,211114,2026-11-26,1.5 - 2.5,2826,34
+2026-11-27,,R-19899,KARINA BORJA,piña special 3ra,PE3,496,76,900,0,211155,2026-11-26,1.5 - 2.5,2826,32
+2026-11-27,,R-19901,Aldinsen Gonzalez,piña special baby,PEBAB,425,0,700,0,211152,2026-11-26,1.5 - 2.5,2826,32
+2026-11-27,,R-19901,Aldinsen Gonzalez,piña special baby,PEBAB,445,130,700,0,211134,2026-11-26,1.5 - 2.5,2826,34
+2026-11-27,,R-19901,Aldinsen Gonzalez,piña special baby,PEBAB,162,0,700,0,211160,2026-11-26,1.5 - 2.5,2826,32
+2026-11-27,,R-19901,Aldinsen Gonzalez,piña special baby,PEBAB,431,0,700,0,211143,2026-11-26,1.5 - 2.5,2826,32
+2026-11-27,,R-19901,Aldinsen Gonzalez,piña special baby,PEBAB,407,0,700,8,211118,2026-11-26,1.5 - 2.5,2826,34
+2026-11-27,,R-19902,carmen susana hoyos,piña special 1ra,PE1,492,0,2700,0,211225,2026-11-26,0.0 - 1.0,2826,34
+2026-11-27,,R-19902,carmen susana hoyos,Piña AD1,AD1,585,423,2700,0,211276,2026-11-26,0.0 - 1.0,3126,77
+2026-11-27,,R-19902,carmen susana hoyos,,AD1,0,300,2700,0,,,2,,
+2026-11-27,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,522,0,,0,211200,2026-11-26,1,2826,34
+2026-11-27,,,Almacenes Éxito S.A. - Medellin,Piña AD1,AD1,547,0,,0,211372,2026-11-27,1,,
+2026-11-27,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,523,0,,0,211359,2026-11-27,1,,
+2026-11-27,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,507,0,,0,211344,2026-11-27,1,,
+2026-11-27,,,Almacenes Éxito S.A. - Medellin,Piña AD1,AD1,550,0,,0,211375,2026-11-27,1,,
+2026-11-27,,,Almacenes Éxito S.A. - Medellin,piña special 1ra,PE1,527,0,,0,211329,2026-11-27,1,,
+2026-11-27,,,Almacenes Éxito S.A. - Medellin,Piña AD1,AD1,542,0,,0,211368,2026-11-27,1,,
